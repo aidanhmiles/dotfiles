@@ -22,7 +22,6 @@ execute pathogen#infect()
 set nocompatible
 "switch esc to kj
 inoremap kj <esc>
-
 set ruler
 set number
 syntax on
@@ -50,16 +49,25 @@ set fenc=utf-8
 
 "}}}
 "
-
+" :autocmd BufEnter,FileType *
+" \   if &ft ==# 'c' || &ft ==# 'cpp' | colorscheme darkblue |
+" \   elseif &ft ==? 'r' | colorscheme desert |
+" \   else | colorscheme default |
+" \   endif
 "colo desert
 colo codeschool
-set background=dark
+au Filetype text colo molokai
+" set background=dark
 
 "plugin options
 let g:SuperTabMappingForward = '<tab>'
 
 let g:SuperTabMappingBackward = '<a-tab>'
 
+" adding to Vim surround
+au BufNewFile,BufRead *.ejs set filetype=ejs
+autocmd FileType ejs let g:surround_45 = "<% \r %>"
+autocmd FileType ejs let g:surround_61 = "<%= \r %>"
 "##########################################################################################
 "------------------------------------------------ W/R/To BREAKING HABITS ----------------"
 "########################################################################################## {{{
@@ -71,24 +79,24 @@ nnoremap _ <nop>
 
 "##########################################################################################
 "--------------------------------------------- W/R/To CHANGING LETTER FUNCTIONS -----------"
-"########################################################################################## {{{ give
-"Y consistent behavior
+"########################################################################################## {{{ 
+"give Y consistent behavior
 noremap Y y$
 
 "let S substitute the whole word
 nnoremap S bcw
 
 "let K imitate J, but in the upwards direction; i.e. 'join this line with the one above it
-"noremap K kJ actually, let K break the line at the cursor
+"noremap K kJ 
+"actually, let K break the line at the cursor
 nnoremap K i<cr><esc>
 
 "}}}
 
 "##########################################################################################
-"---------------------------------------------------------- W/R/To LEADER
-"----------------"
-"########################################################################################## {{{ let
-"space be leader, backslash be localleader
+"---------------------------------------------------------- W/R/To LEADER ----------------"
+"########################################################################################## {{{ 
+"let space be leader, backslash be localleader
 "noremap <space> <nop> 
 let mapleader = " "
 let maplocalleader = "\\"
@@ -108,11 +116,10 @@ nnoremap <leader>, ,
 noremap <leader>ev :tabedit $MYVIMRC<cr>
 noremap <leader>sv :w<cr>:source $MYVIMRC<cr>
 noremap <leader>eb :tabedit $HOME/.bash_profile<cr>
-"noremap <leader>sb :w<cr>:source $HOME/.bash_profile<cr>
-"noremap <leader>esb :w<cr>:source $HOME/.bash_profile<cr>
 noremap <leader>eg :tabedit $HOME/.gitconfig<cr>G
-noremap <leader>el :tabedit $HOME/.learns<cr>G
-noremap <leader>et :tabedit $HOME/.titles<cr>G
+noremap <leader>el :tabedit $HOME/.notes/learns<cr>G
+noremap <leader>et :tabedit $HOME/Music/.titles<cr>G
+noremap <leader>ej :tabedit $HOME/.notes/jobs<cr>
 
 "let leader =, -, and # create section lines
 nnoremap <leader>= a=<esc>34.
@@ -130,18 +137,18 @@ nnoremap <leader>u <c-r>
 "##########################################################################################
 "----------------------------------------------- W/R/To META CHARACTERS ------------------"
 "##########################################################################################
-
-"inoremap <A-<bs>>
+" alt backspace exits insert mode, deletes one B back, and reenters insert
+" mode
+inoremap <M-bs> <esc>dBi
 
 "##########################################################################################
 "----------------------------------------------  W/R/To AUTOFILLS N SHIT ----------------"
 "########################################################################################## 
 "{{{
-"leader surround commands in visual mode
-
+"leader surround commands in visual mode 
 "leader s adds a space
-nnoremap <leader>s i<space><esc>
- 	
+nnoremap <leader>s i<space><esc> 
+"}}}
 
 "##########################################################################################
 "----------------------------------------------------- W/R/To VISUAL MODE ----------------"
@@ -159,9 +166,11 @@ vnoremap <leader><leader> <esc>
 "tabs are 3 spaces 
 set tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
 "except in ruby
-autocmd filetype ruby,haml,erb,eruby,html set tabstop=2 noexpandtab shiftwidth=2 softtabstop=2
+autocmd filetype ruby,haml,erb,eruby set tabstop=2 noexpandtab shiftwidth=2 softtabstop=2
+autocmd filetype javascript set tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
+
 "let enter add a space below, and backspace add a space above
-nnoremap <cr> o<esc>
+nnoremap <leader><cr> o<esc>
 
 nnoremap <bs> O<esc>
 "}}}
@@ -184,23 +193,8 @@ noremap <leader>L <c-w>l
 "}}}
 
 "##########################################################################################
-"------------------------------------------------------- W/R/To filetypes
-"----------------"
+"------------------------------------------------------- W/R/To filetypes ----------------"
 "########################################################################################## {{{
-"programming-language specific comments 
-augroup comments 
-	autocmd!  
-autocmd filetype perl,ruby,python nnoremap <buffer> <localleader>c mmi#<esc>`ml
-autocmd filetype python nnoremap <buffer> <localleader>c mmi#<esc>`ml
-autocmd filetype javascript,java nnoremap <buffer> <localleader>c mmi//<esc>`mll
-autocmd filetype java,javascript vnoremap <buffer> <localleader>c <esc>`>a*/<esc>`<i/*<esc>`>lll
-"autocmd filetype html,eruby vnoremap <buffer> <localleader>c <esc>`>a--><esc>`<i<!--<esc>`>llll
-autocmd filetype html,eruby vnoremap <buffer> <localleader>c <esc>`>o--><esc>`<O<!--<esc>`>llll
-autocmd filetype html,eruby nnoremap <buffer> <localleader>c <esc>O<!--<esc>jo--><esc>
-autocmd filetype c,css,scss vnoremap <buffer> <localleader>c <esc>`>a*/<esc>`<i/*<esc>`>llll
-autocmd fileType vim nnoremap <buffer> <localleader>c I"<esc>
-autocmd fileType javascript,scss nnoremap <buffer> <localleader>c I//<esc>
-augroup end 
 
 augroup various 
 	autocmd!  

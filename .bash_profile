@@ -8,11 +8,12 @@ export FOG_PROVIDER="AWS"
 export AWS_SECRET_ACCESS_KEY="s6PFirtwmnZ8KzBG4G5qB1FBg/N9tZeFmcFEncyB"
 export AWS_ACCESS_KEY_ID="AKIAJ4SMAQ3BVM56JDRA"
 # my prompt
+
 function prompt {
 	# let's define some colors!
 	# 30 = dark gray, 31 = red, 32 = green, 33 = yellow, 34 = blue
 	# 35 = purple, 36 = turquoise, 37 = light gray, 38 = also red, 39 = orange
-	
+
 	local DGRAY="\[\e[30;47m\]" 
 	local RED="\[\e[0;31m\]" 
 	local GREEN="\[\e[0;32m\]" 
@@ -65,13 +66,18 @@ alias cdweb="cd ~/Documents/Work/Webism/"
 alias cdsci="cd ~/Documents/Work/Webism/projects/scienceFlair/"
 alias cdbones="cd ~/Documents/Work/Webism/projects/bonesMP3/"
 alias appa="cd ~/Documents/appacademy/"
+alias la="ls -a"
 
 # more stuff!
 alias ls="ls -FG"
+alias be="bundle exec"
 
 # better cd
 cl() {
 	cd "$@" && ls
 }
  
-# do a git pull
+# GIT
+alias gpom="git push origin master"
+alias gphm="git push heroku master"
+

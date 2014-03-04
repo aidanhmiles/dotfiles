@@ -1,3 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/ADN/Documents/work/webism/projects/scienceFlair/sflair_heroku/config/environments'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/ADN/Documents/appacademy/portfolio_work/ribbit/app/views/comments'
+let g:netrw_dirhist_2='/Users/ADN/Documents/appacademy/tests/assessment06/a06-practice/app/assets/javascripts/collections'
+let g:netrw_dirhist_3='/Users/ADN/Documents/appacademy/tests/assessment06/a06-practice2/app/assets/javascripts/views/posts'
+let g:netrw_dirhist_4='/Users/ADN/Documents/appacademy/portfolio_work/LoudCloud/app/assets/javascripts/views/nav'
+let g:netrw_dirhist_5='/Users/ADN/Documents/appacademy/portfolio_work/LoudCloud/app/assets/javascripts/views/sounds'
