@@ -2,11 +2,6 @@
 EDITOR=/usr/bin/vim
 export FCEDIT=/usr/bin/vim
 export PGHOST=localhost
-export FOG_DIRECTORY="itsthejazzbucket"
-export FOG_REGION="us-west-2"
-export FOG_PROVIDER="AWS"
-export AWS_SECRET_ACCESS_KEY="s6PFirtwmnZ8KzBG4G5qB1FBg/N9tZeFmcFEncyB"
-export AWS_ACCESS_KEY_ID="AKIAJ4SMAQ3BVM56JDRA"
 # my prompt
 
 function prompt {
@@ -80,4 +75,4 @@ cl() {
 # GIT
 alias gpom="git push origin master"
 alias gphm="git push heroku master"
-
+alias gaa="git add -A"
