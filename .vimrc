@@ -64,8 +64,13 @@ let g:SuperTabMappingForward = '<tab>'
 
 let g:SuperTabMappingBackward = '<a-tab>'
 
+inoremap lj <space><esc>dBi
+
+
+" go to bundle folder (for easy access to ftdetec and ftplugin folders)
+nnoremap <leader>bu :tabedit $HOME/.vim/bundle
+
 " adding to Vim surround
-au BufNewFile,BufRead *.ejs set filetype=ejs
 autocmd FileType ejs let g:surround_45 = "<% \r %>"
 autocmd FileType ejs let g:surround_61 = "<%= \r %>"
 "##########################################################################################

@@ -21,12 +21,12 @@ function prompt {
 	local RESET="\[\e[0m\]"
 	local HIGHLIGHT="\[\e[30;47;1m\]"
 
+	export PS1="$PURPLE\u$RESET $YELL\W$RED ☯  $RESET"
 	# this is a test for the colors
 	# export PS1="$RED RED $GREEN GREEN $YELL YELLOW $BLUE BLUE $PURPLE PURPLE $TURQ TURQOISE $ORNG ORANGE $DGRAY DGRAY $LGRAY LGRAY $RESET NORMAL" 
 	# this is what it was
 	#export PS1="[\u@\h] $ "
 	# this is the real thing
-	export PS1="$PURPLE\u$RESET $YELL\W$RED â¯ $RESET "
 	PS2='> '
 	PS4='+ ' 
 }
@@ -39,7 +39,9 @@ PROMPT_COMMAND="update_terminal_cwd; prompt"
 #add mongodb binaries 
 export PATH=$PATH:/usr/local/mongodb/bin
 export PATH=$PATH:~/bin
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
 
 # INCREASE history length, ERASE duplicates, and PRESERVE history after exiting shell
@@ -47,27 +49,32 @@ export HISTCONTROL=ignoredups:erasedups # no dupes
 export HISTSIZE=10000 # lots of history
 export HISTFILESIZE=10000 # lots of history
 shopt -s histappend # append to history, don't overwrite
-shopt -s histverify # because i need to check these things before submitting
+shopt -s histverify # don't immediately execute history shortcuts (because i should check them before submitting)
+
 # Save and reload the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 
-#personal aliases etc
+#frequently edited files
+alias bashp="vim ~/.bash_profile"
+alias bashrc="vim ~/.bashrc"
+alias vimrc="vim ~/.vimrc"
+
+# changing bash commands
+alias la="ls -a" 
+alias ls="ls -FG"
+alias be="bundle exec"
 alias del="mv $* ~/.Trash"
 alias c="clear"
-alias bashp="vim ~/.bash_profile"
-alias vimrc="vim ~/.vimrc"
+
+# for common projects
 alias cdweb="cd ~/Documents/Work/Webism/"
 alias cdsci="cd ~/Documents/Work/Webism/projects/scienceFlair/"
 alias cdbones="cd ~/Documents/Work/Webism/projects/bonesMP3/"
 alias appa="cd ~/Documents/appacademy/"
-alias la="ls -a"
 
-# more stuff!
-alias ls="ls -FG"
-alias be="bundle exec"
 
-# better cd
+# useful combo of cd and ls
 cl() {
 	cd "$@" && ls
 }
