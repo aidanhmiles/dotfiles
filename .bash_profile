@@ -2,13 +2,14 @@
 EDITOR=/usr/bin/vim
 export FCEDIT=/usr/bin/vim
 export PGHOST=localhost
-# my prompt
 
+# my custom prompt 
 function prompt {
-	# let's define some colors!
+	# color codes, for my reference
 	# 30 = dark gray, 31 = red, 32 = green, 33 = yellow, 34 = blue
 	# 35 = purple, 36 = turquoise, 37 = light gray, 38 = also red, 39 = orange
 
+	# let's define some colors!
 	local DGRAY="\[\e[30;47m\]" 
 	local RED="\[\e[0;31m\]" 
 	local GREEN="\[\e[0;32m\]" 
@@ -21,20 +22,24 @@ function prompt {
 	local RESET="\[\e[0m\]"
 	local HIGHLIGHT="\[\e[30;47;1m\]"
 
+	# this is the current prompt
 	export PS1="$PURPLE\u$RESET $YELL\W$RED ☯  $RESET"
+
 	# this is a test for the colors
 	# export PS1="$RED RED $GREEN GREEN $YELL YELLOW $BLUE BLUE $PURPLE PURPLE $TURQ TURQOISE $ORNG ORANGE $DGRAY DGRAY $LGRAY LGRAY $RESET NORMAL" 
 	# this is what it was
 	#export PS1="[\u@\h] $ "
-	# this is the real thing
+
+	# secondary and tertiary chars
 	PS2='> '
 	PS4='+ ' 
 }
 
+# for highlighting different entities when ls-ing around
 LS_COLORS='di=36;40:ln=35;40:so=32;40:pi=32;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
 
+# keep the present working dir at the top of the terminal window
 PROMPT_COMMAND="update_terminal_cwd; prompt"
-
 
 #add mongodb binaries 
 export PATH=$PATH:/usr/local/mongodb/bin
@@ -53,7 +58,6 @@ shopt -s histverify # don't immediately execute history shortcuts (because i sho
 
 # Save and reload the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
-
 
 #frequently edited files
 alias bashp="vim ~/.bash_profile"
