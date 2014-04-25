@@ -75,6 +75,7 @@ alias c="clear"
 alias cdweb="cd ~/Documents/Work/Webism/"
 alias cdsci="cd ~/Documents/Work/Webism/projects/scienceFlair/"
 alias cdbones="cd ~/Documents/Work/Webism/projects/bonesMP3/"
+alias loud="cd ~/Documents/appacademy/portfolio_work/LoudCloud/"
 alias appa="cd ~/Documents/appacademy/"
 
 
@@ -88,3 +89,23 @@ alias gpom="git push origin master"
 alias gphm="git push heroku master"
 alias gaa="git add -A"
 
+lol() { 
+	echo
+	echo
+	echo
+	echo
+	echo
+	echo
+	echo
+	echo
+	echo
+	echo "LOL U R SO FUNNY"
+	echo
+	echo
+	echo
+	echo
+	echo
+	echo
+	echo
+	echo 
+}

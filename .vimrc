@@ -73,6 +73,9 @@ nnoremap <leader>bu :tabedit $HOME/.vim/bundle
 " adding to Vim surround
 autocmd FileType ejs let g:surround_45 = "<% \r %>"
 autocmd FileType ejs let g:surround_61 = "<%= \r %>"
+autocmd FileType ejs let g:surround_104 = "<!-- \r -->"
+autocmd FileType erb let g:surround_104 = "<!-- \r -->"
+
 "##########################################################################################
 "------------------------------------------------ W/R/To BREAKING HABITS ----------------"
 "########################################################################################## {{{
