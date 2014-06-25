@@ -1,0 +1,11 @@
+# Because I want to learn Vim better
+set editing-mode vi
+set keymap vi-command
+set completion-ignore-case on
+# show all completions
+set show-all-if-ambigious on
+
+
+
+# if I decide I want to use custom Vim keymappings, insert mode
+#set keymap vi-insert

@@ -1,0 +1,13 @@
+[user]
+	name = Aidan Miles
+	email = itsthejazzkid@gmail.com
+[credential]
+	helper = osxkeychain
+[core]
+	editor = vim -w
+	excludesfile = /Users/ADN/.gitignore_global
+[alias]
+	st = status
+	co = checkout
+	cm = commit -m 
+	df = diff

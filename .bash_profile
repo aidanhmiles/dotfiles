@@ -49,6 +49,7 @@ PROMPT_COMMAND="update_terminal_cwd; prompt"
 export HISTCONTROL=ignoredups:erasedups # no dupes
 export HISTSIZE=10000 # lots of history
 export HISTFILESIZE=10000 # lots of history
+export HISTFILE="$HOME/dotfiles/.bash_history"
 shopt -s histappend # append to history, don't overwrite
 shopt -s histverify # don't immediately execute history shortcuts (because i should check them before submitting)
 
