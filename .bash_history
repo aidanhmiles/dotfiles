@@ -6506,3 +6506,23 @@ git st
 cd dotfiles/
 gpom
 git st
+cd dotfiles/
+git pull
+cd
+ln -s dotfiles/.newtab .newtab
+la dotfiles/
+phex
+la
+rm .inputrc 
+rm .bashrc .gitconfig .bash_history 
+ln -s dotfiles/.inputrc .inputrc
+ln -s dotfiles/.bashrc .bashrc
+ln -s dotfiles/.gitconfig .gitconfig
+ln -s dotfiles/.bashrc .bashrc
+ln -s dotfiles/.gitconfig .gitconfig
+
+ln -s dotfiles/.gitignore_global .gitignore_global
+la
+cd dotfiles/
+vim termColors.txt
+git st

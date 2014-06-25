@@ -1,0 +1,23 @@
+(all colors in RGBa because fuck yeah)
+
+background: 25 25 25 .85
+
+text: 178 207 224
+
+bold text: 198 141 57
+
+selection: 76 76 76
+
+ANSI:
+(normal, bright)
+
+bk: 0, 102
+r: 15, 229
+g: 166, 217 
+y: 255 255 102, 255 255 0
+bl: 0 128 255, 102 204 255
+m: 64 0 128, 128 0 255
+c: 0 166 178, 0 229 229
+w: 191, 229
+
+cursor: 78 99 144
