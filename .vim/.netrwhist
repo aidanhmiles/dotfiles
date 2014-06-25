@@ -1,9 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/ADN/Documents/work/webism/projects/personal/oldstuff/notes'
-let g:netrw_dirhist_2='/Users/ADN/Documents/appacademy/portfolio_work/LoudCloud/app/views/sounds'
-let g:netrw_dirhist_3='/Users/ADN/Documents/appacademy/portfolio_work/LoudCloud/app/views/comments'
-let g:netrw_dirhist_4='/Users/ADN/Documents/appacademy/portfolio_work/LoudCloud/app/views'
-let g:netrw_dirhist_5='/Users/ADN/Documents/appacademy/portfolio_work/LoudCloud/app/views/shared'
-let g:netrw_dirhist_6='/Users/ADN/Documents/appacademy/portfolio_work/LoudCloud/app/assets/templates/explore'
-let g:netrw_dirhist_7='/Users/ADN/Documents/appacademy/portfolio_work/LoudCloud/app/assets/templates/demo'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/ADN/dotfiles/.vim/bundle/ftdetect'
+let g:netrw_dirhist_2='/Users/ADN/Documents/appacademy/portfolio_work/LoudCloud/app/assets/stylesheets'
+let g:netrw_dirhist_3='/Users/ADN/Documents/work/webism/projects/forwardLane'
+let g:netrw_dirhist_4='/Users/ADN/Documents/work/webism/projects/phoenixApp/node_modules'
+let g:netrw_dirhist_5='/Users/ADN/Documents/work/webism/projects/phoenixApp/.git'

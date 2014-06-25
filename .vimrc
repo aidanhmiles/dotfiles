@@ -24,6 +24,7 @@ set nocompatible
 inoremap kj <esc>
 set ruler
 set number
+nnoremap <leader>n :set nu!<cr>
 syntax on
 filetype indent plugin on
 set hlsearch
@@ -55,26 +56,25 @@ set fenc=utf-8
 " \   else | colorscheme default |
 " \   endif
 "colo desert
-colo codeschool
+colo ir_black
 au Filetype text colo molokai
 " set background=dark
 
 "plugin options
 let g:SuperTabMappingForward = '<tab>'
-
 let g:SuperTabMappingBackward = '<a-tab>'
 
-inoremap lj <space><esc>dBi
+"because html syntax checking is not working with these angular projects
+let g:syntastic_html_checkers=['']
 
-
-" go to bundle folder (for easy access to ftdetec and ftplugin folders)
-nnoremap <leader>bu :tabedit $HOME/.vim/bundle
+" go to bundle folder (for easy access to ftdetect and ftplugin folders)
+nnoremap <leader>eu :tabedit $HOME/.vim/bundle
 
 " adding to Vim surround
 autocmd FileType ejs let g:surround_45 = "<% \r %>"
 autocmd FileType ejs let g:surround_61 = "<%= \r %>"
 autocmd FileType ejs let g:surround_104 = "<!-- \r -->"
-autocmd FileType erb let g:surround_104 = "<!-- \r -->"
+autocmd FileType erb,eruby let g:surround_104 = "<!-- \r -->"
 
 "##########################################################################################
 "------------------------------------------------ W/R/To BREAKING HABITS ----------------"

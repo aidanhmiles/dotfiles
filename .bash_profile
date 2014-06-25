@@ -41,10 +41,6 @@ LS_COLORS='di=36;40:ln=35;40:so=32;40:pi=32;40:ex=31;40:bd=34;46:cd=34;43:su=0;4
 # keep the present working dir at the top of the terminal window
 PROMPT_COMMAND="update_terminal_cwd; prompt"
 
-#add mongodb binaries 
-export PATH=$PATH:/usr/local/mongodb/bin
-export PATH=$PATH:~/bin
-
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
@@ -67,16 +63,8 @@ alias vimrc="vim ~/.vimrc"
 # changing bash commands
 alias la="ls -a" 
 alias ls="ls -FG"
-alias be="bundle exec"
 alias del="mv $* ~/.Trash"
 alias c="clear"
-
-# for common projects
-alias cdweb="cd ~/Documents/Work/Webism/"
-alias cdsci="cd ~/Documents/Work/Webism/projects/scienceFlair/"
-alias cdbones="cd ~/Documents/Work/Webism/projects/bonesMP3/"
-alias loud="cd ~/Documents/appacademy/portfolio_work/LoudCloud/"
-alias appa="cd ~/Documents/appacademy/"
 
 
 # useful combo of cd and ls
@@ -84,28 +72,34 @@ cl() {
 	cd "$@" && ls
 }
  
+# shortcuts
+alias be="bundle exec"
+alias bi="bundle install"
 # GIT
 alias gpom="git push origin master"
+alias gpog="git push origin gh-pages"
+alias gp="git push"
 alias gphm="git push heroku master"
-alias gaa="git add -A"
+alias gaa="git add -A" 
+alias gcb="git checkout -b"
+# alias gmb="git merge ???"
 
-lol() { 
-	echo
-	echo
-	echo
-	echo
-	echo
-	echo
-	echo
-	echo
-	echo
-	echo "LOL U R SO FUNNY"
-	echo
-	echo
-	echo
-	echo
-	echo
-	echo
-	echo
-	echo 
-}
+
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+   source ~/.newtab
+fi
+
+# for projects
+alias cdweb="cd ~/Documents/Work/Webism/"
+alias cdpro="cd ~/Documents/work/webism/projects/"
+alias cdres="cd ~/Documents/work/webism/resources/"
+alias cdsci="cd ~/Documents/Work/Webism/projects/scienceFlair/"
+alias cdbones="cd ~/Documents/Work/Webism/projects/bonesMP3/"
+alias gpage="cd ~/Documents/Work/Webism/projects/itsthejazzkid.github.io/"
+alias loud="cd ~/Documents/appacademy/portfolio_work/LoudCloud/"
+alias appa="cd ~/Documents/appacademy/"
+alias sprinkl="cd ~/Documents/work/Webism/projects/sprinkler-tech-site/sprinkler"
+alias phex="cd ~/Documents/work/webism/projects/phoenixApp"
+
+
