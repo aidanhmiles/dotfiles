@@ -18,3 +18,4 @@ export PATH="$HOME/.npm/**/bin:$PATH"
 
 # versal SDK
 PATH="$PATH:$HOME/node_modules/versal-sdk/bin"
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin

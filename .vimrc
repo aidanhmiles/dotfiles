@@ -23,7 +23,6 @@ set nocompatible
 "switch esc to kj
 inoremap kj <esc>
 set ruler
-set number
 nnoremap <leader>n :set nu!<cr>
 syntax on
 filetype indent plugin on
@@ -35,7 +34,9 @@ set backspace=indent,eol,start
 set autoindent
 set confirm
 set numberwidth=4
-"set relativenumber Stop certain movements from always going to the first character of a line.
+" set relativenumber 
+set number
+"Stop certain movements from always going to the first character of a line.
 set nostartofline
 "faster, better autocomplete
 set wildmenu
@@ -57,7 +58,7 @@ set fenc=utf-8
 " \   endif
 "colo desert
 colo ir_black
-au Filetype text colo molokai
+" autocmd BufEnter *.txt colo molokai 
 " set background=dark
 
 "plugin options
@@ -174,7 +175,7 @@ vnoremap <leader><leader> <esc>
 "tabs are 3 spaces 
 set tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
 "except in ruby
-autocmd filetype ruby,haml,erb,eruby set tabstop=2 noexpandtab shiftwidth=2 softtabstop=2
+autocmd filetype ruby,haml,erb,eruby,html set tabstop=2 noexpandtab shiftwidth=2 softtabstop=2
 autocmd filetype javascript set tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
 
 "let enter add a space below, and backspace add a space above
@@ -190,6 +191,7 @@ nnoremap <bs> O<esc>
 set laststatus=2 
 " space T => tabedit
 noremap <leader>t :tabedit 
+noremap <leader>m :tabmove 
 " Set the command window height to 2 lines
 set cmdheight=2 
 set linebreak 

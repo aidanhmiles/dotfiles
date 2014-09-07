@@ -1,737 +1,3 @@
-ls
-rm jquery-ui.js 
-ls
-cp ~/Documents/work/webism/projects/bonesMP3/src/bonesMP3.js .
-ls
-cd ../../../
-vim app/assets/javascripts/application.js 
-rails s
-ls vendor/assets/javascripts/
-mv vendor/assets/javascripts/soundmanager2.js vendor/assets/javascripts/soundManager2.js
-ls
-ls files/
-cp -R files/swf ~/Documents/appacademy/portfolio_work/LoudCloud/vendor/assets/
-ls ~/Documents/appacademy/portfolio_work/LoudCloud/vendor/assets/
-ls
-ls files/
-ls img/
-cp -R img ~/Documents/appacademy/portfolio_work/LoudCloud/vendor/assets/
-ls
-cd vendor/
-ls
-ls assets/
-ls assets/swf/
-vim vendor/assets/javascripts/bonesMP3.js 
-mv vendor/assets/javascripts/bonesMP3.js vendor/assets/javascripts/bonesMP3.js.erb
-ls
-cd ..
-ls
-ls vendor/assets/
-mv vendor/assets/img/ app/assets/images/
-ls app/assets/images/
-cd app/assets/images/ls
-cd app/assets/images/
-ls
-mv img/* ,.
-mv img/* .
-ls
-rm -r img/
-ls
-cd ../../..
-ls
-mv vendor/assets/swf/ app/assets/
-ls app/assets/
-vim Gemfile
-bundle install
-bundle update
-c
-ls
-ls vendor/assets/javascripts/
-cd vendor/assets/javascripts/
-mkdir soundManager2
-mv soundManager2.js soundManager2
-ls
-mv ../../../app/assets/swf/ .
-ls
-mv swf/* soundManager2/
-ls swf/
-ls soundManager2/
-rm -r swf/
-ls
-ls soundManager2/
-ls
-vim app/assets/javascripts/application.js 
-rails s
-ls
-mv soundManager2/ soundmanager2
-ls soundmanager2/
-mv soundmanager2/soundManager2.js soundmanager2/soundmanager2.js
-ls
-ls soundmanager2/
-pwd
-vim app/assets/javascripts/application.js 
-vim Gem
-vim ../../../Gemfile
-bundle
-rails s
-ls app/assets/stylesheets/
-mv ~/Documents/work/webism/projects/bonesMP3/src/bonesMP3.scss app/assets/stylesheets/
-git status
-cd ../../..
-cd LoudCloud/
-git status
-git add -A
-git commit -m "adds bonesMP3 as mp3 player, it loads on the Sound#show page"
-rails s
-vim vendor/assets/javascripts/bonesMP3.js.erb
-ls
-pwd
-vim -p models/*
-vim -p collections/*
-fg
-fg
-vim routers/router.js 
-vim vendor/assets/javascripts/bonesMP3.js.erb
-fg
-vim -p app/views/api/sounds/sound.json.jbuilder
-vim -p app/models/*
-vim TODO 
-appa
-cd portfolio_work/LoudCloud/
-cd -
-appa
-cd portfolio_work/LoudCloud/
-ls
-cd portfolio_work/LoudCloud/
-cd app/assets/javascripts/
-ls
-rvm gemset use appacademy
-rvm gemset use appacademy
-rvm gemset use appacademy
-cd app/assets/javascripts/
-ls
-
-vim models/comment.js 
-ls models/*.swp
-cl models/
-ls -a
-ls *.swp
-ls .swp
-ls -a *.swp
-ls *.swp -a
-cd ..
-ls
-cl ..
-cl templates/
-ls
-ls vendor/assets/stylesheets/
-rm vendor/assets/stylesheets/bonesMP3.scss 
-ls vendor/assets/
-ls vendor/assets/javascripts/
-vim -p app/assets/stylesheets/*
-mv app/assets/stylesheets/bonesMP3.scss app/assets/stylesheets/mp3Player.scss
-fg
-rvm gemset use appacademy
-pg_ctl -D /usr/local/var/postgres -l logfile start
-vim vendor/assets/javascripts/bonesMP3.js.erb 
-cdweb
-git status
-git add -A
-git commit -m "turns mp3 player into backbone model/view"
-gphm
-vim Gemfile
-vim app/assets/javascripts/application.js 
-rails s
-git add -A
-git commit -m "mp3 player sort of integrated finally"
-gphm
-git status
-git add -A
-git commit -m "tweak user profile"
-gpom
-vim app/models/sound.rb 
-vim app/views/api/sounds/show.json.jbuilder 
-vim app/controllers/api/sounds_controller.rb 
-vim routers/router.js 
-vim nav/main.jst.ejs 
-vim -p collections/sounds.js collections/playlists.js 
-vim views/sounds/sound_page.js 
-vim -p models/mp3_player.js models/playlist.js 
-vim writings/todaystumblr.txt 
-cdweb
-cd projects/personal/
-ls
-ls sketches/
-open sketches/personal\ website\ homepage\ 1.ai 
-git status
-appa
-cd portfolio_work/LoudCloud/
-heroku logs
-appa
-ls
-vim writings/todaystumblr.txt 
-ls
-cd portfolio_work/LoudCloud/
-appa
-cd portfolio_work/LoudCloud/
-cd app/assets/javascripts/
-cd app/
-ls
-cd ..
-ls
-cd views/api/
-cd controllers/api/
-ls
-rvm gemset use appacademy
-rails 
-ls
-cd views/
-ls
-ls
-cd ../templates/
-ls
-vim models/sound.js 
-cd models/
-ls
-git status
-git add -A
-git commit -m "tweaking mp3 player"
-rvm gemset use appacademy
-ls
-cd ..
-ls
-rails s
-rails c
-vim stream/stream_item.js 
-mv sounds/sound_subview.js sounds/sound_container.js
-git status
-vim test.rb
-ruby test.rb 
-fg
-ruby test.rb 
-fg
-ruby test.rb 
-fg
-ruby test.rb 
-fg
-ruby test.rb 
-fg
-ruby test.rb 
-fg
-ruby test.rb 
-fg
-ruby test.rb 
-fg
-ruby test.rb 
-fg
-ruby test.rb 
-fg
-git add -A
-git commit -m "sound container view inserts as desired now"
-ls -a
-mv .titles Music/
-vimrc
-ls
-ls -a
-la
-bashp
-ls -a
-vim .goals 
-mkdir .notes
-ls .n*
-mv .goals .notes/goals
-ls
-la
-ls .jobs 
-vim .jobs 
-mv .jobs Desktop/jobs
-vim jobs 
-rm jobs 
-ls
-la
-mv .learns .notes/learns
-vimrc
-mv Desktop/jobs ./.notes/jobs
-la
-mv ancestors .notes/
-vim scratc 
-rm scratc 
-rm test.rb 
-vim Music/.titles 
-vim Desktop/test.html
-mv Desktop/test.html Desktop/DropnShop
-rails s
-vimrc
-git status
-git add -A
-git add -A
-git commit -m "slowly working towards getting each rendered mp3 player its own mp3 file reference"
-git commit --amend -m "each mp3 view registers clicks with its own sound model now"
-git commit --amend -m "each mp3 view knows about its own sound model now"
-ls vendor/assets/javascripts/
-vim vendor/assets/javascripts/bonesMP3.js.erb 
-git add -A
-git commit -m "individual sound play buttons now add that sound onto the global playlist, and play it from there"
-cd Desktop/
-mkdir killthis
-cd killthis
-curl http://www.updatetube.com/videos/11146/ashli-orion-kelly-divine-mike-adriano-sarah-shevon/ | test.txt
-curl -O http://www.updatetube.com/videos/11146/ashli-orion-kelly-divine-mike-adriano-sarah-shevon/ test.txt
-appa
-ls
-mkdir job search
-ls
-rm -r search/
-mv job/ job_search
-cd job_search
-cd ~/Documents/professional_stuff/
-ls
-cd Cover\ Letters/
-ls
-vim cover\ letter.txt GPCaptial.rtf 
-vim -p cover\ letter.txt GPCaptial.rtf 
-s
-vim cover\ letter.txt 
-vim dev_letter.txt
-ls
-cd ..
-ls
-cd ~/Documents/professional_stuff/
-ls
-vim fluentcity.txt 
-mv fluentcity.txt Cover\ Letters/
-ls Cover\ Letters/
-ls
-mv unCollegeLetter.txt Cover\ Letters/
-ls
-ls Cover\ Letters/
-mv Cover\ Letters/dev_letter.txt ~/Documents/appacademy/job_search/
-cd ~/Documents/appacademy/job_search/
-ls
-open dev_letter.txt 
-cd ~/Documents/professional_stuff/Resume/
-vim English.txt 
-open English.txt
-vim English.
-vim English.txt 
-open English.txt 
-appa
-ls
-cl daily_work/
-git glone https://github.com/itsthejazzkid/appa_asteroids.git
-git clone https://github.com/itsthejazzkid/appa_asteroids.git
-git clone https://github.com/itsthejazzkid/appa_jquery.git
-ls w2d2/
-vim w2d2/board.rb 
-git clone https://github.com/itsthejazzkid/appa_chess.git
-git clone https://github.com/itsthejazzkid/appa_checkers.git
-git clone https://github.com/itsthejazzkid/appa_url_shortener.git
-git clone https://github.com/itsthejazzkid/appa_twitCLI.git
-ls
-cd
-ls
-mv dfiles/ dotfiles
-cd dotfiles/
-ls
-git status
-vim .gitignore 
-git add -A
-git commit -m "lots of edits"
-gpom
-cd ..
-ls
-cd Documents/work/webism/
-ls
-ls
-cd
-vim test
-ls
-vim test
-vimrc
-ls
-vimrc
-cd
-ls
-ls dotfiles/
-vim .bash_profile
-vim dotfiles/.bash_profile 
-mv dotfiles/ dfiles
-ls
-vimrc
-vim test
-97
-ls
-bashp
-ls
-vim .bashrc 
-ls -a
-vim .inputrc 
-bashp
-man lm
-man ln
-mv dfiles/ dotfiles
-ls -al
-c
-ln -sf dotfiles/.bash_profile .bash_profile
-ls -al *.bash
-ls -al .bash*
-ln -sf dotfiles/.vimrc .vim
-ln -sf dotfiles/.vimrc .vimrc
-ln -sf dotfiles/.vim .vim
-ls -al .vim*
-vimrc
-bashp
-vimrc
-vim scratch
-cd dotfiles/
-git status
-cd ..
-vim noobnotes/noobnotes.txt 
-cdweb
-cd projects/personal/
-ls
-git status
-ls Assets/
-mkdir oldstuff
-mv main_folder/ notes/ oldstuff/
-vim .gitignore
-ls
-fg
-git status
-git add -A
-git status
-ls
-rvm gemset list
-rvm gemset use ruby2rails3.2
-ls
-rails s
-pry
-git status
-git add -A "mp3player views create SM sounds, playlists are all collections, and each mp3 view holds onto its own SM sound AND BB sound now"
-git add -A 
-git commit -m "mp3player views create SM sounds, playlists are all collections, and each mp3 view holds onto its own SM sound AND BB sound now"
-fg
-mv sounds/mp3Player.js sounds/mp3view.js
-git add -A
-git commit -m "current sound properties turned into functions to avoid superfluous attr setting; also sounds play from global playlist and keep track of themselves just fine"
-git config --global alist.st status
-cd
-vim .gitconfig 
-git st
-git cm "players track sounds, and shading works again"
-bashp
-gaa
-appa
-gaa
-cd -
-gaa
-gitst
-git st
-git cm "players track sounds, and shading works again"
-git log -p
-git log
-c
-cd
-ls
-cd Documents/professional_stuff/
-ls
-vim jobs.txt 
-appa
-cd job_search/
-ls
-vim opps.txt
-ls
-cd ..
-ls
-ls writings/
-cd ..
-ls
-cd professional_stuff/
-ls
-appa
-cd portfolio_work/LoudCloud/
-rvm gemset use appacademy
-git st
-gaa
-git cm "shading only applies to one mp3 view now"
-gpom
-gphm
-git commit --amend -m "shading applies to only one mp3 view now; heroku confirmed working"
-c
-git rm config/application.yml 
-cd
-bashp
-cd dotfiles/
-git rm .bash_profile 
-git cm "remove keys from bashp"
-gaa
-git cm "remove keys from bashp"
-git rm .bash_profile 
-git add .bash_profile
-ls
-ls -a
-vim .bash_profile
-mv .bash_profile .haha
-vim .gitignore 
-git st
-gaa
-git status
-git cm "reset bash profile"
-appa
-vim config/application.yml 
-rake figaro:heroku
-cd
-ls
-ls dotfiles/
-cd dotfiles/
-ls
-ls -a
-git st
-git cm "rest bashp"
-gaa
-git add -A
-git cm "reset bashp"
-git rm .bash_profile
-gpom
-git push origin master
-ls
-ls -a
-la
-mv .haha .bash_profile
-bashp
-git st
-cd dotfiles/
-ls
-la
-git status
-vim .gitignore 
-gaa
-bashp
-git st
-vim .bash_profile 
-gaa
-git add -A
-git cm "re-add bashp"
-gpom
-heroku logs
-c
-bashp
-vim job_search/opps.txt 
-vim sounds/show.json.jbuilder 
-vim sounds_controller.rb 
-vim models/sound.rb 
-vim LoudCloud/TODO 
-vim routers/router.js 
-cd portfolio_work/LoudCloud/
-cd app/assets/javascripts/
-
-vim collections/stream.js 
-vim streams/stream_item.jst.ejs 
-fg
-vim mp3_player.js 
-appa
-cd job_search/
-ls
-vim
-bashp
-vim opps.txt 
-cd
-open dotfiles/.bash_profile -a Textedit
-bashp
-appa
-cd portfolio_work/LoudCloud/app/assets/javascripts/
-bashp
-appa
-cd portfolio_work/LoudCloud/
-ls
-rails s
-rvm gemset use appacademy
-ls
-cd models/
-cd views/
-cd ../templates/
-cd col
-cd collections/
-ls
-ls
-vim mp3_player.js sound.js 
-vim mp3_player.js 
-cd .vim
-ls
-ls bundle/
-ls
-cd bundle/ftplugin/
-ls
-cd ..
-ls ftdetect/
-vim ftdetect/haml.vim 
-ls
-cd ..
-cd
-vim
-vimrc
-ls
-vim TODO 
-git st
-gaa
-git cm "autoplay sort of works"
-vim ~/Music/theProject/keymappings.txt 
-pry
-cd app/
-ls
-cd controllers/
-ls
-cd ap
-ls
-cd api/
-ls
-c
-ls
-cd views/api/
-ls
-cd users/
-ls
-rails c
-rvm gemset use appacademy
-ls
-ls
-fg
-vim show.json.jbuilder 
-cd ..
-ls
-vim mp3_player.js 
-vim -p sounds/mp3view.js sounds/sound_container.js 
-vim users/profile.jst.ejs 
-vim playlists.js 
-vim routers/router.js
-cd ../../
-cd ..
-git st
-vim -p users/show.json.jbuilder users/stream.json.jbuilder
-vim models/user.rb 
-rails c
-rails s
-vim users_controller.rb 
-ls
-ls app/models/
-vim -p app/models/sound.rb app/models/user.rb 
-fg
-rails c
-rvm gemset use appacademyu
-rvm gemset use appacademy
-rails c
-pry
-rvm gemset use appacademy
-cdweb
-ls
-cd projects/
-ls
-mkdir test
-cd testls
-cd test
-ls
-rvm gemset use ruby2rails3.2
-bashp
-ls
-rails new RailsDemo
-cd RailsDemo/
-vim Gemfile 
-cdweb
-ls
-cd projects/scienceFlair/
-ls
-cd sflair_heroku/
-ls
-ls app/
-ls app/assets/mo
-ls app/models/
-ls app/views/
-cd app/views/refinery/pages/home.html.erb 
-vim app/views/refinery/pages/home.html.erb
-vim app/views/layouts/application.html.erb 
-ls app/controllers/
-vim config/routes.rb 
-c
-rvm gemset use appacademy
-rails s
-rails c
-vim app/views/api/users/stream.json.jbuilder 
-c
-pry
-cd Desktop/
-ls
-vim DropnShop 
-rm DropnShop 
-ls
-rm The\ Ultimate\ Tar\ Command\ Tutorial\ with\ 10\ Practical\ Examples.webarchive 
-ls
-fg
-fg
-appa
-cl portfolio_work/LoudCloud/
-bashp
-cd app/assets/javascripts/
-ls
-cl models/
-cl views/
-cl collections/
-cl ../templates/
-cl Desktop/killthis/
-ls
-la
-cd ..
-rm -r killthis/
-cl Desktop/
-mv desk.jpeg ~/Pictures/
-ls gh*
-mv gh* temp\ music\ files/
-ls
-ls AI*
-mv AI* ~/Documents/appacademy/tests/
-ls
-mv cakedog_loop.mp3 ~/Movies/
-ls
-mv marley\@SBbowl.wav cakedog_loop.wav ~/Movies/
-ls
-mv running\ away/ ~/Music/Ableton/Loop\ Jamz/Reggay1\ Project/
-ls
-ls temp\ music\ files/
-c
-s
-ls
-a
-la
-ls home*
-mv home* ~/Documents/work/Sprinkler/
-ls
-c
-appa
-c
-cd portfolio_work/LoudCloud/
-ls
-rvm gemset use appacademy
-c
-cdweb
-cd projects/personal/
-ssh aidan@aidanmil.es
-cd
-cd .s
-cd .ssh/
-ls
-ssh aidasjob@aidanmil.es
-vim -p id_rsa id_rsa.pub 
-vim id_dsa_admin 
-ssh 199.188.204.167
-ssh -p 21098 aidasjob@aidanmil.es
-CD
-cd
-ls
-c
-appa
-cd portfolio_work/LoudCloud/
-appa
-cd portfolio_work/LoudCloud/
-rvm gemset use appacademy
 rvm gemset use appacademy
 ls
 c
@@ -6525,4 +5791,4224 @@ ln -s dotfiles/.gitignore_global .gitignore_global
 la
 cd dotfiles/
 vim termColors.txt
+git st
+gaa
+git cm "updates"
+gpom
+phex
+cd dotfiles/
+ls
+git st
+cd
+la
+cd -
+ls
+git st
+git co -b ornish
+git st
+ls Documents/work/
+ls
+ls Desktop/
+ls Documents/
+ls Documents/work/
+cd Documents/work/
+c
+git clone git@github.com:Wayla/phoenixApp.git
+cd phoenixApp/
+bashp
+phex
+ls
+gulp
+npm install
+which gcc
+sudo mkdir -p /usr/local/{share/man,bin,lib/node,include/node}
+sudo chown -R $USER /usr/local/{share/man,bin,lib/node,include/node}
+ 
+# now just a pretty vanilla node install
+# let it use the default paths, but don't use sudo, since there's no need
+mkdir node-install
+curl http://nodejs.org/dist/node-v0.4.3.tar.gz | tar -xzf - -C node-install
+cd node-install/*
+./configure
+make install
+ls
+cd 
+cd -
+cd ..
+ls
+cd ..
+ls
+rm -rf node-install/
+cd
+sudo chown -R $USER /usr/local/{share/man,bin,lib/node,include/node}
+ 
+# now just a pretty vanilla node install
+# let it use the default paths, but don't use sudo, since there's no need
+mkdir node-install
+curl http://nodejs.org/dist/node-v0.4.3.tar.gz | tar -xzf - -C node-install
+cd node-install/*
+./configure
+make install
+ 
+# now the npm easy-install
+curl https://www.npmjs.org/install.sh | sh
+cd ..
+rm -rf node-install/
+mkdir node-install
+curl http://nodejs.org/dist/node-v0.4.3.tar.gz | tar -xzf - -C node-install
+cd node-install/*
+./configure
+make install
+node
+npm
+cd ..
+rm -rf node-install/
+git clone https://github.com/joyent/node.git
+cd node/
+git checkout v0.8.2
+git branch
+export CC=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+export CXX=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
+./configure && make && sudo make install
+cd ..
+rm -rf node/
+brew install node
+node
+npm
+phex
+npm install
+vim package.json 
+npm install -g gulp-cli
+npm install gulp
+npm install -g gulp
+npm install -g karma-cli
+bower
+brew install bower
+npm install -g bower
+npm install package.json 
+vim package.json 
+bower install bower.json 
+ls
+gulp -v
+bower install
+vim test/karma.conf.js 
+karma start test/karma.conf.js 
+ls bower_components/
+ls node_modules/
+npm uninstall mocha
+npm uninstall jquery
+npm uninstall karma-chai
+npm uninstall chai
+git st
+gaa
+git cm "remove unused node modules"
+git st
+git branch
+cd ..
+ls
+rm -rf phoenixApp/
+git clone git@github.com:Wayla/phoenixApp.git
+git st
+gulp
+cd phoenixApp/
+git st
+npm install
+bower install
+ls
+vim package.json 
+cd
+cd -
+gulp
+gulp
+ls
+git branch
+git branch
+karma start test/karma.conf.js 
+phex
+ls
+git st
+git pull origin userAndEventPages
+git co userAndEventPages
+git st
+c
+git st
+ls node_modules/
+npm uninstall mocha
+npm uninstall chai
+npm uninstall karma-chai
+npm uninstall jquery
+npm uninstall chai
+ls
+ls node_modules/
+gulp test
+karma start test/karma.conf.js 
+gulp test
+cd
+cd .vim
+ls
+ls bundle/
+ls autoload/
+vim
+ls bundle/vim-surround/
+la bundle/vim-surround/
+ls
+cd ..
+cd dotfiles/
+vim .gitignore
+git st
+vim .gitignore
+git st
+git add .gitignore
+git cm "ignore .swp and .swo"
+git branch
+cd ../.vim
+ls
+ls bundle/
+cd bundle/
+ls vim-rails/
+la vim-rails/
+ls ftdetect/
+ls supertab/
+la supertab/
+rm -r supertab/
+git clone git@github.com:ervandew/supertab.git
+git clone git@github.com:tpope/vim-surround.git
+ls vim-surround/
+vimrc
+vimrc
+cd ~/.vim
+cd bundle/
+ls
+git clone git@github.com:tpope/vim-commentary.git
+cd test/
+ls
+cd ..
+vim -S Session.vim 
+ls
+vim .gitignore 
+vim gulpfile.js 
+karma start test/karma.conf.js 
+phex
+karma start test/karma.conf.js 
+git  branch
+git st
+npm uninstal karma-minimalist-reporter
+npm uninstal karma-nested-reporter
+git st
+gaa
+git cm "remove unused node modules"
+git st
+cd test/
+vim firstSpec.js 
+cd ..
+git st
+git add test/*
+git cm "add tests for userFilter, rewrite others"
+git add www/js/laApp.services.js 
+git cm "strMatch is passing tests, incorporated into userFilter, plus rename FB_URL to FB_BASE_URL"
+gaa
+git cm "rename FB_URL to FB_BASE_URL"
+git st
+vim .gitignore 
+git add .gitignore 
+git cm "update gitignore"
+git st
+vim .gitignore 
+git st
+git add .gitignore 
+git cm "update gitignore"
+git st
+git add www/js/laApp.services.js 
+git cm "image handler collects image file dimensions"
+c
+ls www/lib/
+ls www/js/
+ls
+ls bower_components/
+ls bower_components/firebase
+ls bower_components/angularfire/
+ls bower_components/firebase-simple-login/
+ls
+ls www/
+cd bower_components/
+ls
+cd ..
+mkdir www/lib/development
+cp angularfire/angularfire.js ../www/lib/development/
+cp firebase/firebase-debug.js ../www/lib/development/
+cp firebase-simple-login/firebase-simple-login-debug.js ../www/lib/development/
+cd ..
+ls www/lib/development/
+cd bower_components/
+ls
+ls firebase
+cp firebase-simple-login/firebase-simple-login.js ../www/lib/development/
+git st
+cd ..
+git st
+c
+git st
+git add www/lib/development/
+git st
+git cm "add debug versions of files for development"
+c
+git st
+git add www/templates/storylist.html 
+git cm "change title"
+git add www/templates/imageHandler.html 
+git cm "remove save button"
+git add www/index.html 
+git cm "comment out CDN-provided firebase files, add tags for local development debug versions"
+git st
+git add www/js/laApp.js 
+git cm "remove superfluous console.logs)
+"
+git commit --amend -m "remove superfluous console.logs"
+git st
+gaa
+git cm "rewrite imagehandler to take optional path, incorporate into createCtrl"
+git st
+gpom
+git st
+git push -u userAndEventPages
+git push -u origin userAndEventPages
+git log
+c
+vim -p www/js/* www/templates/*
+gulp
+phex
+gulp test
+git st
+git add www/js/laApp.controllers.js 
+git cm "clean up"
+git add www/templates/imageHandler.html 
+git cm "add multiple file selection"
+gaa
+git cm "rewrite for multiple file upload"
+git st
+gp
+karma start test/karma.conf.js 
+vim -S Session.vim 
+gulp
+ls /dev
+ls /Volumes/SNOW/
+c
+vim -S Session.vim 
+phex
+git st
+git add www/js/laApp.controllers.js 
+git cm "remove handler.init() calls"
+gaa
+git cm "cleanup"
+git st
+gp
+git push
+git push origin --delete liveSearchBasic
+git push origin --delete aidansbranch
+gulp
+vim -S Session.vim 
+karma start test/karma.conf.js 
+c
+git st
+gaa
+git cm "incremental updates to create event"
+git co master
+git st
+git co -b regexSearch
+karma start test/karma.conf.js 
+gulp
+vim -S Session.vim 
+ls
+git st
+vim -p www/js/laApp.services.js 
+git co userAndEventPages
+git st
+gaa
+git cm "more tests, adds strMatchRgx"
+git co userAndEventPages
+vim -p test/firstSpec.js www/js/laApp.services.js 
+gp
+git branch
+git co regexSearch
+gp
+git push origin regexSearch
+git st
+gaa
+git cm "basic regex search works"
+git push origin regexSearch
+git co userAndEventPages
+git st
+karma start test/karma.conf.js 
+git merge regexSearch
+vim -p www/js/laApp.services.js test/firstSpec.js 
+vim -p www/js/laApp.services.js
+git merge regexSearch
+gaa
+git cm "resolve conflicts with regexSearch"
+gaa
+git merge regexSearch
+git branch
+git push origin userAndEventPages
+git st
+git branch
+vim -S Session.vim 
+gulp
+phex
+vim www/js/laApp.services.js 
+git st
+git add www/js/laApp.services.js 
+git cm "add link to page about autosave"
+phex
+git branch
+vim -S Session.vim 
+ls
+rm '
+rm \'
+rm 2
+ls
+fg
+:qa
+phex
+ls
+vim -S Session.vim 
+ls
+vim -p www/js/* www/templates/create.html
+fg
+ls
+rm 3
+git st
+gaa
+git cm "fragmented updates"
+git push origin userAndEventPages
+git pull slidebox
+git pull origin slidebox
+vim APPREADME.md 
+karma start test/karma.conf.js 
+gulp
+fg
+git st
+gaa
+git cm "updates"
+git co slidebox
+git st
+git co userAndEventPages
+git st
+ls
+rm Session.vim 
+fg
+vim -p www/js/*
+fg
+la www/js/
+rm www/js/*.swp
+ls www/js/*.swp
+ls www/js/*.js.swp
+vim -p www/js/*
+vim -p www/templates/*
+git st
+git add www/js/laApp.controllers.js www/templates/menu.html 
+git cm "user profile link works"
+git add www/js/laApp.config.js 
+git cm "remove a comment"
+git st
+git add www/js/laApp.services.js 
+git st
+git reset HEAD www/js/laApp.services.js 
+npm install murmurhash3 --save-dev
+ls node_modules/
+npm uninstall murmurhash3 --save-dev
+npm install murmurhash --save-dev
+git co master
+git st
+npm uninstall murmurhash
+git st
+vim package.json 
+git st
+gaa
+git cm "add to data structure, clean up views"
+git co master
+git co userAndEventPages
+git st
+ls
+curl -fsSL https://raw.github.com/cknadler/vim-anywhere/master/install | bash
+brew install macvim
+curl -fsSL https://raw.github.com/cknadler/vim-anywhere/master/install | bash
+c
+git add www/js/laApp.config.js 
+git cm "backend config is now wrapped in a run block, so can have FB refs ready to go"
+git add www/js/laApp.config.js 
+git cm "backend config is now a factory, so can have FB refs as properties"
+karma start test/karma.conf.js 
+vim
+ 
+git st
+git add www/templates/editEvent.html 
+git cm "add template for event editing"
+git st
+vim -p www/js/*
+vim www/js/*
+vim -p www/js/*
+vim -p www/templates/*
+fg
+ls
+cd Documents/work/
+ls
+git clone git@github.com:itsthejazzkid/sprinkler-tech-site.git
+cd sprinkler-tech-site/
+bashp
+rails s
+rvm
+curl -sSL https://get.rvm.io | bash -s stable
+source /Users/someguy/.rvm/scripts/rvm
+cd
+cd -
+vim Gemfile
+cd -
+rvm install ruby-2.0.0-p481
+rvm reinstall ruby-2.0.0-p481
+ruby -v
+cd -
+bundle install
+cd
+which psql
+gem install pg
+gem install pg -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.3/bin/pg_config
+bundle install
+rails c
+bashp
+'/Applications/Postgres.app/Contents/Versions/9.3/bin'/psql -p5432
+psql \I
+psql \l
+psql \1
+psql \l
+psql \du
+rails s
+vim config/database.yml 
+rake db:setup
+ls
+mv app/assets/javascripts/pages.js.coffee app/assets/javascripts/pages.js
+'/Applications/Postgres.app/Contents/Versions/9.3/bin'/psql -p5432
+cd
+cd .vim/bundle/ftplugin/
+ls
+vim html-erb.vim
+cd ..
+ls ftdetect/
+vim ftdetect/haml.vim 
+vim ftplugin/html-erb.vim 
+mv ftplugin/html-erb.vim ftdetect/
+cd ..
+vim ftplugin/herb.vim
+ls .vim/bundle/ftplugin/
+vimrfc
+cd .vim/bundle/ftdetect/
+ls
+mv html-erb.vim herb.vim
+vim herb.vim 
+vim ../ftplugin/herb.vim
+ls
+vim herb.vim 
+vimrc
+vim app/views/pages/home.html.erb 
+cd app/assets/stylesheets/theme/
+ls
+mv revolution.css revolution.scss
+vim revolution.scss
+ls
+cd ..
+ls
+cd theme/
+grep -r "caption" .
+grep -r ^caption
+grep -r ^caption .
+grep -r ^"caption" .
+grep -r "^caption" .
+ls
+cd ..
+ls
+grep -r "^caption" .
+grep -r "caption$" .
+cd ..
+git st
+gaa
+git cm "finally fix slideshow, add dummy content to captions, add photos"
+git remote
+gpom
+gphm
+heroku
+heroku login
+gphm
+git remote add git@heroku.com:sprinkler-technologies.git
+git remote add heroku git@heroku.com:sprinkler-technologies.git
+gphm
+cd
+ls .ssh/
+heroku keys:add ~/.ssh/id_rsa.pub 
+gphm
+git st
+vim config/environments/production.rb 
+git st
+gaa
+git cm "add css and scss assets to production.rb precompile"
+gpom
+gphm
+c
+ls
+loud
+ls
+ls Documents/work/
+spr
+ls
+ls app/views/
+ls vendor/assets/
+phex
+cd -
+git st
+vim app/controllers/pages_controller.rb 
+git st
+gaa
+git cm "updates"
+gpom
+phex
+gphm
+cd app/assets/javascripts/
+grep -r "in-viewport"
+grep -r "in-viewport" .
+ls
+ls theme/
+rails s
+spr
+sprinkl
+spr
+grep -r "in-viewport" .
+ls jquery.*
+echo *.ls
+ls *(jquery*)
+shopt -s extglob
+ls *.js
+ls *(jquery*)
+ls -r jquery*
+ls -r *.js
+ls theme/*.js
+ls theme/jquery*.js
+ls theme/jquery*
+ls
+mkdir theme/jquery
+mv theme/jquery*.js theme/jquery
+ls theme/jquery/
+c
+ls theme/jquery/
+ls theme/
+ls theme/jquery/
+cd theme/jquery/
+grep "google"
+grep "google" .
+grep -r "google"
+grep -r "google" .
+grep -r "google" jquery.gmap.min.js 
+c
+grep -r "google" .
+cd ../../..
+cd ../..
+git st
+gaa
+git cm "reorganize, try and fix javascript errors with loading order"
+git s
+git st
+gpom
+gphm
+gaa
+git cm "remove jquery.ui.all"
+gpom
+gphm
+git st
+rails s
+gaa
+git st
+git cm "stop loading jquery first"
+phex
+gphm
+vim theme/custom.js 
+vim -p www/js/*
+vim -p www/templates/*
+gulp
+git st
+gaa
+git cm "datahelper halfway implemented"
+git st
+git pull origin master
+git co master
+cd Desktop/
+git st
+ls
+ls test/
+ls test/firstSpec.js 
+vim test/firstSpec.js
+vim www/index.html 
+ls
+ls bower_components/
+git pull origin branchForMergeStable
+vim -p www/js/laApp.js
+git st
+ls bower_components/
+gulp
+git st
+git reset HEAD .
+git st
+git stash
+git branch
+git co userAndEventPages
+git st
+vim firebase.json 
+git co master
+git st
+vim firebase.json 
+git st
+git co userAndEventPages
+git st
+vim -p www/js/*
+git st
+git log
+git reset --hard HEAD
+git st
+git co master
+git reset --hard HEAD
+git st
+git co userAndEventPages
+vim -p www/templates/*
+karma start test/karma.conf.js 
+ls www/js/
+ls www/js/main/
+vim chrisnagy
+cd ~/Documents/work/
+mkdir invibox
+cd $_
+git clone git@github.com:InviBox/Invibox-WebClient.git
+meteor run
+ls
+cd Invibox-WebClient/
+ls
+meteor run
+vim packages.json
+vim README.md 
+git st
+meteor
+cd
+$ curl https://install.meteor.com | /bin/sh
+curl https://install.meteor.com | /bin/sh
+npm install -g mrt
+npm install mrt
+npm install -g meteorite
+cd -
+meteorite update
+mrt update
+meteor
+cd ..
+ls
+vim todo
+git st
+git branch
+rm firebase.json 
+rm -r node_modules/karma-minimalist-reporter/
+rm -r node_modules/karma-nested-reporter/
+ls node_modules/karma/node_modules/socket.io/
+ls node_modules/karma/node_modules/socket.io/node_modules/
+rm -r node_modules/karma/node_modules/socket.io/node_modules/policyfile/.npmignore 
+rm -r node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/active-x-obfuscator/node_modules/zeparser/.npmignore 
+rm -r node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/ws/node_modules/tinycolor/.npmignore 
+rm platforms/ios/www/lib/angular-file-upload.min.js 
+rm -r platforms/ios/www/lib/webfonts/
+rm -r platforms/ios/www/scss/_la-flex-grid.scss 
+rm -r platforms/ios/www/templates/imageHandler.html 
+rm -r www/404.html www/favicon.ico www/img/404.jpg www/js/main/ www/lib/modernizr.custom.74692.js www/lib/webfonts/ www/scss/_la-flex-grid.scss 
+c
+git st
+rm -r node_modules/karma/node_modules/socket.io/node_modules/socket.io-client/node_modules/uglify-js/tmp/
+git st
+git branch
+git st
+git add test/*
+git cm "tweaks to testfiles"
+gaa
+git cm "createctrl adds two identical events to firebase in right spots"
+git st
+gaa
+git cm "edit ctrl updates event info in right spots"
+git st
+git add www/index.html 
+git cm "switch back to using cdns for js files"
+git add www/templates/create.html www/templates/editEvent.html 
+git cm "reword file-input button text"
+cd ~/Desktop/
+vim small.rb
+ls -l | grep small
+man du
+du -c small.rb 
+cd ..
+ls
+du -c Music/
+open Music/
+du -hs Music/
+karma start test/karma.conf.js 
+ls
+git st
+gaa
+git cm "media upload almost syncing right"
+git co master
+git pull origin master
+git co -b localMasterMerge
+git pull origin localMasterMerge
+git st
+vim -p www/js/*
+d
+vim index.html 
+ls bower_components/
+ls
+ls bower.json 
+vim bower.json 
+vim www/index.html 
+cd www/lib/ionic/
+ls
+ls scss/
+cd ..
+ls scss/
+ls
+cd scss/
+vim phoenix.app.scss 
+cd ..
+vim www/templates/login.html 
+ls
+cd www/js/
+grep -r loginObj .
+cd ..
+cd templates/
+grep -r loginObj .
+ls
+cd ..
+ls
+grep -r loginObj .
+cd
+la
+vim www/templates/menu.html 
+vim www/js/laApp.services.js 
+vim www/index.html 
+gulp
+cd Documents/work/
+ls
+cd invibox/
+meteor
+cd Invibox-WebClient/
+ls
+ls client/
+ls client/static/
+cd client/static/
+ls
+ls stylesheets/
+vim stylesheets/email/emailControl.css 
+grep -r emailTable .
+la
+ls stylesheets/
+cd stylesheets/
+grep -r emailTable .
+cd ..
+grep -r emailTable .
+cd ..
+ls
+grep -r emailTable .
+grep -r emailList .
+cd client/static/stylesheets/
+grep -r emailList .
+vim email/showEmail.css 
+cd ../../
+cd ..
+git st
+git co -b fixEmailListCheckbox
+la
+git st
+git st
+cd client/static/
+grep -r css-checkbox .
+cd ../../
+git st
+vim .gitignore 
+git st
+git add .gitignore 
+git cm "add vim swp files to gitignore"
+git st
+gaa
+git cm "fix checkbox alignment, TODO figure out webkit-appearance"
+git st
+git co master
+git co -b emailListFixes
+vim email/showEmail.css 
+git st
+meteor
+vim email/showEmail.css 
+grep -r pagination .
+fg
+git st
+vim .gitignore 
+git add .gitignore 
+git cm "update gitignore"
+git st
+gaa
+git cm "hide pagination thing under 800px"
+git st
+grep -r search .
+grep -r searchText .
+git add client/static/stylesheets/mainApp.css 
+git cm "searchbar disappears below 800px"
+gaa
+git cm "emailList table extends 100% as expected now"
+ls
+git st
+fg
+git branch
+git co fixEmailListCheckbox
+ls client/templates/mainApp/email/
+cd client/templates/mainApp/email/
+grep -r emailCheck .
+pwd
+grep -r checkbox .
+cd ..
+ls
+grep -r checkbox .
+ls
+cd ../
+cd ..
+ls
+cd static/stylesheets/
+grep -r tr
+grep -r tr .
+grep -r .email .
+git st
+gaa
+cd ../../..
+git st
+gaa
+git reset HEAD
+git st
+gaa
+git cm "checkbox looks better, needs ID for uniqueness"
+git branch
+vim email/showEmail.css 
+c
+git co master
+git co -b convoFixes
+git co fixEmailListCheckbox
+git branch -m checkboxFixes
+git st
+git co convoFixes
+git co checkboxFixes
+git co emailListFixes
+vim email/showEmail.css 
+vim todo 
+cd Documents/work/phoenixApp/
+ls
+vim app_structure_ref.html 
+ls
+uglp
+git st
+git checkout -- www/templates/login.html 
+git st
+git co userAndEventPages
+ls
+git st
+git add www/js/laApp.controllers.js 
+git cm "add test line in profile ctrl to check out $firebase'd refs"
+gaa
+git st
+vim .gitignore 
+git st
+vim .gitignore 
+la
+git st
+git add .gitignore 
+git st
+git cm "add main.js to gitignore"
+git st
+vim .gitignore 
+git add .gitignore 
+git cm "add file ext to mainjs in gitignore"
+git st
+vim .gitignore 
+git add .gitignore 
+git st
+git cm "add explicit filenames to gitignore"
+git st
+vim .gitignore 
+git add .gitignore 
+git cm "change filepath to main.js folder"
+git st
+vim .gitignore 
+git add .gitignore 
+git cm "give up on ignoring main.js files"
+git add www/templates/
+git st
+git cm "add delete button on profile interface"
+git add www/js/laApp.controllers.js 
+git cm "add deleteEvent and other testy things to profilectrl" 
+gaa
+git cm "write datahelper.deleteEvent, understand firebase more deeply"
+git st
+karma start test/karma.conf.js 
+vim -p www/js/*
+ls
+la
+gulp
+fg
+vim -p www/templates/*
+gaa
+git cm "datahelper lives"
+gpom
+git push origin userAndEventPages
+git st
+git branch
+git co master
+git co -b master-clone-datahelper
+git merge userAndEventPages
+git st
+gulp
+c
+git branch
+git push origin master-clone-datahelper
+cd Documents/work/invibox/
+cd Invibox-WebClient/
+git st
+git branch
+meteor
+ls
+cd client/static/stylesheets/
+ls
+ls accounts/
+ls calendar/
+ls contactsAndRequests/
+ls email/
+ls email/group/
+git st
+ls
+c
+ls
+grep -r table .
+grep -r emailToolbar .
+grep -r compose .
+grep -r composePanelFooter .
+ls
+cd ..
+ls
+ls lib/
+ls packages
+ls ext/
+ls public/
+cd ../..
+ls
+cd templates/
+ls
+cd mainApp/
+ls
+cd email/
+ls
+grep -r emailApp .
+git st
+git add client/templates/mainApp/email/emailApp.html 
+git cm "comment out emailViewState"
+git st
+git add client/static/stylesheets/email/
+git st
+git cm "emailList table expands to fill space down to -50% zoom"
+vim emailApp.html 
+cd ../../
+cd ..
+cd static/stylesheets/
+grep -r messages .
+cd /Applications/Google\ Chrome.app/
+ls
+la
+cd Contents/
+la
+cd Resources/
+la
+grep -r replyCompose .
+grep -r emailReadPanel .
+grep -r replyComposePanel .
+cd ../..
+ls
+cd static/ls
+cd static/
+ls
+cd ..
+ls
+vim client.js 
+grep -r appCont .
+grep -r textarea /
+grep -r textarea .
+vim templates/mainApp/email/mainPanel/email/showEmailList.html 
+cd ..
+ls
+grep -r textarea .
+ls
+cd client/
+grep -r textarea .
+vim templates/mainApp/contactsAndRequests/contacts/contactsDisplay/contactsList/contactsShow/contactsShow.js 
+vim templates/mainApp/email/mainPanel/email/showEmailList.html 
+c
+cd ..
+man ls
+ls -R *.scss
+ls -R
+ls -R | grep scss
+ls -R | grep css
+cd client/static/
+ls
+cd ..
+ls
+cd templates/
+ls
+grep -r emailInfo .
+grep -r emailInfo" .
+grep -r emailInfo\" .
+grep -r emailInfo$ .
+grep -r emailInfo .
+grep -r appContainer .
+grep -r main app components .
+grep -r "main app components" .
+cd Documents/work/
+ls
+cd phoenixApp/
+ls
+git log
+vim -p www/js/*
+vim -p www/templates/*
+ls
+git st
+gaa
+cd ../.
+cd ..
+git st
+gaa
+git cm "updates"
+git branch
+git push origin checkboxFixes
+git push origin emailListFixes
+git co convoFixes
+git st
+vim email/showEmail.css 
+vim todo 
+cd Documents/work/invibox/
+vim todo 
+phex
+ls
+gulp
+vim -p www/js/*
+cd Documents/work/
+ls
+mkdir panEd
+cd panEd
+vim test
+vim test.json
+vim template.html.lol
+vim templater.rb
+ls
+ll
+ls
+fg
+vim templater.rb 
+ruby templater.rb 
+fg
+mv template.html.lol page.html.lol
+ls
+mv test.json data.json
+ls
+vim test 
+mv test todo
+vim templater.rb 
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+ls
+vim templater.rb 
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+vim templater.rb 
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+gem list
+rvm gemset list
+gem install nokogiri
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+c
+ls
+vim page.html.lol 
+fg
+ls
+mv page.html.lol page.panoramatemplate
+cd ~/Desktop/
+ls
+mv data.json ../Documents/work/panEd/
+ls
+vim data.json 
+ls
+vim templater.rb 
+ruby templater.rb 
+fg
+vim template.panoramatemplate 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+cd ../..
+cd work/
+ls
+cd invibox/
+ls
+vim todo 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+phex
+ls
+fg
+ls
+ruby templater.rb 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+git st
+vim todo
+vim www/js/laApp.controllers.js 
+fg
+ruby templater.rb 
+fg
+ruby templater.rb 
+irb
+ls
+pry
+c
+cd Documents/work/
+ls
+cd invibox/
+ls
+git clone git@github.com:InviBox/Invibox-Deploy.git
+phex
+git st
+git reset HEAD
+git st
+git checkout -- .
+git st
+git co master
+git pull origin master
+git st
+git co -b multipleFiles
+git st
+vim todo 
+vim .gitignore 
+git add .gitignore 
+git cm "add TODO file to gitignore"
+git st
+vim -p www/templates/*
+vim -p www/js/*
+gulp
+karma start test/karma.conf.js 
+git add www/js/laApp.controllers.js www/templates/*
+git cm "rename inputs on scope"
+git add www/js/laApp.services.js 
+git cm "fix multiple uploads"
+ls
+git st
+git push origin multipleFiles
+fg
+21
+pry
+cd Documents/work/invibox/
+ls
+open invibox_email.psd 
+cd Invibox-WebClient/
+ls
+git st
+git branch
+git co emailListFixes
+ls
+ls ..
+meteor
+vim ../todo 
+vim to
+vim ../todo 
+ls
+cd client/
+ls
+cd ..
+cd server/
+ls
+cd email/
+ls
+cd mail/
+ls
+cd ..
+c
+ls
+cd client/
+ls
+vim handlebars.js 
+ls core/
+ls
+c
+ls
+la
+ls
+grep -R reply .
+cd templates/mainApp/email/composePanel/emailComposePanel.js 
+vim templates/mainApp/email/composePanel/emailComposePanel.js
+grep -R replyComposeP .
+cd templates/mainApp/email/mainPanel/readPanel/
+ls
+cd ..
+grep -R richTextOptions .
+cd ..
+grep -R richTextOptions .
+grep -R richText .
+c
+cd ../../..
+cd ../
+ls
+ls lib/
+ls packages
+cd packages/bower
+ls
+pwd
+cd ..
+ls
+cd ..
+ls
+vim Invibox-Meteor.js 
+ls public/
+ls
+ls public/
+c
+ls
+ls lib/
+c
+ls
+cl
+cd -
+c
+ls
+cls
+ls tests/
+ls tests/collection/email/message.js 
+vim tests/collection/email/message.js
+ls
+ls ext/
+ls config/
+vim emailReadPanel.js 
+vim client/Invibox-Meteor.html 
+ls
+ls client/templates/mainApp/email/mainPanel/readPanel/
+cd client/templates/mainApp/email/mainPanel/readPanel/
+vim emailReadPanel.js 
+pwd
+meteor
+cd Documents/work/panEd/
+ls
+vim templater.rb template.panoramatemplate output.html todo 
+pry
+vim -p templater.rb template.panoramatemplate output.html todo 
+ls
+vim page.html 
+chmod 755 templater.rb 
+mv templater.rb templater
+ls
+templater template.panoramatemplate data.json 
+./templater template.panoramatemplate data.json 
+rm page.html 
+ls
+vim templater
+mv templater.rb templater
+chmod 755 templater
+./templater template.panoramatemplate data.json blah.html
+ls
+./templater template.panoramatemplate data.json blah.html
+ls
+mv templater templater.rb 
+ruby templater.rb template.panoramatemplate data.json blah.html
+ls
+vim page.panoramatemplate 
+rm page.panoramatemplate 
+ruby templater.rb template.panoramatemplate data.json blah.html
+ls
+c
+ls
+ruby templater.rb template.panoramatemplate data.json blah.html
+ls
+cp templater.rb templater
+chmod 755 templater
+templater template.panoramatemplate data.json blah.html
+./templater template.panoramatemplate data.json blah.html
+templater template.panoramatemplate data.json blah.html
+./templater template.panoramatemplate data.json blah.html
+./templater template.panoramatemplate data.json blah.html
+ruby templater.rb template.panoramatemplate data.json blah.html
+ls
+vim blah.html 
+c
+./templater template.panoramatemplate data.json blah.html
+c
+cp templater.rb templater
+chmod 755 templater
+./templater template.panoramatemplate data.json blah.html
+vim templater.rb 
+open .
+./templater template.panoramatemplate data.json aidans_output.html
+rm templater.rb 
+vim templater
+vim aidans_output.html 
+sprinkl
+cd Documents/work/sprinkler-tech-site/
+ls
+cd app/assets/javascripts/
+ls
+grep -R in-viewport .
+ls
+ls -r theme/
+ls -r theme/jquery/
+rails s
+cd ../../..
+ls
+git st
+vim .gitignore 
+git add .gitignore 
+git cm "add vim swps to gitignore"
+git st
+git rm -r *.swp
+git rm -rf *.swp
+git st
+gaa
+git cm "remove navbar stuff, change js manifest"
+gpom
+gpogphm
+vim app/views/layouts/application.html.erb 
+ls app/views/pages/about.html.erb 
+gphm
+ls
+cd app/assets/javascripts/
+ls
+ls theme/
+ls theme/jquery/
+grep -R revolution .
+git st
+gaa
+git cm "update manifest again"
+vim app/views/pages/about.html.erb
+gphm
+gaa
+git cm "tweak app.js again"
+gphm
+cd ../../
+cd ..
+vim Gemfile
+bundle list
+c
+c
+ls
+grep -R revolution .
+gaa
+git cm "again"
+gphm
+ls
+c
+gaa
+git cm "put viewport stuff directly in app.js"
+vim theme/jquery/jquery.viewport.js 
+grep -R in-viewport .
+gphm
+git st
+gaa
+git cm "remove in-viewport bs"
+cd Documents/work/invibox/
+cd Invibox-WebClient/
+ls
+gphm
+vim theme/custom.js 
+gaa
+git cm "remove tweet and mobileMenu calls from custom.js
+"
+gphm
+gaa
+git cm "remove in-viewport bs"
+cd Documents/work/invibox/
+cd Invibox-WebClient/
+ls
+gphm
+grep -R in-viewport .
+grep -R mobileMenu .
+
+
+vim theme/custom.js 
+vim application.js 
+vim app/views/layouts/application.html.erb 
+rails s
+cd client/templates/mainApp/email/mainPanel/readPanel/
+grep -R richText .
+cd ..
+grep -R richText .
+cd ..
+grep -R richText .
+cd ../.../..
+cd ../..
+git st
+git co master
+git st
+git co -b redactor
+vim composePanel/emailComposePanel.html 
+git st
+vim composePanel/emailComposePanel.html 
+cd ../../../
+ls
+cd ..
+ls
+ls public/
+cd client/
+ls
+ls core/
+ls static/
+open .
+ls
+cp -r Downloads/chrome\ DLs/redactor925 Desktop/
+ls Desktop/
+ls redactor/
+cd redactor/
+vim redactor.css 
+vim redactor-iframe.css 
+grep -R dashed .
+ls
+rm redactor-iframe.css 
+ls
+grep -R onSendBu .
+vim redactor.css 
+ls
+vim redactor.js 
+c
+cd ..
+ls
+cd static/stylesheets/
+ls
+cd email/
+ls
+grep -R saveDraft .
+cd Documents/work/invibox/Invibox-WebClient/
+ls
+git st
+cd
+ls
+la
+vim .gitignore_global 
+git config --global core.excludesfile ~/.gitignore_global
+gaa
+git cm "add redactor.js in emailComposePanel and emailReadPanel html and js, emails send"
+gpom
+git push origin redactor
+git co master
+git pull
+git co redactor
+git merge checkboxFixes
+git st
+vim compose/emailCompose.css 
+grep -R emailListCheckBox
+grep -R emailListCheckBox .
+cd ..
+grep -R emailListCheckBox .
+cd ..
+ls
+cd static/
+ls
+cd stylesheets/
+ls
+grep -R checkbox .
+grep -R flatCh .
+git st
+grep -R emailSelection .
+vim email/showEmail.css 
+cd ../../..
+git st
+gaa
+git cm "fix checkbox bg color"
+vim client/static/stylesheets/email/showEmail.css 
+cd client/static/stylesheets/
+grep -R readText .
+vim email/reply/emailReadMessages.css 
+c
+git st
+gaa
+grep -R listMailboxGroups .
+vim email/group/listMailboxGroup.css 
+git st
+git cm "remove gross sidebar scroll things via overflow:auto"
+ls
+vim -p composePanel/emailComposePanel.html composePanel/emailComposePanel.js 
+pwd
+c
+grep -R replyComposePanelBody
+grep -R replyComposePanelBody .
+grep -R replyComposePanel .
+grep -R emailApp .
+vim email/emailApp.css 
+grep -R appConta .
+vim mainApp.css 
+grep -R emailToo .
+vim email/toolbar/emailToolbar.css 
+git st
+git add client/static/stylesheets/*
+git cm "fix conversation view responsiveness"
+git st
+vim email/reply/emailReply.css 
+c
+c
+c
+ls
+ls email/
+ls email/reply/
+vim email/reply/emailReadMessages.css 
+grep -R emailRead .
+vim email/reply/emailReadMessages.css 
+grep -R emailToolbar .
+cd ..
+ls
+cd ..
+grep -R emailContactDrop templates/
+vim -p templates/mainApp/email/mainPanel/readPanel/emailReadPanel.html templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js 
+fg
+grep -R emailContactDrop .
+ls
+ls contactsAndRequests/
+ls
+cd ../../..
+cd client/templates/
+ls
+cd mainApp/
+ls
+grep -R replyDropDown .
+gaa
+git cm "conversation scrolls, adjusts height when reply box is clicked"
+git branch
+vim email/mainPanel/readPanel/popups/replyDropDown.js 
+fg
+fg
+git co emailListFixes
+git co redactor
+grep -R emailTable .
+grep -R table .
+c
+ls
+vim mainPanel/readPanel/emailReadMessages.html 
+vim mainPanel/readPanel/emailReadPanel.html 
+pwd
+cd ../../
+cd ..
+grep -R emailSel .
+ls
+cd server/
+ls
+vim email/mail/mail.js 
+ls mock/
+ls mock/email/collections/mailboxMockData.js 
+vim mock/email/collections/mailboxMockData.js
+cd ../../..
+cd invibox/Invibox-WebClient/
+vim templates/mainApp/email/mainPanel/email/show/showEmail.html 
+c
+vim email/showEmail.css 
+c
+
+git st 
+gaa
+git cm "incorporate emailList fixes"
+git co master
+git co -b multipleCC
+git pull
+git co master
+git pull
+meteor add zones
+meteor add fullcalendar
+git st
+meteor
+vim ../todo 
+mrt add zones
+mrt add fullcalendar
+mrt add
+meteor
+mrt
+git st
+git pull
+git co -b multipleCC
+git help branch
+git branch -d multipleCC
+git co -b multipleCC
+git st
+gaa
+git push origin redactor
+git st
+gaa
+git cm "add new packages"
+grep -R CC .
+grep -R replyDropDown .
+vim templates/mainApp/email/mainPanel/toolbar/popups/replyDropDown.js 
+grep -R openComposeDialog .
+git st
+git stash
+git co redactor
+vim -p templates/mainApp/email/composePanel/emailComposePanel.js templates/mainApp/email/composePanel/emailComposePanel.html 
+fg
+git st
+git co multipleCC
+git co master
+git co -b masterClone
+git merge redactor
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.html 
+vim client/static/stylesheets/mainApp.css 
+vim .gitignore 
+git st
+git add .gitignore 
+gaa
+git st
+git cm "test merge complete"
+git push masterClone
+git push origin masterClone
+mrt
+git co master
+git co redactor
+git st
+git stash
+git co redactor
+mtr
+cd client/
+ls
+cd templates/mainApp/
+grep -R emailInfo .
+git st
+vim email/mainPanel/readPanel/emailReadMessages.js 
+fg
+git st
+gaa
+git cm "clicking emailInfo now expands messages, but off by 1"
+fg
+cd ..
+cd static/stylesheets/
+ls
+grep -R messages .
+vim email/reply/emailReadMessages.css 
+cd ../../
+mrt
+phex
+cd www/js/
+ls
+cd ../..
+vim www/templates/*
+git st
+git add www/js/laApp.services.js 
+gulp
+cd templates/mainApp/email/mainPanel/email/show/showEmail.html 
+git st
+vim templates/mainApp/email/mainPanel/email/show/showEmail.html 
+git log
+git st
+gaa
+git cm "more tweaks on convo view"
+git co master
+git pull
+git co -b masterClone
+git branch -d masterClone
+git branch -D masterClone
+git co -b masterClone
+git merge redactor
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.html 
+git st
+vim .gitignore 
+vim client/static/stylesheets/mainApp.css 
+git st
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.html 
+gaa
+git cm "merge redactor branch"
+git push origin masterClone
+git push origin :masterClone
+git push origin masterClone
+git st
+git co master
+git branch
+git co multipleCC
+git st
+git log
+vim -p templates/mainApp/email/mainPanel/readPanel/emailReadMessages.js templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js 
+vim -p email/reply/*
+mrt
+git co master
+git branch -d multipleCC
+git branch -D multipleCC
+git st
+git co -b ccbcc
+git st
+grep -R onInputChange .
+cd static/stylesheets/
+vim -p www/js/*
+git st
+git log
+gaa
+git cm "add contributor obj, draft of waiting for user input during event create"
+git pull
+git co DangerSwiper
+cd Documents/work/
+ls
+git clone git@github.com:itsthejazzkid/itsthejazzkid.github.io.git
+ls
+cd itsthejazzkid.github.io/
+ls
+vi index.html 
+open index.html 
+vim index.html 
+git st
+gaa
+git cm "update current work"
+gpom
+gulp
+vim -p www/templates/*
+cd Library/Application\ Support/MobileSync/Backup/
+ls
+cd d17707b86329cc524aebdfcc316990c149b42c9b/
+ls
+grep -R Voice
+grep -R Voice .
+cd Documents/work/
+ls
+mkdir snippets 
+cd snippets
+vim index.html
+open index.html 
+c
+cd templates/mainApp/email/composePanel/emailComposePanel.html 
+vim email/compose/emailCompose.css 
+grep -R toText .
+vim templates/mainApp/email/composePanel/emailComposePanel.js 
+fg
+vim templates/mainApp/email/composePanel/emailComposePanel.html
+vim -p templates/mainApp/email/composePanel/emailComposePanel.*
+ls
+cd templates/mainApp/email/composePanel/
+ls
+mv composeAddress.html displayEmailAddress.html
+mv composeAddress.js displayEmailAddress.js
+cd ..
+ls
+cd mainPanel/email/show/
+fg
+vim templates/mainApp/email/mainPanel/email/showEmailList.html 
+vim templates/mainApp/email/mainPanel/email/show/showEmail.html 
+vim -p *
+vim email/compose/emailCompose.css 
+vim -p templates/mainApp/email/composePanel/emailComposePanel.*
+vim -p email/compose/emailCompose.css email/compose/displayEmailAddress.css
+fg
+fg
+cd ../../..
+cd ..
+cd ../
+cd -
+git co master
+git pull
+git st
+git co multiplecc
+git branch
+git co ccbcc
+git st
+gaa
+git cm "email addresses turn into boxes in To, CC, and BCC fields, can't yet be removed"
+git co master
+git pull
+git st
+git co -b hiddenEmails
+ls
+vim client.js 
+phex
+vim todo 
+git st
+git add www/js/laApp.controllers.js www/js/laApp.services.js 
+git cm "extend IMGIX url generator to take multiple params"
+git reset --soft HEAD~1
+git st
+git branch
+git co master
+vim -p www/js/*
+vim -p www/templates/*
+git st
+git checkout -- www/js/*
+git st
+vim -p www/js/*
+git reset HEAD www/js/*
+git st
+git co -- www/js/*
+git st
+git co multipleFiles
+git st
+git log
+vim -p www/js/*
+ls
+vim bower.json 
+vim package.json 
+vim bower.json 
+ls bower_components/
+ls bower_components/angular/
+vim bower_components/angular/angular.js 
+vim www/index.html 
+git st
+git add www/index.html 
+vim www/index.html 
+git co -- www/index.html 
+git add www/js/laApp.controllers.js www/js/laApp.js www/js/laApp.services.js 
+git cm "incorporate skipUpload, createEvent working as expected except for undefined eventiD in places"
+git push origin multipleFiles
+git log
+git st
+git add www/js/laApp.services.js 
+git cm "create event works as expected"
+vim www/js/laApp.js 
+git push origin multipleFiles
+git co master
+git st
+git add www/js/laApp.js 
+git cm "uncomment 'otherwise' statement in laApp.js"
+git co master
+git co -- www/js/main/*
+git co master
+git pull
+git branch
+git branch -D master-clone-datahelper
+git co -b masterClone
+git merge multipleFiles
+vim todo 
+gulp
+git st
+git branch
+git co ccbcc
+cd Documents/work/
+ls
+cd AidanMilesPanEdChallenge
+ls
+mv original_output.html output.html
+man tar
+vim challenge.txt
+tar -cvzf challenge.tgz challenge.txt output.html template.panoramatemplate data.json 
+cp challenge.tgz ~/Desktop/
+grep -R createDraft client/
+cd core/managers/email/emailManager.js 
+vim -p templates/mainApp/email/composePanel/*
+vim core/managers/email/emailManager.js
+git st
+gaa
+git cm "multiple to, cc, and bcc works, plus small tweaks in emailManager.js"
+git push origin ccbcc
+git pull
+git co master
+git pull
+git branch
+git branch -D masterClone
+git co master
+git checkout -b masterCloneCCBCC
+git merge ccbcc
+vim -p client/templates/mainApp/email/mainPanel/email/show/showEmail.html client/templates/mainApp/email/composePanel/emailComposePanel.js client/templates/mainApp/email/composePanel/emailComposePanel.html
+git st
+gaa
+git cm "merge ccbcc branch with master, only trival conflicts"
+git push origin :masterClone
+git push origin masterCloneCCBCC
+git st
+grep -R <<<<< .
+grep -R \<\<\<\<\< .
+grep -R <<<<< .
+grep -R \<\<\<\<\< .
+
+vim -p templates/mainApp/email/composePanel/*
+gaa
+git cm "fix styling issues with redactor and new compose features"
+git push origin masterCloneCCBCC
+git st
+git co master
+git co masterCloneCCBCC
+cd core/managers/email/emailManager.js 
+vim core/managers/email/emailManager.js
+grep -R saveDraft .
+fg
+cd ..
+cd server/
+ls
+grep -R saveDraft .
+phex
+git st
+git co --
+gitst
+git pull
+git co master
+git stash
+git co master
+git pull
+git co DangerSwiper
+git pull
+vim -p www/js/*
+vim todo 
+git co multipleFiles
+git st
+git stash
+git co master
+git pull
+vim www/js/laApp.controllers.js 
+git st
+git co --
+git st
+git co DangerSwiper
+git stash
+git co DangerSwiper
+vim -p www/js/*
+vim -p www/templates/*
+vim -p www/js/*
+gulp
+vim -p templates/mainApp/email/composePanel/*
+fg
+git st
+git pull
+git co -b convoScrollFix
+vim -p email/compose/emailCompose.css email/compose/displayEmailAddress.css
+ls email/reply/email/
+cd ..
+cd client/templates/mainApp/mainApp.html 
+vim client/templates/mainApp/mainApp.html
+vim client/templates/mainApp/email/mainPanel/toolbar/emailToolbar.html 
+vim -p templates/mainApp/email/composePanel/*
+vim email/reply/emailReadMessages.css 
+git st
+gaa
+git cm "fixes to make .messages div resize correctly"
+git push origin convoScrollFix
+vim templates/mainApp/email/mainPanel/emailMainPanel.html 
+grep -R checkbox .
+git cm "checkbox fix"
+gaa
+git cm "checkbox fix"
+git push origin convoScrollFix
+vim templates/mainApp/email/mainPanel/email/show/showEmail.html 
+c
+mongod
+mongo
+brew update
+cd
+brew install mongodb
+mongod
+mongo
+mongo --port:3000 --host:localhost
+mongo --port=3000 --host:localhost
+mongo --port=3000 --host=localhost
+mongo --port 3000 --host localhost
+ls
+ls config/
+vim config/env.sh 
+mongo --port 27017 --host localhost
+ mongod --config /usr/local/etc/mongod.conf
+mongod --config /usr/local/etc/mongod.conf
+mongod --config
+git st
+git co master
+ls
+grep -R "new Collection" ./client/
+grep -R "new Collection" ./server/
+grep -R "Meteor.Collection" ./server/
+grep -R "Collection" ./server/
+grep -R "Collection" ./client/
+grep -R "Collection" .
+grep -R "Collection" ./lib/
+phex
+git pull
+git co DangerSwiper
+vim -p www/templates/*
+vim -p www/js/*
+gulp
+git co -- .
+git st
+c
+cd client/templates/mainApp/email/mainPanel/email/showEmailList.js 
+vim client/templates/mainApp/email/mainPanel/email/showEmailList.js
+grep -R saveDraft server/
+phex
+git st
+git pull
+ls
+cd www/scss/
+ls
+gulp
+vim -p www/js/*
+vim -p www/templates/*
+vim views/_StoryView.scss 
+grep -R setCurrentDraftID ./client/
+grep -R setCurrentDraftID ./server/
+phex
+git log
+git st
+git co -- .
+git st
+git co master
+git co multipleFiles
+git log
+vim lib/collection/email/message.js 
+vim core/managers/email/managers/mailboxManager.js 
+mrt
+git st
+gaa
+git co -b draftBox
+git st
+gaa
+git cm "first tweaks"
+git co master
+git co draftBox
+git branch
+git co emailListFixes
+git log
+git branch
+git co checkboxFixes
+git st
+git log
+git branch
+git co convoFixes
+git log
+git co convoFixes
+git log
+git branch
+git co redactor
+git log
+git branch
+git co ccbcc
+git log
+git log | grep aidan
+git log | grep Aidan
+git branch
+cd Documents/work/invibox/
+cd Invibox-WebClient/
+cd Documents/work/invibox/Invibox-WebClient/
+vim client/templates/mainApp/email/composePanel/emailComposePanel.js 
+git st
+git co master
+git pull
+git co draftsBox
+git co draftBox
+npm install -g node-inspector
+expore NODE_OPTIONS='--debug-brk'
+export NODE_OPTIONS='--debug-brk'
+cd
+vim .bashrc 
+bashp
+exports
+export
+export NODE_OPTIONS='--debug'
+export
+export NODE_OPTIONS='--debug=27017'
+mrt
+export
+export NODE_OPTIONS='--debug'
+mrt
+export NODE_OPTIONS='--debug=5858'
+mrt
+export
+export | grep NODE
+export NODE_OPTIONS='--debug-brk'
+node-inspector
+node-inspector --debug-port=5858 --web-port=3000
+node-inspector --debug-port=5858 --web-port=27017
+mrt
+export NODE_OPTIONS='--debug=5858'
+export | grep NODE
+mrt
+1?NODE
+export NODE_OPTIONS='--debug-brk=5858'
+node-inspector --debug-port=5858 --web-port=8080
+cd
+cd .meteorite/
+la
+cd source/
+la
+cd ..
+cd packages/
+ls
+cd ..
+mrt
+meteor
+export NODE_OPTIONS='--debug-brk'
+meteor
+mrt
+node-inspector
+meteor
+unset NODE_OPTIONS
+export | grep NODE
+cd server/
+grep -R saveDraft .
+cd ../..
+cd -
+cd ../
+mrt
+vim client/templates/mainApp/email/composePanel/emailComposePanel.js 
+git st
+git co 445f4b5 -- .
+git co c3528434e7ab01d96bd1773ac1015e028445f4b5 -- .
+git log
+ls
+cd server/
+ls
+ls email/
+cd ..
+ls
+ls lib/
+cd lib/
+ls
+ls dataStructures/
+ls collection
+ls collection/email/
+grep -R onGetMessages ./server/
+grep -R onGetMessages ./client/
+grep -R "var Popup" .
+grep -R "var Popup" client/
+grep -R "var Popup" server/
+grep -R "var Popup" client/
+grep -R "var Popup" server/
+grep -R "var Popup" server/
+grep -R Popup lib/
+grep -R Popup server
+grep -R Popup ./server/
+grep -R Popup ./client/
+grep -R Popup ./client/client.js 
+grep -R Popup ./client/core/
+c
+phex
+git st
+git co master
+git pull
+git co DangerSwiper
+git pull
+vim -p www/templates/*
+vim -p www/js/*
+gulp
+git st
+cd Documents/work/invibox/
+ls
+cd Invibox-Deploy/
+ls
+grep -R beanstalk .
+cd ..
+cd Invibox-WebClient/
+ls
+man cp
+cd ..
+cp Invibox-WebClient ~/Desktop/
+cp -R Invibox-WebClient ~/Desktop/
+cd ~/Desktop/Invibox-WebClient/
+git st
+rm -rf .git
+git st
+git init
+git remote add origin git@github.com:itsthejazzkid/testathing.git
+gaa
+git cm "commit everything"
+gpom
+cd ..
+rm -rf Invibox-WebClient/
+ls
+meteor mongo
+git st
+gaa
+git cm "drafts are now being saved correctly, just not loading into DOM correctly, so they're being overwritten"
+git st
+gaa
+git cm "drafts load body text and subject now"
+gaa
+git cm "drafts loads addresses correctly, seems to update fine"
+git st
+git push origin draftBox
+git co master
+git pull
+mrt
+git st
+git branch
+git co -b masterCloneDrafts
+git merge draftsBox
+git merge draftBox
+vim server/server.js 
+vim client/templates/mainApp/email/composePanel/emailComposePanel.js 
+vim client/templates/mainApp/email/mainPanel/email/show/showEmail.js 
+vim collection/email/message.js 
+vim client/templates/mainApp/email/mainPanel/email/showEmailList.js 
+vim server/email/mail/conversationMediator.js 
+vim client/core/managers/email/emailManager.js 
+git st
+gaa
+git cm "merge draftBox"
+cd Invibox-WebClient/
+git st
+phex
+git st
+git co master
+git co -- .
+git st
+git co master
+git pull
+git co DangerSwiperSuper
+vim -p www/js/*
+gulp
+ls
+la
+zip ../invibox-text.zip -r * .[^.]*
+cd ..
+ls
+mv invibox-text.zip invibox-test.zip
+vim server/server.js 
+grep -R readText client/
+ls
+ls lib/
+ls client/
+meteor -v
+meteor --version
+cd ..
+ls
+rm invibox-test.zip 
+cd Invibox-WebClient/
+mrt
+meteor bundle ../invibox-bundle.tgz
+vim todo 
+vim client/templates/mainApp/email/mainPanel/email/showEmailList.js 
+vim client//templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js
+vim client/redactor/
+cd ..
+ls
+tar -zxvf invibox-bundle.tgz 
+sudo cp -a bundle/. ../invibox-test-deploy/bundle
+cd bundle/
+rm -rf programs/server/node_modules/fibers/
+mkdir .ebextensions
+cd .ebextensions
+cd ..
+ls
+cd Invibox-WebClient/
+ls
+vim invibox-meteor.config
+cd ..
+ls
+vim package.json
+open .
+zip ../invibox-test.zip -r * .[^.]*
+cd ..
+ls
+open .
+ls
+la
+cd .ebextensions/
+ls
+rm invibox-test.zip 
+cd bundle/
+zip ../invibox-test.zip -r * .[^.]*
+ls
+la
+cd ..
+cd Invibox-WebClient/
+ls
+vim packages.json~
+vim packages.json
+mrt --version
+vim package.json 
+vim packages.json
+mrt bundle ../invibox-bundle.tgz
+vim invibox-meteor.config 
+cd ..
+ls
+rm invibox-bundle.tgz 
+cd -
+mrt bundle ../invibox-bundle.tgz
+cd ..
+ls
+tar -zxvf invibox-bundle.tgz 
+ls
+rm -rf bundle/
+ls
+tar -zxvf invibox-bundle.tgz 
+cd bundle/
+rm -rf programs/server/node_modules/fibers/
+ls
+la
+mkdir .ebextensions
+cd .ebextensions
+vim invibox-meteor.config
+cd ..
+cd Invibox-WebClient/
+vim package.json
+/zip
+zip ../invibox-test.zip -r * .[^.]*
+ls
+vim package.json 
+zip ../invibox-test.zip -r * .[^.]*
+ls
+vim packages.json
+vim .ebextensions/invibox-meteor.config 
+zip ../invibox-test.zip -r * .[^.]*
+ls
+vim package.json 
+zip ../invibox-test.zip -r * .[^.]*
+ls
+vim star.json 
+vim main.js 
+vim programs/server/boot.js 
+vim package.json 
+vim package.json 
+zip ../invibox-test.zip -r * .[^.]*
+zip ../invibox-test.zip -r * .[^.]*
+cd Documents/work/invibox/
+cd Invibox-Deploy/
+grep -R smtp .
+vim Desktop/notes
+vim package.json 
+cd Documents/work/
+ls
+cd invibox/
+cd Invibox-WebClient/
+ls
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadMessages.js 
+grep -R replyDropDown client/templates/
+grep -R setupRichText client/templates/
+cd client/static/stylesheets/`
+cd client/static/stylesheets/
+ls
+vim -p email/reply/emailReply.css email/reply/emailReadMessages.css 
+grep -R readbody .
+grep -R readBody .
+cd ../../
+cd ..
+cd Documents/work/invibox/
+ls
+rm -rf bundle/
+rm invibox-bundle.tgz 
+rm invibox-test.zip 
+cd Invibox-WebClient/
+ls
+mrt bundle ../bundle.tgz
+cd ..
+tar -zxvf bundle.tgz 
+sudo cp -a bundle/. ../invibox-webclient-testing/bundle/
+cd bundle
+rm -rf programs/server/node_modules/fibers/
+ls
+mkdir .ebextensions
+vim invibox-webclient.config
+vim Desktop/notes 
+vim server/email/mail/mail.js
+fg
+cd client/static/stylesheets/
+grep -R readBody .
+cd ../..
+cd ..
+git st
+gaa
+git cm "fixes convo list, reply dropdown button"
+gaa
+git cm "fixes position of body text in convo view"
+git push origin masterCloneDrafts
+git co master
+git pull
+git merge masterCloneDrafts
+gpom
+cd
+vim Desktop/notes 
+fg
+mrt
+vim client/templates/mainApp/email/mainPanel/toolbar/emailToolbar.js 
+phex
+git st
+git co master
+git pull
+git co multipleFiles
+git st
+git co DangerSwiper
+git pull
+ls
+git co multipleFiles
+git pull
+git co master
+git co -- .
+git co master
+git pull
+git co multipleFiles
+ionic --v
+ioniv --version
+git checkout -- .
+git co DangerSwiperSuper
+git pull
+git co DangerSwiper
+git co DangerSwiperSuper
+git st
+vim -p www/js/*
+vim -p www/templates/*
+git co multipleFiles
+git st
+git co -- .
+vim -p www/js/*
+git co 
+gulp
+cd Documents/work/
+ls
+cd invibox/
+cd Invibox-WebClient/
+ls
+grep -R emailContact client/
+cd Documents/work/
+ls
+cd invibox/Invibox-WebClient/
+vim server/email/mail/conversationMediator.js:333
+#vim server/email/mail/conversationMediator.js:333
+cd client/static/stylesheets/
+grep -R table .
+vim email/showEmail.css 
+grep -R data("id") client/
+grep -R data\(\"id\"\) client/
+grep -R data\(\"message_id\"\) client/
+vim server/email/mail/conversationMediator.js
+cd client/static/stylesheets/
+grep -R readText .
+open ../invibox_email.psd 
+grep -R popupmanager client/
+grep -R popupmanager server/
+grep -R Popup client/
+vim email/reply/emailReadMessages.css 
+grep -R replyEmailDialog .
+phex
+phex
+git st
+vim -p www/js/*
+vim -p www/templates/*
+git co master
+git pull
+git co -b contribObjAndIMGIX
+git co multipleFiles
+git cm "start redoing multipleFiles changes"
+git add www/*
+git cm "start redoing multipleFiles changes"
+git co multipleFiles
+vim -p www/js/*
+git branch
+git co contribObjAndIMGIX
+git co -- .
+git co contribObjAndIMGIX
+mrt
+git push origin contribObjAndIMGIX
+git st
+git add www/*
+git cm "finish copying changes from multipleFiles"
+git push origin contribObjAndIMGIX
+git co master
+git co -b masterClone
+git co -b masterCloneContribAndIMGIX
+git merge contribObjAndIMGIX
+git push origin masterCloneContribAndIMGIX
+gulp
+phex
+ls
+la
+cd bower_components/
+la
+cd ..
+vim bower.json 
+ls
+cd www/lib/development/
+kls
+ls
+la
+cd ../..
+cd lib/ionic/
+ls
+ls js/
+phex
+cd www/lib/ionic/
+ls
+ls js/
+vim www/index.html 
+vim client/core/view/managers/popupManager.js 
+grep -R emailInfoDialog .
+grep -R emailInfoDialog ./client/
+git st
+gaa
+git cm "restyle reply drop down, fix email info dropdown, imgs and formatting in emails"
+git st
+git reset --soft HEAD
+git st
+git reset --soft HEAD~1
+git st
+git co -b emailFixes
+git st
+git cm "restyle reply drop down, fix email info dropdown, imgs and formatting in emails"
+git co master
+gitst
+git st
+git co emailFixes
+vim -p client/templates/mainApp/email/mainPanel/readPanel/popups/emailContactDropDown.js client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js 
+c
+c
+vim email/toolbar/replyDropDown.css 
+cd ../..
+cd ..
+ls
+cd server/
+ls
+cd ..
+ls
+ls lib/
+vim lib/collection.js 
+cd ../../
+cd ../
+vim client/templates/mainApp/email/composePanel/emailComposePanel.html
+grep -R ReplyPanel client/
+fg
+cd client/static/stylesheets/
+ls
+vim -p email/reply/emailReadMessages.css email/reply/emailReply.css 
+grep -R contact-name .
+mrt
+mrt mongo
+mrt --port 3001
+netstat -a -o
+netstat
+netstat | grep localhost
+vim lib/collection/email/message.js 
+fg
+vim -p client/templates/mainApp/email/mainPanel/readPanel/popups/replyDropDown.js client/templates/mainApp/email/mainPanel/readPanel/popups/replyDropDown.html 
+vim -p client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.html client/templates/mainApp/email/mainPanel/readPanel/emailReadMessages.js client/templates/mainApp/email/mainPanel/readPanel/emailReadMessages.html 
+vim ../todo 
+cd Documents/work/invibox/
+cd Documents/work/invibox/Invibox-WebClient/
+cd Invibox-WebClient/
+cd client/
+ls
+cd static/stylesheets/
+vim email/reply/emailReply.css 
+cd..
+cd ..
+git st
+git add lib/collection/email/spam.js 
+git cm "add spam collection"
+git st
+fa
+gaa
+git cm "incorporate composepanel UI elems into reply panel, make reply dropdown functions, begin spam func"
+vim -p client/templates/mainApp/email/mainPanel/readPanel/popups/replyDropDown.js client/templates/mainApp/email/mainPanel/readPanel/popups/replyDropDown.html 
+gaa
+git cm "remove two items from dropdown"
+git push origin emailFixes
+git log
+vim -p templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js templates/mainApp/email/mainPanel/readPanel/emailReadPanel.html 
+ls
+vim -p client/redactor/*
+ls
+ls client/redactor/
+mv client/redactor/redactor.min.js ~/Desktop/
+fg
+cd client/redactor/
+ls
+mkdir plugins
+mv font* plugins/
+ls
+mv ~/Desktop/redactor.min.js .
+cd plugins/
+ls
+cd Downloads/chrome\ DLs/example
+ls
+vim fontfamily.js 
+cd ..
+mkdir compatibility
+mv redactor compatibility/
+ls
+ls compatibility/
+vim -p compatibility/redactor/plugins/*
+grep -R onSendButton .
+vim -p index.html advanced.js 
+cd ..
+vim templates/mainApp/email/composePanel/emailComposePanel.js 
+vim client/core/managers/email/emailManager.js 
+git st
+gaa
+git cm "add colors and fonts"
+git st
+git co master
+git pull
+mrt
+git branch
+git co -b emailFixes
+git co emailFixes
+git co -- .
+git co emailFixes
+vim todo 
+cd ..
+cd client/static/stylesheets/
+ls
+cd email/
+ls
+cd ..
+cd ../..
+cd compatibility/redactor/
+ls
+cd ../../
+grep -R Roboto .
+grep -R font-face .
+ls
+ls client/static/fonts/
+find ~/Desktop/fonts/ -name '*.ttf'
+find ~/Desktop/fonts/ -name '*.ttf' -exec cp {} client/static/fonts/ \;
+ls client/static/fonts/
+mv ~/Downloads/chrome\ DLs/webfontkit-20140810-161324.zip ../
+cd ..
+ls
+open webfontkit-20140810-161324.zip 
+vim redactor.css 
+vim static/stylesheets/mainApp.css 
+fg
+ls
+cd client/static/
+ls
+mkdir ~/Desktop/backupfonts
+mv fonts/* ~/Desktop/backupfonts/
+ls fonts/
+ls
+ls webfontkit-20140810-161324
+mv webfontkit-20140810-161324 fontkit
+ls
+ls fontkit/
+find fontkit/ -name '*.ttf *.html'
+man find
+find fontkit/ -type f \( -name '*.html' -or -name '*.ttf'\)
+find fontkit/ -type f \( -name "*.html" -or -name "*.ttf" \)
+20140808-13:01:35.996(-7)?        groups: [],find fontkit/ -type f \( -name "*.eof" -or -name "*.ttf" \)
+#find fontkit/ -type f \( -name "*.woff" \)
+find fontkit/ -type f \( -name "*.html" -or -name "*.ttf" \)
+20140808-13:01:35.996(-7)?        groups: [],find fontkit/ -type f \( -name "*.eof" -or -name "*.ttf" \)
+find fontkit/ -type f \( -name "*.woffkj" -or -name "*.ttf" \)
+fg
+ls
+ls Invibox-WebClient/client/static/fonts/
+find fontkit/ -type f \( -name "*.woff" \)
+find fontkit/ -type f \( -name "*.woff" \) -exec mv {} Invibox-WebClient/client/static/fonts/
+find fontkit/ -type f \( -name "*.woff" \) -exec mv {} Invibox-WebClient/client/static/fonts/ \;
+ls Invibox-WebClient/client/static/fonts/
+mv fontkit/stylesheet.css fontkit/fontkit.css
+mv fontkit/fontkit.css Invibox-WebClient/client/static/stylesheets/
+cd Invibox-WebClient/client/static/stylesheets/
+grep -R Roboto static/stylesheets/
+mrt
+mrt mongo
+vim fontkit.css 
+vim plugins/fontfamily.js 
+fg
+vim server/email/emailMediator.js 
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js 
+vim todo 
+bashp
+invib
+cd Invibox-WebClient/
+mv Invibox-WebClient/ webclient
+rm webfontkit-20140810-161324.zip 
+cd webclient/
+ls
+mrt
+invib
+cd webclient/
+cd client/static/stylesheets/
+fg
+ls
+cd ../
+ls fontkit/
+find fontkit/ -type f \( -name "*.eot" -or -name "*.svg" -or -name "*.ttf"\) -exec mv {} Invibox-WebClient/client/static/fonts/ \;
+find fontkit/ -type f \( -name "*.eot" -or -name "*.svg" -or -name "*.ttf" \) -exec mv {} Invibox-WebClient/client/static/fonts/ \;
+find fontkit/ -type f \( -name "*.eot" -or -name "*.svg" -or -name "*.ttf" \) -exec mv {} webclient/client/static/fonts/ \;
+ls webclient/client/static/fonts/
+cd webclient/public/
+ls
+ls fonts/
+mv ../client/static/fonts/* .
+ls
+mv *.ttf fonts/
+ls
+mv *.eot fonts/
+ls
+mv *.woff *.svg fonts/
+ls
+mv fonts/* ../client/static/fonts/
+ls fonts/
+rm -r fonts/
+ln -s ../client/static/fonts/ ./
+man ln
+ln -s ../client/static/fonts/ ./fonts
+ls
+rm fonts
+ls
+mkdir fonts
+ls
+ls ../client/static/fonts/
+mv ../client/static/fonts/* fonts/
+ls fonts/
+c
+cd ~/Dropbox/
+la
+vim mainApp.css 
+phex
+git pull
+git st
+git co velocityui
+vim www/templates/editEvent.html 
+git st
+git co multipleFiles
+vim www/index.html 
+vim -p www/js/*
+gulp
+pehx
+phex
+git st
+git co master
+git co -- .
+git co master
+git pull
+gulp
+vim client/core/managers/email/emailManager.js 
+vim -p server/email/emailMediator.js server/email/mail/conversationMediator.js 
+vim todo 
+cd webclient/
+ls
+git st
+gaa
+git cm "add all font files, fix reply drafts, add fontkit.css"
+git st
+git push origin emailFixes
+git co master
+git pull
+git branch
+git co -b masterCloneMailFixes
+git merge emailFixes
+mrt
+git st
+vim lib/collection/email/mailbox.js 
+vim server/email/emailMediator.js
+mrt mongo
+phex
+ls
+sublime app.sublime-
+sublime app.sublime-project 
+vim www/index.
+ls
+ls www/
+vim www/index.html 
+vim bower.json 
+bower update
+git st
+git co update
+git co -b update
+git st
+git co -- .
+git st
+git co master
+git pull
+git branch -D update
+git co -b updateAngularfire
+bower update
+vim bower.json 
+bower update
+vim bower.json 
+bower update
+vim bower.json 
+gulp
+git st
+gaa
+git cm "update angular, angularfire, and firebase"
+vim -p www/js/*
+vim index.html 
+cd /Volumes/EVO/Users/ADN/
+ls
+la
+ls Music/.titles 
+vim Music/.titles 
+open Music/.titles 
+rm Music/.titles 
+open Music/theProject/keymappings.txt 
+mv Music/theProject ~/Dropbox/
+ls Music/
+vim Music/mooz 
+open Music/mooz 
+rm Music/mooz 
+ls
+cd Music/
+ls
+vim mark
+rm mark
+cd ..
+ls
+gulp
+vim www/index.html 
+git st
+gaa
+git cm "updates appear to be completed"
+git push origin updateAngularfire
+git st
+gaa
+git cm "fix login issues"
+git push origin updateAngularfire
+git st
+git co master
+git pull
+git st
+vim .gitconfig 
+git cob multUploadLayout
+git st
+gulp
+vim -p www/templates/*
+invib
+bashp
+cd webclient/
+vim -p www/js/*
+phex
+vim www/js/laApp.controllers.js 
+phex
+git st
+git co -- .
+git co master
+git pull
+git branch -d multUploadLayout
+git co -b uploadlayout
+ls
+mv www/templates/imageUploadDisplay.html image-upload-display.html
+mv image-upload-display.html www/templates/
+inv
+ls
+inv
+cd webclient/
+grep -R sendoutofdomain client/
+grep -R sendoutofdomain server/
+grep -R domain server/
+vim todo 
+gulp
+inv
+vim todo 
+ls
+la
+cd Dropbox/
+la
+cd 
+cp /Volumes/EVO/Users/ADN/.informationz .
+vim .informationz 
+ls
+cd ..
+cd webclient/
+ls
+gulp
+ls
+vim -p www/templates/*
+git st
+rm www/templates/image-upload-display.html 
+gaa
+git cm "preview is working"
+git push origin uploadLayout
+cd Desktop/
+cd /Volumes/EVO/
+ls
+cd Users/ADN/
+ls
+cd Documents/appacademy/
+ls
+cd prepwork/
+ls
+cd ..
+ls
+vim tax_stuff
+vim -p www/js/*
+git st
+git push origin uploadlayout
+gulp
+vim -p lib/collection/email/*
+vim overhaul
+vim client/templates/mainApp/email/mainPanel/emailMainPanel.js 
+vim server/contactsAndRequests/requestMediator.js 
+phe
+phex
+gulp
+inv
+git st
+cd webclient/
+git st
+gaa
+git cm "more tweaks to reply draft bugs"
+git co master
+git pull
+mrt bundle ../bundle.tgz
+cd ..
+tar -xzvf bundle.tgz 
+cd bundle
+ls
+cd ..
+ls
+cd bundle
+ls
+cd bundle
+
+sudo cp -a bundle/. ../invibox-production/bundle/
+cd ..
+sudo cp -a bundle/. ../invibox-production/bundle/
+cd bundle
+rm -rf programs/server/node_modules/fibers/
+cd ..
+man zip
+zip -r invibox.zip bundle
+cd Documents/
+la
+cd ..
+cd Dropbox/
+la
+inv
+ls
+cd bundle
+ls
+vim package.json
+cd ..
+ls
+zip bundle invibox.zip
+rm invibox.zip 
+zip -r invibox.zip bundle
+cd webclient/
+ls
+vim packages.json
+cd ..
+cd bundle
+vim package.json 
+cd ..
+rm invibox.zip 
+zip -r invibox.zip bundle
+cd bundle
+vim package.json
+ls
+vim package.json 
+cd ..
+ls
+rm bundle.zip 
+rm invibox.zip 
+zip invibox.zip bundle
+zip -r invibox.zip bundle
+cd bundle
+ls
+vim package.json 
+cd ..
+rm invibox.zip 
+zip -r invibox.zip bundle
+ls
+cd bundle
+open .
+zip -r ../invibox.zip ./*
+cd ..
+ls
+vim -p www/js/*
+vim -p www/templates/*
+phex
+git st
+gaa
+git cm "photos update and send info to appropriate places but don't update arbitrary path in imgctrl"
+git push origin uploadlayout
+phex
+vim -p www/js/*
+vmi -p www/templates/*
+gulp
+cd ~/.vim
+ls
+cd bundle/
+ls
+cd ftplugin/
+ls
+vim html.vim 
+vim -p www/templates/*
+gulp
+git st
+gaa
+git cm "rewrite with regular array"
+git push origin uploadlayout
+vim -p www/js/*
+git st
+git co master
+git pull
+git co uploadlayoutJM
+git co -- .
+git co uploadlayoutJM
+vim -p www/js/*
+vim -p www/templates/*
+git pull origin uploadlayoutJM
+vim -p www/js/*
+git co uploadlayout
+vim -p www/js/*
+vim -p www/templates/*
+git co uploadlayoutJM
+git co -- .
+git co uploadlayoutJM
+vim -p www/js/*
+git st
+git co .. .
+git co -- .
+git git co uploadlayout
+git co uploadlayout
+gulp
+git st
+gaa
+git cm "upload layout sequentially uploads files, and captions update"
+git st
+gaa
+git cm "upload layout uploades imgs, brief flash of blankness, and saves captions"
+git push origin uploadlayout
+git st
+gaa
+git cm "image reloading no longer flickering"
+git push origin uploadlayout
+gaa
+git cm "move readFiles to imageHandler"
+gaa
+git cm "comment and cleanup"
+git push origin uploadlayout
+gaa
+git cm "add a comment"
+git push origin uploadlayout
+gulp
+vim -p www/js/*
+vim -p www/templates/*
+imv
+inv
+ls
+rm -r bundle
+rm -rf bundle
+rm bundle.tgz 
+rm invibox.zip 
+inv
+cd webclient/
+cd webclient/
+git st
+git pull
+git branch
+git log
+git co -b emailFixes
+git co  emailFixes
+git co -- .
+git co  emailFixes
+git log
+git st
+git branch
+git st
+c
+phex
+bashp
+phx
+cd server/
+ls
+vim -p www/js/*
+phx
+vim -p www/js/*
+phx
+vim www/js/laApp.controllers.js 
+phx
+cd ../lib/
+ls
+ls dataStructures/
+cd collection
+ls
+cd email/
+ls
+vim www/js/laApp.controllers.js 
+git st
+git co master
+git pull
+git co newstory
+cd ..
+cd ../..
+ls server/email/
+vim -p www/js/*
+vim www/templates/editStory.html 
+open /Volumes/EVO/
+vim -p *
+mrt
+cd client/static/stylesheets/
+ls
+cd email/
+ls
+cd compose/
+ls
+cd ../../
+cd ../
+ls r
+cd ..
+ls
+cd compatibility/
+ls
+vim redactor/redactor.css 
+git st
+gaa
+git cm "cosmetic fixes to compose panels, replies send, compose panel msgs don't save"
+gaa
+git cm "drafts saving, but updating buggy, all msgs send again YAY"
+git push origin email Fixes
+git push origin emailFixes
+git branch
+git co master
+git pull
+git co -b masterClone-emailFixes
+git merge emailFixes
+vim server/server.js 
+vim server.js 
+vim -p *
+vim emailCompose.css 
+vim -p client/templates/mainApp/email/composePanel/emailComposePanel.js client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js client/core/managers/email/emailManager.js client/core/managers/email/managers/conversationManager.js client/core/managers/email/managers/messageManager.js 
+vim server/server.js 
+git st
+gaa
+git cm "test merge completed"
+git st
+git push origin masterClone-emailFixes
+vim server/server.js 
+gaa
+git cm "fixed syntax error"
+git push
+mrt mongo
+vim lib/collection/email/outlines.txt 
+cd lib/collection/email/
+vim outlines.txt 
+vim mailbox.js 
+vimrc
+cd webclient/
+ls
+git st
+git co master
+git pull
+git co masterClone-emailFixes
+git merge master
+vim -p client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js client/static/stylesheets/email/reply/emailReply.css 
+git st
+gaa
+git cm "merge tyler's branch"
+git st
+git push origin masterClone-emailFixes
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadMessages.js
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js
+gaa
+git cm "fix merge conflict"
+git push
+git st
+git push origin masterClone-emailFixes
+vim Merge conflict in client/static/stylesheets/email/reply/emailReply.css
+vim client/static/stylesheets/email/reply/emailReply.css
+git st
+git co master
+git pull
+c
+vim client/templates/mainApp/ls
+cd server/
+ls
+cd client/static/stylesheets/
+grep -R messageSelected .
+vim -p server.js email/emailMediator.js email/mail/*
+vim client/templates/mainApp/email/mainPanel/email/showEmailList.js 
+git co -- .
+git co emailFixes
+cd ../../
+git co master
+git co -b furtherDraftFixes
+cd client/
+cd templates/
+grep -R controlPanel .
+vim mainApp/email/controlPanel/emailControlPanel.js 
+vim core/managers/email/managers/conversationManager.js 
+cd /Volumes/EVO/private/etc/host
+cd /Volumes/EVO/private/etc/hosts
+vim /Volumes/EVO/private/etc/hosts
+ls -l /private/etc/host
+ls -l /private/etc/hosts
+ls -l /Volumes/EVO/private/etc/hosts
+fg
+vim client/templates/mainApp/email/mainPanel/email/showEmailList.js 
+fg
+vim todo 
+mrt
+vim lib/collection/email/outlines.txt 
+inv
+ls
+cd webclient/
+ls
+cd server/
+git st
+mrt
+mrt mongo
+inv
+cd webclient/
+git st
+git log
+git co -b conversationList
+gaa
+git cm "conversationManager.readEmail now utilizes Session variable called currentConvos to grab viewEmail"
+git push origin conversationList
+vim -p client/templates/mainApp/email/mainPanel/email/showEmailList.js client/core/managers/email/emailManager.js client/core/managers/email/managers/*
+vim -S Session.vim 
+git st
+git co furtherDraftFixes
+git merge conversationList
+vim client/templates/mainApp/email/mainPanel/email/showEmailList.js 
+vim todo 
+mrt mongo
+mrt
+inv
+cd webclient/
+git st
+cd webclient/
+cd webclient/
+cd webclient/
+cd client/
+cd ..
+vim client/templates/login.js 
+ls
+ls tests/
+ls client/
+ls client/templates/
+ls
+find *.vim
+man find
+find fontkit/ -type f \( -name "*.eot" -or -name "*.svg" -or -name "*.ttf" \) 
+man find
+find client/ -type *.vim
+find client/ -type "*.vim"
+find client/ -name "*.vim"
+find server/ -name "*.vim"
+vim -p client/core/managers/email/managers/*
+ls
+vim -p client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js client/templates/mainApp/email/mainPanel/readPanel/emailReadMessages.js client/templates/mainApp/email/composePanel/emailComposePanel.js 
+ls
+fg
+vim -S server/Session.vim 
+mrt
+inv
+cd webclient/
+git st
+cd webclient/
+cd webclient/
+
+vim -p client/lib/collections
+
+
+vim -p lib/collection/email/*
+ls
+vim .gitignore 
+git add .gitignore 
+git cm "add vim session files to gitignore"
+git co -b draftsMergeConvo
+git pull origin style/email-convo-view
+git commit --amend -m "merge tyler's convo view fixes"
+ls
+cd webclient/
+ls
+vim client/templates/mainApp/email/mainPanel/email/showEmailList.js 
+ls
+vim -S drafts.vim 
+inv
+cd webclient/
+git st
+vim -S server/Session.vim 
+vim todo 
+vim todo
+mrt mongo
+mrt
+vim -S lib.vim 
+inv
+cd webclient/
+ls
+git st
+inv
+git co master
+git pull
+git co -b outboundformatting
+git co draftsMergeConvo
+ls
+mv server/Session.vim server.vim
+cd webclient/
+ls
+cd client/static/stylesheets/
+grep -R readText .
+vim email/reply/emailReadMessages.css 
+vim -p email/reply/emailReply.css email/reply/emailReadMessages.css 
+vim -p email/reply/emailReply.css 
+git st
+git add email/reply/emailReply.css 
+cd webclient/
+git st
+gaa
+git cm "reply panel is fixed to bottom of viewport because that was annoying"
+git commit --amend -m "reply panel fixed to bottom of viewport bc otherwise is annoying"
+grep -R prettifyDate .
+grep -R prettifyDate client/
+vim client/handlebars.js 
+git st
+gaa
+git cm "drafts save normally"
+git st
+git co master
+git co -b alotofstyingfixes
+git push origin draftsMergeConvo
+git st
+vim .gitignore 
+git add .gitignore 
+git cm "add vim session files to gitignore"
+vim -S lib.vim 
+vim -S server.vim 
+vim -S managers.vim 
+cd client/static/stylesheets/
+ls
+vim email/bandaids.css
+ls
+cd client/compatibility/
+ls
+cd redactor/
+l
+ls
+git st
+gaa
+git cm "add bandaids.css file, fix redactor paragraph spacing thing"
+vim -S drafts.vim 
+git st
+gaa
+git cm "email info popup pops up in right spot"
+vim email/bandaids.css 
+vim redactor.css 
+grep -R emailColorSelection client/
+ls
+vim plugins/fontcolor.js 
+vim -p client/templates/mainApp/email/helpers/EmailColorSelection.html client/templates/mainApp/email/helpers/EmailColorSelection.js 
+git st
+gaa
+git cm "add invibox colors"
+ls
+cd client/
+ls
+cd templates/
+ls
+cd mainApp/
+ls
+cd socialFeed/
+ls
+vim socialFeed.html 
+ls
+git st
+gaa
+cd ../../..
+cd ..
+ls
+git st
+gaa
+git cm "font choices display in appropriate font"
+inv
+ls
+git clone git@github.com:InviBox/Invibox-Main.git
+mv Invibox-Main/ main
+cd main/
+ls
+ls node/
+vim node/public/index.html 
+ls node/public/
+ls node/public/js/
+ls -r pu
+ls
+cd python/
+ls
+ls main/
+ls
+cd main/
+ls
+cl main/
+pwd
+cl templates/
+vim index.html 
+ls
+cd ..
+ls
+ls static/
+cd ..
+ls
+cd ..
+ls
+cl ../node/
+cl app/
+cl models/
+cd ..
+ls
+cl public/
+ls css/
+ls js/
+ls js/controllers/
+vim index.html 
+ls
+vim js/app.js 
+vim js/controllers/CompanyDropDownCtrl.js 
+ls
+cd ..
+cd main/
+ls
+grep -R Gmail .
+ls
+ls public/
+ls client/
+ls client/static/
+cl client/templates/
+vim splash.html 
+ls
+mkdir splashPage
+mv splash.* splashPage/
+ls
+mv animate.min.css jquery.* detectmobilebrowser.js smoothscroll.js modernizr.custom.js style.css login.js splashPage/
+ls
+mv about* splashPage/
+ls
+cd splashPage/
+ls
+vim about.html 
+vim splash.css 
+git st
+gaa
+git st
+git cm "moved splash page stuff into own directory, fixes to splash page styling"
+git st
+git push alotofstylingfixes
+git push origin alotofstylingfixes
+git st
+git push origin alotofstylingfixes
+git push origin alotofstyingfixes
+vim email/bandaids.css 
+vim client/compatibility/redactor/plugins/fontcolor.js 
+git st
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js 
+gaa
+git cm "spacing issue"
+git push origin alotofstyingfixes
+git branch
+git co draftsMergeConvo
+git st
+c
+ls
+git st
+phex
+phx
+gulp
+git co master
+git pull
+vim -S drafts.vim 
+mrt mongo
+mrt
+vim todo 
+inv
+cd webclient/
+vim todo 
+phx
+gulp
+git st
+git co master
+git co -b deleteMedia
+gaa
+git cm "delete Media works"
+git push origin deleteMedia
+vim -p www/js/*
+vim -p www/templates/*
+git st
+git co master
+git co deleteMedia
+git co -- . 
+git co deleteMedia
+vim www/templates/userProfile.html 
+git co master
+git branch -D deleteMedia
+git co -b deleteMedia
+vim www/js/laApp.controllers.js 
+vim www/js/laApp.services.js 
+vim www/templates/userProfile.html 
+vim www/js/laApp.services.js 
+gaa
+git cm "delete Media works"
+git push origin deleteMedia
+git push origin :deleteMedia
+git push origin deleteMedia
+vim notes
+rm node_modules/
+rm notes
+ls
+:q
+gulp;
+inv
+git st
+cd webclient/
+inv
+cd webclient/
+ls
+vim -S drafts.vim
+git st
+git pull
+git co -b attachments
+vim -S drafts.vim 
+purge
+cd
+purge
+mrt mongo
+mrt
+vim todo 
+inv
+mrt
+cd webclient/
+inv
+cd webclient/
+vim -S drafts.vim 
+cd 
+vim .informationz 
+git st
+git cm "start copying compose panel drafting stuff to reply"
+gaa
+git cm "start copying compose panel drafting stuff to reply"
+git co master
+git pull
+git co attachments
+vim -S attachments.vim 
+phx
+git st
+gaa
+git cm "fix up deleteMedia to use eventID"
+git push origin deleteMedia
+gulp
+vim -p www/templates/*
+vim -p www/js/*
+vim -S managers.vim 
+vim -S server.vim 
+vim -S drafts.vim 
+git st
+gaa
+git branch -m killViewPointer
+git st
+git cm "initial tweaks"
+vim -S drafts.vim 
+vim todo 
+mrt
+mrt mongo
+inv
+vim todo 
+inv
+cd webclient/
+inv
+cd webclient/
+ls
+cd client/
+grep -R .getComposeState() .
+grep -R .getComposeState\(\) .
+grep -R .getComposeState\(\) ../server/
+grep -R viewPointer .
+grep -R currentEmailDraft .
+grep -R "new EmailDraft" .
+grep -R viewpointer .
+grep -R viewpointer/i .
+grep -R ViewPointer .
+grep -R viewPointer .
+git st
+gaa
+git cm "viewpointer half gone, add lastClickedConversation session var, viewConversation-related stuff reorganized"
+gaa
+git cm "viewpointer half gone, add lastClickedConversation session var, viewConversation-related stuff reorganized"
+git commit --amend -m ""
+git commit --amend -m "viewpointer mostly gone, add lastClickedConversation var, viewConversation stuff reorganized, added sessionVars.js file"
+git push origin killViewPointer
+grep -R setComposeState client/
+cd ..
+vim lib.vim 
+vim -S drafts.vim 
+vim -S managers.vim 
+vim -S server.vim 
+vim -S lib.vim 
+c
+git st
+gaa
+git cm "msgs still load, but convo ID is missing"
+git co master
+git pull
+git co -b stylingfor1.0
+cd client/static/stylesheets/
+sl
+ls
+cd client/static/stylesheets/
+grep -R mainAppHeader .
+mrt mongo
+mrt
+cd ../../
+cd ..
+cd client/templates/mainApp/mainApp.html 
+vim mainApp.css 
+fg
+grep -R mainNavBar .
+mv ~/Desktop/inv_logo_black.png public/img/
+ls public/img/
+ls
+ls client/static/
+vim mainApp.css 
+grep -R controlPanel .
+ls public/fonts/
+mv -r ~/Downloads/chrome\ DLs/font-awesome-4.2.0/css ~/Downloads/chrome\ DLs/font-awesome-4.2.0/fonts .
+mv  ~/Downloads/chrome\ DLs/font-awesome-4.2.0/css ~/Downloads/chrome\ DLs/font-awesome-4.2.0/fonts .
+mv css client/static/stylesheets/
+mv fonts/* public/fonts/
+cd client/static/stylesheets/
+sl
+ls
+mv css fontAwesome
+ls fontAwesome/
+c
+grep -R defaultMailboxes client/
+vim -S lib.vim 
+vim email/emailControl.css 
+fg
+c
+grep -R mailboxGroupPanel .
+git st
+gaa
+git cm "add fontawesome, replace mbox and mainnavbar icons, change some colors"
+git st
+gaa
+git cm "new icons in mainnavbar, groups header"
+vim email/group/listMailboxGroup.css 
+vim client/templates/mainApp/mainApp.html
+git st
+git pushorigin stylingfor1.0
+git push origin stylingfor1.0
+cd client/static/stylesheets/
+cd ../../..
+grep -R eyePreview client/
+grep -R requestPreview .
+vim client/templates/mainApp/contactsAndRequests/requests/requestList/RequestList.js 
+vim client/templates/mainApp/contactsAndRequests/requests/requestList/requestPreview.js 
+git st
+gaa
+git cm "date in request preview fixed"
+git push origin stylingfor1.0
+vim contactsAndRequests/requests/requestsLists.css 
+grep -R notification .
+git st
+gaa
+git cm "notification dot repositioned"
+vim mainApp.css
+grep -R blockButton .
+gaa
+git cm "snooze and block buttons repo'd"
+vim contactsAndRequests/requests/requestsGroups.css 
+grep -R requestButton .
+fg
+grep -R requestButton client/
+grep -R requestCategories client/
+vim client/templates/mainApp/contactsAndRequests/requests/requestList/RequestList.js 
+git st
+gaa
+git cm "request list tabs working, not styled well"
+git st
+gaa
+git cm "Contacts, Requests, Groups headers aligned
+"
+fg
+cd client/templates/mainApp/contactsAndRequests/contacts
+grep -R editContact .
+git st
+gaa
+git cm "more tweaks to tab things"
+vim contactsAndRequests/requests/requestsLists.css 
+grep -R groupArrow .
+ls
+vim fontAwesome/font-awesome.css 
+vim contactsAndRequests/contacts/display/contactsGroups.css 
+grep -R arrow.svg .
+fg
+cd ../../../
+cd ../../
+gaa
+git cm "adds plus icon for contacts, seperates reply button and reply dropdown caret"
+vim email/reply/emailReadMessages.css 
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadMessages.html 
+grep -R trashButton .
+vim email/toolbar/emailToolbar.css 
+fg
+grep -R trash.svg .
+git st
+gaa
+git cm "email toolbar icons replaced, still works"
+git push origin stylingfor1.0
+fg
+vim -p client/templates/mainApp/email/mainPanel/toolbar/emailToolbar.html client/templates/mainApp/email/mainPanel/toolbar/emailToolbar.js 
+git st
+gaa
+git cm "fix logo"
+git push origin stylingfor1.0
+vim mainApp.css 
+cd ../../..
+c
+git st
+git co master
+git co killViewPointer
+git st
+vim fontAwesome/font-awesome.css 
+grep -R isNowViewing client/
+git st
+gaa
+git cm "reply drafts save and update, but do not load the right panel"
+vim -S drafts.vim 
+vim -S managers.vim 
+vim -S server.vim 
+vim -S lib.vim 
+mrt
+mrt mongo
+vim todo 
+inv
+cd webclient/
+mrt
+mrt mongo
+fg
+jobs
+inv
+cd webclient/
+vim drafts.vim 
+vim lib.vim 
+grep -R displayAddress client/
+grep -R displayEmailAddress client/
+vim client/templates/mainApp/email/composePanel/displayEmailAddress.js 
+grep -R inreplyto client/
+grep -R inreplyto server/
+cd client/static/stylesheets/
+grep -R groupMarker .
+git st
+gaa
+git cm "replies are saving and updating, and loading as expected, but sending is messing up flags somehow; plus, draft indicator in showEmailList template"
+git push origin killViewPointer
+ls :wa
+la
+rm :wa
+git st
+vim email/showEmail.css 
+vim -S lib.vim 
+vim -S server.vim 
+vim -S managers.vim 
+vim -S drafts.vim 
+git st
+gaa
+git cm "replies are loading, but sending is weird"
+git branch
+git co stylingfor1.0
+cd
+ls
+la
+cd dotfiles/
+git st
+gaa
+git cm "updates"
+gpom
+git push
+git st
+git push origin ornish
+git co killViewPointer
+ls
+git st
+git push origin stylingfor1.0
+mrt
+mrt mongo
+vim -S drafts.vim 
+fg
+git st
+gaa
+git cm "tweaks"
+git co master
+git pull
+mrt
+git co killViewPointer
+git co -- .
+git co killViewPointer
+meteor -v
+man meteor
+meteor help
+grep -R ont-awesome.min.css client/
+ls client/static/stylesheets/
+ls client/compatibility/
+ls public/
+ls public/fonts/
+c
+grep -R ont-awesome.min.css client/
+git st
+git add client/static/stylesheets/email/emailControl.css 
+git cm "comment out fontawesome thing, because import is timing out"
+git st
+gaa
+git cm "prep for mtg"
+git co master
+git pull
+git co -b sept2mtg
+git merge killViewPointer
+vim -S server.vim 
+vim -S lib.vim 
+vim client/static/stylesheets/email/emailControl.css 
+vim -S managers.vim 
+vim -S drafts.vim 
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js
+git st
+git co -- .
+git stash
+git co master
+git branch -D sept2mtg
+git co master
+git st
+git st 
+git co -- .
+git st
+git help checkout
+git co -f -- .
+git co master
+git co -f master
+git st
+mrt bundle
+mrt bundle ../bundle.tgz
+cd ..
+tar -zxvf bundle.tgz
+cd bundle
+rm -rf programs/server/node_modules/fibers/
+vim package.json
+zip -r ../invibox.zip ./*
+git st
+cd ../
+cd webclient/
+git st
+git pull
+vim .meteor/.id
+gaa
+git branch -D sept2mtg
+git co -b sept2mtg
+git st
+git cm "prep for mtg"
+mrt
+git st
+git st
+git st
+git co master
+git branch -D sept2mtg
+git st
+git co attachments
+git branch
+git branch -D convoFixes
+git push origin :convoFixes
+git branch -D checkboxFixes
+git push origin :checkboxFixes
+git branch -D ccbcc
+git push origin :ccbcc
+git branch -D masterCloneCCBCC
+git push origin :masterCloneCCBCC
+git branch
+git branch -D masterCloneMailFixes
+git push origin :masterCloneMailFixes
+git branch -D masterClone-emailFixes
+git push origin :masterClone-emailFixes
+git branch
+git branch -D emailFixes
+git push origin :emailFixes
+git branch -D alotofstyingfixes
+git push origin :alotofstyingfixes
+git branch -D draftsMergeConvo
+git push origin :draftsMergeConvo
+git branch
+git branch -D masterCloneDrafts
+git push origin :masterCloneDrafts
+git branch -D redactor
+git push origin :redactor
+git branch
+git branch -D draftBox
+git push origin :draftBox
+git branch -D hiddenEmails
+git push origin :hiddenEmails
+git branch
+git branch -D furtherDraftFixes
+git push origin :furtherDraftFixes
+git push origin :conversationList
+git branch -D conversationList
+git branch -D convoScrollFix
+git push origin :convoScrollFix
+git br
+git branch
+git branch -D emailListFixes
+git push origin :emailListFixes
+git branch
+git co -b attachments
+mrt
+mrt mongo
+c
+vim -S drafts.vim 
+grep -R modal client/templates/
+c
+vim client/templates/mainApp/email/emailApp.html 
+vim -S attachments.vim 
+cd client/static/stylesheets/
+grep -R composePanelFooter .
+vim -S drafts.vim 
+rm attachments.vi
+ls
+vim mainApp.css 
+grep -R defaultMailboxes .
+grep -R defaultMailbox .
+git st
+git co master
+git add client/templates/mainApp/email/controlPanel/
+git cm "fix default mbox icon ordering"
+git push origin master
+git co attachments
+git st
+vim email/emailControl.css 
+vim client/templates/mainApp/email/controlPanel/defaultMailboxes.html 
+vim -S attachments.vim 
+git st
+phx
+vim -p www/js/*
+git st
+gaa
+git cm "updates"
+git co master
+vim -p www/js/*
+D
+vim client/templates/mainApp/email/controlPanel/defaultMailboxes.js 
+vim -S attachments.vim 
+vim email/compose/emailCompose.css 
+gaa
+git cm "dropzone created"
+git st
+git log
+vim -S managers.vim 
+fg
+cd client/static/st
+cd client/static/stylesheets/
+grep -R import .
+grep -R import$ .
+grep -R import( .
+grep -R "import(" .
+grep -R @import
+grep -R @import .
+grep -R "click .mailboxList" client/
+vim email/emailControl.css 
+grep -R google .
+grep -R goog .
+c
+phx
+vim -p www/js/*
+git branch
+git co newstory
+vim -p www/js/*
+cd client/templates/
+ls
+cd mainApp/
+ls
+cd email/
+ls
+cd helpers/
+ls
+ls ../mainPanel/
+#vim -p attachments.jw
+cd ../../
+cd ../..
+cd ..
+grep -R displayEmailAddress client/
+mv client/templates/mainApp/email/composePanel/displayEmailAddresss.* client/templates/mainApp/email/helpers/
+mv client/templates/mainApp/email/composePanel/displayEmailAddresss.js /templates/mainApp/email/helpers/
+mv client/templates/mainApp/email/composePanel/displayEmailAddresss.js client/templates/mainApp/email/helpers/
+mv client/templates/mainApp/email/composePanel/displayEmailAddresss.js ./client/templates/mainApp/email/helpers/
+ls client/templates/mainApp/email/helpers/
+ls client/templates/mainApp/email/composePanel/
+mv client/templates/mainApp/email/composePanel/displayEmailAddress.js ./client/templates/mainApp/email/helpers/
+mv client/templates/mainApp/email/composePanel/displayEmailAddress.html ./client/templates/mainApp/email/helpers/
+vim -p attachments.js attachments.html
+fg
+cd ../../..
+cd ../static/stylesheets/
+ls
+vim -S managers.vim 
+vim -S lib.vim 
+vim email/helpers/attachments.css
+git st
+gaa
+git st
+gaa
+git cm "passing off attachments to dmitry"
+git push origin attachments
+git st
+git co master
+git pull
+cd ../../..
+git st
+c
+git co features/registration
+git co feature/registration
+git pull
+mrt
+git co killViewPointer
+git co -- .
+git co killViewPointer
+git st
+vim -S drafts.vim
+git log
+cd client/static/stylesheets/
+vim email/showEmail.css 
+grep -R emailRead .
+vim email/reply/emailReply.css 
+vim -S drafts.vim 
+vim -S managers.vim 
+vim -S server.vim 
+vim -S lib.vim
+git st
+gaa
+git cm "email drafts load, send correctly for both compose and reply"
+git co master
+git pull
+git co -b masterCloneReplyDrafts
+git merge killViewPointer
+git st
+vim .meteor/.id 
+git add .meteor/.id 
+vim client/core/managers/email/emailManager.js 
+git add client/core/managers/email/emailManager.js 
+vim client/core/managers/email/managers/conversationManager.js 
+vim client/templates/mainApp/email/mainPanel/email/showEmailList.js 
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadMessages.html 
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadMessages.js 
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js 
+gaa
+git cm "fix merge conflicts"
+grep -R <<<< client/
+grep -R "<<<<" client/
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadMessages.js 
+gaa
+git rm "get rid of commented merge conflict"
+git cm "get rid of commented merge conflict"
+mrt
+git add client/templates/mainApp/email/controlPanel/
+git st
+gaa
+git cm "remove console logs"
+git st
+gaa
+git cm "draft mailbox loading again"
+git commit --amend -m "fix currentMailbox issue"
+git st
+git push origin masterCloneReplyDrafts
+git st
+git co master
+git st
+git branch
+git branch -D outboundformatting
+git branch -D feature/registration
+git co -b socialRegistration
+git co master
+git co -b replyPanel2.0
+git co masterCloneReplyDrafts
+git st
+git co -- .
+git co masterCloneReplyDrafts
+git co replyPanel2.0
+mrt
+cd client/static/stylesheets/
+fg
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadMessages.html
+grep -R '$(".messages")'
+grep -R '$(".messages")' client/
+grep -R "$('.messages')" client/
+grep -R "\$\('.messages'\)" client/
+grep -R '\.css("height'
+grep -R '\.css("height' client/
+vim ../todo 
+mrt mongo
+vim email/reply/emailReply.css 
+git st
+gaa
+git cm "preliminary restyling"
+vim -S drafts.vim 
+inv
+cd webclient/
+cd ..
+cd webclient/
+inv
+cd webclient/
+vim -S server
+vim -S server.vim 
+cd client/static/stylesheets/
+vim -p email/reply/emailReply.css email/reply/emailReadMessages.css 
+vim -S lib.vim 
+vim -S managers.vim 
+vim -S drafts.vim 
+vim todo 
+mrt
+mrt mongo
+la
+c
+la
+cd dotfiles/
 git st

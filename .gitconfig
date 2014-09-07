@@ -5,9 +5,10 @@
 	helper = osxkeychain
 [core]
 	editor = vim -w
-	excludesfile = /Users/ADN/.gitignore_global
+	excludesfile = /Users/someguy/.gitignore_global
 [alias]
 	st = status
 	co = checkout
+	cob = checkout -b
 	cm = commit -m 
 	df = diff

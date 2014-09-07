@@ -100,7 +100,8 @@ alias cdbones="cd ~/Documents/Work/Webism/projects/bonesMP3/"
 alias gpage="cd ~/Documents/Work/Webism/projects/itsthejazzkid.github.io/"
 alias loud="cd ~/Documents/appacademy/portfolio_work/LoudCloud/"
 alias appa="cd ~/Documents/appacademy/"
-alias sprinkl="cd ~/Documents/work/Webism/projects/sprinkler-tech-site/sprinkler"
-alias phex="cd ~/Documents/work/webism/projects/phoenixApp"
+alias spr="cd ~/Documents/work/sprinkler-tech-site/"
+alias phx="cd ~/Documents/work/phoenixApp"
+alias inv="cd ~/Documents/work/invibox"
 
 

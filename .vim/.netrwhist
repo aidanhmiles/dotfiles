@@ -1,8 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/ADN/dotfiles/.vim/bundle/ftdetect'
-let g:netrw_dirhist_2='/Users/ADN/Documents/appacademy/portfolio_work/LoudCloud/app/assets/stylesheets'
-let g:netrw_dirhist_3='/Users/ADN/Documents/work/webism/projects/forwardLane'
-let g:netrw_dirhist_4='/Users/ADN/Documents/work/webism/projects/phoenixApp/node_modules'
-let g:netrw_dirhist_5='/Users/ADN/Documents/work/webism/projects/phoenixApp/.git'
-let g:netrw_dirhist_6='/Users/ADN/gitStuff'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/someguy/Documents/work/phoenixApp/www/js/main'
+let g:netrw_dirhist_2='/Users/someguy/Documents/work/invibox/webclient/client/templates/mainApp/email/mainPanel/readPanel/popups'
