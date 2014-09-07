@@ -507,3 +507,6 @@ mv setup.sh dotfiles/
 cd dotfiles/
 ls
 git st
+gaa
+git cm "add setup.sh, remove newtab from bashp"
+vim setup.sh 
