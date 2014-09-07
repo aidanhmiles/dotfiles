@@ -1,347 +1,3 @@
-cd projects/personal/
-ls
-git status
-ls Assets/
-mkdir oldstuff
-mv main_folder/ notes/ oldstuff/
-vim .gitignore
-ls
-fg
-git status
-git add -A
-git status
-ls
-rvm gemset list
-rvm gemset use ruby2rails3.2
-ls
-rails s
-pry
-git status
-git add -A "mp3player views create SM sounds, playlists are all collections, and each mp3 view holds onto its own SM sound AND BB sound now"
-git add -A 
-git commit -m "mp3player views create SM sounds, playlists are all collections, and each mp3 view holds onto its own SM sound AND BB sound now"
-fg
-mv sounds/mp3Player.js sounds/mp3view.js
-git add -A
-git commit -m "current sound properties turned into functions to avoid superfluous attr setting; also sounds play from global playlist and keep track of themselves just fine"
-git config --global alist.st status
-cd
-vim .gitconfig 
-git st
-git cm "players track sounds, and shading works again"
-bashp
-gaa
-appa
-gaa
-cd -
-gaa
-gitst
-git st
-git cm "players track sounds, and shading works again"
-git log -p
-git log
-c
-cd
-ls
-cd Documents/professional_stuff/
-ls
-vim jobs.txt 
-appa
-cd job_search/
-ls
-vim opps.txt
-ls
-cd ..
-ls
-ls writings/
-cd ..
-ls
-cd professional_stuff/
-ls
-appa
-cd portfolio_work/LoudCloud/
-rvm gemset use appacademy
-git st
-gaa
-git cm "shading only applies to one mp3 view now"
-gpom
-gphm
-git commit --amend -m "shading applies to only one mp3 view now; heroku confirmed working"
-c
-git rm config/application.yml 
-cd
-bashp
-cd dotfiles/
-git rm .bash_profile 
-git cm "remove keys from bashp"
-gaa
-git cm "remove keys from bashp"
-git rm .bash_profile 
-git add .bash_profile
-ls
-ls -a
-vim .bash_profile
-mv .bash_profile .haha
-vim .gitignore 
-git st
-gaa
-git status
-git cm "reset bash profile"
-appa
-vim config/application.yml 
-rake figaro:heroku
-cd
-ls
-ls dotfiles/
-cd dotfiles/
-ls
-ls -a
-git st
-git cm "rest bashp"
-gaa
-git add -A
-git cm "reset bashp"
-git rm .bash_profile
-gpom
-git push origin master
-ls
-ls -a
-la
-mv .haha .bash_profile
-bashp
-git st
-cd dotfiles/
-ls
-la
-git status
-vim .gitignore 
-gaa
-bashp
-git st
-vim .bash_profile 
-gaa
-git add -A
-git cm "re-add bashp"
-gpom
-heroku logs
-c
-bashp
-vim job_search/opps.txt 
-vim sounds/show.json.jbuilder 
-vim sounds_controller.rb 
-vim models/sound.rb 
-vim LoudCloud/TODO 
-vim routers/router.js 
-cd portfolio_work/LoudCloud/
-cd app/assets/javascripts/
-
-vim collections/stream.js 
-vim streams/stream_item.jst.ejs 
-fg
-vim mp3_player.js 
-appa
-cd job_search/
-ls
-vim
-bashp
-vim opps.txt 
-cd
-open dotfiles/.bash_profile -a Textedit
-bashp
-appa
-cd portfolio_work/LoudCloud/app/assets/javascripts/
-bashp
-appa
-cd portfolio_work/LoudCloud/
-ls
-rails s
-rvm gemset use appacademy
-ls
-cd models/
-cd views/
-cd ../templates/
-cd col
-cd collections/
-ls
-ls
-vim mp3_player.js sound.js 
-vim mp3_player.js 
-cd .vim
-ls
-ls bundle/
-ls
-cd bundle/ftplugin/
-ls
-cd ..
-ls ftdetect/
-vim ftdetect/haml.vim 
-ls
-cd ..
-cd
-vim
-vimrc
-ls
-vim TODO 
-git st
-gaa
-git cm "autoplay sort of works"
-vim ~/Music/theProject/keymappings.txt 
-pry
-cd app/
-ls
-cd controllers/
-ls
-cd ap
-ls
-cd api/
-ls
-c
-ls
-cd views/api/
-ls
-cd users/
-ls
-rails c
-rvm gemset use appacademy
-ls
-ls
-fg
-vim show.json.jbuilder 
-cd ..
-ls
-vim mp3_player.js 
-vim -p sounds/mp3view.js sounds/sound_container.js 
-vim users/profile.jst.ejs 
-vim playlists.js 
-vim routers/router.js
-cd ../../
-cd ..
-git st
-vim -p users/show.json.jbuilder users/stream.json.jbuilder
-vim models/user.rb 
-rails c
-rails s
-vim users_controller.rb 
-ls
-ls app/models/
-vim -p app/models/sound.rb app/models/user.rb 
-fg
-rails c
-rvm gemset use appacademyu
-rvm gemset use appacademy
-rails c
-pry
-rvm gemset use appacademy
-cdweb
-ls
-cd projects/
-ls
-mkdir test
-cd testls
-cd test
-ls
-rvm gemset use ruby2rails3.2
-bashp
-ls
-rails new RailsDemo
-cd RailsDemo/
-vim Gemfile 
-cdweb
-ls
-cd projects/scienceFlair/
-ls
-cd sflair_heroku/
-ls
-ls app/
-ls app/assets/mo
-ls app/models/
-ls app/views/
-cd app/views/refinery/pages/home.html.erb 
-vim app/views/refinery/pages/home.html.erb
-vim app/views/layouts/application.html.erb 
-ls app/controllers/
-vim config/routes.rb 
-c
-rvm gemset use appacademy
-rails s
-rails c
-vim app/views/api/users/stream.json.jbuilder 
-c
-pry
-cd Desktop/
-ls
-vim DropnShop 
-rm DropnShop 
-ls
-rm The\ Ultimate\ Tar\ Command\ Tutorial\ with\ 10\ Practical\ Examples.webarchive 
-ls
-fg
-fg
-appa
-cl portfolio_work/LoudCloud/
-bashp
-cd app/assets/javascripts/
-ls
-cl models/
-cl views/
-cl collections/
-cl ../templates/
-cl Desktop/killthis/
-ls
-la
-cd ..
-rm -r killthis/
-cl Desktop/
-mv desk.jpeg ~/Pictures/
-ls gh*
-mv gh* temp\ music\ files/
-ls
-ls AI*
-mv AI* ~/Documents/appacademy/tests/
-ls
-mv cakedog_loop.mp3 ~/Movies/
-ls
-mv marley\@SBbowl.wav cakedog_loop.wav ~/Movies/
-ls
-mv running\ away/ ~/Music/Ableton/Loop\ Jamz/Reggay1\ Project/
-ls
-ls temp\ music\ files/
-c
-s
-ls
-a
-la
-ls home*
-mv home* ~/Documents/work/Sprinkler/
-ls
-c
-appa
-c
-cd portfolio_work/LoudCloud/
-ls
-rvm gemset use appacademy
-c
-cdweb
-cd projects/personal/
-ssh aidan@aidanmil.es
-cd
-cd .s
-cd .ssh/
-ls
-ssh aidasjob@aidanmil.es
-vim -p id_rsa id_rsa.pub 
-vim id_dsa_admin 
-ssh 199.188.204.167
-ssh -p 21098 aidasjob@aidanmil.es
-CD
-cd
-ls
-c
-appa
-cd portfolio_work/LoudCloud/
-appa
-cd portfolio_work/LoudCloud/
-rvm gemset use appacademy
 rvm gemset use appacademy
 ls
 c
@@ -10008,6 +9664,351 @@ git branch
 git co stylingfor1.0
 cd
 ls
+la
+cd dotfiles/
+git st
+gaa
+git cm "updates"
+gpom
+git push
+git st
+git push origin ornish
+git co killViewPointer
+ls
+git st
+git push origin stylingfor1.0
+mrt
+mrt mongo
+vim -S drafts.vim 
+fg
+git st
+gaa
+git cm "tweaks"
+git co master
+git pull
+mrt
+git co killViewPointer
+git co -- .
+git co killViewPointer
+meteor -v
+man meteor
+meteor help
+grep -R ont-awesome.min.css client/
+ls client/static/stylesheets/
+ls client/compatibility/
+ls public/
+ls public/fonts/
+c
+grep -R ont-awesome.min.css client/
+git st
+git add client/static/stylesheets/email/emailControl.css 
+git cm "comment out fontawesome thing, because import is timing out"
+git st
+gaa
+git cm "prep for mtg"
+git co master
+git pull
+git co -b sept2mtg
+git merge killViewPointer
+vim -S server.vim 
+vim -S lib.vim 
+vim client/static/stylesheets/email/emailControl.css 
+vim -S managers.vim 
+vim -S drafts.vim 
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js
+git st
+git co -- .
+git stash
+git co master
+git branch -D sept2mtg
+git co master
+git st
+git st 
+git co -- .
+git st
+git help checkout
+git co -f -- .
+git co master
+git co -f master
+git st
+mrt bundle
+mrt bundle ../bundle.tgz
+cd ..
+tar -zxvf bundle.tgz
+cd bundle
+rm -rf programs/server/node_modules/fibers/
+vim package.json
+zip -r ../invibox.zip ./*
+git st
+cd ../
+cd webclient/
+git st
+git pull
+vim .meteor/.id
+gaa
+git branch -D sept2mtg
+git co -b sept2mtg
+git st
+git cm "prep for mtg"
+mrt
+git st
+git st
+git st
+git co master
+git branch -D sept2mtg
+git st
+git co attachments
+git branch
+git branch -D convoFixes
+git push origin :convoFixes
+git branch -D checkboxFixes
+git push origin :checkboxFixes
+git branch -D ccbcc
+git push origin :ccbcc
+git branch -D masterCloneCCBCC
+git push origin :masterCloneCCBCC
+git branch
+git branch -D masterCloneMailFixes
+git push origin :masterCloneMailFixes
+git branch -D masterClone-emailFixes
+git push origin :masterClone-emailFixes
+git branch
+git branch -D emailFixes
+git push origin :emailFixes
+git branch -D alotofstyingfixes
+git push origin :alotofstyingfixes
+git branch -D draftsMergeConvo
+git push origin :draftsMergeConvo
+git branch
+git branch -D masterCloneDrafts
+git push origin :masterCloneDrafts
+git branch -D redactor
+git push origin :redactor
+git branch
+git branch -D draftBox
+git push origin :draftBox
+git branch -D hiddenEmails
+git push origin :hiddenEmails
+git branch
+git branch -D furtherDraftFixes
+git push origin :furtherDraftFixes
+git push origin :conversationList
+git branch -D conversationList
+git branch -D convoScrollFix
+git push origin :convoScrollFix
+git br
+git branch
+git branch -D emailListFixes
+git push origin :emailListFixes
+git branch
+git co -b attachments
+mrt
+mrt mongo
+c
+vim -S drafts.vim 
+grep -R modal client/templates/
+c
+vim client/templates/mainApp/email/emailApp.html 
+vim -S attachments.vim 
+cd client/static/stylesheets/
+grep -R composePanelFooter .
+vim -S drafts.vim 
+rm attachments.vi
+ls
+vim mainApp.css 
+grep -R defaultMailboxes .
+grep -R defaultMailbox .
+git st
+git co master
+git add client/templates/mainApp/email/controlPanel/
+git cm "fix default mbox icon ordering"
+git push origin master
+git co attachments
+git st
+vim email/emailControl.css 
+vim client/templates/mainApp/email/controlPanel/defaultMailboxes.html 
+vim -S attachments.vim 
+git st
+phx
+vim -p www/js/*
+git st
+gaa
+git cm "updates"
+git co master
+vim -p www/js/*
+D
+vim client/templates/mainApp/email/controlPanel/defaultMailboxes.js 
+vim -S attachments.vim 
+vim email/compose/emailCompose.css 
+gaa
+git cm "dropzone created"
+git st
+git log
+vim -S managers.vim 
+fg
+cd client/static/st
+cd client/static/stylesheets/
+grep -R import .
+grep -R import$ .
+grep -R import( .
+grep -R "import(" .
+grep -R @import
+grep -R @import .
+grep -R "click .mailboxList" client/
+vim email/emailControl.css 
+grep -R google .
+grep -R goog .
+c
+phx
+vim -p www/js/*
+git branch
+git co newstory
+vim -p www/js/*
+cd client/templates/
+ls
+cd mainApp/
+ls
+cd email/
+ls
+cd helpers/
+ls
+ls ../mainPanel/
+#vim -p attachments.jw
+cd ../../
+cd ../..
+cd ..
+grep -R displayEmailAddress client/
+mv client/templates/mainApp/email/composePanel/displayEmailAddresss.* client/templates/mainApp/email/helpers/
+mv client/templates/mainApp/email/composePanel/displayEmailAddresss.js /templates/mainApp/email/helpers/
+mv client/templates/mainApp/email/composePanel/displayEmailAddresss.js client/templates/mainApp/email/helpers/
+mv client/templates/mainApp/email/composePanel/displayEmailAddresss.js ./client/templates/mainApp/email/helpers/
+ls client/templates/mainApp/email/helpers/
+ls client/templates/mainApp/email/composePanel/
+mv client/templates/mainApp/email/composePanel/displayEmailAddress.js ./client/templates/mainApp/email/helpers/
+mv client/templates/mainApp/email/composePanel/displayEmailAddress.html ./client/templates/mainApp/email/helpers/
+vim -p attachments.js attachments.html
+fg
+cd ../../..
+cd ../static/stylesheets/
+ls
+vim -S managers.vim 
+vim -S lib.vim 
+vim email/helpers/attachments.css
+git st
+gaa
+git st
+gaa
+git cm "passing off attachments to dmitry"
+git push origin attachments
+git st
+git co master
+git pull
+cd ../../..
+git st
+c
+git co features/registration
+git co feature/registration
+git pull
+mrt
+git co killViewPointer
+git co -- .
+git co killViewPointer
+git st
+vim -S drafts.vim
+git log
+cd client/static/stylesheets/
+vim email/showEmail.css 
+grep -R emailRead .
+vim email/reply/emailReply.css 
+vim -S drafts.vim 
+vim -S managers.vim 
+vim -S server.vim 
+vim -S lib.vim
+git st
+gaa
+git cm "email drafts load, send correctly for both compose and reply"
+git co master
+git pull
+git co -b masterCloneReplyDrafts
+git merge killViewPointer
+git st
+vim .meteor/.id 
+git add .meteor/.id 
+vim client/core/managers/email/emailManager.js 
+git add client/core/managers/email/emailManager.js 
+vim client/core/managers/email/managers/conversationManager.js 
+vim client/templates/mainApp/email/mainPanel/email/showEmailList.js 
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadMessages.html 
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadMessages.js 
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js 
+gaa
+git cm "fix merge conflicts"
+grep -R <<<< client/
+grep -R "<<<<" client/
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadMessages.js 
+gaa
+git rm "get rid of commented merge conflict"
+git cm "get rid of commented merge conflict"
+mrt
+git add client/templates/mainApp/email/controlPanel/
+git st
+gaa
+git cm "remove console logs"
+git st
+gaa
+git cm "draft mailbox loading again"
+git commit --amend -m "fix currentMailbox issue"
+git st
+git push origin masterCloneReplyDrafts
+git st
+git co master
+git st
+git branch
+git branch -D outboundformatting
+git branch -D feature/registration
+git co -b socialRegistration
+git co master
+git co -b replyPanel2.0
+git co masterCloneReplyDrafts
+git st
+git co -- .
+git co masterCloneReplyDrafts
+git co replyPanel2.0
+mrt
+cd client/static/stylesheets/
+fg
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadMessages.html
+grep -R '$(".messages")'
+grep -R '$(".messages")' client/
+grep -R "$('.messages')" client/
+grep -R "\$\('.messages'\)" client/
+grep -R '\.css("height'
+grep -R '\.css("height' client/
+vim ../todo 
+mrt mongo
+vim email/reply/emailReply.css 
+git st
+gaa
+git cm "preliminary restyling"
+vim -S drafts.vim 
+inv
+cd webclient/
+cd ..
+cd webclient/
+inv
+cd webclient/
+vim -S server
+vim -S server.vim 
+cd client/static/stylesheets/
+vim -p email/reply/emailReply.css email/reply/emailReadMessages.css 
+vim -S lib.vim 
+vim -S managers.vim 
+vim -S drafts.vim 
+vim todo 
+mrt
+mrt mongo
+la
+c
 la
 cd dotfiles/
 git st
