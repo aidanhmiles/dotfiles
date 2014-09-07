@@ -88,7 +88,7 @@ alias gcb="git checkout -b"
 
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
-   source ~/.newtab
+   #source ~/.newtab
 fi
 
 # for projects
