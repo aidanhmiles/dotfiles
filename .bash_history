@@ -510,3 +510,173 @@ git st
 gaa
 git cm "add setup.sh, remove newtab from bashp"
 vim setup.sh 
+gaa
+git cm "comment setup.sh"
+cd
+inv
+mkdir Documents/work
+open Documents/work/
+open Documents/
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+brew doctor
+brew install macvim
+curl -fsSL https://raw.github.com/cknadler/vim-anywhere/master/install | bash
+echo 'export PATH=$HOME/local/bin:$PATH' >> ~/.bashrc
+. ~/.bashrc
+mkdir ~/local
+mkdir ~/node-latest-install
+cd ~/node-latest-install
+curl http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1
+./configure --prefix=~/local
+make install # ok, fine, this step probably takes more than 30 seconds...
+cd
+inv
+cd webclient/
+npm install
+la
+mrt
+cd
+curl https://install.meteor.com/ | sh
+inv
+cd webclient/
+mrt
+meteor
+mrt
+meteorite
+npm install -g meteorite
+vim Dropbox/.informationz 
+vim Dropbox/.informationz
+inv
+cd webclient/
+vim to
+mv Downloads/Pro.terminal dotfiles/
+git st
+cd client/static/stylesheets/
+git st
+fg
+cd
+cd .vim
+ls
+ls bundle/
+ls autoload/
+vim -p email/reply/emailReadMessages.css email/reply/emailReply.css 
+vim -S drafts.vim 
+inv
+cd webclient/
+cd client/static/stylesheets/
+vim
+cd
+cd .vim
+vimrc
+cd bundle/
+ls
+cd vim-commentary/
+ls
+la
+cd ..
+ls vim-commentary/
+rm -r vim-commentary/
+git clone git://github.com/tpope/vim-commentary.git
+ls vim-colorschemes/
+ls vim-repeat/
+rm -r vim-repeat/
+git clone git@github.com:tpope/vim-surround.git
+ls syntastic/
+la syntastic/
+ls colors/
+c
+ls
+rm -r emmet-vim/
+ls ftdetect/
+rm -r vim-colorschemes/
+rm -r vim-colors-solarized/
+rm -r vim-rails/
+rm -r syntastic/
+ls supertab/
+rm -r supertab/
+git clone git@github.com:ervandew/supertab.git
+vim -S drafts.vim 
+vim -p email/reply/emailReadMessages.css email/reply/emailReply.css 
+inv
+cd webclient/
+cd webclient/client/static/stylesheets/
+vim -p email/reply/emailReadMessages.css email/reply/emailReply.css 
+vim -S drafts.vim 
+git st
+gaa
+git cm "reply panel 2.0 is functional ish"
+git co master
+git pull
+git co -b masterCloneReply2
+git merge replyPanel2.0
+vim -p client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js Merge conflict in client/templates/mainApp/email/mainPanel/readPanel/emailReadMessages.js  Merge conflict in client/templates/mainApp/email/mainPanel/readPanel/emailReadMessages.html
+git st
+gaa
+vim packages/fullcalendar 
+ls packages/
+git st
+gaa
+git cm "test merge replypanel2.0 with master"
+git push origin masterCloneReply2
+mrt
+vim client/templates/mainApp/email/mainPanel/readPanel/emailReadPanel.js 
+gaa
+git cm "fixed merge bugs"
+git push origin masterCloneReply2
+git branch
+git co masterCloneReplyDrafts
+vim -S managers.vim 
+git st
+gaa
+git cm "merge done, we're doing another one"
+git co master
+git co -b newReplyDraftClone
+git merge masterCloneReplyDrafts
+git log
+git commit --amend -m "redo merge with master to ensure no bugs"
+git log
+git st
+git co master
+git pull
+git branch -D newReplyDraftClone
+git co -b newReplyDraftClone
+git merge masterCloneReplyDrafts
+fg
+git log
+git commit --amend -m "redo merge with master to ensure no bugs"
+git st
+git push origin newReplyDraftClone
+git co master
+git pull
+cd ../../..
+ls ../
+mrt bundle ../bundle.tgz
+cd ..
+rm -rf bundle.tgz 
+rm -rf bundle
+ls
+rm invibox.zip 
+ls
+mkdir deploy
+ls
+mrt bundle ../deploy/bundle.tgz
+cd deploy/
+ls
+tar -zxvf bundle.tgz 
+cd bundle
+rm -rf programs/server/node_modules/fibers/
+vim package.json
+zip -r ../invibox.zip ./*
+cd ..
+ls
+git st
+git branch -D stylingfor1.0
+git push origin :stylingfor1.0
+git st
+git branch
+cd
+vim .gitconfig 
+cd dotfiles/
+git st
+gaa
+git co -b newlaptop
