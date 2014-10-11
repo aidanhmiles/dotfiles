@@ -1,5 +1,5 @@
 #default editor is vim, also for fixcommand
-EDITOR=/usr/bin/vim
+export EDITOR=/usr/bin/vim
 export FCEDIT=/usr/bin/vim
 export PGHOST=localhost
 
@@ -41,8 +41,6 @@ LS_COLORS='di=36;40:ln=35;40:so=32;40:pi=32;40:ex=31;40:bd=34;46:cd=34;43:su=0;4
 # keep the present working dir at the top of the terminal window
 PROMPT_COMMAND="update_terminal_cwd; prompt"
 
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
 
 # INCREASE history length, ERASE duplicates, and PRESERVE history after exiting shell
@@ -72,7 +70,15 @@ alias c="clear"
 cl() {
 	cd "$@" && ls
 }
- 
+
+vs() {
+	vim -S "$@"
+}
+
+vp() {
+	vim -p "$@"
+}
+
 # shortcuts
 alias be="bundle exec"
 alias bi="bundle install"
@@ -85,23 +91,31 @@ alias gaa="git add -A"
 alias gcb="git checkout -b"
 # alias gmb="git merge ???"
 
-
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
+fi
+
+if [ -f ~/Dropbox/.keys ]; then
+   source ~/Dropbox/.keys
    #source ~/.newtab
 fi
 
+# rbenv stuff 
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+
 # for projects
-alias cdweb="cd ~/Documents/Work/Webism/"
-alias cdpro="cd ~/Documents/work/webism/projects/"
-alias cdres="cd ~/Documents/work/webism/resources/"
-alias cdsci="cd ~/Documents/Work/Webism/projects/scienceFlair/"
-alias cdbones="cd ~/Documents/Work/Webism/projects/bonesMP3/"
-alias gpage="cd ~/Documents/Work/Webism/projects/itsthejazzkid.github.io/"
-alias loud="cd ~/Documents/appacademy/portfolio_work/LoudCloud/"
-alias appa="cd ~/Documents/appacademy/"
-alias spr="cd ~/Documents/work/sprinkler-tech-site/"
+# alias cdweb="cd ~/Documents/Work/Webism/"
+# alias cdpro="cd ~/Documents/work/webism/projects/"
+# alias cdres="cd ~/Documents/work/webism/resources/"
+# alias cdsci="cd ~/Documents/Work/Webism/projects/scienceFlair/"
+# alias cdbones="cd ~/Documents/Work/Webism/projects/bonesMP3/"
+# alias gpage="cd ~/Documents/Work/Webism/projects/itsthejazzkid.github.io/"
+# alias loud="cd ~/Documents/appacademy/portfolio_work/LoudCloud/"
+# alias appa="cd ~/Documents/appacademy/"
+alias spr="cd ~/Documents/work/sprinkler-tech-site"
 alias phx="cd ~/Documents/work/phoenixApp"
 alias inv="cd ~/Documents/work/invibox"
+alias sngs="cd ~/Documents/work/snugs"
 
 
