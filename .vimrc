@@ -72,10 +72,13 @@ let g:syntastic_html_checkers=['']
 nnoremap <leader>eu :tabedit $HOME/.vim/bundle
 
 " adding to Vim surround
-autocmd FileType ejs let g:surround_45 = "<% \r %>"
-autocmd FileType ejs let g:surround_61 = "<%= \r %>"
-autocmd FileType ejs let g:surround_104 = "<!-- \r -->"
-autocmd FileType erb,eruby let g:surround_104 = "<!-- \r -->"
+" with -
+autocmd FileType ejs,eruby let g:surround_45 = "<% \r %>"
+" with =
+autocmd FileType ejs,eruby let g:surround_61 = "<%= \r %>"
+autocmd FileType ejs,erb,eruby,html let g:surround_104 = "<!-- \r -->"
+" because Gemfiles
+autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 
 "##########################################################################################
 "------------------------------------------------ W/R/To BREAKING HABITS ----------------"

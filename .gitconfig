@@ -10,6 +10,7 @@
 	st = status
 	co = checkout
 	cob = checkout -b
-	cm = commit -m 
+	cm = commit -m
 	df = diff
-	b = branch
+	br = branch
+	db = branch -D

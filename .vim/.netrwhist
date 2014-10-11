@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/someguy/Documents/work/phoenixApp/www/js/main'
 let g:netrw_dirhist_2='/Users/someguy/Documents/work/invibox/webclient/client/templates/mainApp/email/mainPanel/readPanel/popups'
+let g:netrw_dirhist_3='/Users/ADN/Documents/work/phoenixApp/www/js/main'
+let g:netrw_dirhist_4='/Users/ADN/Documents/work/snugs/app/controllers/concerns'
