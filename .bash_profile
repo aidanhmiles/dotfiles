@@ -79,6 +79,8 @@ vp() {
 	vim -p "$@"
 }
 
+alias mvim="/Applications/MacVim.app/contents/MacOS/MacVim"
+
 # shortcuts
 alias be="bundle exec"
 alias bi="bundle install"
@@ -89,7 +91,11 @@ alias gp="git push"
 alias gphm="git push heroku master"
 alias gaa="git add -A" 
 alias gcb="git checkout -b"
+alias ga="git add"
 # alias gmb="git merge ???"
+
+#HEROKU
+alias hrr="heroku run rake"
 
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
@@ -110,7 +116,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # alias cdres="cd ~/Documents/work/webism/resources/"
 # alias cdsci="cd ~/Documents/Work/Webism/projects/scienceFlair/"
 # alias cdbones="cd ~/Documents/Work/Webism/projects/bonesMP3/"
-# alias gpage="cd ~/Documents/Work/Webism/projects/itsthejazzkid.github.io/"
+alias gpage="cd ~/Documents/work/itsthejazzkid.github.io/"
 # alias loud="cd ~/Documents/appacademy/portfolio_work/LoudCloud/"
 # alias appa="cd ~/Documents/appacademy/"
 alias spr="cd ~/Documents/work/sprinkler-tech-site"
