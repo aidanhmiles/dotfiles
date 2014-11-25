@@ -1,4 +1,7 @@
 "Aidan's vimrc
+"
+" TODO:
+"	shortcut to take a line and put at at end of next line (opposite of 'J')
 
 "##########################################################################################
 "----------------------------------------------- some introductory notes ------------------
@@ -16,56 +19,59 @@
 "##########################################################################################
 "------------------------------------------------------ W/R/To standard options ----------
 "########################################################################################## {{{ add
+
 "TPope's pathogen plugin functionality
-set runtimepath+=$HOME/.vim/bundle/
+set runtimepath+=$HOME/.vim/bundle/ 
 execute pathogen#infect()
-set nocompatible
-"switch esc to kj
-inoremap kj <esc>
+
+set nocompatible					" vim, not vi 
+inoremap kj <esc>					" switch esc to kj
 set ruler
-nnoremap <leader>n :set nu!<cr>
-syntax on
+nnoremap <leader>n :set nu!<cr>		" toggle numbers on/off, for ease of copy-paste
+set number
+syntax on							" yay syntax highlighting
 filetype indent plugin on
-set hlsearch
+
+" Searching!
+set hlsearch						
 set incsearch
 set ignorecase
 set smartcase
-set backspace=indent,eol,start
+
+set backspace=indent,eol,start		" don't always backspace to beginning of line
 set autoindent
 set confirm
 set numberwidth=4
+
 " set relativenumber 
-set number
 "Stop certain movements from always going to the first character of a line.
 set nostartofline
+
 "faster, better autocomplete
 set wildmenu
-"set color sc heme
+
+set clipboard=unnamed
 
 "set custom status line set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\
 "[POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 set statusline=%t[%{strlen(&fenc)?&fenc:'?????'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+
 nnoremap <c-t> <nop>
-set pastetoggle=<c-t> 
+set pastetoggle=<c-t> " ctrl-t toggles paste-mode
 set fenc=utf-8
 
-"}}}
-"
-" :autocmd BufEnter,FileType *
-" \   if &ft ==# 'c' || &ft ==# 'cpp' | colorscheme darkblue |
-" \   elseif &ft ==? 'r' | colorscheme desert |
-" \   else | colorscheme default |
-" \   endif
-"colo desert
 colo ir_black
-" autocmd BufEnter *.txt colo molokai 
-" set background=dark
+
+" shortcut for setting syntax; mostly this is for Vim Anywhere
+nnoremap <leader>s :set filetype=
+
+"}}}
 
 "plugin options
 let g:SuperTabMappingForward = '<tab>'
 let g:SuperTabMappingBackward = '<a-tab>'
 
-"because html syntax checking is not working with these angular projects
+" no html syntax checking, because not working with these angular projects
 let g:syntastic_html_checkers=['']
 
 " go to bundle folder (for easy access to ftdetect and ftplugin folders)
@@ -79,6 +85,11 @@ autocmd FileType ejs,eruby let g:surround_61 = "<%= \r %>"
 autocmd FileType ejs,erb,eruby,html let g:surround_104 = "<!-- \r -->"
 " because Gemfiles
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+
+" include Powerline
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
 
 "##########################################################################################
 "------------------------------------------------ W/R/To BREAKING HABITS ----------------"
