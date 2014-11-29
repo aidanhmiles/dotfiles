@@ -1,73 +1,85 @@
 "Aidan's vimrc
 "
-" TODO:
-"	shortcut to take a line and put at at end of next line (opposite of 'J')
+" SOME INTRODUCTORY NOTES {{{
 
-"##########################################################################################
-"----------------------------------------------- some introductory notes ------------------
-"########################################################################################## 
-"{{{
-	
 "UNLESS a given filetype has less than ~5 specific commands/keymaps, it goes in its own
 "filetype.vim
 "
-"leader-based shortcuts are mostly used for non filetype specific mappings 
-"control=based mappings are filetype-specific 
+"leader-based shortcuts are mostly used for non filetype specific mappings
+"control=based mappings are filetype-specific
 "
 "}}}
+" STANDARD OPTS {{{
 
-"##########################################################################################
-"------------------------------------------------------ W/R/To standard options ----------
-"########################################################################################## {{{ add
-
-"TPope's pathogen plugin functionality
-set runtimepath+=$HOME/.vim/bundle/ 
+"TPope's pathogen
+set runtimepath+=$HOME/.vim/bundle/
 execute pathogen#infect()
 
-set nocompatible					" vim, not vi 
-inoremap kj <esc>					" switch esc to kj
-set ruler
-nnoremap <leader>n :set nu!<cr>		" toggle numbers on/off, for ease of copy-paste
-set number
-syntax on							" yay syntax highlighting
+" BACKUP-ing
+set backup
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupskip=/tmp/*,/private/tmp/*
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set writebackup
+"backup and writebackup enable backup support. As annoying as this can be, it
+"is much better than losing tons of work in an edited-but-not-written file.
+
+set nocompatible			" vim, not vi
+" switch esc to kj
+inoremap kj <esc>
+
+" toggle numbers on/off, for ease of copy-paste
+nnoremap <leader>n :set nu!<cr>
+set number				" default to having numbers on
+
+syntax on				" yay syntax highlighting
 filetype indent plugin on
 
 " Searching!
-set hlsearch						
-set incsearch
-set ignorecase
-set smartcase
+set hlsearch				" highlight all search pattern matches
+set incsearch				" move cursor to next match
+set ignorecase				" case insensitive searching
+set smartcase				" unless there are caps in the search
 
 set backspace=indent,eol,start		" don't always backspace to beginning of line
-set autoindent
-set confirm
-set numberwidth=4
 
-" set relativenumber 
-"Stop certain movements from always going to the first character of a line.
-set nostartofline
+set autoindent				" Copy indent from current line when 
+					" starting a new line
 
-"faster, better autocomplete
-set wildmenu
+set confirm				" ask for confirmation before overwriting, 
+					" quitting with unsaved changes
 
-set clipboard=unnamed
+set numberwidth=4			" set number of columns for line numbers
 
-"set custom status line set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\
-"[POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
-set statusline=%t[%{strlen(&fenc)?&fenc:'?????'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
+set nostartofline			" Stop certain movements from always 
+					" going to the first character of a line.
+
+set wildmenu				" faster, better autocomplete
+
+" if ctrl-t does anything, make it not do things
 nnoremap <c-t> <nop>
-set pastetoggle=<c-t> " ctrl-t toggles paste-mode
+
+set pastetoggle=<c-t>			" ctrl-t toggles paste-mode
 set fenc=utf-8
 
-colo ir_black
+colorscheme ir_black			" sweet color scheme
+
+set lazyredraw				" only redraw when have to
+set showmatch				" display matching [{( characters
+
 
 " shortcut for setting syntax; mostly this is for Vim Anywhere
-nnoremap <leader>s :set filetype=
+nnoremap <leader>f :set filetype=	
+
+" highlight last inserted text
+nnoremap gV `[v`]
+
+set clipboard=unnamed " in 7.4, can yank/paste from unnamed register as system clipboard
 
 "}}}
+" PLUGIN OPTS {{{
 
-"plugin options
 let g:SuperTabMappingForward = '<tab>'
 let g:SuperTabMappingBackward = '<a-tab>'
 
@@ -80,59 +92,52 @@ nnoremap <leader>eu :tabedit $HOME/.vim/bundle
 " adding to Vim surround
 " with -
 autocmd FileType ejs,eruby let g:surround_45 = "<% \r %>"
+
 " with =
 autocmd FileType ejs,eruby let g:surround_61 = "<%= \r %>"
 autocmd FileType ejs,erb,eruby,html let g:surround_104 = "<!-- \r -->"
+
 " because Gemfiles
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 
 " include Powerline
 python from powerline.vim import setup as powerline_setup
-python powerline_setup()
+python powerline_setup() 
 python del powerline_setup
 
-"##########################################################################################
-"------------------------------------------------ W/R/To BREAKING HABITS ----------------"
-"########################################################################################## {{{
-noremap <c-c> <nop>
-nnoremap $ <nop>
-nnoremap ^ <nop>
-nnoremap _ <nop>
 "}}}
+" SINGLE-LETTER FUNCTIONS {{{
 
-"##########################################################################################
-"--------------------------------------------- W/R/To CHANGING LETTER FUNCTIONS -----------"
-"########################################################################################## {{{ 
 "give Y consistent behavior
-noremap Y y$
+nnoremap Y y$
 
 "let S substitute the whole word
 nnoremap S bcw
 
-"let K imitate J, but in the upwards direction; i.e. 'join this line with the one above it
-"noremap K kJ 
 "actually, let K break the line at the cursor
 nnoremap K i<cr><esc>
 
+nnoremap <c-c> <nop>
+nnoremap $ <nop>
+nnoremap ^ <nop>
+nnoremap _ <nop>
 "}}}
+"LEADER SHORTCUTS  {{{
 
-"##########################################################################################
-"---------------------------------------------------------- W/R/To LEADER ----------------"
-"########################################################################################## {{{ 
 "let space be leader, backslash be localleader
-"noremap <space> <nop> 
 let mapleader = " "
 let maplocalleader = "\\"
 
 "let leader j and k move down and up a screen (hard j and k)
-noremap <leader>j <c-f>
+nnoremap <leader>j <c-f>
 noremap <leader>k <c-b>
 
 "let leader h and l go to beginning and end of line (hard h and l)
 noremap <leader>h ^
 noremap <leader>l $
 
-"recover original functionality of leader nnoremap , ;
+"recover original functionality of leader
+nnoremap , ;
 nnoremap <leader>, ,
 
 "let leader e<something> open frequently edited files; let leader s<something > source them
@@ -152,42 +157,22 @@ nnoremap <leader># i<esc>34.
 "also html gets its own because html is annoying
 autocmd filetype html,eruby nnoremap <leader>!  A<cr><!<esc>a-<esc>69.i<cr><esc>i-<esc>57.i<cr><esc>i-<esc>67.kA<space>
 "let two leaders delete all highlights
-nnoremap <leader><leader> :nohl<cr> 
+nnoremap <leader><leader> :nohl<cr>
 "let leader u be 'redo' instead of control-R
 nnoremap <leader>u <c-r>
 "}}}
-
-"##########################################################################################
-"----------------------------------------------- W/R/To META CHARACTERS ------------------"
-"##########################################################################################
-" alt backspace exits insert mode, deletes one B back, and reenters insert
-" mode
-inoremap <M-bs> <esc>dBi
-
-"##########################################################################################
-"----------------------------------------------  W/R/To AUTOFILLS N SHIT ----------------"
-"########################################################################################## 
-"{{{
-"leader surround commands in visual mode 
-"leader s adds a space
-nnoremap <leader>s i<space><esc> 
-"}}}
-
-"##########################################################################################
-"----------------------------------------------------- W/R/To VISUAL MODE ----------------"
-"########################################################################################## 
+" VISUAL MODE {{{
 " visual block mode
 nnoremap <leader>v <c-v>
 
 "escape from visual modes with double leader
 vnoremap <leader><leader> <esc>
 
+"}}}
+" WHITESPACE {{{
 
-"##########################################################################################
-"------------------------------------------------------ W/R/To WHITESPACE ----------------"
-"########################################################################################## {{{ 
-"tabs are 3 spaces 
-set tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
+"tabs are 3 spaces
+set tabstop=8 noexpandtab shiftwidth=4 softtabstop=4
 "except in ruby
 autocmd filetype ruby,haml,erb,eruby,html set tabstop=2 noexpandtab shiftwidth=2 softtabstop=2
 autocmd filetype javascript set tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
@@ -197,37 +182,57 @@ nnoremap <leader><cr> o<esc>
 
 nnoremap <bs> O<esc>
 "}}}
-
-"##########################################################################################
-"------------- W/R/To WINDOWS AND SUCH ----------------"
-"########################################################################################## {{{
+" WINDOWS {{{
 "Always display the status line, even if only one window is displayed
-set laststatus=2 
+set laststatus=2
 " space T => tabedit
-noremap <leader>t :tabedit 
-noremap <leader>m :tabmove 
+noremap <leader>t :tabedit
+noremap <leader>m :tabmove
 " Set the command window height to 2 lines
-set cmdheight=2 
-set linebreak 
+set cmdheight=2
+set linebreak
 "window movement
-noremap <leader>H <c-w>h 
-noremap <leader>J <c-w>j 
-noremap <leader>K <c-w>k 
+noremap <leader>H <c-w>h
+noremap <leader>J <c-w>j
+noremap <leader>K <c-w>k
 noremap <leader>L <c-w>l
+
 "}}}
+" FILETYPES {{{
 
-"##########################################################################################
-"------------------------------------------------------- W/R/To filetypes ----------------"
-"########################################################################################## {{{
-
-augroup various 
-	autocmd!  
+augroup various
+	autocmd!
 autocmd FileType vim,text setlocal foldmethod=marker
 autocmd fileType text set nonumber
 augroup end
 "}}}
+" QUICK HEADINGS {{{
 
-"##########################################################################################
-"-------------------------------------------- W/R/To common typos and substitutions ------"
-"##########################################################################################
+function! MakeHeading(title, totalWidth)
+	let title = a:title
+	let totalWidth = a:totalWidth
+	let numFillers = (totalWidth - strlen(title) - 2) / 2
+	let filler = ""
+	let c = 0
+	while c < numFillers
+	   let filler = filler . "-"
+	   let c += 1
+	endwhile
+	echo filler . " " . title . " " . filler
+	return filler . " " . title . " " . filler
+endfunction
 
+function! InsertHeadingTemplate(number)
+    let number = a:number
+    exe "r ~/.vim/templates/headings/heading-" . number . ".txt"
+endfunction
+
+command! -nargs=1 Heading call InsertHeadingTemplate(<args>)
+
+"}}}
+" TODO {{{
+"	shortcut to take a line and put at at end of next line (opposite of 'J')
+"	trim end of line whitespace
+
+
+" }}}
