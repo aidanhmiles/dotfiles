@@ -39,9 +39,8 @@ function prompt {
 LS_COLORS='di=36;40:ln=35;40:so=32;40:pi=32;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
 
 # keep the present working dir at the top of the terminal window
-PROMPT_COMMAND="update_terminal_cwd; prompt"
-
-
+# PROMPT_COMMAND="update_terminal_cwd; prompt"
+PROMPT_COMMAND="prompt" # iTerm2 doesn't know about update_terminal_cwd?
 
 # INCREASE history length, ERASE duplicates, and PRESERVE history after exiting shell
 export HISTCONTROL=ignoredups:erasedups # no dupes
