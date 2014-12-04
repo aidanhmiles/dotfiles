@@ -67,15 +67,19 @@ alias c="clear"
 
 # useful combo of cd and ls
 cl() {
-	cd "$@" && ls
+    cd "$@" && ls
+}
+
+mkcd() {
+    mkdir "$@" && cd $_
 }
 
 vs() {
-	vim -S "$@"
+    vim -S "$@"
 }
 
 vp() {
-	vim -p "$@"
+    vim -p "$@"
 }
 
 alias mvim="/Applications/MacVim.app/contents/MacOS/MacVim"
