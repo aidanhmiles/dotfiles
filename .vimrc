@@ -79,6 +79,11 @@ set showtabline=2 " Always display the tabline, even if there is only one tab
 "}}}
 " PLUGIN OPTS {{{
 
+"CTRL-P
+" have ctrlp search hidden dirs
+let g:ctrlp_show_hidden = 1
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+
 let g:SuperTabMappingForward = '<tab>'
 let g:SuperTabMappingBackward = '<a-tab>'
 
@@ -201,6 +206,8 @@ set linebreak
 " FILETYPES {{{
 
 filetype indent on "turn on ftdetect and indent
+
+autocmd filetype vim setlocal foldmethod=marker
 
 " shortcut for setting syntax; mostly this is for Vim Anywhere
 noremap <leader>f :set filetype= 
