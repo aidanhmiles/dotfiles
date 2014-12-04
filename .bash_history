@@ -2203,3 +2203,1633 @@ ls
 git st
 git add .bash_profile 
 git cm "add sourcing of keys file in Dropbox"
+gaa
+git cm "periodic update"
+gpom
+echo $SNUGS_KEY 
+c
+c
+vim db/schema.rb 
+vim config/aws.yml
+rake routes
+vim config/environment.rb 
+rake routes --trace
+grep -R SNUGS config
+mv config/aws.yml config/aws.yml.erb
+rake routes
+grep -R SNUGS config
+mv config/aws.yml config/aws.yml.erb
+
+vim config/aws.yml.erb 
+vim config/routes.rb 
+rake routes
+pry
+vim Dropbox/.informationz 
+vim db/schema.rb 
+cd Dropbox/
+la
+cd /Volumes/EVO/
+ls
+la
+cd Users/ADN/
+la
+find .learns
+man find
+find .learns .
+find .learns ./Documents/
+cd Documents/
+ls
+la
+ls Notes\ \:\ To\ Keep\ Track\ Of/
+la Notes\ \:\ To\ Keep\ Track\ Of/
+find learns .
+cd Documents/
+ls
+cd work/
+ls
+cd snippets/
+ls
+mkdir basic-one-pager
+cd basic-one-pager
+touch index.html style.css main.js
+vim -p *
+la
+cd ..
+man zip
+zip -r basic-one-pager.zip basic-one-pager/
+open .
+ls
+cd resources/
+ls
+ls pages/
+cd ..
+cl app/assets/images/
+open snugs_color.jpg 
+ls /Volumes/
+la /Volumes/
+sngs
+open app/assets/images/
+git st
+vim config/aws.yml.erb 
+git add config/aws.yml.erb 
+git cm "integrate aws-sdk and ENV vars for api keys"
+git add config/routes.rb 
+git cm "fix events routes"
+git add app/views/events/*
+git st
+git add app/controllers/events_controller.rb 
+git cm "can create and edit events"
+git add app/assets/*
+git cm "do some quick styling"
+git st
+cd ../../
+cd ..
+git st
+vim Dropbox/.informationz 
+vim db/schema.rb 
+bi
+rails s
+vim config/database.yml 
+ls db/migrate/
+vim db/migrate/20141005230759_add_cover_photo_to_events.rb
+vim Gemfile
+vim config/database.yml 
+cl config
+mv aws.yml.erb aws.yml
+$SNUGS_SECRET 
+echo $SNUGS_SECRET 
+vim config/application.rb 
+fg
+rails s
+~?ech
+echo $SNUGS_SECRET 
+vim config/application.rb 
+vim Gemfile
+rails s
+rails c
+bi
+rails s
+git st
+cd ..
+git st
+vim .gitignore 
+rails c
+vim config/application.rb 
+vim -p app/assets/stylesheets/pages.css.scss app/assets/stylesheets/mixins.css.scss app/assets/stylesheets/application.css.scss
+vs models.vim 
+vs views.vim 
+vs controllers.vim 
+sngs
+vs views.vim 
+git st
+cd .
+cd
+la Dropbox/
+vim Dropbox/.informationz 
+git add app/views/events/edit.html.erb 
+git cm "add try method in calls to optional params"
+git add *.vim
+git st
+git cm "update vim sessions"
+vim config/aws.yml 
+git add app/views/shared/_eventlist.html.erb 
+git cm "refactor event list into partial"
+git add app/views/users/*
+git cm "add views for users"
+git st
+gaa
+git cm "tweaks, aws creds working now"
+git st
+gpom
+gphm
+vim config/routes.rb 
+sngs
+sngs
+vs styles.vim 
+ls
+rm \'
+ls
+vim Dropbox/.informationz 
+fg
+vs views.vim 
+jobs
+fg
+vim Dropbox/.informationz 
+sngs
+git st
+sudo git st
+c
+git st
+bashp
+source ~/.bash_profile 
+bashp
+source ~/.bash_profile 
+ga
+ga app/assets/images/hand.png config/routes.rb app/views/pages/home.html.erb 
+git cm "add home page, with hand and links"
+ga app/assets/stylesheets/elements.css.scss 
+git cm "refactor styles on elements into elements.css"
+ga app/views/
+git cm "tweaks to views, header, home page"
+git st
+gaa
+git cm "updates"
+gpom
+gphm
+heroku rake db:seed
+heroku run rake db:migrate
+heroku run rake db:seed
+open app/assets/images/
+open resources/
+bashp
+git st
+gaa
+git cm "shrink wastefully large imgs"
+gpom
+gphm
+grep -R new_session_url .
+vim app/controllers/application_controller.rb 
+vim config/routes.rb 
+git st
+ga config/routes.rb 
+git cm "rename new_session to login"
+git st
+git add app/controllers/application_controller.rb 
+git cm "add current_user method"
+gaa
+git cm "fixing views, entry page redirects to home"
+gpom
+gphm
+git st
+git st
+gpom
+vim config/routes.rb 
+fg
+git st
+gaa
+git cm "fix login route"
+gpom
+gphm
+DD
+vim Dropbox/.informationz 
+vim config/routes.rb 
+sngs
+sngs
+vs controllers.vim 
+vs con
+vim db/schema.rb 
+vim config/routes.rb 
+vs styles.vim 
+grep -R app/assets/stylesheets eventlist
+grep -R eventlist app/assets/stylesheets/
+git st
+gaa
+git cm "styling fixes, current user unduplicated, Edit link works now"
+gpom
+rails c
+rails s
+fg
+vs views.vim 
+vs models.vim 
+vs controllers.vim 
+ls
+cd Documents/
+ls
+rm Quicken.dmg 
+ls
+c
+ls
+cd work/
+ls
+la
+cd /Volumes/EVO/
+ls
+cd Users/ADN/Documents/work/
+ls
+cd webism/
+ls
+ls resources/
+cd ..
+ls
+cd 
+ls
+c
+gpage
+gpages
+bashp
+gpage
+ls
+cd ..
+ls
+cl sn
+cl snippets/
+mkdir spinner
+cd spinner/
+vim index.html
+compass
+sass
+gem install sass
+sass -v
+sass help
+sass --help
+fg
+ls
+sass --help
+gpage
+ls
+vim index.html 
+c
+ls
+open resources/loading1.ai 
+mv ../../itsthejazzkid.github.io/resources/loading*.png .
+ls
+open loading3.png 
+open .
+cd ../../itsthejazzkid.github.io/
+git st
+vim .gitignore 
+ga .gitignore 
+git st
+gcm "add resources folder to gitignore"
+git cm "add resources folder to gitignore"
+gpage
+work
+cdwork
+cd Documents/work/
+open resources/
+node
+gtgtjkjkj
+vim Dropbox/.informationz 
+vim index.html 
+ls
+ls stylesheets/
+ls css/
+fg
+vim stylesheets/hire-me.css 
+ls ../
+vim stylesheets/hire-me.css 
+git st
+gaa
+git cm "add spinner files"
+ls
+fg
+vp 
+mkdir js
+mv *.js js/
+vp index.html spinner.html 
+ls
+ls c
+ls css/
+cp stylesheets/hire-me.css sass/
+mv sass/hire-me.css sass/hire-me.scss
+ls sass/
+sass --help
+touch Desktop/hello.txt
+rm Desktop/hello.txt
+vim -p index.html style.scss
+open 
+open .
+cd ../
+cd ..
+cp resources/velocity.min.js itsthejazzkid.github.io/js/
+sass --watch style.scss:style.css
+node
+vim index.html 
+git st
+git add css/
+git cm "compile sass into css directory"
+git st
+git add js/
+git cm "put js into js directory"
+git st
+gaa
+git cm "stick spinner in index.html"
+git st
+gpom
+vim index.html 
+git st
+gaa
+git cm "content fixes and updates"
+vim index.html 
+open .
+git st
+gaa
+git cm "resume content tweaks, add cleaned up slices pngs"
+rm sass/hire-me-new.scss 
+vim sass/hire-me.scss 
+git st
+vim .gitignore 
+git st
+git add .sass-cache/ sass/
+git st
+git cm "
+check sass stuff back into git"
+git st
+gaa
+git cm "removed dup css file, replaced spinny img files with cleaned up version"
+gpom
+vim sass/hire-me.scss 
+git st
+gaa
+git cm "slides now set to display:none until animation finishes"
+git st
+gpom
+vim index.html 
+git st
+gaa
+git cm "small content tweak"
+gpom
+ionic emulate ios
+vim index.html 
+open .
+open -a Safari index.html 
+fg
+git st
+gaa
+git cm "remove box shadow, only do animation if Promises are available"
+gpom
+vim js/hire-me.js 
+gaa
+git cm "only slide up first slide if Promises are available"
+gpom
+sass --watch sass:css
+phx
+ls
+vim www/js/*
+vp www/js/*
+mvim
+mvim -p Desktop/test2 Desktop/test3
+bashp
+mvim
+mvim Desktop/test3
+vim Dropbox/professional_stuff/Cover\ Letters/Technical/dev_letter.txt 
+open Dropbox/professional_stuff/Cover\ Letters/Technical/dev_letter.txt
+
+vim Dropbox/professional_stuff/Cover\ Letters/Technical/dev_letter.txt 
+open Dropbox/professional_stuff/Cover\ Letters/Technical/dev_letter.txt
+node
+vim Dropbox/.informationz 
+ls .
+cd Desktop/
+ls
+c
+cd
+c
+cd Desktop/
+ls
+open SNUGS\ CAL.ai 
+node
+sngs
+ls *.vim
+vs styles.vim 
+vs views.vim 
+vs models.vim 
+vs controllers.vim 
+rails c
+
+rails s
+cd /Volumes/
+ls -a
+sngs
+rails s
+vim Dropbox/.informationz 
+ls Music/
+ls Dropbox/
+ls Dropbox/the*
+vim Dropbox/theProject/keymappings.txt 
+fg
+c
+sngs
+ls
+sngs
+sprnkls
+sprinkl
+spr
+vs app/models/*
+diskutil list
+VBoxManage internalcommands createrawvmdk -filename "~Desktop/SNOW_RAW.vmdk" -rawdisk /dev/disk1s3
+VBoxManage internalcommands createrawvmdk -filename "~/Desktop/SNOW_RAW.vmdk" -rawdisk /dev/disk1s3
+VBoxManage internalcommands createrawvmdk -filename "~/Desktop/SNOW_RAW.vmdk" -rawdisk /dev/disk1
+VBoxManage internalcommands createrawvmdk -filename "~/Desktop/SNOW_RAW.vmdk" -rawdisk /dev/disk1s3
+sudo VBoxManage internalcommands createrawvmdk -filename "~/Desktop/SNOW_RAW.vmdk" -rawdisk /dev/disk1s3
+sudo VBoxManage internalcommands createrawvmdk -filename "/Users/ADN/Desktop/SNOW_RAW.vmdk" -rawdisk /dev/disk1s3
+sudo VBoxManage internalcommands createrawvmdk -filename /Users/ADN/Desktop/SNOW_RAW.vmdk -rawdisk /dev/disk1s3
+diskutil list
+sudo VBoxManage internalcommands createrawvmdk -filename /Users/ADN/Desktop/SNOW_RAW.vmdk -rawdisk /dev/disk1s3
+chmod /Volumes/SNOW
+ls -l /Volumes/
+man chmod
+chmod a+rw /Volumes/SNOW
+sudo VBoxManage internalcommands createrawvmdk -filename /Users/ADN/Desktop/EVO.vmdk -rawdisk /dev/disk1
+sudo VBoxManage internalcommands createrawvmdk -filename /Users/ADN/Desktop/EVO.vmdk -rawdisk /dev/disk1 -partitions 3
+sudo VBoxManage internalcommands createrawvmdk -filename /Users/ADN/Desktop/SNOW_RAW.vmdk -rawdisk /dev/disk1 -partitions 3
+ls -l Desktop/*.vmdk
+cd Documents/work/
+ls
+cd ~/Dropbox/professional_stuff/
+ls
+mkdir tests
+cd $!
+cd -
+cd tests/
+mkdir efsharp
+cd efsharp
+git clone https://aidanhmiles@bitbucket.org/efsharp/utilify.git
+ls
+cl utilify/
+ls demos/
+cl lib/
+cd ..
+ls
+ls -a
+git st
+git co -b AidanMilesTest
+ls
+ls src/
+vim src/javaTest.txt 
+cd ..
+ls
+ls utilify/
+cd utilify/
+ls
+c
+ls
+ls lib/
+open lib/CPOL.html 
+grep -R test .
+Cannot open the raw disk '/dev/disk1s3': VERR_ACCESS_DENIED:q
+cd ~/Dropbox/professional_stuff/tests/efsharp/
+ls
+rm -r utilify/
+y
+ls
+la
+mkdir autocomplete
+git init
+rm -rf .git/
+ls
+git clone https://aidanhmiles@bitbucket.org/efsharp/interview-problem-aiden.git
+phx
+ls
+cd interview-problem-aiden/
+ls
+vim readme.md 
+gulp
+npm install gulp --save-dev
+ls
+gulp init
+npm init
+ls
+vim package.json 
+npm install angular --save-dev
+vim package.json 
+npm install angular --save
+ls
+gulp init
+vim gulpfile.js
+npm install -g yo gulp bower
+npm install -g generator-gulp-angular
+ls
+git st
+git co -- .
+git st
+rm gulpfile.js package.json 
+rm -rf node_modules/
+ls
+ls assets/
+ls guidelines/
+open guidelines/FullDesign.pdf 
+ls
+git st
+git co -b Aidan-Miles-Solution
+git st
+vim .gitignore
+git st
+ls
+mkdir solution && cd $_
+yo gulp-angular autocomplete
+ls
+vim gulpfile.js 
+vim index.html
+git st
+cd ..
+git st
+git cm "add solution directory, setup basic app with gulp-angular Yeoman generator"
+git add solution/
+git st
+git cm "add solution directory, setup basic app with gulp-angular Yeoman generator"
+gulp
+cd solution/
+gulp
+ls
+vim index.html 
+ls src/
+open src/index.html 
+vim src/index.html 
+npm install gulp-connect --save
+npm install shouldjs --save
+npm install should --save
+ls
+vim bower.json 
+c
+vim gulpfile.js 
+vim gulpfile.js package.json bower.json 
+vp gulpfile.js package.json bower.json 
+npm install
+vim package.json 
+npm install
+vim package.json 
+npm install
+ls
+ls test/
+ls dist/
+open dist/index.html 
+ls
+ls src/
+ls src/app/main/main.html 
+vim src/app/main/main.html
+vim dist/scripts/vendor-1b44551c.js 
+bash history | grep dist
+history | grep -i "dist"
+ls
+vim index.html 
+rm index.html 
+git st
+ls
+git st
+ls
+ls gulp
+ls
+ls src/
+vim src/app/index.js 
+vim src/app/vendor.scss 
+ls src/app/main/
+cd src/
+ls
+cl app/
+rm vendor.scss 
+cd ..
+ls
+ls components/
+ls components/navbar/
+gulp
+cd ..
+gulp
+npm install gulp-concat --save-dev
+gulp
+vim components/navbar/navbar.html 
+ls
+vim index.html 
+ls
+ls app/
+mkdir js
+mkdir scss
+ls
+mkdir templates
+ls app/
+mv app/index.js js/
+mv app/index.scss scss/
+ls app/main/
+vp app/main/*
+rm -rf app/
+ls
+vp app/models/*
+ls
+ls dist/
+vim index.html 
+cd ..
+ls
+vp dist/index.html src/index.html 
+ls dist/
+ls dist/scripts/
+ls src/js/
+gulp
+npm install gulp-rename --save-dev
+ls src/
+ls src/templates/
+ls src/
+gulp
+npm install gulp-notify --save-dev
+gulp
+ls src/
+ls
+ls dist/
+ls dist/styles/
+ls dist/scripts/
+ls
+ls dist/
+ls src/
+ls dist/
+mv dist/index.html dist/orig_index.html
+gulp
+ls dist/
+ls dist/index.html/
+rm -r dist/index.html/
+ls
+ls dist/
+ls dist/index.html/
+rm -r dist/index.html/
+ls
+ls dist/
+gulp
+ls
+ls test/
+node
+
+gulp
+ls
+vim dist/index.html 
+vim src/js/index.js 
+ls dist/
+cd dist/
+rm main.js 
+mv scripts/
+mv scripts/ js
+ls js/
+ls
+rm app.css 
+ls styles/
+ls
+ls js/
+ls styles/
+gulp
+vim js/main.js 
+cd ..
+ls
+cd ..
+cd -
+git st
+git add paths.js 
+git cm "adds paths.js to export paths object, for clarity in gulpfile and karma conf"
+git add src/
+git st
+git cm "rearranges src directory to add js, scss, and templates dirs; removes most script tags in index.html"
+git st
+git add gulpfile.js 
+gaa
+git st
+git cm "remove src/app/, write gulpfile, set up karma"
+git st
+vim src/index.html 
+gulp
+vim test/karma.conf.js 
+npm install karma-chrome-launcher --save-dev
+gulp
+ls
+grep -R "modernizr" src/
+vim test/unit/first.spec.js
+gulp
+vim test/unit/first.spec.js 
+ls bower_components/
+ls node_modules/should/
+npm install --save-dev gulp-plumber
+gulp
+vim test/unit/first.spec.js 
+git st
+git add test/unit/first.spec.js 
+git cm "add dummy test"
+vim src/js/index.js 
+mv src/js/index.js src/js/autocomplete.js
+vim www/js/laApp.js 
+ls www/js/
+cd ..
+git st
+vim .gitignore 
+git add .gitignore 
+git cm "adds .vim files to gitignore"
+git st
+vim .gitignore 
+git add .gitignore 
+git cm "adds .vim files to gitignore for reals"
+git st
+gaa src/js/
+git st
+git cm "touch js files"
+git add gulpfile.js package.json paths.js test/karma.conf.js 
+git cm "tests working"
+git st
+git add src/index.html 
+git cm "update paths of main.js and app.css"
+git st
+vim .gitignore 
+vim TODO
+ls
+git add .gitignore 
+git cm "add TODO to gitignore"
+git st
+cd ..
+ls
+cl assets/
+cd ..
+ls
+cl guidelines/
+open .
+vp www/js/*
+vim gulpfile.js 
+phx
+vs www/js/*
+rm src/js/autocomplete.config.js 
+vim test/unit/main.js 
+git add gulpfile.js 
+git cm "change gulp scripts task notify message"
+gulp
+ls
+vs specs.vim 
+vp test/firstSpec.js test/mocks/mocks.js 
+ls
+ls test/
+git st
+git branch
+git co -- .
+git st
+git co master
+vs specs.vim 
+git co testsUpdate
+vim gulpfile.js 
+fg
+gulp
+vim gulpfile.js 
+gulp
+vim package.json 
+npm install --save-dev gulp-minify-css
+ls dist/js/
+vim test/karma.conf.js
+fg
+gulp
+vp test/unit/*
+git st
+npm install --save-dev gulp-concat-util
+vim gulpfile.js 
+vim dist/js/main.js 
+rm dist/js/main.js 
+vim dist/js/main.min.js 
+gulp
+vim gulpfile.js 
+vim dist/js/main.js 
+vim dist/js/main.min.js 
+git st
+git add gulpfile.js package.json 
+git cm "add gulp-concat-util for script header and footer for strict mode"
+git st
+bower install typeahead.js
+vim paths.js 
+gulp
+vim gulpfile.js 
+ls
+vim TODO
+open .
+vim src/scss/index.scss 
+mv src/scss/index.scss src/scss/application.scss
+gulp
+fg
+gulp
+ls
+gulp
+ls src/scss/
+gulp
+vim gulpfile.js 
+vim src/scss/application.scss 
+cd src/scss/
+ls
+mv fontkit.scss _fontkit.scss
+ls
+cd dist/
+ls
+ls assets/
+ls assets/images/
+cp ../../assets/ assets/
+cp -r ../../assets/ assets/
+ls assets/
+cd ..
+ls
+cd src/scss/
+ls ../../dist/assets/
+cd ../../dist/assets/
+open QuatroUltraBlack.otf 
+cd ..
+ls
+ls dist/
+ls src/
+ls dist/styles/
+mv dist/assets/QuatroUltraBlack.otf dist/styles/
+gulp
+mv dist/styles/QuatroUltraBlack.otf dist/assets/
+cd dist/
+ls assets/
+gulp
+ls
+ls styles/
+cd ..
+ls src/scss/
+gulp
+grep -R speaker Documents/work/
+node
+vim Dropbox/.informationz 
+git st
+git add ../guidelines/
+git st
+git cm "add file extensions to wireframes"
+git st
+gaa src/scss/
+git cm "break out new files, basic state of app is styled"
+git st
+git add ../assets/speaker.svg 
+git cm "get speaker file from Noun Project"
+git st
+git add gulpfile.js paths.js 
+git cm "add testLibs property in paths module"
+cd ..
+ls
+cp readme.md solution/
+cl solution/
+vim readme.md 
+vim gulpfile.js 
+vim paths.js 
+vp www/templates/*
+gulp
+git st
+git add paths.js 
+git mc "fix path for typeahead"
+git cm "fix path for typeahead"
+git st
+git add readme.md 
+git cm "start work on readme"
+git add src/scss/_search.scss 
+git cm "give search and search results own file"
+gaa git src/js/
+gaa src/js/
+git st
+git cm "copy in services from previous project for array filter, create PlaylistService"
+git st
+gaa src/scss/
+git cm "add styling of search results"
+git st
+gaa src/
+git cm "ng-view is now a main tag, make ng-repeat for search results"
+git st
+git att src/index.html 
+git add src/index.html 
+git cm "include index.html which should have gone in previous commit"
+git st
+gaa
+gaa :/
+git st
+git cm "tweaks"
+git st
+vim gulpfile.js 
+vp www/js/*
+vs specs.vim 
+vim gulpfile.js 
+vim www/templates/userSearch.html 
+git co master
+vim TODO 
+ls
+vim gulpfile.js 
+gulp
+vim Dropbox/.informationz 
+git st
+node
+javascript
+git add test/unit/utils.spec.js 
+git cm "utils service gets its own spec"
+git st
+gaa src/scss/
+git cm "playlist styling done"
+git st
+gaa src/js/
+git cm "cleanup, switch to songs API from artists API"
+git commit --amend -m "cleanup console.logs, add comments, switch to songs API from artists API"
+git commit --amend -m "cleanup console.logs, add comments, switch to songs API from artists API, add string trim function"
+git st
+gaa
+git cm "change ids, classes, add trim function, playlist structure acceptable"
+git st
+gaa
+git cm "add a remove button, refactor out duplicate styles into % classes or into element/tag styles"
+git st
+git co testsUpdate
+ls
+ls bower_components/
+vim paths.js 
+vim gulpfile.js 
+git st
+git add paths.js test/karma.conf.js 
+git cm "add angular-mocks back in, remove karma script launcher"
+git add test/unit/utils.spec.js 
+git cm "add tests for utils service"
+gulp
+vp test/unit/first.spec.js 
+vim paths.js 
+vim bower_components/angular/angular.js 
+gulp
+c
+gulp
+vim gulpfile.js 
+fg
+git st
+gaa test/
+git cm "add more unit tests for utils, add arrayFilter tests, and playlist mock file for playlistService spec"
+git st
+vim paths.js 
+git add paths.js 
+git cm 
+git cm "add .mock.js pattern to test paths"
+git st
+git add src/js/autocomplete.services.js 
+git cm "trim now takes optional appendString argument"
+gaa
+git cm "inject CONSTANTS in the necessary spots"
+git st
+gaa
+git cm 
+git st
+git cm "inject CONSTANTS in necessary spots"
+node
+git st
+gaa
+git cm "adds loading gif after user clicks artist name, and removes it after playlist loads"
+git st
+git rm
+git remote
+gp origin -u Aidan-Miles-Solution
+vp *
+vp src/js/autocomplete.js src/js/autocomplete.controllers.js src/js/autocomplete.services.js src/js/autocomplete.config.js
+vim src/templates/main.html 
+cd ..
+mkdir justInCase && cd $_
+git clone git clone https://aidanhmiles@bitbucket.org/efsharp/interview-problem-aiden.git
+git clone https://aidanhmiles@bitbucket.org/efsharp/interview-problem-aiden.git
+git co Aidan-Miles-Solution
+git st
+cd interview-problem-aiden/
+git co Aidan-Miles-Solution
+git st
+gulp
+npm install
+cd solution/
+npm install
+gulp
+npm install
+bower install
+gulp
+npm install gulp 
+cd ..
+rm -rf justInCase/
+git st
+vim package.json 
+npm install gulp --save-dev
+git st
+git add package.json 
+git cm "fix package.json to include gulp deps"
+git st
+gp
+git config --global push.default simple
+gp
+git st
+mkdir justInCase
+cd justInCase/
+git clone https://aidanhmiles@bitbucket.org/efsharp/interview-problem-aiden.git
+cl interview-problem-aiden/
+git co Aidan-Miles-Solution
+cd solution/
+npm install
+bower install
+ls
+gulp
+cd ..
+rm -rf interview-problem-aiden/
+vp src/js/*
+gulp
+vim test/unit/arrayFilter.spec.js 
+git st
+cd ../interview-problem-aiden/solution/
+git st
+git add test/unit/arrayFilter.spec.js 
+git cm "artistList => artistsList"
+git commit --amend -m "CONSTANTS.artistList => CONSTANTS.artistsList"
+gp
+git st
+git st
+git clone https://aidanhmiles@bitbucket.org/efsharp/interview-problem-aiden.git
+gulp
+cd interview-problem-aiden/
+git co Aidan-Miles-Solution
+cd solution/
+bower install
+pwd
+git st
+npm install
+pwd
+pwd
+git st
+vim .gitignore 
+git add .gitignore 
+git cm "take dist folder out of gitignore"
+git st
+gaa dist/
+git cm "add dist folder"
+gp
+gulp
+git st
+git pull
+gulp
+ls
+ls
+ls test/
+ls test/e2e/
+vim test/e2e/
+git st
+pwd
+rm test/protractor.conf.js 
+rm -r test/e2e/
+git st
+vim readme.md 
+pwd
+cd ../../interview-problem-aiden/solution/
+git st
+pwd
+rm test/protractor.conf.js 
+cd ../../../interview-problem-aiden/solution/
+pwd
+git st
+gaa
+git cm "add readme, remove dummy test files"
+git st
+vim TODO 
+git st
+rm TODO 
+git st
+gp
+cd ../../
+ls
+cd justInCase/
+rm -rf interview-problem-aiden/
+git clone https://aidanhmiles@bitbucket.org/efsharp/interview-problem-aiden.git
+git st
+cd interview-problem-aiden/
+git co Aidan-Miles-Solution
+cd solution/
+bower install
+npm install
+git st
+vim src/scss/_main.scss 
+git st
+git add src/scss/_search.scss 
+git cm "remove outline on button"
+gp
+gulp
+vp test/unit/*
+vp www/js/*
+rails g model 
+vim config/routes.rb 
+rails s
+vs models.vim 
+vs views.vim 
+vs styles.vim 
+vs controllers.vim 
+cd Dropbox/professional_stuff/tests/efsharp/interview-problem-aiden/olution/
+cd Dropbox/professional_stuff/tests/efsharp/interview-problem-aiden/solution/
+git st
+cd ..
+git st
+vim readme.md 
+git remote add itjk git@github.com:itsthejazzkid/a-coding-test.git
+git branch -m solution
+git branch
+git push itjk solution
+git st
+git co -b github
+git st
+rm readme.md 
+mv solution/readme.md .
+git st
+gaa
+git cm "swap readmes"
+git push itjk github
+git st
+vim Dropbox/.informationz 
+cd Documents/work/
+ls
+cd ..
+mv Downloads/ DLs
+cd Documents/work/
+ls
+cd sn
+cd snippets/
+ls
+mkdir chat_merger && cd $_
+touch readme.md
+git init
+vim TODO
+vim .gitignore
+vim ~/.gitignore
+rm ~/.gitignore
+vim ~/.gitignore_global 
+git st
+cd
+pip
+brew doctor
+vim readme.md 
+git st
+gaa
+git cm "first commit, add gitignore and readme"
+git st
+python Desktop/get-pip.py 
+sudo python Desktop/get-pip.py 
+pip install --user git+git://github.com/Lokaltog/powerline
+vim --version | grep +python
+python --version
+vimrc
+vim
+ls
+vim merger.rb
+cd ~/dotfiles/
+ls
+git st
+ga .vimrc
+git st
+git cm "add powerline, and some comments"
+git st
+bashp
+git add .bash_profile 
+git cm "add some aliases"
+git st
+vimrc
+cd
+vim Dropbox/.informationz 
+macvim Dropbox/.informationz
+mvim Dropbox/.informationz
+vim Dropbox/.informationz 
+open Dropbox/.informationz 
+c
+cd Desktop/
+ls
+c
+cl ~/Music/RC50\ Backup/
+mkdir other_loops
+cd -
+cd ~/Desktop/
+mv *.wav ~/Music/RC50\ Backup/other_loops/
+mv *.wav ~/Music/RC50\ Backup/other_loops
+ls *.wav
+ls 
+ls "*.wav"
+ls ?.wav
+ls [*].wav
+set -f
+ls *.wav
+ls 0?.WAV
+ls *.WAV
+ls 04*
+04?
+ls [046]*
+ls
+ls *.asd
+set -f
+ls *.asd
+help set
+cd ~/
+cd Desktop/
+ls
+set
+set | grep glob
+set | grep -f
+bashrc
+bashp
+*
+echo *
+echo *.WAV
+echo *.wav
+mv *.WAV *.wav
+let list = $( ls *.WAV )
+list = $( ls *.WAV )
+for i in $( ls *.WAV ); echo i
+for i in $( ls *.WAV ); echo i; done
+for i in $( ls *.WAV ); echo $i; done
+for i in $( ls *.WAV ); do echo $i; done
+for i in $( ls *.WAV ); r=$(i%.WAV}.wav; mv $i $r; done
+;
+done
+end
+\
+/
+;
+;
+)
+for i in $( ls *.WAV ); r=$(i%.WAV).wav; mv $i $r; done
+ls
+ls *.wav
+ls *.WAV
+for i in $( ls *.WAV ); r="${i%.WAV}.wav"; mv $i $r; done
+for i in $( ls *.WAV ); do r="${i%.WAV}.wav"; mv $i $r; done
+ls
+ls *.wav
+vim test
+vim test3
+rm test3
+vim test2 
+rm 1$
+rm test2 
+vim tax_stuff 
+mv tax_stuff ~/Dropbox/professional_stuff/
+ls
+mv Piksel_Employment_Application_Aidan_Miles.pdf ~/Dropbox/professional_stuff/
+mv *.trak ~/Music/
+ls
+fg
+vimrc
+cd
+cd .vim
+ls
+ls autoload/
+mkdir templates
+cd templates/
+mkdir headings
+cd headings/
+vim heading-1.txt
+vim Desktop/avimrc.txt 
+rm Desktop/avimrc.txt 
+vim Desktop/.DS_Store 
+ls
+cd Documents/work/
+bashrc
+bashp
+c
+ls
+c
+ls
+brew install autojump
+bashp
+cl
+fg
+vimrc
+cd dotfiles/
+git st
+git add .vimrc 
+git cm "change headings, fix comments, add a few opts according to doug black's article"
+git st
+cd
+cd -
+git add .bash_profile 
+git cm "take out update_prompt_cwd, bc iTerm2"
+ls
+cd Documents/work/
+ls
+la
+ls -l
+ls
+cd Documents/work/
+j work
+c
+cd .
+cd 
+j work
+jc work
+c
+ls Documents/work/
+cd
+j work
+brew doctor
+brew update
+c
+brew install autojump
+sngs
+phx
+sngs
+phx
+c
+cd .
+cd
+ls
+j wofk
+j work
+autojump work
+cd Documents/work/phoenixApp/
+cd 
+c
+cd ph
+j ph
+ls
+autojump
+man autojump
+j --stat
+bashrc
+ls /etc/profile
+c
+la
+brew help
+brew home
+brew info
+man brew
+bashrc
+j
+j wor
+man autojump
+j --stat
+cd Documents/work/
+j --stat
+cd .
+cd
+j --stat
+c
+ls
+cd dotfiles/
+ls
+cd ..
+cd Documents/work/
+phx
+sngs
+j --stat
+phx
+sngs
+phx
+j --stat
+man j'
+c
+cd
+man j
+jo mu
+cd Music/
+cd 
+c
+j mu
+c
+cd 
+jo mu
+man autojump
+c
+work
+j ph
+c
+cd
+j
+cd
+ls
+ls ABBYY/
+cd .vim
+git clone https://github.com/kien/ctrlp.vim.git bundle/ctrlp.vim
+ls bundle/
+vim
+phx
+vim www/js/laApp.js 
+phx
+jc js
+cd www/js/
+vim laApp.js 
+brew install the_silver_searcher
+man ag
+phx
+man ag
+ag --js controller www/
+c
+ag --js controller www/js/
+qc
+cd
+cd ~/.vim/bundle && git clone https://github.com/rking/ag.vim ag && vim +Helptags
+c
+cd
+ls
+man ag
+bashp
+c
+c
+j wo
+bashp
+j wo
+j --stat
+c
+mkcd instructions
+bashp
+rm -r instructions/
+mkcd instructions
+j wo
+mkcd instructions
+ls
+rm -r instructions/
+c
+bashp
+ls
+c
+ls
+mkcd instructions
+ls
+git init
+git remote add origin git@github.com:itsthejazzkid/how-to.git
+cd ..
+mv instructions/ how-to
+ls
+cd how-to/
+ls
+git st
+j '/Users/ADN/Documents/work/how-to' 
+ls
+git st
+vim iTunesLibrary.md
+git st
+gaa
+git cm "add iTunes Library how-to"
+git st
+gpom
+gb gh-pages
+bashp
+cd
+la
+vim .gitconfig 
+c
+j ho
+j how
+ls
+git st
+git br
+git cob gh-page
+git branch -D gh-page
+git co master
+git branch -D gh-page
+ls
+git cob gh-pages
+git push origin gh-pages
+git st
+vim iTunesLibrary.md 
+git st
+gaa
+git cm "add text"
+git push
+git push origin gh-pages
+ls
+c
+cd
+c
+ls
+c
+ls
+cd /Volumes/G-DRIVE/
+ls
+cl Backups.backupdb/
+cl Aidan’s\ MacBook\ Pro/
+ls
+j dow
+c
+cd
+j do
+cd -
+jc do
+cd
+c
+cd Downloads/
+cd ../Documents/
+cd ..
+ls
+cd Desktop/
+c
+ls
+cd
+j '/Users/ADN/Documents/work/how-to' 
+ls
+vim readme.md
+git st
+git add readme.md 
+git cm "add readme"
+git st
+c
+git push -u origin gh-pages
+vim readme.md 
+vim Dropbox/.informationz 
+cd Applications/
+cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
+pwd
+cd
+cd Applications/
+ls
+pwd
+cd
+cwd
+vim Dropbox/.informationz 
+vim .slate
+ls
+vim .slate
+ls
+
+vim Dropbox/.informationz 
+cd Dropbox/
+ls
+man j
+man autojump
+open Dropbox/.informationz 
+vimrc
+vim
+c
+vim
+cd Desktop/
+ls
+vim Desktop/Dupin\ Purge.txt 
+c
+vim Dupin\ Purge.txt 
+c
+fg
+c
+cd
+vim Desktop/Dupin\ Purge.txt 
+open Desktop/Dupin\ Purge.txt
+vim Desktop/Dupin\ Purge.txt 
+vimrc
+:q
+c
+vim
+cd .vim/bundle/
+c
+ls
+j bun
+cd
+c
+j ftp
+cd .vim/bundle/ftdetect/
+cd -
+cd .vim/bundle/ftplugin/
+c
+j plug
+j det
+c
+cd
+c
+cd
+c
+j det
+vim text.vim 
+cd ../../
+cd ..
+ls
+la
+git st
+gaa .vim/templates/
+git st
+git cm "add templates for quick heading funcs"
+gaa .vim/bundle/ag
+git st
+git cm "add silver searcher aka ag"
+git st
+c
+git st
+bashp
+git add .bash_profile 
+git cm "add mkcd function to mkdire then cd there"
+c
+git st
+gaa .vim/bundle/ctrlp.vim/
+git cm "add ctrlp for file searching"
+c
+git st
+vim .gitconfig 
+git add .gitconfig 
+git cm "alias cob = checkout -b"
+git add .vim/bundle/
+git st
+git cm "relearning ftdetect and ftplugin; add stuff for text files"
+git st
+git add .vimrc 
+git cm "fix leader shortcuts (nnoremap => noremap), more comments, filetype indent on, and move filetype-specific stuff OUT"
+git st
+bashrc
+git add .bashrc 
+git cm "manually source autojump.sh because not working otherwise"
+c
+git st

@@ -1,6 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/someguy/Documents/work/phoenixApp/www/js/main'
-let g:netrw_dirhist_2='/Users/someguy/Documents/work/invibox/webclient/client/templates/mainApp/email/mainPanel/readPanel/popups'
-let g:netrw_dirhist_3='/Users/ADN/Documents/work/phoenixApp/www/js/main'
-let g:netrw_dirhist_4='/Users/ADN/Documents/work/snugs/app/controllers/concerns'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/ADN/.vim/bundle/ftplugin'
+let g:netrw_dirhist_2='/Users/ADN/dotfiles/.vim/bundle'
+let g:netrw_dirhist_3='/Users/ADN/dotfiles/.vim/bundle/ftplugin'
+let g:netrw_dirhist_4='/Users/ADN/dotfiles/.vim/bundle'
+let g:netrw_dirhist_5='/Users/ADN/dotfiles/.vim/bundle/ftplugin'
+let g:netrw_dirhist_6='/Users/ADN/dotfiles/.vim/bundle'
+let g:netrw_dirhist_7='/Users/ADN/dotfiles/.vim/bundle/ftdetect'
+let g:netrw_dirhist_8='/Users/ADN/dotfiles/.vim/bundle'
+let g:netrw_dirhist_9='/Users/ADN/dotfiles/.vim/bundle/ftplugin'
