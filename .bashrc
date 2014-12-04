@@ -18,3 +18,5 @@ export CHROME_BIN="/Applications/Chrome.app/Contents/MacOS/Google Chrome"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH=.bundle/binstubs:$PATH 
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
+
+source /usr/local/Cellar/autojump/21.7.1/etc/autojump.sh
