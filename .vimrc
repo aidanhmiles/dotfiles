@@ -1,12 +1,11 @@
 "Aidan's vimrc
 "
-" SOME INTRODUCTORY NOTES {{{
-
-"UNLESS a given filetype has less than ~5 specific commands/keymaps, it goes in its own
-"filetype.vim
+" SOME INTRODUCTORY NOTES {{{ 
 "
-"leader-based shortcuts are mostly used for non filetype specific mappings
-"control=based mappings are filetype-specific
+" leader-based shortcuts are mostly used for non filetype specific mappings
+" control=based mappings are filetype-specific
+"
+" put filetype-specific things in filetype.vim, pretty much always
 "
 "}}}
 " STANDARD OPTS {{{
@@ -29,7 +28,7 @@ set nocompatible			" vim, not vi
 inoremap kj <esc>
 
 " toggle numbers on/off, for ease of copy-paste
-nnoremap <leader>n :set nu!<cr>
+noremap <leader>n :set nu!<cr>
 set number				" default to having numbers on
 
 syntax on				" yay syntax highlighting
@@ -49,8 +48,7 @@ set autoindent				" Copy indent from current line when
 set confirm				" ask for confirmation before overwriting, 
 					" quitting with unsaved changes
 
-set numberwidth=4			" set number of columns for line numbers
-
+set numberwidth=4			" set number of columns for line numbers 
 
 set nostartofline			" Stop certain movements from always 
 					" going to the first character of a line.
@@ -69,13 +67,14 @@ set lazyredraw				" only redraw when have to
 set showmatch				" display matching [{( characters
 
 
-" shortcut for setting syntax; mostly this is for Vim Anywhere
-nnoremap <leader>f :set filetype=	
 
 " highlight last inserted text
 nnoremap gV `[v`]
 
 set clipboard=unnamed " in 7.4, can yank/paste from unnamed register as system clipboard
+
+set laststatus=2 " Always display the statusline in all windows
+set showtabline=2 " Always display the tabline, even if there is only one tab
 
 "}}}
 " PLUGIN OPTS {{{
@@ -86,8 +85,6 @@ let g:SuperTabMappingBackward = '<a-tab>'
 " no html syntax checking, because not working with these angular projects
 let g:syntastic_html_checkers=['']
 
-" go to bundle folder (for easy access to ftdetect and ftplugin folders)
-nnoremap <leader>eu :tabedit $HOME/.vim/bundle
 
 " adding to Vim surround
 " with -
@@ -149,17 +146,18 @@ noremap <leader>el :tabedit $HOME/.notes/learns<cr>G
 noremap <leader>et :tabedit $HOME/Music/.titles<cr>G
 noremap <leader>ej :tabedit $HOME/.notes/jobs<cr>
 
-"let leader =, -, and # create section lines
-nnoremap <leader>= a=<esc>34.
-nnoremap <leader>- a-<esc>34.
-nnoremap <leader># i<esc>34.
+" go to bundle folder (for easy access to ftdetect and ftplugin folders)
+noremap <leader>eu :tabedit $HOME/.vim/bundle<cr>
 
 "also html gets its own because html is annoying
 autocmd filetype html,eruby nnoremap <leader>!  A<cr><!<esc>a-<esc>69.i<cr><esc>i-<esc>57.i<cr><esc>i-<esc>67.kA<space>
-"let two leaders delete all highlights
+
+"let two leaders turn off highlights 
 nnoremap <leader><leader> :nohl<cr>
-"let leader u be 'redo' instead of control-R
+
+"let leader u be 'redo' instead of control-R 
 nnoremap <leader>u <c-r>
+
 "}}}
 " VISUAL MODE {{{
 " visual block mode
@@ -183,28 +181,30 @@ nnoremap <leader><cr> o<esc>
 nnoremap <bs> O<esc>
 "}}}
 " WINDOWS {{{
-"Always display the status line, even if only one window is displayed
-set laststatus=2
-" space T => tabedit
-noremap <leader>t :tabedit
-noremap <leader>m :tabmove
-" Set the command window height to 2 lines
-set cmdheight=2
-set linebreak
+
 "window movement
 noremap <leader>H <c-w>h
 noremap <leader>J <c-w>j
 noremap <leader>K <c-w>k
 noremap <leader>L <c-w>l
 
+"Always display the status line, even if only one window is displayed
+" set laststatus=2
+" space T => tabedit
+noremap <leader>t :tabedit 
+noremap <leader>m :tabmove 
+" Set the command window height to 2 lines
+set cmdheight=4
+set linebreak
+
 "}}}
 " FILETYPES {{{
 
-augroup various
-	autocmd!
-autocmd FileType vim,text setlocal foldmethod=marker
-autocmd fileType text set nonumber
-augroup end
+filetype indent on "turn on ftdetect and indent
+
+" shortcut for setting syntax; mostly this is for Vim Anywhere
+noremap <leader>f :set filetype= 
+
 "}}}
 " QUICK HEADINGS {{{
 
@@ -227,6 +227,10 @@ function! InsertHeadingTemplate(number)
     exe "r ~/.vim/templates/headings/heading-" . number . ".txt"
 endfunction
 
+"let leader =, -, and # create section lines
+noremap <leader>= a=<esc>34.
+noremap <leader>- a-<esc>34.
+noremap <leader># a<esc>34.
 command! -nargs=1 Heading call InsertHeadingTemplate(<args>)
 
 "}}}
