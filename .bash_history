@@ -3944,3 +3944,9 @@ cd do
 j do
 ls
 git st
+gaa
+bashp
+git add .bash_profile 
+ls
+git cm "add alias for fjw"
+git st
