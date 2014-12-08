@@ -127,4 +127,5 @@ alias phx="cd ~/Documents/work/phoenixApp"
 alias inv="cd ~/Documents/work/invibox"
 alias sngs="cd ~/Documents/work/snugs"
 
+alias fjw="functional-javascript-workshop"
 

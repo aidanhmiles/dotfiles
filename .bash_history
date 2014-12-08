@@ -3833,3 +3833,114 @@ git add .bashrc
 git cm "manually source autojump.sh because not working otherwise"
 c
 git st
+gaa .
+git cm
+git st
+git cm "periodic updates"
+git st
+c
+cd ..
+ls
+la
+ls bash-fix/
+ls -l bash-fix/
+open bash-fix/
+ls
+cd dotfiles/
+vim
+c
+j det
+vim text.vim 
+cd
+cd -
+j dot
+git st
+git add .vimrc 
+git cm "ctrlp now includes dotfiles and dirs"
+j wo
+cd snippets/
+cd
+c
+j sni
+j sn
+j sni
+ls
+cl chat_merger/
+git st
+git add merger.rb 
+git cm "add the script file. now to write it..."
+vim merger.rb 
+~/.vim-anywhere/update
+brew doctor
+brew update
+vim Desktop/notes.txxt
+c
+ls
+cd Documents/work/scratch/
+cd
+j sc
+c
+j sc
+node
+j sc
+node
+j sc
+node
+j sc
+node
+ls
+rm reduce2.js 
+vim reduce.js
+vim test.js
+npm install functional-javascript-workshop
+functional-javascript-workshop
+ls
+rm -rf node_modules/
+npm install -g functional-javascript-workshop
+functional-javascript-workshop
+ls
+j wo
+ls
+functional-javascript-workshop
+mkcd practice
+cd Documents/work/practice/
+cd
+j '/Users/ADN/Documents/work/practice' 
+fun!
+functional-javascript-workshop
+functional-javascript-workshop verify uppercaser.js 
+functional-javascript
+ls
+mkdir functional-javascript-workshop
+mv uppercaser.js functional-javascript-workshop/
+cd functional-javascript-workshop/
+fjw
+bashp
+fjw
+j pr
+cd functional-javascript-workshop/
+c
+cd
+c
+fjw
+fjw verify repeater.js
+j '/Users/ADN/Documents/work/practice/functional-javascript-workshop' 
+fjw verify repeater.js
+vim uppercaser.js
+ls
+mv repeater.js functional-javascript-workshop/
+cd functional-javascript-workshop/
+fjw
+fjw verify basicmap.js 
+fjw
+fjw verify filter.js 
+ls filter.js 
+ls
+fjw verify filter.js 
+fjw
+fjw verify everySome.js 
+vim Dropbox/.informationz 
+cd do
+j do
+ls
+git st
