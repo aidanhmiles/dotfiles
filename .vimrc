@@ -103,9 +103,9 @@ autocmd FileType ejs,erb,eruby,html let g:surround_104 = "<!-- \r -->"
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 
 " include Powerline
-python from powerline.vim import setup as powerline_setup
-python powerline_setup() 
-python del powerline_setup
+" python from powerline.vim import setup as powerline_setup
+" python powerline_setup() 
+" python del powerline_setup
 
 "}}}
 " SINGLE-LETTER FUNCTIONS {{{

@@ -3950,3 +3950,48 @@ git add .bash_profile
 ls
 git cm "add alias for fjw"
 git st
+git co -f newlaptop
+git st
+vim ~/.gitconfig 
+git db workmachine
+git st
+git cob workmachine
+git st
+c
+cd
+vim dotfiles/com.googlecode.iterm2.plist 
+ls dotfiles/com.googlecode.iterm2.plist 
+brew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew doctor
+brew install autojump
+j --stat
+brew install pip
+brew install python
+git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
+git clone https://github.com/tpope/vim-commentary.git .vim/bundle/
+vimrc
+git clone https://github.com/tpope/vim-commentary.git .vim/bundle/vim-commentary/
+c
+vimrc
+j do
+bashp
+j --stat
+j
+bashrc
+j so
+ls
+c
+j do
+cd dotfiles/
+j --stat
+ls
+git st
+gaa .
+vim test
+git clone https://github.com/tpope/vim-surround.git .vim/bundle/vim-surround
+ls .vim/bundle/supertab/
+git clone https://github.com/ervandew/supertab.git .vim/bundle/supertab
+ls .vim/bundle/ctrlp.vim/
+vim
+git st
