@@ -129,3 +129,9 @@ alias sngs="cd ~/Documents/work/snugs"
 
 alias fjw="functional-javascript-workshop"
 
+
+# Piksel stuff
+alias mvnclean='cd ~/Documents/piksel/workspace/nextgen-build/ && mvn clean install eclipse:clean eclipse:eclipse -P nextgen-web -D maven.test.skip=true'
+
+# bc brian said so
+ulimit -n 10240

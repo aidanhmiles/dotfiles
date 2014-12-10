@@ -3995,3 +3995,167 @@ git clone https://github.com/ervandew/supertab.git .vim/bundle/supertab
 ls .vim/bundle/ctrlp.vim/
 vim
 git st
+gaa .
+git st
+vim test
+git cm "reinstalled supertab, commentary, surround, installed airline to replce powerline"
+git st
+cd Downloads/chrome\ DLs/
+c
+cd
+j ch
+cd
+j dl
+ls
+cd Soundflower-1.6.7-release
+Tools/build.rb 
+Tools/build.rb dep
+Tools/installer.rb 
+Tools/load.rb 
+cd ..
+vim Dropbox/.informationz 
+which maven
+which mvn
+ls
+ls .local/
+mkdir local
+cd local/
+mv ../Downloads/chrome\ DLs/apache-maven-3.1.1 .
+ls
+cl apache-maven-3.1.1/
+ls b
+ls bin/
+pwd
+cd
+ls /usr
+which java
+which javac
+ls /usr/local/
+ls /usr/lib/
+ls /opt/
+ls /System/Library/Frameworks/JavaVM.framework/
+cd /System/Library/Frameworks/JavaVM.framework/
+ls
+ls Versions/
+ls Versions/A/
+cd ..
+ls
+cd ..
+ls
+cd Java/
+ls
+cd ..
+ls Frameworks/JavaVM.framework/
+ls
+c
+cd
+java --version
+java -version
+echo $java_home
+echo $JAVA_HOME
+which java
+which javac
+mvn --version
+which mvn
+mvn --version
+cd /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre
+ls
+ls bin/
+mvn --version
+ls bin/
+mvn --version
+
+bashp
+ls local/apache-maven-3.1.1/conf/
+mv Downloads/chrome\ DLs/settings.xml .
+mv local/apache-maven-3.1.1/conf/settings.xml Desktop/
+mv settings.xml local/apache-maven-3.1.1/conf/
+sudo vim /private/etc/hosts
+vimrc
+bashrc
+d
+cd Documents/piksel/workspace/
+ls
+cd parent/
+mvn eclipse:eclipse install -Dmaven.skip.test=true -P nextgen-web
+which mvn
+j pa
+j next
+j work
+j worksp
+cd parent/
+mvn eclipse:eclipse install -Dmaven.skip.test=true -P nextgen-web
+which mvn
+cd ..
+which mvn
+bashrc
+j pik
+cd workspace/
+cd parent/
+which mvn
+mvn eclipse:eclipse install -Dmaven.skip.test=true -P nextgen-web
+cd ..
+cl cgate-simulator/
+mvn eclipse:eclipse
+cd ../teamsite-data/
+mvn eclipse:eclipse
+mvn clean install eclipse:clean eclipse:eclipse -Dmaven.test.skip=true -Dbuild.less.js=false
+j worksp
+cd nextgen-web/
+mvn eclipse:eclipse
+mvn clean install eclipse:clean eclipse:eclipse -Dmaven.test.skip=true -Dbuild.less.js=false
+cd ../nextgen-build/
+mvn eclipse:eclipse install -Dmaven.skip.test=true -P nextgen-web
+vim .mavenrc
+mvnclean
+echo $JAVA_HOME
+bashp
+ls /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/
+/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/
+cl /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/
+mvnclean
+brew install npm
+brew update
+j worksp
+cd nextgen-web/
+la
+cl front-end-build/
+j web
+cd src/
+ls
+ls
+cl main/
+cl webapp/TEAMSITE/DEVELOPMENT/
+ls -r .
+ls -R .
+c
+l;s
+ls
+cd configuration_files/
+ls
+ls scripts/
+ls templates/
+cd ../web_files/
+ls
+cd snes/
+ls
+open .
+ls
+cl messages/
+cd ..
+ls
+cd ..
+ls
+svn
+svn help up
+svn help
+svn status
+j worksp
+ls
+cd ..
+ls
+vim Gruntfile.js 
+bashp
+cd dotfiles/
+ls
+git st
