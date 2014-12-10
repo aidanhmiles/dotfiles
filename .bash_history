@@ -4159,3 +4159,24 @@ bashp
 cd dotfiles/
 ls
 git st
+gaa
+git cm "updates"
+git push -u origin workmachine
+git login
+git config
+cd
+ls
+la
+vim .gitconfig 
+cd dotfiles/
+git push -u origin workmachine
+cd ,,
+cd ..
+bashp
+ghkeygen
+ssh-add ~/.ssh/id_rsa
+source .bash_profile 
+ghkeysetup
+cd dotfiles/
+git push -u origin workmachine
+git st

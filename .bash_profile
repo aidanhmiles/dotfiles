@@ -82,6 +82,15 @@ vp() {
     vim -p "$@"
 }
 
+ghkeygen(){
+    ssh-keygen -t rsa -C "itsthejazzkid@gmail.com"
+}
+
+ghkeysetup(){
+    ssh-add ~/.ssh/id_rsa
+    pbcopy < ~/.ssh/id_rsa.pub
+}
+
 alias mvim="/Applications/MacVim.app/contents/MacOS/MacVim"
 
 # shortcuts
