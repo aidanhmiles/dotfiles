@@ -16,12 +16,12 @@ execute pathogen#infect()
 
 " BACKUP-ing
 set backup
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set backupskip=/tmp/*,/private/tmp/*
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
 "backup and writebackup enable backup support. As annoying as this can be, it
 "is much better than losing tons of work in an edited-but-not-written file.
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupskip=/tmp/*,/private/tmp/*
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 set nocompatible			" vim, not vi
 " switch esc to kj

@@ -41,6 +41,7 @@ LS_COLORS='di=36;40:ln=35;40:so=32;40:pi=32;40:ex=31;40:bd=34;46:cd=34;43:su=0;4
 # keep the present working dir at the top of the terminal window
 # PROMPT_COMMAND="update_terminal_cwd; prompt"
 PROMPT_COMMAND="prompt" # iTerm2 doesn't know about update_terminal_cwd?
+# export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
 
 # INCREASE history length, ERASE duplicates, and PRESERVE history after exiting shell
 export HISTCONTROL=ignoredups:erasedups # no dupes
@@ -103,11 +104,10 @@ alias gp="git push"
 alias gphm="git push heroku master"
 alias gaa="git add -A" 
 alias gcb="git checkout -b"
+alias gcm="git commit -m"
 alias ga="git add"
 # alias gmb="git merge ???"
 
-#HEROKU
-alias hrr="heroku run rake"
 
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
@@ -118,29 +118,20 @@ if [ -f ~/Dropbox/.keys ]; then
    #source ~/.newtab
 fi
 
-# rbenv stuff 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-
-# for projects
-# alias cdweb="cd ~/Documents/Work/Webism/"
-# alias cdpro="cd ~/Documents/work/webism/projects/"
-# alias cdres="cd ~/Documents/work/webism/resources/"
-# alias cdsci="cd ~/Documents/Work/Webism/projects/scienceFlair/"
-# alias cdbones="cd ~/Documents/Work/Webism/projects/bonesMP3/"
-alias gpage="cd ~/Documents/work/itsthejazzkid.github.io/"
-# alias loud="cd ~/Documents/appacademy/portfolio_work/LoudCloud/"
-# alias appa="cd ~/Documents/appacademy/"
-alias spr="cd ~/Documents/work/sprinkler-tech-site"
-alias phx="cd ~/Documents/work/phoenixApp"
-alias inv="cd ~/Documents/work/invibox"
-alias sngs="cd ~/Documents/work/snugs"
 
 alias fjw="functional-javascript-workshop"
 
 
-# Piksel stuff
+# Piksel aliases
 alias mvnclean='cd ~/Documents/piksel/workspace/nextgen-build/ && mvn clean install eclipse:clean eclipse:eclipse -P nextgen-web -D maven.test.skip=true'
+alias nweb="cd ~/Documents/piksel/workspace/nextgen-web"
+alias nbld="cd ~/Documents/piksel/workspace/nextgen-build"
+alias fbld="cd ~/Documents/piksel/workspace/nextgen-web/front-end-build"
+alias webf="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files"
+alias snes="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/snes"
+alias nes="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/nes"
+alias mobl="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/mobile"
+alias refac="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/refactored_modules"
 
 # bc brian said so
 ulimit -n 10240

@@ -4180,3 +4180,467 @@ ghkeysetup
 cd dotfiles/
 git push -u origin workmachine
 git st
+gaa .
+git cm "updates"
+git commit --amend -m "updates, add github ssh key setup stuff to bashp"
+git push origin workmachine
+npm
+brew install npm
+npm help
+bashrc
+npm install -g grunt
+vim npm-debug.log 
+brew uninstall node
+rm /usr/local/bin/npm 
+rm /usr/local/bin/node
+cd /usr/local/include/
+ls
+la
+cd
+ls local/
+la local/
+ls /usr/local/li
+ls /usr/local/lib
+rm -rf /usr/local/lib/node_modules
+sudo rm -rf /usr/local/lib/node_modules
+ls .npm/
+rm -rf .npm/
+brew doctor
+brew update
+brew prune
+brew install node
+brew link --overwrite node
+brew install npm
+brew postinstall node
+brew uninstall node
+brew help install
+brew install node
+npm
+node
+npm install -g grunt-cli
+cd Documents/piksel/workspace/
+ls
+cd
+j web
+cd
+j genweb
+j 'nextge' 
+pwd
+cd front-end-build/
+ls
+npm install
+grunt
+cd ..
+ls
+cd ..
+ls
+bashp
+. ~/.bash_profile 
+build
+ls
+ls tasks/
+ls
+cd ..
+ls
+cd src/
+lsl
+ls
+cd test/
+ls
+ls resources/
+ls java/
+cd ..
+ls
+cd main/
+ls
+ls webapp/
+ls
+cd ..
+ls
+c
+cl ..
+ls nextgen-test/
+cd nextgen-test/
+ls src/
+cd ..
+ls
+cd nextgen-web/
+ls
+cd src/main/
+ls
+ls resources/
+ls resources/test/
+open .
+cd webapp/TEAMSITE/DEVELOPMENT/web_files/
+ls
+pwd
+ls
+. ~/.bash_profile 
+nes
+snes
+ls
+ls javascripts/
+ls javascripts/test/
+jc tes
+cd javascripts/test/
+ls
+ls mocks/
+ls uv/
+cd mocks/
+ls
+cd ../uv/filters/
+ls
+la
+cd ../services/
+ls
+bashp
+vp *
+ls
+cd ..
+ls filters/
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+ls messages/
+cd ..
+ls
+vim crossdomain.
+vim crossdomain.html 
+ls
+ls custom/
+ls custom/previewWeekend/js/previewWeekend.js 
+vim custom/previewWeekend/js/previewWeekend.js
+snes
+ls
+cd ..
+ls
+cl snes/
+ls
+cl javascripts/
+cl src/
+cl ../test/
+ls
+vim uv/services/UserHelper.Spec.js 
+ls
+la
+ls
+svn --version
+vimrc
+vim test.txt
+rm test.txt 
+web
+build
+cd ..
+cd ../nextgen-build/
+mvnclean 
+bshp
+bashp
+ls
+web
+bashp
+. ~/.bash_profile 
+nweb
+nbuild
+bashp
+ls
+bashp
+pwd
+bashp
+~?.
+ls 
+cd ..
+ls
+webf
+ls
+bashp
+mobl
+. ~/.bash_profile 
+mobl
+snes
+cd ..
+ls
+mkdir refactored_modules
+mobl
+snes
+ls
+ls
+cd javascripts/
+ls javascripts/
+ls
+ls combined/
+vim combined/Templates.js 
+ls
+cl src/
+cl sr
+ls
+cd javascripts/
+cl src/
+ls
+ls
+ls common-modules/
+ls common-modules/modals/directives/modalRoot.js 
+brew doctor
+brew update
+brew install the_silver_searcher
+man ag
+ag ComponentDataCache .
+cd ..
+ag ComponentDataCache .
+man ag
+ag -g ComponentDataCache .
+vim common-modules/modals/directives/modalRoot.js
+cd ..
+ls
+bashp
+fg
+cd refactored_modules/
+ls
+cp ../snes/javascripts/src/uv/services/ComponentDataCache.js .
+vp mobile/javascripts/src/uvm/services/ComponentDataCache.js snes/javascripts/src/uv/services/ComponentDataCache.js
+ag -g DuplicateService .
+vim ComponentDataCache.js 
+cp ../snes/javascripts/src/uv/components/card-container/services/DuplicateService.js .
+ls
+mobl
+ls
+cl javascripts/src/components-page/
+vim TODO
+ls
+ls values/
+vim values/ComponentsPageConstants.js 
+ls
+vim snes/javascripts/src/uv/components/card-container/services/DuplicateService.js
+cd ..
+ls
+cd snes/
+ls
+cd ../refactored_modules/
+ls
+ls
+j ref
+ls
+ag -g ComponentDataCache .
+ag -g ComponentDataCache.js .
+vim $(ag -g ComponentDataCache.js .)
+vp $(ag -g ComponentDataCache.js .)
+vp $(ag -g DuplicateService.js .)
+fg
+vim TODO 
+ag -g ellipsify .
+vim .agignore
+ag -g ellipsify .
+$(ag -g ellipsify .)
+vp $(ag -g ellipsify .)
+ag -g binarySearch .
+ag -g binary .
+ag binary .
+ag binarySearch .
+man ag
+vp $(ag -g -d ellipsify .)
+vp $(ag -g -i ellipsify .)
+ag -g -i ellipsify .
+man ag
+ag -gi ellipsify .
+man ag
+ag --javascript -gi ellipsify .
+ag -javascript -gi ellipsify .
+ls
+ls
+ag -g Service.js .
+ag -g Factory.js .
+wef
+webf
+ag -g CouponDataService.js .
+cp $(ag -g CouponDataService.js .) refactored_modules/
+ls refactored_modules/
+ls
+cp $(ag -g PackageService.js .) refactored_modules/
+cp $(ag -g PackagesService.js .) refactored_modules/
+ag -g TemplateCache .
+vp $(ag -g TemplateCa .)
+cp $(ag -g TemplateCa ./mobile/) refactored_modules/
+ls
+ag -g Factory.js .
+cp $(ag -g Factory.js .) refactored_modules/ 
+ls
+ag --js .factory(' .
+ag --js ".factory('" .
+ag --list-file-types
+ag --list-file-types | grep js
+ag .factory\( .
+ag /\.factory\(/ .
+man ag
+ag factory snes/
+ag --js factory snes/
+man ag
+ag --js -l factory snes/
+vim .agignore 
+ag --js -l factory snes/
+ag --js -l ^\.factory snes/
+ag --js  ^\.factory snes/
+ag --js  ^\.factory( snes/
+ag --js  ^\.factory\( snes/
+ag --js  ^\.factory\(.*\) snes/
+ag --js  ^\.factory[(] snes/
+ag --js  s/^\.factory/g snes/
+ag --js  ^\.factory snes/
+ag --js  '.factory(' snes/
+ag --js  '.factory\(' snes/
+ag --js  '\.factory\(' snes/
+vim ~/.agignore
+ag --js  '\.factory\(' snes/
+vp $(ag -g Service.js ./mobile/)
+ls snes/javascripts/src/uv/services/
+vp $(ag -g CoupanData .)
+vp $(ag -g CouponData .)
+cp snes/javascripts/src/uv/services/CouponData.js refactored_modules/
+vim .agignore 
+vp $(ag -g ComponentData .)
+vp $(ag -g Personal .)
+ag -g Personal .
+ag -g uvhref .
+ag uvHref .
+ag -g combined .
+vim snes/javascripts/combined/uv.templates.js 
+ag -g buttons .
+vp $(ag -g buttons.js .)
+vp Coupon*
+ls
+cd ..
+ls
+build
+frbld
+fbld
+pwd
+vim Gruntfile.js 
+cd -
+ls
+vp $(ag -g uvHref.js .)
+ls
+cd refactored_modules/
+ls
+c
+ls
+ag --js angular.module .
+vim .agignore 
+ag --js angular.module .
+vim .agignore 
+ag --js angular.module .
+man ag
+ag --js angular.module . | grep ^[\W]
+ag --js angular.module . | grep ^[\w]
+ag --js angular.module . | grep ^\W
+ag --js angular.module . | grep ^\w
+ag --js angular.module . | grep '^[0-9]'
+ag --js angular.module . | grep '^[0-9?]'
+ag --js angular.module . | grep '^[0-9?]:'
+ag --js angular.module . | grep '^1:'
+ag --js angular.module . 
+cd refactored_modules/
+ls
+ag --js '@ngdoc module' .
+man ag
+ag --js -A 2 '@ngdoc module' .
+ag --js -A 4 '@ngdoc module' .
+ls ../
+lsp
+ls
+vp com.piksel.uverse.js com.piksel.angular-utils.js
+vp Coupon*
+vim TODO
+j web
+ls
+bashp
+ls
+ls refactored_modules/
+webf
+ag -g Factory .
+cd refactored_modules/
+rm FeatureFactory.js PlayerFactory.js 
+x
+c
+c
+ls
+mv com.piksel.uverse.js com.piksel.uverse-utils.js
+ls
+vp com*
+c
+ls
+vp Coupon*
+vim PackagesService.js 
+cd
+vim Dropbox/.informationz 
+ls
+ag -g ellip .
+ag -g ellip ..
+cp $(ag -g ellip .) .
+ls
+cp ../snes/javascripts/src/common-modules/site-utils/directives/ellipsify.js ../mobile/javascripts/src/common-modules/site-utils/directives/ellipsify.js ../mobile/javascripts/src/common-modules/site-utils/directives/ellipsify.tpl.html.
+cp ../snes/javascripts/src/common-modules/site-utils/directives/ellipsify.js ../mobile/javascripts/src/common-modules/site-utils/directives/ellipsify.js ../mobile/javascripts/src/common-modules/site-utils/directives/ellipsify.tpl.html .
+ls
+vp ellip*
+mv ellipsify.js mobile.ellipsify.js
+cp ../snes/javascripts/src/common-modules/site-utils/directives/ellipsify.js .
+open ~/Dropbox/.informationz 
+ls
+c
+ls
+cd snes/
+ls
+cd ..
+ag -g karma .
+ag -g jasmine .
+ag -g test .
+fbld
+ag -g test .
+c
+ls
+vim docs
+vim docs.js 
+vim README.md 
+ls tasks/snes-tests.js 
+vim tasks/snes-tests.js
+ag -g paths.js .
+ag -g paths.js ..
+ag -g paths.js ../..
+vim tasks/snes-tests.js
+ls
+vim tasks/snes-tests.js
+ls
+cd ~/dotfiles/
+snes
+pwd
+vp *
+bashp
+cd
+cd dotfiles/
+git st
+cp .bash_profile .bash_profile_backup
+git co .bash_profile
+bashp
+. .bash_profile
+vim .bash_profile
+vim Gruntfile.js 
+fg
+vim TODO 
+vp ellipsify.js mobile.ellipsify.js 
+webf
+webh
+web
+bashp
+cd dotfiles/
+ls
+la
+vp .bash_profile .bash_profile_backup 
+rm .bash_profile
+mv .bash_profile_backup .bash_profile
+vim .bash_profile 
+ls
+git st
+cd dotfiles/
+git st
+gaa
