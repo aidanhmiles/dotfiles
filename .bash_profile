@@ -83,6 +83,10 @@ vp() {
     vim -p "$@"
 }
 
+vo() {
+    vim -O "$@"
+}
+
 ghkeygen(){
     ssh-keygen -t rsa -C "itsthejazzkid@gmail.com"
 }

@@ -4644,3 +4644,665 @@ git st
 cd dotfiles/
 git st
 gaa
+git st
+cd dotfiles/
+vimrc
+git cm "work aliases in bashp, vimrc tidying, update chrome_path in bashrc"
+git commit --amend -m "work aliases in bashp, vimrc tidying, update chrome_path in bashrc, iterm tabs now open in cwd"
+c
+bashrc
+snes
+cd ..
+webf
+ls
+webf
+cd refactored_modules/
+cd
+j refac
+ls
+webf
+fbld
+ls
+vim Grunt
+vim Gruntfile.js 
+fbld
+grunt
+grunt test
+grunt snes-tests
+c
+bashp
+c
+ls
+webf
+ls
+mv refactored_modules/ common_modules
+ls
+webf
+ls mobile/javascripts/vendor/
+ls snes/javascripts/vendor/
+ls
+fbld
+ag -g karma .
+cd
+vim .agignore 
+fbld
+ag -g karma .
+ls
+ls tasks/
+grunt snes-tests
+webf
+ls mobile/javascripts/
+j build
+ls
+webf
+grunt snes-tests
+grunt --version
+karma --version
+ls
+vim package.json 
+grunt snes-tests
+grunt mobile-tests
+grunt snes-tests
+ls
+touch common_modules/README.md
+grunt mobile-tests
+grunt mobile-tests --force
+grunt mobile-tests
+grunt snes-tests
+grunt mobile-tests
+grunt snes-tests
+grunt mobile-tests | grep test
+cl mobile/javascripts/test/
+ag tpl .
+cd ..
+ag uvm-tpls .
+cd test/
+ls -R common-modules/
+grunt mobile-tests
+cd ..
+vim combined/Templates.js 
+vim src/uvm/uvm.js 
+ls combined/
+grunt mobile-tests
+grunt snes-tests
+npm install karma-spec-reporter --save-dev
+grunt mobile-tests
+c
+webf
+mobl
+vp javascripts/test/*
+ag -g .js .
+ag -g .js ./javascripts/test/
+grunt mobile-tests
+grunt snes-tests
+grunt mobile-tests
+npm install
+grunt mobile-tests
+vp $(ag -g .js ./javascripts/test/)
+vim TODO 
+fbld
+fbld
+grunt mobile-tests
+c
+grunt mobile-tests
+mobl
+c
+grunt mobile-tests
+vp Gruntfile.js package.json
+npm install karma-chrome-launcher --save-dev
+mobl
+cl javascripts/test/
+ls
+ls -R .
+grunt mobile-tests
+vp tasks/*
+grunt mobile-tests
+fg
+ls
+vim gruntUtils.js 
+grunt mobile-tests
+npm install
+grunt mobile-tests
+npm install
+grunt mobile-tests
+webf
+ls
+cd common_modules/
+npm prune
+npm install shouldjs --save-dev
+npm install should.js --save-dev
+npm install should --save-dev
+c
+mvnclean 
+webf
+ls
+cd snes/javascripts/src/uv/components/card-container/
+ls
+ls templates/
+vp card-container.js templates/card-container.tpl 
+ls ../../../
+cd ../../../..
+cd ..
+ls
+ls styles/less/modules/components/card-container/card-container.less 
+cd
+git clone  https://github.com/groenewege/vim-less .vim/bundle/
+git clone  https://github.com/groenewege/vim-less .vim/bundle/vim-less
+vim styles/less/modules/components/card-container/card-container.less
+mvnclean 
+fg
+cd -
+ls
+vp $(ag -g test javascripts/test/)
+fg
+j compon
+ls
+cd ..
+ls
+cd components
+ls
+vim components.js 
+ls
+cd ..
+ls
+ls common-modules/
+vp $(ag -g .js .)
+ls
+cd ..
+snes
+ls
+cd javascripts/src/uv/components
+ls
+mkdir article
+vim components.js 
+mkdir styles/less/modules/components/article
+web
+nweb
+fg
+cd ..
+ls
+cd ..
+ls
+cd cards/
+ls
+vim cards.js 
+ls controllers/
+vim article/article.js
+ls
+rm -rf article/
+cd ../cards/
+ls
+vp cards.js controllers/articleCardCtrl.js templates/article-card.tpl directives/card.js 
+vp styles/less/modules/components/card-container/card-container.less styles/less/modules/components/article/article.less
+cd ..
+ag -g article .
+ls snes/javascripts/src/uv/cards/templates/
+touch snes/javascripts/src/uv/cards/templates/article-card.tpl
+c
+snes
+fbld
+grunt snes-tests
+ls
+ls node_modules/should/should.js 
+ls
+vp Gruntfile.js package.json 
+pwd
+grunt snes-tests
+fg
+pwd
+grunt snes-tests
+ag mergeConfig .
+vp tasks/*
+ag mergeConfig .
+vp tasks/*
+vp $(ag mergeConfig .)
+man ag
+vp $(ag -l mergeConfig .)
+y
+ag -l mergeConfig .
+grunt snes-tests
+grunt snes-tests --stack
+ag "^odule" .
+vim tasks/mobile-less.js 
+grunt snes-tests --stack
+fg
+ls tasks/
+ls docs
+ls tasks/docs/
+ls tasks/templates/
+fg
+ls
+ls pa
+grunt snes-tests --stack
+fg
+../
+cd ../
+cd -
+grunt snes-tests --stack
+c
+ls tasks/task-init.js 
+grunt snes-tests --stack
+c
+grunt snes-tests --stack
+c
+grunt snes-tests --stack
+fg
+ag ../ .
+ag -l "../" .
+ag  ".." ./
+ag  "\.\.\/" ./
+ls ../.jshintrc 
+fg
+c
+grunt snes-tests --stack
+ag 
+ag messages_templates_en .
+vp tasks/mobile-html.js tasks/snes-html.js 
+ag messages_templates_en .
+c
+grunt snes-tests --stack
+vim tasks/default-options.js 
+c
+vp tasks/mobile-html.js tasks/snes-html.js 
+fg
+vp tasks/mobile-html.js tasks/snes-html.js 
+grunt snes-tests --stack
+ag jshint .
+vim tasks/default-
+vim tasks/default-options.js 
+grunt snes-tests --stack
+c
+grunt snes-tests --stack
+c
+grunt snes-tests --stack
+fg
+node paths.js 
+mobl
+pwd
+grunt snes-tests --stack
+vim tasks/default-globals.js 
+ls tasks/
+cd ../.
+cd /.
+cd -
+cd ../web_files/.
+cd ./../web_files/.
+cd ..
+la
+cd web_files/
+la
+fbld
+ls ..
+la ..
+cd 
+cd -
+cd ..
+vim tasks/default-options.js 
+grunt snes-tests --stack
+fg
+vim tasks/default-options.js 
+grunt snes-tests --stack
+vim /Users/aidanmiles/Documents/piksel/workspace/nextgen-web/front-end-build/../front-end-build/tasks/default-globals.js
+ag messages_templates_en .
+vp tasks/mobile-html.js tasks/snes-html.js 
+fg
+fg
+ag basePath .
+fg
+vp tasks/mobile-html.js tasks/snes-html.js 
+grunt snes-tests --stack
+ag messages_templates_en. .
+vp tasks/mobile-html.js tasks/snes-html.js 
+grunt snes-tests --stack
+vp tasks/mobile-html.js tasks/snes-html.js 
+grunt snes-tests --stack
+fg
+grunt snes-tests --stack
+grunt snes-tests 
+grunt snes-tests --trace
+grunt snes-tests 
+grunt mobile-tests 
+fg
+grunt snes-tests 
+webf
+open .
+ls snes/javascripts/test/
+vp $(ag -g test javascripts/test/)
+grunt snes-tests
+grunt snes-tests | grep test
+nweb
+snes
+pwd
+ls javascripts/test/
+ls javascripts/test/**/*.js
+var pattern = "test/a/**/[cg]/../[cg]"
+node
+grunt snes-tests
+grunt snes-tests | grep test
+cd javascripts/test/
+mv mocks/UverseConfig.Mock.js mocks/UverseConfig.mock.js
+mv mocks/UvJsOptions.Mock.js mocks/UvJSOptions.mock.js
+ls
+cd uv/
+mv cl services/
+cl services/
+c
+ls
+mv ComponentDataCache.Spec.js ComponentDataCache.spec.js 
+mv CouponData.Spec.js CouponData.spec.js
+mv EntitlementHelper.Spec.js EntitlementHelper.spec.js
+mv FeatureFactory.Spec.js FeatureFactory.spec.js
+mv PurchaseHistoryData.Spec.js PurchaseHistoryData.spec.js
+mv UserHelper.Spec.js UserHelper.spec.js
+la
+ls
+cd ..
+ag -g Spec .
+ag -g Mock .
+cd ..
+ag -g Mock .
+ag -g Spec .
+vim js/resources/jsspec/runner/JSSpec.js 
+for f in $(ag -g .Spec) do echo $f; ;done
+for f in $(ag -g .Spec) do echo $f; done
+for f in $(ag -g .Spec) do echo "$f"; done
+for f in $(ag -g .Spec .) do echo "$f"; done
+for f in $(ag -g .Spec .) do echo $f; done
+for f in $(ag -g .Spec .); do echo $f; done
+for f in $(ag -g \.Spec .); do echo $f; done
+for f in $(ag -g ".Spec" .); do echo $f; done
+for f in $(ag -g .Spec.js .); do echo $f; done
+for f in $(ag -g \.Spec.js .); do echo $f; done
+for f in $(ag -g \\.Spec.js .); do echo $f; done
+for f in $(ag -g \\.Spec .); do echo $f; done
+man sed
+rename 's/Spec/spec/g' mobile/javascripts/test/plugins/lodash-extenders.Specs.js 
+sed 's/Spec/spec/g' mobile/javascripts/test/plugins/lodash-extenders.Specs.js 
+sed 's/Spec/spec/g' "mobile/javascripts/test/plugins/lodash-extenders.Specs.js"
+cd mobile/javascripts/test/
+ls -r .
+ls -R .
+mv common-modules/lazy-load/\$rootScope.\$disableScope.Spec.js common-modules/lazy-load/\$rootScope.\$disableScope.spec.js
+mv common-modules/site-utils/urlFilter.Spec.js common-modules/site-utils/urlFilter.spec.js
+mv mocks/UvmPageOptions.Mock.js mocks/UvmPageOptions.spec.js
+vim my-account/services/MyAccountServicesTest.js 
+mv my-account/services/MyAccountServicesTest.js my-account/services/MyAccountServices.spec.js
+mv plugins/base-extenders.Specs.js plugins/base-extenders.spec.js
+cd ..
+ag -g Spec .
+mv mobile/javascripts/test/plugins/lodash-extenders.Specs.js mobile/javascripts/test/plugins/lodash-extenders.spec.js
+ag -g Mock .
+mv mobile/javascripts/test/mocks/UvmPageOptions.spec.js mobile/javascripts/test/mocks/UvmPageOptions.mock.js
+ls
+vim grunt-jenkins.sh 
+vim paths.js 
+node paths.js 
+c
+fbld
+node paths.js 
+c
+node paths.js 
+c
+node paths.js 
+snes
+ls javascripts/vendor/*
+ls javascripts/combined/
+fbld
+grunt snes-tests
+grunt snes-tests --trace
+grunt snes-tests --trace | grep should
+node paths.js 
+/Users/aidanmiles/Documents/piksel/workspace/nextgen-web/front-end-build/node_modules/should/should.js
+vim /Users/aidanmiles/Documents/piksel/workspace/nextgen-web/front-end-build/node_modules/should/should.js
+c
+grunt snes-tests
+ag initConfig .
+snes
+ag -g common_module
+ag -g common_module .
+cd ..
+grunt snes-tests
+grunt mobile-test
+grunt mobile-tests
+grunt snes-tests
+node paths.js 
+grunt snes-tests
+cd -
+ls javascripts/vendor/
+ls -r javascripts/vendor/
+ls /Users/aidanmiles/Documents/piksel/workspace/nextgen-web/front-end-build/../src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/snes/javascripts/vendor/**/*.js
+grunt snes-tests
+mobl
+ls -r .
+ls -R .
+snes
+c
+ c
+ag -g dvr .
+ag -g dvr .
+cd ..
+fbld
+vp tasks/*
+grunt snes-tests
+cd ..
+fbld
+ag meta .
+grunt
+vim Gruntfile.js 
+c
+vp tasks/*.js
+vim Gruntfile.js 
+vim Gruntfile.js 
+grunt
+grunt snes-tests
+c
+grunt
+grunt snes-tests
+vim tasks/default-globals.js 
+vim tasks/default-options.js 
+vim Gruntfile.js 
+vim tasks/default-options.js 
+grunt snes-tests
+node paths.js 
+vim paths.js 
+ls
+vim Gruntfile.js 
+grunt snes-tests
+grunt
+grunt snes-tests
+vim tasks/default-options.js 
+grunt
+vim tasks/default-options.js 
+grunt
+grunt mobile-tests
+grunt snes-tests
+vim tasks/snes-tests.js 
+grunt snes-tests
+vim tasks/snes-tests.js 
+grunt snes-tests
+mobl
+ls javascripts/test/mocks/UvmPageOptions.mock.js 
+ls javascripts/test/
+ls -R javascripts/test/
+c
+grunt snes-tests
+snes
+open javascripts/test/
+mobl
+open javascripts/test/
+snes
+open javascripts/test/
+mobl
+open javascripts/test/
+fnld
+fbld
+grunt
+grunt snes-tests
+ref
+j refac
+cd
+j refac
+j refactor
+mobl
+cd ..
+ls
+ls common_modules/
+cd common_modules/
+vim com.piksel.uverse-utils.js 
+vim com.piksel.angular-utils.js 
+mvnclean
+c
+fbld
+vim tasks/common-module-tests.js 
+vim Gruntfile.js 
+vim tasks/snes-tests.js 
+j comm
+vp *
+grunt snes-tests
+fbld
+grunt snes-tests
+node paths.js 
+grunt snes-tests
+vim paths.js 
+node paths.js 
+c
+grunt mobile-tests
+grunt mobile-tests --trace
+ag -g messages_templates_en .
+snes
+ag -g messages_templates_en .
+cd ..
+ag -g messages_templates_en .
+ag messages_templates_en .
+fbld
+node paths.js 
+vim tasks/mobile-html.js tasks/snes-html.js 
+grunt snes-tests
+grunt mobile-tests
+grunt
+webf
+cd ../configuration_files/ftl/pageComponents/generated/
+ls
+vim snes-scripts.ftl.template 
+vim uv-scripts.ftl 
+snes
+ls
+cd javascripts/src/uv/components
+ls
+cd ..
+ag -g article .
+cd ..
+ag -g article .
+vp snes/javascripts/src/uv/cards/**/*.js
+vim snes/javascripts/src/uv/components/components.js 
+c
+c'
+c
+vim TODO 
+vim Gruntfile.js 
+fbld
+grunt
+grunt mobile-tests
+grunt
+webf
+open .
+j comm
+cd mobile/javascripts/src/
+cd cards/
+ag module .
+ag -l module .
+ls
+cd ../../..
+ag -l 'cards' .
+cd ..
+ls
+vim components/
+vim cards/templates/*
+vp $(ag -l module .)
+vim TODO 
+vim javascripts/combined/Templates.js 
+mobl
+open .
+cd javascripts/src/uvm/
+fbld
+grunt
+vp uvm.js cards/**/*.js
+fbld
+grunt
+mobl
+ls
+cd javascripts/src/
+cd piksel/
+ls
+cd ..
+cd test/
+ls
+grunt mobile-tests
+fbld
+grunt mobile-tests
+vp piksel.js utils/piksel.utils.js 
+c
+mobile
+mobl
+cd javascripts/src/
+ag "'cards'" .
+ls
+fg
+ls
+vp $(ag -l "'cards'" .)
+ag "'cards'" .
+ag "'uvm.cards'" .
+ls cards/directives/card.js 
+grunt
+grunt snes-tests
+ag -l components-page .
+ag -g components-page .
+ag -l components-page .
+grunt watch
+mvnclean
+cd
+vim Dropbox/.informationz 
+cd
+vim Dropbox/.informationz 
+c
+mobl
+open .
+vp $(ag -l components-page .)
+mobl
+open .
+cd ..
+ag -g userhelper .
+ag -gi userhelper .
+man ag
+ag -gi "userhelper*.js" .
+man ag
+ag -gi --js userhelper .
+man ag
+ag -Gi --js userhelper .
+man ag
+ag -G --js UserHelper .
+ag -g --js UserHelper .
+man ag
+cd mobile/
+ag -g --js UserHelper .
+ag -gi --js userhelper .
+ag -G UserHelper.js .
+ag -Gg UserHelper.js .
+ag -g UserHelper.js .
+cd ..
+ag -g UserHelper.js .
+ag -g UserHelper .
+man vim
+vp $(ag -g UserHelper.js .)
+c
+bashp
+vo $(ag -g UserHelper.js .)
+webf
+vo $(ag -g UserHelper.js .)
+open .
+cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
+cd
+ls
+la dotfiles/
+cd dotfiles/
+git st
