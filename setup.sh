@@ -11,3 +11,6 @@ ln -sF ./dotfiles/.gitignore_global ./.gitignore_global
 ln -sF ./dotfiles/.inputrc ./.inputrc
 ln -sF ./dotfiles/.vimrc ./.vimrc
 ln -sF ./dotfiles/.vim ./.vim
+
+# make sure this is accurate before running!
+# cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
