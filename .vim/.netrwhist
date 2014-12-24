@@ -1,3 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/aidanmiles/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/mobile/javascripts/src/components'
+let g:netrw_dirhist_2='/Users/aidanmiles/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/mobile/javascripts/src/common-modules/modals'
+let g:netrw_dirhist_3='/Users/aidanmiles/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/mobile/javascripts/src/common-modules'
+let g:netrw_dirhist_4='/Users/aidanmiles/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/mobile/javascripts/src'
+let g:netrw_dirhist_5='/Users/aidanmiles/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/mobile/javascripts/src/uvm'
+let g:netrw_dirhist_6='/Users/aidanmiles/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/mobile/javascripts/src/uvm/directives'
+let g:netrw_dirhist_7='/Users/aidanmiles/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/mobile/javascripts/src/uvm'

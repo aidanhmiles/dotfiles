@@ -5306,3 +5306,313 @@ ls
 la dotfiles/
 cd dotfiles/
 git st
+git co -f workmachine 
+git st
+vim setup.sh 
+git st
+ga setup.sh 
+git cm "add commented line in setup.sh to grab SlateJS and install it"
+c
+cd mobile/
+j src
+snesn
+snes
+j src
+cd -
+jc src
+mobl
+jc src
+fbld
+vim Gruntfile.js 
+ls
+cd piksel/
+la
+ls -R .
+ag module('piksel .
+ag "module('piksel" .
+ag "module\('piksel" .
+cd ..
+c
+webf
+ag site-utils .
+cd mobile/
+ag site-utils .
+vim ~/.agignore 
+ag site-utils .
+mvnclean
+c
+cd player/
+la
+vim player.js 
+ag -g .js .
+vp $(ag -g .js .)
+vim uvm/uvm.js 
+cd 
+webf
+open .
+cd mobile/javascripts/src/
+cd slide-menu/
+ls
+cd mobile/javascripts/src/uvm/
+fbld
+mvnclean
+fbld
+grunt watch
+ls
+vim paths.js 
+grunt
+vim uvm.js 
+vim slideMenu.js 
+cd ../player/
+ls
+pwd
+cd ..
+mv player/ ~/Desktop/
+ls
+cd ../test/
+ls
+mobl
+cd javascripts/src/piksel/
+ls
+vim piksel.js 
+ls
+VIM utils/piksel.utils.js 
+vim utils/services/\$script.js 
+fbld
+grunt mobile-tests
+ls
+vim utils/services/\$script.js 
+vim utils/filters/urlFilter.js 
+cd ../../test/
+ls
+ls mo
+ls plugins/
+ls common-modules/
+ls common-modules/site-utils/
+grunt mobile-tests
+vim common-modules/site-utils/urlFilter.spec.js 
+cd ../src/uvm/
+ls
+cd ..
+vim piksel/piksel.js 
+vp $(ag -g .js .)
+cd piksel/
+grunt mobile-tests
+vim tasks/mobile-tests.js 
+mobl
+ag $cookies .
+ag "$cookies" .
+ag -g "$cookies" .
+ag -g "$cookies" ./javascripts/src/
+ag -g "('$cookies" ./javascripts/src/
+ag -g "\('$cookies" ./javascripts/src/
+ag -g "$cookies" ./javascripts/src/
+ag -g "$cookies" ./javascripts/src/uvm/
+ag "$cookies" ./javascripts/src/uvm/
+ag -i "$cookies" ./javascripts/src/uvm/
+man ag
+ag -i "\$cookies" ./javascripts/src/uvm/
+ag "\$cookies" ./javascripts/src/uvm/
+ag "cookies" ./javascripts/src/uvm/
+ag "cookies" ./javascripts/src/
+ag "\$cookies" ./javascripts/src/
+ag "$cookies" ./javascripts/src/
+ag "\\$cookies" ./javascripts/src/
+ag "cookies" ./javascripts/src/
+fbld
+vim tasks/mobile-tests.js 
+ag "ngCookies" ./javascripts/src/
+mobl
+ag "ngCookies" ./javascripts/src/
+vp $(ag -g .js .)
+vp $(ag -g cookies .)
+ag -g cookies .
+cd ..
+ag -g cookies .
+pwd
+cd ..
+ag -g cookies .
+ag -g "$script" .
+ag -g "\$script" .
+ag -g "\('$script" .
+ag -g script.js .
+vim javascripts/src/piksel/utils/services/\$script.js 
+vim javascripts/src/piksel/piksel.js 
+grunt watch
+grunt
+cd javascripts/src/
+man cp
+cp -rf player ~/Desktop/player
+rm -rf player
+ls
+grunt watch
+grunt
+vim uvm.js 
+c
+vim uvm.js 
+vimrc
+vim uvm.js 
+grunt
+vim tasks/snes-javascripts.js 
+grunt
+vim modules.spec.js
+fbld
+c
+snes
+ls
+cd javascripts/src/
+ls
+cd common-modules/
+grunt watch
+grunt snes-javascripts
+ls tasks/
+vim tasks/snes-javascripts.js 
+vim plugins/base-extenders.js 
+pwd
+ls plu*
+ls
+pwd
+ls plugins/
+cd plugins/
+pwd
+grunt
+grunt snes-javascripts
+cd '../src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/snes/javascripts/src/common_modules/plugins'
+cd ../src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/snes/javascripts/src/common_modules/plugins
+grunt snes-javascripts
+j snes
+cd -
+ls javascripts/src/common-modules/plugins/**/*.js
+grunt snes-javascripts
+fbld
+grunt snes-javascripts
+grunt
+cd ..
+ls
+grunt snes-javascripts
+fbld
+grunt snes-javascripts
+grunt snes-javascripts
+grunt
+grunt snes-javascripts
+c
+c
+fg
+vim tasks/snes-javascripts.js 
+ag plugins ./tasks/
+#ag plugins ./tasks/
+ag plugins ./tasks
+vim tasks/default-options.js 
+grunt snes-javascripts
+mobl
+jc test
+ls -r *.js
+ag -g *.js
+ag -g .js . 
+vp plugins/*
+man diff
+$(ag -g Spec .)
+ag -g Spec .
+ag -g spec .
+diff (ag -g Specs .) (ag -g spec .)
+diff <(ag -g Specs .) <(ag -g spec .)
+echo <(ag -g Specs .) <(ag -g spec .)
+echo (ag -g Specs .) (ag -g spec .)
+echo $(ag -g Specs .) $(ag -g spec .)
+man ag
+ag -G MyA .
+ag -Gg MyA .
+ag -gG MyA .
+man ag
+ag -Gl MyA .
+ag -l MyA .
+diff $(ag -l MyA .)
+man diff
+diff -y $(ag -l MyA .)
+man diff
+ag -l .js .
+ag -l js .
+ag -gl js .
+diff -y $(ag -l lodash .)
+man diff
+diff -yw $(ag -l lodash .)
+man diff
+diff -q $(ag -l lodash .)
+diff -q $(ag -l MyA .)
+diff -q $(ag -l lodash .)
+diff -q $(ag -l base .)
+diff -yw $(ag -l base .)
+diff -w $(ag -l base .)
+diff -w $(ag -l MyA .)
+fbld
+grunt snes-tests
+grunt snes-javascripts
+grunt mobile-javascripts
+grunt
+fg
+mobl
+j uvm
+ls
+cd ..
+ls
+cd uvm/
+ls
+cd ../piksel/
+la
+fbld
+grunt
+mvnclean
+webf
+open .
+fbld
+grunt
+fbld
+grunt
+mvnclean
+mobl
+cd javascripts/src/
+ls
+cl common-modules/
+cd ..
+ag -g mobileMenu .
+ag -g mobilemenu .
+ag -gi mobilemenu .
+ag -gi mobilemenu ./common-modules/
+ag -i mobilemenu ./common-modules/
+vim common-modules/modals/
+mv uvm/mobileMenu.js uvm/directives/
+cd common-modules/
+ls
+cd ..
+cd piksel/
+vim ./**/*.js
+fbld
+grunt
+vp ./**/*.js
+cd ..
+cd comm
+cl common-modules/
+snes
+cd javascripts/src/common-modules/
+ls
+ls modals/
+ls modals/*.js
+ls modals/**/*.js
+cd
+cd dotfiles/
+ls
+la
+vim .slate
+vim setup.sh 
+cd ..
+ln -s .slate dotfiles/.slate 
+vim .slate
+vim setup.sh 
+cd ..
+ln -s .slate dotfiles/.slate 
+
+
+vim dotfiles/setup.sh 
+ln -s dotfiles/.slate ./.slate
+cd dotfiles/
+git st
