@@ -1,6 +1,6 @@
 "Aidan's vimrc
 "
-" SOME INTRODUCTORY NOTES {{{ 
+" SOME INTRODUCTORY NOTES {{{
 "
 " leader-based shortcuts are mostly used for non filetype specific mappings
 " control=based mappings are filetype-specific
@@ -10,76 +10,99 @@
 "}}}
 " STANDARD OPTS {{{
 
-"TPope's pathogen
+" TPope's pathogen
 set runtimepath+=$HOME/.vim/bundle/
 execute pathogen#infect()
 
-" BACKUP-ing
+" BACKUP
+" backup and writebackup enable backup support. As annoying as this can be, it
+" is much better than losing tons of work in an edited-but-not-written file.
 set backup
 set writebackup
-"backup and writebackup enable backup support. As annoying as this can be, it
-"is much better than losing tons of work in an edited-but-not-written file.
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
-set nocompatible			" vim, not vi
+" vim, not vi
+set nocompatible
+
 " switch esc to kj
 inoremap kj <esc>
 
 " toggle numbers on/off, for ease of copy-paste
 noremap <leader>n :set nu!<cr>
-set number				" default to having numbers on
 
-syntax on				" yay syntax highlighting
+" default to having numbers on
+set number
+
+" yay syntax highlighting
+syntax on
 filetype indent plugin on
 
 " Searching!
-set hlsearch				" highlight all search pattern matches
-set incsearch				" move cursor to next match
-set ignorecase				" case insensitive searching
-set smartcase				" unless there are caps in the search
 
-set backspace=indent,eol,start		" don't always backspace to beginning of line
+" highlight all search pattern matches
+set hlsearch
 
-set autoindent				" Copy indent from current line when 
-					" starting a new line
+" move cursor to next match
+set incsearch
 
-set confirm				" ask for confirmation before overwriting, 
-					" quitting with unsaved changes
+" case insensitive searching
+set ignorecase
+" unless there are caps in the search
+set smartcase
 
-set numberwidth=4			" set number of columns for line numbers 
+" don't always backspace to beginning of line
+set backspace=indent,eol,start
 
-set nostartofline			" Stop certain movements from always 
-					" going to the first character of a line.
+" Copy indent from current line when starting a new line
+set autoindent
 
-set wildmenu				" faster, better autocomplete
+" ask for confirmation before overwriting, or quitting with unsaved changes
+set confirm
+
+" set number of columns for line numbers
+set numberwidth=4
+
+" Stop certain movements from always going to the first character of a line.
+set nostartofline
+
+" faster, better autocomplete
+set wildmenu
 
 " if ctrl-t does anything, make it not do things
 nnoremap <c-t> <nop>
 
-set pastetoggle=<c-t>			" ctrl-t toggles paste-mode
-set fenc=utf-8
+" ctrl-t toggles paste-mode
+set pastetoggle=<c-t>
 
-colorscheme ir_black			" sweet color scheme
+set fileencoding=utf-8
 
-set lazyredraw				" only redraw when have to
-set showmatch				" display matching [{( characters
+" sweet color scheme
+colorscheme ir_black
 
+" only redraw when have to
+set lazyredraw
 
+" display matching [{( characters
+set showmatch
 
 " highlight last inserted text
 nnoremap gV `[v`]
 
-set clipboard=unnamed " in 7.4, can yank/paste from unnamed register as system clipboard
+" in 7.4, can yank/paste from unnamed register as system clipboard
+set clipboard=unnamed
 
-set laststatus=2 " Always display the statusline in all windows
-set showtabline=2 " Always display the tabline, even if there is only one tab
+" Always display the statusline in all windows
+set laststatus=2
+" Always display the tabline, even if there is only one tab
+set showtabline=2
 
 "}}}
 " PLUGIN OPTS {{{
 
 "CTRL-P
+"===================================
 " have ctrlp search hidden dirs
 let g:ctrlp_show_hidden = 1
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
@@ -96,13 +119,16 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
+"SuperTab
+"===================================
 let g:SuperTabMappingForward = '<tab>'
 let g:SuperTabMappingBackward = '<a-tab>'
 
 " no html syntax checking, because not working with these angular projects
 let g:syntastic_html_checkers=['']
 
-
+"Vim Surround
+"===================================
 " adding to Vim surround
 " with -
 autocmd FileType ejs,eruby let g:surround_45 = "<% \r %>"
@@ -111,16 +137,14 @@ autocmd FileType ejs,eruby let g:surround_45 = "<% \r %>"
 autocmd FileType ejs,eruby let g:surround_61 = "<%= \r %>"
 autocmd FileType ejs,erb,eruby,html let g:surround_104 = "<!-- \r -->"
 
-" because Gemfiles
-autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 
 " include Powerline
 " python from powerline.vim import setup as powerline_setup
-" python powerline_setup() 
+" python powerline_setup()
 " python del powerline_setup
 
 "}}}
-" SINGLE-LETTER FUNCTIONS {{{
+" SINGLE-CHAR FUNCTIONS {{{
 
 "give Y consistent behavior
 nnoremap Y y$
@@ -131,12 +155,35 @@ nnoremap S bcw
 "actually, let K break the line at the cursor
 nnoremap K i<cr><esc>
 
+" make these no ops
 nnoremap <c-c> <nop>
 nnoremap $ <nop>
 nnoremap ^ <nop>
 nnoremap _ <nop>
+
+" Search for selected text, forwards ($) or backwards (#).
+vnoremap <silent> $ :<C-U>
+  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \gvy/<C-R><C-R>=substitute(
+  \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+  \gV:call setreg('"', old_reg, old_regtype)<CR>
+vnoremap <silent> # :<C-U>
+  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \gvy?<C-R><C-R>=substitute(
+  \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+  \gV:call setreg('"', old_reg, old_regtype)<CR>
+
 "}}}
 "LEADER SHORTCUTS  {{{
+
+"let leader e<something> open frequently edited files; let leader s<something > source them
+noremap <leader>ev :tabedit $MYVIMRC<cr>
+noremap <leader>sv :w<cr>:source $MYVIMRC<cr>
+noremap <leader>eb :tabedit $HOME/.bash_profile<cr>
+noremap <leader>eg :tabedit $HOME/.gitconfig<cr>G
+noremap <leader>el :tabedit $HOME/.notes/learns<cr>G
+noremap <leader>et :tabedit $HOME/Music/.titles<cr>G
+noremap <leader>ej :tabedit $HOME/.notes/jobs<cr>
 
 "let space be leader, backslash be localleader
 let mapleader = " "
@@ -154,25 +201,16 @@ noremap <leader>l $
 nnoremap , ;
 nnoremap <leader>, ,
 
-"let leader e<something> open frequently edited files; let leader s<something > source them
-noremap <leader>ev :tabedit $MYVIMRC<cr>
-noremap <leader>sv :w<cr>:source $MYVIMRC<cr>
-noremap <leader>eb :tabedit $HOME/.bash_profile<cr>
-noremap <leader>eg :tabedit $HOME/.gitconfig<cr>G
-noremap <leader>el :tabedit $HOME/.notes/learns<cr>G
-noremap <leader>et :tabedit $HOME/Music/.titles<cr>G
-noremap <leader>ej :tabedit $HOME/.notes/jobs<cr>
-
 " go to bundle folder (for easy access to ftdetect and ftplugin folders)
 noremap <leader>eu :tabedit $HOME/.vim/bundle<cr>
 
 "also html gets its own because html is annoying
-autocmd filetype html,eruby nnoremap <leader>!  A<cr><!<esc>a-<esc>69.i<cr><esc>i-<esc>57.i<cr><esc>i-<esc>67.kA<space>
+autocmd filetype html,eruby nnoremap <leader>!  A<cr><!<esc>a-<esc>69.i<cr><esc>i-<esc>57.i<cr><esc>i-<esc>67.kA<space> 
 
-"let two leaders turn off highlights 
+"let two leaders turn off highlights
 nnoremap <leader><leader> :nohl<cr>
 
-"let leader u be 'redo' instead of control-R 
+"let leader u be 'redo' instead of control-R
 nnoremap <leader>u <c-r>
 
 "}}}
@@ -218,6 +256,9 @@ set linebreak
 " FILETYPES {{{
 
 filetype indent on "turn on ftdetect and indent
+
+" because Gemfiles
+autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 
 autocmd filetype vim setlocal foldmethod=marker
 
