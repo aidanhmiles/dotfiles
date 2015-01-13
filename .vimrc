@@ -30,14 +30,14 @@ set nocompatible
 inoremap kj <esc>
 
 " toggle numbers on/off, for ease of copy-paste
-noremap <leader>n :set nu!<cr>
+" noremap <leader>n :set nu!<cr>
 
 " default to having numbers on
 set number
 
 " yay syntax highlighting
+filetype plugin indent on
 syntax on
-filetype indent plugin on
 
 " Searching!
 
@@ -178,7 +178,7 @@ vnoremap <silent> # :<C-U>
 
 "let leader e<something> open frequently edited files; let leader s<something > source them
 noremap <leader>ev :tabedit $MYVIMRC<cr>
-noremap <leader>sv :w<cr>:source $MYVIMRC<cr>
+nnoremap <leader>sv :w<cr>:source $MYVIMRC<cr>
 noremap <leader>eb :tabedit $HOME/.bash_profile<cr>
 noremap <leader>eg :tabedit $HOME/.gitconfig<cr>G
 noremap <leader>el :tabedit $HOME/.notes/learns<cr>G
@@ -235,7 +235,7 @@ nnoremap <leader><cr> o<esc>
 
 nnoremap <bs> O<esc>
 "}}}
-" WINDOWS {{{
+" WINDOWS and TABS {{{
 
 "window movement
 noremap <leader>H <c-w>h
@@ -248,19 +248,23 @@ noremap <leader>L <c-w>l
 " space T => tabedit
 noremap <leader>t :tabedit 
 noremap <leader>m :tabmove 
-" Set the command window height to 2 lines
+
+" leader+n and +p move through open buffers in window
+noremap <leader>n :next<CR>
+noremap <leader>p :previous<CR> 
+
+" Set the command window height to 4 lines
 set cmdheight=4
 set linebreak
 
 "}}}
 " FILETYPES {{{
 
-filetype indent on "turn on ftdetect and indent
-
 " because Gemfiles
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 
 autocmd filetype vim setlocal foldmethod=marker
+
 
 " shortcut for setting syntax; mostly this is for Vim Anywhere
 noremap <leader>f :set filetype= 

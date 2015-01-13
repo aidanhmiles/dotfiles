@@ -75,14 +75,17 @@ mkcd() {
     mkdir "$@" && cd $_
 }
 
+# open a vim session file
 vs() {
     vim -S "$@"
 }
 
+# open args as tabs in Vim
 vp() {
     vim -p "$@"
 }
 
+# open args as splits in Vim
 vo() {
     vim -O "$@"
 }
@@ -127,15 +130,15 @@ alias fjw="functional-javascript-workshop"
 
 
 # Piksel aliases
-alias mvnclean='cd ~/Documents/piksel/workspace/nextgen-build/ && mvn clean install eclipse:clean eclipse:eclipse -P nextgen-web -D maven.test.skip=true'
+alias mvnclean='cd ~/Documents/piksel/workspace/nextgen-build/ && mvn clean install eclipse:clean eclipse:eclipse -P nextgen-web -D maven.test.skip=true && cd -'
 alias nweb="cd ~/Documents/piksel/workspace/nextgen-web"
-alias nbld="cd ~/Documents/piksel/workspace/nextgen-build"
 alias fbld="cd ~/Documents/piksel/workspace/nextgen-web/front-end-build"
 alias webf="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files"
 alias snes="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/snes"
 alias nes="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/nes"
 alias mobl="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/mobile"
 alias refac="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/refactored_modules"
+alias alljs="ag -lg js ."
 
 # bc brian said so
 ulimit -n 10240

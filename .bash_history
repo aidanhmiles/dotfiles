@@ -5616,3 +5616,1091 @@ vim dotfiles/setup.sh
 ln -s dotfiles/.slate ./.slate
 cd dotfiles/
 git st
+gaa .
+vimrc
+git cm "add slate file, use silver searcher for ctrlp in vim"
+git st
+git push -u origin workmachine
+gp
+cd
+vim .slate 
+. .slate 
+ls
+vp accordion/**/*.js
+vim .slate 
+j dotfi
+git st
+git add .slate 
+git cm "add CMD+G for Grid thing"
+gp
+c
+ls
+cl acc
+cl accordion/
+vp $(ag -g .js .)
+vp ./**/*.js
+c
+cd ..
+ls
+cd modals/
+vp $(ag -g .js .)
+cd ../login/
+vp $(ag -g .js .)
+cl ../search/
+vp $(ag -g .js .)
+cl ../site-utils/
+vp $(ag -g .js .)
+cd ../user/
+vp $(ag -g .js .)
+cd ../plugins/
+ls
+vim angular.element-extenders.js 
+cd ../
+grunt
+cd ../uvm/
+c
+ls
+cd cards/
+vp $(ag -g .js .)
+cd ../config/
+vp $(ag -g .js .)
+cd ../directives/
+vp $(ag -g .js .)
+cd ../merchandising/
+vp $(ag -g .js .)
+cd ../prototype/
+vp $(ag -g .js .)
+cd ../components
+vp $(ag -g .js .)
+cd ../controllers/
+vp $(ag -g .js .)
+cd ../dvr/
+vp $(ag -g .js .)
+cd ../my-account/
+vp $(ag -g .js .)
+cd ../services/
+vp $(ag -g .js .)
+cd ../components-page/
+vp $(ag -g .js .)
+cd ../decorators/
+vp $(ag -g .js .)
+cd ../epg/
+vp $(ag -g .js .)
+cd ../merchandising/
+vp $(ag -g .js .)
+cd ../player/
+vp $(ag -g .js .)
+vim uvm/uvm.js 
+c
+ag -g site-utils .
+vp $(ag -g site-utils .)
+ag site-utils .
+man ag
+vp $(ag -l site-utils .)
+vp $(ag -l hammer .)
+man ag
+ag \bhammer
+ag \bhammer .
+ag 'hammer' .
+ag '\<hammer' .
+ag '\bhammer' .
+ag '\b\'hammer' .
+ag '\b\'hammer\'' .
+ag "\b\'hammer\'" .
+ag "\b'hammer'" .
+ag "\bhammer'" .
+ag "\b'hammer'" .
+ag "\bhammer'" .
+ag "\bsite-utils'" .
+ag "[^.]\bsite-utils'" .
+c
+ag "[^.]\bsite-utils'" .
+#vp $(ag "[^.]\bsite-utils'" .
+vp $(ag "[^.]\bsite-utils'" .)
+vp $(ag -l "[^.]\bsite-utils'" .)
+vp $(ag -l "[^.]\bhammer'" .)
+vp $(ag -l "[^.]\blazy'" .)
+vp $(ag -l "[^.]\bnavigate'" .)
+vp $(ag -l "[^.]\blazy-load'" .)
+vp $(ag -l "[^.]\bnavigate'" .)
+vp $(ag -l "[^.]\blazy-load'" .)
+vp $(ag -l "[^.]\bnavigate'" .)
+
+vp $(ag -l "module\('track" .)
+vp $(ag -l "module\('utils" .)
+vp $(ag -l "module\('slide" .)
+vp $(ag -l "module\('epg" .)
+vp $(ag -l "module\('piksel.epg" .)
+vp $(ag -l "module\('epg" .)
+vp $(ag -l "module\('uvm.merch" .)
+vim uvm/merchandising/merchandising.js 
+vp $(ag -l "module\('site" .)
+vp $(ag -l "module\('epg" .)
+vp $(ag -l "module\('piksel.epg" .)
+vp $(ag -l "module\('epg" .)
+vp $(ag -l "module\('uvm.merch" .)
+vim uvm/merchandising/merchandising.js 
+vp $(ag -l "module\('site" .)
+vp $(ag -l "module\('site" .)
+vp $(ag -l "[^.]\bsite-utils" .)
+vp $(ag -l "\bsite-utils" .)
+vp $(ag -l "\baccordion" .)
+vim uvm/dvr/
+vp $(ag -l "uvm.my-account" .)
+vp $(ag -l "site-utils" .)
+vim common-modules/site-utils/site-utils.js 
+cd common-modules/site-utils/
+vp $(ag -l .js .)
+ag -l .js .
+ls
+ls directives/
+vim directives/ellipsify.
+vim directives/ellipsify.js
+cd ..
+ag -l site-utils .
+vp $(ag -l site-utils .)
+vim uvm/uvm.js 
+vim uvm/uvm.js 
+grunt watch
+grunt
+ag -g Uvm
+ag -g Uvm
+vim common-modules/site-utils/values/UvmPageOptions.js 
+vim common-modules/site-utils/values/UvmConstants.js 
+webf
+cd ../configuration_files/ftl/javascripts/UvmPageOptions.js.ftl 
+webf
+cd ../configuration_files/ftl/javascripts/UvmPageOptions.js.ftl 
+
+vim ../configuration_files/ftl/javascripts/UvmPageOptions.js.ftl 
+cd ..
+ls
+cd animations/
+vp $(ag -l .js .)
+ag -l .js .
+ag -l --js .
+vp $(ag -l --js .)
+cd ../modals/
+pwd
+vp $(ag -l --js .)
+cd ../personal-settings/
+vp $(ag -l --js .)
+cd ../player-extensions/
+vp $(ag -l --js .)
+cd ../animations/
+vp $(ag -l --js .)
+cd ../modals/
+vp $(ag -l --js .)
+cd ../personal-settings/
+vp $(ag -l --js .)
+cd ../player-extensions/
+vp $(ag -l --js .)
+cd ../site-utils/
+vp $(ag -l --js .)
+cd ../user/
+vp $(ag -l --js .)
+cd ../microdata/
+vp $(ag -l --js .)
+cd ../parental-controls/
+vp $(ag -l --js .)
+cd ../player
+vp $(ag -l --js .)
+cd ../plugins/
+vp $(ag -l --js .)
+cd ../tabs/
+vp $(ag -l --js .)
+vim common-modules/site-utils/values/UvmPageOptions.js 
+vim uv/uv.js 
+grunt
+cd ..
+cd ../piksel/tracking/
+vp $(ag -l --js .)
+cd ..
+cd ../common-modules/
+ls
+vim uv-common-modules.js 
+cd site-utils/
+vp $(ag -l --js .)
+cd ..
+ag site-utils .
+ag "'common-modules.site-utils'" .
+c
+ag "'common-modules.site-utils'" .
+vp $(ag -l "'common-modules.site-utils'" .)
+ag "'common" .
+c
+ag "'common" .
+c
+ag "'common" .
+ag "ule\(['"]common" .
+ag "(ule)?\(?['"]common" .
+ag (ule)?\(?['"]common .
+ag -l (ule)?\(?['"]common .
+ag (ule)?\(?['"]common .
+ag "(ule)?\(?['"]common" .
+man ag
+ag /(ule)?\(?['"]common/ .
+ag /(ule)?\\(?['"]common/ .
+ag "['"]common"
+.
+ag "['"]common" .
+ag ['"]common .
+ag (ule)?\\(?['"]common .
+ag (?:ule)\\(?['"]common .
+ag ule\('common .
+ag "ule\('common" .
+vp $(ag "ule\('common" .)
+vp $(ag -l "ule\('common" .)
+ag "ule\('common" .
+vp $(ag "ule\('common" .)
+vp $(ag -l "ule\('common" .)
+vp $(ag -l "ule\(\"common" .)
+vp $(ag -l "ule\('common" .)
+vp $(ag -l "ule\(\"common" .)
+vp $(ag -l "ule\(\"common" .)
+vp $(ag -l "uv.uv" .)
+ag -Q uv.common-modules.site-utils
+ag -Q site-utils
+ag -Q 'common-modules
+ag -Q 'common-modules .
+ag -Q "'common-modules" .
+ag -Q "*[^.]'common-modules" .
+ag -Q "'common-modules" .
+vp $(ag -Q "'common-modules" .)
+vp $(ag -Ql "'common-modules" .)
+vp $(ag -Q ", 'common-modules" .)
+vp $(ag -Ql ", 'common-modules" .)
+grunt watch
+grunt
+cd ..
+cd src/
+vim piksel/piksel.js 
+cd common-modules/site-utils/
+webf
+cd ../configuration_files/ftl/
+ls
+ag --js js .
+ag  js .
+ag site-utils .
+c
+ag site-utils .
+vp $(ag -Qg .js .)
+cd ..
+ag "'site-utils" .
+ag "site-utils" .
+ag -l "site-utils" . | wc -l
+ag -l "uv.common-modules.site-utils" . | wc -l
+ag -l "site-utils" . | wc -l
+ag -l "uv.common-modules.site-utils" . | wc -l
+
+cd javascripts/src/common-modules/
+ls
+vim site-utils/site-utils.js 
+cd site-utils/
+vp $(ag -gQ .js .)
+vp $(ag -gQ js .)
+grunt snes-javascripts
+vim tasks/snes-javascripts.js 
+grunt
+vim tasks/snes-tests.js 
+grunt snes-tests
+vp $(ag "ule\('uv.common-modules.site-utils" .)
+vp $(ag -l "ule\('uv.common-modules.site-utils" .)
+vp $(ag -g .js .)
+cd ../../../
+cd ..
+ag uvconstants .
+ag -g uvconstants .
+ag -g Uv .
+vim javascripts/src/common-modules/site-utils/values/UvConstants.js 
+cd javascripts/src/
+cd uv/
+ag site-utils .
+cd ../../..
+ag -l uv.common-modules.siteutils .
+grunt snes-javascripts
+grunt
+vim tasks/snes-javascripts.js 
+vim tasks/mobile-javascripts.js 
+vim site-utils.js 
+c
+cd javascripts/src/piksel/
+ls
+vim tracking/tracking.js 
+cd tracking/
+vp $(ag -g .js .)
+cd ../../common-modules/
+vim uv-common-modules.js 
+vim tasks/snes-javascripts.js 
+grunt snes-javascripts
+mobl
+cd styles/less/mobile.less 
+vim styles/less/mobile.less
+vim styles/less/common/loading.less 
+c
+pwd
+snes
+fbld
+snes
+ag uv.common-modules .
+ag uv.common_modules .
+vim uv-common-modules.js 
+grunt watch
+vim /private/etc/hosts
+mvnclean
+snes
+ag uv.common_modules .
+ag uv.common_modules ./javascripts/
+ag uv.common_modules ./javascripts/src/
+man ag
+ag -l uv.common_modules ./javascripts/src/
+cd javascripts/src/
+ag -l uv.common_modules .
+cd ../..
+ag uv.common-modules .
+cd javascripts/src/
+ls common-modules/
+ag -lQ js common-modules/
+fbld
+grunt
+ls
+cd tasks/
+ls
+grunt snes-javascripts
+vim *.js
+vp *.js
+ls
+pwd
+ls common-modules/
+ls piksel/
+ls uv/
+ls
+pwd
+ag -g Uv .
+cd ..
+ag -g Uv .
+open .
+mobl
+ag -g Uv .
+vp default-* snes-javascripts.js 
+cd ..
+ag gruntUtils .
+vim Gruntfile.js 
+ls
+ls sr
+ls javascripts/src/
+ag gruntUtils .
+grunt snes-javascripts
+grunt snes-tests
+grunt snes-javascripts
+cd snes-javascripts
+cl javascripts/src/
+ls
+ls uv/
+mv common-modules uv/common-modules
+ls 
+grunt snes-tests
+ls uv/common-modules/site-utils/
+vim uv/common-modules/site-utils/site-utils.js 
+grunt snes-javascripts
+grunt snes-tests
+ag metadata ./javascripts/test/
+cd javascripts/
+ag metadata.networkLogoUrl ./javascripts/test/
+ag metadata.networkLogoUrl ./test/
+ag metadata.networkLogoUrl .
+ls
+ cd test/
+ag networkLogoUrl .
+vim $(ag -l networkLogoUrl .)
+ag -l networkLogo 
+ag uv.components.third-party-player directive tests .
+vim gruntUtils.js 
+grunt
+vim tasks/mobile-javascripts.js 
+mvnclean
+fbld
+c
+ag -l networkLogo 
+ag uv.components.third-party-player directive tests .
+ag -l third-party-player 
+vp $(ag -l third-party-player .)
+c
+c
+fbld
+vim tasks/snes-javascripts.js 
+grunt
+mvnclean
+fbld
+snes
+open ..
+c
+cd javascripts/test/
+ls
+snes
+mkdir piksel
+cd piksel/
+mkdir utils tracking navigate
+cd javascripts/src/piksel/
+ls
+mobl
+cd javascripts/test/
+ls
+mkdir piksel
+mkdir uvm
+vim piksel.spec.js
+ls
+cd ..
+ls
+mkdir common-modules
+ls
+ls
+cd piksel/
+vim piksel.spec.js 
+mobl
+c
+ls
+cd styles/
+ls
+cd less/modules/player/player.less 
+mvnclean
+vim less/modules/player/player.less
+cd ..
+ls
+snes
+ag "javascripts/src/common-modules" .
+ag "src/common-modules"
+ag "src/common-modules" .
+cd ..
+ag "src/common-modules" .
+cd ..
+nweb
+ag "src/common-modules" .
+fbld
+grunt
+cd -
+ag "src/common-modules" .
+snes
+mvnclean
+webf
+cd ../configuration_files/
+mobl
+ag -g mobileMenu .
+vimrc
+fbld
+vim tasks/snes-javascripts.js 
+ls tasks/
+grunt
+cd tasks/
+vp snes-vendor-javascripts.js snes-javascripts.js 
+ag tpl .
+snes
+ls javascripts/src/
+snes
+ls javascripts/combined/
+vim javascripts/combined/uv.combined.js 
+flnld
+fbld
+vim paths.js 
+ag tpl .
+ag common-modules .
+ag common-modules ./tasks/
+grunt snes
+webf
+conf
+cd ../configuration_files/ftl/pageComponents/generated/
+ls
+vp common-modules-scripts.ftl uv-scripts.ftl 
+la
+vim snes-scripts.ftl.template 
+webf
+ag getSnesJsFiles
+ag getSnesJsFiles .
+ag SnesJSFiles .
+ag snesjsfiles .
+cd -
+vim snes-scripts.ftl.template 
+cd -
+vim getSnesJsFiles .
+ag getSnesJsFiles .
+webf
+ag getSnesJsFiles .
+nweb
+ag getSnesJsFiles .
+fbld
+vim snes-html.js 
+vim tasks/mobile-html.js 
+j conf
+jc gen
+ls
+mv common-modules-scripts.ftl ~/Desktop/
+vim tasks/snes-javascripts.js 
+fbld
+grunt
+ls
+snes
+vim javascripts/src/uv/common-modules/modals/templates/customerGridModal.tpl
+ag -g modalRoot .
+ag modalRoot.tpl .
+vim ~/.agignore 
+ag modalRoot.tpl .
+vim ~/.agignore 
+dotf
+cd
+cd dotfiles/
+ls
+la
+mv ~/.agignore .
+man ln
+mv ~/.agignore .
+man ln
+ln -s dotfiles/.slate ./.slate
+ln -s dotfiles/.agignore ./.agignore
+cd ..
+ln -s dotfiles/.agignore ./.agignore
+cd do
+cd dotfiles/
+vim .agignore 
+git st
+git add .agignore 
+git cm "new file .agignore"
+gp
+ag -g uvsj .
+ag -g uvjs .
+ag UvJsOptions
+ag "module(["']UvJsOptions" .
+ag "module\(\"UvJsOptions"
+ag "module\("UvJsOptions"
+ag -Q module("UvJsOptions .
+ag -Q module\("UvJsOptions .
+ag -Q module\(\"UvJsOptions .
+ag -Q module\(\'UvJsOptions .
+webf
+ag -Q module\(\'UvJsOptions .
+ag -Q module\(\"UvJsOptions .
+ag -Q module\(\'UvJsOptions .
+ag -Q \(\"UvJsOptions .
+ag -Q \(\'UvJsOptions .
+ag UvJsOptions snes/
+ag "UvJsOptions.jsSrc + 'common-modules" .
+ag -Q "UvJsOptions.jsSrc + 'common-modules" .
+c
+ag -Q "UvJsOptions.jsSrc + 'common-modules" .
+ag -Ql "UvJsOptions.jsSrc + 'common-modules" .
+ag -Ql "UvJsOptions.jsSrc + 'common-modules" . | wc -l
+ag -Ql "UvJsOptions.jsSrc + 'common-modules" .
+ag -Ql "UvJsOptions.jsSrc + 'common-modules" . | wc -l
+vp ag -Ql "UvJsOptions.jsSrc + 'common-modules" .
+vp $(ag -Ql "UvJsOptions.jsSrc + 'common-modules" .)
+snes
+vp $(ag -Ql "UvJsOptions.jsSrc + 'common-modules" .)
+ag src/common-modules/plugins .
+ag -Q src/common-modules/plugins .
+nweb
+ag -Q src/common-modules/plugins .
+jc generated
+ls
+vim plugins-scripts.ftl 
+vim snes-scripts.ftl.template 
+vim tasks/snes-javascripts.js 
+grunt snes
+fg
+grunt snes
+fg
+grunt snes
+fg
+ag -Q common-modules/plugins .
+ag -Q common-modules/plugin .
+mv plugins-scripts.ftl ~/Desktop/
+ls
+fbld
+vim tasks/snes-javascripts.js 
+grunt
+vim tasks/snes-html.js 
+j conf
+cd ftl/decorators/
+vim gruntUtils.js 
+vim nes.ftd 
+grunt
+svn help unlock
+mvnclean
+snes
+ag -g plugins .
+ag -g Cbs .
+ag cbsplayer .
+ag -g components.js .
+vim javascripts/src/uv/components/components.js 
+grunt
+open .
+snes
+ag -g player
+c
+mobl
+ls
+cd javascripts/test/
+ls
+ 
+vim javascripts/src/uv/common-modules/player/services/players/CbsPlayer.js
+snes
+open ..
+snes
+open ..
+vp $(ag -l js .)
+cd ../uv/
+ls
+cd common-modules/
+ls
+vp $(ag -l js .)
+vp $(ag -l js ./animations/)
+snes
+cd javascripts/src/uv/components
+s
+ls
+cd player-component/
+ls
+ls templates/
+vp $(ag -g (js|tpl) .)
+cd ..
+vim components.js 
+ag ^M .
+vp $(ag -l js ./modals/)
+c
+ls
+vim components.js 
+ag -g promo .
+cd ..
+ag -g promo .
+vp $(ag -g promo .)
+vp $(ag -g card-container .)
+vp $(ag -g componentData .)
+vp $(ag -l componentData .)
+fg
+vp $(ag -g "(js|tpl)" .)
+c
+cd common-modules/
+ls
+pwd
+pwd | grep test
+pwd | grep stuff
+vp $(ag -l js ./modals/)
+vp $(ag -l js ./personal-settings/)
+fg
+vimrc
+c
+snes
+cd javascripts/src/uv/components/article/
+mkdir controllers
+mkdir templates
+touch controllers/ArticleComponentCtrl.js
+touch templates/article-component.tpl
+pwd
+whoami
+vim article.js
+vim sample-data.js
+mv sample-data.js  ~/Desktop/
+vimrc
+j dotf
+git st
+ga .vimrc 
+git cm "options section reformatted back to old style, without columns"
+vim ~/Desktop/sample-data.js 
+vp $(ag -l js ./player-extensions/)
+snes
+mobl
+snes
+c
+mvnclean
+vim /private/etc/hosts
+bashp
+cd -
+cd javascripts/src/uv/common-modules/
+pwd
+ls
+vp $(ag -l js ./site-utils/)
+vp $(ag -l js ./user/)
+fg
+mobl
+jc comm
+ls
+ls
+pwd
+j test
+j snestest
+j snes test
+vim common-modules/uvm-common-modules.spec.js 
+vim ~/Desktop/translate
+vim ~/Desktop/translate.txt
+mvnclean
+snes
+cd javascripts/src/uv/components
+vim components.js 
+sudo vim /private/etc/hosts
+cd /private/etc/
+ls
+ls '
+ls \'
+cd -
+ls
+rm '
+rm \'
+vp $(ag -l js ./animations/)
+ls
+vp $(ag -l js ./user/)
+cd ../..
+ag EntitlementStatus .
+c
+cd -
+ls
+vp $(ag -l js ./microdata/)
+ag -l js ./user/ | wc -l
+vp $(ag -l js ./microdata)
+vp $(ag --js -l . ./microdata)
+vp $(ag --js -l . ./user/)
+vp $(ag --js -l . ./animations/)
+vp $(ag --js -l . ./animations/) ../../../test/common-modules/uvm-common-modules.spec.js 
+vp ../../../test/common-modules/uvm-common-modules.spec.js $(ag --js -l . ./modals/) 
+vp $(ag --js -l . ./animations/) ../../../test/common-modules/uvm-common-modules.spec.js 
+vp ../../../test/common-modules/uvm-common-modules.spec.js $(ag --js -l . ./modals/) 
+vp ../../../test/common-modules/uvm-common-modules.spec.js $(ag --js -l . ./modals/) 
+vp ../../../test/common-modules/uvm-common-modules.spec.js $(ag --js -l . ./user/) 
+vp ../../../test/common-modules/uvm-common-modules.spec.js $(ag --js -l . ./personal-settings/) 
+vp ../../../test/common-modules/uvm-common-modules.spec.js $(ag --js -l . ./site-utils/) 
+vp ../../../test/common-modules/uvm-common-modules.spec.js $(ag --js -l . ./microdata/) 
+vp ../../../test/common-modules/uvm-common-modules.spec.js $(ag --js -l . ./parental-controls/) 
+vimrc
+vp ../../../test/common-modules/uvm-common-modules.spec.js $(ag --js -l . ./player/) 
+vp ../../../test/common-modules/uvm-common-modules.spec.js $(ag --js -l js ./player/) 
+vim $(ag --js -l js ./player/)
+vimrc
+vim $(ag --js -l js ./player/)
+vimrc
+vim $(ag --js -l js ./player/)
+ls
+vim $(ag --js -l js ./plugins/)
+vim $(ag --js -l js ./plugins)
+ls plugins/
+vim $(ag --js -l js$ ./plugins)
+vim $(ag --js -l $ ./plugins)
+vim $(ag --js -l $ ./tabs/)
+vim $(ag --js -lg js  ./tabs/)
+vim $(ag --js -lg js  ./plugins/)
+cd ../../
+ls
+ls
+c
+c
+ls
+snes
+jc test
+ls
+pwd
+mobl
+cd javascripts/src/
+ls
+j snes
+jc src
+vim common-modules/uv-common-modules.spec.js 
+ls
+ls uv/
+ls components/
+rmdir components/
+ls
+ls
+cd uv/
+ls
+ag -lg js .
+ls
+uv.blankTests.spec.js
+cd uv/
+pwd
+pwd | grep snes
+whereami
+c
+ls
+vim uv.blankTests.spec.js
+ls
+ag -lg js .
+vim uv.blankTests.spec.js 
+pwd
+cd ../uv.js 
+cd ..
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd uv/
+ls
+ls cards/
+ag -lg js cards/
+ag -lg js components/
+vimrc
+cd uv/
+ls
+vim uv.blankTests.spec.js 
+ls
+ag -lg js .
+ag -lg js .
+vp $(ag -lg js .)
+fg
+fg
+fg
+pwd | grep snes
+whereami
+c
+ls
+vp ../../../test/common-modules/uvm-common-modules.spec.js $(ag --js -l js ./player/) 
+vp ../../../test/uv/uv.blankTests.spec.js $(ag -lg js ./cards/) 
+vp ../../../test/uv/uv.blankTests.spec.js $(ag -lg js ./cards/) 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./cards/) 
+vim uv.blankTests.spec.js 
+j .vim
+j vim
+j dotfiles
+cd .vim/bundle/
+ls
+cd ftdetect/
+cd ../ftplugin/
+ls
+cd ../ftdetect/
+ls
+vim js-spec.vim 
+vim uv.blankTests.spec.js 
+mv uv.blankTests.spec.js uv.blankTests.specs.js 
+vim uv.blankTests.specs.js 
+vim uv.blankTests.specss.js 
+mv uv.blankTests.spec.js uv.blankTests.specss.js 
+ls
+mv uv.blankTests.specs.js uv.blankTests.specss.js 
+vim uv.blankTests.specss.js
+mv uv.blankTests.specs.js uv.blankTests.specss.js 
+vim uv.blankTests.specss.js
+mv uv.blankTests.specs.js uv.blankTests.specss.js 
+mv uv.blankTests.specss.js uv.blankTests.specsss.js 
+ls
+vim uv.blankTests.specsss.js 
+vim uv.blankTests.specsssss.js 
+c
+ls
+mv uv.blankTests.specsss.js uv.blankTests.spec.js 
+vim uv.blankTests.spec.js 
+vim ../ftplugin/js-spec.vim
+vim uv.blankTests.spec.js 
+ls
+vim js-spec.vim ../ftdetect/js-spec.vim 
+vim js-spec.vim ../ftplugin/js-spec.vim 
+vs js-spec.vim ../ftplugin/js-spec.vim 
+ls
+vim js-spec.vim ../ftdetect/js-spec.vim 
+vim js-spec.vim ../ftplugin/js-spec.vim 
+vs js-spec.vim ../ftplugin/js-spec.vim 
+vs js-spec.vim ../ftplugin/js-spec.vim 
+
+vs
+bashp
+ls
+cd ../../test/
+ls
+cd uv/
+j bundle
+sl
+ls
+ls
+ls
+vim uv.blankTests.spec.js 
+open .
+c
+vim uv.blankTests.spec.js 
+vo ftdetect/js-spec.vim ftplugin/js-spec.vim 
+ls
+mv ftplugin/js-spec.vim spec.javascript.vim
+mv ftdetect/js-spec.vim spec.javascript.vim
+ls .
+ls ftplugin/
+ls ftdetect/
+vim spec.javascript.vim 
+mv spec.javascript.vim ftdetect/
+vim ftplugin/spec.javascript.vim
+ls
+ls ftdetect/
+ls ftplugin/
+vim ftdetect/spec.javascript.vim 
+vim ftplugin/spec.javscript.vim
+vim uv.blankTests.spec.js 
+mv ftplugin/spec.javscript.vim ftplugin/spec.javascript.vim
+ls ftdetect/
+vim uv.blankTests.spec.js 
+vim ftplugin/spec.javascript.vim 
+ls
+mkdir syntax
+vim uv.blankTests.spec.js 
+ls
+ls -lg js cards/
+ag -lg js cards/
+vim syntax/spec.javascript.vim
+rm -rf syntax/
+ls
+vim ftdetect/spec.javascript.vim 
+mv ftdetect/spec.javascript.vim ftdetect/jasmine.vim
+mv ftplugin/spec.javascript.vim ftplugin/jasmine.vim
+vim uv.blankTests.spec.js 
+vp ftplugin/jasmine.vim
+vim uv.blankTests.spec.js 
+vp ftplugin/jasmine.vim ftdetect/jasmine.vim 
+vim uv.blankTests.spec.js 
+vim ftplugin/jasmine.vim 
+c
+ls
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./components/) 
+j snes
+jc test
+cd -
+j cards
+ls
+ag -lg js .
+bashp
+c
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./cards/) 
+pwd
+ls
+j snes test
+vim uv/uv.blankTests.spec.js 
+vim ftplugin/jasmine.vim 
+j snes test
+j --state
+j --stat
+j bundle
+vim uv/uv.blankTests.spec.js 
+mkdir after
+vim uv/uv.blankTests.spec.js 
+j snes uv
+ls
+j snes src uv
+ls
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./cards/) 
+j snes test
+vim uv/uv.blankTests.spec.js 
+c
+vim uv/uv.blankTests.spec.js 
+ls
+ls uv/
+cd uv/
+ls
+vim ~/Desktop/thing
+c
+vim uv.blankTests.spec.js 
+fg
+vim uv.blankTests.spec.js 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./components-page/) 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./controllers/) 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./epg/) 
+c
+ls
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./footer/) 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./templates/) 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./common-modules/) 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./components-shared/) 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./decorators/) 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./filters/) 
+man pbcopy
+c
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./header/) 
+fg
+ag -lg js ./header/ 
+echo ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./header/) 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./header/) 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./uguide/) 
+ag -lg js ./uguide/
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./uguide/navigation/) 
+c
+ls
+pwd
+cd
+j snes components
+bashp
+ls
+ag template .
+cd ..
+cd components-page/values/ComponentsPageConstants.js 
+vim components-page/values/ComponentsPageConstants.js
+ls
+sudo vim /private/etc/hosts
+jc article
+ls
+ls templates/
+vim components-page/controllers/ComponentsPageCtrl.js 
+fg
+sudo vim /private/etc/hosts
+ls
+c
+fg
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./uguide/uguide-cards/) 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./uguide/uguide-category-component/) 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./uguide/uguide-html-block/) 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./uguide/uguide-page/) 
+ls
+ls
+cd ..
+ls
+ls common-modules/
+ls uv/
+ls
+ls
+ls uv/
+man ls
+ls | grep \/$
+ls uv | grep \/$
+ls uv | grep \/$ | wc -l
+ag -lg js uv/
+cd uv/
+ls
+ls config/
+ls config/GlobalEvents.js 
+vim uv.blankTests.spec.js 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./config) 
+ls
+vim config/GlobalEvents.js
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./config) 
+ls epg/
+vim uv.blankTests.spec.js 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./flyouts/) 
+ls flyouts/
+ag -lg js flyouts/
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./flyouts/controllers/) 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./flyouts/directives/) 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./flyouts/flyout-components/) 
+fg
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./flyouts/services/
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./flyouts/services/)
+ls flyouts/values/
+vim flyouts/values/*
+fg
+ls
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./footer/)
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./header/)
+ag -lg js header/
+vim header/values/PreviewTemplates.js 
+vp ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./header/)
+vim ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./header/)
+vim
+vim ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./header/)
+vim
+vim ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./header/)
+vim
+vim ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./header/)
+ag -lg js header/ | wc -l
+ls
+ls
+vim ../../test/uv/uv.blankTests.spec.js $(ag -lg js ./header/)
+vim uv.blankTests.spec.js 
+vo ftdetect/jasmine.vim ftplugin/jasmine.vim 
+c
+j dotf
+j sn te
+cd -
+gst
+git st
+git add .vim/bundle/*
+git st
+git cm "add jasmine ftdetect and ftplugin files"
