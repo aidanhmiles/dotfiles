@@ -6704,3 +6704,1140 @@ git st
 git add .vim/bundle/*
 git st
 git cm "add jasmine ftdetect and ftplugin files"
+gaa .
+git cm "updates, clean up vimrc filetype stuff"
+fg
+jobs
+jobs
+vim
+jobs
+fg
+ls
+cd components/card-container/
+ls -r .
+ls -R .
+vim components-page/controllers/ComponentsPageCtrl.js 
+c
+ls
+pwd
+c
+cd ..
+ls
+cd article/
+ls
+ls -R *.js
+ls -R ./**/*.js
+ag -lg js .
+ls
+j snes
+ls
+cd styles/
+ls
+cd less/modules/components/article/
+ls
+vim article-component.less
+fg
+ls
+j snes
+vim article.js 
+vp controllers/ArticleComponentCtrl.js templates/article-component.tpl 
+fg
+ls
+vim templates/article-component.tpl 
+vs controllers.vim 
+j snes comp tabbed
+j snes comp
+cd tabbed-container/
+ls
+cd templates/
+cd ../controllers/
+ls
+cd ..
+alljs
+vim
+j snes
+jc directives
+cd javascripts/src/uv/directives/
+ls
+j snes
+ag -g tab .
+jc tabs
+cd javascripts/src/uv/common-modules/tabs/
+cd -
+jc tabs
+ls
+alljs
+ls -R .
+man ls
+ag -l "" .
+ag -l "''" .
+find .
+ag -lg (js|tpl) .
+find .
+ag -lg (js|tpl) .
+ag -lg "(js|tpl) .
+ag -lg "(js|tpl)" .
+g -lg tpl .
+ag -lg tpl.
+ag -lg tpl .
+c
+fbld
+fbld
+grunt
+vp $(ag -lg "(js|tpl)" .)
+ls
+cd ..
+ls
+cd ..
+ag -gl card .
+ag -lg card .
+ag CardTemplates ..
+cd ..
+pwd
+ag CardTemplates ..
+ag -lg rticle-component .
+vim ../cards/values/CardTemplates.js
+ls
+ls article/templates/article-component.tpl 
+cd article/templates
+pwd
+vim article-component.tpl 
+snes
+ag getComponentDataList .
+jc components-p
+jc component
+cd ../components-page/
+ls
+vp services/*
+alljs
+vp alljs
+vp $(alljs)
+fbld
+cd tasks/
+ls
+mobile
+grunt watch
+grunt
+ag banner-ad .
+mobl
+ag banner-ad .
+npm install
+grunt
+mobl
+ag banner-ad .
+ag -l banner-ad .
+mvnclean
+vp $(ag -l banner-ad .)
+j snes
+j mobl
+cd ../mobile/
+jc componets
+jc components
+cd ../components-page/
+ls
+cl values/
+ls
+mobl
+ag banner-ad .
+mobile
+mobl
+open .
+vim ComponentsPageConstants.js 
+vim mobile-less.js 
+fbld
+cl tasks/
+vim snes-javascripts.js 
+vim mobile-javascripts.js 
+vim snes-javascripts.js 
+snes
+jc uv
+vim uv.js 
+vim components/components.js 
+fbld
+grunt
+fbld
+ag livereload .
+grunt watch
+ls
+vim uv.js 
+ag articleCardCtrl .
+nweb
+ls
+ls styles/
+rm -rf styles/
+vs styles.vim 
+ls
+fg
+j snes styles
+ls
+ag -g article-card.less .
+cd ../../
+ag -g article-card.less .
+cd -
+cd less/modules/components/card-container/
+ls
+la
+ag -g article .
+cd ..
+ag -g article .
+cd ..
+ag -g article .
+cd ..
+ag -g article .
+webf
+ag -g article .
+mv mobile/styles/less/modules/components/card-container/article-card.less snes/styles/less/modules/cards/article-card.less
+vs controllers.vim 
+vs controllers
+grunt livereload
+man autojump
+j snes styles
+ls
+ag card-wrapper .
+ag -l card-wrapper .
+vim ~/dotfiles/.agignore 
+ag -l card-wrapper .
+ag  card-wrapper .
+c
+ag  card-wrapper .
+grunt watch
+grunt
+j sne sty
+ls
+vim css/uv.css 
+ls
+cd less/
+ls
+j snes comp
+ls
+ls article/
+grunt watch
+vim uv.less
+cd ..
+vim css/uv.css 
+ag fluid-layout .
+ag --less fluid-layout .
+cd ../sr
+cd ../javascripts/src/
+ag fluid .
+vim uv/common-modules/site-utils/values/UvConstants.js 
+cd -
+ag @media (min-width: .
+ag "@media (min-width:" .
+man ag
+ag -Q "@media (min-width:" .
+vim less/common/componentWidth.less 
+c
+snes
+ag uv-href .
+j snes sty
+ag last-child .
+vs styles.vim 
+vim ~/Dropbox/.informationz 
+c
+ls
+ag uguide .
+ag -lg uguide less/modules/
+j snes uv
+ag -lg uguide .
+ls
+cd uguide/
+ag hover .
+ag mouseover .
+ag mouse .
+ls
+cd uguide-cards/
+vp $(alljs)
+vim templates/uguide-card*
+cd ..
+ag overlay .
+cd ..
+ag overlay .
+ag uguide .
+ag -lg uguide less/modules/
+ag -lg uguide less/modules/
+vp $(ag -lg uguide less/modules/)
+j snes elli
+j snes src
+ls
+ag -g ellips .
+vim uv/common-modules/site-utils/directives/ellipsify.js 
+ls
+cd ..
+ls
+cd ..
+ls
+cd javascripts/
+ag -lg ellipsify .
+ag -lg template .
+ag ellipsify .
+vim src/uv/uguide/uguide-category-component/templates/uguide-category-component.tpl
+vim src/uv/flyouts/templates/category.tpl
+vs controllers.vim 
+ls
+ls controllers
+cd ../
+cd ..
+ls cards/controllers/
+mv cards/controllers/articleCardCtrl.js cards/controllers/ArticleCardCtrl.js
+cd -
+ls
+cd article/
+ls
+vs controllers.vim 
+vim controllers.vim 
+vs controllers.vim 
+fg
+c
+vs templates.vim 
+vs controllers.vim 
+grunt livereload
+j snes comp
+cd ../cards/controllers/ArticleCardCtrl.js 
+vim ../cards/controllers/ArticleCardCtrl.js
+vim ../cards/templates/article-card.tpl 
+vim article/controllers/ArticleComponentCtrl.js 
+vim article/templates/article-component.tpl 
+vim article/controllers/ArticleComponentCtrl.js 
+vim ../cards/controllers/ArticleCardCtrl.js 
+grunt watch
+fbld
+vim article/controllers/ArticleComponentCtrl.js 
+fg
+c
+ls
+vim article/controllers/ArticleComponentCtrl.js 
+vim ../cards/controllers/ArticleCardCtrl.js 
+vim ../cards/templates/article-card.tpl 
+grunt watch
+j snes comp
+cd article/
+j Desk
+cd ~/Desktop/
+j desk
+vim test
+vs controllers.vim 
+j snes comp
+ls
+cd article/
+cd templates
+ls
+cd ..
+j snes sty modu
+ls
+cd components/article/
+vs styles.vim 
+vs templates.vim 
+vs controllers.vim 
+j snes
+ls
+fbld
+grunt
+cd ../mov
+cd ../mobile/
+ls
+cd javascripts/test/
+ls
+j snes test
+ls
+vim uv/uv.blankTests.spec.js 
+j mobi test
+ls
+vim uvm/uvm.blankTests.spec.js
+cd ~/.vim/bundle/
+ls
+cd common-modules/
+ls
+ls -R 
+vim uvm.common-modules.spec.js
+j mobi sr
+ls
+cd common-modules/
+ls
+vp ../../test/common-modules/uvm.common-modules.spec.js $(ag -lg js accordion/)
+vp ../../test/common-modules/uvm.common-modules.spec.js $(ag -lg js login/)
+vp ../../test/common-modules/uvm.common-modules.spec.js $(ag -lg js carousel/)
+vp ../../test/common-modules/uvm.common-modules.spec.js $(ag -lg js modals/)
+j snes test uv
+vim uv.blankTests.spec.js 
+ls
+cd 
+cd -
+cd ..
+ls
+vim piksel/piksel.spec.js 
+vim common-modules/uv-common-modules.spec.js 
+vp ../../test/common-modules/uvm.common-modules.spec.js $(ag -lg js plugins/)
+vp ../../test/common-modules/uvm.common-modules.spec.js $(ag -lg js search/)
+j mobi test
+ls
+cd common-modules/
+ls
+ls -R
+vp ../../test/common-modules/uvm.common-modules.spec.js $(ag -lg js site-utils/)
+fg
+vp ../../test/common-modules/uvm.common-modules.spec.js $(ag -lg js site-utils/)
+vp ../../test/common-modules/uvm.common-modules.spec.js $(ag -lg js user/)
+ls
+cd ../piksel/
+ls
+vp ../../test/piksel/piksel.spec.js
+j mobi src
+ls
+cd piksel/
+ls
+ls config/
+ls hammer/
+cd hammer/
+alljs
+vp ../../test/piksel/piksel.spec.js $(ag --js -l angular config/)
+j snes comp art
+ls
+vp ../../test/piksel/piksel.spec.js $(ag --js -l angular hammer/)
+vp ../../test/piksel/piksel.spec.js $(ag --js -l angular lazy-load/)
+vp ../../test/piksel/piksel.spec.js $(ag --js -l angular navigate/)
+vp ../../test/piksel/piksel.spec.js $(ag --js -l angular slide-menu/)
+vp ../../test/piksel/piksel.spec.js $(ag --js -l angular tracking/)
+vp ../../test/piksel/piksel.spec.js $(ag --js -l angular utils/)
+cd tracking/
+vp alljs
+vp $(alljs)
+vim $(alljs)
+cd ..
+ls
+vp ../../test/piksel/piksel.spec.js $(ag --js -l angular utils/)
+cd ..
+ls
+cd uvm/
+ls
+vp ../../test/piksel/piksel.spec.js $(ag --js -l angular cards/)
+cd ..
+ls
+cd ../uvm/
+ls
+vim uvm.js 
+fg
+ls
+fg
+c
+vim ../../cards/templates/article-card.tpl 
+vp ../../test/uvm/uvm.blankTests.spec.js $(ag --js -l angular cards/)
+ls
+vp ../../test/uvm/uvm.blankTests.spec.js $(ag --js -l angular components/)
+vp ../../test/uvm/uvm.blankTests.spec.js $(ag --js -l angular components-page/)
+vp ../../test/uvm/uvm.blankTests.spec.js $(ag --js -l angular config/)
+vp ../../test/uvm/uvm.blankTests.spec.js $(ag --js -l angular controllers/)
+vp ../../test/uvm/uvm.blankTests.spec.js $(ag --js -l angular decorators/)
+vp ../../test/uvm/uvm.blankTests.spec.js $(ag --js -l angular directives/)
+vp ../../test/uvm/uvm.blankTests.spec.js $(ag --js -l angular dvr/)
+vp ../../test/uvm/uvm.blankTests.spec.js $(ag --js -l angular epg/)
+vp ../../test/uvm/uvm.blankTests.spec.js $(ag --js -l angular merchandising/)
+vp ../../test/uvm/uvm.blankTests.spec.js $(ag --js -l angular my-account/)
+vp ../../test/uvm/uvm.blankTests.spec.js $(ag --js -l angular player/)
+vp ../../test/uvm/uvm.blankTests.spec.js $(ag --js -l angular prototype/)
+vp ../../test/uvm/uvm.blankTests.spec.js $(ag --js -l angular services/)
+vp ../../test/uvm/uvm.blankTests.spec.js $(ag --js -l angular templates/)
+ls
+cd ..
+ls
+fg
+c
+ls
+vp ftdetect/jasmine.vim ftplugin/jasmine.vim 
+c
+ls
+j snes test
+ls
+j snes src
+ls
+cd uv/
+ls
+cd services/
+ls
+vp *
+fg
+cd ..
+ag Uverse .
+ag getPersonalizationData .
+c
+ag getPersonalizationData .
+cd ..
+ag getPersonalizationData .
+cd ../mobile/
+ag getPersonalizationData .
+cd ../snes/
+ag getPersonalizationData .
+ag Uverse.page .
+ag "Uverse" .
+ag "\bUverse" .
+ag "\bUverse\b" .
+c
+ag "\bUverse\b" .
+cd ..
+ag "\bUverse\b" .
+vim *
+fg
+pwd
+j snes test
+ls
+d
+cd common-modules/
+ls
+j snes src
+ls
+cd common-modules/
+ls
+cd ../uv/common-modules/
+ls
+cd modals/
+ls
+vim alljs
+fbld
+ls
+j snes src
+ag -lg componentspage
+ag -lg componentspage .
+ag -lg ComponentsPage .
+cd ../..
+cd ..
+ag $sce .
+ag -Q $sce .
+ag -Q $sce ./uv/
+ag -Q $sce ./common-modules/
+ag -Q $sce .
+ag -Q "$sce" .
+ag "$sce" .
+ag -Q "$sce" .
+vim package.json 
+npm install -g protractor
+webdriver-manager update
+ls
+vim protractor.config.js
+vim firstE2E.spec.js
+protractor protractor.config.js 
+vim protractor.config.js 
+vim firstE2E.spec.js 
+protractor protractor.config.js 
+fg
+vim protractor.config.js 
+fg
+protractor protractor.config.js 
+fg
+vim package.json 
+ls
+vim docs.js 
+vim docs/js/angular-bootstrap.js 
+fg
+vim firstE2E.spec.js 
+ls
+protractor protractor.config.js 
+npm install -g protractor --save-dev
+protractor protractor.config.js 
+webdriver-manager start
+npm install
+webdriver-manager start
+webdriver-manager update --standalone
+protractor protractor.config.js 
+vim package.json 
+npm install protractor --save-dev
+vim package.json 
+ls
+j snes
+ls
+cd javascripts/
+ls
+cd src/
+ls
+ag -lg mainctrl .
+ag -l mainctrl .
+vim uv/controllers/UvMainCtrl.js 
+ag UvMainCtrl uv/
+ag UvMainCtrl .
+ag ComponentsPageCtrl .
+vim uv/components-page/controllers/ComponentsPageCtrl.js 
+cd ../
+cd ..
+ag routes .
+ls
+ag route .
+ag router .
+ag state .
+ag --js state .
+ag --js -lg state .
+vim uv/components/state-manager/**/*.js
+vim uv/components/state-manager/controllers/StateManagerCtrl.js 
+vim uv-common-modules.spec.js 
+c
+c
+vim $(alljs)
+c
+ls
+c
+ls
+ls tasks/
+ls tasks/*-tests.js
+fbld
+c
+npm install grunt-protractor-runner --save-dev
+webdriver-manager start
+rm protractor.config.js 
+ls
+ag connect .
+ag port .
+ag \bport .
+ag "\bport" .
+ag "\bport\b" .
+c
+ag 8080 .
+ag 8080 tasks/
+vp tasks/*-tests.js
+vim protractor.config.js 
+vim uv/components-page/controllers/ComponentsPageCtrl.js 
+fbld
+vim ~/Desktop/eh
+j snes pik
+ag -Q ".components" .
+ag -Q "components" .
+ag "components" .
+ls
+j snes src pik
+ag -Q "components" .
+ag "components" .
+cd ..
+ag ".components" .
+ag "\.components" .
+c
+ag "\.components" .
+ag "(?\!uv)\.components" .
+ag (?\!uv)\.components .
+ag '(?!uv)\.components' .
+ag '[^uv]\.components' .
+ag '(!uv)\.components' .
+ag '(?!uv)\.components' .
+ag '!(uv)\.components' .
+ag '\.components' .
+ag '[^v]\.components' .
+ag '(?!uv)(?>\.)?components' .
+ag '(?!uv)(?!\/)(?>\.)?components' .
+ag --js '(?!uv)(?!\/)(?>\.)?components' .
+ag --js '(?!uv)(?!\/)\.components' .
+man ag
+j snes test
+ls
+fbld
+j snes
+ls
+ls javascripts/
+cd -
+grunt protractor:E2E-TESTS-FIRST
+grunt protractor
+grunt e2e-tests
+ag snes-tests .
+ag protractor .
+grunt e2e-tests
+grunt e2e
+grunt
+grunt e2e
+j snes src
+ag -g ComponentsPageCtrl
+j snes sty
+ls
+ls less/
+vim less/modules/components/article/*
+ls
+cd less/modules/
+ag "component {" .
+ag "\bcomponent {" .
+ag "^component {" .
+ag "component {" .
+fbld
+grunt
+vs less/modules/components/article/styles.vim 
+fgh
+fg
+c
+vim firstE2E.spec.js 
+ls
+pwd
+test?
+j snes test
+test?
+bashp
+j snes comp
+ls
+cd live-event-hero/
+ls
+ag social
+ls controllers/
+ls templates/
+cd ../../..
+ag isLikesEnabled .
+cd uv/components
+ag social-icons .
+grunt watch
+vp controllers/LiveEventHeroCtrl.js templates/live-event-hero.tpl 
+j snes src
+ag social-icon .
+vim ~/Dropbox/.informationz 
+fg
+j snes src
+ag -g ComponentsPageCtrl
+ag -g ComponentsPageCtrl
+vim $(ag -g ComponentsPageCtrl . )
+grunt e2e
+grunt snes-tests
+ag snes-tests .
+ag SNES-TESTS .
+ag karma .
+grunt e2e
+j snes sty
+ls
+cd less/modules/components/article/
+ls
+vim article-component.less 
+vs styles.vim 
+c
+grunt e2e
+vim package.json 
+c
+grunt e2e
+grunt e2e --force
+npm install
+grunt e2e
+j snes src
+j page
+nweb
+ag -g macrosUtils.ftl
+jc conf
+vim ftl/macros/macrosUtils.ftl 
+cd ..
+nweb
+ag -l u-control . | grep ftl
+jc conf
+cd -
+jc conf
+cd -
+ag -l u-control . | grep ftl
+vp $(ag -l u-control . | grep ftl)
+vp $(ag -l u-control-button-icon . | grep ftl)
+vp $(ag -l u-control . | grep ftl)
+vp $(ag -l u-control-button-icon . | grep ftl)
+vp $(ag -l u-control . | grep ftl)
+vp $(ag -l u-control . | grep ftl)
+vp $(ag -l requires-not-logged-in . | grep ftl)
+ag returnurl=${returnUrl} . | grep ftl
+ag -l returnurl=${returnUrl} . | grep ftl
+ag -l returnurl=${returnUrl} . | grep macros
+vp $(ag -l returnurl=${returnUrl} . | grep macros)
+vim $(ag -l returnurl=${returnUrl} . | grep macros)
+j snes
+ls
+jc live-hero
+jc live
+ls
+vim controllers/LiveEventHeroCtrl.js 
+ls
+cd ..
+ls
+cd player-component/
+ls
+ag left .
+vim templates/player-metadata-left-column.tpl 
+ls
+j snes src
+ag -g extension .
+vim uv/common-modules/player-extensions/services/LiveExtension.js
+vp uv/common-modules/player-extensions/services/*
+vp controllers/PlayerComponentCtrl.js templates/player-component.tpl templates/player-metadata-left-column.tpl values/SubTypes.js 
+fg
+vim uv/common-modules/player-extensions/services/MetadataExtension.js
+j snes
+ls
+jc comp
+ls
+ag -g extension .
+cd ..
+ag -g extension .
+vim common-modules/player-extensions/directives/playerExtension.js 
+vp common-modules/player-extensions/services/LiveExtension.js common-modules/player-extensions/services/MetadataExtension.js 
+fg
+webdriver-manager start
+grunt e2e
+j snes test
+ls
+cd -
+ls
+grunt e2e
+ls node_modules/protractor/example/conf.js 
+vim node_modules/protractor/example/conf.js
+grunt e2e
+c
+c
+grunt e2e
+grunt e2e
+vp Gruntfile.js tasks/default-options.js tasks/e2e-tests.js 
+c
+ls
+fg
+cd node_modules/protractor/
+ag -g selenium .
+ag -l selenium .
+ag -g chrome .
+cd ..
+ls
+cd -
+man ag
+ls
+ag -ag chrome .
+ag -ag selenium .
+ag -ag exe .
+ag -ag jar .
+cd ../...
+cd ..
+grunt e2e
+webdriver-manager start
+vim controllers/ComponentsPageCtrl.js 
+j snes
+ag -g dash .
+ls
+jc player
+ls
+cd ..
+ls
+cd ..
+ag -g player .
+ag -g dashplayer .
+ag -g DashPlayer .
+man ag
+j snes comp
+cd ..
+vim components-page/controllers/ComponentsPageCtrl.js 
+fg
+j snes comp art
+ls
+fbld
+vim controllers
+vim components-page/controllers/ComponentsPageCtrl.js 
+grunt watch
+vp $(ag -g DashP .)
+vp Gruntfile.js tasks/default-options.js tasks/e2e-tests.js protractor.conf.js firstE2E.spec.js 
+ag -g DashPlayer .
+j snes
+ag -g DashPlayer .
+jc player
+cd ../../common-modules/player
+ls
+jc player
+ag -g DashPlayer .
+j snes ven
+cd -
+j snes vendor
+j snes
+cd javascripts/vendor/
+ls
+cd dash/
+ls
+bashrc
+bashp
+j dotfiles
+ag vi .
+vim .inputrc
+j dotfiles
+ag vi .
+vp $(ag -l blah rrkj
+ls streaming/
+vim streaming/EventBus.js 
+vim streaming/ErrorHandler.js 
+ag EventBus .
+ag EventBus.dispatch
+ag EventBus.dispatch .
+cd ..
+ag EventBus.dispatch .
+ag eventBus.dispatch .
+ls
+j snes
+ag updateMetadata .
+ls
+cd vendor/dash/
+ls
+cd dash/
+ls
+cd ../streaming/
+ls
+vp ErrorHandler.js EventBus.js EventController.js MediaPlayer.js MetricsModel.js 
+vimrc
+ag eventBus .
+cd ..
+ag eventBus .
+c
+ag eventBus .
+ag singleton .
+ag singleton lib/
+j snes comp
+ls
+cd ../common-modules/player
+ls
+ls controllers/
+ls directives/player
+ls directives/
+ls directives/players
+ls services/
+ls services/play
+ls services/players/
+ls
+ls services/
+ls
+cd ..
+ls
+cd player-extensions/
+ls
+ls services/
+cd
+ls Documents/
+vim Documents/processor.js 
+vim lib/dijon.js 
+ls
+cd streaming/
+ls
+ls captioning/
+cd ..
+ls
+ls lib/
+ls dash/
+ls dash/vo/
+ls -R .
+vim dash/vo/Event.js 
+vim dash/vo/EventStream.js 
+cd dash/
+vim DashContext.js DashHandler.js Dash.js 
+cd ..
+vim streaming/Context.js 
+j snes -page
+j snes comppage
+j snes page
+sl
+ls
+cd ..
+ls
+ag dashplayer .
+vim controllers/ComponentsPageCtrl.js 
+
+fbld
+grunt
+vp captioning/*
+c
+ag eventBus.dispatch .
+cd ..
+ag eventBus.dispatch .
+ls
+ag debug.js
+ag -g debug .
+cd ..
+ag debug .
+ag -l debug .
+ag -g debug .
+ag -g Debug .
+cd dash/
+vp ErrorHandler.js EventBus.js EventController.js MediaPlayer.js MetricsModel.js 
+ag eventBus.dispatch .
+ag -l eventBus.dispatch .
+vim streaming/Debug.js 
+vp $(ag -l eventBus.dispatch .)
+ag -g error .
+ag -g Error .
+vim dash/DashHandler.js 
+ag type: .
+ag "\btype:" .
+c
+ag event .
+ag dispatchEvent .
+man ag
+ag -A dispatchEvent .
+ls
+j Doc
+cd
+cd Documents/
+cd ../Downloads/
+cd ../Dropbox/
+cd ../Movies/
+cd ../Music/
+cd ../Pictures/
+cd
+j doc
+ls
+git clone git@github.com:itsthejazzkid/vimlike-music-editor.git
+cd vimlike-music-editor/
+ls
+cd ~/Desktop/
+cd -
+j desk
+j piksel
+nweb
+cd ..
+ls
+cd ..
+ls
+cd workspace/
+ls
+cd AttSilverlightPlayer/
+ls
+ls -R .
+vim README.md 
+git remote add origin https://aidanhmiles@bitbucket.org/aidanhmiles/vimlike-music-editor.git
+git remote remove origin
+git remote add origin https://aidanhmiles@bitbucket.org/aidanhmiles/vimlike-music-editor.git
+gpom
+fg
+j snes
+jc page
+vim controllers/ComponentsPageCtrl.js 
+grunt watch
+vp *
+git st
+gaa
+git cm "move data structure to theory.js"
+gpom
+vim theory.js 
+git commit --amend -m "move data structure into theory file"
+vim sprint\ feedback.txt
+vim services/PlayerErrorExtension.js 
+vim EventBus.js 
+vp $(ag -g DashPlayer . )
+fg
+git st
+gaa
+git cm "updates"
+gpom
+git pull
+git pull origin master
+vim theory.js 
+gaa .
+git cm "fix a conflict"
+gpom
+vim components/player-component/controllers/PlayerComponentCtrl.js 
+j snes
+j dash
+ls
+pwd
+ls dash/
+ls dash/vo/
+j silver
+ls
+ls AttSilverlightPlayer.Web/
+ls
+ag -g event .
+ag -g Event .
+ls AttSilverlightPlayer
+ag Event .
+alljs
+vim AttSilverlightPlayer.Web/Silverlight.js 
+ag bitrateerror .
+cd ..
+cd -
+ag Bitrate .
+ag Error .
+cd ..
+cd - 
+ag license .
+ls
+ls dash/
+ls
+ls streaming/
+vim AttSilverlightPlayer/AttLicenseAcquirer.cs 
+ag bitrate .
+vim AttSilverlightPlayer/AttLicenseAcquirer.cs 
+ag bitrate .
+ls
+ag "Low bitrate" .
+ag "low bitrate" .
+ag "low Bitrate" .
+ag "Low Bitrate" .
+ag "LowBitrate" .
+ag mediakey .
+ag mediaKey .
+ag MediaKey .
+ag videoKey .
+ag -A videoKey .
+vim AttSilverlightPlayer.Web/Silverlight.js 
+all js
+alljs
+ag hahaha AttSilverlightPlayer.Web/Silverlight.js AttSilverlightPlayer/ServiceBase.cs 
+ag -l videokey .
+vim AttSilverlightPlayer.Web/Silverlight.js 
+ag hahaha AttSilverlightPlayer.Web/Silverlight.js AttSilverlightPlayer/ServiceBase.cs 
+ag -l videokey .
+$(ag -l videokey .
+ag error $(ag -l videokey .)
+ag PlayerDataError .
+ag error $(ag -l license .)
+ag :            //attempt to locate error code within message
+:            //attempt to locate error code within message
+ag OnMediaFailed .
+ag Exception .
+vim $(ag Exception .)
+ls
+j snes 
+jc player
+ls
+ag -g Dash .
+vim $(ag -l Exception .)
+ag JavascriptHandledException .
+ag -B JavascriptHandledException .
+vim AttSilverlightPlayer/JavascriptHandledException.cs 
+ag -BA JavascriptHandledException .
+man ag
+ag -C JavascriptHandledException .
+c
+c
+j silverlight
+vim .
+ls
+ag bitrate .
+ag bitrate .
+ag PlaybackBitrate .
+ag -C PlaybackBitrate .
+= (PlaybackBitrate < Bitrate25)
+101:                    : (PlaybackBitrate < Bitrate50)
+103:                        : (PlaybackBitrate < Bitrate75)
+105:                                : (PlaybackBitrate < Bitrate100)
+ag "license server" .
+ag "capability" .
+ag capability .
+ag timeout .
+ag expire .
+ag error $(ag -l videokey .)
+ag -C error $(ag -l videokey .)
+ag failed .
+ag onError .
+ag key .
+ag mediakey .
+ag sourcekey .
+ag videokey .
+ag -C videokey .
+vim AttSilverlightPlayer/ConcurrentStreamService.cs 
+ag -C "video key" .
+vim AttSilverlightPlayer/ReleaseStreamService.cs 
+vim streaming/rules/DownloadRatioRule.js 
+vp streaming/ProtectionModel.js dash/DashContext.js streaming/Stream.js 
+ls
+ag -g media .
+ls streaming/
+ag -g media .
+ag -g Media .
+man ag
+ag -gi media .
+ag -ig media .
+fg
+c
+ag -g Stream
+j dotf
+git st
+git add .vimrc 
+git cm "add leader shortcuts for :next and :previous"
+vimrc
+vim .agignore 
+bashp
+git add .bash_profile 
+gcm "add an alias for git"
+ga .agignore 
+gcm "ignore some more folders"

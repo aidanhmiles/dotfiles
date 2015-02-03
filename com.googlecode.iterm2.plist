@@ -110,15 +110,17 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>491 203 465 295 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>434 392 924 485 0 0 1440 877 </string>
+	<string>38 392 605 485 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3 30 1418 842 0 0 1440 877 </string>
+	<string>0 26 1434 851 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 35 1418 842 0 0 1440 877 </string>
+	<string>0 26 1418 851 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>-1920 0 1690 1057 -1920 0 1920 1057 </string>
+	<string>0 18 1418 859 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>0 35 1418 842 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_D7A19D2D-8031-49CC-986C-66C4933316B0</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -298,9 +300,9 @@
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
-			<false/>
+			<true/>
 			<key>Blur Radius</key>
-			<real>2</real>
+			<real>6.2850289344787598</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1025,7 +1027,7 @@
 			<key>Blur</key>
 			<false/>
 			<key>Blur Radius</key>
-			<real>2</real>
+			<real>2.2090883255004883</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1638,8 +1640,10 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-12-31T20:38:32Z</date>
+	<date>2015-01-29T21:39:20Z</date>
 	<key>SavePasteHistory</key>
+	<false/>
+	<key>Show Toolbelt</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
