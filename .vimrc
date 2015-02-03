@@ -82,7 +82,8 @@ set fileencoding=utf-8
 colorscheme ir_black
 
 " only redraw when have to
-set lazyredraw
+" this is a little weird
+" set lazyredraw
 
 " display matching [{( characters
 set showmatch
@@ -236,6 +237,10 @@ nnoremap <leader><cr> o<esc>
 nnoremap <bs> O<esc>
 "}}}
 " WINDOWS and TABS {{{
+
+" more natural splitting; opposite of vim's default
+set splitbelow
+set splitright
 
 "window movement
 noremap <leader>H <c-w>h
