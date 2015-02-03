@@ -1,8 +1,8 @@
 *.min
 *.map
 
-*.min.js
-*.map.js
+*.min.*
+*.map.*
 
 /tmp/
 /.git/
