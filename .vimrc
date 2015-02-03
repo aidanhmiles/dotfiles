@@ -66,6 +66,9 @@ colorscheme ir_black			" sweet color scheme
 " set lazyredraw				" only redraw when have to
 set showmatch				" display matching [{( characters
 
+" only redraw when have to
+" this is a little weird
+" set lazyredraw
 
 
 " highlight last inserted text
@@ -186,6 +189,10 @@ nnoremap <leader><cr> o<esc>
 nnoremap <bs> O<esc>
 "}}}
 " WINDOWS {{{
+
+" more natural splitting; opposite of vim's default
+set splitbelow
+set splitright
 
 "window movement
 noremap <leader>H <c-w>h
