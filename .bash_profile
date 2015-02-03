@@ -106,6 +106,7 @@ alias be="bundle exec"
 alias bi="bundle install"
 # GIT
 alias gpom="git push origin master"
+alias gpo="git push origin"
 alias gpog="git push origin gh-pages"
 alias gp="git push"
 alias gphm="git push heroku master"
