@@ -139,6 +139,7 @@ alias nes="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/
 alias mobl="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/mobile"
 alias refac="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/refactored_modules"
 alias alljs="ag -lg js ."
+alias test?="pwd | grep test"
 
 # bc brian said so
 ulimit -n 10240
