@@ -63,7 +63,7 @@ set fenc=utf-8
 
 colorscheme ir_black			" sweet color scheme
 
-set lazyredraw				" only redraw when have to
+" set lazyredraw				" only redraw when have to
 set showmatch				" display matching [{( characters
 
 

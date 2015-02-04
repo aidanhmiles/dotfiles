@@ -87,7 +87,7 @@
 	<key>NSColorPickerSlidersDefaults</key>
 	<string>1</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Desktop</string>
+	<string>~/dotfiles</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -113,12 +113,14 @@
 	<array/>
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>870 350 201 309 0 0 1920 1058 </string>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>881 151 445 103 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>459 392 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 4 1440 873 0 0 1440 877 </string>
+	<string>0 26 1440 851 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 26 1440 852 0 0 1440 878 </string>
+	<string>0 26 1440 851 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_D7A19D2D-8031-49CC-986C-66C4933316B0</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -341,7 +343,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Recycle</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Disable Printing</key>
@@ -1620,7 +1622,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/ADN/Desktop</string>
+	<string>/Users/ADN/dotfiles</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -1636,7 +1638,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-12-08T19:01:51Z</date>
+	<date>2015-02-04T01:44:05Z</date>
 	<key>SUSkippedVersion</key>
 	<string>2.0.0.20141103</string>
 	<key>SavePasteHistory</key>

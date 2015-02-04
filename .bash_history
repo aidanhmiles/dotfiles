@@ -3950,3 +3950,513 @@ git add .bash_profile
 ls
 git cm "add alias for fjw"
 git st
+gaa .
+git st
+gp
+git st
+git push origin newlaptop
+vp *
+:q
+mv Desktop/com.googlecode.iterm2.plist dotfiles/
+cd dotfiles/
+ls
+git st
+git add com.googlecode.iterm2.plist 
+git cm "add iterm profile"
+git push origin newlaptop
+ls
+cd dotfiles/
+ls
+git st
+ls
+git st
+git co master
+ls .vim/bundle
+ls
+phx
+ls
+phx
+ls
+cl te
+cl test/
+ls unit/
+phx
+git st
+cd -
+ls
+cl unit/
+ls
+vp *
+gulp
+vim Dropbox/.informationz 
+j chro
+j down
+cd chrome\ DLs/
+ls
+cd ..
+ls
+cd ut/
+ls
+cd Bobby\ McFerrin\ \(MP3\)/
+ag -g feeling .
+phx
+cl www/js/
+ls
+cd ..
+s
+ls
+cd ..
+ls 
+cl te
+cl test/
+vim karma.conf.js 
+vim ../package.json 
+vim karma.conf.js 
+ls
+cd
+cd Desktop/
+vim witness\ letter.txt
+c
+vim ../Dropbox/.informationz 
+vim Desktop/test
+vim Desktop/scratch
+vim Desktop/translations.txt
+vim Dropbox/.informationz 
+fjw
+c
+fjw
+ls
+j functional
+ls
+j --stat
+ls
+fjw
+vim everySome.js 
+fjw run everySome.js 
+fg
+fjw run everySome.js 
+fg
+fjw run everySome.js 
+j function
+fg
+node
+fjw
+j functional
+ls
+j function
+vim everySome.js 
+node
+j fun
+fg
+fjw run everySome.js
+fg
+fjw
+fjw verify everySome.js
+fjw
+fjw run everySome.js
+fg
+vim Person.js
+vim everySome.js 
+node
+vim Dropbox/.informationz 
+vim Desktop/processor.js 
+ls
+cd Documents/
+ls
+cd work/
+ls
+git clone git@github.com:itsthejazzkid/vimlike-music-editor.git
+touch README.md
+git st
+mv README.md vimlike-music-editor/
+cd vimlike-music-editor/
+git st
+gaa .
+git cm "First commit with blank README. So it begins!
+"
+ls
+vim README.md 
+git st
+gst
+bashp
+~/.bash_profile
+git st
+gaa .
+git cm "add theory file, start working on data structure for songs"
+gpom
+pry
+cd /Volumes/SEAGATE_4TB/
+ls
+rm -rf Music\ Library/
+vim Desktop/a\ note
+mv Desktop/a\ note Desktop/a\ note.txt
+fg
+vim Desktop/a\ note
+vim Desktop/a\ note.txt 
+j work
+ls
+cd ..
+j work
+j --stat
+j help
+autojump help
+autojump --help
+cd ../../..
+cd work/
+j func
+j -d 5
+cd ../../
+j -i 10
+j doc work
+j -d 20
+j work
+ls
+cd vimlike-music-editor/
+git remote
+git help remote
+git remote set-url origin https://aidanhmiles@bitbucket.org/aidanhmiles/vimlike-music-editor.git
+git st
+git pull
+ls
+c
+ls
+vim Dropbox/learns.txt 
+open Dropbox/learns.txt 
+npm install -g n_
+n_
+vim theory.js 
+j work
+cd -
+j vimlike
+ls
+yo
+ls
+j vimlike
+yo gulp-angular
+ls
+ls test/
+ls src/
+vim src/app/index.
+vim src/app/index.js 
+ls
+vim gulpfile.js 
+ls bower_components/
+ls
+c
+ls
+vim gulpfile.js 
+ls
+cd ..
+ls
+vp README.md theory.js note.py chord.py chord_catalogue.py 
+j work
+git clone https://aidanhmiles@bitbucket.org/efsharp/interview-problem-aiden.git
+cd interview-problem-aiden/
+ls
+git st
+git co Aidan-Miles-Solution
+git st
+git branch
+ls
+cd solution/
+ls
+vim gulpfile.js 
+open .
+ls
+j vimlike
+ls
+vim package.json 
+ls
+vim package.json 
+ls
+npm install should --save-dev
+npm install shouldjs --save-dev
+npm install should --save-dev
+ls
+vp package.json gulpfile.js paths.js readme.md test/karma.conf.js 
+vim gulpfile.js 
+ls
+vp package.json ../interview-problem-aiden/solution/package.json 
+npm install gulp-sass
+ls
+vim package.json 
+fg
+vim package.json 
+npm install
+ls
+ls bower_components/
+ls
+ls src/
+ls src/assets/images/
+j inter
+ls
+cd solution/
+ls
+ls src/
+ls
+cd src/
+ls
+mkdir scss
+ls
+ls src/
+mkdir js
+ls assets/
+ls
+c
+ls
+ls src/components/
+pwd
+cd ..
+ls
+cp ../interview-problem-aiden/solution/paths.js .
+ls
+cp ../interview-problem-aiden/solution/test/karma.conf.js .
+ls
+mv karma.conf.js test/
+vim package.json 
+vim test/unit/main.js 
+gulp test
+npm install gulp-plumber --save-dev
+c
+ls
+gulp test
+npm install gulp-test --save-dev
+gulp test
+npm install gulp-rename --save-dev
+gulp test
+npm install gulp-minify-css --save-dev
+gulp test
+npm install gulp-notify --save-dev
+gulp test
+npm install karma-chrome-launch karma-spec-reporter --save-dev
+npm install karma-chrome-launcher karma-spec-reporter --save-dev
+gulp test
+vim test/karma.conf.js 
+j viml
+ls
+jc app
+ls
+cd src/app/
+ls
+vim index.
+vim index.js 
+vim main/main.controller.js main/main.html 
+cd ..
+ls
+cd ../test/
+ls
+cd ..
+gulp
+j inter
+ls
+npm install gulp-minify-html --save-dev
+gulp connect
+vim solution/package.json 
+ls
+vim gulp
+vim gulpfile.js 
+gulp connect
+c
+cd src/app/
+ls
+gulp
+j viml
+gulp
+cd ..
+cd .
+cd ..
+git st
+gaa
+git cm "add yeoman angular app, gulp runs, connect works"
+gulp connect
+j viml
+git st
+gpom
+jc app
+ls
+gulp
+j viml
+gulp
+vim gulpfile.js 
+fg
+ls
+gulp
+vim main/main.html 
+j viml
+ls
+vim gulpfile.js 
+mv test/unit/main.js test/unit/main.spec.js
+fg
+gulp test
+ls
+vim src/app/main/main.html 
+dg
+gulp
+fg
+ls
+jc app
+ls
+vim index.js main/main.controller.js 
+j viml
+ls
+ls dist/
+j viml
+cd dist/
+ls
+ls js/
+vim js/main.js 
+vim index.html 
+vim dist/index.html 
+j src
+ls
+ls js/
+ls app/j
+ls app/
+ls app/main/
+mv app/main/* app/
+rm -r app/main
+ls
+ls app/
+mv app/* .
+rm app/
+rm -r app/
+ls
+vim main.html 
+mkdir templates
+mv index.scss scss/
+mv main.html templates/
+mv index.js js/
+ls
+c
+ls
+ls components/
+vim src/index.html 
+cd dist/
+ls
+gulp
+vim js/main.js 
+vim index.html 
+ag cookies .
+cd ..
+ls
+ag cookies .
+npm install
+bower install
+ag cookies .
+gulp scripts
+ag angular
+ls bower_components/
+gulp connect && gulp watch
+ls bower_components/angular-cookies/
+ls bower_components/angular-ui-router/
+ls
+cd ..
+ls
+gulp
+vp index.js main/main.controller.js 
+ls
+cd .
+cd src/
+ls
+mv main.controller.js js/
+ls js/
+vim js/index.js 
+ls js/
+c
+mv js/index.js js/VME.js
+mv js/main.controller.js js/VME.controllers.js
+c
+ls
+vim templates/main.html 
+vim ../gulp
+vim ../gulpf
+ls dist/
+ls dist/templates/
+vim dist/templates/main.html 
+j int
+ls
+cd solution/
+ls
+ls dist/templates/main.html 
+vim dist/templates/main.html 
+cd -
+j viml
+ls
+vim ../gulpfile.js 
+vim src/index.html 
+vim src/index.html 
+vim src/js/VME.js 
+ag vimlikeMusicEditor .
+cd ..
+vim dist/js/main.js 
+vimrc
+ls src/
+ls src/js/
+rm -r src/components/
+ls
+cd src/
+ls
+mv js/VME.js js/first.js
+mv js/VME.controllers.js js/second.js
+git st
+cd .
+git st
+cd ..
+git st
+gaa .
+git cm "get rid of app dir, rename libs to vendor in paths.js"
+git st
+gpo;m
+gpom
+git pull
+gulp
+vim gulpfile.js 
+vim dist/js/main.js 
+j viml
+vim src/scss/index.scss 
+git st
+vim .gitignore 
+ga .gitignore 
+git cm "take out dist, add vim files"
+fg
+j viml
+cd src/
+ls
+j viml src
+ls
+vp js/*
+ls
+mv js/first.js js/VME.js
+mv js/second.js js/VME.controllers.js
+gulp
+j viml
+npm install lodash --save-dev
+npm uninstall lodash
+bower install lodash --save-dev
+fg
+vim ../gulpfile.js 
+vim gulpfile.js 
+bower uninstall lodash
+bower install ng-lodash
+ls bower_components/ng-lodash/
+vim gulpfile.js 
+j viml
+vim bower_components/ng-lodash/build/ng-lodash.js 
+ugulp
+vp index.html templates/*
+gulp
+vp js/*
+vp scss/*
+vim paths.js 
+j viml
+gulp
+j viml
+j '/Users/ADN/Documents/work/vimlike-music-editor/src' 
+cd ../t
+cd ../test/
+ls
+gulp
+vim gulpfile.js 
+cd ..
+j dotf
+git st
