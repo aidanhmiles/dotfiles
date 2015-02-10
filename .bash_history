@@ -7841,3 +7841,389 @@ git add .bash_profile
 gcm "add an alias for git"
 ga .agignore 
 gcm "ignore some more folders"
+gaa .
+gcm "updates"
+gpom
+git st
+git push origin workmachine
+bashp
+git st
+ga .bash_profile 
+gcm "add alias gpo"
+j dotf
+gpo workmachine
+fg
+ag capabilityError .
+ag segment .
+vim streaming/vo/SegmentRequest.js 
+ag segment .
+vim AttSilverlightPlayer/AttSmfPlayer.cs 
+vim AttSilverlightPlayer/VideoSegmentEventArgs.cs 
+ag "low" $(ag -l bitrate .)
+ag "\blow\b" $(ag -l bitrate .)
+ag -g"\blow\b" $(ag -l bitrate .)
+ag -i "\blow\b" $(ag -l bitrate .)
+ag "\blow\b" $(ag -l bitrate .)
+ag "\blow" $(ag -l bitrate .)
+ag "low" $(ag -l bitrate .)
+ag BITRATE_LOWER .
+ag ActiveAdaptiveMediaPlugin .
+ag BITRATE_LOWER .
+ag ActiveAdaptiveMediaPlugin .
+ag "low" $(ag -l bitrate .)
+ag -l bitrate .
+ag ended .
+c
+ag "change" $(ag -l bitrate .)
+ag BITRATE_LOWER .
+ag LOWER .
+ag ActiveAdaptiveMediaPlugin .
+ag SetVideoBitrateRange .
+vim AttSilverlightPlayer/AttSmfPlayer.cs 
+ag bitrate .
+fg
+ag bitrate .
+ag BITRATE .
+ag SetVideoBitrateRange .
+ls
+pwd
+c
+c
+j snes
+ag -g variables.less .
+vim $(ag -g variables.less .)
+j viml
+git st
+git pull
+gulp
+npm install
+ls
+git remote
+git help remote
+git remote -v
+git st
+git fetch
+git pull
+git pull origin master
+ls
+git st
+npm install
+gulp
+npm install -g gulp
+gulp
+bower install
+npm install -g bower
+bower install
+gulp
+gulp connect
+ls
+cd src/
+ls
+cd ..
+vim gulpfile.js 
+ls
+ls assets/
+gulp
+ls ../dist/
+cd ../dist/
+ls
+ls assets/
+ls styles/
+ls assets/fonts/
+vim scss/index.scss 
+cd ..
+git st
+gaa
+git cm "bravura font installed successfully"
+fg
+cd ..
+git st
+gaa
+git cm "updates for the afternoon"
+gpom
+gulp
+j silverlight
+ag segment .
+vim AttSilverlightPlayer/AttSmfPlayer.cs 
+c
+ag ready $(ag -l stream .)
+j snes
+ag cookie .
+vim AttSilverlightPlayer/AttSmfPlayer.cs 
+ag streamready .
+vim AttSilverlightPlayer/AttSmfPlayer.cs 
+ag -g eventargs .
+ag -g EventArgs .
+ag EventArgs .
+vim streaming/Stream.js streaming/StreamController.js streaming/MediaPlayer.js 
+ag handler .
+j snes test
+ls
+ag dash .
+ag dash
+ag player
+vim uv/components/third-party-player/controllers/thirdPartyPlayerCtrl.spec.js 
+c
+c
+ls
+ag factory .
+fbld
+grunt snes-tests
+gulp snes-test
+grunt snes-tests
+git st
+git pull
+git pull origin master
+git st
+gaa .
+git cm "add font file"
+gulp
+ls
+git st
+gulp
+npm install
+ls
+vim gulpfile.js 
+gulp
+fg
+jobs
+jobs[1]
+fg
+cd test/
+vim karma.conf.js unit/main.spec.js unit/note.spec.js unit/chord.spec.js 
+cp karma.conf.js unit/main.spec.js unit/note.spec.js unit/chord.spec.js 
+vp js/*
+mv js/theory.js js/note.js
+npm install
+vp js/*
+gulp
+vim package.json 
+npm install ngLodash --save-dev
+npm install ng-lodash --save-dev
+bower install
+bower uninstall lodash
+bower install ng-lodash
+npm uninstall lodash
+vim package.json 
+npm help prune
+npm prune
+vim package.json 
+vim bower.json 
+vim gulpfile.js 
+cd src/js/
+vim *
+grunt watch
+j snes combined
+j snes
+ag -g combined .
+vim javascripts/combined/uv.combined.js 
+ag -g Moo .
+ag -g mo .
+ag -g moo .
+ag MooTools .
+j snes
+ag -g Moo .
+ag -g moo .
+ag MooTools .
+ag mootools .
+ls javascripts/vendor/
+cd javascripts/vendor/
+ls
+ag mootools
+ag moo
+ag tools .
+cd ..
+ls
+ls
+cd javascripts/vendor/
+ls -R
+cd ..
+ag -g extend .
+vp $(ag -g extend .)
+vim tasks/snes-tests.js 
+webf
+cd -
+fbld
+ls tasks/
+vim tasks/snes-vendor-javascripts.js 
+vim tasks/nes-javascripts.js 
+snes
+cd ../nes/
+ls
+ag -g moo
+grunt watch
+grunt
+grunt snes-tests
+fbld
+vim tasks/nes-javascripts.js 
+cd -
+vim tasks/nes-javascripts.js 
+gru!
+grunt snes-tests
+fbld
+ls
+cd -
+ls
+ls js/combined/
+cd js/combined/
+vp EPG.combined.js Uverse.combined.js 
+cd ..
+ls
+ls ls lib/mootools/
+grunt
+fg
+vp $(ag -g Dash .)
+pwd
+ls
+ls controllers/
+cd .
+cd ..
+ls
+cd ..
+ls components/player-component/controllers/
+ls
+fg
+ag DashCtor .
+j snes
+ag DashCtor .
+grunt watch
+cd
+ls 
+ls .npm/
+bashp
+bashrc
+c
+ls
+ls src/
+ls dist/
+ls src/js/
+ls dist/js/
+c
+ls
+ls src/
+ls dist/
+echo
+ls src/js/
+ls dist/js/
+echo
+ls src/scss/
+ls dist/styles/
+rm dist/styles/app-64f55cc3.css dist/styles/vendor-d41d8cd9.css 
+c
+ls 
+ls src/
+ls dist/
+ls src/js/
+ls dist/js/
+ls test/
+ls test/unit/
+c
+ls
+ls src/
+ls dist/
+echo
+ls src/js/
+ls dist/js/
+echo
+c
+ls
+ls src/
+ls dist/
+echo
+ls src/js/
+ls dist/js/
+echo
+ls test/
+ls test/unit/
+vim templates/main.html 
+gulp
+git st
+gaa
+git cm "build out note, do some cleanup on other stuff"
+gpom
+grunt snes-tests
+vim components/player-component/controllers/PlayerComponentCtrl.js 
+ag $scope.componentData .
+grunt watch
+grunt
+grunt watch
+vp karma.conf.js unit/main.spec.js unit/note.spec.js unit/chord.spec.js 
+gulp
+fg
+vp *
+git st
+gaa
+git st
+gcm "updates"
+gpom
+ls
+ag dispatchEvent .
+vim streaming/ManifestModel.js 
+vim streaming/MetricsModel.js 
+ag opened .
+ag videomodel .
+j attsli
+j attsilv
+vim AttSilverlightPlayer/AttSmfPlayer.cs 
+ag onmediaended .
+vim AttSilverlightPlayer/AttSmfPlayer.cs 
+ag finish .
+fg
+ag segment .
+ag "Media Segment" .
+ag finish 
+ag "\bend\b" .
+vim ~/Dropbox/.informationz 
+grunt watch
+vim components/player-component/controllers/PlayerComponentCtrl.js
+vim common-modules/dashplayer.spec.js
+fg
+vp streaming/Stream.js streaming/StreamController.js streaming/MediaPlayer.js dash/DashManifestExtensions.js dash/FragmentExtensions.js dash/DashHandler.js streaming/EventBus.js streaming/EventController.js 
+j dash
+ls
+j snes dash
+ls
+j snes player dash
+j snes play dash
+j snes play
+ls
+cd ..
+ag -g dash .
+cd ..
+ls
+ag -g Dash .
+jc players
+jc player 
+fbld
+j snes player
+vim services/players/DashPlayer.js 
+j snes dash
+ag bitrate .
+ag Bitrate .
+ag BITRATE .
+ag bitrate .
+ag setAutoSwitchBitrate .
+ag abrRules .
+ag BaseRules .
+ag "could be better" .
+j snes player
+ag bitrate .
+ag BaseRulesCollection) .
+ag BaseRulesCollection .
+ls streaming/rules/
+ag quality .
+ag abrRulesCollection .
+c
+fbld
+j viml
+grunt
+git pull
+git pull origin master
+vp streaming/Stream.js streaming/StreamController.js streaming/MediaPlayer.js dash/DashManifestExtensions.js dash/FragmentExtensions.js dash/DashHandler.js streaming/EventBus.js streaming/EventController.js 
+ag lowest .
+ag limit .
+c
+ls
+j dotf
+ls
+git st
