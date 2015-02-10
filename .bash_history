@@ -8227,3 +8227,8 @@ ls
 j dotf
 ls
 git st
+gaa .
+git cm "update iterm prefs"
+bashrc
+j '/Users/aidanmiles/dotfiles' 
+git st
