@@ -8712,3 +8712,5 @@ git st
 gpom
 j dotf
 git st
+git co -- ./.bash_history && git pull
+git st
