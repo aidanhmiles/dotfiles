@@ -8232,3 +8232,483 @@ git cm "update iterm prefs"
 bashrc
 j '/Users/aidanmiles/dotfiles' 
 git st
+gaa .
+git cm "add tab.bash, and source it in bashrc"
+cd "/Users/aidanmiles/dotfiles"
+tab
+cd -
+c
+\e]1;New Title Goes Here\e\\
+echo -ne "\e]1;New Title Goes Here\e\\"
+\e]1;New Title Goes Here\e\\
+echo -ne "\e]1;New Title Goes Here\e\\"
+
+ echo -ne "\033]0;"HI"\007"
+ echo -ne "\033]0;"wow"\007"
+ echo -ne "\033]0;"super wow"\007"
+gulp; tab pwd
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; pwd
+(gulp) tab pwd
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; pwd
+(gulp) & tab pwd
+vp src/js/*
+bashrc
+(gulp) & tab vp src/js* && rename_tab("js")
+(gulp) & tab vp src/js* && rename_tab(js)
+(gulp) & tab vp src/js* && rename_tab("js")
+(gulp) & tab vp src/js* && rename_tab(js)
+(gulp) & tab vp src/js* && rename_tab "js"
+vim gulpfile.js 
+git add gulpfile.js 
+git cm "change port to 8989"
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; vp src/js
+(gulp) & tab vp src/js/* && rename_tab "js"
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; vp src/js/SVGHelper.js src/js/TheoryGen.js src/js/VME.controllers.js src/js/VME.js src/js/chord.js src/js/note.js
+(gulp) & tab vp src/js/* && rename_tab "js"
+fg
+jobs
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"
+(gulp) & tab; vp src/js/* && rename_tab "js"
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"
+gulp & tab;
+fg
+fg
+fg
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"
+gulp & tab;
+fg
+jobs
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"
+gulp & tab
+ls
+ls src/
+vim src/assets/images/gulp.png 
+ls
+./workspace.sh
+chmod u+x workspace.sh 
+./workspace.sh 
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"
+tab
+bashp
+bashp
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"
+./workspace.sh 
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"
+dfg
+fg
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"
+:q
+fg
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"
+./workspace.sh 
+gulp & tab vim -p test/unit/* &rename_tab "test";
+jobs
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; vim -p test/unit/chord.spec.js test/unit/main.spec.js test/unit/note.spec.js
+gulp & tab vim -p test/unit/* & rename_tab "test";
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; vim -p test/unit/chord.spec.js test/unit/main.spec.js test/unit/note.spec.js
+gulp & tab (vim -p test/unit/* & rename_tab "test");
+gulp & tab $(vim -p test/unit/* & rename_tab "test");
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab test
+gulp & tab rename_tab "test" & vim -p test/unit/* ;
+fg
+jobs
+jobs[1]
+jobs[0]
+fg
+jobs
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"
+tab; vim src/
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"
+(tab; vim src/)
+(tab * vim)
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; README.md bower.json bower_components dist gulp gulpfile.js node_modules package.json paths.js src test workspace.sh vim
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"
+(tab & vim)
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"
+tab && vim
+tab { vim src/ }
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; { vim src/ }; ;
+tab { vim src ; }
+tab { vim src/ ; }
+tab { vim ; }
+tab { vim; }
+tab ( vim )
+tab ( vim)
+tab $(vim)
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab WOW
+tab rename_tab "WOW" & vim
+tab -e "vim"
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; -e vim
+tab "vim src/"
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; vim src/
+tab "rename_tab 'wow' && vim"
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab 'wow' && vim
+tab "rename_tab 'wow' && vim -p src/js/*"
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab 'wow' && vim -p src/js/*
+rename_tab test
+vim workspace.sh
+bashrc
+c
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"
+./workspace.sh 
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab templates && vim -p src/templates/*
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab js && vim -p src/js/* 
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab test && vim -p test/unit/*
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab scss && vim -p src/scss/* 
+vim workspace.sh 
+./workspace.sh 
+vim gulpfile.js 
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab test && vim -p test/unit/*
+viml
+j viml
+./workspace.sh 
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab test && vim -p test/unit/*
+c
+vim workspace.sh 
+./workspace.sh 
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab test && vim -p test/unit/*
+vim workspace.sh 
+./workspace.sh 
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab test && vim -p test/unit/*
+rename_tab gulp
+vim workspace.sh 
+./workspace.sh 
+vim gulpfile.js 
+jobs
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab test && vim -p test/unit/*
+jobs
+fg
+fg
+fg
+grunt watch
+j viml
+./workspace.sh 
+vim workspace.sh 
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab test && vim -p test/unit/*
+fg
+ports
+port
+netcat -z localhost 8080
+gulp
+rename_tab gulp && gulp;
+rename_window viml
+vim workspace.sh 
+./workspace.sh 
+vim workspace.sh 
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab test && vim -p test/unit/*
+vim workspace.sh 
+./workspace.sh 
+fg
+vim workspace.sh 
+./workspace.sh 
+fg
+bashrc
+bashp
+vim workspace.sh 
+./workspace.sh 
+fg
+./workspace.sh 
+vim workspace.sh 
+viml
+j viml
+./workspace.sh 
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab scss && vim -p src/scss/* ;
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab templates && vim -p src/templates/*
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab js && vim -p src/js/* ;
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab test && vim -p test/unit/*
+vim workspace.sh 
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab js && vim -p src/js/*
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab test && vim -p test/unit/*
+./workspace.sh 
+vim workspace.sh 
+git st
+ga gulpfile.js workspace.sh 
+git cm "change port back to 8080, add workspace.sh for E-Z setup"
+c
+./workspace.sh 
+vim gulpfile.js 
+fg
+npm install gulp-angular-templatecache --save-dev
+vim gulpfile.js 
+gulp
+vim gulpfile.js 
+ls dist/templates/
+ls src/templates/
+ls dist/
+ls dist/js/
+gulp
+ls dist/templates/
+vim gulpfile.js 
+fg
+gulp
+ls dist/
+ls dist/js/
+ls dist/styles/
+ls dist/templates/
+rm -rf dist/templates/
+vim gulpfile.js 
+gulp
+ls src/templates/
+ls dist/
+c
+ls dist/templates.js/
+ls dist/templates.js
+ls dist/
+rm -r dist/templates.js/
+ls
+ls dist/
+vim gulpfile.js 
+vim dist/index.html 
+mkdir src/generated
+gulp
+vim gulpfile.js 
+ls
+ls dist/
+rm dist/templates.js 
+gulp
+ls dist/
+ls dist/js/
+ls src/generated/
+vim gulpfile.js 
+gulp
+vim gulpfile.js 
+gulp
+vim gulpfile.js 
+fg
+vim paths.js 
+fg
+gupl
+gulp
+vim gulpfile.js 
+gulp
+vim dist/js/main.js 
+ls
+ag "angular.module" .
+vim gulpfile.js 
+c
+gulp
+vim gulpfile.js 
+vim src/generated/templates.js 
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab scss && vim -p src/scss/*
+vim gulpfile.js 
+git st
+gaa
+git cm "now have note directive, changed paths to incorporate templateCache file templates.js"
+gpom
+fg
+j snes
+c
+fbld
+jc player
+ls
+j dash
+ls
+ag segment 
+ag fragment .
+j snes player dash
+j snes players
+j snes
+jc players
+ls javascripts/src/common-modules/player-extensions/
+ls javascripts/src/uv/components/
+cd javascripts/src/uv/components/
+ag -g Dash .
+cd -
+ag -g Dash .
+j snes common player
+c
+ls
+ag contentProviderMeta .
+cd ..
+ag contentProviderMeta .
+ag start .
+ag videostart .
+ag begin .
+ag start .
+ag videocontroller .
+ag startevent .
+vp streaming/Stream.js streaming/StreamController.js streaming/MediaPlayer.js dash/DashManifestExtensions.js dash/FragmentExtensions.js dash/DashHandler.js streaming/EventBus.js streaming/EventController.js 
+vim services/players/DashPlayer.js 
+grunt watch
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab test && vim -p test/unit/*
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab js && vim -p src/js/*
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab templates && vim -p src/templates/*
+fg
+j viml
+cat workspace.sh > pbcopy
+cat workspace.sh | pbcopy
+vim workspace.sh 
+git st
+rm pbcopy 
+gaa .
+git cm "updates"
+ls
+git st
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab scss && vim -p src/scss/*
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab templates && vim -p src/templates/*
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab js && vim -p src/js/*
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab test && vim -p test/unit/*
+./workspace.sh 
+j snes vend dash
+ls
+vp streaming/Stream.js streaming/StreamController.js streaming/MediaPlayer.js dash/DashManifestExtensions.js dash/FragmentExtensions.js dash/DashHandler.js streaming/EventBus.js streaming/EventController.js 
+j snes dash
+cd ..
+ls
+ag Dash .
+vim src/uv/common-modules/player/services/players/DashPlayer.js 
+fg
+j snes dash
+vim streaming/EventController.js 
+j snes dash
+ls
+ag "Signal complete" .
+j snes ven dash
+j snes src dash
+vim dash/DashHandler.js 
+vim streaming/EventController.js 
+c
+ag "contentEnd" .
+vim streaming/Stream
+vim streaming/StreamController.js 
+ag contentStart .
+vim streaming/Stream.js 
+c
+c
+cd
+ls
+mkdir shortcuts
+cd shortcuts/
+vim setup_dash.sh
+cd
+ls shortcuts/
+chmod u+x shortcuts/setup_dash.sh 
+./shortcuts/setup_dash.sh 
+vim shortcuts/setup_dash.sh 
+./shortcuts/setup_dash.sh 
+autojump snes vendor dash
+j snes vendor dash
+cd -
+./shortcuts/setup_dash.sh 
+vim ./shortcuts/setup_dash.sh
+./shortcuts/setup_dash.sh 
+vim ./shortcuts/setup_dash.sh
+./shortcuts/setup_dash.sh 
+vim ./shortcuts/setup_dash.sh
+j snes vend dash
+ls
+j snes comm player
+j snes comm player players
+ls
+cd ..
+ls
+cd ..
+ls
+cd 
+j snes comm player
+ls
+ag -g Player .
+fg
+./shortcuts/setup_dash.sh 
+fg
+cd "/Users/aidanmiles"; rename_tab uversePlayer && j snes comm player && vim -p services/players/BasePlayer.js services/players/DashPlayer.js
+fg
+jobs]
+jobs
+vim ./shortcuts/setup_dash.sh 
+./shortcuts/setup_dash.sh 
+pwd
+fg
+cd "/Users/aidanmiles"; rename_tab uversePlayer && j snes comm player && vim -p services/players/BasePlayer.js services/players/DashPlayer.js
+vim ./shortcuts/setup_dash.sh 
+ag onbitrate .
+vim services/players/SilverlightPlayer.js 
+c
+ls
+ag -g extens .
+cd ..
+ag -g extension .
+cd common-modules/player-extensions/
+vim services/LiveExtension.js 
+ag bandwidth .
+./shortcuts/setup_dash.sh 
+j snes ven dash
+ag switchrequest .
+fg
+ls
+ca
+poo
+fg
+ag abrRulesCollection .
+cd "/Users/aidanmiles"; rename_tab uversePlayer && j snes comm player && vim -p services/players/BasePlayer.js services/players/DashPlayer.js
+ag "Perform SIDX" .
+fg
+ag "Perform SIDX" .
+j snes comm players
+j snes comm player
+ls
+cd services/players/
+j snes comm players
+ls
+fbld
+fg
+ag DownloadRatioRule .
+fg
+ag DownloadRatioRule .
+ag DownloadRatioRule .
+ag downloadratiorule .
+fg
+ag getBandwidth .
+fg
+ag getVideoData .
+fg
+ag getRepresentationForQuality .
+fg
+grunt watch
+ag licenseEndpoint .
+fg
+ag liveStreamMetadata .
+cd ..
+ag liveStreamMetadata .
+cd ..
+ag liveStreamMetadata .
+j attsilver
+ls
+ag sitesectionid
+ag sitesection
+fg
+fbld
+c
+fg
+grunt watch
+j snes ven dash
+j snes comm players
+man diff
+diff DashPlayer.js ~/Desktop/DashPlayer.js 
+man diff
+diff DashPlayer.js ~/Desktop/DashPlayer.js 
+vim DashPlayer.js 
+vim ~/scratch 
+j viml
+git st
+git pull origin master
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab scss && vim -p src/scss/*
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab templates && vim -p src/templates/*
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab js && vim -p src/js/*
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab test && vim -p test/unit/*
+./workspace.sh 
+j viml
+./workspace.sh 
+gulp
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab test && vim -p test/unit/*
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab js && vim -p src/js/*
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab templates && vim -p src/templates/*
+cd "/Users/aidanmiles/Documents/vimlike-music-editor"; rename_tab scss && vim -p src/scss/*
+j viml
+git st
+gaa .
+git cm "updates"
+git st
+gpom
+j dotf
+git st

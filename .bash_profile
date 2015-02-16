@@ -66,6 +66,7 @@ alias del="mv $* ~/.Trash"
 alias c="clear"
 
 
+# some functions
 # useful combo of cd and ls
 cl() {
     cd "$@" && ls
@@ -94,10 +95,23 @@ ghkeygen(){
     ssh-keygen -t rsa -C "itsthejazzkid@gmail.com"
 }
 
-ghkeysetup(){
+ghkeysetupandcopy(){
     ssh-add ~/.ssh/id_rsa
     pbcopy < ~/.ssh/id_rsa.pub
 }
+
+# WINDOW RENAMING
+
+# $1 = type; 0 - both, 1 - tab, 2 - title
+# rest = text
+setTerminalText () {
+    # echo works in bash & zsh
+    local mode=$1 ; shift
+    echo -ne "\033]$mode;$@\007"
+}
+rename_both   () { setTerminalText 0 $@; }
+rename_tab    () { setTerminalText 1 $@; }
+rename_window () { setTerminalText 2 $@; }
 
 alias mvim="/Applications/MacVim.app/contents/MacOS/MacVim"
 
