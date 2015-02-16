@@ -4460,3 +4460,151 @@ vim gulpfile.js
 cd ..
 j dotf
 git st
+git co -f newlaptop
+git chery-pick faf3e502
+git cherry-pick faf3e502
+git st
+git cherry-pick 574c1a1c
+git st
+vimrc
+git cherry-pick --continue
+git st
+git add .vimrc 
+git cherry-pick --continue
+git commit --amend -m "add jasmine files from workmachine branch"
+ls -R .
+c
+ls
+mv note.py chord* src/
+ls
+mv theory.js src/
+ls
+vim print.js 
+rm print.js 
+ls
+c
+ls
+ls src/
+cd src/
+mv *.py assets/
+ls
+vim theory.js 
+mv theory.js js/
+ls
+c
+cd ..
+c
+ls
+ls src/
+ls dist/
+ls dist/scripts/
+rm -r dist/scripts/
+c
+ls
+ls src/
+ls dist/
+rm src/vendor.scss 
+c
+ls src/
+ls dist/
+ls src/js/
+ls dist/js/
+echo
+c
+ls src/
+ls dist/
+echo
+ls src/js/
+ls dist/js/
+echo
+ls src/templates/
+ls dist/templates/
+fg
+gulp test
+vim src/js/theory.js 
+vp karma.conf.js unit/main.spec.js 
+gulp test
+cd ..
+git st
+gaa .
+git cm "moved a bunch of files, added spec files, installed lodash, renamed js files again"
+git st
+gpom
+j phx
+phx
+ls
+vim www/js/
+ivm www/js/laApp.services.js e
+vp www/js/*
+phx
+ls
+ls te
+ls test/
+vim test/unit/utils.spec.js 
+git pull origin master
+vp scss/*
+vp js/*
+vp index.html templates/*
+gulp
+c
+vim README.md 
+ls
+git log | grep data
+ls as
+ls src/assets/
+ls
+vim gulpfile.js 
+fg
+vim test/unit/setup.spec.js
+vp templates/*
+vp unit/*
+gulp
+bashrc
+tab
+cd "/Users/ADN"
+c
+c
+j viml && vim src/js/*
+cd
+j viml && gulp && tab vp test/unit/* && tab vp src/js/* && tab vp src/templates*
+tab vp test/unit/* && tab vp src/js/* && tab vp src/templates*
+j viml && tab vp test/unit/* && tab vp src/js/* && tab vp src/templates*
+vim scratch
+j viml
+ls
+c
+git st
+gaa .
+git cm "build out chord and note constructors, make more unit tests for constants, and note"
+gpom
+git st
+rm :w
+ls
+git st
+gaa .
+gcm "add SVGHelper file, updates"
+gpom
+git st
+git cm "add SVGHelper file, updates"
+gpom
+git st
+gulp
+vim ~/Dropbox/.informationz 
+~?Desk
+vim ~/Dropbox/.informationz 
+j viml && vp src/scss/*
+cd "/Users/ADN/Documents/work/vimlike-music-editor"; vp src/templates
+cd "/Users/ADN/Documents/work/vimlike-music-editor"; vp src/js/TheoryGen.js src/js/VME.controllers.js src/js/VME.js src/js/chord.js src/js/note.js
+cd "/Users/ADN/Documents/work/vimlike-music-editor"; vp test/unit/chord.spec.js test/unit/main.spec.js test/unit/note.spec.js
+j viml
+ls
+git pull
+cd "/Users/ADN/Documents/work/vimlike-music-editor"; rename_tab test && vim -p test/unit/*
+cd "/Users/ADN/Documents/work/vimlike-music-editor"; rename_tab js && vim -p src/js/*
+cd "/Users/ADN/Documents/work/vimlike-music-editor"; rename_tab templates && vim -p src/templates/*
+./workspace.sh 
+cd "/Users/ADN/Documents/work/vimlike-music-editor"; rename_tab scss && vim -p src/scss/*
+j dotf
+ls
+git pull
+git st

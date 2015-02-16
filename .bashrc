@@ -20,3 +20,4 @@ export PATH=.bundle/binstubs:$PATH
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
 source /usr/local/Cellar/autojump/21.7.1/etc/autojump.sh
+source "$HOME/dotfiles/tab.bash"

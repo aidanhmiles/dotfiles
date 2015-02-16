@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/Users/ADN/Documents/work/vimlike-music-editor/gulp'
+let g:netrw_dirhist_2='/Users/ADN/Documents/work/phoenixApp/www/js'
+let g:netrw_dirhist_3='/Users/ADN/Documents/work/vimlike-music-editor/src/templates'
