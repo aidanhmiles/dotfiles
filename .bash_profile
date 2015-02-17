@@ -141,8 +141,6 @@ fi
 
 if [ -f ~/.adn_locals ]; then
    source ~/.adn_locals
-fi
+fi 
 
-
-alias fjw="functional-javascript-workshop"
-
+alias gbhreset="git co -- .bash_history"
