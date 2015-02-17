@@ -8714,3 +8714,8 @@ j dotf
 git st
 git co -- ./.bash_history && git pull
 git st
+git co -- .bash_history && git pull
+git st
+vim .gitignore_global 
+git st
+vim
