@@ -128,6 +128,7 @@ alias gaa="git add -A"
 alias gcb="git checkout -b"
 alias gcm="git commit -m"
 alias ga="git add"
+alias gst="git status"
 # alias gmb="git merge ???"
 
 
