@@ -39,9 +39,7 @@ function prompt {
 LS_COLORS='di=36;40:ln=35;40:so=32;40:pi=32;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
 
 # keep the present working dir at the top of the terminal window
-# PROMPT_COMMAND="update_terminal_cwd; prompt"
 PROMPT_COMMAND="prompt" # iTerm2 doesn't know about update_terminal_cwd?
-# export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
 
 # INCREASE history length, ERASE duplicates, and PRESERVE history after exiting shell
 export HISTCONTROL=ignoredups:erasedups # no dupes
@@ -121,6 +119,8 @@ alias bi="bundle install"
 # GIT
 alias gpom="git push origin master"
 alias gpo="git push origin"
+alias gpuo="git pull origin"
+alias gpuom="git pull origin master"
 alias gpog="git push origin gh-pages"
 alias gp="git push"
 alias gphm="git push heroku master"
@@ -137,24 +137,12 @@ fi
 
 if [ -f ~/Dropbox/.keys ]; then
    source ~/Dropbox/.keys
-   #source ~/.newtab
+fi
+
+if [ -f ~/.adn_locals ]; then
+   source ~/.adn_locals
 fi
 
 
 alias fjw="functional-javascript-workshop"
 
-
-# Piksel aliases
-alias mvnclean='cd ~/Documents/piksel/workspace/nextgen-build/ && mvn clean install eclipse:clean eclipse:eclipse -P nextgen-web -D maven.test.skip=true && cd -'
-alias nweb="cd ~/Documents/piksel/workspace/nextgen-web"
-alias fbld="cd ~/Documents/piksel/workspace/nextgen-web/front-end-build"
-alias webf="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files"
-alias snes="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/snes"
-alias nes="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/nes"
-alias mobl="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/mobile"
-alias refac="cd ~/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/refactored_modules"
-alias alljs="ag -lg js ."
-alias test?="pwd | grep test"
-
-# bc brian said so
-ulimit -n 10240
