@@ -178,13 +178,10 @@ vnoremap <silent> # :<C-U>
 "LEADER SHORTCUTS  {{{
 
 "let leader e<something> open frequently edited files; let leader s<something > source them
-noremap <leader>ev :tabedit $MYVIMRC<cr>
+nnoremap <leader>ev :tabedit $MYVIMRC<cr>
 nnoremap <leader>sv :w<cr>:source $MYVIMRC<cr>
-noremap <leader>eb :tabedit $HOME/.bash_profile<cr>
-noremap <leader>eg :tabedit $HOME/.gitconfig<cr>G
-noremap <leader>el :tabedit $HOME/.notes/learns<cr>G
-noremap <leader>et :tabedit $HOME/Music/.titles<cr>G
-noremap <leader>ej :tabedit $HOME/.notes/jobs<cr>
+nnoremap <leader>eb :tabedit $HOME/.bash_profile<cr>
+nnoremap <leader>eg :tabedit $HOME/.gitconfig<cr>G
 
 "let space be leader, backslash be localleader
 let mapleader = " "
@@ -225,11 +222,11 @@ vnoremap <leader><leader> <esc>
 "}}}
 " WHITESPACE {{{
 
-"tabs are 3 spaces
-set tabstop=8 noexpandtab shiftwidth=4 softtabstop=4
+"tabs are 4 spaces
+set tabstop=4 expandtab shiftwidth=4 softtabstop=4
 "except in ruby
-autocmd filetype ruby,haml,erb,eruby,html set tabstop=2 noexpandtab shiftwidth=2 softtabstop=2
-autocmd filetype javascript set tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
+autocmd filetype ruby,haml,erb,eruby,html set tabstop=2 expandtab shiftwidth=2 softtabstop=2
+autocmd filetype javascript,js,jasmine set tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
 "let enter add a space below, and backspace add a space above
 nnoremap <leader><cr> o<esc>
