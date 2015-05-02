@@ -128,8 +128,11 @@ alias gaa="git add -A"
 alias gcb="git checkout -b"
 alias gcm="git commit -m"
 alias ga="git add"
-alias gst="git status"
-# alias gmb="git merge ???"
+alias gs="git status"
+# alias gmb="git merge ???" 
+alias gbhreset="git co -- .bash_history"
+
+alias lcls="vim ~/.adn_locals"
 
 
 if [ -f ~/.bashrc ]; then
@@ -144,4 +147,5 @@ if [ -f ~/.adn_locals ]; then
    source ~/.adn_locals
 fi 
 
-alias gbhreset="git co -- .bash_history"
+alias fuckchrome="defaults write com.google.Keystone.Agent checkInterval 0"
+alias checkfuckedchrome="defaults read com.google.Keystone.Agent checkInterval"
