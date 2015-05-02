@@ -26,5 +26,3 @@ source $HOME/dotfiles/tab.bash
 export M2_HOME=$HOME/local/apache-maven-3.1.1/
 export M2=$M2_HOME/bin 
 export PATH=$M2:$PATH
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home
-export PATH=$JAVA_HOME/bin:$PATH
