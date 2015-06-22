@@ -1,7 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/aidanmiles/dotfiles/.vim/bundle/ftplugin'
-let g:netrw_dirhist_2='/Users/aidanmiles/Documents/piksel/workspace/nextgen-web/src/main/webapp/TEAMSITE/DEVELOPMENT/web_files/snes/javascripts/src/uv/components/article/controllers'
-let g:netrw_dirhist_3='/Users/aidanmiles/Documents/piksel/workspace/AttSilverlightPlayer'
-let g:netrw_dirhist_4='/Users/aidanmiles/Documents/vimlike-music-editor/src/js'
-let g:netrw_dirhist_5='/Users/aidanmiles/Documents/vimlike-music-editor/src'
+let g:netrw_dirhist_2='/Users/aidanmiles/dotfiles/.vim/bundle'
+let g:netrw_dirhist_3='/Users/aidanmiles/dotfiles/.vim/bundle/ftdetect'
+let g:netrw_dirhist_4='/Users/aidanmiles/dotfiles/.vim/bundle'
+let g:netrw_dirhist_5='/Users/aidanmiles/Documents/piksel/tizen-workspace/WearableWidget/project/basic/header/images'
+let g:netrw_dirhist_6='/Users/aidanmiles/Documents/piksel/samsung-gear/samsung-watch/sections/menu'
+let g:netrw_dirhist_7='/Users/aidanmiles/Documents/piksel/samsung-gear/samsung-watch/sections/channelSchedule'
