@@ -49,6 +49,9 @@ set incsearch
 
 " case insensitive searching
 set ignorecase
+if exists("&wildignorecase")
+	set wildignorecase
+endif
 " unless there are caps in the search
 set smartcase
 
@@ -178,7 +181,7 @@ vnoremap <silent> # :<C-U>
 "LEADER SHORTCUTS  {{{
 
 "let leader e<something> open frequently edited files; let leader s<something > source them
-nnoremap <leader>ev :tabedit $MYVIMRC<cr>
+noremap <leader>ev :tabedit $MYVIMRC<cr>
 nnoremap <leader>sv :w<cr>:source $MYVIMRC<cr>
 nnoremap <leader>eb :tabedit $HOME/.bash_profile<cr>
 nnoremap <leader>eg :tabedit $HOME/.gitconfig<cr>G
@@ -223,7 +226,7 @@ vnoremap <leader><leader> <esc>
 " WHITESPACE {{{
 
 "tabs are 4 spaces
-set tabstop=4 expandtab shiftwidth=4 softtabstop=4
+set tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
 "except in ruby
 autocmd filetype ruby,haml,erb,eruby,html set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd filetype javascript,js,jasmine set tabstop=4 expandtab shiftwidth=4 softtabstop=4
