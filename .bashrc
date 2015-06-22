@@ -21,8 +21,3 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
 source /usr/local/Cellar/autojump/21.7.1/etc/autojump.sh
 source $HOME/dotfiles/tab.bash
-
-# MAVEN
-export M2_HOME=$HOME/local/apache-maven-3.1.1/
-export M2=$M2_HOME/bin 
-export PATH=$M2:$PATH
