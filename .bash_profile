@@ -129,6 +129,10 @@ alias gcb="git checkout -b"
 alias gcm="git commit -m"
 alias ga="git add"
 alias gs="git status"
+alias gd="git diff"
+alias gco="git checkout"
+alias gbr="git branch"
+
 # alias gmb="git merge ???" 
 alias gbhreset="git co -- .bash_history"
 
@@ -147,5 +151,5 @@ if [ -f ~/.adn_locals ]; then
    source ~/.adn_locals
 fi 
 
-alias fuckchrome="defaults write com.google.Keystone.Agent checkInterval 0"
-alias checkfuckedchrome="defaults read com.google.Keystone.Agent checkInterval"
+alias viml="j viml && ./workspace.sh"
+alias gear="j gear && ./workspace.sh"
