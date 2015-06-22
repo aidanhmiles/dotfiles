@@ -1,13 +1,13 @@
 [user]
 	name = Aidan Miles
-	email = itsthejazzkid@gmail.com
+	email = aidan.miles@piksel.com
 [credential]
 	helper = osxkeychain
 [core]
 	editor = vim -w
 	excludesfile = ~/.gitignore_global
 [push]
-	default = simple
+	default = current
 [alias]
 	st = status
 	co = checkout
