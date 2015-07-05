@@ -1,3 +1,4 @@
+"
 "Aidan's vimrc
 "
 " SOME INTRODUCTORY NOTES {{{
@@ -181,7 +182,7 @@ vnoremap <silent> # :<C-U>
 "LEADER SHORTCUTS  {{{
 
 "let leader e<something> open frequently edited files; let leader s<something > source them
-noremap <leader>ev :tabedit $MYVIMRC<cr>
+nnoremap <leader>ev :tabedit $MYVIMRC<cr>
 nnoremap <leader>sv :w<cr>:source $MYVIMRC<cr>
 nnoremap <leader>eb :tabedit $HOME/.bash_profile<cr>
 nnoremap <leader>eg :tabedit $HOME/.gitconfig<cr>G
@@ -242,14 +243,14 @@ nnoremap <bs> O<esc>
 set splitbelow
 set splitright
 
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+
 "window movement
 noremap <leader>H <c-w>h
 noremap <leader>J <c-w>j
 noremap <leader>K <c-w>k
 noremap <leader>L <c-w>l
 
-"Always display the status line, even if only one window is displayed
-" set laststatus=2
 " space T => tabedit
 noremap <leader>t :tabedit 
 noremap <leader>m :tabmove 
@@ -302,10 +303,37 @@ noremap <leader>- a-<esc>34.
 noremap <leader># a<esc>34.
 command! -nargs=1 Heading call InsertHeadingTemplate(<args>)
 
+
 "}}}
 " TODO {{{
 "	shortcut to take a line and put at at end of next line (opposite of 'J')
 "	trim end of line whitespace
+" }}}
+" FUNCTIONS {{{
 
+" FOCUS: distraction-free editing
+" disabled by default
+let b:set_focus = 0
+command! Focus call ToggleFocus()
+function! ToggleFocus()
+	if b:set_focus " if things are disabled
+		setlocal nu
+		setlocal laststatus=2
+		setlocal showcmd
+		setlocal showtabline=1
+		setlocal nolist
+		let b:set_focus = 0
+	else
+		setlocal nonu
+		setlocal laststatus=0
+		setlocal noshowcmd
+		setlocal list
+		setlocal showtabline=0
+		let b:set_focus = 1
+	endif
+	
+endfunction
+
+nnoremap <leader>f :Focus<CR>
 
 " }}}
