@@ -95,9 +95,6 @@ set showmatch
 " highlight last inserted text
 nnoremap gV `[v`]
 
-" in 7.4, can yank/paste from unnamed register as system clipboard
-set clipboard=unnamed
-
 " Always display the statusline in all windows
 set laststatus=2
 " Always display the tabline, even if there is only one tab
@@ -113,6 +110,7 @@ let g:ctrlp_show_hidden = 1
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
 " The Silver Searcher
+"===================================
 if executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
@@ -157,7 +155,7 @@ nnoremap Y y$
 "let S substitute the whole word
 nnoremap S bcw
 
-"actually, let K break the line at the cursor
+"let K break the line at the cursor
 nnoremap K i<cr><esc>
 
 " make these no ops
@@ -182,10 +180,11 @@ vnoremap <silent> # :<C-U>
 "LEADER SHORTCUTS  {{{
 
 "let leader e<something> open frequently edited files; let leader s<something > source them
-nnoremap <leader>ev :tabedit $MYVIMRC<cr>
-nnoremap <leader>sv :w<cr>:source $MYVIMRC<cr>
-nnoremap <leader>eb :tabedit $HOME/.bash_profile<cr>
-nnoremap <leader>eg :tabedit $HOME/.gitconfig<cr>G
+
+noremap <leader>ev :tabedit $MYVIMRC<cr>
+noremap <leader>sv :w<cr>:source $MYVIMRC<cr>
+noremap <leader>eb :tabedit $HOME/.bash_profile<cr>
+noremap <leader>eg :tabedit $HOME/.gitconfig<cr>G
 
 "let space be leader, backslash be localleader
 let mapleader = " "
