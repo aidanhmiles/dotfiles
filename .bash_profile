@@ -136,8 +136,11 @@ alias gbr="git branch"
 # alias gmb="git merge ???" 
 alias gbhreset="git co -- .bash_history"
 
+# my non-synced list of profile-related configuratons
 alias lcls="vim ~/.adn_locals"
 
+alias up="cd .."
+alias upup="cd ../.."
 
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
@@ -152,4 +155,3 @@ if [ -f ~/.adn_locals ]; then
 fi 
 
 alias viml="j viml && ./workspace.sh"
-alias gear="j gear && ./workspace.sh"
