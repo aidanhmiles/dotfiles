@@ -125,7 +125,7 @@ alias gpog="git push origin gh-pages"
 alias gp="git push"
 alias gphm="git push heroku master"
 alias gaa="git add -A" 
-alias gcb="git checkout -b"
+alias gcob="git checkout -b"
 alias gcm="git commit -m"
 alias ga="git add"
 alias gs="git status"
@@ -146,8 +146,8 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
-if [ -f ~/Dropbox/.keys ]; then
-   source ~/Dropbox/.keys
+if [ -f ~/dotfiles/.aws_creds ]; then
+   source ~/dotfiles/.aws_creds
 fi
 
 if [ -f ~/.adn_locals ]; then
