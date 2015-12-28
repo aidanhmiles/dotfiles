@@ -154,4 +154,6 @@ if [ -f ~/.adn_locals ]; then
    source ~/.adn_locals
 fi 
 
-alias viml="j viml && ./workspace.sh"
+# Save and reload the history after each command finishes
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
