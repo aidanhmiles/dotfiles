@@ -9,3 +9,6 @@ tmp/
 .DS_Store
 
 .sass_cache
+
+node_modules/
+bower_components/
