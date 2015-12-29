@@ -90,7 +90,7 @@ vo() {
 }
 
 ghkeygen(){
-    ssh-keygen -t rsa -C "itsthejazzkid@gmail.com"
+    ssh-keygen -t rsa 4096 -C "itsthejazzkid@gmail.com"
 }
 
 ghkeysetupandcopy(){
