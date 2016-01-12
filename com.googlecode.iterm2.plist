@@ -151,7 +151,7 @@
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 4 1440 896 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 4 1440 873 0 0 1440 877 </string>
+	<string>0 4 1440 896 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>0 26 1440 851 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_D7A19D2D-8031-49CC-986C-66C4933316B0</key>
@@ -721,7 +721,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>5000</integer>
 			<key>Scrollback With Status Bar</key>
 			<false/>
 			<key>Scrollback in Alternate Screen</key>
@@ -1446,7 +1446,7 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>5000</integer>
 			<key>Scrollback With Status Bar</key>
 			<false/>
 			<key>Scrollback in Alternate Screen</key>
@@ -1614,7 +1614,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>456001874.27311599</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>472069933.26302999</real>
+	<real>474309210.10995799</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1677,7 +1677,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-12-17T18:32:10Z</date>
+	<date>2016-01-12T16:33:05Z</date>
 	<key>SUSkippedVersion</key>
 	<string>2.1.4</string>
 	<key>SavePasteHistory</key>
