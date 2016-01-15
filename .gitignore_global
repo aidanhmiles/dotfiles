@@ -12,3 +12,6 @@ tmp/
 
 node_modules/
 bower_components/
+
+workspace.sh
+
