@@ -102,6 +102,11 @@ set showtabline=2
 
 "}}}
 " PLUGIN OPTS {{{
+"
+
+" Taboo
+" setting tab names
+noremap <leader>r :TabooRename 
 
 "CTRL-P
 "===================================
