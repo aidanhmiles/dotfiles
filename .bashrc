@@ -22,3 +22,9 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
 source /usr/local/Cellar/autojump/22.2.4/etc/autojump.sh
 source $HOME/dotfiles/tab.bash
+
+# java
+export JAVA_HOME=$(/usr/libexec/java_home)
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$PATH:${JAVA_HOME}/bin"
+export PATH="$PATH:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools"
