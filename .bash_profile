@@ -117,12 +117,13 @@ alias mvim="/Applications/MacVim.app/contents/MacOS/MacVim"
 alias be="bundle exec"
 alias bi="bundle install"
 # GIT
+alias gp="git push"
+alias gpu="git pull"
 alias gpom="git push origin master"
 alias gpo="git push origin"
 alias gpuo="git pull origin"
 alias gpuom="git pull origin master"
 alias gpog="git push origin gh-pages"
-alias gp="git push"
 alias gphm="git push heroku master"
 alias gaa="git add -A" 
 alias gcob="git checkout -b"
@@ -141,6 +142,8 @@ alias lcls="vim ~/.adn_locals"
 
 alias up="cd .."
 alias upup="cd ../.."
+
+alias scratch="vim ~/Desktop/scratch"
 
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
