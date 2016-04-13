@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.es6 set filetype=javascript
+au BufNewFile,BufRead *.es6 setlocal filetype=es6 syntax=javascript
