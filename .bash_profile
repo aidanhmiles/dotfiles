@@ -61,7 +61,7 @@ alias vimrc="vim ~/.vimrc"
 alias la="ls -a" 
 alias ls="ls -FG"
 alias del="mv $* ~/.Trash"
-alias c="clear"
+alias k="clear"
 
 
 # some functions
@@ -133,6 +133,7 @@ alias gs="git status"
 alias gd="git diff"
 alias gco="git checkout"
 alias gbr="git branch"
+alias gf="git fetch"
 
 # alias gmb="git merge ???" 
 alias gbhreset="git co -- .bash_history"
@@ -159,4 +160,3 @@ fi
 
 # Save and reload the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
-
