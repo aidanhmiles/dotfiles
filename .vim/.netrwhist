@@ -1,9 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/aidanmiles/dotfiles/.vim/bundle/ftplugin'
-let g:netrw_dirhist_2='/Users/aidanmiles/dotfiles/.vim/bundle'
-let g:netrw_dirhist_3='/Users/aidanmiles/dotfiles/.vim/bundle/ftdetect'
-let g:netrw_dirhist_4='/Users/aidanmiles/dotfiles/.vim/bundle'
-let g:netrw_dirhist_5='/Users/aidanmiles/Documents/piksel/tizen-workspace/WearableWidget/project/basic/header/images'
-let g:netrw_dirhist_6='/Users/aidanmiles/Documents/piksel/samsung-gear/samsung-watch/sections/menu'
-let g:netrw_dirhist_7='/Users/aidanmiles/Documents/piksel/samsung-gear/samsung-watch/sections/channelSchedule'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/amiles/Documents/projects/kitu/db/seeds'
+let g:netrw_dirhist_2='/Users/amiles/Documents/projects/kitu/server/api/controllers/auth'
