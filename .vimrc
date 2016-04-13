@@ -102,6 +102,11 @@ set showtabline=2
 
 "}}}
 " PLUGIN OPTS {{{
+"
+
+" Taboo
+" setting tab names
+noremap <leader>r :TabooRename 
 
 "CTRL-P
 "===================================
@@ -229,7 +234,7 @@ vnoremap <leader><leader> <esc>
 set tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
 "except in ruby
 autocmd filetype ruby,haml,erb,eruby,html set tabstop=2 expandtab shiftwidth=2 softtabstop=2
-autocmd filetype javascript,js,jasmine set tabstop=4 expandtab shiftwidth=4 softtabstop=4
+autocmd filetype javascript,js,jasmine set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 "let enter add a space below, and backspace add a space above
 nnoremap <leader><cr> o<esc>
