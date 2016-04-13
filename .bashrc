@@ -28,3 +28,6 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$PATH:${JAVA_HOME}/bin"
 export PATH="$PATH:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools"
+
+export NVM_DIR="/Users/amiles/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
