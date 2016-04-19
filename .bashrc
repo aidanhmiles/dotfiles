@@ -17,7 +17,8 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH=.bundle/binstubs:$PATH 
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
-source /usr/local/Cellar/autojump/22.2.4/etc/autojump.sh
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
 source $HOME/dotfiles/tab.bash
 # export PATH="$HOME/local/bin:$PATH"
 # export PATH="$HOME/local/npm/bin:$PATH"
