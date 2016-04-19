@@ -16,3 +16,4 @@
 	df = diff
 	br = branch
 	db = branch -D
+  rm = rm --cached
