@@ -146,6 +146,8 @@ alias upup="cd ../.."
 
 alias scratch="vim ~/Desktop/scratch"
 
+alias hag="history | ag"
+
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
