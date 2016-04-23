@@ -3,7 +3,6 @@
 #add mongodb binaries 
 export PATH=$PATH:/usr/local/mongodb/bin
 export PATH=$PATH:/usr/local/bin
-export PATH=$PATH:~/bin
 export PATH=$PATH:~/npm-global/bin
 
 #export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
