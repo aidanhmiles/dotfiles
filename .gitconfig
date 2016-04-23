@@ -7,7 +7,7 @@
 	editor = vim -w
 	excludesfile = ~/.gitignore_global
 [push]
-	default = current
+	default = upstream
 [alias]
 	st = status
 	co = checkout
@@ -16,4 +16,5 @@
 	df = diff
 	br = branch
 	db = branch -D
-  rm = rm --cached
+    rm = rm --cached
+	lg = log --oneline --graph
