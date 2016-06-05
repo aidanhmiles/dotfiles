@@ -1,6 +1,6 @@
 #default editor is vim, also for fixcommand
-export EDITOR=/usr/bin/vim
-export FCEDIT=/usr/bin/vim
+export EDITOR=/usr/local/bin/vim
+export FCEDIT=/usr/local/bin/vim
 export PGHOST=localhost
 
 # my custom prompt 
@@ -41,6 +41,9 @@ LS_COLORS='di=36;40:ln=35;40:so=32;40:pi=32;40:ex=31;40:bd=34;46:cd=34;43:su=0;4
 # keep the present working dir at the top of the terminal window
 PROMPT_COMMAND="prompt" # iTerm2 doesn't know about update_terminal_cwd?
 
+# Save and reload the history after each command finishes
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
 # INCREASE history length, ERASE duplicates, and PRESERVE history after exiting shell
 export HISTCONTROL=ignoredups:erasedups # no dupes
 export HISTSIZE=10000 # lots of history
@@ -63,6 +66,58 @@ alias ls="ls -FG"
 alias del="mv $* ~/.Trash"
 alias k="clear"
 
+alias mvim="/Applications/MacVim.app/contents/MacOS/MacVim"
+
+# shortcuts
+alias be="bundle exec"
+alias bi="bundle install"
+# GIT
+alias ga="git add"
+alias gaa="git add -A" 
+alias gbr="git branch"
+alias gcob="git checkout -b"
+alias gcm="git commit -m"
+alias gco="git checkout"
+alias gd="git diff"
+alias gf="git fetch"
+alias glg="git log --graph --decorate --pretty=oneline --abbrev-commit"
+alias gp="git push"
+alias gphm="git push heroku master"
+alias gpog="git push origin gh-pages"
+alias gpom="git push origin master"
+alias gpo="git push origin"
+alias gpu="git pull"
+alias gpuo="git pull origin"
+alias gpuom="git pull origin master"
+alias gs="git status"
+
+# alias gmb="git merge ???" 
+alias gbhreset="git co -- .bash_history"
+
+# my non-synced list of profile-related configuratons
+alias lcls="vim ~/.adn_locals"
+
+# why not?
+alias up="cd .."
+alias up2="cd ../.."
+alias up3="cd ../../.."
+
+# "scratch paper"
+alias scratch="vim ~/Desktop/scratch"
+
+alias hag="history | ag"
+
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
+
+if [ -f ~/dotfiles/.aws_creds ]; then
+   source ~/dotfiles/.aws_creds
+fi
+
+if [ -f ~/.adn_locals ]; then
+   source ~/.adn_locals
+fi 
 
 # some functions
 # useful combo of cd and ls
@@ -110,55 +165,3 @@ setTerminalText () {
 rename_both   () { setTerminalText 0 $@; }
 rename_tab    () { setTerminalText 1 $@; }
 rename_window () { setTerminalText 2 $@; }
-
-alias mvim="/Applications/MacVim.app/contents/MacOS/MacVim"
-
-# shortcuts
-alias be="bundle exec"
-alias bi="bundle install"
-# GIT
-alias gp="git push"
-alias gpu="git pull"
-alias gpom="git push origin master"
-alias gpo="git push origin"
-alias gpuo="git pull origin"
-alias gpuom="git pull origin master"
-alias gpog="git push origin gh-pages"
-alias gphm="git push heroku master"
-alias gaa="git add -A" 
-alias gcob="git checkout -b"
-alias gcm="git commit -m"
-alias ga="git add"
-alias gs="git status"
-alias gd="git diff"
-alias gco="git checkout"
-alias gbr="git branch"
-alias gf="git fetch"
-
-# alias gmb="git merge ???" 
-alias gbhreset="git co -- .bash_history"
-
-# my non-synced list of profile-related configuratons
-alias lcls="vim ~/.adn_locals"
-
-alias up="cd .."
-alias upup="cd ../.."
-
-alias scratch="vim ~/Desktop/scratch"
-
-alias hag="history | ag"
-
-if [ -f ~/.bashrc ]; then
-   source ~/.bashrc
-fi
-
-if [ -f ~/dotfiles/.aws_creds ]; then
-   source ~/dotfiles/.aws_creds
-fi
-
-if [ -f ~/.adn_locals ]; then
-   source ~/.adn_locals
-fi 
-
-# Save and reload the history after each command finishes
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"

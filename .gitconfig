@@ -18,3 +18,4 @@
 	db = branch -D
     rm = rm --cached
 	lg = log --oneline --graph
+	lgp = log --graph --decorate --pretty=oneline --abbrev-commit
