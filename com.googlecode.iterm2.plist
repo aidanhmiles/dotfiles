@@ -157,9 +157,9 @@
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 25 1440 875 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 5 954 894 0 0 1440 900 </string>
+	<string>0 4 1440 896 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 68 1440 832 0 0 1440 900 </string>
+	<string>0 25 1440 875 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>0 26 1440 851 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_D7A19D2D-8031-49CC-986C-66C4933316B0</key>
@@ -1699,7 +1699,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-21T04:32:29Z</date>
+	<date>2016-06-28T00:25:56Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
