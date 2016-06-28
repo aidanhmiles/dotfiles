@@ -143,6 +143,7 @@ autocmd FileType ejs,eruby let g:surround_45 = "<% \r %>"
 
 " with =
 autocmd FileType ejs,eruby let g:surround_61 = "<%= \r %>"
+" with h
 autocmd FileType ejs,erb,eruby,html let g:surround_104 = "<!-- \r -->"
 
 
@@ -233,8 +234,9 @@ vnoremap <leader><leader> <esc>
 "tabs are 4 spaces
 set tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
 "except in ruby
-autocmd filetype ruby,haml,erb,eruby,html set tabstop=2 expandtab shiftwidth=2 softtabstop=2
+autocmd filetype ruby,haml,erb,eruby set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd filetype javascript,js,jasmine set tabstop=2 expandtab shiftwidth=2 softtabstop=2
+autocmd filetype html,css,scss set tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
 "let enter add a space below, and backspace add a space above
 nnoremap <leader><cr> o<esc>
