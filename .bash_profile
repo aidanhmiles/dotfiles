@@ -23,7 +23,8 @@ function prompt {
 	local HIGHLIGHT="\[\e[30;47;1m\]"
 
 	# this is the current prompt
-	export PS1="$PURPLE\u$RESET $YELL\W$RED ☯  $RESET"
+	# \W is workingdir
+	export PS1="$PURPLE\u$RESET $YELL\W $BLUE\$git_branch$TURQ\$git_dirty $RED ☯  $RESET"
 
 	# this is a test for the colors
 	# export PS1="$RED RED $GREEN GREEN $YELL YELLOW $BLUE BLUE $PURPLE PURPLE $TURQ TURQOISE $ORNG ORANGE $DGRAY DGRAY $LGRAY LGRAY $RESET NORMAL" 
@@ -75,6 +76,7 @@ alias bi="bundle install"
 alias ga="git add"
 alias gaa="git add -A" 
 alias gbr="git branch"
+alias gbrv="git branch -vv"
 alias gcob="git checkout -b"
 alias gcm="git commit -m"
 alias gco="git checkout"
@@ -101,6 +103,11 @@ alias lcls="vim ~/.adn_locals"
 alias up="cd .."
 alias up2="cd ../.."
 alias up3="cd ../../.."
+
+alias dcup="docker-compose up"
+alias dcdn="docker-compose down"
+alias dcb="docker-compose build"
+alias dc="docker-compose"
 
 # "scratch paper"
 alias scratch="vim ~/Desktop/scratch"
