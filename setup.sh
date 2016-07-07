@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # move this file into ~, then run it, and all these will be copied and linked
 
