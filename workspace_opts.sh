@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #-------------------------------------------------------------------------------- 
 # - - - - - this file contains common options for my workspace.sh files - - - - - 
