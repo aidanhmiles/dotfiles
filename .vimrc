@@ -232,15 +232,15 @@ vnoremap <leader><leader> <esc>
 " WHITESPACE {{{
 
 "tabs are 4 spaces
-set tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
-"except in ruby
+set tabstop=4 expandtab shiftwidth=4 softtabstop=4
+"except in the following
 autocmd filetype ruby,haml,erb,eruby set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd filetype javascript,js,jasmine set tabstop=2 expandtab shiftwidth=2 softtabstop=2
+autocmd filetype sh,bash set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd filetype html,css,scss set tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
 "let enter add a space below, and backspace add a space above
 nnoremap <leader><cr> o<esc>
-
 nnoremap <bs> O<esc>
 "}}}
 " WINDOWS and TABS {{{
