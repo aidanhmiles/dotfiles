@@ -147,19 +147,19 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>627 284 212 309 0 0 1440 900 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>670 87 445 77 0 0 1440 900 </string>
+	<string>591 111 445 77 0 0 1440 900 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>428 441 606 456 0 0 1440 900 </string>
+	<string>826 620 606 456 0 0 1920 1080 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 382 620 392 0 0 1440 900 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Inconsolata</key>
 	<string>398 632 260 42 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 25 1440 875 0 0 1440 900 </string>
+	<string>0 25 1690 1055 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 4 1440 896 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 25 1440 875 0 0 1440 900 </string>
+	<string>0 4 1690 1076 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>0 26 1440 851 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_D7A19D2D-8031-49CC-986C-66C4933316B0</key>
@@ -945,12 +945,16 @@
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.99869310855865479</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.3333333432674408</real>
+				<real>0.30131518840789795</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.5940900444984436</real>
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
@@ -990,21 +994,29 @@
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
-				<key>Blue Component</key>
+				<key>Alpha Component</key>
 				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.99845039844512939</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.42707282304763794</real>
+				<real>0.48434692621231079</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.1018744558095932</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.95811742544174194</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.19582211971282959</real>
 				<key>Red Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.64229154586791992</real>
 			</dict>
 			<key>Ansi 6 Color</key>
 			<dict>
@@ -1429,6 +1441,19 @@
 					<string>[1;5F</string>
 				</dict>
 			</dict>
+			<key>Link Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.99857151508331299</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
+				<key>Green Component</key>
+				<real>0.5581786036491394</real>
+				<key>Red Component</key>
+				<real>0.2388928234577179</real>
+			</dict>
 			<key>Log Directory</key>
 			<string></string>
 			<key>Minimum Contrast</key>
@@ -1438,7 +1463,7 @@
 			<key>Name</key>
 			<string>ADN</string>
 			<key>Non Ascii Font</key>
-			<string>Inconsolata 14</string>
+			<string>STIXGeneral-Regular 15</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
@@ -1699,7 +1724,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-28T00:25:56Z</date>
+	<date>2016-07-11T00:21:33Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1747,6 +1772,10 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.2</string>
+	<string>3.0.4</string>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>7</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<true/>
 </dict>
 </plist>
