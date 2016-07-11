@@ -4,12 +4,14 @@
 # much taken from here
 # https://github.com/magicmonty/bash-git-prompt
 
-source "$HOME/dotfiles/prompt-colors.sh"
+source "$HOME/dotfiles/prompt_colors.sh"
 
 # constants
 GIT_STATUS_CMD="$HOME/dotfiles/gitstatus.sh"
 GIT_PROMPT_SHOW_UNTRACKED_FILES=all #normal, no
 GIT_PROMPT_SHOW_UPSTREAM=1
+
+PROMPT_SYMBOL="☯ "
 
 # associative array, i.e. a dictionary
 declare -A GIT_SYMBOLS
@@ -22,39 +24,19 @@ GIT_SYMBOLS=(
   ["CONFLICTS"]="!"
   ["CHANGED"]="*"
   ["PREHASH"]=":"
-  ["BEHIND"]="↓·"
-  ["AHEAD"]="↑·"
+  ["BEHIND"]="↓"
+  ["AHEAD"]="↑"
   ["CLEAN"]="✓"
   ["UNTRACKED"]="?"
   ["REMOTE"]=" "
   ["NO_REMOTE"]="L"
 )
-NUM_STASHED=(
-  "⚀"
-  "⚁"
-  "⚂"
-  "⚃"
-  "⚄"
-  "⚅"
-)
 
-# this function adds a string to the GIT_STATUS variable
-# if the first argument, a test condition, is true
-append_to_status_if() {
-  # args look like 'STAGED' '-ne 0'
-  local condition=$1
-  local string=$2
+# using dice for stash symbles, because it visually
+# communicates the number of things in a box
+STASH_SYMBOLS=( "⚀ " "⚁ " "⚂ " "⚃ " "⚄ " "⚅ ")
 
-  if eval "test $condition" ; then
-    append_to_git_status "$string"
-  fi
-}
-
-append_to_git_status() {
-  GIT_STATUS="$GIT_STATUS$1"
-}
-
-function replaceSymbols() {
+replaceSymbols() {
   # substitute strings for symbols
   # using bash parameter-expansion trickery
   # see here: http://mywiki.wooledge.org/BashGuide/Parameters
@@ -67,108 +49,145 @@ function replaceSymbols() {
   echo ${VALUE2//_PREHASH_/${GIT_PROMPT_SYMBOLS_PREHASH}}
 }
 
-# my custom prompt
-function main {
-
-  # git rev-parse --git-dir > /dev/null 2>&1 && \
-  #   local is_git_dir=true || \
-  #   local is_git_dir=false
-
-  local is_git_dir=$(git rev-parse --git-dir > /dev/null 2>&1 && \
-    echo "true" || \
-    echo "false"
-  )
-  #if we're in a git repo, do a bunch of stuff
-  if $is_git_dir = "true"; then
-    build_node_version_string
-    build_git_prompt_string
-  fi
-
-  # use heredocs + tr command to make prompt definition more readable
-  # use leading spaces instead of trailing spaces, for clarity
-  # pipe to tr to strip newlines after the fact
-  # dis some funky syntax
-  # local prompt_string=$(cat <<-EOF | tr -d '\n' | tr -s ' '
-
-  local user_string="\u"
-  local dir_string="\W"
-
-  declare -a prompt_pieces=(
-    $PURPLE$user_string
-    $YELLOW$dir_string
-    $GREEN $NODE_STRING
-    $GIT_STATUS
-    $BOLD_RED ☯ 
-    $RESETCOLOR
-  )
-
-  lines() { printf "%s " "$@"; }
-
-  local prompt_string
-  prompt_string=$(lines ${prompt_pieces[@]})
-  # prompt_string=${prompt_pieces[@]}
-
-
-  export PS1=${prompt_string}
-
-  # secondary and tertiary chars
-  PS2='> '
-  PS4='>> '
-}
-
 # get only 'v' + majorVersion, e.v. 'v6'
-function build_node_version_string(){
+build_node_version_string(){
     local node_version="$(nvm_ls_current)";
     NODE_STRING="Node${node_version:0:2}"
 }
 
-function build_git_prompt_string(){
+build_git_prompt_string(){
 
   # Get the results of git status
   declare -a git_status_fields
+
+  local git_status=""
   # gitstatus.sh returns git status information on seperate lines
   git_status_fields=($("$GIT_STATUS_CMD" 2>/dev/null))
 
-  GIT_BRANCH=$(replaceSymbols ${git_status_fields[0]})
-  GIT_REMOTE="$(replaceSymbols ${git_status_fields[1]})"
-  if [[ "." == "$GIT_REMOTE" ]]; then
-    unset GIT_REMOTE
-  fi
-
-  GIT_UPSTREAM="${git_status_fields[2]}"
-  if [[ -z "${GIT_PROMPT_SHOW_UPSTREAM}" || "^" == "$GIT_UPSTREAM" ]]; then
-    unset GIT_UPSTREAM
-  fi
-
   if [[ -n "$git_status_fields" ]]; then
-    GIT_STAGED=${git_status_fields[3]}
-    GIT_CONFLICTS=${git_status_fields[4]}
-    GIT_CHANGED=${git_status_fields[5]}
-    GIT_UNTRACKED=${git_status_fields[6]}
-    GIT_STASHED=${git_status_fields[7]}
-    GIT_CLEAN=${git_status_fields[8]}
 
-    GIT_STATUS=""
+    # define pieces of the prompt
+    local git_branch=$(replaceSymbols ${git_status_fields[0]})
 
+    # ahead / behind
+    local git_remote="$(replaceSymbols ${git_status_fields[1]})"
+    if [[ "." == "$git_remote" ]]; then
+      unset git_remote
+    fi
 
+    # upstream branch name
+    # if no upstream, or if upstream branch's name is the same as local, don't show
+    # ${git_upstream#origin/} strips "origin/} out of the resultant expanded string
+    local git_upstream="${git_status_fields[2]}"
+    if [[ -z "${GIT_PROMPT_SHOW_UPSTREAM}" || "^" == "$git_upstream" || "$git_branch" == "${git_upstream#origin/}" ]]; then
+      unset git_upstream
+    fi
 
-    append_to_git_status    "$PURPLE$GIT_BRANCH"
-    append_to_git_status    "${INTENSEBLACK}-"
+    local num_staged=${git_status_fields[3]}
+    if [[ $num_staged -ne 0 ]]; then
+      num_staged="$GREEN${num_staged}${GIT_SYMBOLS["STAGED"]}"
+    else
+      unset num_staged
+    fi
 
-    append_to_git_status    "$BLUE$GIT_UPSTREAM"
-    append_to_status_if     "-n $GIT_REMOTE"         "$BLUE$GIT_REMOTE"
-    # append_to_git_status    "${GIT_SYMBOLS["SEPARATOR"]}"
-    append_to_git_status    "$RESETCOLOR${GIT_SYMBOLS["PREFIX"]}"
-    append_to_status_if     "$GIT_STAGED -ne 0"      "$GREEN${GIT_SYMBOLS["STAGED"]}${GIT_STAGED}"
-    append_to_status_if     "$GIT_CONFLICTS -ne 0"   "$BOLD_RED${GIT_SYMBOLS["CONFLICTS"]}${GIT_CONFLICTS}"
-    append_to_status_if     "$GIT_CHANGED -ne 0"     "$BRIGHT_BLUE${GIT_SYMBOLS["CHANGED"]}${GIT_CHANGED}"
-    append_to_status_if     "$GIT_UNTRACKED -ne 0"   "$DIM_RED ${GIT_SYMBOLS["UNTRACKED"]}${GIT_UNTRACKED}"
-    append_to_status_if     "$GIT_STASHED -ne 0"     "$WHITE ${NUM_STASHED[$GIT_STASHED - 1]} "
-    append_to_status_if     "$GIT_CLEAN -eq 1"       "${GIT_SYMBOLS["CLEAN"]}"
-    append_to_git_status    "$RESETCOLOR${GIT_SYMBOLS["SUFFIX"]}"
+    local num_conflicts=${git_status_fields[4]}
+    if [[ $num_conflicts -gt 0 ]]; then
+      num_conflicts="$BOLD_RED${num_conflicts}${GIT_SYMBOLS["CONFLICTS"]}"
+    else
+      unset num_conflicts
+    fi
+
+    local num_changed=${git_status_fields[5]}
+    if [[ $num_changed -gt "0" ]]; then
+      num_changed="$BRIGHT_BLUE${num_changed}${GIT_SYMBOLS["CHANGED"]}"
+    else
+      unset num_changed
+    fi
+
+    local num_untracked=${git_status_fields[6]}
+    if [[ $num_untracked -gt 0 ]]; then
+      num_untracked="$RED${num_untracked}${GIT_SYMBOLS["UNTRACKED"]}"
+    else
+      unset num_untracked
+    fi
+
+    local num_stashed=${git_status_fields[7]}
+    if [[ $num_stashed -gt 0 ]]; then
+      num_stashed="$WHITE${STASH_SYMBOLS[$num_stashed - 1]}"
+    else
+      unset num_stashed
+    fi
+
+    local is_clean=${git_status_fields[8]} # eq 1
+    if [[ $is_clean -eq 1 ]]; then
+      is_clean="$BRIGHT_GREEN${GIT_SYMBOLS["CLEAN"]}"
+    else
+      unset is_clean
+    fi
+
+    # combine some of the pieces into larger pieces
+    local branch_info=""
+		branch_info+="$BOLD_PURPLE${git_branch}"
+		# add a lone hyphen if git_upstream is set
+		branch_info+="${INTENSEBLACK}${git_upstream:+-}"
+		branch_info+="$BLUE${git_upstream}"
+		branch_info+="$BRIGHT_BLUE${git_remote}"
+
+		local repo_info=""
+		repo_info+="$RESETCOLOR${GIT_SYMBOLS["PREFIX"]}" 
+		repo_info+="$num_staged"
+		repo_info+="$num_conflicts"
+		repo_info+="$num_changed"
+		repo_info+="$num_untracked"
+		repo_info+="$num_stashed"
+		repo_info+="$RESETCOLOR${GIT_SYMBOLS["SUFFIX"]}"
+    repo_info+="$is_clean"
+
+		# assign to var for prompt
+    GIT_STATUS="$branch_info$repo_info"
+    
 
   fi # end if -n $git_status_fields
 } # end build_git_prompt_string
+
+# my custom prompt
+main (){
+
+  local user_string="\u"
+  local dir_string="\W"
+  local prompt_string
+
+  # if we enter the root of a git project
+  # if [[ $(git rev-parse --show-toplevel 2>/dev/null;) = "$PWD" ]]; then
+  #   build_node_version_string
+  #   NODE_STRING="$DIM_GREEN$NODE_STRING$RESETCOLOR"
+  # else 
+  #   unset NODE_STRING
+  # fi 
+
+  # anytime we're anywhere in a git project,
+  if git rev-parse --git-dir > /dev/null 2>&1; then
+    build_git_prompt_string
+  else
+    unset GIT_STATUS
+  fi
+
+  declare -a prompt_pieces=(
+    "$PURPLE$user_string"
+    "$YELLOW$dir_string"
+		# "$NODE_STRING"
+    "$GIT_STATUS"
+    "$BOLD_RED$PROMPT_SYMBOL"
+  )
+
+  # prompt_string = prompt_pieces, joined with spaces
+  prompt_string=$RESETCOLOR${prompt_pieces[*]}$RESETCOLOR 
+  export PS1=${prompt_string}
+
+  # secondary and tertiary prompts
+  PS2='> '
+  PS4='>> '
+}
 
 
 PROMPT_COMMAND="main"
