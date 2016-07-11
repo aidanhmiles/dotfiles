@@ -172,16 +172,14 @@ main (){
     unset GIT_STATUS
   fi
 
-  declare -a prompt_pieces=(
-    "$PURPLE$user_string"
-    "$YELLOW$dir_string"
-		# "$NODE_STRING"
-    "$GIT_STATUS"
-    "$BOLD_RED$PROMPT_SYMBOL"
-  )
-
-  # prompt_string = prompt_pieces, joined with spaces
-  prompt_string=$RESETCOLOR${prompt_pieces[*]}$RESETCOLOR 
+  prompt_string=""
+  prompt_string+="$PURPLE$user_string "
+  prompt_string+="$YELLOW$dir_string "
+  # prompt_string+="$NODE_STRING"
+  # if GIT_STATUS is set, yield the GIT_STATUS string plus a space
+  prompt_string+="${GIT_STATUS:+"$GIT_STATUS "}"
+  prompt_string+="$BOLD_RED$PROMPT_SYMBOL"
+  prompt_string+="$RESETCOLOR"
   export PS1=${prompt_string}
 
   # secondary and tertiary prompts
