@@ -85,7 +85,7 @@ alias scratch="vim ~/Desktop/scratch"
 alias hag="history | ag"
 
 
-source $HOME/dotfiles/prompt.sh
+source $HOME/dotfiles/bash_prompt.sh
 source ~/.bashrc 
 source ~/.adn_locals
 
