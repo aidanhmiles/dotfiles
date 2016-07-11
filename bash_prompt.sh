@@ -130,7 +130,7 @@ build_git_prompt_string(){
 		branch_info+="$BOLD_PURPLE${git_branch}"
 		# add a lone hyphen if git_upstream is set
 		branch_info+="${INTENSEBLACK}${git_upstream:+-}"
-		branch_info+="$BLUE${git_upstream}"
+		branch_info+="$BLUE${git_upstream#origin\/}"
 		branch_info+="$BRIGHT_BLUE${git_remote}"
 
 		local repo_info=""
