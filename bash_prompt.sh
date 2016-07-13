@@ -4,6 +4,7 @@
 # much taken from here
 # https://github.com/magicmonty/bash-git-prompt
 
+alias bashpr="vim $HOME/dotfiles/bash_prompt.sh"
 source "$HOME/dotfiles/prompt_colors.sh"
 
 # constants
@@ -51,6 +52,11 @@ replaceSymbols() {
 
 # get only 'v' + majorVersion, e.v. 'v6'
 build_node_version_string(){
+    if [[ -e .nvmrc ]]; then
+      # is there a way to do with not eval?
+      eval "nvm use --silent >/dev/null 2>&1;"
+    fi
+
     local node_version="$(nvm_ls_current)";
     NODE_STRING="Node${node_version:0:2}"
 }
@@ -129,18 +135,18 @@ build_git_prompt_string(){
     local branch_info=""
 		branch_info+="$BOLD_PURPLE${git_branch}"
 		# add a lone hyphen if git_upstream is set
-		branch_info+="${INTENSEBLACK}${git_upstream:+-}"
+		branch_info+="${INTENSEBLACK}${git_upstream:+:}"
 		branch_info+="$BLUE${git_upstream#origin\/}"
 		branch_info+="$BRIGHT_BLUE${git_remote}"
 
 		local repo_info=""
-		repo_info+="$RESETCOLOR${GIT_SYMBOLS["PREFIX"]}" 
+		repo_info+="$INTENSEBLACK${GIT_SYMBOLS["PREFIX"]}" 
 		repo_info+="$num_staged"
 		repo_info+="$num_conflicts"
 		repo_info+="$num_changed"
 		repo_info+="$num_untracked"
 		repo_info+="$num_stashed"
-		repo_info+="$RESETCOLOR${GIT_SYMBOLS["SUFFIX"]}"
+		repo_info+="$INTENSEBLACK${GIT_SYMBOLS["SUFFIX"]}"
     repo_info+="$is_clean"
 
 		# assign to var for prompt
@@ -159,11 +165,12 @@ main (){
 
   # if we enter the root of a git project
   # if [[ $(git rev-parse --show-toplevel 2>/dev/null;) = "$PWD" ]]; then
-  #   build_node_version_string
-  #   NODE_STRING="$DIM_GREEN$NODE_STRING$RESETCOLOR"
-  # else 
-  #   unset NODE_STRING
-  # fi 
+  if [[ -e "package.json" ]]; then
+    build_node_version_string
+    NODE_STRING="$GREEN$NODE_STRING$RESETCOLOR"
+  else 
+    unset NODE_STRING
+  fi 
 
   # anytime we're anywhere in a git project,
   if git rev-parse --git-dir > /dev/null 2>&1; then
@@ -175,7 +182,7 @@ main (){
   prompt_string=""
   prompt_string+="$PURPLE$user_string "
   prompt_string+="$YELLOW$dir_string "
-  # prompt_string+="$NODE_STRING"
+  prompt_string+="$NODE_STRING "
   # if GIT_STATUS is set, yield the GIT_STATUS string plus a space
   prompt_string+="${GIT_STATUS:+"$GIT_STATUS "}"
   prompt_string+="$BOLD_RED$PROMPT_SYMBOL"
