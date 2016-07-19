@@ -52,12 +52,22 @@ replaceSymbols() {
 
 # get only 'v' + majorVersion, e.v. 'v6'
 build_node_version_string(){
+    local node_version="$(node --version)"
+
     if [[ -e .nvmrc ]]; then
-      # is there a way to do with not eval?
-      eval "nvm use --silent >/dev/null 2>&1;"
+      local nvmrc="$(cat .nvmrc)"
+      # if major version in nvmrc equals major version in node --version
+      # do nothing
+      # if they're difference, we have to update the current
+      # active version with nvm use
+      if [[ "${nvmrc:0:1}" != "${node_version:1:1}" ]]; then
+        # is there a way to do with not eval?
+        eval "nvm use --silent >/dev/null 2>&1;"
+        #reassign node_version
+        node_version="$(node --version)"
+      fi
     fi
 
-    local node_version="$(nvm_ls_current)";
     NODE_STRING="Node${node_version:0:2}"
 }
 
@@ -198,5 +208,5 @@ main (){
 PROMPT_COMMAND="main"
 
 # Save and reload the history after each command finishes
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+export PROMPT_COMMAND="$PROMPT_COMMAND; history -a; history -c; history -r;"
 
