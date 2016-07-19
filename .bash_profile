@@ -76,8 +76,15 @@ alias dc="docker-compose"
 
 # Node / npm
 alias ni="npm install"
+alias nu="npm uninstall"
 alias nis="npm install --save"
+alias nus="npm uninstall --save"
 alias nisd="npm install --save-dev"
+alias nusd="npm uninstall --save-dev"
+
+alias nup="npm update"
+alias nups="npm update --save"
+alias nupsd="npm update --save-dev"
 
 # "scratch paper"
 alias scratch="vim ~/Desktop/scratch"
