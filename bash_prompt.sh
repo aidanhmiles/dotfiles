@@ -58,10 +58,10 @@ build_node_version_string(){
       local nvmrc="$(cat .nvmrc)"
       # if major version in nvmrc equals major version in node --version
       # do nothing
-      # if they're difference, we have to update the current
+      # if they're different, we have to update the current
       # active version with nvm use
       if [[ "${nvmrc:0:1}" != "${node_version:1:1}" ]]; then
-        # is there a way to do with not eval?
+        # is there a way to do without eval?
         eval "nvm use --silent >/dev/null 2>&1;"
         #reassign node_version
         node_version="$(node --version)"
@@ -93,7 +93,7 @@ build_git_prompt_string(){
 
     # upstream branch name
     # if no upstream, or if upstream branch's name is the same as local, don't show
-    # ${git_upstream#origin/} strips "origin/} out of the resultant expanded string
+    # ${git_upstream#origin/} strips "origin/" out of the resultant expanded string
     local git_upstream="${git_status_fields[2]}"
     if [[ -z "${GIT_PROMPT_SHOW_UPSTREAM}" || "^" == "$git_upstream" || "$git_branch" == "${git_upstream#origin/}" ]]; then
       unset git_upstream
@@ -173,8 +173,6 @@ main (){
   local dir_string="\W"
   local prompt_string
 
-  # if we enter the root of a git project
-  # if [[ $(git rev-parse --show-toplevel 2>/dev/null;) = "$PWD" ]]; then
   if [[ -e "package.json" ]]; then
     build_node_version_string
     NODE_STRING="$GREEN$NODE_STRING$RESETCOLOR"
@@ -190,13 +188,15 @@ main (){
   fi
 
   prompt_string=""
+  # add extra space
   prompt_string+="$PURPLE$user_string "
   prompt_string+="$YELLOW$dir_string "
-  prompt_string+="$NODE_STRING "
+  # if NODE_STRING is set, yield the NODE_STRING string plus a space
+  prompt_string+=${NODE_STRING:+"$NODE_STRING "}
   # if GIT_STATUS is set, yield the GIT_STATUS string plus a space
-  prompt_string+="${GIT_STATUS:+"$GIT_STATUS "}"
-  prompt_string+="$BOLD_RED$PROMPT_SYMBOL"
-  prompt_string+="$RESETCOLOR"
+  prompt_string+=${GIT_STATUS:+"$GIT_STATUS "}
+  prompt_string+=$BOLD_RED$PROMPT_SYMBOL
+  prompt_string+=$RESETCOLOR
   export PS1=${prompt_string}
 
   # secondary and tertiary prompts
