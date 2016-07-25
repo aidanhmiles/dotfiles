@@ -1,3131 +1,3 @@
-vim server/server.js 
-gulp server
-vim server/config.json 
-ionic run android -lc --target=192.168.56.101:5555
-ionic run android -lc --target=192.168.56.101:5555 --address 192.168.128.86
-gulp server
-vim www/holonis-ionic.js 
-ionic run android -lc --target=192.168.56.101:5555 --address 192.168.128.86
-ionic build android
-ifconfig vboxnet0
-ionic run android -lc --target=192.168.56.101:5555
-ag facebook server/
-vim server/boot/vendor.js 
-ag -g facebook .
-vim client/public/modules/core/services/facebook.service.js 
-ionic build android
-ionic run android -lc --target=192.168.56.101:5555
-vim www/holonis-ionic.js 
-ionic run android -lc --target=192.168.56.101:5555
-gulp server
-mongod
-j hol
-gulp build:ionic
-cd client/ionic/www/
-ifconfig vboxnet0
-up
-ionic platform remove android
-ionic platform add android
-ionic build android
-up
-ionic run android -lc --target=192.168.56.101:5555
-c
-ifconfig vboxnet0
-up
-vim templates.js 
-ionic run android -lc --target=192.168.56.101:5555
-up
-ionic run android -lc --target=192.168.56.101:5555
-ionic run android -lc --target=192.168.56.101:5555 --address localhost
-j elite
-ionic run android -lc --target=192.168.56.101:5555 
-c
-adb devices
-adb kill-server && adb devices 
-cordova
-cordova run --device
-cordova
-adb devices
-adb kill-server && adb devices 
-adb devices
-adb kill-server && adb devices 
-adb devices
-adb kill-server
-adb start-server
-adv devices
-adb devices
-adb kill-server
-adb start-server
-adb devices
-adb kill-server && adb devices
-vim www/index.html 
-ionic run android -lc --target=192.168.56.101:5555
-ionic run android -lc --target=192.168.56.101:5555 --address localhost
-
-c
-ls
-ionic build android
-ionic run android -lc --target=192.168.56.101:5555 --address localhost
-ionic run android -lc --target=192.168.56.101:5555 
-ionic run android -lc --target=192.168.56.101:5555 
-vim www/index.html 
-c
-vim www/index.html 
-c
-vim platforms/android/AndroidManifest.xml 
-ionic build android
-ionic run android -lc --target=192.168.56.101:5555 
-ionic run android -lc 
-vim www/templates.js 
-ionic run android -lc 
-ionic run android -lc 
-c
-ls
-vim www/index.html 
-vim config.xml 
-gulp server
-mongod
-j hol
-j elite
-lS
-ls
-lS
-c
-ls
-ls -R hooks/
-vim ionic.project 
-ls www/
-vp www/hol-index.html www/index.html 
-ionid build ios
-jc ion 
-ionic build ios
-c
-upup
-ionic emulate ios -lc
-vim www/templates.js 
-ionic emulate ios -lc
-ifconfig vboxnet0
-vim www/templates.js 
-ionic run android -lc 
-c
-ionic run android -lc 
-c
-ionic run android -lsc 
-gulp build:ionic
-cp -R www/ ../../../EliteScheduleApp/www/
-vim www/templates.js 
-ionic build android
-adb devices
-adb help install
-adb install /Users/amiles/Documents/projects/EliteScheduleApp/platforms/android/build/outputs/apk/android-debug.apk
-adb install -r /Users/amiles/Documents/projects/EliteScheduleApp/platforms/android/build/outputs/apk/android-debug.apk
-vim www/index.html 
-ionic run android -lsc 
-ionic run android -lsc 
-vim www/index.html ../../../EliteScheduleApp/www/index.html 
-c
-ls
-c
-ls
-ls www/
-git rm www/hol-index.html 
-c
-gs
-c
-gs
-c
-ls
-ionic platform remove android
-ionic platform addc android
-ionic platform add android
-vo config.xml ../holonis-server/client/ionic/config.xml 
-diff config.xml ../holonis-server/client/ionic/config.xml 
-man diff
-c
-ionic run android -lsc
-c
-ls
-c
-ls
-vim package.json 
-ionic run android -lsc
-gulp server
-ionic run android -lsc --address localhost
-ls
-vim ionic.project 
-vim platforms/platforms.json 
-ionic help
-cordova install cordova-whitelist-plugin
-cordova plugin add cordova-plugin-whitelist
-upup
-vim paths.js 
-gulp vendorjs:web -l
-c
-vim client/public/application.js 
-mongod
-ionic run android -lsc 
-j hol
-c
-gs
-rm 1q 
-c
-ls
-gs
-gd client/ionic/bower
-gd client/ionic/bower.json 
-c
-git reset --hard
-c
-gs
-jc ion
-cordova plugin add cordova-plugin-whitelist
-gs
-c
-ionic run android -lc
-gulp server
-ifconfig vboxnet0
-ionic run android -lc
-ionic emulate ios -lc
-c
-ls
-ionic build ios
-vim www/templates.js 
-upup
-git fetch
-git rebase development
-gs
-git stash
-git rebase development
-git stash apply
-c
-ls
-vim client/public/modules/holospace/views/holospace.header.view.html 
-ifconfig
-c
-?vbox
-ifconfig vboxnet0
-ionic run android -lc
-ionic emulate ios -lc
-gulp build:ionic
-vim $(ag -g holospace client/public/modules/)
-ls
-rm 1
-c
-ls
-c
-gulp build:ionic
-vim client/public/modules/users/views/authentication/signin.ionic.html 
-ionic run android -lc
-jc ion
-ionic run android -lc
-vim www/templates.js 
-gulp dev:ionic
-ionic emulate ios -lc
-ionic run android -lc
-c
-ionic run android -lc --target=192.168.56.101:5555 
-ifconfig vboxnet0
-cd server/
-ag localhost .
-gulp server
-c
-git stash apply
-git stash
-git stash apply
-git stash list
-ionic build android
-ionic run android -lc --target=192.168.56.101:5555 
-ionic platform remove android
-cordova plugin remove cordova-whitelist-plugin
-cordova plugin list
-cordova plugin remove cordova-plugin-whitelist
-cordova plugin add cordova-plugin-whitelist
-ionic platform add android
-ionic run android -lc --target=192.168.56.101:5555 
-ionic run android -lc --target=192.168.56.101:5555 
-jc ion
-c
-ionic run android -lc --target=192.168.56.101:5555 
-gulp server
-vim www/templates.js 
-mongod
-ionic emulate ios -lc
-c
-ls
-gs
-upup
-git reset --hard
-c
-gs
-jc ion
-ionic platform remove android
-ionic platform add android
-ionic build android
-upup
-ionic run android -lc --target=192.168.56.101:5555 
-gulp build:ionic
-vim client/ionic/www/holonis-ionic.js 
-ionic run android -lc --target=192.168.56.101:5555 
-gulp server
-mongod
-j hol
-jc ion
-vim www/templates.js 
-gulp clean:ionic
-gulp build:ionic
-ionic build:android
-ionic build android
- ionic run android -lc --target=192.168.56.101:5555 
-c
-gs
-vim config.xml 
-ga config.xml 
-gcm "
-allows navigation to all domains with allow-navigation in config.xml"
-c
-vim ../../../EliteScheduleApp/config.xml 
-j hol
-jc ion
-ionic build android
- ionic run android -lc --target=192.168.56.101:5555 
-ifconfig vboxnet0
-vim www/templates.js 
- ionic run android -lc --target=192.168.56.101:5555 
-ionic build android
- ionic run android -lc --target=192.168.56.101:5555 
- ionic run android -lc
-cordova plugin remove cordova-plugin-whitelist
-cordova plugin add cordova-plugin-whitelist
-ionic build android
-adb devices
- ionic run android -lc --target=192.168.56.101:5555 
-mongod
-gulp server
-upup
-c
-gs
-gaa .
-gs
-git reset
-gd client/ionic/config.xml 
-gd client/ionic/package.json 
-gcm "adds cordova-plugin-whitelist, rebuilds android"
-c
-gs
-j hol
-jc ion
- ionic run android -lc --target=192.168.56.101:5555 
-c
-gs
-git fetch
-gco development
-git pull
-gco 663
-git rebase development
-gulp server
-gulp install
-gulp build:web
-gulp build:ionic
-ionic build ios
-ionic build androi
-ionic build android
-adb devices
-adb kill-server && adb devices
-ionic emulate ios -lc
-cd www/lib/ionic/css/ionic.css 
- ionic run android -lc --target=192.168.56.101:5555 
-vim www/lib/ionic/css/ionic.css
-gulp server
-upup
-ios
-ionic emulate ios -lc
-jc ion
-ionic serve
-ionic emulate ios -lc
-vim www/holonis-ionic.js 
-cordova prepare ios
-ionic emulate ios -lc
-gulp dev:ionic
-ionic build ios
-vim www/index.html 
-vim www/holonis-ionic.js 
-vim www/templates.js 
-ionic run ios -lc
-vim config.xml 
-gulp dev:ionic
-vim www/index.html 
-vim www/lib/ionic/css/ionic.css 
-gulp server
-ionic build ios
-vim platforms/ios/www/index.html 
-upup
-vim server/server.js 
-ag redirect server/
-ag "auth/facebook" server/
-ag "auth/facebook" .
-ag "facebook/callback" .
-upup
-ionic run ios -lc
-gulp server
-ls
-ls client/dist/
-ls client/
-vim gulpfile.js 
-ionic run ios -lc
-upup
-vim gulpfile.js 
-gulp server
-vim gulpfile.js 
-gulp server
-g
-gs
-git stash
-gco development
-git pull
-gco 663
-upup
-gs
-gco dev
-gco development
-gulp dev:web
-gulp server
-gulp build:web
-gulp server
-ionic run ios -lc
-vim client/public/modules/holospace/controllers/holospace.controller.js 
-c
-ls
-vim client/i
-vim client/index.html 
-cd client/
-fg
-vim gulpfile.js 
-vim client/index.html 
-ionic run ios -lc --address localhost
-vim index.html 
-c
-ls
-vim index.html 
-ionic run ios -lc --address localhost
-up
-c
-vim paths.js 
-gulp clean:web
-vim client/index.html 
-gulp build:ionic
-vim client/index.html 
-ionic run ios -lc --address localhost
-vim paths.js 
-ls client/dist/
-vim client/index.html 
-gulp server
-gs
-gco 663
-c
-gs
-git stash apply
-git stash
-git rebase development
-git stash apply
-c
-gs
-ag bootstrap client/public/styles/
-ag bootstrap client/
-c
-gs
-ag bootstrap client/public/styles/
-ag bootstrap client/
-c
-ag dist/bootstrap client/
-ag dist/bootstrap client/
-ag "dist/bootstrap" client/
-ag "bootstrap.css"
-mv client/dist/holonis-ionic.css client/dist/css/
-gulp dev:ionic
-gulp sass:ionic
-gulp build:ionic
-ls client/dist/
-mv client/dist/holonis-ionic.css client/dist/css/
-vim client/public/modules/holospace/controllers/holospace-header.controller.js 
-ionic run ios -lc --address localhost
-mongod
-gulp server
-j hol
-gs
-ga client/public/styles/holonis-ionic.scss client/public/styles/_ionic-rewrites.scss 
-gcm "adds _ionic-rewrites.scss"
-c
-gs
-gaa .
-c
-gs
-git reset
-gd gulpfile.js paths.js 
-gd client/index.html 
-c
-ga client/index.html 
-ga gulpfile.js 
-ga paths.js 
-gcm "adds tweaks to send generated ionic source into client/dist, because redirect issue persists"
-c
-gs
-j hol
-ls
-gs
-gd
-c
-gs
-gaa .
-gcm "shows re-written ionic popover on  holospace for 2 seconds"
-c
-gs
-c
-gs
-gco developmen
-gco development
-gpu
-j dotf
-git fetch
-gs
-gco .bash_history && git stash apply -f
-c
-gs
-bashp
-git fetch
-git cherry-pick 28381f9
-c
-gs
-bashp
-c
-gs
-gd .bashrc 
-j hol
-vim server/server.js 
-ag NODE_ENV server/
-ag NODE_ENV client/
-ag NODE_ENV .
-gs
-git pull
-c
-ag NODE_ENV .
-c
-gd .bashrc
-ga .bashrc 
-gs
-gcm "adds android and java to PATH in bashrc"
-c
-gs
-gd
-c
-gd .gitconfig 
-ga .gitconfig 
-gcm "changes email in gitconfig"
-c
-gs
-gd .gitignore
-vim .gitignore
-rm .gitignore
-c
-gs
-gco .gitignore
-c
-gs
-git rm .gitignore
-c
-gs
-gcm "removes .gitignore from dotfiles, why was that even there?"
-c
-gs
-gd .gitignore_global 
-ga .gitignore_global 
-gcm "adds workspace.sh and *-workspace.sh to global gitignore"
-c
-gs
-gd .vimrc 
-ga .vimrc
-gcm "adds leader+r as shortcut for taboorename"
-c
-gs
-gd com.googlecode.iterm2.plist 
-c
-gs
-c
-gs
-gpu
-gcob 682
-j dotf
-ls
-la
-vim .slate 
-up
-ln -s dotfiles/.slate ./.slate
-j hol
-c
-ls
-gs
-ls
-jc ion
-c
-l;s
-ls
-ionic run ios
-gulp build:ionic
-gulp install
-gulp build:ionic
-ionic build ios
-ionic run ios
-ionic build ios --release
-ionic help run
-ionic run ios --release
-vim config.xml 
-ionic build ios --release
-ionic run ios --release
-vim www/index.html 
-ionic run ios --release
-c
-ls
-j elite
-gs
-gcm "removes hol-index.html"
-c
-gs
-ionic run ios --release
-c
-ls
-gaa .
-gcm "hasty commit"
-c
-gs
-gco mastedr
-gco master
-ionic run ios --release
-gco holonis
-ionic run ios --release
-vim www/index.html 
-vim www/index.html 
-ionic run ios --release
-gs
-gco .
-gco master
-ionic address
-ionic run ios --release
-ionic address
-ionic run ios --release
-ionic address
-ionic run ios --release
-gco holonis
-ionic address
-ionic run ios --release
-ionic address
-ionic run ios --release
-ionic address
-ionic run ios --release
-vim www/index.html 
-c
-gs
-ls
-vim gulpfile.js 
-cd www/
-c
-ls
-mv holonis-ionic.* templates.js vendor-ionic.js lib/
-c
-ionic build ios --release
-ionic run ios --release
-gd config.xml master
-gd master config.xml 
-gd ionic.project master
-gd master ionic.project 
-ls
-gd master package.json 
-gd master scss/
-gd master plugins/
-c
-ls
-gd master resources/
-ls
-gd master www/index.html 
-c
-ls
-ls www/
-gs
- ls www/
-gs
-c
-vim www/index.html 
-ls
-ls
-ls lib/
-mv lib/holonis* .
-c
-ls lib/
-mv lib/templates.js lib/vendor-ionic.js 
-ls lib/
-rm lib/vendor-ionic.js 
-c
-up
-gco .
-c
-gs
-ls
-ls www/
-gco master
-c
-gs
-git clean .
-git clean -f .
-c
-ls
-gd holonis www/index.html 
-c
-npm install -g ionic
-c
-gs
-gco holonis
-c
-gd master config.xml
-gd master index.html
-gd master www/index.html
-ls 
-gd master hooks/
-ls hooks/
-c
-ls 
-ls
-j hol
-ls
-c
-ls
-gs
-gd
-gco client/ionic/config.xml 
-c
-gs
-gc client/
-gdc
-gd
-gco 
-c
-gs
-gco .
-c
-gs
-vim paths.js 
-gs
-git stash list
-git stash drop
-git stash list
-c
-gs
-git stash
-c
-gs
-git stash apply
-c
-git stash list
-c
-ls
-c
-gs
-gulp build:ionic
-jc ion
-gulp emulate ionic -lc
-$(mongod) && gulp server
-ionic emulate ios -lc
-gs
-vim paths.js 
-gulp build ionic
-gulp build:ionic
-fg
-gulp server
-ionic emulate ios -lc
-jc ion
-upup
-gulp server
-git fetch
-gs
-gco development
-gpu
-gco 682
-c
-gs
-gco .
-c
-gs
-gco development
-gcob gulp-build-fix
-ionic emulate ios -lc
-gulp build:ionic
-fg
-c
-fg
-vim gulpfile.js 
-gco 682
-gs
-git db gulp-build-fix
-c
-gs
-git stash list
-git stash apply
-c
-gs
-c
-gs
-gco development
-gpu
-gco 682
-gs
-gco .
-c
-gs
-gulp build:ionic
-c
-git stash apply
-gulp build:ionic
-jc ion
-gs
-gco development
-gpu
-ionic emulate ios -lc
-j elite
-gs
-gco master
-c
-ls
-ionic emulate ios -lc
-ionic emulate ios 
-ls
-ls www/
-vim www/index.html 
-gd holonis www/index.html 
-c
-ls 
-gs
-gco holonis
-c
-gs
-cd www/
-mv
-mv index.html holdx.html
-gco master index.html
-vo index.html holdx.html 
-mv holdx.html index.html
-c
-gs
-c
-up
-c
-gs
-gco .
-c
-gs
-git reset
-gco .
-c
-gs
-gco master
-gcob holonis2
-c
-gs
-cp -R ../holonis-server/client/ionic/www/ ./www/
-ls www/
-cd www/
-vim i
-vim index.html 
-c
-gs
-c
-ls 
-git rm -r app/
-git rm -r css/ js/ templates/
-c
-gs
-c
-gs
-gcm "removes elite app code from www"
-c
-gs
-c
-ionic platform remove ios
-up
-ionic platform remove ios
-ionic platform remove android
-c
-gs
-c
-ga platforms/
-c
-gs
-ga plugins/
-c
-gs
-gcm "removes platform files"
-c
-gs
-ionic lib update
-c
-gs
-ga www/lib/
-c
-gs
-gcm "updates ionic lib stuff"
-c
-gs
-gd
-c
-gs
-ga www/
-gcm "copies holonis files into www"
-c
-gs
-ionic run ios -lc
-c
-gs
-gd bower.json 
-gd package.json 
-gco package.json 
-c
-gs
-ga bower.json 
-gcm "updates ionic lib"
-c
-gs
-ionic platform add ios
-ionic run ios -lc
-ionic run ios 
-c
-gs
-git reset --hard
-c
-gs
-gco master
-git clean -f
-c
-gs
-man git-clean
-git clean -xf
-c
-gs
-ionic platform remove ios
-c
-gs
-c
-gs
-gco master
-c
-gs
-gd package.json 
-c
-gco .
-c
-gs
-ionic platform add ios
-ionic run ios
-ionic platform remove ios
-ionic platform add ios
-ionic run ios
-c
-gd holonis2 config.xml 
-gd holonis config.xml 
-c
-ls node_modules/
-gd holonis2 package.json 
-gs
-c
-ls
-ls www/
-vim www/README.md 
-ls
-gs
-gd holonis2 www/index.html 
-c
-gco holonis2
-c
-gs
-gd
-c
-ls
-gs
-gco .
-c
-gs
-gco holonis2
-gs
-ionic platform remove ios
-ionic platform add ios
-ionic run ios
-c
-ionic run ios
-ls
-cd www/
-ls
-mkdir js
-git mv *.js js/
-ls
-ls js/
-ionic run ios
-jc ion
-jc ion
-ionic run ios
-gulp server
-mongod
-vim www/index.html 
-upup
-vim client/index.html 
-vim www/index.html 
-gs
-gd
-vim package.json 
-npm outdated
-vim package.json 
-c
-gs
-git stash
-gpu
-jc ion
-gulp build:ionic
-ionic run ios
- vim www/index.html 
-ionic run ios
-up
-vim index.html 
-git stash pop
-git stash pop -f
-gco ionic/www/index.html 
-c
-gs
-git stash pop 
-up
-gd
-vim client/index.html 
-gulp server
-ionic run ios
-jc ion
-ionic run ios
-gpu
-gs
-git stash
-upup
-gpu
-git stash pop
-c
-gs
-git stash list
-ionic emulate ios -lc
-jc ion
-ionic emulate ios -lc
-upup
-c
-gs
-gco qa-deployment
-git pull
-jc ion
-ionic build ios
-ionic emulate ios -lc
-gulp install
-gulp build:ionic
-ionic emulate ios -lc
-gco development
-gulp build:ionic
-gs
-c
-git stash
-gulp build:ionic
-git stash pop
-c
-up
-ag pages-edit .
-ag -g pages-edit .
-jc ion
-gulp build:ionic
-up
-vim public/modules/pages/views/page-edit.view.html 
-ionic emulate ios -lc
-upup
-gs 
-git stash
-gpu
-fg
-gulp build:ionic
-gulp server
-sg
-git stash
-gs
-git stash apply
-git stash
-gulp build:web
-gulp build:ionic
-git stash pop
-gulp build:ionic
-c
-up
-vim server/boot/authentication.js 
-vim server/server.js 
-ag pages-edit
-vim client/public/modules/pages/config/pages.routes.js 
-ionic emulate ios -lc
-ag pages-edit .
-gulp build:ionic
-gs
-git stash
-gulp build:ionic
-git stash pop
-gcob bugs/page-routes-typo
-c
-gs
-upup
-gd client/
-c
-gd client/public/
-ga client/public/modules/
-c
-gs
-gcm "fixes typo where pages-edit.view.html is requested instead of page-edit.view.html"
-gp
-gs
-gbr
-git db ionic-test-1
-git db ionic-integration
-git db 663
-c
-gs
-gbr
-gco development
-c
-gs
-gd
-ionic serve
-vim www/index.html 
-up
-vim client/public/modules/users/views/authentication/signin.ionic.html 
-jc ion
-ionic emulate ios -lc
-gulp server
-gulp build:ionic
-ag facebook server/
-gulp server
-gulp build:web
-gulp server
-gs
-git stash
-gpu
-git stash pop
-gulp build:web
-gulp server
-ag pages-edit .
-ag pages-edit client/
-gulp build:ionic
-ag pages-edit client/
-jc ion
-ionic build ios
-upup
-gco paths.js 
-c
-gs
-gulp build:ionic
-ionic build ios
-gco paths.js 
-gs
-ag pages-edit .
-gulp build:web
-vim server/server.js 
-c
-ag pages-edit .
-ag pages-edit client/
-gulp server
-vim client/index.html 
-ag feeds client/
-gs
-gd
-git stash
-gco 682
-gs
-git log
-c
-gs
-gco development
-gcob ionic-auth
-git stash apply
-gco client/index.html 
-gs
-gd
-ga client/
-gcm "removes <base href> tag from ionic index.html"
-c
-gs
-jc workspace.sh 
-jc www
-ls
-up
-j hol
-jc ion
-cd www/
-vim index.html 
-up
-vim client/public/modules/users/controllers/authentication.controller.js 
-c
-gs
-mv auth Session.vim
-c
-gs
-vim public/modules/users/views/authentication/signin.ionic.html 
-ls
-vim bower.json 
-bower install ngCordova --save
-upup 
-gulp server
-gulp dev:ionic
-vim gulpfile.js 
-fg
-c
-up
-gulp concatjs:ionic -l
-gulp vendorjs:ionic -l
-vim client/ionic/bower.json 
-git clean client/ionic/bower_components/
-git clean client/ionic/bower_components/ -xf
-c
-ls client/ionic/bower_components/
-vim client/ionic/bower.json 
-jc ion
-bower install
-rm -rf bower_components/
-bower install
-upup
-vim client/bower.json 
-jc ion
-ls
-bower uninstall ionic
-c
-cd
-inputrs
-inputrc
-vim .inputrc 
-rm 1q 
-bashp
-bashrc
-source .inputrc
-ls
-touch test_test
-touch test_again
-touch test-test
-rm test*
-c
-ols
-ls
-c
-ls bower_components/
-vim bower.json 
-bower install
-vim bower.json 
-ls
-vim ionic.project 
-vim bower.json 
-bower install ng-cordova-oauth --save
-vim bower.json 
-gulp vendorjs:ionic -l
-vim client/ionic/bower.json 
-c
-jc ion
-ls
-ls -R bower_components/
-ls -R bower_components
-gulp vendorjs:ionic -l
-vim gulpfile.js 
-gulp build:ionic
-gulp build:ionic
-gulp test ionic
-gulp test:ionic
-gulp build:ionic
-gs
-gd client/ionic/
-ga client/ionic/
-gs
-gcm "adds ngcordova and ngcordova oauth to ionic's bower.json, removes ionic lib from bower"
-c
-gs
-gd paths.js 
-gd client/
-c
-gulp dev:ionic
-gulp concatjs:ionic
-gulp concatjs:ionic -l
-vim paths.js 
-ionic emulate ios -lc
-jc ion
-gulp dev:ionic
-gulp buildjs:ionic -l
-upup
-gulp lulz
-gulp lulz | ag cordova
-ionic emulate ios -lc
-vim gulpfile.js 
-ionic emulate ios -lc
-jc ion
-cd www/
-vim holonis-ionic.js 
-vim vendor-ionic.js 
-up
-ls
-cordova plugin add cordova-plugin-inappbrowser
-ionic emulate ios -lc
-ionic run ios 
-ionic emulate ios -lc
-ionic address
-upup
-ag setFacebookAuth client/public/
-vs
-ionic emulate ios -lc
-gulp dev:ionic
-c
-c
-mongod
-gs
-ga client/public/modules/users/controllers/
-c
-gs
-gcm "splits auth controller into two files"
-c
-gs
-gd client/public/config.
-vim .gitignore 
-c
-gs
-gd paths.js 
-ga paths.js 
-gcm "adds ng cordova to bower components list in paths.js"
-c
-gs
-gd gulpfile.js 
-gco gulpfile.js 
-c
-gs
-gd client/
-c
-ga client/public/modules/users/views/
-c
-gs
-gmc "adds ng-click to signin button in signin.ionic.html"
-c
-gs
-gcm "adds ng-click to signin button in signin.ionic.html"
-c
-gs
-gd client/
-ga client/public/config.ionic.js 
-gcm "adds ngcordova and ngcordova oauth in config.ionic.js"
-c
-gs
-gco .
-c
-gs
-gco development
-gpu
-gs
-c
-gcob 683
-c
-gs
-jc ion
-cordova plugin add https://github.com/BranchMetrics/Cordova-Ionic-PhoneGap-Deferred-Deep-Linking-SDK
-up
-vim public/application.js 
-ag ".run\(" public/
-ag ".run\(" .
-c
-ag ".run\(" public/
-ag ".run\(" .
-ag "("app").run(
-ag "\(\"app\"\).run\("
-c
-ls
-vim public/config.ionic.js 
-c
-gs
-gd public/
-ga public/
-c
-gs
-gd ionic/plugins/
-c
-gs
-ga ionic/plugins/
-c
-gs
-gcm "adds branch.io SDK to ionic dependencies, implements branch init function in config.ionic.js"
-gbr -m 683 feature/HOL-683
-gbr
-gp
-gs
-gco development
-gbr
-gco 628
-c
-gbr
-gco 682
-c
-gs
-git log
-c
-gs
-vim public/modules/core/views/header.view.html 
-jc core
-cd views/
-git mv header.view.html header.web.html
-cp header.web.html header.ionic.html
-ls
-vim header.
-vim header.ionic.html 
-c
-gs
-ga header.ionic.html 
-c
-gs
-gcm "splits header.view.html into header.ionic and header.web, puts dummy link into header.ionic for holospace icon"
-c
-gs
-gp
-gbr -m 682 feature/HOL-682
-c
-gbr
-gp
-gpo :682
-git rebase development
-gp
-gbr
-gpo :feature/HOL-682
-gp
-c
-gs
-gbr
-gco ionic-auth
-upup
-up
-ls
-vs auth.vim
-c
-gs
-gco development
-c
-gs
-gulp build:ionic
-c
-ls
-jc ion
-gulp server
-ionic address
-ag -g authentication.control .
-vim client/public/modules/users/controllers/authentication.controller.js
-c
-gs
-gco env.json 
-c
-gs
-gpu
-gs
-ls
-vim env.json 
-ionic emulate ios -lc
-ifconfig vboxnet0
-gs
-gco 682
-gpu
-gco feature/HOL-682
-git rebase development
-gp
-gp -f
-gpo feature/HOL-682 -f
-c
-gs
-ag header.view.html client/
-c
-ag header.view.html client/public/
-man ag
-ag -l header.view.html client/public/
-vp $(ag -l header.view.html client/public/)
-gs
-ga client/public/modules/
-c
-gs
-gcm "changes header.view.html to header.web.html, where it is included in search and holospace pages"
-c
-gs
-gp
-gulp build:web
-c
-gs
-gco development
-gpu
-gco ionic-auth
-c
-git rebase development
-c
-gs
-gulp server
-c
-gs
-gco development
-gco ionic-auth
-gco development
-gulp build:web
-gulp server
-vim providers.json
-up
-ls
-up
-ls
-mkdir resources
-cd resources
-git clone https://github.com/Wizcorp/phonegap-facebook-plugin.git
-pwd
-cd phonegap-facebook-plugin/
-pwd
-jc ion
-upup
-c
-ls
-gs
-gulp server
-cordova -d plugin add ../../../../resources/phonegap-facebook-plugin/ --variable APP_ID="570945729671548" --variable APP_NAME="Holonis Social - Test"
-ag 2\.5 client/
-ag 2.5 client/
-ag 2\\.5 client/
-ag 2\\.5 client/public/
-gulp server
-gulp build:ionic
-ls plugins/phonegap-facebook-plugin/facebookConnectPlugin.js 
-vim plugins/phonegap-facebook-plugin/facebookConnectPlugin.js
-jc ion
-ionic build ios
-gs
-ag key_test
-ionic run ios -lc
-gulp dev:ionic
-vs auth.vim 
-gs
-gco ionic-auth
-gco client/public/config.ionic.js 
-c
-gs
-gco ionic-auth
-gd client/public/modules/
-c
-gs
-rm client/public/modules/users/controllers/authentication.controller.ionic.js 
-c
-gs
-gco ionic-auth
-c
-gs
-ga ../public/config.ionic.js 
-c
-gs
-gcm "wraps branch.io keys in quotes"
-c
-gs
-c
-gs
-upup
-ag $watch client/public/
-upup
-ag $watch client/public/
-ag $watch client/public/
-ag "$watch" client/public/
-ag "\$watch" client/public/
-ag "\$watch" client/
-ag $watch client/public/
-ag \$watch client/public/
-ag "\$watch" client/
-ag "/$" client/public/
-c
-ag "\$" client/public/
-ag "\\$" client/public/
-ag "\\$watch" client/public/
-ag "\\\$watch" client/public/
-vim client/public/modules/core/directives/maincontent.directive.js 
-c
-gs
-gco client/public/modules/core/
-c
-gs
-vim client/bower.json 
-jc ion
-ionic platform remove ios
-ionic platform add ios
-cordova plugin add cordova-plugin-inappbrowser
-ionic emulate ios -lc
-vim www/vendor-ionic.js 
-ionic emulate ios -lc
-vim ionic.project 
-gulp server
-ionic emulate ios -lc
-vim ionic.project 
-ionic emulate ios -lc
-ionic address
-vim server/config.json 
-ifconfig vboxnet0
-c
-ionic emulate ios -lc
-vim ionic.project 
-gulp dev:ionic
-vim client/ionic/ionic.project 
-gulp server
-ionic emulate ios -lc
-r
-gulp dev:ionic
-vim ../../gulpfile.js 
-ionic emulate ios -lc
-vim ionic.project 
-vim server/boot/authentication.js 
-vim server/boot/rest-api.js 
-vim server/server.js 
-ag "/auth/facebook" .
-ag authenticate .
-gulp dev:ionic
-ionic emulate ios -lc
-ls ser
-ls server/
-vim server/boot/root.js 
-vim server/boot/vendor.js 
-ag facebook server/boot/
-ag facebook server/
-ag -g user.js .
-vim common/models/user.js
-ag mobileLogin .
-gulp dev:ionic
-ionic emulate ios -lc
-r
-gulp server
-ionic emulate ios -lc
-ag -l users.json .
-ag users.json .
-ag users.json ./common/
-ag user.json ./common/
-ag -g user.json ./common/
-ag -g user.json ./
-ag -l user.json ./
-ag -ag acl node_modules/
-ag -ag \bacl node_modules/
-c
-ag \bacl .
-ag \bacl ./server/
-g acl server/
-ag acl server/
-vim server/model-config.json 
-rm :w
-c
-ls
-c
-gs
-ag UserIdentity .
-vs auth.vim 
-c
-gs
-gd gulp.config.js 
-vs
-ls
-rm Session.vim 
-scratch
-d
-c
-ag login server/
-gulp dev:ionic
-ionic emulate ios -lc
-c
-gulp dev:ionic
-ionic emulate ios -lc
-ag clearLocalStorage .
-upup
-ag "Get Space By User ID Error" 
-ag /users/:id server/
-ag "Get Space By User ID Error" 
-ag /users/:id server/
-ag users/:id server/
-ag "users/:id" server/
-ag "users/\:id" server/
-scratch
-ionic emulate ios -lc
-g onstatechange client/
-ag onstatechange client/
-qc
-ag onstatechange client/public/
-ag onstatechange client/public/modules/
-c
-gs
-git stash
-c
-gs
-gco development
-git pull
-gpu
-gco ionic-auth
-git rebase development
-git stash pop
-c
-gs
-gulp dev:ionic
-gulp install
-ionic emulate ios -lc
-r
-ag -g header client/public/
-g ngtransclude client/
-ag ngtransclude client/
-c
-ag transclude client/public/
-vim client/public/modules/core/directives/holoPopover.directive.js 
-gulp dev:ionic
-gs
-c
-gs
-gulp install
-ionic emulate ios -lc
-gco client/public/modules/holospace/config/holospace.routes.js 
-ag toaster .
-cd client/
-bower install
-up
-c
-ag toaster .
-vim client/public/config.ionic.js 
-ag "state.go\('holospace"
-vim client/public/config.ionic.js 
-ag "state.go\('holospace"
-ag "state.go\('holospace"
-vp $(ag "state.go\('holospace" .)
-vp $(ag -l "state.go\('holospace" .)
-up
-ag holospace.home .
-ag holospace.home ./client/
-ag holospace.home ./client/public/
-ag -l watch client/public/
-ag watch client/public/
-ag -l watch client/
-c
-ag -l ng-include .
-ag  ng-include .
-ag  ng-transclude .
-ag -g routes client/
-vim client/public/modules/core/config/core.routes.js 
-ag otherwise client/
-qc c
-man
-man ag
-man
-man ag
-
-c
-ag otherwise client/public/
-vp $(ag -l "ng-transclude" .)
-c
-ionic emulate ios -lc
-vs auth.vim 
-ag clearlocalstorage .
-ag logout client/public/
-ag transclude client/public/
-ag -g popover .
-ag -g Popover .
-man ag
-ag -ig popover .
-ag holo-popover .
-c
-vim env.json 
-ag state.go\('signin' .
-ag state.go\\('signin' .
-ag state.go\\\('signin' .
-ag state.go\\\('signin' ./client/
-ag state.go\\('signin' ./client/
-ag state.go\('signin' ./client/
-ag state.go\\('signin' ./client/
-ag state.go\('signin' ./client/
-ag state.go\('signin' ./client/
-ag "state.go\('signin'" ./client/
-ag -ab "state.go\('signin'" ./client/
-ag -AB "state.go\('signin'" ./client/
-ag -A 2 -B 2 "state.go\('signin'" ./client/
-gs
-c
-gs
-gd server/server.js 
-gco server/server.js 
-c
-gco server/server.js 
-gd server/server.js 
-C
-c
-ls
-gd
-c
-gs
-gd common/
-c
-gs | grep comm
-gd common/models/user.json 
-ga common/models/user.json
-gcm "adds entries to acl in user.json"
-c
-gd common/
-c
-gd common/
-c
-gd common/
-c
-gd common/
-ga common/
-c
-gs
-git reset
-gd common
-c
-ga comm
-ga common/
-gs
-gd common/
-gcm "in common/models/user.js, reformats returns and accepts, fixes userID->userId, adds comments"
-c
-gs
-gd gulp.config.js 
-gd server/config.json 
-gco server/
-c
-gs
-gd client/public/modules/home/
-gco client/public/modules/home/
-c
-gs
-gd client/ionic/
-ga client/ionic/
-gs
-c
-gs
-git reset
-gd client/ionic/
-jc ion
-cordova plugin remove phonegap-facebook-plugin
-c
-gs
-gd plugins/
-c
-up
-c
-gs
-gd client/ionic/
-ga client/ionic/
-gcm "adds cordova-plugin-inappbrowser to ionic project"
-c
-gs
-gd client/public/config.ionic.js 
-gs
-gd client/public/config.ionic.js 
-c
-gs
-ga client/public/config.ionic.js 
-gcm "adds toaster dependency to config.ionic, adds base of localhost:3000 to API url, comments out branch init"
-c
-gs
-gd client/public/config.ionic.js 
-c
-gs
-gd client/public/modules/holospace/
-c
-gs
-gd client/public/modules/holospace/
-c
-gs
-git stash list
-git stash client/public/modules/holospace/config/
-c
-gs
-gco client/public/modules/holospace/controllers/
-c
-gs
-gd gulp.config.js 
-gd client/public/modules/users/controllers/authentication.controller.
-gd client/public/modules/users/controllers/authentication.controller.ionic.js 
-c
-gs
-ga client/public/modules/users/
-c
-gs
-ga client/public/modules/users/
-c
-gs
-gcm "refactors authentication controller with chained promises"
-c
-gs
-vs
-c
-gs
-git stash
-c
-gs
-gco development
-gpu
-c
-gco ionic-auth
-git rebase development
-c
-ionic emulate ios -lc
-gulp install
-c
-ls
-vim bower.json 
-bower install
-1
-ionic emulate ios -lc
-c
-ls
-c
-gulp dev:ionic
-gs
-git stash pop
-c
-gulp dev:ionic
-git log
-c
-vim gulpfile.js 
-gbr -m ionic-auth feature/HOL-883
-c
-gbr
-gp
-gs
-c
-c
-gs
-c
-gs
-git stash
-gs
-gco development
-mongod
-ionic emulate ios -lc
-gpu
-gco feature/HOL-883
-gs
-git rebase development
-vim common/models/user.js
-git rebase --continue
-ga common/models/user
-gs
-ga common/
-c
-gs
-git rebase --continue
-c
-gs
-gp
-gp -f
-gs
-rm auth.vim 
-c
-gs
-git stash list
-git stash pop
-gd client/index.html 
-gco client/index.html 
-c
-gs
-git stash pop
-gd paths.js 
-gd client/index.html 
-c
-gs
-gco .
-c
-gs
-gco development
-gpu
-gs
-gbr
-git db feature/HOL-883
-git db feature/HOL-682
-git db feature/HOL-683
-gbr
-git db qa-deployment
-gbr
-git db bugs/page-routes-typo
-c
-gs
-gbr
-gs
-gcob 968
-c
-ag "go\('signin'\)" client/public/
-ag -l "go\('signin'\)" client/public/
-ag ".run\(" client/
-c
-ag ".run\(" client/public/
-c
-gs
-git stash list
-git stash drop
-c
-ag rootScope client/public/
-c
-vp $(ag -l "go\('signin'\)" client/public/)
-vim client/public/modules/content-creation/controllers/content-creation.controller.js 
-fg
-c
-vp $(ag -l "go\('signin'\)" client/public/)
-vp client/public/config.*
-c
-gs
-gd client/public/modules/
-c
-vim client/public/modules/content-creation/controllers/content-creation.controller.js 
-gd client/public/modules/
-c
-gs
-ga client/public/config.*
-c
-gs
-git reset
-gd client/public/config.*
-vp client/public/config*
-c
-gs
-gd client/public/config.*
-gulp dev:web
-c
-gs
-c
-c
-vp $(ag -l requireLoggedIn . )
-ag require.LoggedIn .
-ag requireLoggedIn .
-ag requireLoggedIn ./client/
-ag require.LoggedIn ./client/
-mongod
-c
-gs
-ga client/public/config.*
-c
-gs
-gcm "adds route filters to run blocks in config.web and .ionic"
-c
-gs
-gd
-c
-gs
-ag -l requiresLogged client/
-ag -l requiresLogged client/public/modules/
-ga $(ag -l requiresLogged client/public/modules/)
-c
-gs
-gcm "adds 'requiresLoggedIn' property to restricted routes"
-c
-gs
-gaa .
-c
-gs
-gcm "removes Authentication.isLoggedOut where it was used as a route filter"
-c
-gs
-gbr -m 968 feature/HOL-968
-gs
-gbr
-gp
-ag isAuth client/public/
-vim
-gs
-c
-gs
-gaa .
-gcm "removes unused isAuthenticated method of Authentication service"
-gp
-c
-vim client/public/config.ionic.js 
-gd client/public/
-c
-gs
-gaa .
-gcm "moves some comments back into their appropriate places"
-c
-gs
-gp
-vim client/public/config.web.js 
-j hol
-ag -g jquery client/
-vim client/public/modules/core/services/jquery.service.js 
-j hol
-gbrf
-gbr
-gco development
-gpu
-gco feature/HOL-968
-gpu
-git rebase development
-gp
-gp -f
-j development
-jhol
-j hol
-c
-gs
-c
-gco development
-vim workspace.sh 
-./workspace.sh 
-vim gulpfile.js 
-gs
-c
-gs
-c
-ls
-jc mod
-up
-jc modules
-up
-man j
-man autojump
-j --help
-cd node_modules/
-j -d
-up
-j mod
-ls
-vp holospace/controllers/holospace.* holospace/views/* holospace/services/holospace.service.js 
-ag -g abbrev client/public/
-c
-gs
-gcob 833
-vim $(ag -g abbrev client/public/)
-jc styl
-ag more-options .
-jc sty
-ag link-color .
-ag 84BFD8 .
-c
-gs
-gd
-c
-gd
-gco client/public/styles/_holospace.scss 
-vim _holospace.scss 
-c
-c
-gdc
-gd
-c
-gd
-c
-gs 
-gaa .
-gcm "removes old follow button, adds new follow and edit buttons, removes styling for old follow button"
-c
-gs
-git reset --soft HEAD~
-c
-gs
-git reset
-c
-gd
-c
-gs
-gaa .
-gcm "removes old follow button, adds new follow button, removes styling for old follow button"
-c
-gs
-gbr -m 833 834
-c
-gbr
-gcob 833
-c
-gs
-gd
-gaa .
-gs
-git reset
-c
-gs
-gco 834
-c
-git log
-vc
-c
-git reset
-git reset --soft HEAD~
-c
-gs
-git reset
-c
-gd
-c
-gs
-gaa .
-gcm "removes old follow button, adds new follow button, removes styling for old follow button"
-c
-gs
-git db 833
-gcob 833
-c
-gs
-gd
-gaa .
-gcm "adds edit button to holospace header"
-c
-gs
-c
-gco development
-c
-gs
-gpu
-gcob 887
-vp client/public/modules/holospace/views/*
-vp holospace/**/*.js
-c
-c
-vim _holospace.scss 
-c
-vp holospace/**/*.html
-jc modul
-up
-jc pub mod
-up
-mkdir modules/holospace/directives
-cd "/Users/amiles/Documents/projects/holonis-server"; rename_tab gulp && gulp dev:web
-jc sty
-ag proxima .
-ag -i proxima .
-ag font-family .
-gs
-git stash
-gs
-gco development
-gpu
-gco feature/HOL-968
-git rebase development
-gp
-gp -f
-c
-gs
-gpu
-git log
-c
-gpu
-gs
-gbr
-gco 887
-c
-gs
-git stash pop
-git stash list
-vp holospace/**/*.html
-upup
-up
-ag abbreviation client/
-ag abbreviation client/public/
-gs
-gd client/public/modules/holospace/controllers/
-c
-gs
-gd client/public/modules/holospace/controllers/
-ga client/public/modules/holospace/controllers/
-gcm "flattens promise chain in holospace-header, adds controller property analyticData"
-c
-gs
-gd client/public/modules/holospace/views/
-c
-gs
-ga client/public/modules/holospace/views/ client/public/modules/holospace/directives/
-c
-gs
-gcm "adds new holospace-analytics directive, uses it in holospace-header.view"
-c
-gs
-gd
-c
-gs
-ga client/
-c
-gs
-gcm "replaces .user-analytics class with updated .holospace-analytics class"
-c
-gs
-vp holospace/**/*.js
-c
-gs
-ga client/public/
-c
-gs
-gcm "removes forgotten debugger"
-c
-gs
-gulp dev:web
-gulp buildjs:web
-gulp jshint:web
-git reset --soft HEAD~
-c
-gs
-git reset
-vim client/public/modules/holospace/directives/holospace-analytics.directive.js client/public/modules/holospace/controllers/holospace-header.controller.js 
-c
-gs
-gaa .
-gcm "cleans up forgotten debugger, semicolons"
-c
-gs
-gbr -m 887 feature/HOL-887
-gp
-cd "/Users/amiles/Documents/projects/holonis-server"; rename_tab mongo && mongod
-gulp dev:web
-fg
-j hol
-gs
-gco development
-gpu
-gs
-gbr
-gpU
-gpu
-gcob 886
-jc header
-ls
-jc pub mod
-vim holospace/views/options.view.html 
-c
-gs
-gco development
-ls
-vim core/views/header.web.html 
-gs
-ag -g content-creation.dir .
-up
-ag -g content-creation.dir .
-ag -g content-creation-actions .
-vim $(ag -g content-creation-actions .)
-vim core/controllers/header.controller.js 
-gs
-gco .
-c
-gs
-gpu
-gco 886y
-gco 886
-vim holospace/views/options.view.html 
-c
-gs
-c
-upup
-up
-gs
-ga .
-c
-gs
-gcm "removes all but Follow, Share, Message from holospace More Actions popup"
-gp
-gco 887
-gco feature/HOL-887
-gulp dev:web
-c
-gs
-jc pub mod
-vim holospace/views/holospace-header.view.html 
-gs
-upup
-c
-gco 833
-gbr -m 833 feature/HOL-833
-gp
-gco 834
-gbr -m 834 feature/HOL-834
-c
-gs
-gp
-git rebase development
-ag -g holospace-header .
-vp $(ag -g holospace-header .)
-c
-gs
-vp $(ag -g holospace-header .)
-git rebase --continue
-vp $(ag -g holospace-header .)
-ga client/
-c
-gs
-git rebase --continue
-c
-gs
-gp
-gp -f
-gco development
-ag "\\$http" client/public/
-ag "\\\$http" client/public/
-ag "\\\$http" client/
-ag "\\\$http" client/public/
-ag main-holospace-content client/public/
-vim client/public/modules/holospace/views/holospace.view.html 
-gs
-gpu
-gulp install
-gulp dev:web
-gulp install
-gulp dev:web
-c
-gs
-gpu
-git log
-c
-gs
-mongod
-gs
-mongo
-bashp
-vim ~/.adn_locals 
-mongo --dbpath ~/mongodb/data/db/
-monbo
-mongo
-mongo
-mongod
-gulp dev:web
-gs
-gco 887
-gco feature/HOL-887
-git db development
-git fetch
-gco development
-gpu
-gulp dev:web
-gco feature/HOL-834
-gp
-git rebase development
-gbr
-gco feature/HOL-887
-git rebase development
-gp
-ag -g anal client/public/
-vp $(ag -g anal client/public/)
-c
-gs
-gaa .
-gcm "removes old commented-out code"
-gp -f
-gbr
-gco 886
-git rebase development
-gbr -m 886 feature/HOL-886
-gp
-j hol
-up
-mkdir hol-clone
-cd hol-clone
-git clone https://amiles_@bitbucket.org/SeamgenSD/holonis-server.git
-npm install
-jc holonis-server/
-cd client/
-bower install
-npm install
-npm install 
-gulp dev:wegb
-gulp dev:web
-up
-ls
-rm -rf hol-clone/
-ls
-c
-j hol
-gulp dev:web
-c
-gs
-gco development
-gpu
-gbr
-gco feature/HOL-968
-git log
-c
-git db feature/HOL-968
-gco development
-git db feature/HOL-968
-c
-gs
-gbr
-gco 845
-gcob 845
-gulp dev:web
-gulp dev:web
-mongod
-c
-vim workspace.sh 
-rm 1q 
-vim workspace.sh 
-c
-jc pu mod holo
-ls
-vim controllers/holospace-header.controller.js 
-up
-cd core/
-c
-ag -g header .
-upup
-up
-ag -g dropdown public/
-ag -g uib .
-ag -g dropdown .
-c
-cd "/Users/amiles/Documents/projects/holonis-server"; rename_tab gulp && gulp dev:web
-vp $(ag -g header .)
-c
-gs
-gd
-vp $(ag -g header .)
-fg
-c
-gs
-gd
-vim
-c
-gd
-C
-c
-gs
-gaa .
-gcm "adds logout to nav dropdown"
-c
-gs
-gco development
-gpu
-vp $(ag -g header .)
-gulp dev:web
-./workspace.sh 
-gs
-j hol
-gs
-gpu
-ag -g page-creat
-scratc
-scratch
-jc pub mod
-ls followers/
-cd followers/
-ls -R .
-vp **/*
-upup
-vp $(ag -g page-creat)
-jc pub mod
-cd holospace/
-vp controllers/holospace-header.controller.js views/holospace-header.view.html views/holospace.view.html 
-mongod
-gulp dev:web
-jc modules/content-creation/
-ls -R
-cd modules/content-creation/
-ls -R
-vim
-upup
-up
-git blame client/public/modules/users/controllers/authentication.controller.ionic.js 
-c
-git blame client/public/modules/content-creation/controllers/publish.controller.js 
-c
-vim ~/Desktop/reuse-talk
-open ~/Desktop/reuse-talk
-gs
-gbr
-gco feature/HOL-834
-git rebase development
-gp
-gp -f
-gco feature/HOL-886
-git log
-c
-git rebase development
-gp -f
-gco feature/HOL-887
-git rebase development
-gp -f
-c
-gbr
-gco feature/HOL-833
-git rebase development
-ls
-c
-ls
-j holcc
-cd "/Users/amiles/Documents/projects/holonis-server"
-./workspace.sh 
-gs
-git rebase --abort
-c
-gs
-gco development
-gpu
-c
-gs
-gbr
-gco 845
-c
-gs
-jc pub mod core
-ag -g header .
-gbr
-vp $(ag -g header .)
-ls ../../styles/
-vs
-x
-up
-cd holospace/
-ag -g header .
-vp $(ag -g header .)
-cd "/Users/amiles/Documents/projects/holonis-server"; rename_tab gulp && gulp dev:web
-mongod
-upup
-gs
-up
-gs
-gd
-gs
-git stash
-gco development
-gpu
-jc holo
-vp $(ag -g header .)
-c
-gs
-gbr
-gco 845
-c
-gs
-c
-gs
-git stash pop
-c
-gs
-gd
-c
-ls
-j core
-upup
-up
-cd "/Users/amiles/Documents/projects/holonis-server"
-vs
-upup
-up
-gs
-git stash
-gco development
-c
-gco 845
-git stash pop
-c
-git stash list
-gs
-jc core
-upupup
-upu
-up
-ag user.image .
-c
-gs
-gd
-c
-gs
-git stash
-gco development
-gpu
-gbr
-gco feature/HOL-834
-vim modules/holospace/views/holospace-header.view.html 
-gco feature/HOL-887
-c
-gs
-vim modules/holospace/views/holospace-header.view.html 
-vim modules/holospace/views/holospace-analytics-directive.view.html 
-c
-gs
-gaa .
-c
-gcm "fix: puts back click handler on follower count in holospace header"
-git rebase development
-gp
-scratch
-c
-gs
-gco feature/HOL-833
-git rebase development
-vim client/public/modules/holospace/views/holospace-header.view.html
-up
-vim
-vim client/public/modules/holospace/views/holospace-header.view.html
-c
-gs
-gaa .
-c
-gs
-git rebase --continue
-c
-gs
-git rebase --continue
-git rebase --abort
-c
-gs
-git rebase development
-vim client/public/modules/holospace/views/holospace-header.view.html
-c
-vim client/public/modules/holospace/views/holospace-header.view.html
-c
-gs
-git rebase --abort
-c
-gs
-gco feature/HOL-834
-git log
-c
-gco feature/HOL-833
-git log
-c
-vim client/public/modules/holospace/views/holospace-header.view.html
-c
-gs
-gco development
-brew install bash-completion
-bashp
-source ~/.bash_profile 
-brew uninstall bash-completion
-bashp
-c
-gs
-gco 845
-git stash pop
-git stash
-gco development
-vim client/public/modules/holospace/views/holospace-header.view.html
-gs
-gco feature/HOL-833
-c
-gs
-git rebase development
-vim client/public/modules/holospace/views/holospace-header.view.html
-ga .
-c
-gs
-git rebase --continue
-git rebase --skip
-vim client/public/modules/holospace/views/holospace-header.view.html
-c
-gs
-gp -f
-gs
-gco development
-c
-gco 845
-git stash pop
-vs
-cd "/Users/amiles/Documents/projects/holonis-server"; rename_tab gulp && gulp dev:web
-gs
-c
-git stash
-c
-gco feature/HOL-833
-vim client/public/modules/holospace/views/holospace-header.view.html
-c
-gs
-gco development
-gco feature/update-main-styles
-vim client/public/modules/holospace/views/holospace-header.view.html
-c
-gs
-gaa .
-gcm "adds changes from HOL-833 here (edit button), to prevent conflicts and headache"
-gp
-c
-gs
-gco 845
-c
-git stash pop
-ag cover.photo client/public/
-ag photo client/public/
-vs
-gulp dev:web
-./workspace.sh 
-gs
-j hol
-gs
-gd
-jc core
-ga controllers/header.controller.js 
-c
-gs
-gcm "adds logout to nav / header controller"
-c
-gs
-gd views/
-c
-gs
-ga views/
-c
-gs
-gcm "nav: adds logout click handler, conditional display of user's profile photo, in both header.web and ionic"
-c
-gs
-gd
-c
-gs
-ga .
-c
-gcm "flattens promise chain in header.controller, removes unused reference to vm.$parent"
-c
-gs
-gaa .
-c
-gs
-upup
-ga .
-c
-gs
-gcm "flattens promise chain in header.controller, removes unused reference to vm.$parent"
-c
-gs
-gpo feature/HOL-845
-git push 845 origin:feature/HOL-845
-gpo 845:feature/HOL-845
-up
-c
-gs
-git rebase development
-vim client/public/modules/holospace/controllers/holospace-header.controller.js
-gs
-ga .
-c
-gs
-git rebase --continue
-c
-gs
-gp
-gpo 845:feature/HOL-845
-gpo -f 845:feature/HOL-845
-gpo :845
-gpo :866
-gpo :886
-j hol
-c
-gs
-gco development
-gpu
-c
-gs
-c
-gs
-gco feature/HOL-906
-git db feature/HOL-906
-gco development
-gpu
-git db feature/HOL-906
-gco feature/hol906
-gpu
-git log
-c
-gs
-gulp dev:web
-gulp jshint:web
-cd "/Users/amiles/Documents/projects/holonis-server"
-cd "/Users/amiles/Documents/projects/holonis-server"; rename_tab gulp && gulp dev:web
-./workspace.sh 
-j hol
-gs
-c
-gco development
-gpu
-c
-gs
-gbr
-git db feature/hol906
-git db feature/update-main-styles
-gco 845
-git rebase development
-gpo -f 845:feature/HOL-845
-gco feature/HOL-887
-git rebase development
-gp -f
-gbr
-git db feature/HOL-834
-gs
-gco development
-gs
-jc ionic
-gpu
-upup
-jc ionic
-vim gulpfile.js 
-ionic platform add android
-ionic platform remove andoird
-ionic platform remove android
-ionic platform add android
-ionic build android
-gulp server
-upup
-ionic run android
-ionic run android -lc
-gulp build:ionic
-ionic run android
-ionic platform remove ios
-ionic platform add ios
-ionic run ios
-gulp server
-jc ionic
-ionic emulate ios -lc
-gulp dev:ionic
-gulp build:ionic
-mongod
-vim
-vim workspace.sh 
-cd "/Users/amiles/Documents/projects/holonis-server"
-jc ionic
-ionic emulate ios -lc
-gs
-upup
-gpu
-cd "/Users/amiles/Documents/projects/holonis-server"; rename_tab gulp && gulp dev:ionic
-gulp build:web && gulp dev:ionic
-gulp dev:ionic
-ag main-holospace-content .
-gulp server
-gulp build:ionic
-ionic emulate ios -lc
-vim $(ag -g authentication.controller.ionic .)
-gulp dev:web
-./workspace.sh 
-j hol
-cd "/Users/amiles/Documents/projects/holonis-server"
-cd "/Users/amiles/Documents/projects/holonis-server"; rename_tab gulp && gulp dev:ionic
-gs
-git stash
-gco development
-gco 845
-gs
-git rebase development
-git rebase --abort
-c
-gs
-git rebase development | grep conflict
-vim client/public/modules/core/views/header.web.html
-c
-gs
-vim client/public/modules/core/views/header.web.html 
-gaa .
-c
-gs
-git reset
-gd
-c
-gs
-gaa .
-c
-gs
-git rebase --continue
-c
-gs
-gp
-gp -f 845:feature/HOL-845
-gpo -f 845:feature/HOL-845
-gpo :845
-gulp dev:web
-jc ionic
-upup
-vim workspace.sh 
-jc ionic
-ionic emulate ios
-gulp dev:ionic
-gs
-gco development
-gpu
-gulp dev:web
-jc ionic
-upup
-jc public
-ag ng-transclude .
-vim modules/core/directives/tab-snap.directive.js 
-ag tab-snap modules/
-ag holotab .
-ag "TILES Directive" .
-vim ../dist/templates.js 
-ag tile .
-ag -g tile .
-vp $(ag -l holotab .)
-vim modules/holospace/views/holospace.view.html 
-ag -g tile .
-ag ng-transclude .
-vp $(ag -g tile .)
-ag holotab .
-gulp dev:ionic
-ionic emulate ios -lc
- ag -g content-creation-actions .
-git blame $( ag -g content-creation-actions .)
-c
-git blame $(ag -g home.view .)
-c
-git blame $(ag -g home.view .)
-c
-vim modules/holospace/views/holospace.view.html 
-c
-upup
-c
-gs
-c
-gd
-gco .
-c
-gs
-gcob 1013
-vim $(ag -g home.view .)
-c
-gs
-gd
-c
-gs
-gaa .
-c
-gcm "removes use of content-creation-actions that shouldn't have been there in the first place"
-c
-gs
-gpo 1013:bug/HOL-1013
-c
-gs
-gco development
-gpu
-gco 1013
-git rebase development
-c
-gbr
-git db feature/HOL-833 feature/HOL-866 feature/HOL-887
-git db feature/HOL-886
-c
-gs
-c
-gs
-gs
-gco development
-gulp dev:web
-jc ionics
-ionic emulate ios -lc
-gulp dev:ionic
-upup
-gco 103
-gco 1013
-c
-gs
-ag ng-transclude .
-ag holo-popover .
-ag -l ng-transclude .
-gulp dev:web
-jc ionic
-ag inside-nav .
-vp $(ag -l ng-transclude .)
-c
-gs
-git stash drop
-git stash
-gco bug/fb-redirect-issue
-git fetch
-upup
-gco bug/fb-redirect-issue
-git log
-c
-ionic emulate ios -lc
-vim client/public/config.ionic.js 
-gs
-gco development
-gpu
-gbr
-gco 1013
-c
-git stash pop
-gd
-gulp dev:ionic
-gco development
-gulp test:server
-gco 1013
-c
-gs
-ionic emulate ios -lc
-cd client/public/
-gulp dev:ionic
-gs
-git stash
-c
-gco development
-gulp test:server
-gco 1013
-c
-gs
-gs
-git stash pop
-vim modules/holospace/views/holospace-header.view.html 
-c
-mv Session.vim ../../
-cd ../../
-vs
-ag -g session .
-ag -gi session .
-ag -g Session .
-ag -ag Session .
-ag -ag Session.vim .
-ag -alg Session.vim .
-rm client/public/modules/core/Session.vim 
-c
-vs
-upup
-vim package.json 
-vim client/bower.json 
-gs
-gulp dev:ionic
-gs
-vim client/public/modules/holospace/views/holospace-header.view.html 
-ionic emulate ios -lc
-gulp dev:web
-./workspace.sh 
-j hol
-gs
-cd "/Users/amiles/Documents/projects/holonis-server"; rename_tab ionic && cd client/ionic/
-cd "/Users/amiles/Documents/projects/holonis-server"
-ionic emulate ios -lc
-cd "/Users/amiles/Documents/projects/holonis-server"; rename_tab gulp && gulp dev:ionic
-gulp dev:web
-gs
-git stash
-gco development
-gpu
-gco bug/home-view-cleanup
-git log
-gs
-gco development
-gs
-c
-gpu
-gs
-gbr
-git db 1013
-gco 845
-c
-gs
-vim client/public/modules/holospace/controllers/holospace-header.controller.js 
-c
-gs
-gaa .
-gcm "logs previously silent errors"
-c
-gs
-gp
-gpo :845
-git rebase development
-gp -f 845:feature/HOL-845
-gpo -f 845:feature/HOL-845
-c
-gs
-c
-gco development
-gpu
-gco 845
-git rebase development
-gpo -f 845:feature/HOL-845
-c
-gs
-gco development
-gbr
-git db bug/fb-redirect-issue bug/home-view-cleanup
-c
-g
-gbr
-gco more-ionic-bugs
-gcob more-ionic-bugs
 git stash pop
 gd
 gco .
@@ -10042,3 +6914,3177 @@ gs
 ga com.googlecode.iterm2.plist 
 gcm "updates iterm stuff
 "
+gco .bash_history 
+k
+gs
+k
+vim bash_prompt.sh 
+k
+gp
+j kit
+gbr
+gs
+j win
+k
+gs
+glg
+k
+gs
+gd client/src/js/app.js 
+k
+gs
+ag -g config .
+glg
+k
+glg | ag config
+k
+gs
+ga client/src/js/app.js client/src/js/config/app_config.js 
+k
+gcm "cleanup: refactors run and config blocks out of app.js into js/config/app_config.js"
+k
+gs
+gd gulptasks/
+k
+gs
+ga gulptasks/
+gcm "cleanup: adds lint-client gulp task, comments, eslint rules"
+k
+gs
+gd server/
+ga server/
+k
+gcm "cleanup: cleans up server code to set NODE_ENV once, and throw errors where it should be set already"
+k
+gs
+gd client/src/js/services/
+k
+gs
+ga client/src/js/services/
+k
+gs
+gcm "WIN-30: adds empty feedback_service, swagger_client wrapper, and swagger_service.js, plus eslint-autofixes to other services"
+k
+gs
+gd client/src/js/config/translate_catalog.js 
+k
+gs
+ga client/src/js/controllers/ client/src/js/config/
+k
+gd client/src/js/routes/
+k
+ga client/src/js/routes/
+k
+gs
+gcm "cleanup: adds eslint auto-fixes"
+k
+gs
+ls client/src/vendor/
+vim gulptasks/webpack.js 
+k
+gs
+ga client/src/
+k
+gs
+gcm "WIN-30: adds client/src/vendor, to provide client vendor files not provided by NPM"
+k
+gs
+gpo -u 30:story/WIN-30
+k
+git stash list
+git stash show stash@{0}
+git stash show -p stash@{0}
+k
+vim paths.js 
+git stash drop stash@{0}
+git stash show -p
+k
+git stash drop stash@{0}
+k
+gs
+k
+j kit
+k
+gs
+k
+gbr
+gco qa
+gp
+gbrv
+k
+gco demo
+gp
+gbrv
+k
+j win
+vim ~/dotfiles/bash_prompt.sh 
+k
+gco dev
+gs
+gst
+k
+gs
+j win
+vim ~/dotfiles/bash_prompt.sh 
+k
+j dot
+ls
+gs
+ga bash_prompt.sh 
+gcm "fixes issue where prompt wouldn't remove origin/ from upstream branch names"
+k
+gs
+gp
+k
+gs
+k
+k
+j kit
+vim ~/dotfiles/bash_prompt.sh 
+k
+gcob 488
+docker-machine restart default
+k
+gs
+dcup
+docker-machine restart default
+eval "$(docker-machine env default)"
+vim server/cronJobs.js 
+k
+ls
+rm git client/src/js/controllers/graphDemoCtrl.js 
+git rm client/src/js/controllers/graphDemoCtrl.js 
+k
+gs
+gcm "cleanup: removes unused demo controller file"
+k
+gs
+vim client/src/js/controllers/siteDetailsController.js 
+k
+vim ~/.vim/bundle/vim-javascript/ftplugin/javascript.vim 
+vim ~/.vim/bundle/vim-javascript/syntax/javascript.vim 
+vs
+vim ~/.vim/bundle/colors/ir_black.vim 
+./gulp
+dcup
+j kit
+dcup
+eval "$(docker-machine env default)"
+vs
+./gulp
+dcup
+j kit
+eval "$(docker-machine env default)"
+docker-machine restart default
+docker-machine rm default
+docker-machine create --driver virtualbox default
+eval "$(docker-machine env default)"
+k
+eval "$(docker-machine env default)"
+dcup
+env | ag DOCKER
+env | ag DOCKER | awk "$2"
+env | ag DOCKER | awk $2
+unset ${!DOCKER_*}
+env | ag DOCKER
+docker --version
+dc --version
+docker-machine --version
+which docker-machine
+k
+dcup
+dcdn
+vim docker-compose.yml 
+dcup
+dcdn
+vim server/index.js 
+dcup
+dcdn
+dcup
+dcdn
+docker-machine ip default
+dcup
+env | ag DOCK
+./gulp
+dcdn && dcup
+j kit
+dcdn
+j dotf
+ag docker .
+ag -i dock .
+k
+j kit
+vim gulp-tasks/server.js 
+k
+dcup
+dcdn
+nvm list
+nvm use 5
+./gulp
+k
+
+vimrc
+k
+vs
+vim client/src/js/services/authService.js 
+vimrc
+k
+d
+dcup
+dcdn && dcup
+dcdn
+dcdn && dcup
+dcup
+dcdn && dcup
+k
+gs
+cd client/src/js/controllers/
+vp siteDetailsController.js stationDetailsController.js gatewayDetailsController.js 
+k
+gs
+upup
+up
+k
+gs
+gd client/
+k
+gs
+ga client/
+gcm "KITU-488: fixes graph pages to successfully recover from errors when getting station readings"
+k
+gs
+gd server/
+k
+gco server/api/mocks/mockDeviceApi.js 
+k
+gs
+gd server/
+k
+gs
+gs | ag server
+vim server/api/controllers/gateway/\{id\}/data.js 
+k
+gs
+ga server/
+k
+gs
+gcm "KITU-488: handles deviceAPI errors more gracefully on the backend"
+k
+gs
+gd gulp-tasks/
+gd docker-compose.
+k
+gs
+ls dock*
+git rm docker-compose.prod.yml 
+gcm "cleanup: removes unused docker-compose.prod.yml"
+k
+gs
+ls
+k
+gs
+gpo -u 488:bug/KITU-488
+k
+j its
+gbr
+gcob add-seamgen
+ls
+vim gulpfile.js
+k
+gulp
+./node_modules/.bin/gulp
+ls
+vim package.json 
+npm install
+k
+npm install -g gulp
+k
+gs
+ls
+vim index.html 
+k
+gs
+open index.html 
+vim index.html 
+k
+gs
+ga index.html 
+gcm "adds info about seamgen, and new skills"
+k
+gs
+gco master
+git rebase add-seamgen
+gp
+k
+gs
+gbr
+git db add-seamgen
+k
+vim ~/Desktop/mark_notes
+k
+d
+j graph
+ls
+gs
+ls
+gs
+vim gulpfile.js 
+man dot
+j win
+vim docker-compose.yml 
+vim winward_entities.gv 
+k
+./gulp 
+j it
+dcup
+which docker-compose
+docker-compose --version
+k
+docker-machine
+dcdn
+docker ps
+j kit
+vim client/src/js/controllers/siteCreateController.js 
+j kit
+dcup
+k
+gs
+k
+gs
+gd gulp*
+k
+vim server/cronJobs.js 
+k
+gs
+gbr
+gco dev
+j win
+ls
+gs
+vim docker-compose.yml 
+k
+k
+gs
+eb list
+gpu
+k
+gs
+ls
+gcob 491
+vp docker-c*
+vim docker-compose.
+vim docker-compose.yml 
+git rm docker-compose.override.yml 
+gco docker-compose.override.yml
+git rm docker-compose.override.yml
+k
+gs
+ga docker-compose.yml 
+k
+gs
+gcm "cleanup: removes docker-compose.override, merges that config into docker-compose.yml"
+k
+gs
+k
+ls
+k
+vim bower.json 
+k
+glg
+k
+ls
+gs
+k
+ag status server/api/models/
+ag status client/src/js/controllers/
+ag status client/src/js/controllers/
+ag -l status client/src/js/controllers/
+vp $(ag -l status client/src/js/controllers/)
+k
+gs
+glg
+k
+gs
+gcob webpack
+k
+gs
+vp server/api/models/gateway.js server/api/models/customer.js server/api/models/site.js 
+k
+gs
+j win
+k
+ls
+vp gulp ../kitu/gulp
+vo gulp ../kitu/gulp
+vo gulp ../winward/gulp
+gs
+k
+gd gulp
+qk
+gs
+k
+gs
+ga gulp
+gcm "webpack: adds new gulp script"
+k
+gs
+ls
+git mv gulpfile.js gulp-tasks/
+gcm 
+k
+gcm "webpack: moves gulpfile into gulp-tasks"
+k
+gs
+ls
+ls gulptasks/
+la
+cp ../winward/gulptasks/eslintrc.yaml gulp-tasks/
+git rm .eslintrc.yaml 
+ga gulp-tasks/eslintrc.yaml 
+k
+gst
+gcm "webpack: updates eslintrc, moves it into gulp-tasks/"
+k
+gs
+ls
+vim client/src/js/app.js 
+ag window .
+k
+vp paths.js ../winward/paths.js 
+vo paths.js ../winward/paths.js
+cp ../winward/gulptasks/webpack.js gulp-tasks/
+k
+bashp
+k
+npm install webpack babel-loader css-loader eslint-loader html-webpack-plugin html-webpack-template
+nisd webpack babel-loader css-loader eslint-loader html-webpack-plugin html-webpack-template ng-cache-loader sass-loader style-loader webpack-dev-server
+nis angular-ui-router bluebird d3
+nis angular
+npm install es6-promise
+npm install angular-ui-switch
+nis angular-ui-switch
+nis angular-bootstrap
+nis bootstrap-loader
+nis angular-ui-router-uib-modal
+nis jquery.inputmask
+nis restangular url-loader resolve-url-loader
+ni
+npm prune
+k
+vim package.json 
+nis angular-messages
+vp package.json ../winward/package.json 
+kjkjkjk
+k
+gs
+gd package.json 
+k
+gs
+ga package.json 
+gcm "webpack: adds webpack and related libraries to package.json"
+k
+gs
+vim gulp-tasks/webpack.js 
+cd test/
+ls
+mkdir server
+git mv api server/
+git mv unit server/
+k
+gs
+gcm "webpack: moves all server tests into test/server, instead of test/api and test/unit"
+k
+gs
+ls cli
+up
+ls client/
+ls client/test/
+ls client/test/unit/
+mc client/test test/
+mv client/test test/
+ls client/
+ls test/
+mv test/test client/
+git mv client/test/ test/
+git mv test/test test/client
+k
+ls test/
+ls test/client/
+k
+gs
+k
+gcm "webpack: moves client/test into test/client"
+k
+gs
+k
+gs
+k
+gd paths.js 
+k
+gs
+k
+ls
+rm -r bower_components/
+git rm bower.json 
+gcm "webpack: removes bower.json!"
+k
+gs
+k
+ls test/client/unit/**/*
+vp paths.js gulp-tasks/webpack.js 
+k
+gs
+k
+ls ../winward/gulptasks/
+ls gulp-tasks/
+vim gulp-tasks/environment-setup.js 
+vp gulp-tasks/environment-setup.js ../winward/gulptasks/install.js 
+git mv gulp-tasks/environment-setup.js gulp-tasks/install.js
+k
+gcm "webpack: renames environment-setup -> install"
+k
+gs
+vim paths.js 
+git mv gulp-tasks gulptasks
+k
+gs
+gd gulptasks/server.js 
+k
+gs
+gcm "renames gulp-tasks -> gulptasks, for easier typing and tab-completion"
+k
+gs
+k
+gs
+vim gulptasks/webpack.js 
+cp ../winward/server/swagger-editor-server.js ./server/
+vim server/swagger-editor-server.js 
+ls server/api/swagger/
+git mv server/api/swagger/swagger.yaml server/api/
+ag swagger.yaml .
+j win
+nisd swagger-ui
+vp server/index.js ../winward/server/index.js 
+k
+gs
+gcm "webpack: moves swagger.yaml up one level"
+k
+gs
+vim node_modules/swagger-ui/dist/index.html 
+k
+k
+cp ../winward/gulptasks/backend-tests.js gulptasks/
+vp server/index.js ../winward/server/index.js 
+vo server/index.js ../winward/server/index.js
+k
+./gulp serve
+vim gulptasks/gulpfile.js 
+./gulp serve
+k
+ls server/config/
+vim server/config/default.yaml 
+git mv server/config/config.json server/
+git rm server/config/*
+k
+gs
+k
+ls server/
+gcm "cleanup: removes unsed server/config/ dir, moves config.json to server/"
+k
+gs
+./gulp serve
+vim package.json 
+nvm list
+nvm use 5
+k
+j dotf
+vim bash_prompt.sh 
+k
+ls
+gs
+nvm use 5
+vim .nvmrc
+up
+cd kitu/
+up
+j win
+vim .nvmrc
+nvm
+nvm ls
+k
+nvm use
+j dotf
+vim bash_prompt.sh 
+j win
+j kit
+j dotf
+j win
+j kit
+j dotf
+echo "$?"
+k
+j win
+j kit
+echo "$(nvm_ls_current)"
+nvm use --silent
+echo "$(nvm_ls_current)"
+test -e .nvmrc
+echo "$?"
+test -e .npmrc
+echo "$?"
+echo "$(nvm_ls_current)"
+j win
+j kit
+echo "$(nvm_ls_current)"
+j win
+j kit
+j win
+j kit
+vim bash_prompt.sh 
+k
+gs
+gd bash_prompt.sh 
+k
+ga bash_prompt.sh 
+gcm "fixes bash prompt to check for package.json before showing Node version string; changes node version string color"
+k
+gp
+k
+j win
+./gulp serve
+npm install node-inspector
+ls node_modules/.bin/node*
+ag "config/config" .
+vp $(ag -l "config/config" .)
+./gulp serve
+./gulp test:backend
+k
+dcup
+dcdn
+npm ls graceful-fs
+dc build
+vim package.json 
+k
+k
+npm install && npm prune
+npm dedupe
+k
+open .
+k
+vim docker-compose.yml 
+dcup
+dcdn
+./gulp test:backend
+j win
+gs
+gco dev
+gpu
+./gulp dev:client
+./gulp runWebpack
+./gulp build
+vim gulptasks/webpack.js 
+./gulp wepack-dev-server
+vim gulptasks/webpack.js 
+ag 8080 .
+./gulp webpack-dev-server
+dcup
+dcdn
+dcup
+k
+docker volume ls -qf dangling=true
+docker volume rm $(docker volume ls -qf dangling=true)
+k
+docker ps
+docker ps -a
+open ~
+open 
+open ~/.docker/
+docker-machine list
+docker-machine --help
+docker-machine ls
+docker-machine rm default
+k
+open ~/.docker/
+k
+vim gulptasks/webpack.js 
+vim server/config.json 
+vim db/seeds/development.js 
+vim gulptasks/server.js 
+k
+glg
+k
+gs
+k
+ls
+k
+ls
+k
+ls gulptasks/
+ls ../winward/gulptasks/
+./gulp build
+node
+./gulp build
+vim package.json 
+k
+gs
+k
+vim gulptasks/webpack.js 
+k
+./gulp build
+ag "url\(" client/src/scss/
+ls node_modules/jquery*
+k
+./gulp build
+vim client/dist/index.html 
+git rm client/src/index.html 
+gcm "webpack: removes client/src/index.html"
+j win
+gbr
+vim gulptasks/webpack.js 
+k
+gs
+k
+k
+up
+source ~/.bash_profile
+k
+ls
+k
+vim server/api/models/admin
+vim server/api/models/admin.js
+k
+vim server/api/models/driverNotification.js 
+vim server/cronJobs.js 
+k
+gs
+k
+gd server/cronJobs.js 
+ga server/cronJobs.js 
+gcm "cleanup: fixes typo in cronJobs.js"
+k
+gs
+ls gulptasks/
+k
+ls
+k
+ls
+k
+ls gulptasks/
+ls ../winward/gulptasks/
+vim gulptasks/task-helpers.js 
+k
+ls
+ls gulptasks/
+k
+git rm gulptasks/task-helpers.js 
+gcm "webpack: removes gulptasks/task-helpers.js. all this is now taken care of by Webpack"
+k
+ls
+k
+vim gulptasks/webpack.js `
+ls
+vim gulptasks/webpack.js 
+vim server/config.json 
+k
+dcup
+dcdn
+vim server/index.js 
+k
+vim docker-compose.yml 
+dcup
+dcdn
+dcup
+dcdn && dcup
+dcup
+nisd connect
+dcdn && dcup
+dcdn
+vim package.json 
+nisd swagger-editor
+vim package.json 
+npm prune
+nisd bootstrap-sass
+nisd file-loader
+k
+vim server/index.js 
+./gulp build
+ag task-helpers .
+vp $(ag -l task-helpers .)
+k
+./gulp build
+vim package.json 
+npm uninstall -g gulp
+nis jquery
+bashp
+k
+vim ~/dotfiles/bash_prompt.sh 
+k
+k
+ag bootstrap client/src/scss/
+cd node_modules/bootstrap-sass/assets/stylesheets/bootstrap
+ls
+ls mixins/
+up
+ls
+vim _bootstrap.scss 
+j kit
+./gulp build
+ag bootstrap client/src/scss/
+ivm client/src/scss/__vendor.scss 
+vim client/src/scss/__vendor.scss
+git rm client/src/scss/__vendor.scss 
+cd node_modules/angular-ui-switch/
+ls
+vim client/src/js/app.js 
+k
+gs
+gcm "webpack: removes client/src/scss/__vendor.scss, webpack now takes care of this"
+k
+gs
+k
+k
+./gulp build
+upup
+./gulp build
+vim client/src/scss/main.scss 
+k
+dcup
+./gulp build
+dcdn
+ag "./images/" client/src/
+ag "\./images/" client/src/
+ag "\./images/" client/src/scss/
+ag "/images/" client/src/scss/
+ag /images/ client/src/scss/
+ag images client/src/scss/
+ag images client/src/scss/
+ag images client/src/scss/
+ag "images/" client/src/scss/
+k
+ag "images/" client/src/scss/
+man sed
+k
+ag "images/" client/src/scss/
+sed -i 's/images\/\.\.\/\.\.\/assets\/images\//g' client/src/scss/_base.scss 
+sed -i 's/images\/\.\.\/\.\.\/assets\/images\//g' client/src/scss/_base.scss 
+sed -i 's/images\/\.\.\/\.\.\/assets\/images\//g' client/src/scss/_base.scss 
+sed -i 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/_base.scss 
+sed -i 's/images\//\.\.\/\.\.\/assets\/images\//g' ./client/src/scss/_base.scss 
+sed -i -e 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/_base.scss 
+ag "images/" client/src/scss/
+ag "images/" client/src/scss/
+sed -i -e 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/_base.scss 
+sed -i -e 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/*.scss
+k
+ag "images/" client/src/scss/
+k
+gd client/src/scss/
+k
+git stash client/src/scss/main.scss
+k
+k
+gco client/src/scss/
+k
+ag "images/" client/src/scss/
+rm client/src/scss/*.scss-e
+k
+ag "images/" client/src/scss/
+ag "images/" client/src/scss/
+sed -i -e 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/*.scss
+sed -i -e 's/images/\.\.\/\.\.\/assets\/images/g' client/src/scss/*.scss
+ag "images/" client/src/scss/
+gco client/src/scss/
+rm client/src/scss/*.scss-e
+k
+ag "images/" client/src/scss/
+sed -i 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/*.scss
+sed -i 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/*.scss
+sed -i 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/*.scss
+sed 's/images\//\.\.\/\.\.\/assets\/images\//g' -i client/src/scss/*.scss
+k
+ag "images/" client/src/scss/
+k
+sed 's/images\//\.\.\/\.\.\/assets\/images\//g' -i client/src/scss/*.scss
+sed -i '' -e 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/*.scss
+ag "images/" client/src/scss/
+k
+vim client/src/scss/main.scss
+gd client/src/scss/
+k
+./gulp build
+k
+sed -i '' -e 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/*.scss
+sed -i '' -e 's/fonts\//\.\.\/\.\.\/assets\/fonts\//g' client/src/scss/*.scss
+ag "fonts/" client/src/scss/
+./gulp build
+cd node_modules/jquery.inputmask/
+ls
+cd dist/
+ls
+ls inputmask/
+./gulp build
+k
+dcdn
+ls node_modules/jquery.inputmask/dist/inputmask/inputmask.dependencyLib.jquery.js 
+open client/dist/
+k
+./gulp build
+nsd imports-loader
+nisd imports-loader
+./gulp build
+./gulp
+j win
+./gulp
+nis angular-ui-bootstrap
+vim client/dist/index.html 
+k
+ni && npm prune
+j win
+vim client/src/js/routes/auth.routes.js 
+ls client/src/templates/
+vim client/dist/kitu-web.bundle.js
+j win
+gbr
+gco 30
+gd gulptasks/webpack.js 
+git stash
+gco 30
+k
+gs
+vim gulptasks/webpack.js 
+k
+ag images client/te
+ag images client/src/templates/
+vp $(ag -l images client/src/templates/)
+k
+vp $(ag -l images client/src/templates/)
+vim client/dist/kitu-web.bundle.js
+ag templateCache client/dist/
+k
+ls client/dist/
+rm client/dist/vendor.js client/dist/kitu.js client/dist/kitu.css 
+ag templateCache client/dist/*.js
+ag templateCache.put client/dist/*.js
+k
+j win
+vim client/src/js/app.js 
+vim client/src/js/config/routes.auth.js 
+./gulp
+./gulp build
+ls client/dist/
+rm client/dist/*.ttf client/dist/*.wof* client/dist/*.svg
+k
+ls client/dist/
+rm client/dist/*.eot
+k
+ls client/dist/
+ls client/dist/fonts/
+ls client/dist/images/
+ls client/assets/images/
+ls client/dist/
+ls client/dist/fonts/
+rm client/dist/fonts/*
+rm client/dist/images/*
+rm client/dist/*.{ttf,eot,svg}
+ls client/dist/
+rm client/dist/*.wof*
+ls client/dist/
+ls -R client/dist/
+k
+./gulp build
+ls client/dist/
+ls -R client/dist/
+k
+vim client/src/js/app.js 
+ag templateCache.put client/dist/*.js
+./gulp
+./gulp build
+k
+ag login.html .
+ls client/src/templates/
+ag templateCache.put client/dist/*.js
+./gulp build
+ag templateCache.put ../winward/client/dist/*.js
+ag templateCache.put ../winward/client/dist/
+ag templateCache.put ../winward/client/dist/winward-web.bundle.js
+ag hello.html ../winward/client/dist/
+ag hello.html ../winward/client/dist/*.js
+ag login.html client/dist/*.js
+k
+ag login.html client/dist/*.js
+./gulp build
+ag login.html client/dist/*.js
+./gulp build
+ag login.html client/dist/*.js
+./gulp build
+k
+ag login.html client/dist/*.js
+ag woff client/src/scss/
+ag ttf client/src/scss/
+vim client/dist/kitu-web.bundle.js
+k
+ls client/dist/
+vim client/dist/kitu-web.bundle.js
+k
+ls
+gs
+j dotf
+vim .gitignore_global 
+ga .gitignore_global
+gcm "adds .nvmrc to gitignore"
+k
+gs
+gd .vimrc 
+gco .vimrc
+k
+s
+gp
+k
+ls
+gs
+./gulp
+./gulp build
+ag 192 .
+ag 192.168 .
+dcup
+nis cors
+vim package.json 
+k
+dcdn && dcup
+vim client/src/scss/main.scss 
+k
+ls client/dist/
+ag "fonts/" client/dist/
+ag "fonts/" client/dist/kitu-web.bundle.js
+k
+ag map client/src/js/
+ag key client/src/js/
+qk
+k
+ag google client/src/js/
+k
+npm install google-maps-api
+vim client/src/js/app.js 
+ag power-icon client/
+k
+ag power-icon client/src/
+vim client/src/js/directives/metric.js 
+./gulp
+./gulp build
+vim client/src/js/directives/kitu-google-map.js 
+k
+ag Work client/src/scss/
+ag "url\(" client/src/scss/
+vim gulptasks/webpack.js 
+./gulp
+k
+gs
+gd client/src/scss/
+k
+ga client/src/scss/
+gcm "webpack: fixes all asset urls for webpack"
+k
+gs
+ag -g google .
+ga $(ag -g google .)
+gcm "webpack: fixes google maps directive for webpack"
+k
+gs
+gd client/src/js/directives/
+k
+ga client/src/js/directives/
+k
+gs
+ga client/src/js/services/
+gd client/src/templates/
+k
+ga client/src/templates/
+gs
+gd client/src/js/config/routes.*
+k
+ga client/src/js/config/routes.*
+gd client/src/js/controllers/
+k
+ga client/src/js/controllers/
+gcm "webpack: commits webpack-related fixes in src/js, plus eslint auto-fixes"
+k
+gd
+k
+gs
+gd client/src/js/app.js 
+k
+ga client/src/js/app.js client/src/js/config/app_config.js 
+gcm "webpack: refactors .config and .run blocks out of app.js and into app_config.js, adds require statements into app.js"
+k
+gs
+ga gulptasks/
+k
+gs
+gcm "webpack: adds webpack tasks for gulp, plus lots of other gulp fixes"
+k
+gs
+gd paths.js 
+k
+ga paths.js 
+gcm "webpack: cleans out paths.js"
+k
+gs
+ga server/swagger-editor-server.js 
+gcm "adds swagger-editor-server, for editing Swagger docs"
+k
+gs
+gd Dockerfile*
+ga Dockerfile-dev 
+gcm "webpack: fixes Dockerfile-dev to use new gulp server task"
+k
+gs
+gd client/src/js/config/
+k
+gs
+ga client/src/js/
+k
+gs
+gcm "adds eslint autofixes to two more client js files"
+k
+gs
+gd db/config.json 
+k
+gs
+gd docker-compose.yml 
+ga docker-compose.yml
+git reset
+k
+gs
+gd server/index.js 
+k
+gs
+j win
+ag NODE_ENV server/
+k
+ag NODE_ENV server/
+vim server/umzug-helper.js 
+k
+gs
+gd server/index.js 
+k
+gs
+ga server/index.js 
+gcm "webpack: cleans up in server/index.js, adds swagger-editor-server and cors"
+k
+gs
+gd server/api/
+k
+gs
+gpo -u webpack:webpack
+gd server/umzug-helper.js 
+k
+ga server/umzug-helper.js
+gcm "cleanup: fixes umzug-helper to throw an error when NODE_ENV isn't set"
+k
+gs
+gd db/config.json 
+ga db/config.json docker-compose.yml 
+gd server/config.json 
+ga server/config.json
+k
+gs
+gd server/api/swagger
+gd server/api/swagger.yaml 
+k
+ga server/api/swagger.yaml
+k
+gs
+gd package.json 
+k
+gs
+gd server/api/services/
+ga server/api/services/
+k
+gs
+gcm "cleanup: fixes config values, port values, and swagger.yaml"
+k
+gs
+gp
+k
+gbr
+k
+gs
+gf && gco dev
+k
+gs
+ga package.json 
+k
+git reset
+git stash
+k
+gco dev
+gpu
+k
+gbr
+gco 491
+git rebase dev
+k
+git stash pop
+ga package.json 
+gcm "webpack: adds several packages to package.json"
+k
+gs
+ls test/client/unit/
+ls gulptasks/
+nisd karma-webpack
+ls gulptasks/tests.js 
+vim gulptasks/tests.js
+./gulp test
+ag gulp-tasks .
+vim gulptasks/tests.js 
+./gulp test
+ls -R test/client/
+vim package.json 
+./gulp test
+./gulp test
+./gulp dev:server --roles
+./gulp test:backend --roles
+ag "/server/api/mocks/mockDataGenerator\" .
+ag "/server/api/mocks/mockDataGenerator" .
+vp $(ag -g "/server/api/mocks/mockDataGenerator" .)
+./gulp test:backend --roles
+k
+vp $(ag -l "/server/api/mocks/mockDataGenerator" .)
+ag "../../server" test/
+./gulp test:backend
+k
+vim server/index.js 
+./gulp test
+gs
+gd gulptasks/webpack.js 
+k
+gs
+gco gulptasks/karma.conf.js 
+gd gulptasks/tests.js 
+k
+./gulp test
+gs
+glg
+k
+gs
+dcdn
+./gulp lint-server
+./gulp lint-client
+k
+vim gulptasks/server.js 
+k
+ls client/src/scss/
+k
+vim gulptasks/webpack.js 
+k
+k
+ls gulptasks/
+./gulp test:backend
+./gulp test:backend --grep roles
+./gulp test:backend --grep rolRoles
+./gulp test:client
+vim gulptasks/backend-tests.js 
+./gulp test
+vim gulptasks/watchers.js 
+k
+vim gulptasks/karma.conf.js 
+ls test/client/
+vim gulptasks/karma.conf.js 
+k
+k
+./gulp webpack-dev-server
+gco gulptasks/karma.conf.js 
+./gulp webpack-dev-server
+./gulp
+k
+ag "url\(" client/src/scss/
+ag "url(" client/src/scss/
+ag "url" client/src/scss/
+vim gulptasks/webpack.js 
+k
+vim client/src/js/directives/metric.js 
+vim client/src/scss/_fonts.scss 
+vim gulptasks/cli_opts.js 
+vim .ebignore 
+up
+ls
+https://amiles_@bitbucket.org/SeamgenSD/nginx-reverse-proxy.git
+git clone https://amiles_@bitbucket.org/SeamgenSD/nginx-reverse-proxy.git
+k
+ls
+cd nginx-reverse-proxy/
+ls
+vp Dockerfile docker-cmd env-default.sh nginx.conf.template 
+j kit
+k
+vim ~/.aws/credentials 
+vim ~/.aws/config 
+ls
+k
+rm -rf .elasticbeanstalk/
+eb init --profile eb-kitu
+k
+ls .elasticbeanstalk/
+vim .elasticbeanstalk/config.yml 
+git stash
+k
+gbr
+gco demo
+eb use demo
+gs
+eb deploy
+vim .elasticbeanstalk/config.yml 
+vim Dockerrun.aws.json 
+gco 491
+vim .elasticbeanstalk/config.yml 
+eb create test
+./gulp
+./gulp build
+k
+git stash pop
+k
+dcup
+k
+dcdn && dcup
+vim client/src/js/controllers/homeController.js 
+k
+vim server/index.js 
+vim server/api/controllers/auth.js 
+git stash
+gco demo
+./gulp
+vim gulp-tasks/server.js 
+dcdn
+dcup
+dcdn
+dc build
+k
+vim gulp-tasks/server.js 
+vim ~/Desktop/kt_training_notes.txt
+k
+vim Dockerfile
+k
+k
+ag -g http client/src/
+ag -g intercept client/src/
+vim $(ag -g intercept client/src/)
+k
+vp client/src/js/directives/header.js 
+k
+gbr
+gco 491
+k
+git stash pop
+gco server/api/controllers/auth.js 
+git stash pop
+k
+vim client/src/js/app.js 
+ls db/migrations/
+./node_modules/.bin/sequelize migration:create --name DummyMigration
+vim db/migrations/20160401113853-CreateUsers.js
+k
+ls db/seeds/
+vim server/umzug-helper.js 
+vim server/index.js 
+vim db/seeds/development.js 
+k
+vim server/cronJobs.js 
+vim server/index.js 
+git stash
+k
+gco demo
+eb ssh
+eb logs
+./gulp --tasks
+qk
+k
+vim gulp-tasks/server.js 
+k
+k
+gbr
+gco 491
+git stash pop
+rm db/migrations/20160714211304-DummyMigration.js
+k
+vim ~/Desktop/kt_training_notes.txt 
+k
+dcup
+dcdn
+k
+gs
+gd client/src/js/controllers/
+gco client/src/js/controllers/
+k
+gs
+gd gulptasks/
+k
+ls
+gs
+gd package.json 
+gco package.json
+npm prune
+k
+gs
+gd server/umzug-helper.js 
+k
+k
+dcdn
+dcup
+dcdn
+npm ls graceful-fs
+dc build
+k
+vim Dockerfile
+vim Dockerfile-dev 
+dcup
+dcdn
+dcup
+dcdn && dcup
+./gulp serve
+dcdn
+dcup
+dcdn
+dcup
+vim docker-compose.yml 
+k
+dcdn
+dcup
+./gulp inspect
+vim gulptasks/server.js 
+k
+j kit
+dcup
+dcdn
+dc build
+k
+dcdn
+k
+dcup
+dcdn
+dcup
+dcdn
+dcup
+dcdn && dcup
+dcdn
+dcup
+dcdn
+dcup
+dcdn && dcup
+dcdn
+dcup
+dcdn && dcup
+dcdn
+dcup
+k
+j kit
+k
+gs
+j kit
+./gulp test
+dcdn
+glg
+k
+gcob gulp-cleanup
+k
+glg
+k
+dcup
+gs
+gd server/umzug-helper.js 
+ga server/umzug-helper.js 
+gcm "fixes umzugHelper to use correct var for NODE_ENV"
+k
+gs
+gd gulptasks/webpack.js 
+gd gulptasks/
+k
+gs
+vim docker-compose.yml 
+dcup
+docker ps -a
+dcdn
+docker rm $(docker -s -a)
+vim gulptasks/tests.js 
+docker rm $(docker ps -a)
+dcup
+j kit
+k
+vim server/config.json 
+k
+glg
+k
+gs
+gd gulptasks/
+k
+gd gulptasks/backend-tests.js 
+k
+dcup
+vim gulptasks/server.js 
+dcdn
+vim server/index.js 
+fg
+fg
+dcup
+dcdn && dcup
+dcdn
+dcup
+dcdn
+dcup
+dcdn
+dcup
+dcdn
+dcup
+vim docker-compose.yml 
+dcdn
+dcup
+dcdn && dcup
+k
+dcdn && dcup
+dcdn
+dcup
+dcdn && dcup
+dcdn
+dcup
+dcdn
+node
+docker-machine ls
+k
+dcup
+dcdn && dcup
+vimrc
+k
+vim server/index.js 
+dcdn
+dcbuild
+dc build
+dcup
+dcdn
+dcpu
+dcup
+dcdn
+dcup
+dcdn
+dcup
+dcdn
+dcup
+dcdb
+dcdn
+dc build
+dcup
+dcdn
+dcup
+dcdn
+k
+gs
+git stash
+gco dev
+gpu
+gco gulp-cleanup
+git rebase dev
+vim package.json 
+k
+git rebase --continue
+ga package.json 
+git rebase --continue
+k
+gs
+git stash pop
+k
+vs
+gs
+k
+dcdn
+dc build
+dcup
+dcdn
+dcup
+dcdn
+dcdn && dcup
+dcdn
+ag debugg client/
+ag debugg client/src/
+k
+vim (ag -g home client/src/)
+vim $(ag -g home client/src/)
+node
+./gulp build
+vim package.json 
+k
+ni
+k
+dcup
+dcdn && dcup
+dc build
+dcup
+dcdn
+dc build
+vim Dockerfile-dev 
+dc build
+k
+dcdn
+dc build
+k
+dcup
+dcdn
+vim package.json 
+k
+gs
+gd package.json 
+gcm "cleanup: removes node-inspector from package.json, it should be installed manually inside Docker"
+k
+gs
+glg
+kk
+k
+ga package.json 
+gcm "cleanup: removes node-inspector from package.json, it should be installed manually inside Docker"
+k
+gs
+git reset --soft HEAD~1
+ga Dockerfile-dev 
+gd docker-compose.yml 
+ga docker-compose.yml
+k
+gs
+gd gulptasks/server.js 
+k
+vim gulptasks/server.js 
+k
+gs
+gd server/index.js 
+k
+gs
+ga server/index.js 
+k
+gcm "cleanup: install node inspector manually in Docker, start it from server/index.js instead of Gulp
+"
+k
+gs
+ag debugger server/ client/src/
+vp $(ag -l client/src/ server/)
+vp $(ag -l client/src/ server/)
+vp $(ag -l client/src/ server/)
+ag -l src/ server/
+vp $(ag -l debugger client/src/ server/)
+k
+vs
+k
+./gulp test:backend
+k
+./gulp test
+./gulp test
+vim package.json 
+npm prune
+npm install karma
+nisd karma
+./gulp test
+k
+vim gulptasks/tests.js 
+npm update karma-jasmine
+npm update karma-jasmin --save-dev
+npm update karma-jasmine --save-dev
+vim package.json 
+bashp
+nupsd karma-spec-reporter
+nupsd jasmine
+k
+./gulp test
+vim gulptasks/tests.js 
+rm gulptasks/frontend-tests.js 
+./gulp test:frontend
+git mv gulptasks/tests.js gulptasks/frontend-tests.js
+k
+gs
+ga gulptasks/frontend-tests.js 
+k
+gs
+gcm "renames gulptasks/tests -> gulptasks/frontend-tests"
+k
+./gulp test:fe
+nupsd karma-jasmine-html-reporter
+vim gulptasks/frontend-tests.js 
+k
+vim package.json 
+gs
+ga package.json 
+git reset
+gd package.json 
+k
+gs
+ga package.json gulptasks/karma.conf.js gulptasks/frontend-tests.js 
+gcm "updates Karma to v 1.1, fixes karma.conf and gulp task"
+k
+./gulp test:fe
+gs
+./gulp test:fe
+git rm test/client/index.js 
+rm test/client/index.js 
+k
+./gulp test:fe
+nupsd karma-chrome-launcher
+nusd karma-chrome-launcher && nisd karma-chrome-launcher
+k
+nusd jasmine && nisd jasmine
+k
+./gulp test
+./gulp build
+./gulp test:fe
+nisd angular-mocks
+./gulp test
+./gulp build
+
+
+k
+vim node_modules/angular-mocks/angular-mocks.js 
+./gulp test:fe
+nisd karma-phantomjs-launcher
+k
+./gulp test:fe
+k
+vim gulptasks/frontend-tests.js 
+k
+gs
+gd client/src/js/controllers/
+k
+gs
+gd apt
+gd paths.js 
+k
+gs
+ga paths.js 
+ga package.json 
+ga gulptasks/karma.conf.js 
+ga gulptasks/frontend-tests.js 
+k
+gs
+gd gulptasks/webpack.js 
+gd gulptasks/gulpfile.js 
+k
+gcm "fixes frontend test setup...sort of"
+k
+gs
+k
+gs
+ga client/src/js/
+k
+gs
+gcm "removes some debuggers that shouldn't have been there"
+k
+gs
+gd gulptasks/backend-tests.js 
+gd gulptasks/server.js 
+ga gulptasks/server.js
+gcm "removes node inspector from gulptasks/server"
+k
+gs
+gd gulptasks/
+k
+ga gulptasks/
+gcm "adds some comments to gulp tasks"
+k
+gs
+gd test/
+k
+gs
+ga server/nodeInspector.js 
+gcm "adds a node inspector module"
+k
+gs
+vim server/nodeInspector.js 
+gpo -u gulp-cleanup:gulp-cleanup
+gd dev gulptasks/webpack.js 
+./gulp
+./gulp build
+k
+./gulp build
+j ngin
+k
+git remote show
+git remote set-url origin git@github.com:itsthejazzkid/docker-nginx-reverse-proxy.git
+gpom
+gs
+gd gulptasks/webpack.js 
+k
+gs
+gd client/
+ga client/src/js/app.js 
+gcm "requires bootstrap-loader from client/src/js/app.js"
+gs
+gd apc
+gd pa
+gd package.json 
+ga package.json 
+gcm "removes duplicate packages from dependencies section of package.json"
+k
+gs
+gd gulptasks/webpack.js 
+k
+gs
+ga gulptasks/webpack.js 
+gcm "re-indents part of webpack config"
+gp
+vim gulptasks/webpack.js 
+k
+vim gulptasks/webpack.js 
+dcup
+./gulp
+k
+gs
+k
+gbr
+git db webpack
+k
+k
+gs
+docker ps -a
+k
+k
+$(docker volume ls -qf dangling=true)
+docker volume ls -qf dangling=true
+docker volume rm $(docker volume ls -qf dangling=true)
+k
+open 
+open .
+k
+j kit
+ls
+k
+gs
+gbr
+git db 491
+k
+dcdn
+gs
+gco client/
+vim client/src/templates/pages/login.html 
+k
+gs
+gd server/api/controllers/
+k
+vim client/src/js/directives/lineGraph.js 
+./gulp
+dcup
+dcdn
+docker volume ls -qf dangling=true
+docker ls
+docker ps -a
+vim vim Dropbox/packing_list.txt
+vim Dropbox/packing_list.txt
+k
+j kit
+gs
+vs
+ag -g js client/
+ag -g js client/ | xargs wc -l
+ag -g scss client/ | xargs wc -l
+ag -g html client/ | xargs wc -l
+./gulp build
+k
+vim package.json 
+j writ
+ls
+ls journal/
+vim journal/2016-7-17
+j writ
+vim journal/2016-7-17 
+learns
+./g
+./gulp
+k
+./
+vim gulptasks/webpack.js 
+./gulp
+node
+k
+gbr
+gcob 491
+k
+vp client/src/js/directives/lineGraph.js client/src/js/directives/groupedBarGraph.js 
+k
+gs
+ga client/
+k
+gs
+gcm "KITU-491: refactors x-axis display function into graphhelper"
+gpo -u 491:KITU-491
+k
+gs
+gd gulptasks/webpack.js 
+vim gulptasks/webpack.js 
+ga gulptasks/webpack.js 
+gcm "cleanup: adds comment to clarify webpack's bootstrap-loader"
+gp
+k
+gs
+k
+glg
+k
+vim docker-compose.yml
+vim gulptasks/webpack.js 
+k
+k
+./gulp
+k
+l sno
+ls node_modules/
+vim package.json 
+vim gulptasks/webpack.js 
+k
+gs
+gbr
+gco gulp-cleanup
+gco gulptasks/webpack.js 
+k
+gs
+gco gulp-cleanup
+gco demo gulp-tasks/
+ls
+git rm gulptasks/
+git rm -rf gulptasks/
+k
+./gulp
+k
+ni
+k
+./gulp
+gco demo gulp
+k
+./gulp
+vim gulp
+gco demo gulpfile.js
+./gulp
+gco demo paths.js
+./gulp
+gco demo bower.json
+gco demo package.json
+bower install
+ni
+k
+k
+./gulp
+ag \.eslintrc ./*
+k
+ag \.eslintrc ./server/
+ag eslintrc server/
+ag eslintrc gulp-tasks/
+vp $(ag -l eslintrc gulp-tasks/)
+k
+gco demo .eslintrc.yaml
+k
+la
+./gulp
+gco demo client/src/index.html
+k
+d
+dcup
+dcdn
+vim server/index.js 
+dcup
+dcdn
+./gulp
+k
+dc build
+dcup
+vim Dockerfile-dev 
+dcup
+dcdn
+ag 192 gulp-tasks/
+vim gulp-tasks/server.js 
+k
+vim gulp-tasks/server.js 
+./gulp
+./gulp build
+dcup
+ag dist server/
+vim server/index.js 
+gs
+k
+vim docker-compose.yml 
+dcdn
+vim client/dist/index.html 
+ls client/dist/
+./gulp build
+kk
+k
+gco demo client/src/js/app.js 
+ag "window.env" client/
+k
+ag "window.env" client/src/
+client/src/env.js
+vim client/src/env.js
+k
+./gulp
+vim client/src/js/app.js 
+gco client/src/js/app.js 
+vim client/src/js/app.js 
+gco -- client/src/js/app.js 
+rm client/dist/*
+k
+ls client/dist/
+ag bind client/src/
+ag apply client/src/
+ag iconservice client/src/
+vim client/src/js/directives/metric.js 
+ag require client/src/
+k
+ag require client/src/js/
+k
+k
+ag require client/src/js/
+ag "require\(" client/src/js/
+gco $(ag -l "require\(" client/src/js/)
+k
+./gulp
+k
+gd demo server/index.js 
+k
+vim client/src/js/services/IconService.js 
+k
+ag -l font client/src/
+ag work client/src/
+vim client/src/scss/_fo
+k
+hag sed
+ag images\/ client/src/scss/
+sed -i 's/\.\.\/\.\.\/assets\///g' client/src/scss/_fonts.scss 
+hag sed
+sed -i 's/\.\.\/\.\.\/assets\//g' client/src/scss/_fonts.scss 
+sed -i 's/\.\.\/\.\.\/assets\/duh/g' client/src/scss/_fonts.scss 
+sed -i 's/\.\.\/\.\.\/assets\///g' client/src/scss/_fonts.scss 
+sed -i 's/\.\.\/\.\.\/assets\/g' client/src/scss/_fonts.scss 
+sed -i 's/\.\.\/\.\.\/assets\///g' client/src/scss/_fonts.scss 
+sed -i 's/\.\.\/\.\.\/assets\//duh/g' client/src/scss/_fonts.scss 
+vim client/src/scss/_fonts.scss 
+k
+gco demo client/src/scss/
+k
+ag "require\(" .
+k
+ag "require\(" client/src/
+gco demo $(ag -l "require\(" client/src/)
+ag "require\(" client/src/
+gco demo client/src/js/services/jQueryService.js client/src/js/services/d3Service.js client/src/js/services/googleMapsService.js 
+git rm client/src/js/services/googleMapsService.js client/src/js/services/bluebirdService.js 
+k
+sed -i 's/\.\.\/\.\.\/assets\//duh/g' client/src/scss/_fonts.scss 
+sed -i '' -e 's/\.\.\/\.\.\/assets\//duh/g' client/src/scss/_fonts.scss 
+sed -i '' -e 's/\.\.\/\.\.\/assets\///g' client/src/scss/_fonts.scss 
+./gulp
+ni
+k
+gbr
+gcob revert-webpack
+k
+vim gulpfile.js 
+ls gulp-tasks/
+npm prune
+k
+ls
+gco demo client/test/
+gco demo test/
+k
+vp client/src/js/directives/*
+ag "require\(" client/src/js/directives/
+vim client/src/js/directives/metric.js 
+ag -l "require\(" client/src/js/
+vp $(ag -l "require\(" client/src/js/)
+gco demo client/src/js/services/d3Service.js 
+k
+gs
+k
+gco demo client/src/js/services/lodashService.js 
+vp $(ag -l "require\(" client/src/js/)
+gco demo client/src/js/services/lodashService.js 
+gco demo client/src/js/services/lodashService.js 
+gco demo client/src/js/services/jQueryService.js 
+vp $(ag -l "require\(" client/src/js/)
+./gulp
+ag Bluebird client/
+vim client/src/js/config/app_config.js 
+dcup
+dcdn
+vim package.json 
+nis cors
+vim package.json 
+npm install google-maps-api
+vim server/index.js 
+nis google-maps-api
+gco client/src/js/services/googleMapsService.js
+gco -- client/src/js/services/googleMapsService.js
+gco dev client/src/js/services/googleMapsService.js
+vim client/src/index.html 
+k
+ag assets client/src/scss/
+ag assets client/src/js/
+ag kitu-logo-footer client/
+vp client/src/templates/components/{header,footer}.html
+ag x-close client/
+k
+ag x-close client/
+vim client/src/templates/components/searchableList.html 
+k
+vp client/src/js/directives/*graph*
+k
+gs
+rm client/src/env.js 
+rm test/server/api/driverNotificationsController.spec.js test/server/unit/smsService.spec.js 
+k
+gs
+dcup
+dcdn
+k
+bower install google-maps-api
+gco demo client/src/index.html 
+vim client/src/index.html 
+vp client/src/js/directives/*Graph*
+gcm "reverts webpack"
+k
+gs
+gd client/src/js/app.js 
+k
+gs
+ga package.json gulp-tasks/ client/ server/
+k
+gs
+gcm "fixes some issues from reverting"
+gp
+k
+gs
+git rebase -i HEAD~2
+gd
+gco test/
+k
+gs
+git rebase -i HEAD~2
+glg
+vim ~/.gitconfig 
+k
+glg
+k
+git reset --soft HEAD~2
+gcm "reverts webpack"
+k
+glg
+k
+./gulp
+k
+gpo -u revert-webpack:revert-webpack
+k
+./gulp
+dcup
+j dot
+j kit
+j win
+cd client/
+j dotf
+nvm_ls_current
+node --version
+j win
+cat .nvmrc 
+j kit
+j win
+j kit
+j win
+j kit
+k
+cd client/
+up
+vim bash_prompt.sh 
+k
+gd bash_prompt.sh 
+k
+gs
+gd bash_prompt.sh 
+ga bash_prompt.sh 
+gcm "fixes bash_prompt to run 'nvm use' less frequently"
+gp
+k
+gs
+gd .bash_profile 
+ga .bash_profile 
+gcm "adds new npm-related aliases in bash_profile"
+k
+gs
+gd .vimrc 
+gco .vimrc 
+k
+gs
+ga .vim/bundle/
+gcm "tweaks ir_black color scheme to have blue comments. pretty!"
+gp
+k
+j win
+gbr
+gco master
+gs
+gco dev
+ls
+j work
+mkdir starter-app
+cp -R ~/Documents/SG/projects/winward starter-app/
+cd starter-app/
+ls
+up
+mv starter-app/winward/ .
+rm -r starter-app/
+mv winward starter-app
+cd starter-app/
+git remote set-url origin git@github.com:itsthejazzkid/starter-app.git
+gs
+gbr
+gco 30
+glg
+k
+git remote -v
+gs
+gco dev
+gbr
+git merge 30
+k
+gbr
+git db l10n
+git db 30
+k
+gs
+git remove -v
+git remote -v
+k
+git stash list
+git stash show
+git stash show -p
+k
+vim paths.js 
+git stash po
+git stash pop
+k
+gs
+gd
+k
+gs
+gd paths.js 
+k
+gs
+k
+gb
+gbr
+vim docker-compose.yml 
+k
+ls
+vim Dockerfile-dev 
+vim Dockerfile-deploy 
+vim Dockerfile-dev 
+k
+gs
+k
+ls
+vim paths.js 
+k
+ls
+vim gulptasks/gulpfile.js 
+vim server/index.js 
+vim package.json 
+k
+gs
+k
+ls
+cd cll
+cd client/
+ls
+cd src/
+ls
+cl js/
+vim app.js 
+gs
+k
+ls
+vim config/app_config.js 
+k
+ls
+gs
+vim .nvmrc
+up
+jc js
+j star
+cd client/src/js/
+rm .nvmrc 
+upupup
+cd client/
+j dotf
+vim bash_prompt.sh 
+k
+j start
+gs
+ls
+cd client/
+ag Proj .
+k
+ag Proj src/
+ag Win src/
+hag sed
+hag sed
+sed -i '' -e 's/WinwardWeb/NgStarter/g' 
+sed -i '' -e 's/(WinwardWeb|ProjectName)/NgStarter/g' 
+sed -i '' -e 's/(WinwardWeb|ProjectName)/NgStarter/g' src/
+sed -i '' -e 's/(WinwardWeb|ProjectName)/NgStarter/g' src/**/*.js
+ag Win src/
+k
+hag sed
+hag sed
+sed -i '' -e 's/(WinwardWeb|ProjectName)/NgStarter/g' src/**/*.js
+sed -i '' -e 's/WinwardWeb/NgStarter/g' src/**/*.js
+ag Win src/
+sed -i '' -e 's/WinwardWeb/NgStarter/g' src/js/**/*.js
+ag Win src/js/
+ag Proj src/js/
+sed -i '' -e 's/ProjectName/NgStarter/g' src/js/**/*.js
+k
+ls
+i
+up
+vim paths.js 
+k
+ls
+vim db/seeds/development.js 
+up
+ag Win ser
+cd starter-app/
+ag Win server/
+vim server/api/swagger.yaml 
+k
+ls
+vim docker-compose.yml 
+vim Dock*
+vim docker-compose.yml 
+vim db/config.
+vim db/config.json 
+ag winw server/
+ag winw client/
+k
+ag winw client/src/
+dcup
+dcdn
+dcup
+vp dock*
+dcdn
+./gulp
+vim gulptasks/gulpfile.js
+ag Proj client/src/
+hag sed
+sed -i '' -e 's/ProjectName/NgStarter/g' client/src/
+sed -i '' -e 's/ProjectName/NgStarter/g' client/src/**/*
+ag Proj client/src/
+k
+vim client/src/js/config/app_config.js 
+vim client/src/js/app.js 
+vim gulptasks/webpack.js 
+k
+ls
+rm -rf .git
+k
+ls
+gs
+git init
+vim README.md 
+k
+git remote add origin git@github.com:itsthejazzkid/starter-app.git
+gcob NEAM
+gpo -u NEAM
+gpo -u NEAM:NEAM
+ga README.md 
+gco master
+gbr
+k
+gs
+gaa .
+k
+gcm "Initial commit for NEAM stack"
+k
+gpo -u NEAM:NEAM
+./gulp
+dcup
+j kit
+gf
+gbr
+gco kitu-dev
+vim Dockerrun.aws.json 
+vim docker-compose.yml 
+ls Dock*
+vim .ebignore 
+vim Dockerfile
+vim db/seeds/development.js 
+dcup
+vim db/seeds/development.js 
+vim gulp-tasks/watchers.js 
+vim gulp-tasks/task-helpers.js 
+k
+j work
+ls gantz.co/
+ls justanothercms/
+/Applications/_Z2 ; exit;
+j kit
+ag node-sass .
+whois
+whois aidanmil.es
+k
+vim db/config.json 
+j its
+ls
+gco start
+j start
+gcob
+gcob webpack-angular-static
+ls
+git rm dock*
+git rm Dock*
+k
+ls
+rm -rf server/
+ga server/
+git rm sqlz 
+git rm test/server/
+git rm -r test/server/
+k
+ls
+git rm -r db/
+k
+ls
+ls gulptasks/
+cd gulptasks/
+git rm backend-tests.js server.js 
+k
+ls
+up
+ls
+gcm "removes all backend files"
+k
+gs
+ls
+pwd
+j its
+ls
+cp -R ~/Documents/work/starter-app/{gulp,gulptasks} .
+ls
+vim package.json 
+cp R ~/Documents/work/starter-app/package.json .
+cp ~/Documents/work/starter-app/package.json .
+cp ~/Documents/work/starter-app/paths.js .
+cp -R ~/Documents/work/starter-app/client .
+ls client/
+k
+ls
+vim index.html 
+ls
+ls css/
+cp -R css/* client/src/scss/
+ls
+ls css/
+git rm -r css/
+ls
+k
+ls
+ls assets/
+git mv assets/ client/src/
+ls
+vim package.json 
+ls
+ls js/
+git rm js/es6-promise-2.0.0.min.js 
+mv js/ client/src/js/
+cd client/src/js/
+ls
+mv js/* .
+rm -r js/
+ls
+up
+gs
+vim .gitignore 
+k
+gs
+vim .git
+k
+ls
+vim gulpfile.js 
+git rm gulpfile.js 
+vim gulp
+k
+ls
+mv index.html client/src/templates/
+whois fridaynight.football
+whois http://fridaynight.football
+which aws
+aws --version
+pip help upgrade
+pip help update
+pip
+pip show aws-cli
+pip show aws
+pip show
+pip --version
+pyenv
+brew update
+brew doctor
+brew install pyenv
+bashp
+bashrc
+k
+pyenv install 3
+pyenv install 3.5.2
+echo $PATH
+pyenv list
+pyenv
+pyenv global
+pyenv versions
+vim ~/.pyenv/versions/
+k
+ls -l /usr/local/bin | grep '../Library/Frameworks/Python.framework/Versions/2.7'
+ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions/2.7'
+ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions'
+bashrc
+bashp
+j dot
+ag python .
+brew doctor
+rm -rf /Library/Frameworks/Python.framework
+sudo rm -rf /Library/Frameworks/Python.framework
+sudo rm -rf /Applications/Python\ 3.5/
+ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions'
+ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions' | awk '{print $9}' | tr -d @ | xargs rm
+ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions'
+sudo ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions' | awk '{print $9}' | tr -d @ | xargs rm
+ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions' | awk '{print $9}' | tr -d @
+rm /usr/local/bin/2to3
+ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions' | awk '{print $9}' | tr -d @
+ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions' | awk '{print $9}' | tr -d @ | xargs echo
+ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions' | awk '{print $9}' | tr -d @ | xargs rm
+cd /usr/local/bin && ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions' | awk '{print $9}' | tr -d @ | xargs rm
+cd
+k
+j dotf
+ag Python .
+k
+echo $PATH
+cd
+ls
+man ag
+ag --depth 1 PATH .
+ag --depth 1 Python .
+k
+ag --depth 2 Python .
+k
+ag "Library/Frameworks/Python.framework/Versions" . --depth 3
+ag --depth 3 "Library/Frameworks/Python.framework/Versions" .
+ag --depth 2 "Library/Frameworks/Python.framework/Versions" .
+ag -a --depth 2 "Library/Frameworks/Python.framework/Versions" .
+bashrc
+echo $PATH
+brew doctor
+cd
+la
+pyenv install 3.5.2
+ag --depth 1 -a Python .
+ag --depth 1 -al Python .
+#ag --depth 1 -al Python .
+man ag
+vim .adn_locals 
+k
+ag -g --depth 3 Python /Library/
+ag -g --depth 2 Python /Library/
+ag -g --depth 1 Python /Library/
+k
+pyenv list
+pyenv
+pyenv versions
+pyenv which
+which pyenv
+pyenv global
+k
+k
+pyenv uninstall 3.5
+pyenv install 3.5
+brew update
+brew upgrade pyenv
+pyenv install 3.5.2
+xcode-select --install
+gs
+mv client/src/templates/index.html client/src/
+git mv client/src/index.html client/src/templates/
+k
+pyenv install 3.5.2
+vim .aws/credentials 
+pyenv install --list
+k
+which pip
+pyenv
+pyenv verisons
+pyenv versions
+python global 3.5.2
+pyenv global 3.5.2
+k
+vim .pyenv/version
+pyenv versions
+pyenv use system
+pip install awscli
+pip install --upgrade pip
+ls -l ~/Library/Caches/
+man chown
+whoami
+chown ADN ~/Library/Caches/pip/
+sudo chown ADN ~/Library/Caches/pip/
+ls -l ~/Library/Caches/
+k
+j its
+gs
+gcob webpack
+k
+gs
+gcm "webpack: moves assets into client/src/assets, moves css into client/src/scss, removes gulpfile"
+k
+gs
+ga index.html client/src/index.html 
+k
+gs
+git mv client/src/index.html client/src/templates/
+k
+gs
+git reset
+k
+gs
+ls client/src/vendor/
+vim client/src/vendor/angular-swagger-client.js 
+k
+ls
+cd client/src/templates/
+ls
+git mv index.html main.html
+mv index.html main.html
+up
+ls
+cd src/js/
+ls
+vp app.js hire-me.js 
+gm hire-me.*
+rm hire-me.*
+rm spinner.js 
+rm velocity.min.js 
+k
+ls
+vim app.js 
+hag sed
+k
+upup
+up
+sed -i '' -e 's/NgStarter/aidanmil\.es/g' client/src/**/*
+sed -i '' -e 's/NgStarter/aidanmil.es/g' client/src/**/*
+ag NgStarter client/src/**/*
+sed -i '' -e 's/NgStarter/aidanmil.es/g' client/src/**/*
+sed -i '' -e 's/NgStarter/aidanmil\.es/g' client/src/**/*
+sed -i '' -e 's/NgStarter/aidanmil\\.es/g' client/src/**/*
+sed -i '' -e 's/NgStarter/aidanmil\\\.es/g' client/src/**/*
+hag sed
+k
+cd client/src/js/
+ls
+ls config/
+git rm config/translate_catalog.js 
+ls directives/
+ls services/
+cd services/
+up
+git rm services/*
+up
+git rm services/*
+cd js/
+ls services/
+rm services/*
+k
+ls
+ls routes/
+mv routes/main.routes.js
+mv routes/auth.routes.js routes/main.routes.js
+ls con
+ls controllers/
+rm controllers/*
+upupup
+cd client/
+cd src/
+hag sed
+sed -i '' -e 's/NgStarter/aidanmil\.es/g' client/src/**/*
+sed -i '' -e 's/NgStarter/aidanmil\.es/g' ./**/*
+$(LANG=C && sed -i '' -e 's/NgStarter/aidanmil\.es/g' ./**/*)
+ls -R .
+$(LANG=C && sed -i '' -e 's/NgStarter/aidanmil\.es/g' ./**/*.{js,scss})
+ag ngstart .
+ag aidanm .
+vim js/routes/main.routes.js 
+ag NgSt .
+k
+k
+$(LANG=C && sed -i '' -e 's/NgStarter/aidanmil\.es/g' ./**/*.{js,scss})
+LANG=C && sed -i '' -e 's/NgStarter/aidanmil\.es/g' ./**/*.{js,scss}
+ag NgS .
+LANG=C && sed -i '' -e 's/NgStarter/aidanmil\.es/g' js/**/*.js
+ag NgS .
+LANG=C && sed -i '' -e 's/NgStarter/aidanmil\.es/g' scss/*.scss
+k
+vim js/app.js 
+vim TODO
+k
+ls
+ls client/src/assets/
+mv client/src/assets/*.ai illustrator/
+ls client/src/assets/
+up
+cd -
+ls
+vim gulptasks/install.js 
+k
+ls
+ls gulptasks/
+k
+vim js/app.js 
+LANG=C && sed -i '' -e 's/NgStarter/aidanmil\.es/g' scss/*.scss
+sed -i '' -e 's/aidanmil\.es/aidanmil_es/g' js/**/*.js
+g aidanmil_es .
+ag aidanmil_es .
+rm js/config/translate_catalog.js 
+up
+ag aidanmil\.es .
+ag aidanmil\\\.es .
+ag aidanmil\.es .
+k
+sed -i '' -e 's/aidanmil\.es/aidanmil_es/g' js/*.js
+sed -i '' -e 's/aidanmil\.es/aidanmil_es/g' client/src/js/*.js
+ag aidanmil\\\.es
+cd client/src/scss/
+ls
+rm hire-me.css.map 
+rm spinner.*
+ls
+vim main.scss 
+k
+ls
+up
+ls cli
+ls 
+ls src/
+ls src/assets/
+vim src/scss/hire-me.css 
+k
+up
+./gulp
+vim package.json 
+npm ls minimatch
+ni
+k
+./gulp
+k
+up
+vim package.json 
+k
+vim gulptasks/install.js 
+./gulp
+ag server gulptasks/
+vim ls client/src/assets/
+ls client/src/assets/
+k
+./gulp
+rm client/src/vendor/angular-swagger-client.js 
+k
+ni
+nisd node-sass
+k
+nisd url-loader file-loader
+./gulp
+ls client/dist/
+vim client/dist/index.html 
+ag winward .
+vim package.json 
+./gulp build
+ls client/dist/
+rm client/dist/win*
+vim client/dist/aidanmil_es.bundle.js
+mv client/src/scss/hire-me.css client/src/scss/hire-me.scss
+./gulp
+ls ~/Documents/work/resources/reset.css 
+cp ~/Documents/work/resources/reset.css client/src/scss/
+mv client/src/scss/reset.css client/src/scss/reset.scss
+k
+vim client/src/scss/hire-me.scss 
+./gulp build --production
+ls client/dist/
+vim package.json 
+nisd csso-loader
+./gulp build --production
+node
+ls client/src/scss/
+ls client/dist/
+rm client/dist/*.js*
+ls client/dist/
+./gulp build --production
+open client/dist/index.html 
+k
+gs
+vim TODO
+rm TODO 
+vim package.json 
+gaa .
+k
+gcm "hasty commit; webpack can build the site correctly"
+gp
+k
+man readlink
+readlink -n .
+readlink .
+readlink
+chmod u+x s3_deploy.sh 
+./s3_deploy.sh 
+k
+./s3_deploy.sh 
+open client/dist/
+open client/dist/index.html 
+./gulp build --production
+k
+./s3_deploy.sh 
+dig +recurse +trace aidanmil.es any
+ls
+git rm CNAME 
+k
+ls
+gcm "removes CNAME file"
+k
+gs
+gd gulptasks/
+ga gulptasks/
+k
+gs
+gcm "fixes webpack to only include devServer script tag when needed"
+k
+gs
+ga s3_deploy.sh 
+gcm "adds script to deploy to s3"
+k
+gp
+gbr
+gf
+git db mobile
+git db gulp
+k
+ls
+gs
+gbr
+gco master
+git merge webpack
+k
+gs
+gp
+k
+up
+k
+vim s3_deploy.sh
+k
+vp paths.js gulptasks/webpack.js 
+k
+j its
+up
+mv itsthejazzkid.github.io/ aidanmil.es
+cd aidanmil
+rm -r AidanMilesPanEdChallenge*
+cd aidanmil.es/
+ls
+j start
+gbr
+cp ~/Documents/work/aidanmil.es/paths.js .
+cp ~/Documents/work/aidanmil.es/package.json .
+g
+gd
+k
+cp ~/Documents/work/aidanmil.es/gulptasks/* gulptasks/
+gd
+k
+cp ~/Documents/work/aidanmil.es/client/src/js/app.js .
+gd client/src/js/app.js 
+ls sass/
+vim sass/hire-me.scss 
+cp sass/hire-me.scss client/src/scss/
+gd
+vim client/src/scss/hire-me.scss 
+k
+ls
+ls client/src/
+ls client/src/js/
+ls -R client/src/js/
+cd client/src/js/services/
+rm authService.js feedback_service.js swagger_service.js d3Service.js httpInterceptor.js swagger_client.js utilsService.js 
+up
+ls
+ls controllers/
+rm controllers/localization_example_controller.js 
+k
+ls -R .
+rm config/translate_catalog.js 
+k
+ls
+up
+ls scss/
+vim scss/main.scss 
+k
+ls
+ls
+k
+gd
+k
+ga
+gs
+ga client/
+gcm "replaces hire-me.scss with original scss file, which i forgot about"
+k
+gs
+gp
+ls
+k
+ls
+up
+gs
+vim app.js 
+ls client/src/js/app.js 
+vim client/src/js/app.js
+k
+ls
+gs
+rm app.js 
+k
+ls
+vim gulptasks/gulpfile.js 
+ag Swagg .
+vp $(ag -l Swagg .)
+rm client/src/vendor/angular-swagger-client.js 
+k
+ls
+gs
+gaa .
+gcm "removes fluff, fixes gulp tasks"
+k
+dig +recurse +trace aidanmil.es any
+dig aidanmil.es.s3-website-us-west-2.amazonaws.com
+k
+./gulp
+k
+ls
+gpo -u
+gpo -u webpack-angular-static
+dig aidanmil.es
+./gulp
+k
+j start
+gbr
+up
+cp -R starter-app gantz_site
+cd gantz_site/
+k
+up
+k
+whois gantz.co
+k
+vim Gulpfile.js 
+rm Gulpfile.js 
+ls gantz.co/
+la gantz.co/
+rm -r gantz.co/
+cd gantz_site/
+ls
+rm -rf .git
+ls
+vim paths.js 
+ls
+up
+whois gantz.co
+j wor
+ls
+mv gantz_site/ gantz
+cd gulp dev:ionic
+cd gantz/
+ls
+rm client/src/templates/localization_example.html 
+hag sed
+hag sed
+sed -i '' -e 's/aidanmil\.es/aidanmil_es/g' client/src/js/*.js
+sed -i '' -e 's/NgStarter/gantz\.co/g' client/src/js/*.js
+ag NgSt .
+ls client/
+sed -i '' -e 's/NgStarter/gantz\.co/g' client/src/js/**/*
+ag NgSt .
+ag starter .
+k
+vim README.md 
+vp client/src/js/app.js client/src/js/controllers/hello_controller.js client/src/templates/hello.html 
+k
+up
+k
+k
+ls
+vs
+pyenv list
+pyenv show
+brew install ansible
+pyenv
+pyenv global
+pyenv versions
+pyenv install 2.7
+pyenv versions
+pyenv local 2.7
+pyenv global 2.7
+pip install boto
+j resour
+git clone https://github.com/jlund/streisand.git && cd streisand
+./streisand 
+brew install openconnect
+mkdir ~/.streisand
+cd ~/.streisand
+vim ~/.aws/credentials 
+mv ~/Downloads/chrome\ DLs/c* .
+ls
+vim streisand-connect.sh
+chmod u+x streisand-connect.sh 
+./streisand-connect.sh
+vim streisand-connect.sh 
+./streisand-connect.sh 
+bashp
+k
+./streisand-connect.sh
+vpn
+bashp
+lcls
+j dot
+vim bash_prompt.sh 
+bashp
+bashrc
+ag DIR .
+vpn
+vim ~/.streisand/streisand-connect.sh 
+vpn
+vim ~/.streisand/streisand-connect.sh 
+./gulp
+vpn
+k
+vpn
+vp client/src/js/app.js client/src/js/controllers/hello_controller.js client/src/templates/hello.html 
+vim ~/.streisand/streisand-connect.sh 
+vim ~/Desktop/lastpass.csv
+k
+vpn
+j dot
+./test.sh 
+echo $?
+ag autojump .
+ag -a --hidden autojump .
+ag -a --hidden npm-glob .
+hag pyenv
+vim test.sh 
+man curl
+command -v nvm
+k
+k
+vim setup.sh 
+ls
+la
+ls .bash
+rm -r .bash
+y
+ls .rbenv/
+ls .pyenv/
+ls .local/
+k
+la
+ls .cups/lpoptions 
+vim .cups/lpoptions
+vim .npmrc 
+cd dotfiles/
+cp ~/.npmrc .
+vim setup.sh 
+k
+gs
+ga .npmrc 
+gcm "adds npmrc"
+k
+gs
+gd bash_prompt.sh 
+k
+gs
+ga bash_prompt.sh 
+gcm "fixes spacing, comments, in bash_prompt"
+k
+gs
+gd .bashrc 
+vim .bashrc 
+k
+gs
+bashp
+k
+ls
+gp
+k
+la
+ls .lein/
+vim .netrc 
+vim .mongorc.js 
+vim .slate 
+ls
+vp .slate dotfiles/
+cp .slate dotfiles/
+k
+ls
+k
+gs
+gd .slate 
+gco .slate 
+k
+vim setup.sh 
+k
+k
+la
+ls .nvm/
+vim setup.sh 
+gs
+gd setup.sh 
+k
+gs
+ga setup.sh 
+gcm "setup.sh gets a makeover"
+k
+gs
+gp
+ls
+k
+gs
+vim test.sh 
+gd .bash
+gd .bashrc 
+ga .bashrc
+gcm "adds pyenv / rbenv inits to bashrc"
+k
+ls
+k
+gp
+k
+la
+vim .rnd 
+ls .streisand/
+cp .aws/ .ssh/ .streisand/ Dropbox/
+man cp
+k
+cp -R .aws .ssh .streisand Dropbox/
+la Dropbox/
+k
+la
+vim .adn_locals 
+cp .adn_locals Dropbox/
+ls .m2/
+vim .viminfo 
+ls .config/
+k
+ls
+j dot__
+l
+sls
+ls
+gs
