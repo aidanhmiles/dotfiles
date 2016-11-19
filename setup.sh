@@ -21,6 +21,12 @@ for fname in "${files[@]}"; do
   ln -sF $HOME/dotfiles/${fname}
 done
 
+if hash git 2>/dev/null; then
+  # have git
+else
+  xcode-select --install
+fi
+
 #### Install tools
 
 echo ""
@@ -30,7 +36,7 @@ echo "Installing Homebrew"
 echo ""
 echo "Installing NVM"
 # NVM
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.3/install.sh | bash 
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash 
 
 echo ""
 echo "Installing Node v6"
