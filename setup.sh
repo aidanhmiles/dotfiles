@@ -4,7 +4,6 @@
 readonly checked=false
 [[ $checked != true ]] && exit 1;
 
-
 readonly files=(
 .bash_history
 .bash_profile
@@ -23,35 +22,55 @@ for fname in "${files[@]}"; do
   ln -sF $HOME/dotfiles/${fname}
 done
 
-# make sure this is accurate before running!
-# cd /Applications && curl http://www.ninjamonkeysoftware.com/slate/versions/slate-latest.tar.gz | tar -xz
+#### Install tools
 
-#### Version / env managers ####
+echo ""
+echo "Installing Homebrew"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+echo ""
+echo "Installing NVM"
 # NVM
-# curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.3/install.sh | bash 
 
-# PYENV
-# brew install pyenv
+echo ""
+echo "Installing Node v6"
+nvm install 6
 
-# RBENV
-# brew install rbenv
+echo ""
+echo "Updating Homebrew"
+brew update
+echo "Installing Homebrew tools"
+brew install \
+  bash \
+  vim \
+  pyenv \
+  rbenv \
+  autojump \
+  the_silver_searcher \
+  openconnect
 
-#### Other Tools ####
-# Iterm
-# https://iterm2.com/downloads/stable/iTerm2-3_0_4.zip
-# $(cd $HOME/Downloads && curl -O https://iterm2.com/downloads/stable/iTerm2-3_0_4.zip)
+echo "cat /usr/local/bin/bash > /etc/shells"
+cat /usr/local/bin/bash > /etc/shells
 
-# autojump
-# brew install autojump
-
-# ag
-# https://github.com/ggreer/the_silver_searcher
-# brew install the_silver_searcher
-
+echo "mkdir ~/npm-global"
 # other dirs
-# mkdirp ~/npm-global
-# mkdirp ~/local/bin
+mkdir ~/npm-global
+echo "mkdir ~/local/bin"
+mkdir -p ~/local/bin
 
 # inconsolata
 # http://levien.com/type/myfonts/inconsolata.html
+# but it should be in Sync
+
+SETUP_FILES=(
+"$HOME/dotfiles/_prefs.sh"
+"$HOME/dotfiles/_install_vim_plugins.sh"
+)
+
+for file in ${SETUP_FILES[@]}; do
+  . $file
+done
+
+exit 0;
 
