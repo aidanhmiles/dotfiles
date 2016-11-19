@@ -4,7 +4,7 @@
 [credential]
 	helper = osxkeychain
 [core]
-	editor = vim -w
+	editor = vim
 	excludesfile = ~/.gitignore_global
 [push]
 	default = upstream
