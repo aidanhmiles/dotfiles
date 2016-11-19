@@ -33,8 +33,10 @@ inoremap kj <esc>
 " toggle numbers on/off, for ease of copy-paste
 " noremap <leader>n :set nu!<cr>
 
-" default to having numbers on
-set number
+" default to having relative numbers on
+set relativenumber
+" replaces 0 on current line with current line number
+set number 
 
 " yay syntax highlighting
 filetype plugin indent on
@@ -82,8 +84,12 @@ set pastetoggle=<c-t>
 
 set fileencoding=utf-8
 
-" sweet color scheme
+" dark color scheme
 colorscheme ir_black
+
+" light color scheme
+" colorscheme solarized
+" colorscheme earendel
 
 " only redraw when have to
 " this is a little weird
@@ -103,6 +109,13 @@ set showtabline=2
 "}}}
 " PLUGIN OPTS {{{
 "
+
+
+" INDENT GUIDES
+"===================================
+let g:indentLine_char = '|'
+let g:indentLine_color_term = 24
+" let g:indentLine_color_term = 255
 
 " Taboo
 " setting tab names
@@ -126,6 +139,12 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
+
+let g:ackprg = 'ag --vimgrep --smart-case'
+cnoreabbrev ag Ack
+cnoreabbrev aG Ack
+cnoreabbrev Ag Ack
+cnoreabbrev AG Ack
 
 "SuperTab
 "===================================
@@ -221,6 +240,12 @@ nnoremap <leader><leader> :nohl<cr>
 nnoremap <leader>u <c-r>
 
 "}}}
+" CTRL SHORTCUTS {{{
+
+nnoremap <c-j> ddjP
+nnoremap <c-k> ddkP
+
+"}}}
 " VISUAL MODE {{{
 " visual block mode
 nnoremap <leader>v <c-v>
@@ -235,7 +260,7 @@ vnoremap <leader><leader> <esc>
 set tabstop=4 expandtab shiftwidth=4 softtabstop=4
 "except in the following
 autocmd filetype ruby,haml,erb,eruby set tabstop=2 expandtab shiftwidth=2 softtabstop=2
-autocmd filetype javascript,js,jasmine set tabstop=2 expandtab shiftwidth=2 softtabstop=2
+autocmd filetype javascript,js,ts,jasmine set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd filetype sh,bash set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd filetype html,css,scss set tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
@@ -276,6 +301,8 @@ set linebreak
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 
 autocmd filetype vim setlocal foldmethod=marker
+
+let python_highlight_all = 1
 
 
 " shortcut for setting syntax; mostly this is for Vim Anywhere
@@ -341,6 +368,23 @@ function! ToggleFocus()
 endfunction
 
 nnoremap <leader>f :Focus<CR>
+
+" Color scheme changes
+let g:nightmode_on = 0
+command! Nightmode call ToggleNightmode()
+function! ToggleNightmode()
+    if g:nightmode_on
+        colorscheme ir_black 
+        set background=dark
+        let g:indentLine_color_term = 23
+        let g:nightmode_on = 0
+    else
+        colorscheme earendel
+        set background=light
+        let g:indentLine_color_term = 255
+        let g:nightmode_on = 1
+    endif
+endfunction
 
 " SPACES TO TABS IN CURRENT FILE:
 " set noet
