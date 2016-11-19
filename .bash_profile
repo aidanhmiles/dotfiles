@@ -53,12 +53,13 @@ alias gpuo="git pull origin"
 alias gpuom="git pull origin master"
 alias gs="git status -sb"
 alias gst="git status"
+alias grb="git rebase"
 
 # alias gmb="git merge ???" 
 alias gbhreset="git co -- .bash_history"
 
 # my non-synced list of profile-related configuratons
-alias lcls="vim ~/.adn_locals"
+alias lcls="vim $HOME/.adn_locals"
 
 # why not?
 alias up="cd .."
@@ -74,6 +75,10 @@ alias dcdn="docker-compose down"
 alias dcb="docker-compose build"
 alias dc="docker-compose"
 
+# Python
+alias py="python"
+alias py3="python3"
+
 # Node / npm
 alias ni="npm install"
 alias nu="npm uninstall"
@@ -86,6 +91,8 @@ alias nup="npm update"
 alias nups="npm update --save"
 alias nupsd="npm update --save-dev"
 
+# alias rr="kill -9 $(cat tmp/pids/server.pid); rails server -d"
+
 # "scratch paper"
 alias scratch="vim ~/Desktop/scratch"
 
@@ -93,8 +100,8 @@ alias hag="history | ag"
 
 
 source $HOME/dotfiles/bash_prompt.sh
-source ~/.bashrc 
-source ~/.adn_locals
+source $HOME/.bashrc
+source $HOME/.adn_locals
 
 # some functions
 # useful combo of cd and ls
