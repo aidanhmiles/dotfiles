@@ -15,7 +15,6 @@ readonly files=(
 .vimrc
 .vim
 .npmrc
-.slate
 )
 
 for fname in "${files[@]}"; do
