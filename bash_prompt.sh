@@ -27,7 +27,7 @@ GIT_SYMBOLS=(
   ["PREHASH"]=":"
   ["BEHIND"]="↓"
   ["AHEAD"]="↑"
-  ["CLEAN"]="✓"
+  ["CLEAN"]="$"
   ["UNTRACKED"]="?"
   ["REMOTE"]=" "
   ["NO_REMOTE"]="L"
@@ -156,8 +156,8 @@ build_git_prompt_string(){
 		repo_info+="$num_changed"
 		repo_info+="$num_untracked"
 		repo_info+="$num_stashed"
-		repo_info+="$INTENSEBLACK${GIT_SYMBOLS["SUFFIX"]}"
     repo_info+="$is_clean"
+		repo_info+="$INTENSEBLACK${GIT_SYMBOLS["SUFFIX"]}"
 
 		# assign to var for prompt
     GIT_STATUS="$branch_info$repo_info"
@@ -175,7 +175,7 @@ main (){
 
   if [[ -e "package.json" ]]; then
     build_node_version_string
-    NODE_STRING="$GREEN$NODE_STRING$RESETCOLOR"
+    NODE_STRING="$BOLD_GREEN$NODE_STRING$RESETCOLOR"
   else 
     unset NODE_STRING
   fi 
@@ -189,13 +189,13 @@ main (){
 
   prompt_string=""
   # add extra space
-  prompt_string+="$PURPLE$user_string "
-  prompt_string+="$YELLOW$dir_string "
+  prompt_string+="$BOLD_PURPLE$user_string "
+  prompt_string+="$BOLD_YELLOW$dir_string "
   # if NODE_STRING is set, yield the NODE_STRING string plus a space
   prompt_string+=${NODE_STRING:+"$NODE_STRING "}
   # if GIT_STATUS is set, yield the GIT_STATUS string plus a space
   prompt_string+=${GIT_STATUS:+"$GIT_STATUS "}
-  prompt_string+=$BOLD_RED$PROMPT_SYMBOL
+  prompt_string+=$RED$PROMPT_SYMBOL
   prompt_string+=$RESETCOLOR
   export PS1=${prompt_string}
 
