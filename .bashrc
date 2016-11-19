@@ -12,8 +12,10 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # for node / npm
 export PATH="$HOME/.npm/**/bin:$PATH" 
 export CHROME_BIN="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" 
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH=.bundle/binstubs:$PATH 
+
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
