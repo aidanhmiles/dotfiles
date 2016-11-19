@@ -128,11 +128,8 @@ vo() {
     vim -O "$@"
 }
 
-ghkeygen(){
-    ssh-keygen -t rsa 4096 -C "itsthejazzkid@gmail.com"
-}
-
-ghkeysetupandcopy(){
+ghkeygen() {
+    ssh-keygen -t rsa -b 4096 -C "itsthejazzkid@gmail.com"
     ssh-add ~/.ssh/id_rsa
     pbcopy < ~/.ssh/id_rsa.pub
 }
