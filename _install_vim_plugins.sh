@@ -21,7 +21,7 @@ main (){
     echo ""
     name="$(basename ${url})"
     echo "installing ${name}"
-    localpath="~/.vim/bundle/$name"
+    localpath="$HOME/.vim/bundle/$name"
     files=($localpath/*)
 
     if [ ${#files[@]} -gt 0 ]; then
@@ -30,10 +30,10 @@ main (){
       rm -rfv $localpath
     fi
 
+    echo "git clone https://github.com/$url.git $localpath"
     git clone https://github.com/$url.git $localpath
   done
 
-  exit 0;
 }
 
 main
