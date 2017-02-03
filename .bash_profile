@@ -23,11 +23,12 @@ alias vimrc="vim ~/dotfiles/.vimrc"
 # changing bash commands
 alias la="ls -a" 
 alias ls="ls -FG"
+alias ll="ls -lS"
 alias del="mv $* ~/.Trash"
 alias k="clear"
 alias mkdrp="mkdir -p"
 
-alias mvim="/Applications/MacVim.app/contents/MacOS/MacVim"
+# alias mvim="/Applications/MacVim.app/contents/MacOS/MacVim"
 
 # shortcuts
 alias be="bundle exec"
@@ -52,11 +53,15 @@ alias gpu="git pull"
 alias gpuo="git pull origin"
 alias gpuom="git pull origin master"
 alias gs="git status -sb"
-alias gst="git status"
+alias gst="git stash"
+alias gstp="git stash pop"
 alias grb="git rebase"
+gdc() {
+  git diff "$1^" "$1"
+}
 
 # alias gmb="git merge ???" 
-alias gbhreset="git co -- .bash_history"
+# alias gbhreset="git co -- .bash_history"
 
 # my non-synced list of profile-related configuratons
 alias lcls="vim $HOME/.adn_locals"
@@ -98,6 +103,7 @@ alias scratch="vim ~/Desktop/scratch"
 
 alias hag="history | ag"
 
+alias sqldn="mysqladmin -u root shutdown"
 
 source $HOME/dotfiles/bash_prompt.sh
 source $HOME/.bashrc
@@ -133,6 +139,12 @@ ghkeygen() {
     ssh-add ~/.ssh/id_rsa
     pbcopy < ~/.ssh/id_rsa.pub
 }
+
+# bbkeygen() {
+#     ssh-keygen -t rsa -b 4096 -C ""
+#     ssh-add ~/.ssh/id_rsa
+#     pbcopy < ~/.ssh/id_rsa.pub
+# }
 
 # WINDOW RENAMING
 
