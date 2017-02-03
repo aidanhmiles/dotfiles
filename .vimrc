@@ -260,9 +260,10 @@ vnoremap <leader><leader> <esc>
 set tabstop=4 expandtab shiftwidth=4 softtabstop=4
 "except in the following
 autocmd filetype ruby,haml,erb,eruby set tabstop=2 expandtab shiftwidth=2 softtabstop=2
-autocmd filetype javascript,js,ts,jasmine set tabstop=2 expandtab shiftwidth=2 softtabstop=2
+autocmd filetype javascript,js,ts,jasmine,jade,pug set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd filetype sh,bash set tabstop=2 expandtab shiftwidth=2 softtabstop=2
-autocmd filetype html,css,scss set tabstop=4 expandtab shiftwidth=4 softtabstop=4
+autocmd filetype html set tabstop=4 expandtab shiftwidth=4 softtabstop=4
+autocmd filetype css,scss set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
 "let enter add a space below, and backspace add a space above
 nnoremap <leader><cr> o<esc>
