@@ -18,14 +18,9 @@ readonly files=(
 )
 
 for fname in "${files[@]}"; do
-  ln -sF $HOME/dotfiles/${fname}
+  ln -sF $HOME/dotfiles/${fname} $HOME/
 done
 
-if hash git 2>/dev/null; then
-  # have git
-else
-  xcode-select --install
-fi
 
 #### Install tools
 
@@ -69,7 +64,7 @@ mkdir -p ~/local/bin
 # but it should be in Sync
 
 SETUP_FILES=(
-"$HOME/dotfiles/_prefs.sh"
+# "$HOME/dotfiles/_prefs.sh"
 "$HOME/dotfiles/_install_vim_plugins.sh"
 )
 
