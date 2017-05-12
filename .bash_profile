@@ -65,7 +65,7 @@ gdc() {
   git diff "$1^" "$1"
 }
 gamend() {
-  git commit --amend -m  "!$"
+  git commit --amend -m  "$@"
 }
 
 # alias gmb="git merge ???" 
