@@ -105,6 +105,8 @@ nnoremap gV `[v`]
 set laststatus=2
 " Always display the tabline, even if there is only one tab
 set showtabline=2
+let g:airline#extensions#tabline#enabled = 1
+  
 
 "}}}
 " PLUGIN OPTS {{{
@@ -119,6 +121,7 @@ let g:indentLine_color_term = 24
 
 " Taboo
 " setting tab names
+let g:taboo_tab_format = "| %N%m %f "
 noremap <leader>r :TabooRename 
 
 "CTRL-P
