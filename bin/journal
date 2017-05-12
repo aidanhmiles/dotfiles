@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# TODO
+# - tags
+# - journal-dump to a file
+# -
+
 journal_temp_dir="/tmp/adn_journal" 
 s3_bucket_url="s3://thoughtsgohere/journal/"
 
@@ -31,6 +36,7 @@ make_journal () {
     echo "Entering vim"
     vim $full_path
   else
+    clear
     # Use cat for 'short' input.
     # Add -s for single-spacing lines
     cat -s > "$full_path"
