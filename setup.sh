@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+### TODO:
+# install python and awsclie
+# pip install --upgrade --user awscli
+
 # stays false in source control so it can't be run immediately after cloning 
 readonly checked=false
 [[ $checked != true ]] && exit 1;
