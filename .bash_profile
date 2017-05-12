@@ -33,6 +33,7 @@ alias mkdrp="mkdir -p"
 # shortcuts
 alias be="bundle exec"
 alias bi="bundle install"
+
 # GIT
 alias ga="git add"
 alias gaa="git add -A" 
@@ -50,14 +51,21 @@ alias gpog="git push origin gh-pages"
 alias gpom="git push origin master"
 alias gpo="git push origin"
 alias gpu="git pull"
+alias gpur="git pull --rebase"
 alias gpuo="git pull origin"
 alias gpuom="git pull origin master"
 alias gs="git status -sb"
 alias gst="git stash"
 alias gstp="git stash pop"
 alias grb="git rebase"
+alias gcp="git cherry-pick"
+alias gbag="git branch | ag"
+# show the changes applied by one commit by comparing to its parent
 gdc() {
   git diff "$1^" "$1"
+}
+gamend() {
+  git commit --amend -m  "!$"
 }
 
 # alias gmb="git merge ???" 
@@ -105,12 +113,13 @@ alias hag="history | ag"
 
 alias sqldn="mysqladmin -u root shutdown"
 
+# Get the rest of my stuff
 source $HOME/dotfiles/bash_prompt.sh
 source $HOME/.bashrc
 source $HOME/.adn_locals
 
-# some functions
-# useful combo of cd and ls
+# Some useful combos and other functions
+# cd and then ls
 cl() {
     cd "$@" && ls
 }
@@ -135,7 +144,7 @@ vo() {
 }
 
 ghkeygen() {
-    ssh-keygen -t rsa -b 4096 -C "itsthejazzkid@gmail.com"
+    ssh-keygen -t rsa -b 4096 -C "aidanhmiles@gmail.com"
     ssh-add ~/.ssh/id_rsa
     pbcopy < ~/.ssh/id_rsa.pub
 }
@@ -158,3 +167,6 @@ setTerminalText () {
 rename_both   () { setTerminalText 0 $@; }
 rename_tab    () { setTerminalText 1 $@; }
 rename_window () { setTerminalText 2 $@; }
+
+
+
