@@ -15,7 +15,7 @@ make_journal () {
     case $longshort in
         [Ll]* ) mode="long"; break;;
         [Ss]* ) mode="short"; break;;
-        * ) echo "[Ll] for long [Ss] for short";;
+            * ) echo "[Ll] for long [Ss] for short";;
     esac
   done
 
@@ -23,6 +23,7 @@ make_journal () {
   full_path="$journal_temp_dir/$filename"
 
   if [[ -d $journal_temp_dir ]]; then
+    # do nothing
     echo ""
   else
     mkdir "$journal_temp_dir"
@@ -37,15 +38,14 @@ make_journal () {
     vim $full_path
   else
     clear
-    # Use cat for 'short' input.
+    # Use cat on STDIN for 'short' input.
     # Add -s for single-spacing lines
     cat -s > "$full_path"
-    # IFS= read -r var
-    
-    # echo "$var" > $full_path
+
+    # Don't leave any text on the screen while saving
+    clear
   fi
 
-  echo "" 
   echo "Saving $filename to S3"
 
   if [[ $(aws --profile journaler s3 cp "$full_path" "$s3_bucket_url") ]]; then
@@ -56,6 +56,8 @@ make_journal () {
   else
     echo "Not saved. Try again manually with aws s3 cp <local path> s3://<bucket>"
   fi
+
+  clear
 
 }
 
