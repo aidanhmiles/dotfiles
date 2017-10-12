@@ -43,7 +43,8 @@ make_journal () {
     cat -s > "$full_path"
 
     # Don't leave any text on the screen while saving
-    clear
+    # Insert iTerm's CMD+K escape sequence
+    echo -e '\u001b]1337;ClearScrollback\u0007'
   fi
 
   echo "Saving $filename to S3"
@@ -57,6 +58,8 @@ make_journal () {
     echo "Not saved. Try again manually with aws s3 cp <local path> s3://<bucket>"
   fi
 
+  # Insert iTerm's CMD+K escape sequence
+  echo -e '\u001b]1337;ClearScrollback\u0007'
   clear
 
 }
