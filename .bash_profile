@@ -88,6 +88,12 @@ alias dcdn="docker-compose down"
 alias dcb="docker-compose build"
 alias dc="docker-compose"
 
+# Vagrant
+alias vup="vagrant up"
+alias vupp="vagrant up --provision"
+alias vsh="vagrant ssh"
+alias vdestroy="vagrant destroy"
+
 # Python
 alias py="python"
 alias py3="python3"
@@ -112,6 +118,8 @@ alias scratch="vim ~/Desktop/scratch"
 alias hag="history | ag"
 
 alias sqldn="mysqladmin -u root shutdown"
+
+alias whatsmyip="netstat -at"
 
 # Get the rest of my stuff
 source $HOME/dotfiles/bash_prompt.sh
