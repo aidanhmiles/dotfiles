@@ -30,5 +30,9 @@ export NVM_DIR="$HOME/.nvm"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
+#add the Python dir (includes AWS CLI)
+# export PATH="$PATH:$HOME/.pyenv/versions/3.5.2/bin"
+
+
 # Add my own scripts n stuff
 export PATH="$PATH:$HOME/dotfiles/bin"
