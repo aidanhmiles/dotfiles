@@ -262,7 +262,7 @@ vnoremap <leader><leader> <esc>
 "tabs are 4 spaces
 set tabstop=4 expandtab shiftwidth=4 softtabstop=4
 "except in the following
-autocmd filetype ruby,haml,erb,eruby set tabstop=2 expandtab shiftwidth=2 softtabstop=2
+autocmd filetype ruby,yaml,haml,erb,eruby set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd filetype javascript,js,ts,jasmine,jade,pug set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd filetype sh,bash set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd filetype html set tabstop=4 expandtab shiftwidth=4 softtabstop=4
@@ -362,6 +362,7 @@ function! ToggleFocus()
 		let b:set_focus = 0
 	else
 		setlocal nonu
+		setlocal nornu
 		setlocal laststatus=0
 		setlocal noshowcmd
 		setlocal list
