@@ -1,10090 +1,10016 @@
-git stash pop
-gd
-gco .
-c
+glg
 gs
-gco 845
-gulp dev:web
-vim client/public/modules/core/views/header.ionic.html 
-gs
-gco .
-c
-gs
-gco development
-c
-gs
-gbr
-gco more-ionic-bugs
-jc ion
-gs
-git rebase development
-gco development
-gpu
-gco more-ionic-bugs
-git rebase development
-ionic emulate ios -lc
-gulp dev:ionic
-gs
-c
-gs
-upup
-gco 845
-gulp dev:web
-upup
-cd client/public/
-c
-ls
-ag -g header .
-c
-gs
-gco ..
-gco .
-c
-gs
-vim modules/holospace/controllers/holospace-header.controller.js 
-gs
-gco .
-vim modules/core/views/header.ionic.html 
-c
-gs
-gd
-c
-gs
-gaa .
-gcm "fix to pull profilePhoto from correct controller"
-c
-gs
-gpo -f 845:feature/HOL-845
-gs
-gco development
-gpu
-gs
-gbr
-gco more-ionic-bugs
-c
-gs
-up
-jc ionic
-gs
-gco 845
-git fetch
-git rebase development
-gpo -f 845:feature/HOL-845
-gulp dev:ionic
-ionic emulate ios -lc
-ionic emulate ios -lc
-upup
-cd client/
-ag holotab .
-ag holotab ./public/
-gulp build:web
-gulp watch:web
-gulp dev:web
-jc ionic
-ionic emulate ios -lc
-gs
-c
-gs
-gd
-c
-upup
-gs
-gco development
-git stash
-gpu
-git stash pop
-git stash list
-gs
-gpu
-gcob 1033
-c
-gs
-gaa .
-gs
-gcm "adds console logging to show state change issue"
-c
-gs
-gco development
-gpu
-c
-gs
-gpu
-gco bug/HOL-785
-git rebase development
-gs
-c
-git db bug/HOL-785
-gco development
-git db bug/HOL-785
-gpu
-gco feature/update-main-styles
-gpu
-git log
-c
-gs
-gco development
-git log
-c
-gs
-gco bug/HOL-785
-gpu
-git rebase development
-gs
-c
-gs
-gpo -f bug/HOL-785
-c
-gs
-gco development
-gpu
-gulp test:web
-c
-gs
-gulp dev:web
-gulp jshint:web
-c
-gs
-gco feature/HOL-1028/channel-picker
-gpu
-git rebase development
-c
-gs
-gulp jshint:web
-c
-gs
-gpo -f feature/HOL-1028/channel-picker
-c
-gs
-gco development
-c
-gs
-gpu
-gbr
-git db feature/HOL-1028/channel-picker
-git db feature/update-main-styles
-c
-gs
-gbr
-git db bug/HOL-785 845
-c
-gs
-gpu
-vim public/config.ionic.js 
-ag goToContentCreation public/
-ag contentCreationService
-gulp dev:web
-c
-gs
-gpu
-vim client/public/modules/pages/controllers/pages.controller.js 
-vim public/modules/pages/controllers/pages.controller.js 
-c
-gs
-up
-c
-gs
-gcob hotfix/create-content-service
-c
-gs
-gd
-gaa .
-c
-gs
-gcm "quick fix: inject content creation service where it was required and causing an error"
-c
-gs
-gp
-c
-gs
-gco development
-gpu
-gulp dev:web
-gs
-gbr
-git db hotfix/create-content-service
-gbr
-c
-gs
-gpu
-gcob 908
-gco feature/url-routing
-gulp dev:web
-c
-gs
-gco development
-gco 908
-c
-gs
-c
-cd client/
-upup
-gulp dev:web
-gs
-gco feature/HOL-738-styling
-gs
-gulp jshint:web
-gulp dev:web
-gs
-git rebase development
-vim client/public/modules/content-creation/views/channel-creation.view.html
-c
-gs
-git rebase --continue
-gaa .
-git rebase --continue
-gs
-gpo -f feature/HOL-738-styling
-git fetch
-git rebase development
-gs
-gco development
-gpu
-gco feature/HOL-738-styling
-gs
-git rebase development
-gs
-gpo -f feature/HOL-738-styling
-c
-gs
-gco development
-gpu
-git db feature/HOL-738-styling
-c
-gs
-c
-gs
-gbr
-git db feature/url-routing
-c
-gs
-gpu
-gbr
-gco 1033
-git rebase development
-gco 908
-git rebase development
-c
-gs
-gbr
-c
-gs
-vim public/modules/holospace/views/holospace-header.view.html 
-c
-vs
-gco development
-gs
-gulp dev:web
-gs
-gco 908
-git rebase development
-c
-gs
-git blame client/public/modules/core/directives/tab-snap.directive.js 
-c
-ag tab-snap client/public/styles/
-ag inside-nav client/public/styles/
-ag tab-snap .
-ag tab-snap ./client/
-gulp build:ionic
-ag tab-snap ./client/
-ag tab-snap ./client/public/
-gulp build:ionic
-ag -g tab-snap .
-git rm .
-ag -g tab-snap .
-c
-gs
-c
-ag
-c
-ag -g tab-snap .
-git rm $(ag -g tab-snap .)
-c
-gs
-gd client/public/modules/core/
-c
-gco client/public/modules/core/directives/tab-snap.directive.js 
-c
-gs
-c
-gs
-git rm $(ag -g tab-snap .)
-c
-gs
-gcm "removes now unused tab-snap directive"
-c
-gs
-ga client/
-c
-gs
-git reset
-gd
-c
-gs
-gaa .
-c
-gcm "removes tab-snap directive from holospace.view"
-c
-gs
-vs
-c
-gs
-gco development
-c
-gs
-c
-gs
-gpu
-gulp jshint:web
-c
-gs
-gpu
-gulp jshint:web
-c
-gs
-gco feature/HOL-784
-gulp dev:web
-gs
-git rebase development
-gpo -f feature/HOL-784
-c
-gs
-gco development
-gpu
-gbr
-git db feature/HOL-784
-c
-gs
-gco 908
-git rebase development
-gbr
-gco 1033
-c
-gulp dev:web
-git rebase development
-gco development
-gpu
-gco 1033
-c
-gs
-git rebase development
-vs
-vim public/config.web.js 
-gulp dev:web
-gbr
-gco 908
-c
-gs
-gco .
-c
-gs
-gco 908
-gs
-git rebase development
-ag nav-wrapper public/styles/
-vim public/styles/_holospace.scss 
-c
-gs
-gaa .
-c
-git reset
-gd
-gaa .
-c
-gs
-gcm "changes padding in tab styling"
-c
-gs
-vs
-ls
-vs
-c
-gulp dev:web
-gs
-gco development
-gpu
-ls
-ag -g tile .
-vp $(ag -g tile .)
-gs
-c
-gs
-gco feature/HOL-986
-gco development
-gpu
-gco feature/HOL-986
-gpu
-gs
-git rebase development
-vim client/public/modules/core/templates/embed-modal.template.html
-c
-gs
-c
-gs
-gaa .
-gs
-git rebase --continue
-vim client/public/modules/content-creation/controllers/publish.controller.js
-c
-gs
-gaa .
-git rebase --continue
-gs
-gpo -f feature/HOL-986
-gulp jshint:web
-gs
-gco development
-gpu
-gco 908
-git rebase development
-gs
-gbr
-git db feature/HOL-986
-c
-gs
-c
-gs
-gbr
-ag tile-field public/modules/
-vim public/modules/activity/views/activity.view.html 
-vp $(ag -g tile .)
-c
-ls client/public/modules/content-creation/
-ls -R client/public/modules/content-creation/
-gs
-vp $(ls -R client/public/modules/content-creation/)
-vp $(ls -R client/public/modules/content-creation)
-man ls
-c
-ls
-ls -R public/modules/content-creation/
-cd public/modules/content-creation/
-ls -R .
-ag channel-picker client/public/modules/
-jc pub mod
-ls core/directives/
-vim core/directives/tags.directive.js 
-ag vm.embedModal client/public/
-ag embedModal client/public/
-g -g content-creation.directive 
-ag -g content-creation.directive 
-ag -g content-creator.directive 
-c
-vp $(ag -g js .)
-gulp dev:web
-gs
-gd
-gco .
-c
-gs
-vp $(ag -g html .)
-c
-gs
-vim $(ag -g content-creator.directive )
-c
-cd client/public/
-up
-vs
-cd client/
-vim ~/Desktop/devnotes
-j hol
-gs
-gulp dev:web
-up
-gulp templateCache:web -l
-vim dist/templates.js 
-gulp dev:web
-c
-up
-gs
-git stash
-gco development
-gpu
-go 908
-gco 908
-git rebase development
-git stash pop
-c
-gs
-git stash
-gco development
-gulp dev:web
-c
-gs
-gco 908
-git rebase development
-ag @media client/public/styles/
-vs
-c
-gs
-ag otherwise client/public/modules/
-c
-gs
-git stash
-gco development
-gulp dev:web
-gs
-gco 908
-git stash pop
-gs
-c
-gs
-git stash
-gco development
-c
-gs
-gco 908
-git stash pop
-ag -g images .
-open client/images/svg/
-ag sprite client/public/styles/
-vim client/public/styles/_icons.scss 
-vs
-gs
-git stash
-git fetch
-gco feature/update-main-styles
-gs
-gco 908
-git stash pop
-gulp dev:web
-gs
-git stash
-git fetch
-git rebase development
-gco development
-gpu
-gco 908
-git rebase development
-git stash pop
-c
-gs
-vs
-c
-gs
-git stash
-gs
-gco development
-gs
-gpu
-c
-gpu
-git fetch
-c
-gs
-git stash pop
-c
-gs
-git stash
-c
-gs
-git reset
-c
-gs
-git stash
-c
-gs
-gco 908
-c
-git stash list
-git stash pop
-git stash show
-c
-gs
-gco development
-gd
-c
-gs
-gco development
-git reset
-gco develpment
-gco development
-c
-gs
-gd
-c
-gs
-gco .
-c
-gs
-git stash pop
-vs
-c
-gs
-gulp dev:web
-up
-gulp sass:web -l
-vim gulpfile.js 
-c
-gs
-git reset
-c
-gs
-gco gulpfile.js 
-c
-gs
-c
-gs
-gd client/public/styles/
-gT
-c
-gs
-gco client/public/styles/_custom-variables.scss 
-c
-gs
-gd client/public/styles/
-c
-gs
-c
-gs
-gd client/public/modules/
-ga client/public/modules/holospace/directives/
-c
-gs
-ga client/public/modules/holospace/views/tab-switcher.view.html 
-c
-gs
-gcm "adds new tab-switcher directive for tabs on holospace"
-c
-gs
-ga client/public/modules/holospace/
-c
-gs
-gcm "adds tab-switcher to holospace.view"
-c
-gs
-gd
-c
-gs
-ga client/public/styles/_custom-variables.scss client/public/styles/_icons.scss 
-c
-gs
-gcm "adds icn-rounded-triangle to list of icon classes, adds a variable in _custom-vars"
-c
-gs
-gd
-c
-gs
-gcm "updates styling of tabs in _holospace.scss"
-c
-gs
-gaa .
-gcm "updates styling of tabs in _holospace.scss"
-c
-gs
-gpo 908:feature/HOL-987
-c
-gs
-git fetch
-gco development
-gpu
-gco 908
-git rebase development
-vim client/public/styles/_icons.scss
-c
-gs
-gaa .
-git rebase --continue
-c
-gs
-gpo -f 908:feature/HOL-987
-gulp dev:web
-bashp
-source ~/.bash_profile 
-c
-gs
-gf
-gco development
-gpu
-git rebase development
-gco 908
-git rebase development
-vim client/public/styles/_icons.scss
-gs
-gaa .
-git rebase --continue
-c
-gs
-gpo -f 908:feature/HOL-987
-vs
-gs
-gco development
-gs
-gpu
-c
-gs
-gbr
-git db 908
-git db feature/update-main-styles
-c
-gs
-gco 1033
-gbr
-git rebase development
-gs
-jc ion
-up
-rm Session.vim 
-c
-ls
-up
-cd client/
-up
-ls
-ls *.cim
-ls *.vim
-rm Session.vim 
-cd client/
-up
-cd client/
-c
-gs
-ionic emulate ios -lc
-c
-gs
-ionic emulate ios -lc
-ag -g ionic .
-c
-ag -g ionic public/
-vim public/config.ionic.js 
-gulp dev:ionic
-vp public/config.*
-gulp install
-ionic emulate ios -lc
-bower install
-ionic emulate ios -lc
-gulp dev:ionic
-ionic platform remove ios
-ionic platform add ios
-ionic emulate ios -lc
-up 
-
-./workspace.sh 
-vim public/config.ionic.js 
-j hol
-vim workspace.sh 
-cd "/Users/amiles/Documents/projects/holonis-server"; rename_tab ionic && cd client/ionic/
-cd "/Users/amiles/Documents/projects/holonis-server"
-cd client/
-ionic emulate ios -lc
-ionic emulate ios -lc --address 192.168.56.1
-./workspace.sh 
-ionic emulate ios -lc --address localhost
-ionic emulate ios -lc
-ionic emulate ios -lcls
-c
-cd "/Users/amiles/Documents/projects/holonis-server"; rename_tab gulp && gulp dev:ionic
-ionic emulate ios -lc --address localhost
-ionic emulate ios -lc
-ionic emulate ios -lc --address localhost
-vs
-ionic platform remove ios
-ionic platform add ios
-ionic emulate ios -lc --address localhost
-ionic emulate ios -lc
-vim public/modules/users/controllers/authentication.controller.
-ionic emulate ios -lc
-vim public/modules/users/controllers/authentication.controller.ionic.js 
-cd ionic/
-gulp dev:ionic
-ionic emulate ios -lc
-ionic emulate ios
-gulp dev:ionic
-ionic emulate ios -lc
-vs
-gs
-git stash
-c
-gs
-gco development
-gpu
-gs
-gf
-gco bug/HOL-1119
-gulp jshint:web
-gs
-gco fix-jshint
-git rebase development
-c
-gs
-gpo -f
-gulp jshint:web
-gs
-gco development
-ag dynamicRoute client/public/modules/
-ag -l dynamicRoute client/public/modules/
-jc ion
-gulp dev:ionic
-vp $(ag -l dynamicRoute client/public/modules/)
-upup
-jc ion
-ionic emulate ios -lc
-vp $(ag -l dynamicRoute client/public/modules/)
-ag rootScope client/public/modules/
-gulp dev:ionic
-gulp build:web
-ionic emulate ios -lc --address localhost
-gulp dev:ionic
-mongod
-j hol
-vim workspace.sh 
-gs
-gd
-cd "/Users/amiles/Documents/projects/holonis-server"; rename_tab ionic && cd client/ionic/
-cd "/Users/amiles/Documents/projects/holonis-server"
-ionic emulate ios -lc --address localhost
-c
-gs
-git stash
-c
-gco bug/jshint-warnings
-gf
-gco bug/jshint-warnings
-gulp jshint:web
-c
-gs
-git rebase development
-gco development
-gpu
-gco bug/jshint-warnings
-cd "/Users/amiles/Documents/projects/holonis-server"; rename_tab gulp && gulp dev:ionic
-gulp dev:web
-gs
-gs
-gco development
-c
-gs
-gbr
-git db fix-jshint
-git db bug/HOL-1119 bug/jshint-warnings
-c
-gs
-gbr
-git stash pop
-tgd
-gd
-ionic emulate ios -lc --address localhost
-ionic emulate ios -lc
-gs
-gd
-gco .
-c
-gs
-upup
-gco .
-c
-gs
-gpu
-gs
-gf
-gco bug/jshint-warnings
-gs
-git rebase development
-vim client/public/modules/activity/controllers/activity.controller.js
-c
-gaa .
-git rebase --continue
-c
-gs
-gpo -f
-c
-gs
-vp $(ag -l dynamicRoute client/public/modules/)
-gs
-gco development
-gpu
-c
-gs
-gbr
-gco 1033
-c
-gs
-git rebase development
-c
-gs
-vp $(ag -l dynamicRoute client/public/modules/)
-vim client/public/modules/users/controllers/authentication.controller.ionic.js 
-ionic emulate ios -lc
-jc ion
-gulp dev:ionic
-ionic emulate ios -lc
-git stash list
-git stash show
-git stash show stash@{0}
-git stash drop
-c
-gs
-git stash drop
-c
-gs
-gd
-scratcn
-scratch
-c
-j hol
-cd - 
-c
-cd client/
-cd dist/
-ls
-vim holonis-web.js 
-vim css/holonis-web.css 
-upup
-vim gulpfile.js 
-gulp build:web
-vim client/dist/css/holonis-web.css 
-gulp sass:web
-vim client/dist/css/holonis-web.css 
-gulp sass:web
-vim client/dist/css/holonis-web.css 
-gulp sass:web
-vim client/dist/css/holonis-web.css 
-c
-gs
-gco gulpfile.js paths.js 
-c
-gs
-c
-vp $(ag -l dynamicRoute client/public/modules/)
-c
-gs
-git stash
-gco development
-ionic emulate ios -lc
-gpu
-gco bug/sass-duplication-fix
-gcob bug/sass-duplication-fix
-vim paths.js 
-c
-gs
-gaa .
-c
-gs
-gcm "gulp sass now pulls in holonis-web.scss instead of all scss files, fixing duplicated styles issue"
-gpo
-gbr -m bug/sass-duplication-fix HOL-1135
-gs
-gp
-git db bug/sass-duplication-fix
-c
-gbr
-gpo :bug/sass-duplication-fix
-c
-gs
-gp
-c
-gs
-gulp dev:web
-gs
-gco development
-gs
-gpu
-gs
-gbr
-git db bug/jshint-warnings
-gco 1033
-c
-gs
-git rebase development
-git stash pop
-gd
-gs
-gd
-c
-gs
-gd
-c
-gulp dev:ionic
-vs
-gs
-git stash list
-git stash
-gulp dev:web
-gco development
-gpu
-gs
-gco 1033
-git stash pop
-c
-gs
-gs
-gulp dev:ionic
-gulp install
-vs
-fg
-fG
-ag -i urlrouter client/public/modules/
-ag -i \\\$location client/public/modules/
-ag settings client/public/modules/users/
-ag \\\$location client/public/modules/
-ag \\\$state client/public/modules/
-ionic emulate ios -lc
-ionic emulate ios -lc --address localhost
-ionic emulate ios -lc
-ionic emulate ios -lc --address localhost
-fg
-gs
-git stash
-gs
-gco development
-./workspace.sh 
-gs
-gf
-gco bug/hol-1119
-gulp jshint:web
-gco development
-gulp jshint:web
-vim client/public/modules/content-creation/controllers/publish.controller.js 
-gs
-c
-gs
-gco bug/HOL-1119
-gulp jshint:web
-gco development
-gulp jshint:web
-c
-gco bug/HOL-1119
-gulp jshint:web
-gco bug/HOL-1049
-gulp jshint:web
-gco development
-gpu
-gco feature/HOL-610
-gco feature/hol-610
-gco feature/HOL-601/revisted
-gs
-gulp jshint:web
-c
-gs
-gco bug/HOL-1119
-c
-gs
-gulp jshint:web
-c
-gs
-gco development
-c
-gbr
-gco 1033
-c
-gs
-git rebase development
-git stash pop
-c
-gs
-vim client/public/modules/content-creation/controllers/post-creation.controller.js 
-c
-gs
-c
-jc ion
-ionic emulate ios -lc --address localhost
-ionic emulate ios -lc
-gs
-c
-gs
-git stash 
-c
-tgs
-gs
-upup
-gulp dev:ionic
-gs
-gf
-gco bug/HOL-1049
-gpu
-gulp jshint:web
-c
-gs
-gco feature/HOL-601/revisted
-gpu
-gulp jshint:web
-gco bug/HOL-1049
-gpu
-gulp jshint:web
-ag -i striphtml client/public/modules/
-ag maxparams client/public/modules/
-vim client/public/modules/content-creation/controllers/post-creation.controller.js 
-gs
-gco development
-c
-gs
-gco bug/sass-watching-fix
-gcob bug/sass-watching-fix
-c
-gs
-vim gulpfile.js 
-c
-gs
-gco development
-gulp dev:web
-gs
-gbr
-gco bug/sass-watching-fi
-gco bug/sass-watching-fix
-c
-vp gulpfile.js paths.js 
-c
-gs
-gd
-c
-gco development
-git rebase development
-git stash
-git rebase development
-gco development
-gpu
-gs
-gbr
-gco bug/sass-watching-fix
-git stash pop
-git rebase development
-c
-gs
-gd
-c
-gs
-git stash
-git rebase development
-git stash pop
-gd
-c
-gaa .
-gcm "fix sass watching"
-c
-gs
-gp
-x
-gs
-gco development
-gs
-cd client/public/modules/core/services/contentCreation.service.js 
-vim ~/Desktop/devnotes
-gs
-gco feature/HOL-1066
-gco feautre/HOL-1066/delete-modal
-gpu
-gulp jshint:web
-gco development
-gulp jshint:web
-cd client/ionic/
-ls
-vim package.json 
-vim ionic.project 
-up
-vim public/config.ionic.js 
-up
-gs
-gpu
-c
-gs
-gbr
-gco 1033
-c
-gs
-git rebase development
-git stash list
-git stash pop
-gd
-vim client/public/modules/core/services/contentCreation.service.js
- gs
-jc ion
-ionic emulate ios -lc
-gulp dev:ionic
-gs
-git stash
-gs
-gco development
-gf
-gs
-gco bug/unsplah-limit
-gpu
-git rebase development
-gs
-gpo -f
-c
-g
-gs
-gco developmentg
-gco development
-gs
-gpu
-gs
-gulp jshint:web
-gco jshint-part-two
-c
-gs
-gco jshint-part-two
-gf
-gco bug/gf
-gco bug/jshint-part-two
-gs
-gco bug/jshint-part-two
-gulp jshint:web
-c
-gs
-gulp jshint:web
-c
-gs
-c
-gulp jshint:web
-up
-vim client/public/modules/content-creation/controllers/content-creation.controller.js 
-c
-gulp jshint:web
-vim client/public/modules/content-creation/controllers/content-creation.controller.js 
-gs
-gulp jshint:web
-vim client/public/modules/content-creation/controllers/post-creation.controller.js 
-c
-gulp jshint:web
-vim client/public/modules/content-creation/controllers/publish.controller.js 
-fg
-gulp jshint:web
-vim client/public/modules/content-creation/controllers/publish.controller.js 
-gulp jshint:web
-vim
-gs
-c
-gulp jshint:web
-c
-gulp jshint:web
-gs
-gd
-c
-gs
-gulp dev:web
-vim client/public/modules/core/directives/tile.directive.js
-c
-gs
-git stash
-gs
-gco development
-gulp dev:web
-git stash pop
-vim client/public/modules/content-creation/controllers/publish.controller.js
-c
-gs
-gaa
-c
-gs
-git stash
-gs
-bug/jshint-part-two
-c
-gco bug/jshint-part-two
-gs
-git stash pop
-vim client/public/modules/content-creation/controllers/publish.controller.js
-gs
-c
-gs
-gaa .
-c
-gs
-git reset
-c
-gs
-git stash
-c
-gs
-c
-gs
-git stash pop
-c
-gs
-vim client/public/modules/content-creation/controllers/publish.controller.js
-gs
-gaa .
-gcm "final round of jshint fixes"
-c
-gs
-gp
-c
-gs
-git rebase development
-c
-gs
-gpo -f
-c
-g
-gs
-gco development
-gulp jshint:web
-gpu
-gulp jshint:web
-gs
-gbr
-gco 1033
-gs
-git stash list
-gulp dev:web
-gs
-git stash drop
-git stash pop
-ls
-jc ion
-gulp dev:ionic
-ionic emulate ios -lc
-vs
-c
-gs
-git stash
-c
-gs
-gco development
-gpu
-gco feature/HOL-611-styling
-git rebase development
-gulp jshint:web
-c
-gs
-gpo -f
-c
-gs
-gco development
-gpu
-gco feature/HOL-612-styling
-git rebase development
-vim client/public/modules/channels/views/channels.view.html
-git rebase --abort
-gs
-gulp dev:ionic
-gco development
-c
-gs
-gco bug/sass-watching-fix
-c
-git rebase development
-c
-gs
-gpo -f
-c
-gco development
-gpu
-gco bug/sass-watching-fix
-git rebase development
-gs
-gco feature/HOL-612-styling
-gc
-gco development
-gpuj
-gpu
-gco feature/HOL-612-styling
-gco development
-gs
-gbr
-git db feature/HOL-601/revisted feature/HOL-611-styling feature/HOL-612-styling  feautre/HOL-1066/delete-modal bug/unsplah-limit bug/jshint-part-two
-git db bug/hol-1119
-gbr
-gco bug/sass-watching-fix
-c
-gs
-gco development
-gpu
-gco bug/sass-watching-fix
-git rebase development
-gpo -f
-c
-gs
-gbr
-git db HOL-1135  bug/HOL-1049
-gco development
-git db bug/sass-watching-fix
-c
-gs
-gbr
-gco 1033
-git rebase development
-gs
-git stash list
-gco development
-gs
-gpu
-gulp jshint:web
-gf
-gco bug/HOL-746/+
-gulp jshint:web
-c
-gco development
-gco bug/HOL-1167/tile
-gulp jshint:web
-gco bug/HOL-1091
-gulp jshint:web
-gco bug/HOL-1121
-gulp jshint:web
-gco bug/HOL-1166
-gulp jshint:web
-gs
-gco bug/HOL-1166
-c
-gs
-gco development
-gpu
-gco bug/HOL-1166
-git rebase development
-gco developent
-gco development
-gpu
-gco bug/HOL-1121
-git rebase development
-gpo -f
-gco development
-gpu
-gulp jshint:web
-gs
-gpu
-gco bug/HOL-746/+
-git rebase development
-vim client/public/modules/holospace/controllers/holospace.controller.js 
-gs
-gd
-gs
-gaa .
-gcm "fix jshint in holospace.controller.js"
-gs
-gpo -f
-gco development
-gpu
-gco bug/HOL-1091
-git rebase development
-gcm "fix jshint in holospace.controller.js"
-gulp jshint:web
-vim client/public/modules/core/directives/ellipsis.directive.js
-fg
-gs
-gaa .
-gcm "fixes jshint in ellipsis.directive.js"
-c
+glg
 gs
 gpo -f
 gs
-gco bug/HOL-1167/tile
-gs
-gulp jshint:web
-gs
-git rebase development
-gs
-gpo -f
-c
-gs
-gco development
 gpu
-gbr
-gbr | ag bug
-gbr | ag -l bug
-gbr | ag bug
-gbr | ag bug/
-git db $(gbr | ag bug/)
-gs
-gbr
-gcob 1154
-ag otherwise client/public/
-vim client/public/modules/core/config/core.
-upup
-cd client/public/
-ag url: $(ag -g routes modules/)
-gs
-upup
-gco client/public/modules/home/
-gs
-mongo
-mongod
-gs
-c
-gs
-git log
-c
-gs
-ag getuserspaces .
-gulp dev:web
-vim client/public/modules/core/config/core.routes.js 
-gs
-gco client/public/modules/holospace/controllers/holospace.controller.js 
-c
-gs
-gd
-c
-gs
-upup
-gs
-gD
-gd
-gco client/public/modules/users/controllers/authentication.controller.web.js 
-c
-gs
-gd
-vs bug.vim 
-gs
-g
-gd
-gulp jshint:web
-vim client/public/config.web.js 
-c
-gs
-vim client/public/config.web.js 
-gulp jshint:web
-vim client/public/config.web.js 
-fg
-c
-gs
-gulp jshint:web
-c
-gs
-gd
-vim client/public/config.web.js 
-gaa .
-gcm "adds check in stateChangeStart to ensure a holospace name in stateparams"
-gs
-cc
-gs
-c
-gs
-gpo 1154:bug/HOL-1154
-c
-gs
-c
-gs
-gco development
-gpu
-c
-gs
-gco feature/HOL-799b
-gulp jshint:web
-c
-gs
-c
-gco feature/HOL-1138
-gulp jshint:web
-c
-gs
-gco bug/HOL-1042
-gf
-gco bug/HOL-1042
-gulp jshint:web
-gulp dev:web
-gco feature/HOL-1138
-gpu
-gulp jshint:web
-cd "/Users/amiles/Documents/projects/holonis-server"; rename_tab ionic && cd client/ionic/
-cd "/Users/amiles/Documents/projects/holonis-server"
-c
-gs
-gco development
-gpu
-gco 1033
-git rebase development
-c
-gs
-git stash list
-git stash pop
-cd "/Users/amiles/Documents/projects/holonis-server"; rename_tab gulp && gulp dev:ionic
-cd client/public/
-ag -g holospace .
-upu;
-upup
-ls
-cd client/
-ls
-up
-ag -ag vim .
-cd client/
-vs
-rm Session.vim 
-up
-gs
-c
-vim modules/holospace/views/holospace.view.html 
-up
-vs
-up
-ionic emulate ios -lc
-vs
-gs
-git stash
-gs
-gulp dev:ionic
-gbr
-gco 1154
-gs
-git rm bug.vim 
-c
-gs
-gcm "removes vim session file...oops"
-c
-gs
-git rebase development
-gpo -f
-gpo -f 1154:bug/HOL-1154
-gpo :1154
-r
-ionic emulate ios -lc
-gs
-gco 1033
-gs
-git stash pop
-ionic emulate ios -lc
-gulp dev:ionic
-vs
-c
-gs
-vs
-gs
-git stash list
-git stash
-ionic emulate ios -lc
-gs
-c
-gs
-gbr
-gco feature/HOL-799b
-gpu
-gco feature/HOL-1138
-gpu
-gs
-gpu
-gulp jshint:web
-gs
-gpu
-gulp jshint:web
-gf
-gs
-gpu
-gulp jshint:web
-gs
-gco 1154
-gco development
-gpu
-gco 1154
-gs
-git rebase development
-gs
-gpo -f 1154:bug/HOL-1154
-gco bug/HOL-1042
-gpu
-gco development
-gpu
-gco bug/HOL-1042
-gs
-git rebase development
-gpo -f
-gs
-gco 1033
-gs
-git rebase development
-vs
-c
-gs
-git rebase --abort
-gs
-git stash pop
-cd client/public/
-ag fb.init modules/
-ag init modules/
-gulp dev:web
-gs
-up
-git stash
-c
-gs
-gco development
-gpu
-jc mod
-cd -
-cd client/public/modules/core/directives/
-ls
-ag drag .
-vim content-creator.directive.js 
-gulp dev:ionic
-ag fb.init modules/
-ag init modules/
-ag face $(ag init modules/)
-ag face $(ag -l init modules/)
-:q
-c
-gs
-gco .
-gco 1033
-git stash pop
-c
-gs
-ionic emulate ios -lc
-ionic emulate ios -lc --address localhost
-vs
-gs
-c
-gs
-git stash
-c
-gs
-gco development
-gpu
-gbr
-git db 1154
-git db feature/HOL-799b
-gbr
-git db bug/HOL-1042
-gco 1013
-gcob 1013
-gs
-gulp dev:web
-cd client/
-c
-gs
-gco development
-gco fetaure/product-tiles
-gulp jshint:web
-c
-upup
-gco development
-gulp jshint:web
-gco fetaure/product-tiles
-gulp jshint:web
-gs
-gco development
-gco fetaure/product-tiles
-gpu
-gco development
-git reset --HARD
-git reset --hard
-c
-gs
-gco development
-git db fetaure/product-tiles
-gco fetaure/product-tiles
-gulp jshint:web
-gs
-gco development
-gpu
-gco fetaure/product-tiles
-git rebase development
-gulp jshint:web
-gs
-gco development
-git db fetaure/product-tiles
-gbr
-gpu
-gulp jshint:web
-cd client/public/
-gs
-ag autocomplete .
-ag -l autocomplete .
-ag autocomplete .
-ag -l autocomplete .
-ag -l autocomplete .
-vp $(ag -g html $(ag -l autocomplete .))
-ag -g html $(ag -l autocomplete .)
-ag html $(ag -l autocomplete .)
-ag -l autocomplete .
-ag -l autocomplete $(ag -g html modules/)
-vim bower.json 
-fg
-gs
-gco .
-c
-gs
-gco 1013
-c
-gs
-git rebase development
-gulp dev:web
-ag -l autocomplete .
-ag -l autocomplete $(ag -g html modules/)
-ag -l autocomplete $(ag -g html modules/)
-vp $(ag -l autocomplete $(ag -g html modules/))
-ag -g jquery
-vim $(ag -g jquery)
-gulp dev:web
-gs
-cd client/
-rm -rf bower_components/
-bower install
-c
-up
-bower install
-gulp dev:web
-gs
-gco development
-gpu
-gs
-gco .
-gs
-gco bug/HOL-1132
-gulp jshint:web
-gs
-gco development
-gs
-up
-gs
-gulp dev:web
-gulp vendorjs:web
-gulp vendorjs:web -l
-vim gulpfile.js 
-gulp vendorjs:web -l
-gulp vendorjs:web -l | grep angular
-gulp vendorjs:web -l
-vim client/bower.json 
-gulp dev:web
-gulp vendorjs:web -l
-gulp dev:web
-c
-gs
-gco .
-gs
-vim client/bower
-vim client/bower.json
-gs
-gd
-gaa .
-gcm "loads jquery before angular"
-c
-gs
-git reset --soft HEAD~
-gs
-gco 1013
-gs
-git rebase development
-git reset
-git stash
-gs
-git rebase development
-gco development
-gpu
-gco 1013
-gs
+gco sr
 git stash pop
 gs
-gaa .
-gcm "loads jquery before angular"
 gs
-gpo 1013:bug/HOL-1013
-gs
-vim client/bower_components/algolia-autocomplete.js/dist/autocomplete.angular.js 
-gulp dev:web
-gs
-gco development
-gpu
-gco bug/HOL-1134
-gulp jshint:web
-gco feature/holospace-tiles
-gulp jshint:web
-./workspace.sh 
-mongo
-mongo
-gco feature/HOL-1138
-gco development
-git db feature/HOL-1138
-gco feature/HOL-1138
-gulp dev:web
-gs
-gco development
-gs
-gs
-gulp dev:web
-gpu
-gs
-gco feature/HOL-1138
-gulp dev:web
-gco bug/HOL-1134
-gpu
-gs
-git rebase development
-gco development
-gpu
-gco bug/HOL-1134
-gco development
-gs
-gpu
-gco bug/HOL-1182
-gulp jshint:web
-gs
-gco bug/HOL-1041
-gulp jshint:web
-gco development
-gpu
-gco bug/HOL-1041
-git rebase development
-gs
-gpo -f
-ag striphtmltags client/public/modules/
-gco bug/HOL-1215
-gulp jshint:web
-gco development
-gpu
-gco bug/HOL-1215
-git rebase development
-gpo -f
-gs
-gco development
-gs
-gpu
-gbr
-gbr | grep bug
-git db $(gbr | grep bug)
-gs
-gbr
-git db $(gbr | grep 38)
-gs
-gpu
-gco bug/HOL-1013
-git rebase development
-gpo -f
-gulp jshint:web
-mongod
-j hol
-gs
-gco bug/HOL-1137
-gs
-vim client/public/modules/pages/views/pages.view.html
-gs
-gaa .
-gcm "fixes capitalization"
-gs
-gco development
-gpu
-gco bug/HOL-1137
-gs
-git rebase development
-gpo -f
-gs
-gbr
-gs
-gco development
-gs
-gpu
-gs
-gco bug/HOL-1182
-gulp jshint:web
-gs
-git rebase development
-gs
-gco development
-gpu
-gco bug/HOL-1182
-c
-gs
-gpo -f
-gco bug/HOL-1179
-gco development
-gpu
-gco bug/HOL-1179
-gco development
-git db bug/HOL-1179
-gs
-gpu
-gco bug/HOL-1179
-git rebase development
-gs
-gco bug/HOL-1132
-gulp jshint:web
-c
-gs
-gco developmebt
-gco development
-gpu
-gs
-gco bug/HOL-1132
-git rebase development
-gpo -f
-gs
-gco development
-gs
-gulp dev:web
-gs
-gco bug/page-input-madness
-gf
-gco bug/page-input-madness
-gs
-gco development
-gpu
-c
-gs
-gcob bug/header-wtf
-ag fixed-bottom client/public/
-vp $(ag l fixed-bottom client/public/)
-cd client/public/styles/
-ls
-ag navbar .
-vim _base.scss 
-ag \.navbar .
-vp $(ag -l fixed-bottom client/public/)
-gs
-gd
-gaa .
-c
-gs
-gcm "fixes nav styling"
-c
-gs
-gp
-mongod
-gulp dev:web
-j hol
-gs
-gco development
-gs
-gpu
-gco bug/header-wtf
-git rebase development
-gpo -f
-gs
-gco development
-gpu
-gs
-gpu
-mongo
-cd client/public/
-ag -g page .
-vimgs
-gs
-gulp dev:web
-mongod
-upup
-gco feature/HOL-1187
-gulp jshint:web
-gco 1033
-gbr
-gs
-git stash list
-gd
-gco .
-gs
-gco development
-vim modules/core/templates/content-creator.template.html 
-gulp dev:web
-ag -g metric .
-cd client/public/
-c
-ls modules/holospace/directives/
-ag -g anal .
-gs
-gulp jshint:web
-gs
-gbr
-gd
-gs
-vp $(ag -g anal .)
-gs
-gd
-gs
-ga modules/pages/
-gcm "adds method getPagesBySpaceId to Pages service"
-c
-gs
-gd
-c
-gs
-gaa .
-c
-gs
-gcm "adds API request for pagesbyspaceid, removes hard-coded 34000000 from space analytics"
-gs
-git reset --soft ~HEAD
-git reset --soft HEAD~
-gs
-git reset
-git reset --soft HEAD~
-gs
-git reset
-gs
-gco 1011
-c
-gs
-gcob 1011
-c
-gs
-ga modules/pages/
-gcm "adds method getPagesBySpaceId to Pages service"
-gs
-gaa .
-gs
-gcm "adds request for pagesbyspaceid, removes hard-coded 34000000 from space analytics"
-gs
-gpo 1011:bug/HOL-1011
-gco development
-gs
-gpu
-gco 1011
-git rebase development
-gs
-gpo -f 1011:bug/HOL-1011
-gulp dev:web
-mongod
-ls
-cd Documents/
-ls
-ls projects/
-cd projects/
-ls
-j pro
-ls
-mkdir styleguide
-cd styleguide
-up
-mkdir angular-starter-frontend
-cd angular-starter-frontend
-ls
-jo hol
-j hol
-jo .
-jo web
-jo proj
-ls
-cp ../holonis-server/gulpfile.js ../holonis-server/paths.js ../holonis-server/client/.js* .
-la
-vp ../holonis-server/package.json package.json
-vim notes
-c
-ls
-rm notes 
-up
-ls
-ls
-git init
-git remote add origin https://amiles_@bitbucket.org/SeamgenSD/sg-angular-starter-app.git
-ls
-vim package.json 
-npm install gulp@4
-vim package.json 
-npm install gulp@4
-#npm install gulp@4
-npm install gulp@beta
-npm install --save-dev gulpjs/gulp#4.0
-ls
-npm install --save-dev del gulp-angular-templatecache gulp-concat  gulp-csso gulp-debug
-npm install --save lodash
-npm install --save-dev gulp-htmlmin gulp-if gulp-jscs gulp-jshint gulp-load-plugins gulp-sass gulp-sourcemaps ulp-uglify gulp-util jshint-stylish karma shelljs yargs 
-npm install --save-dev gulp-htmlmin gulp-if gulp-jscs gulp-jshint gulp-load-plugins gulp-sass gulp-sourcemaps gulp-uglify gulp-util jshint-stylish karma shelljs yargs 
-ls
-s
-ls
-bower init
-gs
-bower install angular --save
-npm install --save-dev gulp-babel
-npm install --save-dev gulp-changed
-0*
-ls
-mkdir src
-mkdir dist
-ls
-mkdir src/scss
-mkdir src/js
-mkdir src/templates
-npm install --save-dev gulp-remember
-npm uninstall gulp-sourcemaps
-ls client/
-ls client/test-helpers/
-ls
-mkdir test
-ls r
-ls src/
-ls
-cd styleguide/
-ls
-gs
-up
-rm -r styleguide/
-mkdir styleguides/
-cd styleguides/
-git init
-git remote add origin https://amiles_@bitbucket.org/amiles_/styleguides.git
-gs
-ls
-cd src/
-ls
-vim js/app.js
-up
-npm instal --save-dev gulp-jscs-stylish gulp-jscs
-ls src/js/
-gulp jshint
-la
-gulp jshint
-ls
-npm install --save-dev bower-main
-j sty
-ls
-man j
-man autojump
-j --help
-j -d .
-up
-j -d
-cd client/
-j -d
-j guid
-ls
-mkdir javascript
-touch javascript/README.md
-touch javascript/javascript.md
-ls
-up
-ls
-cd styleguides/
-ls
-ls javascript/
-gulp jshint
-npm install --save-dev browser-sync
-npm install -g browser-sync
-npm uninstall -g browser-sync
-gulp jshint
-bower install
-npm install
-npm --help
-npm help purge
-npm help clean
-npm prune
-gulp jshint
-cd node_modules/
-cd gulp
-npm install --save-dev git://github.com/wearefractal/vinyl-fs for sourcemaps: true
-npm install --save-dev git://github.com/wearefractal/vinyl-fs 
-up
-npm install --save-dev git://github.com/wearefractal/vinyl-fs 
-up
-
-npm run gulp jshint
-npm install --save-dev gulp-memory-cache
-npm run gulp jshint
-npm run gulp
-rm -rf node_modules/
-npm install
-npm run gulp jshint
-npm run gulp -v
-gulp -v
-npm -v
-./node_modules/gulp/bin/gulp.js -v
-npm run gulp -v
-./node_modules/gulp/bin/gulp.js -v
-npm run gulp -v
-npm run gulp -v
-npm run "gulp -v"
-npm run gulp
-#npm run gulp
-npm run gulp -l
-./node_modules/gulp/bin/gulp.js -l
-./node_modules/gulp/bin/gulp.js -l jshint
-ln -s ./node_modules/gulp/bin/gulp.js ./gulp
-./gulp -l
-gulp -l
-ls
-cd javascript/
-vp README.md airbnb-es5.md javascript.md 
-fg
-j desk
-j desktop
-upupup
-up
-j Desk
-j doc
-cd ../Desktop/
-vim committeenotes
-vp javascript/javascript.md javascript/README.md
-j kut
-j kit
-cd Documents/projects/
-mkdir kitu
-j sty
-ls
-j styleg
-j styh
-j -d
-j sty
-ls
-ls javascript/
-mkdir angular
-touch angular.md
-mkdir examples
-ls
-mv angular.md angular
-ls
-ls examples/
-ls javascript/
-bp javascript/airbnb.md javascript/javascript.md 
-vp javascript/airbnb.md javascript/javascript.md 
-gs
-ls angular/
-vim angular/angular.md 
-gs
-ls javascript/
-mv javascript/javascript.md javascript/es5.md
-c
-gs
-la javascript/
-vim javascript/README.md 
-c
-gs
-ls javascript/
-vim javascript/README.md 
-ls
-vim README.md
-gs
-git remote
-git remote -l
-git remote
-git remote 
-git remote
-git remote -v
-up
-ls
-cd angular-starter-frontend/
-ls
-gs
+./node_modules/.bin/inspect try.js 
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+vim log.txt 
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+pfDev
+./node_modules/.bin/inspect try.js | tee log.txt
+vim log.txt 
+./node_modules/.bin/inspect try.js | tee log.txt
+ag notification db/
+./scripts/reset_db.sh 7-23
 vs
-vp gulp
-gulp jshint
-./gulp jshint
-./node_modules/gulp/bin/gulp.js -l jshint
-vim gulp
-mv gulp old-gulp
-vim gulp
-chmod u+x gulp
-./gulp 
-./gulp jshint
-./gulp --tasks
-vim gulp
-ls
-vim gulp
-npm build
-npm run build
-npm run build -l jshint
-npm install --save-dev gulp-inject
-vp src/js/*
-vim gulpfile.js 
-j hol
-cd client/public/modules/pages/
-ls
-vp services/pages.service.js controllers/pages.controller.js 
-vim db_notes
-j proj
-ls
-git clone https://amiles_@bitbucket.org/SeamgenSD/kitu.git
-mv kitu/ kitu_docs
-git clone https://amiles_@bitbucket.org/SeamgenSD/kitu.git
-cd kitu
-ls
-vim README.md 
-up
-j star
-ls
-vim old-gulp 
-rm old-gulp 
-gs
-./gulp 
-up
-vim styleguides/javascript/es5.md 
-./gulp install
-./gulp js
-vim dist/myProjectName.js 
-./gulp templates
-vim dist/templates.js 
-./gulp sass
-npm install --save-dev gulp-autoprefixer
-./gulp sass
-npm install --save-dev gulp-rename
-./gulp sass
-./gulp sas
-./gulp sass
-./gulp index
-vim dist/index.html 
-rm -r dist/css/
-./gulp index
-vim src/js/*
-ls src/
-./gulp js
-./gulp js -l
-npm install --save-dev merge2
-./gulp js -l
-open dist/index.html 
-./gulp js -l
-gulp js
-./gulp js
-ls dist/
-open dist/index.html 
-vim dist/vendor.js 
-vim dist/index.html 
-./gulp js
-rm dist/index.html 
-./gulp index
-rm dist/*.min.*
-ls dist/
-./gulp index
-ls
-npm uninstall jshint
-vim package.json 
-npm install --save-dev gulp-eslint
-./gulp 
-./gulp js
-rm dist/templates.js dist/myProjectName.js 
-ls dist/
-./gulp js
-ls dist/
-vim dist/myProjectName.
-vim dist/myProjectName..js
-vim dist/myProjectName.js
-./gulp 
-vim src/js/app.js 
-npm install --save angular-ui-router
-./gulp 
-./gulp -l
-npm uninstall --save angular-ui-router
-bower install --save angular-ui-router
-./gulp -l
-bower install --save lodash
-open dist/index.html 
-npm install --save-dev component/debounce
-./gulp -l
-ls dist/
-rm dist/myProjectName.min.css 
-npm install --save-dev component/debounce
-./gulp -l
-j hol
-ls
-vim dist/index.html 
-ls dist/
-vim in
-vim dist/index.html 
-./gulp index
-vim dist/index.html 
-./gulp index
-vim dist/index.html 
-./gulp -l
-rm dist/myProjectName.min.css 
-ls
-vim dist/myProjectName.js 
-./gulp -l
-fg
-vim gulpfile.js 
-fg
-npm -v
-nvm list
-npm -v
-npm update
-npm install -g npm
-npm ls
-npm prune
-npm ls
-npm dedupe
-./gulp -l
-rm -r node_modules/
-npm install
-npm install --save-dev babel-preset-es2015
-npm ls
-npm dedupe
-npm ls
-up
-git clone https://github.com/billstron/passwordless-stateless-angular.git
-cd ./passwordless-stateless-angular
-npm install
-bower install
-node ./index.js 
-up
-cd
-nethack
-ls
-./gulp 
-vim gulpfile.js 
-./gulp js
-fg
-j kit
-ls
-gs
-up
-cd angular-starter-frontend/
-ls
-j hol
-ls
-vim common/models/user.js
-up
-mv angular-starter-frontend/ angular-starter
-cd angular-starter/
-ls
-vim gulp
-man cat
-ls
-ls src/js/
- vim gulpfile.js 
-./gulp -l
-./gulp -l
-npm install --save-dev gulp-plumber
-./gulp -l
-./gulp js -l
-c
-./gulp js -l
-c
-./gulp js -l
-./gulp -l
-vp src/js/*
-vim dist/myProjectName.js 
-vim src/js/controllers.es6 
-fg
-vim gulpfile.js 
-fg
-fg
-vim src/js/controllers.es6 
-vim dist/myProjectName.js 
-./gulp -l
-j hol
-vim gulpfile.js 
-./gulp -l
-ls
-mv _eslintrc.yaml .eslintrc.yml
-vim .eslintrc.yml
-ls *.yml
-ls -a *.yml
-*.yml
-$(*.yml)
-ls
-la
-mv .eslintrc.yml .eslintrc.yaml
-vim .jscsrc
-mv .jscsrc.yml .jscsrc.yaml
-vp *.yaml
-vim .*.yaml
-./gulp lint -l
-vp .jscs*
-rm .jscsrc
-rm .jscs.json 
-gs
-sudo gs
-gs
-sudo git status
-xcodebuild -license
-sudo xcodebuild -license
-gs
-./gulp lint -l
-./gulp -l
-vim ~/.vim/bundle/ftdetect/haml.vim 
-j dotf
-gs
-ga .vim/bundle/ftdetect/
-c
-gs
-gcm "adds es6 filetype detect for vim"
-gp
-vim gulpfile.js 
-cd .vim/bundle/ftdetect/
-ls
-vp haml.vim text.vim es6.vim ejs.vim 
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js
+node try.js 
+./node_modules/.bin/inspect try.js
 vs
-vp haml.vim text.vim es6.vim ../ftplugin/es6.vim ejs.vim 
-vs
-rm Session.vim 
-vim src/js/controllers.es6 
-rm .jshintrc 
-vim gulpfile.js 
-vim src/js/controllers.es6 
-./gulp
 gs
-la
-vim .gitignore
-rm -r dist/*
-./gulp 
-vim gulpfile.js 
-./gulp 
-rm -rf node_modules/
-rm -rf bower_components/
-./gulp install
-bower install
-npm install
-./gulp 
-vim gulpfile.js 
-j ang
-ls
-ls test/
-npm install express --save
-node --v
-node -v
-nvm list
-bashp
-cd
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
-nvm
-nvm list
-nvm show
-nvm ls
-nvm install v5.0 --reinstall-packages-from=4.2
-nvm ls --verbose
-nvm ls
-nvm install v5
-nvm debug
-ag "npm-global" dotfiles/
-npm config get prefix
-nvm debug
-nvm use 5
-npm config delete prefix
-nvm install v5
-gulp
-j ang
-./gulp 
-vim gulp
-./gulp 
-nvm ls
-npm dedupe
-./gulp 
-vim Dockerfile
-nvm ls
-npm install
-rm -rf node_modules/
-npm install
-./gulp 
-vim src/js/services.js 
-vim gulpfile.js 
-j ang
-echo $UID
-docker -v
-tree
-docker run hello-world
-bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
-docker-machine create
-docker-machine create --driver virtualbox default
-docker-machine ls
-docker run hello-world
-docker-machine env default
-eval "$(docker-machine env default)"
-docker run hello-world
-vim package.json 
-echo $PWD
-pwd
-whoami
-vim Dockerfile 
-vim package.json 
-mkdir server/
-j hol
-vim server/server.js 
-vim server/index.js
-mv server/index.js .
-rm -r server/
-vim index.js 
-node ./index.js 
-node index.js 
-vim ~/Desktop/kitu_notes
-j ang
-up
-swagger project create -f express sn-express
-nvm list
-npm install -g swagger
-swagger project create -f express sn-express
-ls
-cd sn-express/
-ls
-ls ap
-vim api/swagger/swagger.yaml 
-vim api/helpers/README.md 
-ls
-vim pac
-vim package.json 
-ls
-ls test/api/controllers/hello_world.js 
-vim test/api/controllers/hello_world.js
-up
-cd -
-ls
-node app.js 
-vim app.js 
-up
-cd angular-starter/
-node app.js
-node index.js 
-vp package.json app.js 
-cd ../angular-starter/
-npm install
-npm set progress=false
-open .
-npm install
-node index.js 
-npm dedupe
-j hol
-ls client/public/modules/
-ls client/public/modules/holospace/
-vim ~/Desktop/durrrr
-vp src/js/*
-node index.js 
-cp -R ../sn-express/api .
-ls ../sn-express/config/
-vim ../sn-express/config/README.md 
-cp -R ../sn-express/config .
-ls
-mkdir server
-mv api server/
-mv index.js config server/
-ls server/
-ls
 gs
-vim .eslintrc.yaml 
-c
+ag level-up db/
+ag level.*metr
+ag -g level.*metr
+git rm db/migrations/20170724202021-create-level-up-metric.js
+gcm "remove unnecessary migration"
+pfProd
+git rm assets/triggers/show-super-reaction-popup.js 
+gcm 
 gs
-vim .eslintrc.yaml 
-vim README.md 
-open README.md 
-open README.md -a Textedit
-vim gulp
-vim
-gulp
-./gulp 
-vim gulpfile.js 
-./gulp 
-ls
-node server/index.js 
-mv server/index.js .
-node index.js 
-vim index.js 
-node index.js 
-rm index.js 
-mv server/index.js .
-node index.js 
-vim gulpfile.js 
-./gulp 
-open README.md -a Textedit
-vim package.json 
-npm install --save-dev gulp-nodemon
-./gulp server
-ls
-mv index.js server/
-./gulp server
+gcm "Removes unnecessary trigger"
 gs
-./gulp server
-vim server/index.js 
-./gulp 
-gs
-vim gulpfile.js 
-swagger
-ls
-vim src/scss/main.scss 
-ls ../sn-express/test/api/
-cp ../sn-express/test/api test/
-cp -R ../sn-express/test/api test/
-ls
-ls ../sn-express/config/
-cp -R ../sn-express/config .
-swagger project edit
-mv server/api .
-swagger project edit
-vim config/default.yaml 
-ls
-rm -r server/config/
-ls server/
-ls
-vim api/swagger/swagger.yaml 
-vim config/default.yaml 
-mv config api server/
-ls server/
-cd server/
-swagger project edit
-up
-swagger help
-swagger help project
-swagger project edit server/
-cd server/
-swagger project edit api/swagger/
-swagger project edit api/swagger/swagger.yaml 
-up
-swagger project verify
-ls
-mv server/api .
-ls
-swagger project verify
-swagger project edit
-vim server/config/default.yaml 
-swagger project validate
-swagger project verify
-ls
-mkdir gulp_files
-vim gulpfile.js 
-ls
-mv gulp_files gulp_helpers
-ls gulp_helpers/
-ls
-vim gulp
-gs
-ga gulp
-gcm "initial commit: adds gulp script which delegates to local gulp"
-gs
-vim README.md 
-ga README.md
-gcm "adds README"
-gs
-vim bower
-vim bower.json 
-vim package.json 
-bower install swagger-js --save
-gs
-rm gulp_helpers/gulp_helpers.js 
-./gulp
-rm Session.vim 
-ls
-./gulp
-./gulp -l
-ls
-vs
-vim Dockerfile 
-vim D
-vim Dockerfile 
-docker build -t whoami/node-thing
-docker build -t whoami/node-thing .
-eval "$(docker-machine env default)"
-docker-machine env default
-docker-machine ls
-docker-machine env default
-eval "$(docker-machine env default)"
-docker-achine env default
-docker-machine env default
-docker-machine rm default
-docker-machine create default --driver virtualbox
-eval "$(docker-machine env default)"
-docker build -t whoami/node-thing .
-docker ps
-docker images
-docker run -p 49160:8080 -d whoami/node-thing
-docker ps
-jobs
-docker images
-docker ps
-docker run -p 8081:8080 -d whoami/node-thing
-docker ps a5c16b6da69acc127c3b5dcb8000554e822b0c151d3df468adbe6cd3c7795b6d
-docker ps
-docker images
-vim Dockerfile 
-docker run -p 8081:8080 -d whoami/node-thing -v dist/:/dist/
-docker run -p 8081:8080 whoami/node-thing -v dist/:/dist/
-docker run -p 8081:8080 whoami/node-thing -v ./dist/:/dist/
-docker run -p 8081:8080 -v ./dist/:/dist/ whoami/node-thing 
-docker run -p 8081:8080 -v dist:/dist/ whoami/node-thing 
-ls
-vim Dockerfile 
-docker build -t whoami/node-thing .
-docker ps
-docker run -p 8081:8080 whoami/node-thing 
-docker run -p 8081:8080 -d whoami/node-thing 
-docker ps
-curl -i localhost:8081
-curl -i 0.0.0.0:8081
-docker-machine ip default
-curl $(docker-machine ip VM_NAME):8081
-curl $(docker-machine ip default):8081
-open 192.168.99.100:8081
-curl $(docker-machine ip default):8081
-open 192.168.99.100:8081
-
-vim gulpfile.js 
-./gulp - l
-pwd
-vim gulpfile.js 
-./gulp - l
-docker run -p 8081:8080 -d -v dist whoami/node-thing 
-docker run -p 8081:8080 -d -v $(PWD)/dist:/dist/ whoami/node-thing 
-docker run --help
-docker run --help | ag up
-docker containers
-docker ls
-docker herp
-docker help
-docker ps
-docker ps
-./gulp -l
-docker ps
-docker kill 9dec9cae6e2a
-docker ps
-docker run -p 8081:8080 -d -v $(PWD)/dist:/dist/ whoami/node-thing 
-vim src/scss/main.scss 
-docker ps
-docker kill 5c616939ecac
-vim Dockerfile 
-docker build -t whoami/node-thing .
-vim Dockerfile 
-docker build -t whoami/node-thing .
-docker images
-docker run -p 8081:8080 -d -v $(PWD)/dist:/dist/ whoami/node-thing
-docker ps
-docker run -p 8081:8080 -d -v $(PWD)/dist:/dist/ whoami/node-thing
-vim Dockerfile 
-docker build -t whoami/node-thing .
-docker ps
-docker run -p 8081:8080 -d -v $(PWD)/dist:/dist/ whoami/node-thing
-vim Dockerfile 
-docker run -p 8081:8080 -d -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-vim Dockerfile 
-docker build -t whoami/node-thing .
-docker run -p 8081:8080 -d -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-vim Dockerfile 
-docker build -t whoami/node-thing .
-j hol
-vim server/server.js 
-ls
-vim .dockerignore
-vim .dockerignore 
-vim Dockerfile 
-vim .dockerignore 
-docker build -t whoami/node-thing .
-docker images
-docker images | ag none
-docker images | ag none | awk '{print $3}'
-man awk
-docker images | ag none | awk '{print $3}'
-docker rmi $(docker images | ag none | awk '{print $3}')
-docker ps
-docker images -q
-docker images -q -f dangling=ture
-docker images -q -f dangling=true
-docker images
-docker images -q -f dangling=true
-docker ps
-docker images
-docker images -q -f dangling=true
-docker rmi $(docker images -q -f dangling=true)
-gs
-ls
-docker run -p 8081:8080 -d -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-vim Dockerfile 
-docker run mhart/alpine-node node --version
-vim Dockerfile 
-docker build -t whoami/node-thing .
-docker run -p 8081:8080 -d -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-docker build -t whoami/node-thing .
-docker run -p 8081:8080 -d -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-
-vim Dockerfile 
-docker build -t whoami/node-thing .
-docker run -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-vim Dockerfile 
-docker build -t whoami/node-thing .
-docker run -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-vim Dockerfile 
-docker build -t whoami/node-thing .
-docker run -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-vim Dockerfile 
-docker build -t whoami/node-thing .
-docker run -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-vim Dockerfile 
-docker build -t whoami/node-thing .
-docker run -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-vim Dockerfile 
-docker build -t whoami/node-thing .
-./gulp -l
-docker ps
-eval "$(docker-machine env default)"
-docker ps
-docker kill 1c5e77a1fe67
-docker run -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-vim Dockerfile 
-docker build -t whoami/node-thing .
-docker run -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-docker build -t whoami/node-thing .
-docker run -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-docker run -a -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-docker run -a stdout sterr -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-docker run -a stdout stderr -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-docker run -a stdout -a stderr -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-docker run -it -a stdout -a stderr -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-c
-docker run -it -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-c
-vim Dockerfile 
-docker build -t whoami/node-thing .
-docker run -it -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-c
-docker run -it -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-vim Dockerfile 
-docker run -it -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-vim Dockerfile 
-docker build -t whoami/node-thing .
-docker run -it -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-vim Dockerfile 
-docker build -t whoami/node-thing .
-docker run -it -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-vim Dockerfile 
-docker run -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-docker run -a stdout -a stderr -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-docker images
-docker rmi $(docker images | ag none | awk '{print $3}')
-docker images
-docker rmi whoami/node-thing
-docker rmi -f whoami/node-thing
-docker rmi $(docker images | ag none | awk '{print $3}')
-docker rmi -f $(docker images | ag none | awk '{print $3}')
-docker images
-docker build -t whoami/node-thing .
-vim Dockerfile 
-docker build -t whoami/node-thing .
-docker run --rm -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-vim Dockerfile 
-docker build -t whoami/node-thing .
-docker run --rm -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-vim Dockerfile 
-docker build -t whoami/node-thing .
-vim Dockerfile 
-docker build -t whoami/node-thing .
-eval "$(docker-machine env default)"
-docker build -t whoami/node-thing .
-docker ps
-docker kill 17c3589aa988
-docker run --rm -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-docker build -t whoami/node-thing .
-docker images
-docker build -t whoami/node-thing .
-docker run --rm -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-docker build -t whoami/node-thing .
-docker run --rm -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-docker build -t whoami/node-thing .
-docker run --rm -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-docker build -t whoami/node-thing .
-docker run --rm -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-docker images
-docker rmi -f $(docker images | ag none | awk '{print $3}')
-docker images
-docker rmi 4e5198540b6a
-docker images
-docker rmi -f $(docker images | ag none | awk '{print $3}')
-docker images
-gs
-ls
-vim src/scss/main.scss 
-./gulp
-j ang
-ls
-vim api/swagger/swagger.yaml 
-docker run --rm -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ whoami/node-thing
-docker build -t seamgen/angular-starter .
-eval "$(docker-machine env default)"
-docker-machine regenerate-certs default
-./gulp
-eval "$(docker-machine env default)"
-docker build -t seamgen/angular-starter .
-docker ps
-eval "$(docker-machine env default)"
-docker ps
-curl $(docker-machine ip default):8081
-docker-machine ip default
-vim src/scss/main.scss 
-docker run --rm -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ seamgen/angular-starter
-ls
-docker run --rm -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ seamgen/angular-starter
-eval "$(docker-machine env default)"
-./gulp
-docker run --rm -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ seamgen/angular-starter
-node server/index.js 
-j hol
-vim common/models/contact.js
-vim common/models/feed.js
-vp common/models/page.*
-vp common/models/user*
-ls
-ls server/
-vim server/boot/root.js 
-vim server/boot/rest-api.js 
-vim server/boot/authentication.js 
-vim server/datasources.demo.js 
-vim server/server.js 
-vp api/swagger/swagger.yaml api/helpers/README.md 
-swagger project eidt
-swagger project edit
-vim api/swagger/swagger.yaml 
-ls
-vim gulpfile.js 
-ls
-vim gulp_helpers/gulp_tasks.js 
-ls
-vim README.md 
-gs
-ga README.md 
-gcm "updates README with docker commands"
-gs
-vim README.md 
-ls
-j kit
-ls
-gs
-gcob v1
-gco master
-gbr rename v1 v1-master
-gbr -m v1 v1-master
-gbr
-gcob v2
-brew install awsebcli
-eb --version
-ls
-la
-eb status
-ls
-gbr
-vim config.js 
-ls
-la
-git rm -r README.md 
-git rm -r config.js contributors.txt install install.js message* package.json 
-ls
-la
-cp -R ../angular-starter/ .
-ls
-gs
-ls
-j kit
-eb init
-eb status
-eb create
-eb logs
-eb status
-j kit
-brew update
-brew doctor
-vim ~/Downloads/credentials.csv 
-docker-compose 
-j ang
-vim Dockerrun.aws.json
-ls
-vim docker-compose.yaml
-ls
-gs
-gd README.md 
-ga README.md 
-gcm "add note about swagger to README"
+vim lib/models/userlevel.js 
+j api
 k
 gs
-ga .eslintrc.yaml .jscsrc.yaml 
-gcm "adds config for ESLint and JSCS"
-ga Dockerfile 
-gcm "adds Dockerfile"
+./sql migration:create --name create-super-reaction-user-command
+git mv assets/commands/modal/show-super-reaction-popup.js assets/commands/modal/show-super-reaction-info.js
+gcm "Renames a command module"
+ag reaction-popup lib/
+vs
 gs
-vim .dockerignore 
-ga .dockerignore 
-gcm "adds .dockerignore"
-c
+ga assets/
+gcm "Adds a userCommand for when a user earns a SR, fixes the other SR command/trigger modules"
+gp
+gs
+gd db/
+gs
+ga db/
+gcm "Adds a command for earning a SR, fixes the other migrations"
+gs
+gd lib/models/userlevel.js 
+gs
+gd lib/services/
+vim lib/services/socialreaction.js 
+gs
+ga lib/
+gcm "Small fixes to SR-related methods"
+gs
+gp
+k
+k
+vim assets/triggers/earn-super-reaction.js 
+gs
+./node_modules/.bin/eslint lib/
+vim /Users/aidanmiles/Documents/iexhale/code/api/lib/models/userlevel.js
+vim /Users/aidanmiles/Documents/iexhale/code/api/lib/models/usernotification.js
+gs
+k
+./node_modules/.bin/eslint lib/
+vim /Users/aidanmiles/Documents/iexhale/code/api/lib/models/usernotification.js
+./node_modules/.bin/eslint --fix lib/models/socialthread.js 
+./node_modules/.bin/eslint --fix lib/
+gs
+ga lib/
+gcm "Adds eslint fixes"
+gp
+gs
+ag earn-super-reaction lib/
+ag earn lib/
+ag unspent
+ag unspent lib/
+ag -g unspent
+ag -g unspent
+git mv db/migrations/20170724202023-add-notification-user-unspent-super-reaction.js db/migrations/20170724202023-add-notification-user-unspent-super-reaction.js
+git mv db/migrations/20170724202023-add-notification-user-unspent-super-reaction.js db/migrations/20170724202023-add-notification-user-unused-super-reaction.js
+gs
+ga assets/
+gcm "Changes usage of unspent to unused"
+gs
+gp
+ag checkIf lib/
+vim lib/models/metric.js 
+gs
+ga lib/models/
+gcm "Puts server back into triggerInputs for trigger modules"
+gp
+vp assets/triggers/*
+gs
+vp $(ag -l unspent lib/)
+gs
+gd
+ga lib/
+gcm "Changes usage of unspent to unused"
+gp
+gs
+gco dev
+gpu
+gs
+gco sr
+grb dev
+gpo -f
+gs
+gco dev
+gcob feature/invitation-points
+gpo -u feature/invitation-points
+gs
+ag invitationshare lib/
+vim lib/models/invitationshare.js 
+gs
+gco defv
+gco dev
+gcob sticker-script
+gpo -u feature/new-posting-stickers
+gpo -u sticker-script:feature/new-posting-sticker
+gpo -u sticker-script:feature/new-posting-stickers
+gpo :feature/new-posting-sticker
+open assets/
+pfProd
+gs
+vim lib/services/socialpost.js 
+gs
+gco dev
+gpu
+pm2 deploy ecosystem.config.js dev
+whois aidanmiles.com
+scratch
+pfProd
+pfDev
+k
+gs
+gpu
+gs
+gpu
+vim assets/commands/level-up/
+gs
+gco sr
+grb dev
+gpo -f
+gs
+ag addCommand lib/services/
+glg | ag command
+gs
+gco dev
+gpu
+vim assets/commands/level-up/level-up.js 
+ag unspent lib/
+ag unspent db/
+gco sr
+ag unspent lib/
+ag unspent db/
+./scripts/reset_db.sh 7-23
+glg
+./sql migration:create --name add-lifetime-max-triggers-to-metric-triggers
+vim lib/services/user.js 
+vp assets/commands/modal/show-super-reaction-*
+gs
+vp $(ag -l unspent db/)
+vim bin/reset-level-avatars 
+gs
+mysqld
+sqldn
+j api
+gs
+rm db/migrations/20170728233043-add-interval-max-triggers-to-metric-triggers.js
+gs
+gd db/
+gs
+ga db/migrations/
+gd lib/models/metrictrigger.js 
+gs
+ga lib/models/metrictrigger.js 
+gcm "Adds a new column to MetricTriggers, fixes other migrations"
+gs
+gd lib/models/
+./scripts/reset_db.sh 7-23
+ag maxInterval lib/
+./scripts/reset_db.sh 7-23
+open db/migrations/
+gs
+ga db/migrations/
+gs
+gcm "Reorders a migration"
+gs
+./scripts/reset_db.sh 7-23
+gs
+./scripts/reset_db.sh 7-23
+gs
+gd db/
+ga db/
+gcm "Fixes a migration"
+gs
+gp
+vs
+gs
+ga lib/models/
+gcm "Fixes logic for metric tracking to include new metric trigger properties"
+gs
+gp
+gs
+gco dev
+gpu
+gbr
+gco feature/invitation-points
+node
+k
+k
+k
+gs
+./sql migration:create --name create-new-invitation-actions
+./scripts/reset_db.sh 7-23
+mundo
+vim db/migrations/20170731160101-create-new-invitation-actions.js
+gs
+migrate
+node
+migrate
+./scripts/reset_db.sh 7-23
+k
+k
+vim db/migrations/20170731160101-create-new-invitation-actions.js
+gs
+ga db/
+gcm "Adds a migration to add actions and metrics for tracking invitations"
+ag -Q "addAction('create-invitation" lib/
+ag create-invitation-share lib/
+vim lib/models/invitationshare.js 
+gs
+ga lib/models/
+gcm "Adds logic to create a userAction corresponding to the state of an InvitationShare created by a user"
+gp
+ag invitationshare.create lib/
+vim lib/routes/invitationshares.js 
+vim lib/services/invitationshare.js 
+gs
+gco dev
+gbr
+gco sticker-script
+grb dev
+gp
+vim bin/import-posting-stickers 
+k
+gs
+ga bin/import-posting-stickers 
+gcm "Adds a skeleton of the sticker script"
+gp
+gs
+k
+gs
+gco dev
+gpu
+gco sr
+./scripts/reset_db.sh 7-23
+k
+k
+gs
+./run_api.sh 
+sqlcl < queries/set_level_2_minus_1point.sql 
+scratch
+./node_modules/.bin/inspect try.js
+vim ~/scratch 
+./node_modules/.bin/inspect try.js
+./node_modules/.bin/inspect try.js | tee log.txt
+vim log.txt 
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+sqlcl < queries/set_level_2_minus_1point.sql 
+./run_api.sh 
+./node_modules/.bin/inspect try.js
+./scripts/reset_db.sh 7-23
+sqlcl < queries/set_level_2_minus_1point.sql 
+k
+k
+./node_modules/.bin/inspect try.js | log.txt
+./node_modules/.bin/inspect try.js | ltee log.txt
+./node_modules/.bin/inspect try.js | tee log.txt
+ag -g notif db/migrations/
+./scripts/reset_db.sh 7-23
+sqlcl < queries/set_level_2_minus_1point.sql 
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+sqlcl < queries/set_level_2_minus_1point.sql 
+./scripts/reset_db.sh 7-23
+sqlcl < queries/set_level_2_minus_1point.sql 
+./scripts/reset_db.sh 7-23
+sqlcl < queries/set_level_2_minus_1point.sql 
+ag applyPoints lib/
+sqlcl < queries/set_level_2_minus_1point.sql 
+vim try.js 
+gs
+vim scripts/generate-user-command-queue.js 
+node scripts/generate-user-command-queue.js 
+gs
+git stash
+vs
+gs
+gco dev
+./scripts/reset_db.sh 7-23
+node scripts/generate-user-command-queue.js 
+vim etc/database.json 
+gs
+pfDev
+gco sr
+git stash pop
+gs
+./scripts/reset_db.sh 7-23
+sqlcl < queries/set_level_2_minus_1point.sql 
+./node_modules/.bin/inspect try.js | tee log.txt
+./run_api.sh 
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+sqlcl < queries/set_level_2_minus_1point.sql 
+./node_modules/.bin/inspect try.js | tee log.txt
+vs
+gs
+gd db/
+ga db/
+gcm "Adds some catch blocks to migrations"
+gs
+gd lib/services/
+gco lib/services/
+gs
+gd lib/models/
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+vs
+gs
+gd lib/models/
+gd lib/models/
+vim lib/models/user.js 
+gs
+gd lib/models/
+gs
+ga lib/models/
+gcm "Adds fixes to various models related to super reactions"
+gp
+pfDev
+ag -g super db/migrations/
+open db/migrations/
+ag -g super db/migrations/
+vim db/migrations/20170724202024-add-super-reaction-metrictriggers.js
+./scripts/reset_db.sh 7-23
+pfProd
+node
+vim ~/scratch 
+vim lib/models/userreactionavailability.js 
+gs
+./scripts/reset_db.sh 7-23
+vim assets/triggers/earn-super-reaction.js 
+gs
+k
+gs
+gd
+gs
+ga db/ lib/
+gs
+gcm "Fixes logic for earning super reactions"
+gs
+./scripts/reset_db.sh 7-23
+k
+gs
+fg
+pfProd
+gs
+vim lib/models/therapist.js 
+sqlcl < queries/set_level_2_minus_1point.sql 
+vim queries/set_level_5.sql 
+vim scripts/generate-user-command-queue.js 
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+sqlcl < queries/set_level_2_minus_1point.sql 
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+pfDev
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+gs
+gd
+gs
+./scripts/reset_db.sh 7-23
+ag debugger lib/
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+vim log.txt 
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+k
+./node_modules/.bin/inspect try.js | tee log.txt
+vs
+gs
+gd lib/services/
+ ga lib/services/socialreaction.js 
+gs
+gd lib/models/
+gs
+ga lib/models/
+gcm "Cleans up Super Reaction-related code, adds extra logic for hiding notifications"
+gs
+gp
+gd lib/services/
+gco lib/services/
+gs
+k
+k
+k
+vim try.js 
+gs
+k
+vim try.js 
+gs
+gco dev
+gpu
+k
+gco sr
+./scripts/reset_db.sh 7-23
+vim try.js 
+gs
+gco dev
+gs
+gcob feature/mood-analysis-test
+gpo -u feature/mood-analysis-test
+gbr -m graphs
+vim blah.js
+fg
+gs
+vim lib/routes/users.js 
+gs
+git stash
+gco sr
+gs
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+vim lib/models/usernotification.js 
+gs
+gd lib/models/
+ga lib/models/
+vim lib/models/usernotification.js 
+ga lib/models/
+gs
+gcm "Fixes logic for hiding Super Reaction notifications"
+gp
+node
+./run_api.sh 
+gs
+pfProd
+k
+k
+gco dev
+gpu
+gbr
+gco graphs
+git stash pop
+vs
+gs
+pfProd
+vim lib/services/user.js 
+git stash
+gco sr
+vim assets/commands/modal/show-super-reaction-info.js 
+vim assets/commands/modal/show-super-reaction-earned.js 
+gs
+./node_modules/.bin/inspect try.js | tee log.txt
+ag addCommand lib/
+./run_api.sh 
+./scripts/reset_db.sh 7-23
+gs
+vim lib/models/usermetrictrigger.js 
+gs
+ga lib/models/
+gcm "Removes mention of createdById from UserMetricTriggers"
+gp
+gco dev
+gpu
+gs
+pm2 deploy ecosystem.config.js dev
+vim
+gs
+gbr
+gco feature/invitation-points
+grb dev
+gpo -f
+gco dev
+git db feature/invitation-points
+git db sr
+gs
+gbr
+git db hotfix/social-post-report-notification
+gbr
+gs
+gpu
+gco graphs
+grb dev
+gp
+vim lib/cron/super-reactions.js 
+gs
+vim
+pfDev
+gs
+vim lib/services/user.js 
+git stash pop
+pfProd
+vim lib/services/user.js 
+gs
+git stash
+gco dev
+./scripts/reset_db.sh 7-23
+k
+k
+vim lib/models/usernotification.js 
+k
+gs
+gco graphs
+git stash pop
+ag ActionNotificationMessage lib/
+vim lib/services/user.js 
+gs
+git stash
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+vim lib/cron/index.js 
+gs
+gco dev
+gs
+ls bin/
+./bin/cron
+chmod u+x bin/cron 
+./bin/cron 
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+gs
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+gs
+gd lib/models/actionnotificationmessage.js 
+ga lib/models/actionnotificationmessage.js
+gd lib/models/
+ga lib/models/
+gs
+gcm "Fixes ActionNotificationMessages by setting paranoid to true, removing improper uses of its deletedAt property"
+gs
+gp
+gpu --rebase
+git stash
+gpu --rebase
+gp
+git stash pop
+gs
+gd bin/cr
+gd bin/
+gco bin/
+gs
+./node_modules/.bin/inspect try.js | tee log.txt
+./scripts/reset_db.sh 7-23
+./node_modules/.bin/inspect try.js | tee log.txt
+gs
+vim
+k
+k
+gs
+pfDev
+k
+gco graphs
+git stash show -p
+git stash pop
+k
+gs
+pm2 deploy ecosystem.config.js dev
+git stash
+pm2 deploy ecosystem.config.js dev
+gs
+gd lib/
+pfDev
+./run_api.sh 
+vim lib/services/user.js 
+mysqld
+sqldn
+j api
+git stash show -p
+git stash pop
+git stash
+git stash list
+git stash pop stash@{1}
+git stash show -p
+gs
+git stash pop
+gd lib/services/user.js 
+gs
+git stash lib/services/user.js 
+gd lib/services/user.js 
+gs
+git stash show -p
+gs
+gco lib/services/user.js 
+git stash pop
+pfDev
+ssh-add ~/.ssh/id_bb_rsa
+vim lib/services/user.js 
+gs
+git stash
+gco dev
+glg
+gpu
+pfDev
+sshDev
+hag scp
+hag scp
+scp aidanmiles@iex-app01-c7-dev01:/home/aidanmiles/iex-dev-2017-7-23.sql.gz ../dumps/
+scp aidanmiles@iex-app01-c7-dev01:/home/aidanmiles/iex-dev-2017-8-02.sql.gz ../dumps/
+gunzip ../dumps/*.gz
+./scripts/reset_db.sh 8-02
+j dotf
+vim bin/journal 
+cd -
+gs
+gd lib/models/
+gpu
+git stash
+gpu
+vim lib/models/actionnotificationmessage.js 
+vim lib/models/actionnotificationmessage.js 
+gs
+gs
+git stash pop
+vim lib/models/actionnotificationmessage.js 
+gs
+ga lib/models/
+gcm "Fixes issue with ActionNotificationMessages and paranoid mode"
+gp
+git stash drop
+gs
+pm2 deploy ecosystem.config.js dev
+gco graphs
+grb dev
+gp
+gs
+git stash pop
+vs
+gs
+ga lib/models/
+git reset
+gs
+git stash drop
+fg
+gs
+vim lib/services/user.js 
+j web
+up
+ls
+cd webapp/
+gco master
+gs
+git stash
+gco master
+glg
+gs
+open .
+ls
+glg
+gco oshin
+open .
+gco master
+glg
+gbrt
+gbr
+glg
+git log
+ls
+ag -g p3
+vim README.md 
+bower install
+ni
+npm install bower
+j web
+npm install bower
+bower install
+./node_modules/.bin/bower install
+vim gulpfile.js 
+ag outFileName
+vim tasks/build/javascript.js 
+vim tasks/develop/browserify.js 
+vim tasks/config.js 
+ls app/
+open app/index.html 
+vim gulpfile.js 
+./node_modules/.bin/gulp --env test
+vim tasks/build/index.js 
+ag -g index.html .
+open build/index.html 
+open app/index.html 
+vim tasks/develop/watchers.js 
+./node_modules/.bin/gulp
+vim gulpfile.js
+gs
+node app/js/index.js 
+ls
+vim app/js/index.js 
+ls assets/
+ls app/
+vim app/index.html 
+open app/index.html 
+vim app/index.html 
+ls
+ls build/
+rm -r build/*
+./node_modules/.bin/gulp 
+pfDev
+gs
+fg
+k
+gs
+git stash
+gs
+gco dev
+k
+k
+./scripts/reset_db.sh 8-02
+sqlcl < queries/set_level_2_minus_1point.sql 
+node scripts/prepare-and-send-usernotifications.js 
+ag  'show-super-reaction-info' lib/
+./scripts/reset_db.sh 8-02
+sqlcl < queries/set_level_2_minus_1point.sql 
+node scripts/prepare-and-send-usernotifications.js 
+ag addCommand lib/
+node scripts/prepare-and-send-usernotifications.js 
+./scripts/reset_db.sh 8-02
+sqlcl < queries/set_level_2_minus_1point.sql 
+./scripts/reset_db.sh 8-02
+sqlcl < queries/set_level_2_minus_1point.sql 
+vim lib/models/userlevel.js 
+gs
+gd lib/models/
+vim lib/models/user.js 
+gs
+gd
+gd lib/
+gd
+gs
+./scripts/reset_db.sh 8-02
+sqlcl < queries/set_level_2_minus_1point.sql 
+node scripts/prepare-and-send-usernotifications.js 
+k
+gs
+fd
+gd
+gs
+ga lib/models/
+gcm "Fixes an issue where any action that applied points would cause duplicate UserCommands"
+gs
+gp
+gpu --rebase
+gp
+pm2 deploy ecosystem.config.js dev
+vim lib/models/user.js 
+gs
+gbr
+gco graphs
+grb dev
+gp
+git stash pop
+gs
+gco dev
+gs
+gd lib/cron/
+ga lib/cron/
+gcm "Changes the time that the Super Reaction cron job runs"
+gp
+gs
+gco graphs
+grb dev
+git stash
+grb dev
+git stash pop
+gs
+gp
+gs
+./run_api.sh 
+vs
+gs
+./sql migration:create --name create-time-table
+./sql migration:create --name seed-time-table
+ag -Q .complete lib/
+pfProd
+mysql
+k
+mysql
+gs
+vs
+gs
+git stash
+gco dev
+gs
+./run_api.sh 
+open db/migrations/
+./scripts/reset_db.sh 8-02
+vim lib/models/metric.js 
+gs
+gd
+ga lib/models/
+git reset
+ga lib/models/metric
+ga lib/models/metric.js 
+gs
+gcm "Fixes an issue where Metrics without a selector value could not be tracked"
+gp
+pm2 deploy ecosystem.config.js dev
+k
+k
+k
+open db/migrations/
+gbr
+gpu
+gco graphs
+grb dev
+gp
+git stash pop
+vs
+gs
+pfDev
+./scripts/reset_db.sh 8-02
+mundo
+gs
+./scripts/reset_db.sh 8-02
+vs
+./scripts/reset_db.sh 8-02
+open db/migrations/
+./scripts/reset_db.sh 8-02
+mundo
+migrate
+./scripts/reset_db.sh 8-02
+open db/migrations/
+migrate
+./scripts/reset_db.sh 8-02
+gs
+open db/migrations/
+./scripts/reset_db.sh 8-02
+mundo
+migrate
+./scripts/reset_db.sh 8-02
+migrate
+vs
+gs
+ga db/migrations/
+ga lib/models/time.js 
+gcm "Adds the Times model and migrations"
+gs
+gp
+k
+gs
+glg
+gs
+glg
+gs
+gco dev
+gco graphs
+git stash
+gco dev
+gs
+gcob feature/times-table
+git cherry-pick 5f78974d
+./scripts/reset_db.sh 8-02
+gp
+gpo -u feature/times-table
+ag -g time db/migrations/
+./scripts/reset_db.sh 8-02
+vim db/migrations/20170802232748-seed-time-table.js
+gs
+gd db/
+ga db/
+gcm "Adds some comments"
+gp
+gs
+gco dev
+gpu
+tco feature/times-table
+gbr -m times
+grb dev
+gbr -m dev
+gco feature/times-table
+grb dev
+gpo -f
+gbr -m times
+gs
+gbr
+gs
+gco graphs
+grb dev
+gpo -f
+vim lib/services/user.js 
+gs
+git stash pop
+vim lib/services/user.js 
+gs
+ag Calendar lib/
+vim lib/models/metric.js 
+k
+vs
+gs
+git stash
+gbr
+gco times
+gs
+./sql migration:create --name add-unique-indices-to-time-table
+vim db/migrations/20170804184011-add-unique-indices-to-time-table.js
+vim lib/models/time.js 
+gs
+ga db/
+ga lib/
+gcm "Adds unique indices to Time"
+gp
+gs
+gco graphs
+k
+gco dev
+gpu
+gco time
+gco times
+grb dev
+gpo -f
+./node_modules/.bin/eslint --fix lib/
+vim lib/models/time.js 
+gs
+./node_modules/.bin/eslint --fix lib/
+gd lib/
+gs
+ga lib/models/
+gcm "Runs eslint, fixes conflicting scope on Time model"
+gp
+gs
+gbr
+gs
+gbr
+gco graphs
+grb dev
+glg
+gs
+glg
+gs
+git reset --soft HEAD~1
+gs
+git reset
+gs
+gs
+rm 
+rm db/migrations/20170802232740-create-time-table.js db/migrations/20170802232748-seed-time-table.js lib/models/time.js
+gs
+gpo -f
+gs
+grb time
+grb times
+gp
+gs
+pfDev
+vs
+git stash pop
+gs
+git stash
+gco dev
+gs
+gpu
+gcob feature/add-more-actions
+gpo -u feature/add-more-actions
+./sql migration:create --name add-sign-in-attempt-actions
+./sql migration:create --name add-level-up-actions
+./sql migration:create --name add-user-status-actions
+ag -A 2 afterCreate lib/
+vim
+gs
+ga db/
+git reset
+./scripts/reset_db.sh 8-02
+k
+./node_modules/.bin/eslint --fix lib/
+./scripts/reset_db.sh 8-02
+k
+sqlcl < queries/set_level_2_minus_1point.sql 
+./run_api.sh 
+./scripts/reset_db.sh 8-02
+sqlcl < queries/set_level_2_minus_1point.sql 
+./scripts/reset_db.sh 8-02
+sqlcl < queries/set_level_2_minus_1point.sql 
+./scripts/reset_db.sh 8-02
+sqlcl < queries/set_level_2_minus_1point.sql 
+./scripts/reset_db.sh 8-02
+k
+sqlcl < queries/set_level_2_minus_1point.sql 
+vim lib/models/userstatus.js 
+gs
+ga db/migrations/
+gcm "Adds migrations to add more actions"
+gd lib/
+ag debugger .
+gs
+./node_modules/.bin/eslint --fix lib/
+vim lib/models/userlevel.js 
+gs
+gd controllers/
+gd lib/services/
+gd lib/models/
+gs
+ga lib/ controllers/
+gcm "Adds logic to track the new Actions"
+gp
+gs
+k
+k
+glg
+gs
+gbr
+gco graphs
+gs
+gco dev
+gs
+gco graphs
+./scripts/reset_db.sh 8-02
+k
+glg
+gs
+glg
+gs
+vs
+git stash pop
+gd lib/controllers/user.js 
+gs
+k
+k
+ag applyPoints
+gs
+git stash
+sqlcl < queries/set_level_2_minus_1point.sql 
+./scripts/reset_db.sh 8-02
+sqlcl < queries/set_level_2_minus_1point.sql 
+vs
+gs
+gd
+gco lib/models/userlevel.js 
+git stash pop
+gs
+./sql migration:create --name add-category-to-feelings
+./run_api.sh 
+vs
+k
+k
+k
+j api
+j api
+k
+k
+./scripts/reset_db.sh 8-02
+mundo
+k
+k
+cd ~/.vim/colors/
+ag -g ear .
+ls
+vim night.vim 
+gs
+la
+k
+mysqld
+sqldn
+mysqld
+k
+sqlcl
+./scripts/reset_db.sh 8-02
+sqlcl
+./scripts/reset_db.sh 8-02
+sqlcl
+./scripts/reset_db.sh 8-02
+open db/migrations/
+./scripts/reset_db.sh 8-02
+./sql migration:create --name add-unique-indices-to-calendar
+./scripts/reset_db.sh 8-02
+ag -Q sequelize = lib/
+ag -Q sequelize = lib/
+ag -Q sequelize = lib/
+ag -Q "sequelize =" lib/
+ag -Q "sequelize =" db/
+./node_modules/.bin/inspect try.js
+./run_api.sh 
+vs
+gs
+gd db/
+gs
+gd lib/models/actionnotificationmessage.js 
+gs
+gd lib/models/feeling.js 
+gs
+ga lib/models/feeling.js 
+ga db/migrations/20170804232018-add-category-to-feelings.js
+gs
+gd lib/routes/user.
+gd lib/routes/users.js 
+ga lib/routes/users.js
+git reset lib/routes/users.js 
+gs
+gcm "Adds a category property to Feelings"
+gs
+gp
+gs
+gd lib/controllers/user.js 
+ga lib/routes/users.js lib/controllers/user.js 
+gs
+gd lib/services/
+gs
+ga lib/services/user.js 
+gs
+gcm "Adds a rough draft of the Mood Report endpoint"
+gp
+gpo -u graphs:feature/mood-analysis
+gpo :feature/mood-analysis-test
+gs
+gd bin/migrate-v1-data 
+gd db/migrations/
+gs
+ga lib/services/
+gcm "Fixes the output for the spline chart to have UNIX timestamps"
+gp
+vim lib/services/user.js 
+gs
+ga lib/services/user.js 
+gcm "Adds some small changes to the mood report method"
+gp
+vim lib/services/user.js 
+gs
+gd lib/services/
+vim lib/services/user.js 
+gs
+./node_modules/.bin/eslint --fix lib/
+gs
+vim lib/services/user.js 
+gs
+vim lib/services/user.js 
+gs
+./run_api.sh 
+sqldn
+vim lib/services/user.js 
+a
+gs
+git stash
+gco dev
+gpu
+gco graphs
+grb dev
+gpo -f
+gs
+gbr
+gco feature/add-more-actions
+gbr -m more-actions
+gs
+ag -g add.*actions db/
+vp db/migrations/20170804191844-add-user-status-actions.js db/migrations/20170804191833-add-level-up-actions.js db/migrations/20170804191824-add-sign-in-attempt-actions.js
+vim controllers/userController.js 
+gd dev
+pfProd
+sqlcl < queries/set_level_2_minus_1point.sql 
+node
+./scripts/reset_db.sh 8-02
+gs
+gs
+./scripts/reset_db.sh 8-02
+sqlcl < queries/set_level_2_minus_1point.sql 
+./scripts/reset_db.sh 8-02
+sqlcl < queries/set_level_2_minus_1point.sql 
+./scripts/reset_db.sh 8-02
+sqlcl < queries/set_level_2_minus_1point.sql 
+./scripts/reset_db.sh 8-02
+sqlcl < queries/set_level_2_minus_1point.sql 
+gs
+sqlcl < queries/set_level_2_minus_1point.sql 
+./scripts/reset_db.sh 8-02
+sqlcl < queries/set_level_2_minus_1point.sql 
+vim lib/models/usersigninattempt.js 
+fg
+gs
+gd db/
+gs
+ga db/migrations/
+git reset db/migrations/20170805041920-add-unique-indices-to-calendar.js
+gs
+gd lib/models/
+gs
+ga lib/models/
+gs
+gcm "Updates the keys of new actions, fixes logic for level-up actions"
+gp
+gs
+./run_api.sh 
+gco dev
+gpu
+gco more-actions
+grb dev
+vim lib/models/userlevel.js
+gs
+ga lib/
+gs
+git reset lib/routes/
+gs
+grb --continue
+gpo -f
+s
+gs
+gco graphs
+grb dev
+gs
+vim lib/services/user.js 
+git stash
+gs
+gco more-actions
+vim
+gs
+vim lib/models/userlevel.js 
+gs
+ga db/ lib/models/ 
+git reset db/migrations/20170805041920-add-unique-indices-to-calendar.js
+s
+gs
+gcm "Updates keys and inputs for new actions"
+gp
+gs
+k
+k
+k
+gp
+gs
+gco graphs
+gs
+git stash pop
+git stash show -p
+gs
+/sl
+./scripts/reset_db.sh 8-02
+sqlcl
+vs
+gs
+ga lib/services/user.js 
+./scripts/reset_db.sh 8-02
+gcm "Refactors mood analysis methods in the user service"
+gp
+gs
+k
+gs
+k
+k
+./run_api.sh 
+gs
+ga lib/services/user.js 
+gcm "More fixes to mood analysis methods"
+gp
+./node_modules/.bin/eslint --fix lib/services/user.js 
+gs
+ga lib/services/user.js 
+gcm "Adds style fixes"
+gp
+node
+gs
+git stash show -p
+./run_api.sh 
+gs
+gd lib/services/
+gs
+ga lib/services/user.js 
+git reset
+./node_modules/.bin/eslint --fix lib/services/user.js 
+gs
+ga lib/services/user.js 
+gcm "Adds information about available data for a user to the output of the mood report"
+gp
+k
+vs
+gs
+gs
+gp
+gs
+gco dev
+gs
+gpu
+k
+k
+k
+vim db/migrations/20170724202023-add-notification-user-unused-super-reaction.js
+gs
+ga db/migrations/20170724202023-add-notification-user-unused-super-reaction.js
+gs
+gcm "Fixes a notification message to only have markdown formatting for the action component, not push"
+gp
+vim db/migrations/20170724202023-add-notification-user-unused-super-reaction.js
+gs
+ga db/migrations/20170724202023-add-notification-user-unused-super-reaction.js
+gcm "Removes some uneccesary text from a push notification"
+gp
+gs
+pm2 deploy ecosystem.config.js prod
+gco graphs
+k
+git stash show -p
+git stash drop
+gs
+gco dev
+gpu
+ls assets/avatars/comment/
+./node_modules/.bin/inspect ./bin/reset-level-avatars 
+gs
+gco master
+gpu
+gs
+ag HACK lib/
+vim lib/models/socialresponse.js 
+gs
+ga lib/models/socialresponse.js 
+gcm "Re-enables ActionNotificatons for receiving Super Reactions"
+gp
+pm2 deploy ecosystem.config.js prod
+glg
+gs
+gco dev
+git cherry-pick 335ee4a4
+gp
+pm2 deploy ecosystem.config.js dev
+vim etc/database.json 
+pfProd
+ls -l assets/avatars/
+pfDev
+pfPRod
+vim bin/reset-level-avatars 
+vim bin/reset-level-avatars 
+gs
+pfProd
+pfProd
+vim ecosystem.config.js 
+k
+gs
+gco graphs
+gpu --rebase
+k
+pfProd
+hag scp.*prod
+hag scp.*prod
+scp appuser@iex-prod-web03:/home/appuser/log.txt.gz .
+scp appuser@iex-prod-web03:/home/appuser/out.log.gz .
+gunzip out.log.gz 
+ag latency out.log 
+man tail
+hag tail
+man tail
+tail --lines 1000 out.log 
+man tail
+tail -n 1000 out.log 
+tail -n 1000 out.log | ag latency
+tail -n 1000 out.log | ag latency.{2}\d{3}
+pfProd
+man ag
+tail -n 1000 out.log | ag latency.\{2\}\\d\{3\}
+tail -n 1000 out.log | ag latency.\{2\}\\d\{4\}
+tail -n 1000 out.log | ag latency.\{2\}\\d\{4\}
+tail -n 1000 out.log | ag latency.\{2\}\\d\{4\}
+ag latency.\{2\}\\d\{5\} out.log
+./scripts/reset_db.sh 8-02
+gs
+rm db/migrations/20170805041920-add-unique-indices-to-calendar.js
+sqlcl
+./scripts/reset_db.sh 8-02
+sqlcl
+./scripts/reset_db.sh 8-02
+:w
+./scripts/reset_db.sh 8-02
+k
+node scripts/create-user-levels.js 
+./run_api.sh 
+./scripts/reset_db.sh 8-02
+node scripts/create-user-levels.js 
+vim out.log 
+tail -n 1000 out.log 
+gs
+git stash
+git stash pop
+node scripts/create-user-levels.js 
+./scripts/reset_db.sh 8-02
+node scripts/create-user-levels.js 
+vim lib/services/user.js 
+gs
+gs
+git stash show -p
+gs
+./scripts/reset_db.sh 8-02
+node scripts/create-user-levels.js 
+vim lib/services/user.js 
+k
+gs
+git stash
+gco dev
+vim lib/models/user.js 
+gco
+gs
+k
+gco graphs
+git stash pop
+gs
+vs
+k
+./node_modules/.bin/inspect try.js
+./run_api.sh 
+gs
+./node_modules/.bin/eslint --fix lib/services/user.js 
+vs
+gs
+vim lib/services/user.js 
+gs
+gd lib/
+gs
+./node_modules/.bin/eslint --fix lib/services
+./node_modules/.bin/eslint --fix lib/
+vim lib/models/userlevel.js 
+gs
+gd lib/models/userlevel.js 
+gco lib/models/userlevel.jsgs
+gco lib/models/userlevel.js 
+gs
+ga lib/controllers/user.js 
+gcm "Adds a _buildMoodReportParams method to the user controller"
+gs
+gd lib/services/user.js 
+gs
+ga lib/services/user.js 
+gcm "Refactors mood report methods, adds one property to each point in the spline graph"
+gp
+vim lib/models/feeling.js 
+kgs
+gs
+gd lib/models/feeling.js 
+ga lib/models/feeling.js
+gcm "Adds a validation on the new feeling property"
+gs
+gp
+gco dev
+gpu
+k
+k
+vim lib/models/feeling.js 
+gs
+ga lib/models/feeling.js 
+gcm "Adds a missing comma"
+gp
+pm2 deploy ecosystem.config.js dev
+vim lib/services/user.js 
+gs
+gd lib/
+gs
+ga lib/services/user.js 
+gcm "Adjusts the structure of the mood report slightly"
+gp
+pm2 deploy ecosystem.config.js dev
+vim lib/services/user.js 
+gs
+vim lib/services/user.js 
+gs
+gs
+ga lib/
+gs
+git reset lib/routes/
+gs
+gcm "Fixes an issue where date ranges were not floored to their start"
+gp
+pm2 deploy ecosystem.config.js dev
+vim lib/services/user.js 
+k
+./run_api.sh 
+pfProd
+./node_modules/.bin/inspect scripts/generate-staff-super-reactions.js 
+rm scripts/generate-staff-super-reactions.js 
+k
+./node_modules/.bin/inspect scripts/give-super-reactions.js 
+vs
+gs
+node
+gd lib/
+vim lib/services/user.js 
+gs
+ga lib/services/user.js 
+gcm "Adds an aggregate property to each point in the mood report spline chart"
+gp
+vim lib/services/user.js 
+gs
+./node_modules/.bin/eslint --fix lib/
+./run_api.sh 
+vim lib/services/user.js 
+gs
+gd lib/models/userlevel.js
+gco lib/models/userlevel.js
+gs
+ga lib/controllers/user.js lib/services/
+gcm "Adds days with available data to the output of the mood report"
+gp
+pm2 deploy ecosystem.config.js dev
+k
+gpu
+node
+node scripts/create-user-levels.js 
+pfDev
+export NODE_ENV='production' && node scripts/give-super-reactions.js 
+echo $NODE_ENV
+export NODE_ENV='development'
+NODE_ENV='production' && echo $NODE_ENV;
+echo $NODE_ENV
+export NODE_ENV='development'
+pfProd
+node
+pfDev
+vim scripts/give-super-reactions.js 
+NODE_ENV='production' && node scripts/give-super-reactions.js 
+pfProd
+vs
+ksgf
+gs
+vim lib/services/user.js 
+gs
+gd lib/controllers/
+ga lib/controllers/
+gcm "Adds a fix for the mood report query params"
+gd lib/services/
+gs
+ga lib/services/
+gcm "Adds activity level and formatted dates"
+gp
+pm2 deploy ecosystem.config.js dev
+gd
+gs
+ga lib/services/
+gcm "Fixes an issue with the mood report day view"
+gp
+pm2 deploy ecosystem.config.js dev
+vim lib/services/user.js 
+gs
+gd
+gs
+ga lib/services/user.js 
+gcm "Refactors a mood report method"
+gp
+./run_api.sh 
+ag backgroundimages lib/
+ag usedCount lib/
+pfPRod
+pfProd 
+pfDev
+pfProd 
+ls
+vim out.log 
+ag -Q "/images/background" out.log 
+pfProd
+fg
+vim lib/services/image.js 
+gs
+vim data 
+rm data
+rm log.txt 
+vim output.json 
+rm output.json 
+vim query.sql 
+rm query.sql 
+gs
+pfPRod
+vim bin/recalculate-user-metric-counts 
+gs
+pfProd
+./run_api.sh 
+vs
+vim bin/recalculate-user-metric-counts 
+vs
+vs
+mysqld
+sqldn
+j api
+./node_modules/.bin/inspect try.js
+open ~/Applications/
+./node_modules/.bin/inspect try.js
+vs
+gs
+./run_api.sh 
+./node_modules/.bin/inspect try.js
+vim bin/recalculate-user-metric-counts 
+gs
+gs
+vim lib/services/user.js 
+gs
+gd lib/services/
+ga lib/services/
+gcm "Reverses the order of available date ranges for the mood report"
+gp
+ssh-add ~/.ssh/id_bb_rsa
+gpu --rebase
+git stash
+gpu --rebase
+gp
+pm2 deploy ecosystem.config.js dev
+git stash pop
+./node_modules/.bin/inspect try.js
+gs
+pfProd
+node
+gs
+gd lib/services/user.js 
+gs
+ga lib/services/user.js 
+gcm "Fixes mood report issues with date formatting, the header, the trend data, and total moods entered"
+gp
+git stash
+gs
+glg
+gs
+gp
+gs
+git stash pop
+vs
+./run_api.sh 
+gs
+git stash
+pm2 deploy ecosystem.config.js dev
+git stash pop
+gs
+gd lib/services/
+gco lib/services/user.js 
+gs
+git stash
+./node_modules/.bin/inspect try.js
+gs
+gd lib/services/
+gs
+gd lib/services/user.js 
+gs
+ga lib/services/user.js 
+gcm "Adds the current date to the list of available day views, fixes its data, removes hardcoded values"
+gp
+vim lib/services/user.js 
+gs
+git stash pop
+pm2 deploy ecosystem.config.js dev
+rm lib/routes/mood.js 
+gs
+pfDev
+./run_api.sh 
+./node_modules/.bin/inspect try.js
+./scripts/reset_db.sh 8-02
+./node_modules/.bin/inspect try.js
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts 
+./scripts/reset_db.sh 8-02
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts 
+./scripts/reset_db.sh 8-02
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts 
+./scripts/reset_db.sh 8-02
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts 
+./scripts/reset_db.sh 8-02
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts 
+./scripts/reset_db.sh 8-02
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts 
+./scripts/reset_db.sh 8-02
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts 
+ls
+rm ./\\
+ls
+./scripts/reset_db.sh 8-02
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts 
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts 
+./scripts/reset_db.sh 8-02
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts 
+gd lib/models/userbadge.js 
+gs
+vs
+gs
+gd lib/models/
+vim lib/models/metric.js 
+gd
+gs
+gcob metric-script-fixes
+ga lib/ bin/
+gs
+gcm "Updates the metric recalc script and the metrics model"
+gpo -u metric-script-fixes
+gco dev
+gs
+./scripts/reset_db.sh 8-02
+pfProd
+./run_api.sh 
+gs
+gd lib/models/
+gs
+ga lib/models/metric.js 
+gd lib/models/
+ga lib/models/metrictrigger.js 
+gcm "Adds an optimization for metrics with lots of triggers. Fixes logic related to activating triggers that do not require a specific selector"
+gp
+gs
+gd
+gco gd
+gco ass
+gco assets/
+pm2 deploy ecosystem.config.js dev
+gs
+sqldn
+mysqld
+j api
+vs
+gs
+git stashs show -p
+git stash show -p
+gs
+gco graphs
+k
+k
+k
+k
+gco dev
+glg
+gs
+gco graphs
+glg
+gs
+gco dev
+gs
+./sql migration:create --name add-show-mood-report-boolean-to-users
+glg
+k
+gs
+./scripts/reset_db.sh 8-02
+migrate
+k
+gs
+gd lib/models/
+gs
+ga lib/ db/
+gcm "Adds a boolean property to Users for whether or not to show the mood report"
+gp
+gs
+vim db/migrations/20170811181807-add-show-mood-report-boolean-to-users.js
+k
+pm2 deploy ecosystem.config.js dev
+ag -g level db/
+ag -g mood-report db/migrations/
+./scripts/reset_db.sh 8-02
+vim db/migrations/20170811181807-add-show-mood-report-boolean-to-users.js
+gs
+gd db/
+gs
+vim db/migrations/20170713202025-rebuild-level-definitions.js
+vim db/migrations/20170713202025-rebuild-level-definitions.js
+gs
+ga db/
+gcm "Comments out the contents of the level redefinition migration"
+gp
+sshProd
+hag scp.*prod
+sshProd
+hag scp.*prod
+scp appuser@iex-prod-web03:/home/appuser/iex-prod-2017-7-26.sql.gz ../dumps/
+scp aidanmiles@iex-prod-web03:/home/appuser/iex-prod-2017-8-11.sql.gz ../dumps/
+
+scp aidanmiles@iex-prod-web03:/home/appuser/iex-prod-2017-8-11.sql.gz ../dumps/
+scp aidanmiles@iex-prod-web03:/home/appuser/iex-prod-2017-8-11.sql.gz ../dumps/
+scp aidanmiles@iex-prod-web03:/home/aidanmiles/iex-prod-2017-8-11.sql.gz ../dumps/
+gunzip ../dumps/*.gz
+vim vim scripts/reset_db.sh 
+./scripts/reset_db.sh 8-11
+export NODE_ENV='production' && ./scripts/reset_db.sh 8-11
+export NODE_ENV='development'
+migrate
+pfDev
+vim scripts/reset_db.sh 
+k
+gs
+pm2 deploy ecosystem.config.js prod
+pfProd
+pfDev
+pfProd
+./run_api.sh 
+./node_modules/.bin/inspect try.js
+pfDev
+node
+pfProd
+./node_modules/.bin/inspect try.js
+gs
+gd lib/controllers/session
+gd lib/controllers/session.js 
+gco lib/controllers/session.js
+gs
+gd lib/
+ga lib/services/user.js 
+gcm "Fixes an issue where incorrect date math caused available data ranges to not show up in the mood report"
+gp
+./run_api.sh 
+pfDev
+pfProd
+node
+gs
+gd lib/services/
+gs
+ga lib/services/user.js 
+gcm "Fixes issue with negative values looking wonky bc of a missing Math.abs"
+gp
+pm2 deploy ecosystem.config.js dev
+gs
+gd lib/
+ga lib/
+gcm "Fixes an issue where the mood graph would default to showing the previous interval, when it should show the current one"
+gp
+pm2 deploy ecosystem.config.js dev
+gco master
+gpu
+gd dev
+gs
+pm2 deploy ecosystem.config.js prod
+gs
+gco dev
+node
+pfDev
+pfProd
+pfDev
+pfProd
+./run_api.sh 
+NODE_ENV='production' && ./run_api.sh 
+echo $NODE_ENV
+vim run_api.sh 
+./run_api.sh 
+gs
+gd lib/
+gs
+ga  lib/services/
+gcm "Adds some fixes to the mood report"
+gs
+gp
+pm2 deploy ecosystem.config.js dev
+gs
+git stash
+pm2 deploy ecosystem.config.js dev
+glg
+gs
+gco master
+git cherry-pick bdbc732c
+gs
+vim lib/services/user.js 
+gs
+gco lib/services/user.js 
+git reset
+gs
+gco lib/services/
+gs
+gco dev
+gpu
+vim lib/models/session.js 
+gs
+gpu
+gco master
+gpu
+git cherry-pick bdbc732c
+gp
+pm2 deploy ecosystem.config.js prod
+gco dev
+git stash pop
+k
+k
+mysqld
+sqldn
+vim lib/services/user.js 
+gs
+gd
+gs
+k
+pfProd
+./run_api.sh 
+NODE_ENV='development'
+./run_api.sh 
+echo $NODE_ENV
+gs
+gd lib/models/userreactionavailability.js 
+gs
+gd lib/models/
+ga lib/models/
+gcm "Fixes an issue where super reactions couldn't be found for users now > L10"
+gp
+vim lib/services/socialpost.js 
+git stash
+pm2 deploy ecosystem.config.js dev
+./run_api.sh 
+pfDev
+node
+fg
+k
+k
+k
+k
+pfProd
+j api
+pfProd
+journal
+j api
+bashp
+lcls
+pfProd
+gs
+gco master
+glg
+gs
+gco dev
+glg
+gs
+gco master
+gpu
+git cherry-pick 3f0672e9
+gp
+gs
+pm2 deploy ecosystem.config.js prod
+pfProd
+vim etc/database.json 
+pfProd
+gco dev
+vim etc/database.json 
+pfProd
+pfDev
+./node_modules/.bin/inspect try.js
+gs
+gd
+gco lib/models/metric.js 
+gs
+git stash show -p
+gs
+git stash pop
+./run_api.sh 
+vim nodemon.json 
+pfDev
+pfProd
+./run_api.sh 
+export NODE_ENV='production' && ./run_api.sh 
+pfProd
+netstat -lntu
+nmap localhost
+man nmpa
+man nmap
+which nmap
+netstat -at
+sqlProd
+pfProd
+prProd
+./node_modules/.bin/inspect try.js
+k
+./node_modules/.bin/inspect try.js
+gs
+./node_modules/.bin/inspect try.js
+export NODE_ENV='production' && ./run_api.sh 
+pfDev
+pfProd
+pfDev
+echo $NODE_ENV 
+./node_modules/.bin/inspect try.js
+pfDev
+./run_api.sh 
+./node_modules/.bin/inspect try.js
+pfProd
+./node_modules/.bin/inspect scripts/give-super-reactions.js 
+echo $NODE_ENV
+NODE_ENV='production'
+echo $NODE_ENV
+./node_modules/.bin/inspect scripts/give-super-reactions.js 
+echo $NODE_ENV 
+node scripts/give-super-reactions.js 
+journal
+gs
+gd lib/services/
+gs
+gd
+gs
+ga lib/services/user.js 
+git reset
+ga lib/services/user.js 
+gcm "Updates the mood report to only accumulate feelings for 24 hours, also reorders two blocks to fix an issue with calculated happiness percentages"
+gp
+git stash
+pm2 deploy ecosystem.config.js dev
+gs
+glg
+gs
+gco master
+gpu
+git cherry-pick ed246e92
+gp
+pm2 deploy ecosystem.config.js prod
+./run_api.sh 
+pfProd
+j api
+ssh aidanmiles@iex-prod-web03 echo hello
+vim ~/dotfiles/bin/journal 
+gco dev
+gs
+gpu
+vim lib/routes/users.js 
+gs
+vim lib/models/user.js 
+echo $NODE_ENV
+/reset
+./scripts/reset_db.sh 8-11
+ls ../dumps/
+chmod u+x scripts/get_db_dump.sh 
+./scripts/get_db_dump.sh 
+./run_api.sh 
+k
+k
+gs
+git stash list
+git stash show -p stash@{1}
+gs
+./scripts/reset_db.sh 8-02
+node bin/recalculate-user-metric-counts 
+gs
+git stash list
+git stash show -p stash@{2}
+git stash drop stash@{2}
+gs
+git stash list
+git stash show -p stash@{0}
+git stash show -p stash@{1}
+gs
+gbr
+gs
+gd bin/
+gco bin/
+gs
+gbr
+git db times
+gco metric-script-fixes
+grb dev
+gpo -f
+vim bin/recalculate-user-metric-counts 
+gs
+node bin/recalculate-user-metric-counts 
+gs
+vim bin/recalculate-user-metric-counts 
+vim bin/recalculate-user-metric-counts 
+hag echo
+sshDev
+sshProd
+./scripts/get_db_dump.sh 
+sshProd
+scp aidanmiles@iex-prod-web03:/home/aidanmiles/iex-prod-2017-8-17.sql.gz ../dumps/
+gunzip ../dumps/*.gz
+./scripts/reset_db.sh 8-17
+NODE_ENV='production'
+vim bin/recalculate-user-metric-counts 
+node bin/recalculate-user-metric-counts 
+node bin/recalculate-user-metric-counts | tee metric_log.txt
+ag Processing metric_log.txt 
+echo $NODE_ENV 
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts 
+export NODE_ENV='production'
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts 
+node bin/recalculate-user-metric-counts | tee metric_log.txt
+ag memwatch metric_log.txt 
+ag -A 10 memwatch metric_log.txt 
+ag Processing metric_log.txt 
+ag users metric_log.txt 
+man less
+less -j 1336 metric_log.txt 
+ag error metric_log.txt 
+gs
+ag elapsed metric_log.txt 
+ag error metric_log.txt 
+ag -A error metric_log.txt 
+rm metric_log.txt 
+ag error metric_log.txt 
+node bin/recalculate-user-metric-counts | tee metric_log.txt
+./scripts/reset_db.sh 8-17
+export NODE_ENV='production'
+rm metric_log.txt 
+node bin/recalculate-user-metric-counts | tee metric_log.txt
+rm metric_log.txt 
+ag memwatch -A 5 metric_log.txt 
+ag error metric_log.txt 
+node bin/recalculate-user-metric-counts | tee metric_log.txt
+ag -A 2 error metric_log.txt
+echo $NODE_ENV 
+gs
+gd lib/models/metric.js 
+ga lib/models/metric.js
+./scripts/reset_db.sh 8-17
+gcm "Fixes an issue with tracking metrics that don't require any tracking data"
+gs
+gd bin/
+ga bin/
+gcm "Increases the batch size of the metric recalc script to 100"
+gs
+gd lib/models/
+gd lib/helpers/
+gs
+ga lib/helpers/script.js 
+gcm "Small refactor in the script helper"
+gp
+echo $NODE_ENV 
+rm metric_log.txt 
+node bin/recalculate-user-metric-counts | tee metric_log.txt
+./scripts/reset_db.sh 8-17
+node bin/recalculate-user-metric-counts | tee metric_log.txt
+./scripts/reset_db.sh 8-17
+rm metric_log.txt 
+ag error metric_log.txt 
+ag processing metric_log.txt 
+ag "Processing users" metric_log.txt 
+node bin/recalculate-user-metric-counts | tee metric_log.txt
+ag userbadge metric_log.txt 
+emoving existing UserBadges
+3417037:Executing (abc0aa99-bf07-4428-9aa7-5eac448ca426): DELETE FROM `UserBadges` WHERE `userId` IN (905, 906, 907, 908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954)
+3417709:Removing existing UserBadges
+3417713:Executing (4553aa16-dd97-4207-bf30-2696438eff01): DELETE FROM `UserBadges` WHERE `userId` IN (955, 956, 957, 958, 959, 960, 961, 962, 963, 964, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1000, 1001, 1002, 1003, 1004)
+3418385:Removing existing UserBadges
+k
+ag elapsed metric_log.txt 
+echo $NODE_ENV
+export NODE_ENV=
+echo $NODE_ENV 
+./run_api.sh 
+gs
+gd bin/
+gs
+gd bin/
+ga bin/
+gcm "Reduces batch size to 50"
+gs
+gd lib/
+gs
+gco dev
+gco metric-script-fixes
+gp
+gco dev
+git stash
+gpu
+gs
+gcob super-reaction-count
+gpo -u super-reaction-count
+git stash pop
+./sql migration:create --name add-super-reaction-count-property-to-users
+node scripts/give-super-reactions.js 
+migrate
+gs
+gd lib/models/userreactionavailability.js 
+gs
+ga db/migrations/
+gcm "Adds a super reaction counter property to users"
+gs
+gd lib/services/user.js 
+gd lib/models/user.js 
+git reset --soft HEAD~1
+ga lib/models/user.js 
+gs
+gcm "Adds a super reaction counter property to users"
+gs
+gd lib/models/userreactionavailability.js 
+gs
+ga lib/models/
+gcm "Adds incrementing/decrementing logic to methods related to using and creating Super Reactions for users"
+gs
+gd lib/services/
+gs
+ga lib/serv
+ga lib/services/
+gcm "Refactors logic related to creating social responses"
+gp
+grb dev
+gs
+gco dev
+vim lib/models/metric.js 
+gs
+gco metric-script-fixes
+gs
+pfPRod
+pfProd
+export NODE_ENV='production'
+ag -g 8-1 $(ag -g prod ../dumps/)
+ag -g prod ../dumps/
+ag 8-1 $(ag -g prod ../dumps/)
+ag 8-1 $(ag -g prod ../dumps/)
+ag 8-1 $(ag -g prod ../dumps/)
+ag -Q "8-1" $(ag -g prod ../dumps/)
+ag -Q "8-1" "$(ag -g prod ../dumps/)"
+ag -lQ "8-1" "$(ag -g prod ../dumps/)"
+ag -g "8-1" "$(ag -g prod ../dumps/)"
+ag -gQ "8-1" "$(ag -g prod ../dumps/)"
+ag -g prod ../dumps/
+ag -Q "8-1" "$(ag -g prod ../dumps/)"
+ag -g "8-1" "$(ag -g prod ../dumps/)"
+ag -g sqk "$(ag -g prod ../dumps/)"
+ag lol "$(ag -g prod ../dumps/)"
+ag lol $(ag -g prod ../dumps/)
+gs
+vim lib/models/user.js 
+gbr
+gco super-reaction-count
+vim lib/models/metric.js 
+vim lib/models/userreactionavailability.js 
+gs
+gd
+ga lib/models/userreactionavailability.js 
+vim lib/models/userreactionavailability.js
+gs
+ga db/migrations/
+gcm "Fixes a misnamed variable, adds a default value to a migration"
+gp
+gs
+k
+k
+gco metric-script-fixes
+gs
+./scripts/reset_db.sh 8-17
+node bin/recalculate-user-metric-counts | tee metric_log.txt
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+./scripts/reset_db.sh 8-17
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+vs
+gs
+git stash
+gco dev
+export NODE_ENV='production'
+node scripts/give-super-reactions.js 
+pfProd
+export NODE_ENV=
+export NODE_ENV='production'
+./scripts/reset_db.sh 8-17
+gs
+gbr
+gco metric-script-fixes
+git stash show -p
+k
+git stash show -p
+git stash pop
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts
+./node_modules/.bin/eslint --fix bin/recalculate-user-metric-counts 
+vim bin/recalculate-user-metric-counts 
+./node_modules/.bin/eslint --fix bin/recalculate-user-metric-counts 
+gs
+gd lib/models/metric.js 
+./node_modules/.bin/eslint --fix bin/recalculate-user-metric-counts 
+gs
+git stash show -p
+./node_modules/.bin/eslint --fix bin/recalculate-user-metric-counts 
+./sql migration:create --name add-kind-to-metric-triggers
+mkdir test/e2e/mood-report
+vim test/e2e/mood-report/main.spec.js
+./node_modules/.bin/inspect try.js
+j api
+node
+./scripts/reset_db.sh 8-17
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts 
+vim etc/database.json 
+gs
+ga db/migrations/
+gd lib/models/metrictrigger.js 
+gs
+ga lib/models/metrictrigger.js 
+gs
+gcm "Adds a kind property to MetricTriggers and populates it for all rows"
+gs
+gd lib/models/
+gs
+gd bin/
+gs
+vim bin/recalculate-user-metric-counts 
+gs
+gd bin/
+gs
+ga bin/recalculate-user-metric-counts 
+gcm "Adds logic to metric recalc script to create UserMetricTriggers for unlocked badges"
+gp
+vim
+gs
+gs
+gd lib/models/
+gco lib/models/
+gs
+gco de
+gco dev
+gpu
+gbr
+gco super-reaction-count
+gs
+export NODE_ENV=
+ls ../dumps/
+./scripts/reset_db.sh 8-02
+grb dev
+gs
+vim audit
+k
+node ./scripts/give-super-reactions.js 
+migrate
+node ./scripts/give-super-reactions.js 
+echo $NODE_ENV 
+export NODE_ENV=''
+echo $NODE_ENV 
+./run_api.sh 
+echo $NODE_ENV 
+node ./scripts/give-super-reactions.js 
+vim lib/services/socialpost.js
+gs
+gd lib/services/user.js 
+vim lib/services/socialpost.js
+gs
+ga lib/services/
+gcm "Fixes a backwards-compatability issue for sending super reactions"
+gp
+gs
+grb dev
+gpo -f
+gbr
+gco metric-script-fixes
+grb dev
+gpo -f
+gs
+gco dev
+pm2 deploy ecosystem.config.js dev
+gd lib/services/
+gs
+gbr
+git db super-reaction-count
+./run_api.sh 
+gs
+gpu
+gco metric-script-fixes
+grb dev
+gpo -f
+pfProd
+gco dev
+gpu
+ag patient-ceo-message lib/
+pfProd
+vim lib/services/patient.js 
+@?try
+./node_modules/.bin/inspect try.js 
+./node_modules/.bin/inspect scripts/send-email-notifications.js 
+pfProd
+./node_modules/.bin/inspect scripts/send-email-notifications.js 
+node scripts/prepare-and-send-usernotifications.js 
+vim scripts/send-email-notifications.js
+pfDev
+sqldn
+mysqld
+./scripts/reset_db.sh 8-02
+vim audit 
+gs
+gco metric-script-fixes
+vim bin/recalculate-user-metric-counts 
+gs
+ga bin/
+git reset
+vim bin/recalculate-user-metric-counts 
+gs
+ga bin/
+gcm "Removes a debugger, fixes eslint indentation, adds a couple of comments"
+gp
+k
+k
+gco dev
+vs
+gs
+gco metric-script-fixes
+./run_api.sh 
+export NODE_ENV="production"
+man tee
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+./scripts/reset_db.sh 8-17
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+./scripts/reset_db.sh 8-17
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+ag rollback metric_log.txt 
+vim bin/recalculate-user-metric-counts 
+sqldn
+j api
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+migrate
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+./scripts/reset_db.sh 8-17
+migrate
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+export NODE_ENV="production"
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+migrate
+./scripts/reset_db.sh 8-17
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+ag patient-account-enabled lib/
+vs
+gs
+gd
+./sql migration:create --name seed-users-super-reaction-count
+ag batch db/migrations/
+pfDev
+ssh-add ~/.ssh/id_bb_rsa
+pfDev
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+./scripts/reset_db.sh 8-17
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+./scripts/reset_db.sh 8-17
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+
+
+vim metric_log.txt 
+echo $NODE_ENV 
+export NODE_ENV="production"
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+./scripts/reset_db.sh 8-17
+pfDev
+NODE_ENV='development'
+./node_modules/.bin/inspect try.js 
+ag leak -A 5 metric_log.txt 
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+./scripts/reset_db.sh 8-17
+echo $NODE_ENV 
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+echo $NODE_ENV 
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+./node_modules/.bin/inspect try.js 
+./scripts/reset_db.sh 8-17
+echo $NODE_ENV 
+ag leak metric_log.txt 
+ag -A 5 leak metric_log.txt
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+./scripts/reset_db.sh 8-17
+migrate
+echo $NODE_ENV 
+./scripts/reset_db.sh 8-02
+migrate
+./node_modules/.bin/inspect try.js 
+NODE_ENV='production'
+ag leak metric_log.txt 
+./node_modules/.bin/inspect try.js 
+NODE_ENV='production'
+./node_modules/.bin/inspect try.js 
+echo $NODE_ENV 
+export NODE_ENV="production"
+./node_modules/.bin/inspect try.js 
+vim db/migrations/20170822193916-seed-users-super-reaction-count.js
+gs
+ag leak metric_log.txt 
+./node_modules/.bin/inspect bin/recalculate-user-metric-counts | tee metric_log.txt
+./scripts/reset_db.sh 8-02
+./scripts/reset_db.sh 8-17
+gs
+gd lib/models/metric.js 
+gco lib/models/metric.js
+gs
+gd bin/
+gs
+ga bin/
+gcm "Adds some fixes to the metrics script related to UserFeelings, and memory"
+gp
+gco
+gco dev
+gs
+ga db/migrations/20170822193916-seed-users-super-reaction-count.js
+gs
+gcm "Adds a migration to update all users' superReactionCount properties"
+gp
+gs
+gpu
+pm2 deploy ecosystem.config.js dev
+pfProd
+echo NODE_ENV
+echo $NODE_ENV 
+export NODE_ENV='development'
+fg
+gs
+./scripts/reset_db.sh 8-02
+gs
+gd db
+ga db
+gcm "Fixes a typo in a migration"
+gp
+./node_modules/.bin/inspect try.js 
+vim db/migrations/20170822193916-seed-users-super-reaction-count.js
+gs
+vim etc/database.json 
+gco metric-script-fixes
+vim bin/recalculate-user-metric-counts 
+gs
+ga bin/
+gcm "Adds 'social' to the kinds of UserFeelings to count"
+gp
+pfDev
+k
+export NODE_ENV='production'
+echo $NODE_ENV 
+vim etc/database.json 
+node bin/recalculate-user-metric-counts 
+./scripts/reset_db.sh 8-17
+export NODE_ENV='production'
+vim etc/database.json 
+fg
+node scripts/give-super-reactions.js 
+pfProd
+fg
+gs
+gd
+node bin/recalculate-user-metric-counts 
+gs
+gd bin/
+ga bin/
+gcm "Adjusts batch sizes for the metric recalc script"
+gp
+gco dev
+gpu
+gco metric-script-fixes
+grb
+grb dev
+gpo -f
+gco dev
+git db metric-script-fixes
+vim lib/routes/users.js 
+mysqld
+sqldn
+j api
+export NODE_ENV='production'
+vim etc/database.json 
+k
+export NODE_ENV='production'
+echo $NODE_ENV 
+node bin/recalculate-user-metric-counts 
+gpu
+node bin/recalculate-user-metric-counts 
+vim bin/recalculate-user-metric-counts 
+gco master
+gpu
+git cherry-pick 9fc76b1
+echo $NODE_ENV 
+export NODE_ENV='production'
+pfProd
+./scripts/reset_db.sh 8-17
+vim etc/database.json 
+node bin/recalculate-user-metric-counts 
+gp
+pm2 deploy ecosystem.config.js prod
+vim etc/database.json 
+hag free
+free
+node bin/recalculate-user-metric-counts 
+vim bin/recalculate-user-metric-counts 
+gs
+gco dev
+vim package.json 
+gs
+gco master
+sqldn
+mysqld
+gco dev
+glg
+glg
+gs
+vim lib/models/userreactionavailability.js 
+vim lib/routes/useractions.js 
+vim lib/routes/usercommands.js 
+git blame lib/routes/usercommands.js 
+vim lib/models/usercommand.js 
+vim lib/routes/userlocations.js 
+vim lib/routes/therapists.js 
+vim lib/controllers/sticker.js 
+vim lib/controllers/socialresponse.js 
+vim lib/routes/socialposts.js 
+sshProd
+vim lib/routes/socialcomments.js 
+gs
+gco master
+gpu
+pm2 deploy ecosystem.config.js prod
+pfDev
+gco dev
+gpu
+node
+vim lib/services/user.js 
+./run_api.sh 
+k
+gcob mood-report-command
+gpo -u mood-report-command
+./sql migration:create --name add-mood-report-onboarding-command
+vim lib/models/command.js 
+vim db/migrations/20170824012343-add-mood-report-onboarding-command.js
+ag super-reaction-info lib/
+vim lib/models/user.js 
+gs
+ga lib/
+ga assets/
+ga db/migrations/
+gs
+gcm "Adds a Command for showing mood analytics onboarding, triggers it and enables the mood report for users when they reach L3"
+gp
+gco dev
+gbr
+pfProd
+vim lib/services/user.js 
+mysqld
+sqldn
+j api
+gs
+vim scripts/reset_db.sh 
+./scripts/reset_db.sh 8-17
+export NODE_ENV='production'
+migrate
+node bin/recalculate-user-levels 
+gs
+gd
+gco
+gco master
+glg
+pfProd
+gco dev
+vim bin/recalculate-user-levels 
+ag level db/migrations/
+ag -g level db/migrations/
+vim db/migrations/20170713202025-rebuild-level-definitions.js
+gs
+ga db/migrations/
+gcm "Uncomments the contents of the migration which redefines levels"
+glg
+gs
+gco master
+git cherry-pick adc109b3
+gs
+ag -g level db/migrations/
+vim db/migrations/20170713202025-rebuild-level-definitions.js
+migrate
+export NODE_ENV='production'
+echo $NODE_ENV 
+migrate
+node bin/recalculate-user-levels 
+gp
+pm2 deploy ecosystem.config.js prod
+gs
+gd
+gco
+gs
+gd
+gco bin/
+gs
+pm2 deploy ecosystem.config.js prod
+pfProd
+hag scp
+scp appuser@iex-prod-web03:/home/appuser/levels_log.txt .
+k
+scp appuser@iex-prod-web03:/app/user/levels_log.txt .
+pfProd
+echo $NODE_ENV 
+gco dev
+gs
+glg
+gs
+gp
+pfProd
+vim levels_log.txt 
+gs
+vim lib/helpers/script.js 
+gbr
+git db feature/popUpSuperReactionModal graphs lvls new-comment-avatars bug/repost-level 
+gbr
+gco points
+glg
+grb dev
+glg
+git db points
+gco dev
+git db points
+gs
+gbt
+gbr
+gco more-actions
+grb dev
+glg
+gs
+gd db/
+gs
+git reset
+gco dev
+gs
+gbr
+git db more-actions
+gs
+gco db/
+gs
+k
+k
+j com
+up
+ls
+cd ios/
+ls
+gco dev
+gco develop
+gs
+gd
+git stash
+ls
+cd iExhale/
+ag -g mood .
+ag -g chart .
+ag -g graph .
+ls
+cd iExhale
+ls
+ag -g mood .
+ag graph .
+glg | analytics
+glg | ag analyt
+gdc aa9882a8
+glg | ag analyt
+glg | ag mood
+gd
+echo $NODE_ENV 
+./run_api.sh 
+./scripts/reset_db.sh 8-02
+./node_modules/.bin/inspect test/e2e/mood-report/main.spec.js 
+echo $NODE_ENV 
+node scripts/create-user-levels.js 
+./node_modules/.bin/inspect test/e2e/mood-report/main.spec.js 
+git stash show -p
+git stash pop
+gco nodemon.json 
+gd
+gs
+gd test/
+./node_modules/.bin/inspect test/e2e/mood-report/main.spec.js 
+gs
+gd lib/
+gs
+gd lib/
+gs
+ga lib/services/user.js 
+gs
+gcm "Updates the mood report to slice week view into hours, and the month view into every 3 hours"
+gp
+gamend "Updates the mood report with 1 hour and 3 hour slices for week and month view, plus only primary feelings"
+gpo -f
+vim lib/services/user.js 
+k
+gs
+pm2 deploy ecosystem.config.js dev
+gs
+gd
+ga test/helpers/request-helper.js 
+gs
+gcm "Adds a fix to one of the test helper files, so authentication in a test script works again"
+gp
+pm2 deploy ecosystem.config.js dev
+ifconfig
+j app
+up
+j ios
+cd iExhale/
+j ios iex iex
 ls
 gs
-ga bower.json 
-gcm "adds bower.json"
-gs'
+git stash pop
+gd
+git stash
+gpu
+gS
+gs
+git stash pop
+gd
+./run_api.sh 
+export NODE_ENV='production'
+./run_api.sh 
+vim nodemon.json 
+gco feature/therapists_and_mood_analytics_2
+pwd
+up
+gs
+up
+gs
+gf
+gco feature/therapists_and_mood_analytics_2
+gs
+gd
+git stash
+gco feature/therapists_and_mood_analytics_2
+gs
+git stash pop
+ag spline .
+ag -g (mood|spline|graph) .
+git stash pop
+ag spline .
+ag -g (mood|spline|graph) .
+ag -g (mood|spline|graph) .
+
+vp 
+vp \ 
+iExhale/iExhale/Controller/MoodAnalytics.storyboard\ 
+iExhale/iExhale/Controller/MoodAnalyticsEmptyDataView.swift\ 
+iExhale/iExhale/Controller/MoodAnalyticsEmptyDataView.xib\ 
+iExhale/iExhale/Controller/MoodAnalyticsHeaderTableViewCell.swift\ 
+iExhale/iExhale/Controller/MoodAnalyticsHeaderTableViewCell.xib\ 
+iExhale/iExhale/Controller/MoodAnalyticsViewController.swift\ 
+iExhale/iExhale/Model/MGSplineDataModel.swift\ 
+iExhale/iExhale/Model/MGSplineModel.swift\ 
+iExhale/iExhale/Model/MoodGraphModel.swift
+vp 
+vp iExhale/iExhale/Controller/MoodAnalyticsEmptyDataView.swift iExhale/iExhale/Controller/MoodAnalyticsHeaderTableViewCell.swift iExhale/iExhale/Controller/MoodAnalyticsViewController.swift iExhale/iExhale/Model/MGSplineDataModel.swift iExhale/iExhale/Model/MGSplineModel.swift iExhale/iExhale/Model/MoodGraphModel.swift
+gs
+gd
+gs
+gd
+gs
+gd
+vim etc/database.json 
+vim lib/services/user.js 
+gs
+gd lib/services/
+gs
+ga lib/services/user.js 
+gcm "Limits the number of Actions pulled for activity, decreases data points delivered for mood graph"
+gp
+gd
+gco 
+gs
+gco nodemon.json 
+gs
+pm2 deploy ecosystem.config.js dev
+gbr
+gco  mood-report-command
+gco dev
+gpu
+gco  mood-report-command
+grb dev
+rm -fr "/Users/aidanmiles/Documents/iexhale/code/api/.git/rebase-apply"
+grb dev
+gpo -f
+vim assets/commands/level-up/level-up.js 
+sqlcl < queries/set_level_2_minus_1point.sql 
+./run_api.sh 
+echo $NODE_ENV 
+sqlcl < queries/set_level_2_minus_1point.sql 
+migrate
+sqlcl < queries/set_level_2_minus_1point.sql 
+./run_api.sh 
+gs
+gd lib/
+gco lib/
+gd db/
+ga db/
+gcm "Fixes an issue with the migration"
+gp
+gs
+vim queries/set_level_2_minus_1point.sql 
+gs
+gco dev
+gpu
+git db mood-report-command
+pm2 deploy ecosystem.config.js dev
+mysqld
+sqldn
+vim iExhale.swift 
+j api
+gs
+rm audit 
+rm levels_log.txt metric_log.txt 
+pfProd
+pfProd
+vim lib/services/image.js 
+j api
+ls
+mkdir logs
+scp appuser@iex-prod-web03:/home/appuser/mylog.txt logs/
+ag images\
+ag images\/background logs/mylog.txt 
+ag images\/background logs/mylog.txt > newlog.txt
+ls
+cd logs/
+ls
+up
+mv newlog.txt logs/
+cd logs/
+ls
+vim newlog.txt 
+ag keys: < ag images\/background logs/mylog.txt
+ag keys: < $(ag images\/background logs/mylog.txt)
+ag keys: < $(ag images\/background mylog.txt)
+ag keys: < ag images\/background mylog.txt
+ag images\/background mylog.txt | ag keys:
+ag images\/background mylog.txt
+ag images\/background mylog.txt | ag keys":
+ag images\/background mylog.txt | ag keys\":
+man sed
+man jq
+which jq
+jq
+vim ~/Downloads/jq-osx-amd64 
+mv ~/Downloads/jq-osx-amd64 ~/local/bin/
+chmod u+x ~/local/bin/jq-osx-amd64 
+vim ~/.adn_locals 
+jq
+which jq
+fg
+ag images\/background mylog.txt | ag keys\":
+hag sed
+ag images\/background mylog.txt | ag keys\": | sed -e 's/\d+\://g'
+ag images\/background mylog.txt | ag keys\": | sed -e 's/^\d+\://g'
+ag images\/background mylog.txt | ag keys\": | sed -e 's/^\d://g'
+ag images\/background mylog.txt | ag '^\d:'
+ag images\/background mylog.txt | ag "^\d:"
+ag images\/background mylog.txt | ag "\d:"
+ag images\/background mylog.txt | ag "\d\+:"
+ag images\/background mylog.txt | ag "\d+:"
+ag images\/background mylog.txt | ag "^\d+:"
+ag images\/background mylog.txt | ag keys\": | sed -e "s/^\d+://g"
+ag images\/background mylog.txt | sed -e "s/^\d+://g"
+man re_format
+ag images\/background mylog.txt | sed -Ee "s/^\d+://g"
+ag images\/background mylog.txt | sed -e "s/^\d\+://g"
+ag images\/background mylog.txt | sed -e "s/^\d{4}://g"
+ag images\/background mylog.txt | sed -e "s/^\d\{4\}://g"
+man sed
+ag images\/background mylog.txt | sed -Ee "s/^\d+://g"
+ag images\/background mylog.txt | sed -Ee "s/^\d\+://g"
+ag images\/background mylog.txt | sed -Ee "s/^\d+://g"
+ag images\/background mylog.txt | sed -Ee "s/^\d+//g"
+ag images\/background mylog.txt | sed -Ee "s/\d+//g"
+ag images\/background mylog.txt | sed -e "s/\d+//g"
+ag images\/background mylog.txt | sed -e "s/\d{4}//g"
+ag images\/background mylog.txt | sed -e "s/\d\{4\}//g"
+man sed
+ag images\/background mylog.txt | sed -e "s/\d{4}//g"
+ag images\/background mylog.txt | sed -e -E "s/\d{4}//g"
+ag images\/background mylog.txt | sed -E -e "s/\d{4}//g"
+ag images\/background mylog.txt | sed -E -e "s/\d//g"
+ag images\/background mylog.txt | sed -E -e "s/\D//g"
+ag images\/background mylog.txt | sed -E -e "s/\d/''/g"
+hag man
+ag images\/background mylog.txt | sed -E -e "s/\\d/''/g"
+hag sed
+ag images\/background mylog.txt | sed -E -e 's/\\d/""/g'
+ag images\/background mylog.txt | sed -E -e 's/\d/""/g'
+ag images\/background mylog.txt | sed -Ee 's/\d/""/g'
+ag images\/background mylog.txt | sed -E -e "s/[[:digit:]]/''/g"
+ag images\/background mylog.txt | sed -E -e "s/[[:digit:]]+/''/g"
+ag images\/background mylog.txt | sed -E -e "s/[[:digit:]]{4}/''/g"
+ag images\/background mylog.txt | sed -E -e "s/[[:digit:]]{4}:/''/g"
+ag images\/background mylog.txt | sed -E -e "s/\d{4}:/''/g"
+ag images\/background mylog.txt | sed -Ee 's/(\d{4})/""/g'
+ag images\/background mylog.txt | sed -Ee 's/([0-9]{4})/""/g'
+man re_format
+ag images\/background mylog.txt | sed -E -e "s/[0-9]{4}://g"
+ag images\/background mylog.txt | sed -E -e "s/[0-9]{4}:/''/g"
+ag images\/background mylog.txt | sed -E -e "s/[0-9]{4}:/****/g"
+ag images\/background mylog.txt | sed -E -e "s/[0-9]{4,8}:/****/g"
+ag images\/background mylog.txt | sed -E -e "s/[0-9]{4,5}:/****/g"
+ag images\/background mylog.txt | sed -E -e "s/[0-9]{4,5}/****/g"
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4,5}/****/g"
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g"
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | jq ','
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | jq '.'
+vim ~/.adn_locals 
+jq
+which jq
+j local/bin
+j local
+j ~
+cd 
+cd local/
+cd bin/
+ls
+mv jq-osx-amd64 jq
+which jq
+jq
+which jq
+jq
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | jq '.'
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}:/"data":/g" | jq '.'
+k
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}:/"data":/g"
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g"
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | jq '.'
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | jq
+man jq
+jq
+k
+jq
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | jqa -R '.'
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | jq -R '.'
+jq
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | jq '.'
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | jq .
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | jq -s '.'
+vim ~/.adn_locals 
+up
+vim mv.sh 
+man read
+man bash
+j api
+. ../keys.sh 
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | while read line; do echo $line; done
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | while read line; do jq '.'; done
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | while read line; do jq '.res'; done
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | while read line; do jq '.res.results'; done
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | while read line; do jq '.res.results.keys'; done
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | while read line; do jq '.res.results.keys'; done
+ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" | while read line; do jq '.res.results.keys'; done
+while read line; do jq '.res.results.keys'; done <(ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" )
+while read line; do jq '.res.results.keys'; done < <(ag images\/background mylog.txt | sed -E -e "s/^[0-9]{4}://g" )
+vim keys.sh
+rm keys.sh 
+pfProd
+sshDev 'whoami'
+sshDev
+k
+sshDev << HERE 
+    mysqldump -u app01dbadmin -p -h app01-app-db.cvju4ywmimej.us-west-2.rds.amazonaws.com --databases app01appdb > $dumpname
+    gzip $dumpname
+HERE 
 
 ;
-'
-gs
-j ang
-vp gulp*
-j ang
-gs
-ga gulp
-gcm "adds comments to gulp script"
-gs
-vim gulpfile.js gulp_helpers/gulp_tasks.js 
-ls
-mv gulp_helpers/ gulp-helpers
-vp gulpfile.js gulp_helpers/gulp_tasks.js
-ls
-npm install --save-dev require-dir
-ls
-ls gulp-helpers/
-j ang
-j kitu
-docker-compose up
-docker-machine start default
-eval "$(docker-machine env default)"
-docker-machine regenerate-certs default
-eval "$(docker-machine env default)"
-docker-machine regenerate-certs default
-docker-compose up
-eval "$(docker-machine env default)"
-./gulp
-docker-compose up
-ls
-vim gulpfile.js 
-gs
-gbr
-gcob v2
-gco v2
-git stash
-gco v2
-git stash pop
-ls
-gco .
-gs
-ls
-gs
-man git-clean
-git clean
-man git-clean
-man git-clean -n
-git clean -n
-git clean -f
-ls
-gs
-ls
-rm -rf bower_components/ dist/ gulp_helpers/ gulp node_modules/ server/ src/ test/ api/
-eb terminate
-ls
-la
-vim README.md 
-ls
-mv gulp-helpers/ gulp-tasks
-vp gulp-helpers/*
-ls
-ls gulp-tasks/
-mv gulp-tasks/gulp_tasks.js gulp-tasks/task-helpers.js
-vp gulp gulpfile.js gulp-tasks/*
-v
-j ang
-ls
-vim Dockerfile 
-j kitu
-ls
-cd -
-ls
-PWD
-ls
-vim Dockerrun.aws.json
-docker-compose up
-docker-machine start default
-eval "$(docker-machine env default)"
-docker-compose up
-vim server/index.js 
-Q?up
-docker-compose up
-./gulp
-vim gulpfile.js 
-./g
-./gulp
-ag "./paths" gulp-tasks/
-vp $(ag -l "./paths" gulp-tasks/)
-./gulp
-vp $(ag -l "./paths" gulp-tasks/)
-ag "'lint'" gulp-tasks/
-./gulp
-vim gulpfile.js 
-ls
-open .
-ls
-gs
-vim gulpfile.js 
-docker-compose up
-eval "$(docker-machine env default)"
-vim gulpfile.js 
-./gulp
-docker-compose up
-eval "$(docker-machine env default)"
-docker-compose up
-./gulp
-docker-compose up
-vim docker-compose.yaml
-ls
-vim gulpfile.js 
-vim docker-compose.yaml 
-eb init
-eb create kitu-dev
-eb deploy
-vim Docker
-vim Dockerfile 
-ls
-vim package.json 
-gs
-vim Dockerrun.aws.json
-gs
-ls
-la
-vim .elasticbeanstalk/config.yml 
-la
-mkdir client
-mv dist/ src/ client/
-ls
-./gulp
-vim paths.js 
-./gulp
-vim server/index.js 
-docker-compose up
-eval "$(docker-machine env default)"
-./gulp
-docker-compose up
-node server/index.js 
-ls
-docker-compose up
-eval "$(docker-machine env default)"
-docker-compose up
-./gulp 
-ag "/paths" .
-ls
-./gulp
-docker-compose up
-eval "$(docker-machine env default)"
-docker-compose up
-ag "/paths" .
-ls
-rm -r clientdist/
-ls
-docker-compose up
-ls
-ls server/index.js 
-node server/index.js 
-docker-compose up
-vim server/index.js 
-node server/index.js 
-docker-compose up
-docker build -t seamgen/angular-starter .
-docker run --rm -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ seamgen/angular-starter
-docker build -t seamgen/angular-starter .
-docker run --rm -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ seamgen/angular-starter
-docker run --rm -p 8081:8080 -v $(PWD)/client/dist:/dist/ -v $(PWD)/client/server:/server/ seamgen/angular-starter
-vim Dockerfile 
-ls
-mv client/src/ .
-mv client/dist/ .
-ls client/
-rm -r client/
-docker build -t seamgen/angular-starter .
-docker run --rm -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ seamgen/angular-starter
-./gulp
-docker build -t seamgen/angular-starter .
-docker run --rm -p 8081:8080 -v $(PWD)/dist:/dist/ -v $(PWD)/server:/server/ seamgen/angular-starter
-docker-compose up
-eb deploy
-eb logs
-gs
-gaa .
-git reset
-gcob test-deploy
-gaa .
-gcm "hasty commit"
-gs
-eb deploy
-eb use kitu-dev
-eb deploy
-gaa .
-gcm "aaaaa"
-eb deploy
-eb logs
-ls
-ls client/
-vim paths.js 
-c
-gs
-gaa .
-gcm "adds a forward slash"
-vp Dock*
-eb deploy
-vim .gitignore 
-gs
-ls dist/
-ga dist/
-gcm "adds dist"
-gs
-eb deploy
-vim docker-compose.yaml 
-eb deploy
-ls
-gs
-gaa .
-gcm "removes dist from .gitignore and changes Dockerrun"
-eb deploy
-ga Dockerrun.aws.json 
-gcm "fixes volumes in Dockerrun"
-eb deploy
-vim Dockerrun.aws.json 
-vim Dockerrun.aws.json 
-gaa .
-gcm "fixes volumes in Dockerrun"
-eb deploy
-touch .elasticbeanstalk/config.yml
-vim .elasticbeanstalk/config.yml
-ls
-git archive --format=zip HEAD > kitu-dev.zip
-ls
-zip kitu-dev.zip -g dist/
-man zip
-zip kitu-dev.zip -g dist/*
-vim .elasticbeanstalk/config.yml 
-eb deploy
-vim .elasticbeanstalk/config.yml 
-ls
-docker-compose up
-eval "$(docker-machine env default)"
-docker-compose up
-vim docker-compose.yaml 
-ls
-vim gulpfile.js 
-vp gulp-tasks/*
-vim gulp-tasks/task-helpers.js 
-docker-compose up
-vim src/js/controllers.es6 
-vim dist/myProjectName.js 
-./gulp
-ls
-gs
-/-g
-/zip
-vim eb_deploy.sh
-eb terminate
-ls
-docker-compose up
-?eval "$(docker-machine env default)"
-eval "$(docker-machine env default)"
-gs
-docker-compose up
-vim Docker
-docker images
-eval "$(docker-machine env default)"
-docker images
-vim Dockerfile 
-vim docker-compose.yaml 
-./gulp
-vim Dockerrun.aws.json 
-ls
-vim .elasticbeanstalk/config.yml 
-gs
-gd gulp-tasks/
-docker-compose up
-vim Dockerrun.aws.json 
-ls
-vim Dockerfile 
-ls
-ga gulp-tasks/
-gs
-gcm "update reference to paths.js in gulp-tasks"
-gs
-vim eb_deploy.sh 
-vim .gitignore 
-gs
-ga .gitignore 
-gcm "adds *.zip and dist/ to gitignore"
-ga eb_deploy.sh 
-gcm "shortcut script to eb deploy"
-gs
-git remote
-git remote -v
-gpo
-gs
-gco master
-gs
-gco test-deploy
-git rm dist/
-git rm -r dist/
-gs
-gcm "removes dist from source control"
-gs
-gco master
-git merge test-deploy
-gs
-gpom
-vim README.md 
-gs
-ga README.md 
-gcm "adds docker compose info to readme"
-gp
-j kit__
-ls
-gs
-rm -r .elasticbeanstalk/
-cp -R ../angular-starter/ .
-ls
-gs
-ls
-gs
-vim .gitignore 
-gbr
-gco v2
-ls
-up
-rm -rf kitu
-git clone https://amiles_@bitbucket.org/SeamgenSD/kitu.git
-cd kitu
-ls
-gbr
-gcob v2
-gs
-gco master
-gcob v1
-gco v2
-ls
-rm -r config.js contributors.txt install* message* package.json 
-ls
-gs
-la
-gs
-gaa .
-gcm "removes old files"
-gs
-cp -R ../angular-starter/ .
-ls
-gs
-ls
-la
-gco .
-gs
-ls
-gbr
-up
-rm -rf kitu
-git clone https://amiles_@bitbucket.org/SeamgenSD/kitu.git
-ls
-gs
-vim README.md 
-gs
-gpo
-ls
-ls
-cd kitu
-ls
-git rm -r config.js contributors.txt instal* mes* package.json 
-gs
-gcob v2
-gs
-gcm "removes old files"
-gs
-gpo
-gs
-ls client/
-git rm client/
-git rm -r client/
-gs
-gcm "removes client dir"
-gs
-git reset --soft ~HEAD
-git reset --soft HEAD~
-gs
-git reset
-gs
-gbr
-gco test-deploy
-gs
-vim README.md 
-gco master
-git db test-deploy
-gs
-vim README.md 
-ls
-vim README.md 
-gs
-gaa .
-gcm "removes client dir"
-gs
-gpo
-gs
-ls
-gs
-ls
-ls
-la
-cp -R .elasticbeanstalk/ .eslintrc.yaml .gitignore .jscsrc.yaml Docker* README.md api/ bower.json bower_components/ docker-compose.yaml eb_deploy.sh gulp gulp-tasks/ gulpfile.js package.json paths.js server/ src/ test/ ../kitu/
-gs
-gco .
-ls
-gs
-git clean -n
-git clean -f
-ls
-rm -r angular/ angular-ui-router/ api/ config/ controllers/ helpers/ js/ lodash/ mocks/ scss/ swagger* templates/
-ls
-gs
-man cp
-cp -R .elasticbeanstalk .eslintrc.yaml .gitignore .jscsrc.yaml docker* README.md api bower.json docker-compose.yaml eb_deploy.sh gulp gulp-tasks gulpfile.js package.json paths.js server src test ../kitu/
-ls
-gs
-ls
-docker-compose up
-eval "$(docker-machine env default)"
-./gulp
-vim server/index.js 
-ls
-vim paths.js 
-docker-compose up
-./gulp
-./gulp install
-docker-compose up
-eval "$(docker-machine env default)"
-docker-compose up
-./gulp
-gs
-vim .gitignore 
-ga .gitignore 
-gcm "updates .gitignore"
-ga .eslintrc.yaml .jscsrc.yaml 
-gcm "adds linting configs"
-gs
-ga gulp*
-gs
-gcm "adds all gulp-related files"
-gs
-ga bower.json package.json 
-gcm "adds package manifests"
-gs
-ga docker-compose.yaml 
-gcm "adds docker compose config"
-gs
-ga paths.js 
-gcm "adds paths catalog"
-gs
-ga api/ server/ src/
-gcm "adds source files for api, server, and client"
-gs
-ga test/
-gcm "adds mostly empty test dir"
-gs
-ga eb_deploy.sh 
-gcm "adds shortcut script for elastic beanstalk deployment"
-gs
-gd 
-ga README.md 
-gcm "updates readme"
-gs
-gpo
-vim .elasticbeanstalk/config.yml 
-gs
-j ang
-vim README.md 
-gs
-git remove list -v
-git remote list -v
-git remote -v
-gco test-deploy
-git merge master
-gpo
-gco master
-gs
-docker-compose up
-eval "$(docker-machine env default)"
-bashp
-ls
-cp ../angular-starter/Dockerfile ../angular-starter/Dockerrun.aws.json .
-gs
-gaa .
-gcm "adds dockerfile and dockerfun"
-gs
-gpo
-gs
-./gulp
-docker-compose up
-j kit
-lS
-ls
-j ang
-gs
-vim README.md 
-gs
-ga README.md 
-gcm "updates README"
-gs
-gpo
-gs
-vim package.json 
-j ang
-vim README.md 
-open README.md -a Textedit
-gs
-gd
-ga README.md 
-gcm "updates README with more docker details"
-c
-gp
-eb status
-j kit
-ls
-vim gulpfile.js 
-ls
-j hol
-vim server/index.js 
-vim gulp-tasks/task-helpers.js 
-d
-vim gulpfile.js 
-j kit
-ls
-gs
-gd server/
-gco server/
-gs
-gpuo
-gs
-gd gulp-tasks/
-gco gulp-tasks/
-gs
-gd paths.js 
-ga paths.js 
-gcm "changes project name in paths.js"
-gs
-gd
-vim gulp-tasks/server.js 
-vim gulp-tasks/task-helpers.js 
-gs
-gd
-gaa .
-gcm "moves gulp's server tasks into a separate task file"
-gs
-j ang
-bower install bootstrap-sass
-docker-machine regenerate-certs default
-eval "$(docker-machine env default)"
-gcm "updates README with more docker details"
-vim README.md 
-gs
-ga README.md 
-gcm "updates README"
-gpo
-gco .
-docker-compose up
-vim src/scss/main.scss 
-./gulp
-vim Dockerfile 
-ls
-./gulp server
-./gulp install
-vim gulp
-./gulp server
-vim server/index.js 
-vim gulp-tasks/server.js 
-gs
-gd
-gaa .
-gcm "fixes gulp to have working server task"
-gs
-gco backen
-gco backend
-gs
-gpo
-gpuo
-git log
-gd server/ df7d70b6330555ff6aa68249f66064577d33f46d
-gd df7d70b6330555ff6aa68249f66064577d33f46d server/
-gd df7d70b6330555ff6aa68249f66064577d33f46d
-ls
-ls api/
-ls server/
-mv api/ server/
-swagger project edit
-mv server/api/ .
-gs
-vim .gitignore 
-gs
-gco master
-gco v2
-gs
-gd
-gcm "adds bower_components to gitignore"
-gs
-gaa .
-gcm "adds bower_components to gitignore"
-gs
-gco backend
-git reset --soft HEAD~
-gs
-vim .gitignore 
-gs
-vim .gitignore 
-git reset
-gs
-gd
-gs
-ls server/boot/
-vim server/boot/persistance.js 
-vim api/controllers/authenticate.js 
-gs
-vim api/swagger/swagger.yaml 
-ga api/swagger/
-gs
-gcm "adds authenticate path to swagger.yaml"
-gd package.json 
-vim package.json 
-gd package.json 
-ga package.json 
-gcm "adds junk, mysql, and sequelize to package.json"
-gs
-gd server/index.js 
-gs
-ga server/ api/controllers/authenticate.js 
-gs
-gcm "adds new tools to index.js, adds boot folder, and auth controller"
-gs
-git log
-gs
-gco v2
-gco .
-gs
-gco v2
-gco backend-merge-v2
-gcob backend-merge-v2
-git merge backend
-node server/index.js 
-npm install
-vim api/controllers/authenticate.js 
-node server/index.js 
-vim server/index.js 
-gulp ./server/
-./gulp server/
-up
-git clone https://amiles_@bitbucket.org/SeamgenSD/king.lee.git
-ag intercept king.lee/client/
-vim king.lee/client/public/modules/users/config/users.config.js
-cd kitu
-ls
-vim nginx.conf
-vim test/api/controllers/hello_world.js 
-j ang
-vim .gitignore 
-gs
-gaa .
-gcm "gitignores bower_components"
-gs
-gpo
-gbr
-git log
-git db test-deploy
-gpo :test-deploy
-gs
-gbr
-gpuo
-gs
-gpu -u origin master
-gs
-git push -u origin master
-gs
-gpuo
-docker pull mysql
-docker pull mysql:5.6
-vim docker-compose.yaml 
-docker-compose up
-./gulp server
-vim api/swagger/swagger.yaml 
-vim src/js/app.js 
-vim docker-compose.yaml 
-docker-compose up
-docker-compose up
-eval "$(docker-machine env default)"
-docker-compose up
-j ang
-vim README.md 
-gs
-ga README.md 
-gcm "updates README"
-gpo
-bashp
-docker-machine restart default
-eval "$(docker-machine env default)"
-docker-compose up
-vim Docker
-vim Dockerfile 
-vim package.json 
-vim Dockerfile 
-docker-compose up
-vim Dockerfile 
-vim package.json 
-ag junk .
-gs
-npm install
-ls
-gs
-gd
-docker-compose up
-vim package.json 
-ls
-vim server/index.js 
-docker-compose up
-node server/index.js 
-docker-compose up
-gs
-gd docker-compose.yaml 
-docker-compose up
-j ang
-ag vendor gulp*
-vim gulp-tasks/task-helpers.js 
-ag vendor gulp*
-docker-compose up
-ls
-mv api/ server/
-docker-compose up
-mv server/api .
-vim server/index.js 
-docker-compose up
-j hol
-cd client/
-ag localstorage .
-ag -g localstorage .
-ag -g storage .
-ag -g cookie .
-ag -l localstorage .
-ag localStorageService .
-ag "\('localStorageService .
-c
-'
-'
-ag "\('localStorageService" .
-bower install angular-local-storage --save
-docker-compose up
-./gulp
-vim src/js/app.js 
-docker ps
-eval "$(docker-machine env default)"
-docker ps
-history | ag docker
-history | ag \bip
-history | ag \\bip
-docker-machine ip default
-docker-compose up
-vim docker-compose.yaml 
-gs
-rm nginx.conf 
-gs
-gd bower.json 
-gco bower.json 
-gs
-gd src/
-gco src/
-gs
-gd server/
-gco server/
-gs
-gd docker-compose.yaml 
-vim docker-compose.yaml 
-gco docker-compose.yaml 
-gs
-gco master
-gco docker
-gf
-gco docker
-ls
-vim docker-compose.yaml 
-ls
-vim Docker
-vim Dockerfile 
-ls
-swagger project edit
-man swagger
-swagger help
-swagger project edit server/
-swagger project edit .
-swagger project edit server/api/swagger/
-cd server/api/swagger/
-swagger project edit
-swagger help
-gs
-ls
-upup
-up
-ls
-gs
-gco master
-gbr
-gco v2
-ls
-gcob v2-copy
-git merge docker
-vim .gitignore 
-gs
-ga .gitignore 
-gs
-git commit
-gs
-ls
-docker-compose up
-ls
-vim Dockerfile 
-vim docker-compose.yaml 
-ls
-gs
-vim docker-compose.yaml 
-vim Dockerrun.aws.json 
-vim server/api/controllers/authenticate.js 
-vim server/api/services/auth.service.js 
-docker-compose up
-ls server/
-node server/index.js 
-npm install
-bower install
-node server/index.js 
-docker-compose up
-docker-machine restart default
-vim Dockerfile 
-eval "$(docker-machine env default)"
-docker-compose up
-vim docker-compose.yaml 
-gs
-ga docker-compose.yaml 
-git reset
-ag '/server/index.js' .
-ag 'index.js' .
-vim package.json 
-docker-compose up
-vim server/index.js 
-docker-compose up
-ls
-vim server/index.js 
-vim Dockerfile 
-gs
-git stash
-gbr
-gco backend-merge-v2
-gs
-docker-compose up
-docker-machine restart default
-eval "$(docker-machine env default)"
-eval "$(docker-machine env default)"
-docker-compose up
-gs
-gco v2-copy
-gs
-git stash pop
-gs
-docker-compose up
-ls
-vim gulp
-vim gulp-tasks/server.js 
-docker-compose up
-vim Dockerfile 
-docker build -t seamgen/angular-starter .
-vim Dockerfile 
-docker build -t seamgen/angular-starter .
-vim Dockerfile 
-docker build -t seamgen/angular-starter .
-docker run --rm -p 8080:8080 -v $(PWD)/dist:/var/www/dist/ -v $(PWD)/server:/server/ seamgen/angular-starter
-docker run --rm -p 8080:8080 -v $(PWD)/dist:/var/www/dist/ -v $(PWD)/server:/var/www/server/ seamgen/angular-starter
-ls
-./gulp
-vim gulp-tasks/server.js 
-node server/index.js 
-./gulp
-vim server/index.js 
-docker run --rm -p 8080:8080 -v $(PWD)/dist:/var/www/dist/ -v $(PWD)/server:/var/www/server/ seamgen/angular-starter
-c
-ls
-mkdir client
-mv dist/ src/ client/
-gs
-ls
-mv client/dist/ .
-mv client/src/ .
-gs
-git log
-git commit --amend -m "merges branch 'docker' into 'v2'"
-git log
-gs
-git log
-gs
-gbr
-git mv dist/ src/ client/
-git mv dist src client/
-ls client/
-ls
-ls
-mv dist/ src/ client/
-ls client/
-gs
-ga client/
-gs
-ga src
-gs
-gcm 
-gs
-vim paths.js 
-vim gulp-tasks/task-helpers.js 
-docker run --rm -p 8080:8080 -v $(PWD)/dist:/var/www/dist/ -v $(PWD)/server:/var/www/server/ seamgen/angular-starter
-./gulp
-./gulp
-docker run --rm -p 8080:8080 -v $(PWD)/client/dist:/var/www/dist/ -v $(PWD)/server:/var/www/server/ seamgen/angular-starter
-gs
-gd paths.js 
-gd gulp-tasks/task-helpers.js 
-ga gulp-tasks/task-helpers.js paths.js 
-gs
-gcm "moves src and dist into client/, makes pertinent changes to paths and gulp tasks"
-gs
-gbr
-git db backend-merge-v2
-gs
-gdb backend
-git db backend
-gs
-docker-compose up
-ls
-ag nginx.
-ag nginx .
-mv Dockerfile Dockerfile.node
-mv Dockerfile.node Dockerfile-node
-mv Dockerfile.nginx Dockerfile-nginx
-docker-compose up
-ls
-docker-compose up
-ls
-ls Dock*
-vim .dockerignore
-gs
-docker-compose up
-vim server/config/nginx.conf 
-docker-compose up
-docker images
-docker rmi e20f8d3c8159 b594869ca6d5 6804cceeead8 5a767b140a03 877e3d2a4d5a 75076f95fe08 f71012d17da8 f44353327cb6
-docker images
-docker-machine restart default
-docker images
-docker rmi e20f8d3c8159
-docker help rmi
-docker rmi -f e20f8d3c8159 60103ab8182a  5a767b140a03 877e3d2a4d5a
-docker-compose up
-docker pull yelp/docker-custodian
-docker run -ti     -v /var/run/docker.sock:/var/run/docker.sock     yelp/docker-custodian dcgc --help
-docker run -ti -v /var/run/docker.sock:/var/run/docker.sock yelp/docker-custodian dcgc --dry-run
-docker images
-docker-compose up
-docker-machine rm default
-docker-machine create default
-docker-machine start default
-docker-machine create --driver virtualbox default
-eval "$(docker-machine env default)"
-docker-compose up
-docker ps
-eval "$(docker-machine env default)"
-docker ps
-docker-compose up
-docker-compose down
-docker-compose up
-vim docker-compose.yaml 
-docker-compose down
-docker-compose up
-docker-compose down
-docker-compose up
-docker-compose down
-docker-compose up
-docker-compose down
-docker-compose up
-docker-compose down
-docker-compose up
-docker-compose down
-docker images
-docker-compose up --force-recreate
-docker run --name my-nginx -v client/dist:/usr/share/nginx/html:ro -d nginx
-docker run --name my-nginx -v ./client/dist:/usr/share/nginx/html:ro -d nginx
-docker run --name my-nginx -v $(PWD)/client/dist:/usr/share/nginx/html:ro -d nginx
-docker ps
-docker-compose down
-docker ps
-docker-machine ip default
-docker ps
-docker kill 0792336c9990
-docker run --name my-nginx -v $(PWD)/client/dist:/usr/share/nginx/html:ro -v $(PWD)/server/config/nginx.conf:/etc/nginx/nginx.conf:ro nginx
-docker run --name my-nginx2 -v $(PWD)/client/dist:/usr/share/nginx/html:ro -v $(PWD)/server/config/nginx.conf:/etc/nginx/nginx.conf:ro nginx
-docker images
-docker ps
-docker ps -a
-docker ps -aq
-docker rm $(docker ps -aq)
-docker run --name my-nginx -v $(PWD)/client/dist:/usr/share/nginx/html:ro -v $(PWD)/server/config/nginx.conf:/etc/nginx/nginx.conf:ro nginx
-docker ps
-docker run -v $(PWD)/client/dist:/usr/share/nginx/html:ro -v $(PWD)/server/config/nginx.conf:/etc/nginx/nginx.conf:ro nginx
-docker ps -a
-docker rm $(docker ps -aq)
-docker run -v $(PWD)/client/dist:/usr/share/nginx/html:ro -v $(PWD)/server/config/nginx.conf:/etc/nginx/nginx.conf:ro nginx
-docker run -v $(PWD)/client/dist/:/usr/share/nginx/html:ro -v $(PWD)/server/config/nginx.conf:/etc/nginx/nginx.conf:ro nginx
-docker ps
-docker ps -a
-docker rm $(docker ps -aq)
-docker ps
-docker run -v $(PWD)/client/dist/:/usr/share/nginx/html:ro -v $(PWD)/server/config/nginx.conf:/etc/nginx/nginx.conf:ro nginx
-docker run -v $(PWD)/client/dist:/usr/share/nginx/html:ro -v $(PWD)/server/config/nginx.conf:/etc/nginx/nginx.conf:ro nginx
-docker rm $(docker ps -aq)
-docker-compose up
-vp public/modules/users/services/authentication.service.js 
-docker ps
-docker logs kitu_nginx
-docker logs d14e3ff8b5a9
-docker logs kitu_nginx_1
-docker ps -a
-ls
-rm -r dist/
-docker-compose up
-docker ps -a
-docker rm $(docker ps -aq)
-docker-compose down
-docker ps
-docker-compose up
-?recre
-docker-compose up --force-recreate
-bash -c "clear && DOCKER_HOST=tcp://192.168.99.100:2376 DOCKER_CERT_PATH=/Users/amiles/.docker/machine/machines/default DOCKER_TLS_VERIFY=1 docker exec -it kitu_nginx_1 sh"
-docker-compose up --force-recreate
-docker-compose up
-docker-compose up --force-recreate
-vim docker-compose.yaml 
-docker-compose up --force-recreate
-./gulp
-man envsubst
-mv server/config/nginx.conf server/config/nginx.template
-vim server/config/nginx.template
-docker-compose up --force-recreate
-docker-compose up 
-docker logs 0382e496abab_0382e496abab_kitu_nginx_1
-docker ps
-docker down
-docker-compose down
-docker-compose up
-docker-compose up --force-recreate
-bash -c "clear && DOCKER_HOST=tcp://192.168.99.100:2376 DOCKER_CERT_PATH=/Users/amiles/.docker/machine/machines/default DOCKER_TLS_VERIFY=1 docker exec -it kitu_nginx_1 sh"
-docker-compose down
-bash -c "clear && DOCKER_HOST=tcp://192.168.99.100:2376 DOCKER_CERT_PATH=/Users/amiles/.docker/machine/machines/default DOCKER_TLS_VERIFY=1 docker exec -it kitu_nginx_1 sh"
-docker-compose up
-docker-compose up --force-recreate
-mv server/config/nginx.template server/config/kitu.template
-docker-compose up -d --force-recreate
-docker-compose down
-docker-compose up --force-recreate
-docker ps
-docker-compose logs kitu_nginx_1
-docker-compose logs nginx
-docker-compose down
-docker ps -a
-docker run nginx env
-docker-compose logs nginx
-docker run nginx env
-docker-compose up
-docker restart
-docker-machine restart default
-eval "$(docker-machine env default)"
-docker-compose up
-docker ps
-docker run --rm --name nginx2 --link web:web nginx env
-docker-compose down
-docker-compose up
-which doesntexist
-docker-compose down
-docker ps -a
-which envsubst
-docker-compose up
-docker run kitu_nginx
-docker ps
-bash -c "clear && DOCKER_HOST=tcp://192.168.99.100:2376 DOCKER_CERT_PATH=/Users/amiles/.docker/machine/machines/default DOCKER_TLS_VERIFY=1 docker exec -it kitu_nginx_1 sh"
-docker ps
-eval "$(docker-machine env default)"
-docker-machine restart default
-eval "$(docker-machine env default)"
-bash -c "clear && DOCKER_HOST=tcp://192.168.99.100:2376 DOCKER_CERT_PATH=/Users/amiles/.docker/machine/machines/default DOCKER_TLS_VERIFY=1 docker exec -it kitu_nginx_1 sh"
-docker-compose up
-bash -c "clear && DOCKER_HOST=tcp://192.168.99.100:2376 DOCKER_CERT_PATH=/Users/amiles/.docker/machine/machines/default DOCKER_TLS_VERIFY=1 docker exec -it kitu_nginx_1 sh"
-bash -c "clear && DOCKER_HOST=tcp://192.168.99.100:2376 DOCKER_CERT_PATH=/Users/amiles/.docker/machine/machines/default DOCKER_TLS_VERIFY=1 docker exec -it kitu_nginx_1 sh"
-docker-compose up
-docker-compose build
-bash -c "clear && DOCKER_HOST=tcp://192.168.99.100:2376 DOCKER_CERT_PATH=/Users/amiles/.docker/machine/machines/default DOCKER_TLS_VERIFY=1 docker exec -it kitu_nginx_1 sh"
-docker-compose up
-docker-machine restart default
-docker-compose build
-bash -c "clear && DOCKER_HOST=tcp://192.168.99.100:2376 DOCKER_CERT_PATH=/Users/amiles/.docker/machine/machines/default DOCKER_TLS_VERIFY=1 docker exec -it kitu_nginx_1 sh"
-docker logs 75f119e0f310
-eval "$(docker-machine env default)"
-docker logs 75f119e0f310
-docker logs kitu_nginx
-docker images
-docker ps
-docker-compose up
-docker-compose down
-docker-compose build
-docker ps
-docker ps -a
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker run 4b0eda080087 env
-docker run 4b0eda080087 which envsubst
-docker run 4b0eda080087 which bash
-docker run 4b0eda080087 which sh
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker run 9e3ebd9f3579
-docker run 9e3ebd9f3579 cat /etc/nginx/nginx.conf
-docker run 9e3ebd9f3579 env
-docker-compose build
-docker-compose up
-docker run ed0e349b59e3 env
-docker run ed0e349b59e3 cat /etc/nginx/nginx.conf
-docker run ed0e349b59e3 "cat /etc/nginx/nginx.conf"
-docker run ed0e349b59e3 cat /etc/nginx/nginx.conf
-docker run ed0e349b59e3 cat /etc/nginx/conf.d/default.conf
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker run --link web:web 2da54d8ed57b env
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker run e0d9a28e33f5 /bin/sh -c "cat /etc/nginx/nginx.conf"
-docker-compose build
-docker-compose up
-docker-compose build --no-cache
-docker-compose up
-docker-compose build --no-cache
-ls
-cat README.md 
-docker-compose up
-docker-compose build 
-docker-compose up
-docker-compose build 
-docker-compose up
-docker-compose build 
-docker-compose up
-docker-compose build 
-docker-compose up
-docker-compose build
-docker-compose up
-docker run 4622d42ca5b8 which envsubst
-docker run 4622d42ca5b8 /usr/bin/envsubst < /etc/nginx/conf.d/kitu.template > /etc/nginx/nginx.conf && cat /etc/nginx/nginx.conf && cat /etc/hosts
-docker run 4622d42ca5b8 /bin/sh
-docker run -it 4622d42ca5b8 /bin/sh
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose build --no-cache
-docker-compose up
-docker-compose build --no-cache
-docker-compose up
-docker-compose build --no-cache
-bashp
-vim env.sh
-docker-compose build --no-cache
-docker-compose build 
-docker-compose up
-docker-compose build 
-docker-compose up
-docker-compose build 
-docker-compose up
-docker run -it 5b6d41cc0a6b /bin/sh
-docker run -it --link web:web 5b6d41cc0a6b /bin/sh
-docker run web
-eval "$(docker-machine env default)"
-docker run web
-docker-compose build 
-docker-compose up
-docker-compose build 
-docker run 53a96ab695ea /bin/sh
-docker run -it 53a96ab695ea /bin/sh
-docker-compose build 
-docker-compose up
-docker-compose build --no-cache
-docker-compose up
-docker run -it f3d04dd36084 /bin/bash
-docker run -it f3d04dd36084 /bin/sh
-docker-compose build
-ls server/
-mkdir server/nginx
-mv server/config/kitu.template server/nginx/
-ls server/nginx/
-docker-compose build
-docker-compose up
-docker-compose build
-docker run -it 2b2a7833ec69 /bin/sh
-docker-compose build
-docker-machine restart default
-eval "$(docker-machine env default)"
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker run 652b820559ea
-docker run 652b820559ea -v ./client/dist:/var/www/dist -v ./server:/var/www/server -p 8080:8080
-docker run 652b820559ea -v $(PWD)/client/dist:/var/www/dist -v $(PWD)/server:/var/www/server -p 8080:8080
-docker run -p 80:80 --link 652b820559ea:web -it
-docker run -p 80:80 --link 652b820559ea:web -it bf02abfc2f66
-docker ps
-docker run -p 80:80 --link 449a5828f4b8:web -it bf02abfc2f66
-docker run -p 80:80 --link 449a5828f4b8:web -it bf02abfc2f66 /bin/sh
-docker run -p 80:80 -v $(PWD)/server/nginx/config:/kitu-config --link 449a5828f4b8:web -it bf02abfc2f66 /bin/sh
-docker ps
-ls rm -r server/nginx/config/
-ls server/nginx/
-ls server/nginx/config/
-rm -r server/nginx/config/
-docker run -p 80:80 -v $(PWD)/server/nginx/:/kitu-config --link backstabbing_bose:web -it bf02abfc2f66 /bin/sh
-docker run -v $(PWD)/client/dist:/var/www/dist -v $(PWD)/server:/var/www/server -p 8080:8080 652b820559ea
-docker-compose build
-docker ps
-docker ps -a
-docker ps
-docker run -p 80:80 -v $(PWD)/server/nginx/:/kitu-config --link reverent_blackwell:web -it bf02abfc2f66 /bin/sh
-docker help
-docker inspect --help
-docker ps
-docker inspect condescending_lichterman
-docker ps -l
-docker ps
-docker ps --help
-docker run -p 80:80 -v $(PWD)/server/nginx:/kitu-config --link reverent_blackwell:web -it bf02abfc2f66 /bin/sh
-man <
-docker run -p 80:80 -v $(PWD)/server/nginx:/kitu-config --link reverent_blackwell:web -it bf02abfc2f66 /bin/sh
-ls
-ag -g kitu .
-rm -r server/config/
-c
-docker run -p 80:80 -v $(PWD)/server/nginx:/kitu-config --link reverent_blackwell:web -it bf02abfc2f66 /bin/sh
-docker-compose build
-docker ps
-chmod +x server/nginx/envsub.sh 
-server/nginx/envsub.sh < server/nginx/kitu.template | cat
-mv server/nginx/envsub.sh server/nginx/envsub
-docker run -p 80:80 -v $(PWD)/server/nginx:/kitu-config --link reverent_blackwell:web -it 68611ba26053 /bin/bash
-docker run -p 80:80 -v $(PWD)/server/nginx:/kitu-config $(PWD)/client/dist:/usr/share/nginx/html --link reverent_blackwell:web -it 68611ba26053 /bin/bash
-docker run -v $(PWD)/client/dist:/var/www/dist -v $(PWD)/server:/var/www/server -p 8080:8080 652b820559ea
-j king
-cd ../king.lee/
-ag "/api" .
-ag "api/" .
-ls
-vim server/config/default.yaml 
-vim server/models/Event.js 
-vim server/boot/production.js 
-ag -l "api/" .
-vim common/baseline.service.js 
-vim server/models/PassRequest.js 
-vim server/api/controllers/user.js 
-vim server/index.js 
-vim docker-compose.yaml 
-gs
-ls server/nginx/
-ga Dockerfile-node 
-gs
-ga Dockerfile
-gs
-gcm "renames Dockerfile to Dockerfile-node"
-gs
-ga Dockerfile-nginx 
-gcm "adds Dockerfile-nginx"
-gs
-mv env.sh server/
-ga server/env.sh 
-ls server/nginx/
-ga server/nginx/
-gs
-gcm "adds nginx and env config, plus envsub script"
-gs
-ga .dockerignore 
-gcm "adds a dockerignore"
-gs
-gd docker-compose.yaml 
-gs
-ga docker-compose.yaml 
-gcm gs
-gs
-git log
-git commit --amend -m "adds nginx and mysql to docker-compose"
-gs
-gd gulp-tasks/
-gco gulp-tasks/
-gs
-gd pa
-gd package.json 
-ga package.json 
-git reset
-gco package.json 
-gs
-gco server/config/
-gs
-gd server/index.js 
-vim server/index.js 
-gs
-ga server/index.js 
-gcm "comments out serving of static files in index.js"
-gs
-gco master
-gf
-gco backend-mailer
-s
-gs
-git log
-gs
-ls
-mv server/api/ .
-swagger project edit
-mv api/ server/
-gs
-ag -g dock .
-ls
-git log
-vp server/api/services/*
-ls
-vim paths.js 
-vim eb_deploy.sh 
-vim docker-compose.yaml 
-ls 
-ls client/
-ls models/user.js 
-vim package.json 
-gd package.json v2-copy:package.json 
-gd v2-copy:package.json package.json 
-ls test/
-ls test/api/controllers/
-ls src/
-gco v2-copy
-ls
-gco backend-mailer:models/
-gco backend-mailer:models
-gco backend-mailer models/
-ls
-gs
-ls models/
-gco
-ls
-ls models/
-gd backend-mailer:models models
-cat models/user.js 
-gd models/ backend-mailer:models/
-gd backend-mailer:models/ models/
-gs
-ls
-ls server/
-gd backend-mailer:server/config/ server/config/
-vim server/nginx/kitu.template 
-gs
-vim .gitignore 
-ls
-gco backend-mailer
-ls server/api/
-ls server/api/services/
-ls server/api/controllers/
-gco v2-copy
-gs
-ls server/api/controllers/
-cat server/api/controllers/authenticate.js 
-gco backend-mailer server/api/controllers/
-gs
-gd
-vp server/api/controllers/*
-gcm "updates controllers with alec's changes"
-gs
-ls server/api/services/
-cat server/api/services/
-cat server/api/services/auth.service.js 
-ls
-gco backend-mailer server/api/services/
-gs
-gcm "updates api services with alec's changes"
-gs
-ls
-gs
-npm install --save emailjs
-gs
-ga pa
-ga package.json 
-gcm "npm installs emailjs"
-c
-vim package.json 
-gs
-gd backend-mailer:server/api/swagger/swagger.yaml server/api/swagger/swagger.yaml 
-gco backend-mailer server/api/swagger/swagger.yaml
-c
-gs
-gcm "updates swagger.yaml with alec's changes"
-gs
-docker run -p 80:80 -v $(PWD)/server/nginx:/kitu-config -v $(PWD)/client/dist:/usr/share/nginx/html --link reverent_blackwell:web -it 68611ba26053 /bin/bash
-ls
-ls client/
-ls
-gco backend-mailer server/config/config.json
-gs
-gcm "adds config.json for server configuration"
-ls
-docker-compose build
-chmod +x server/nginx/docker-cmd 
-vim Dockerfile-nginx 
-docker-compose build
-docker-machine restart default
-eval "$(docker-machine env default)"
-ls
-ag -g env .
-ls
-mkdir deployment
-mb eb_deploy.sh deployment/
-git mv eb_deploy.sh deployment/
-ls
-gds
-gs
-gs
-git reset
-gs
-mg server/nginx deployment/
-mv server/nginx deployment/
-ls server/
-mv server/env.sh deployment/
-ls
-docker-compose build
-docker run -p 80:80 -v $(PWD)/server/nginx:/kitu-config -v $(PWD)/client/dist:/usr/share/nginx/html --link reverent_blackwell:web -it 9ff2377630c2 /bin/bash
-c
-docker ps
-docker run -p 80;80 -v $(PWD)/server/nginx:/kitu-config -v $(PWD)/client/dist:/usr/share/nginx/html --link fervent_chandrasekhar:web -it 9ff2377630c2 /bin/bash
-docker run -p 80:80 -v $(PWD)/server/nginx:/kitu-config -v $(PWD)/client/dist:/usr/share/nginx/html --link fervent_chandrasekhar:web -it 9ff2377630c2 /bin/bash
-docker run -v $(PWD)/client/dist:/var/www/dist -v $(PWD)/server:/var/www/server -p 8080:8080 92092f040826
-docker run -p 80:80 -v $(PWD)/deployment/nginx:/kitu-config -v $(PWD)/client/dist:/usr/share/nginx/html --link fervent_chandrasekhar:web -it 9ff2377630c2 /bin/bash
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker ps
-docker-compose up
-docker-compose --version
-docker-compose build
-docker-compose up
-vim Dockerfile-nginx 
-gs
-ls
-ls models/
-mv models/ server/api/
-ls
-vim docker-compose.yaml 
-mv dock* deployment/
-ls
-mv Dock* deployment/
-ls deployment/
-ls server/
-ls server/config/
-git rm server/config/nginx.conf 
-gs
-git reset
-gs
-ls
-docker-compose build
-mv deployment/docker-compose.yaml .
-docker-compose build
-docker-compose up
-vim docker-compose.yaml 
-ls
-mv deployment/Dock* .
-ls deployment/
-ls
-ls -l
-ls
-vim Dockerfile-node 
-vim docker-compose.yaml 
-gs
-ls deployment/
-mv deployment/* server/
-ls d
-ls deployment/
-rm -r deployment/
-ls server/
-vim docker-compose.yaml 
-docker-compose build
-mv server/env.sh deployment/
-eval "$(docker-machine env default)"
-docker-compose build
-mv server/env.sh server/nginx/
-docker-compose build
-docker-compose up
-vim server/index.js 
-vim gulp
-ls server/
-ls
-npm install --save-dev nodemon
-./node_modules/nodemon/bin/nodemon.js -h
-mv docker-compose.yaml docker-compose.yml
-docker-compose up
-docker-compose build
-./gulp
-docker-compose up
-rm 2
-docker-compose build
-./gulp
-vim gulpfile.js 
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-curl http://192.168.99.100/kitu.css
-docker-compose up
-./gulp
-docker-compose up
-1?bui
-docker-compose build
-ls client/dist/
-vim client/dist/index.html 
-./gulp
-docker-compose up
-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-vim client/src/scss/main.scss 
-docker-compose up
-docker-compose build
-rm client/dist/myProjectName.
-rm client/dist/myProjectName.*
-docker-compose up
-docker-compose build
-./gulp
-docker-compose build
-docker-compose up
-docker images
-docker-compose build
-docker-machine restart default
-vim server/api/controllers/user.js 
-mkdir migrations
-./node_modules/sequelize/lib/sequelize.js migration:create
-./node_modules/.bin/sequelize migration:create
-eval "$(docker-machine env default)"
-docker-compose build
-docker-compose up
-docker ps
-docker run -it -v $(PWD):/var/www ac5d51637ca7
-node -v
-docker run -it -v $(PWD):/var/www ac5d51637ca7 /bin/bash
-docker-compose build
-vim package.json 
-docker run -it -v $(PWD):/var/www 8483fb363908 /bin/bash
-j hol
-vim gulpfile.js 
-docker run -it -v $(PWD):/var/www -p 8080:8080 8483fb363908 /bin/bash
-vim server/api/controllers/
-vim gulpfile.js 
-docker run -it -v $(PWD):/var/www -p 8080:8081 8483fb363908 /bin/bash
-vim server/api/controllers/hello_world.js 
-docker-compose build
-vim gulpfile.js 
-docker-compose up
-./gulp
-docker-machine ip default
-env
-env | ag dock
-docker-compose up
-echo $DOCKER_HOST
-docker-machine ip $DOCKER_MACHINE
-docker-compose up
-./gulp
-vim docker-compose.yaml 
-docker-compose up
-./node_modules/.bin/sequelize init
-npm uninstall sequelize
-npm install --save sequelize
-npm install --save sequelize-cli
-node_modules/.bin/sequelize --help
-node_modules/.bin/sequelize help:init
-ls server/config/
-vim server/config/config.json 
-node_modules/.bin/sequelize init
-vim config/config.json 
-vim models/index.js 
-ls
-ls
-node_modules/.bin/sequelize --help
-node_modules/.bin/sequelize help:db:seed
-la
-ls server/
-npm uninstall swagger-express-mw
- vim package.json 
-npm install --save swaggerize-express
-docker-compose up
-eval "$(docker-machine env default)"
-docker-compose up
-mv server/api/swagger/swagger.yaml server/api/swagger/swagger.yml
-docker-compose up
-vim server/api/swagger/swagger.yml
-mv server/api/ .
-swagger project edit
-mv api/swagger/swagger.yml api/swagger/swagger.yaml
-swagger project edit
-mv api/ server/
-docker-compose up
-mkdir server/api/controllers/auth/
-vim server/api/controllers/auth/verify.js
-mkdir server/api/controllers/poopy
-mv server/api/ .
-swagger project edit
-mv api/ server/
-vim server/api/controllers/poopy/poop.js
-properties:
-      message:
-./node_modules/.bin/sequelize migration:create
-ls
-ls migrations/
-rm migrations/20160401100136-unnamed-migration.js 
-ls
-ls
-mkdir db
-mv migrations/ db/
-ls
-vim models/
-mv models/index.js server/api/models/
-ls config/
-mv config/ db/
-mv db/config/config.json db/
-rm -r db/config/
-ls db
-ls
-ls models/
-rm -r models/
-ls
-sequelize
-#./node_modules/.bin/sequelize migration:create
-./node_modules/.bin/sequelize --help
-./node_modules/.bin/sequelize help:init:models
-vim .sequelizerc
-/seq
-./node_modules/.bin/sequelize migration:create
-vim .sequelizerc 
-./node_modules/.bin/sequelize migration:create
-rm db/migrations/20160401101802-unnamed-migration.js 
-ls
-ls db/
-vim server/api/models/index.js 
-ag -g config l
-#ag -g config l
-ag -g config .
-vim server/config/README.md 
-git rm server/api/services/db.service.js 
-gco server/api/services/db.service.js 
-git rm server/api/services/db.service.js
-gs
-gcm "removes db service in favor of sequelize-cli's models/index.js"
-docker-compose build
-docker-compose up
-c
-Q?bui
-docker-compose build --no-cache
-docker ps
-eval "$(docker-machine env default)"
-docker ps
-docker-compose up
-docker-compose build --no-cache
-docker-compose up
-docker-compose build --no-cache
-docker-compose up
-docker-compose build --no-cache
-docker-compose up
-docker-compose build --no-cache
-docker-compose --version
-sequelize
-./node_modules/.bin/sequelize migration:create CreateUsers
-./node_modules/.bin/sequelize help:migration:create
-./node_modules/.bin/sequelize migration:create --name CreateUsers
-docker-compose up
-vim /Users/amiles/Documents/projects/kitu/db/migrations/20160401113853-CreateUsers.js 
-node debug server/api/models/index.js 
-docker-compose -f docker-compose.yml up
-vim server/index.js 
-npm install -g node-debug
-node-debug server/api/models/index.js 
-docker-compose -f docker-compose.yml up
-docker-compose build
-docker-compose build -f docker-compose.yml 
-docker-compose -f docker-compose.yml up
-docker-compose -f docker-compose.yml build
-ag -g env .
-ls
-docker-compose -f docker-compose.yml build
-debug server/api/models/index.js 
-node debug server/api/models/index.js
-docker-compose -f docker-compose.yml up
-docker-compose build
-echo $PWD
-eval "$(docker-machine env default)"
-echo $PWD
-eval "$(docker-machine env default)"
-docker run --name lol-mysql -p 3306:3306 -e MYSQL_USER: "kitu" mysql/mysql-server:5.6
-docker run --name lol-mysql -p 3306:3306 -e MYSQL_USER="kitu" -e MYSQL_PASSWORD="wowapassword" mysql/mysql-server:5.6
-docker run --name lol-mysql -p 3306:3306 -e MYSQL_USER="kitu" -e MYSQL_PASSWORD="wowapassword" -e MYSQL_ROOT_PASSWORD="wowapassword" mysql/mysql-server:5.6
-docker run --rm --name lol-mysql -p 3306:3306 -e MYSQL_USER="kitu" -e MYSQL_PASSWORD="wowapassword" -e MYSQL_ROOT_PASSWORD="wowapassword" mysql/mysql-server:5.6
-docker rmi lol-mysql
-docker ps
-docker ps -a
-docker rmi e52ee6d6435e
-docker rm e52ee6d6435e
-docker-compose -f docker-compose.yml up
-docker-compose build
-docker run -it -v $(PWD):/var/www -v $PWD/client/dist:/var/www/dist 85805d61e398 /bin/bash 
-docker run -it -v $(PWD):/var/www -v $PWD/client/dist:/var/www/dist --link db:lol-mysql 85805d61e398 /bin/bash 
-docker run -it -v $(PWD):/var/www -v $PWD/client/dist:/var/www/dist --link lol-mysql:db 85805d61e398 /bin/bash 
-docker run -it -v $(PWD):/var/www -v $PWD/client/dist:/var/www/dist --link lol-mysql:db 85805d61e398 /bin/sh 
-docker-compose build
-docker-compose up
-docker-compose run web
-docker-compose --version
-docker-compose run web
-docker ps
-eval "$(docker-machine env default)"
-docker ps
-docker kill 1138ed2efe27
-docker run --rm --name lol-mysql -p 3306:3306 -e MYSQL_USER="kitu" -e MYSQL_PASSWORD="wowapassword" -e MYSQL_ROOT_PASSWORD="wowapassword" mysql/mysql-server:5.6
-node
-docker-compose run web
-docker-compose up
-docker-compose build
-ag db.service .
-mkdir server/api/controllers/user
-vim db/migrations/20160401113853-CreateUsers.js 
-./node_modules/.bin/sequelize db:migrate
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose run web
-docker-compose build
-docker-compose run web
-docker-compose build
-docker-compose run web
-docker-compose build
-docker-compose run web
-docker-compose rm -v
-docker-compose run web
-docker-compose build
-docker-compose run web
-docker-compose rm -v
-docker ps
-docker ps -a
-docker-compose run web
-docker-compose build
-mysql
-brew doctor
-brew update
-brew install mysql
-mysql -h 192.168.99.100:3306 -u root
-docker-machine ip default
-ls 
-vim seeders/20160401212744-unnamed-seeder.js 
-docker ps
-vim seeders/20160401212744-unnamed-seeder.js 
-docker ps
-docker run -it --link my-container-name:mysql --rm mysql/mysql-server:tag sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
-fg
-docker run -it --link my-container-name:mysql --rm mysql/mysql-server:tag sh -c 'exec mysql -h"$MYSQL_PORT_3306_TCP_ADDR" -P"$MYSQL_PORT_3306_TCP_PORT" -uroot -p"$MYSQL_ENV_MYSQL_ROOT_PASSWORD"'
-fg
 
-docker run -it --link kitu_db_1:mysql_host --rm mysql/mysql-server:5.6 sh -c 'exec mysql -h mysql_host -P 3306 -uroot -p "wowapassword"'
-c
-docker ps
-docker run -it --link cccdf601da83:mysql_host --rm mysql/mysql-server:5.6 sh -c 'exec mysql -h mysql_host -P 3306 -uroot -p "wowapassword"'
-c
-man awk
-docker run -it --link cccdf601da83:mysql_host --rm mysql/mysql-server:5.6 sh -c 'exec mysql -h mysql_host -P 3306 -uroot -p "wowapassword"'
-c
-docker-compose run web
-docker run -it --link cccdf601da83:mysql_host --rm mysql/mysql-server:5.6 sh -c 'exec mysql -h mysql_host -P 3306 -uroot -p "wowapassword"'
-c
-docker-machine restart default
-eval "$(docker-machine env default)"
-ls
-ls
-docker-compose run web
-docker-compose rm -v
-docker-compose down
-docker-compose rm -v
-docker-compose run web
-docker-compose down
-docker-compose up
-docker-compose down
-docker-compose rm -v
-docker-compose build
-docker-compose up
-docker-compose down
-docker-compose rm -v
-docker-compose run web
-docker-compose build
-?Env
-eval "$(docker-machine env default)"
-docker-machine ip default
-docker-compose run web
-docker-compose build
-docker-compose run web
-docker-compose down
-docker-compose build
-vim .sequelizerc 
-docker ps 
-docker-machine restart default
-eval "$(docker-machine env default)"
-docker-compose run web
-eval "$(docker-machine env default)"
-docker-compose build
-docker-compose run web
-docker-compose build
-docker-compose run web
-docker-compose down
-docker-machine ip default
-docker-compose run web
-docker-compose down
-docker-compose run web
-docker-compose down
-docker-compose build
-docker-compose run web
-docker-compose down
-docker-compose build
-docker-compose run web
-docker-compose build
-fg
-vim docker-compose.override.yml 
-docker-compose run web
-j kit
-ls
-docker-compose down
-eval "$(docker-machine env default)"
-docker-machine restart default
-eval "$(docker-machine env default)"
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose run web
-docker-compose build
-docker-compose down
-docker-compose build
-ag 8081 .
-docker-compose run web
-docker-compose down
-docker-compose build
-docker-machine ip default
-docker ps
-eval "$(docker-machine env default)"
-docker ps
-docker-compose run web
-docker-compose down
-ls db/migrations/
-docker-compose run web
-ls
-vim gulp-tasks/server.js 
-ls server/api/controllers/
-docker-compose build
-docker-machine restart default
-vp docker*
-j kit
-docker-machine restart default
-docker-machine ls
-docker-machine rm default
-docker-machine restart default
-docker-machine create default
-docker-machine create --driver virtualbox default
-eval "$(docker-machine env default)"
-docker ps -a
-eval "$(docker-machine env default)"
-docker ps -a
-up
-mkdir docker
-cd docker/
-docker-compose build
-up
-rm -r docker/
-ag user .
-npm install --save body-parser
-vim server/sql/user.table.sql 
-git rm server/sql/user.table.sql 
-gs
-ag hashpass .
-j .vim
-ls
-vimrc
-j hol
-ls server/boot/
-vp server/boot/*
-vim server/server.js 
-docker-compose up
-docker-compose down
-docker-compose up
-npm install --save-dev node-inspector
-vim Dockerfile-node-dev 
-docker-compose down
-docker-compose build
-docker-compose up
-docker-compose down
-docker-compose up
-vim Dockerfile-node-dev 
-docker-compose build
-docker-compose up
-docker-compose down
-docker-compose build
-docker-compose up
-node-inspector
-docker-compose down
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose down
-docker-compose build
-docker-compose up
-docker-compose down
-docker-compose build
-docker-compose up
-./node_modules/.bin/node-inspector 
-docker-compose down
-docker-compose build
-ls
-vim server/debug.sh
-chmod +x server/debug.sh 
-docker-compose run web
-vim server/debug.sh 
-docker-compose build
-docker-compose run web
-docker-compose build
-docker-compose run web
-docker-compose down
-docker-machine ip default
-vim server/debug.sh 
-docker-compose run web
-docker-compose down
-docker-compose build
-docker-compose run web
-docker-compose down
-docker-compose build
-docker-compose up
-docker-compose down
-docker-compose run web
-docker-compose down
-docker-compose build
-docker-machine ip default
-eval "$(docker-machine env default)"
-./node_modules/.bin/node-inspector --web-host=192.168.99.100 --web-port=8081 --no-preload
-docker-compose run web
-docker-compose down
-docker-compose build
-vim server/debug.sh 
-docker-compose run web
-docker-compose down
-./node_modules/.bin/node-inspector --web-host=192.168.99.100 --web-port=8081 --no-preload
-./node_modules/.bin/node-inspector --web-host=192.168.99.100 --web-port=8080 --no-preload
-./node_modules/.bin/node-inspector --no-preload
-docker-compose run web
-vim server/debug.sh 
-docker-compose down
-docker-compose build
-docker-compose run web
-down
-docker-compose build
-docker-compose up
-down
-docker-compose down
-docker-compose build
-docker-compose up
-docker-compose down
-docker-compose buil
-docker-compose build
-docker-compose up
-docker-compose down
-vim gulp-tasks/server.js 
-docker-compose build
-docker-compose up
-docker-compose down
-rm server/debug.sh 
-j hol
-j king
-ls
-ls client/
-ls server/
-swagger --help
-swagger help project
-swagger edit server/
-swagger project edit server/
-vim package.json 
-vim seeders/20160401212744-unnamed-seeder.js 
-./node_modules/.bin/sequelize db:seed
-./node_modules/.bin/sequelize help:db
-./node_modules/.bin/sequelize --help
-./node_modules/.bin/sequelize help:db:seed
-vim .sequelizerc 
-ls seeders/
-./node_modules/.bin/sequelize db:seed
-vim db/config.json 
-./node_modules/.bin/sequelize db:seed
-./node_modules/.bin/sequelize db:seed seeders/20160401212744-unnamed-seeder.js 
-./node_modules/.bin/sequelize db:seed --seed seeders/20160401212744-unnamed-seeder.js 
-node --v8-options | grep "in progress"
-docker-compose up
-docker-compose down
-docker-compose run web
-docker-machine restart default
-eval "$(docker-machine env default)"
-docker-compose build
-docker-compose run web
-docker-compose down
-docker-compose build
-docker-compose up
-docker-compose down
-docker-compose up
-docker-compose down
-docker-compose build
-vim server/api/controllers/user.js 
-docker-compose up
-docker-compose down
-docker-compose bui
-docker-compose build
-docker-compose up
-docker-compose down
-rm -r server/api/controllers/poopy
-ls server/api/controllers/poopy
-rm server/api/controllers/poopy.js 
-ls
-vim test/api/controllers/poopy.js
-docker-compose down
-eval "$(docker-machine env default)"
-docker-compose up
-docker-compose down
-npm install gulp-node-inspector --save-dev
-docker-compose down
-docker-compose up
-docker-compose down
-docker-compose bui
-docker-compose build
-docker-compose up
-docker-compose build
-docker-compose run web
-docker-machine restart default
-env
-eval "$(docker-machine env default)"
-docker-compose build
-docker-compose up
-docker-compose run web
-docker-compose down
-docker-compose up
-docker-compose down
-docker-compose build
-vim client/src/js/controllers.es6 
-vs
-docker-compose up
-docker-compose down
-ls
-vim .sequelizerc 
-mv seeders/ db/seeds
-ls
-gs
-gcm "removes raw sql files"
-gs
-ls
-la
-ls
-gs
-ga Dockerfile-node Dockerfile-node-dev 
-gcm "adds Dockerfile-node-dev, makes Dockerfile-node only for staging / prod"
-gs
-gd Dockerfile-n
-gd Dockerfile-nginx 
-ga Dockerfile-nginx
-ga server/nginx/docker-cmd 
-gcm "refactors commands in Dockerfile-nginx into a shell script"
-gs
-ga eb_deploy.sh
-ga server/eb_deploy.sh 
-gs
-gcm "moves eb_deploy into server"
-gs
-ga server/api/models/ ./models
-gs
-gcm "moves models/ into server/api/, renames user.js to admin.js"
-gs
-ls
-gs
-ga server/env.sh server/nginx/env.sh
-gs
-gcm "moves server/env.sh into server/nginx"
-gs
-ls db/
-ga db/
-gcm "adds db/ dir"
-gss
-gs
-ls
-ga docker-comp*
-gs
-ga docker-compose.yaml
-gs
-gcm "renames docker-compose.yaml to yml, refactors prod and non-prod configuration into docker-compose.prod and .override"
-gs
-gd package.json 
-vim package.json 
-npm prune
-ls
-gs
-ga .sequelizerc
-gcm "adds .sequelizerc for sequelize-cli configuration"
-gs
-gd gulp-tasks/server.js 
-npm dedupe
-vim gulp-tasks/server.js 
-ls
-gs
-ga gulp-tasks/server.js 
-gcm "adds node-inspector to gulp server task, changes config appropriately"
-gs
-gd gulp-tasks/
-sl
-ls
-gs
-vim gulp-tasks/watchers.js 
-gs
-ga gulp-tasks/
-git reset
-gd gulp-tasks/
-gs
-ga gulp-tasks/
-gcm "gets docker's IP address dynamically for gulp browsersync"
-gs
-ga server/umzug-helper.js 
-gcm "adds umzug-helper.js for running migrations on Express startup"
-gs
-ls
-gs
-gd package.json 
-ga package.json
-gcm "adds body-parser, sequelize-cli, swaggerize-express, node-inspector, and nodemon to package.json"
-gs
-git mv server/nginx/kitu.template server/nginx/nginx.conf.template
-gs
-ga server/config/nginx.conf
-gs
-gcm "moves server/config/nginx.conf to server/nginx/nginx.conf.template"
-gs
-ag kitu.template .
-vim server/nginx/docker-cmd 
-gs
-ga server/nginx/nginx.conf.template 
-gs
-git reset
-gd server/nginx/
-gs
-ga server/nginx/
-gs
-gcm "fixes name of nginx.conf.template, fixes nginx docker-cmd with new name"
-gs
-gd server/config/
-ga server/config/
-gcm "moves db config from server config into db/config"
-gs
-gd server/api/swagger/
-vim server/api/swagger/swagger.yaml 
-gs
-ga server/api/swagger/
-gcm "removes host property from swagger.yaml"
-gs
-ls
-gs
-ls server/api/controllers/auth
-gs
-gd server/api/controllers/
-git mv server/api/controllers/user.js server/api/controllers/admin.js
-gs
-gcm "renames controller user.js to admin.js"
-gs
-gd server/index.js 
-gs
-ga server/index.js 
-git reset
-vim server/index.js 
-ga server/index.js 
-gcm "big changes in server/index.js, including switch from swagger-express-mw to swaggerize-express, umzug migration helper"
-gs
-git rm server/api/controllers/hello_world.js 
-ag -g hello .
-git rm test/api/controllers/hello_world.js 
-gs
-gcm "removes hello_worlds"
-gs
-ga server/api/controllers/auth
-ga server/api/controllers/
-ga server/api/swagger/swagger.yaml 
-gd server/
-gs
-gcm "adds and fixes (empty) routes in swagger to use admin instead of user" 
-gs
-ga server/
-gcm "renames hash password method in auth service"
-gs
-gr
-gbr
-ls
-gco v2
-ls
-git log
-ls
-vim server/api/swagger/swagger.yaml 
-gco v2-copy
-gs
-gbr
-git db docker
-git db backend-mailer
-git db v2
-gbr -m v2-copy v2
-gs
-gbr
-gco master
-ls
-gcob v1-messageQueue
-gpo
-gs
-gco v2
-gs
-gpo
-gs
-gcob development
-gpo
-gbr
-gco v1-messageQueue
-gpo :docker :backend-mailer
-gpo :backend
-gpo :v2
-gs
-vim README.md 
-gs
-gco development
-gs
-vim README.md 
-gs
-ga README.md 
-gcm "updates README"
-gs
-gpo
-gs
-gbr
-git db v2
-gs
-vim docker-compose.
-vim db/migrations/20160401113853-CreateUsers.js 
-ls
-gs
-ls dist/
-rm -r dist/
-gs
-ls
-ag "(.)" .
-ag "\(.\)" .
-gs
-ls
-npm install -g sequelize-cli
-gs
-gcob create-roles
-sequelize model:create --name Role --attributes name:string
-vim $(ag -g role db/)
-npm uninstall -g sequelize-cli
-ls
-vim sqlz
-chmod +x sqlz 
-vim ~/.gitignore
-vim ~/.gitignore_global 
-gs
-vim server/api/models/role.js 
-vim server/umzug-helper.js 
-gs
-ga db/ server/
-gs
-gcm "creates role model and its migration"
-gs
-ls
-vim README.md 
-open README.md -a Textedit
-gs
-ga README.md 
-gcm "updates README again"
-gpo
-gco development
-gco create-roles
-git chery-pick 95be725bd49c9e77d0fd5e3cd30167572b7c543a
-git cherypick 95be725bd49c9e77d0fd5e3cd30167572b7c543a
-git cherry-pick 95be725bd49c9e77d0fd5e3cd30167572b7c543a
-ls
-gs
-git cherry-pick --continue
-vim .gitignore 
-gs
-git cherry-pick --abort
-gs
-gco development
-git cherry-pick 95be725bd49c9e77d0fd5e3cd30167572b7c543a
-gs
-gpo
-gco create-roles
-gs
-git log
-gs
-git log
-ls
-vim server/index.js 
-gs
-vp docker-*
-docker-compose build
-eval "$(docker-machine env default)"
-docker-compose build
-docker-compose --version?
-docker-compose --version
-docker-compose down
-eval "$(docker-machine env default)"
-docker-compose up
-docker-compose down
-ls
-gs
-./node_modules/.bin/sequelize migration:create --name AddRolesToUsers
-vim New migration was created at /Users/amiles/Documents/projects/kitu/
-gs
-gco development
-vim README.md 
-ga README.md 
-gcm "updates README again"
-gs
-gpo
-gco create-roles
-vim db/migrations/20160404123120-AddRolesToUsers.js
-mv db/migrations/20160404123120-AddRolesToUsers.js db/migrations/20160404123120-AddRolesToAdmins.js
-gs
-vim server/api/models/admin.js 
-docker-compose build
-eval "$(docker-machine env default)"
-docker-compose build
-docker-compose down
-eval "$(docker-machine env default)"
-docker-compose up
-docker-compose down
-docker-compose build
-docker-compose up
-mv api .
-mv api/ .
-mv server/api .
-swagger project edit
-mv api/ server/
-docker-compose build
-eval "$(docker-machine env default)"
-docker-compose run web
-docker-compose down
-docker-compose build
-docker-compose run web
-vp docker-compose.yml Dockerfile-node-dev 
-mkdir server/api/controllers/customer
-mkdir server/api/controllers/admin
-gs
-vim Dockerfile-node-dev 
-gco Docker*
-gs
-gd gulp-tasks/
-gco gulp-tasks/server.js 
-gs
-git log
-gs
-gd server/api/models/
-gs
-gd db/migrations/
-vim $(ag -g roles db/)
-vim $(ag -ig roles db/)
-ls
-gs
-ga server/api/models/admin.js 
-ga $(ag -ig roles db/)
-gs
-git reset
-git stash
-gs
-gco development
-git log
-gbr
-gbr -m create-roles feature/KITU-70
-gbr
-gbr -m feature/KITU-70 71
-gbr
-gco 71
-gs
-git stash pop
-gs
-ls db/migrations/
-gs
-gd server/api/swagger/
-gs
-ga db/migrations/
-gs
-vim server/api/models/admin.js 
-ga server/api/models/admin.js 
-ga server/api/swagger/swagger.yaml 
-gs
-vim server/api/controllers/admin
-gcm "KITU-71: adds Roles table, associates Roles to Admins"
-gs
-vim test/api/controllers/README.md 
-git rm test/api/controllers/README.md 
-vim ~/Desktop/notes
-mkdir test/api/controllers
-up
-cd king.lee/
-ls
-cd server/
-ls
-ls test/api/controllers/user.js 
-vim test/api/controllers/user.js 
-ls node_modules 
-ls -l node_modules 
-up
-ls
-ls common/
-vim common/baseline.service.js 
-up
-vim pac
-cd kitu
-npm install --save-dev jasmine
-vim package.json 
-gs
-ga test/api/controllers/
-gs
-gcm "KITU-71: adds skeleton for admin controller spec"
-gs
-vim client/src/js/app.js 
-npm install --save-dev gulp-mocha
-./gulp test-server
-ls gulp-tasks/cli_opts.js 
-vim gulp-tasks/cli_opts.js 
-./gulp test-server
-./gulp -o test-server
-./gulp -l test-server
-./gulp test-server -l
-vim Dockerfile-node-dev 
-docker-compose build
-eval "$(docker-machine env default)"
-docker-compose build
-up
-docker-compose up
-cd kitu
-docker-compose up
-vim test/api/controllers/adminController.spec.js
-./gulp test-server -l
-gs
-docker-machine restart default
-eval "$(docker-machine env default)"
-./gulp test-server -l
-gs
-docker-compose down
-eval "$(docker-machine env default)"
-docker-compose up
-docker-compose down
-docker-compose build
-./gulp watch-server -l
-./gulp watch-server
-ls server/config/
-./gulp watch-server
-docker-machine ip default
-./gulp watch-server
-./gulp test-server -l
-ag NODE_ENV .
-vim server/index.js 
-ls
-rm sqlz 
-ls
-./gulp test-server -l
-npm install --save mysql
-node db/connect.js 
-vim db/connect.js
-./gulp test-server -l
-rm db/connect.js 
-./gulp test-server -l
-./gulp test-server -l
-j king
-vim server/test/api/controllers/user.js 
-./gulp test-server -l
-ls
-ld db/
-ls db/
-docker-compose down
-eval "$(docker-machine env default)"
-docker-compose up
-docker-compose down
-./gulp test-server -l
-j hol
-vim test/api/channel.js 
-vim test/api/page.js 
-vim test/api/space.js 
-ag mongo test/
-ag mongo server/
-vim server/datasources.unittest.js 
-d
-./gulp test-server -l
-./gulp watch-server -l
-ls
-./gulp watch-server -l
-gs
-gd test/api/controllers/
-ga test/api/controllers/
-gcm "KITU-71: adds a more substantive test for the admin controller"
-gs
-gd server/index.js 
-ga server/index.js 
-gs
-gcm "KITU-71: adds logic related to test env to server/index.js"
-gs
-gd db/
-ga db/
-gcm "KITU-71: removes password for test DB, fixes host property"
-gs
-gd server/api/models/
-gco server/api/models/
-gs
-gd paths.js 
-ga paths.js
-gcm "KITU--71: adds entries for server code in paths.js"
-gs
-gd gulp-tasks/
-gs
-ga gulp-tasks/
-gcm "KITU-71: fleshes out gulp server task, adds task for creating a test DB"
-gs
-gd package.json 
-vim package.json 
-gs
-gd package.json 
-ga package.json
-gcm "KITU-71: installs gulp-mocha"
-c
-gs
-gd server/api/controllers/
-gs
-gd server/api/swagger/
-gs
-git stash
-gs
-gco development
-gpu
-gs
-gcob ESLINT
-vim .eslintrc.yaml 
-ls
-./gulp lint-server
-gs
-ga .eslintrc.yaml 
-gcm "ESLINT: turns on recommended ESLINT rules, plus a few more"
-gs
-gpo
-gs
-gbr
-gco 71
-git stash pop
-open .
-cp .eslintrc.yaml eslintrc.yaml
-eval "$(docker-machine env default)"
-./gulp lint-server
-docker-compose down
-./gulp lint-server
-gco ESLINT:.eslintrc.yaml
-gco ESLINT:./.eslintrc.yaml
-gco ESLINT .eslintrc.yaml
-gs
-./gulp lint-server
-gs
-cp .eslintrc.yaml eslintrc.yaml
-open .
-gs
-gco .eslintrc.yaml 
-gs
-git reset
-gco .eslintrc.yaml 
-gs
-gd docker-compose.
-gd docker-compose.yml 
-gco docker-compose.yml
-gs
-gd gulp-tasks/server.js 
-vim .eslintrc.yaml 
-./gulp test-server
-eval "$(docker-machine env default)"
-./gulp test-server
-ping 192.168.99.100
-ping 192.168.99.100:3306
-docker-compose down
-docker ps
-docker kill ae1fff6c5255
-docker-compose run db
-docker-compose build
-./gulp test-server
-docker-compose up
-./gulp test-server
-gs
-rm eslintrc.yaml 
-gs
-docker-machine restart default
-eval "$(docker-machine env default)"
-./gulp test-server
-docker-compose build
-docker-machine up
-./gulp test-server
-docker-machine up
-./gulp test-server
+sshDev <<HERE
+whoami
+HERE
 
-vim db/config.json 
-./gulp test-server
-./gulp watch-server
-./gulp test-server
-gs
-gd gulp-tasks/
-ga gulp-tasks/
-gcm "KITU-71: sets NODE_ENV to test and runs migrations in server testing task"
-gs
-vim db/seeds/
-gd server/api/models/
-gco server/api/models/
-gs
-gd server/umzug-helper.js 
-ga server/umzug-helper.js
-gcm "KITU-71: umzug-helper now returns umzug object directly"
-gs
-gd server/index.js 
-gs
-gd server/index.js 
-git log
-gs
-gd server/index.js 
-ga server/index.js 
-gcm "KITU-71: changes index.js to not run migrations in test env"
-gs
-j dotf
-vim .vim/bundle/ftdetect/jasmine.vim 
-gs
-ga $(ag -g jas)
-ag -g jas .
-ag -ag jas .
-ag -ag ./vim/
-ag -ag jas ./vim/
-ag -ag jas ./.vim/
-ag -aig jas ./.vim/
-i
-ls
-ls db/
-mkdir db/seeds/production
-mkdir db/seeds/test
-rm -r db/seeds/test/
-#rm -r db/seeds/test/
-rm -r db/seeds/production/
-gs
-ls db/seeds/
-mkdir db/fixtures
-rm -r db/fixtures/
-touch db/seeds/production.js
-touch db/seeds/development.js
-touch db/seeds/test.js
-./node_modules/.bin/sequelize migration:create AddDefaultRoles
-./node_modules/.bin/sequelize migration:create --name AddDefaultRoles
-vim db/migrations/20160407194938-AddDefaultRoles.js
-docker-compose up
-docker-compose down
-ag Roles .
-docker-machine restart default
-vim db/seeds/test.js 
-gs
-gd db/migrations/
-docker-compose up
-docker-compose build
-docker-machine restart default
-eval "$(docker-machine env default)"
-ag Admin.hasMany .
-ag bulkCreate .
-git rm db/seeds/20160401212744-unnamed-seeder.js 
-gs
-gcm "KITU-71: removes unamed seedflie"
-git commit --amend -m "KITU-71: removes unused seed file"
-gs
-ag bulkCreate .
-./node_modules/.bin/sequelize seed:create --name AddDefaultRoles
-docker-compose down
-eval "$(docker-machine env default)"
-docker-compose up
-docker-compose down
-vim seeds/20160408113319-AddDefaultRoles.js 
-rm seeds/20160408113319-AddDefaultRoles.js
-ls
-ls se
-ls seeds/
-rm -r seeds/
-vim .sequelizerc 
-ag umzug .
-ls db/seeds/
-ls db/migrations/
-ag -g Default db/
-rm $(ag -g Default db/)
-ls db/migrations/
-docker-compose build
-ls db/seeds/
-docker-compose up
-docker-compose down
-node
-ag role .
-docker-compose down
-ag role .
-docker-compose up
-vp $(ag role .)
-vp $(ag -g role .)
-vs
-vp $(ag -l role .)
-docker-compose down
-ls
-ls server/nginx/
-vim server/nginx/nginx.conf.template 
-ls server/nginx/
-vim server/nginx/docker-cmd 
-eval "$(docker-machine env default)"
-docker-compose up
-docker-compose down
-ag role .
-docker-compose up
-docker-compose down
-docker-compose down
-docker-compose up
-docker-compose down
-gs
-gd .sequelizerc 
-gco .sequelizerc 
-gs
-vim .sequelizerc 
-gd db/config.json 
-ga db/config.json 
-gcm "KITU-71: removes seederStorage prop from db config"
-gs
-ga db/seeds/
-gs
-gcm "KITU-71: adds a seed file for each environment"
-gs
-git stash
-gs
-gco development
-gpu
-gco Customer-Form-Directive
-g
-gs
-gco 71
-git stash pop
-docker-compose up
-docker-compose down
-git stash
-gs
-gco development
-gpu
-gco Customer-Form-Directive
-gpu
-gco Customer-Form-Directive
-ls
-gs
-./gulp
-./gulp install
-docker-compose up
-docker-compose build
-vp package.json bower.json 
-vim client/dist/vendor.js 
-vim bower
-bim bower.json 
-vim bower.json
-gs
-docker-compose down
-eval "$(docker-machine env default)"
-docker-compose up
-docker-compose down
-docker-compose build
-ag input-mask.
-ag input-mask .
-vp client/src/js/directives/*
-gs
-gco develompent
-gco development
-docker-compose up
-docker-compose down
-gpu
-gco 71
-docker-compose build
-./gulp -l
-gs
-git stash pop
-vs
-docker-compose down
-eval "$(docker-machine env default)"
-docker-compose up
-docker-compose down
-docker-compose build
-docker-compose up
-gs
-./gulp test-server
-ag createTest .
-vim gulp-tasks/server.js 
-vim server/index.js 
-./gulp test-server
-./gulp watch-server
-gs
-gd db/
-gs
-ga db/migrations/
-gcm "KITU-71: goes back in history and fixes migrations to include missing properties"
-gs
-gd db/seeds/
-gs
-ga db
-gcm "KITU-71: fixes test seedfile"
-gs
-gd gulp-tasks/server.js 
-gs
-ga gulp-tasks/
-gcm "KITU-71: updates gulp server task to use fixed umzugHelper"
-gs
-gd server/api/
-gs
-gd server/api/services/auth.service.js 
-gco server/api/services/auth.service.js
-gs
-gd server/index.js 
-ga server/index.js
-gcm "KITU-71: updates server/index.js to use updated umzugHelper"
-gs
-gd server/umzug-helper.js 
-gs
-ga server/umzug-helper.js 
-gcm "KITU-71: updates umzugHelper to expose migrator and seeder instances"
-gs
-vim gulp-tasks/server.js 
-vs
-./gulp dev:server
-gs
-gd server/api/controllers/
+sshDev << HERE
+whoami
+HERE
+
 fg
+./scripts/get_db_dump.sh 
+man ssh
+man expect
+./scripts/get_db_dump.sh 
+sshDev "$( ./scripts/test.sh )"
+chmod u+x scripts/test.sh 
+sshDev "$( ./scripts/test.sh )"
+./scripts/get_db_dump.sh 
+sshDev
+pfDev
+./scripts/get_db_dump.sh 
+pfDev
+./scripts/get_db_dump.sh 
+"$(< ./scripts/test.sh)"
+$(< ./scripts/test.sh)
+< ./scripts/test.sh 
+echo $(< ./scripts/test.sh )
+< ./scripts/test.sh 
+./scripts/test.sh 
+sshDev "$(< ./scripts/get_db_dump.sh)"
+sshDev "$(< ./scripts/test.sh)"
+sshDev "$(< ./scripts/dump.sh)"
+./scripts/get_db_dump.sh 
+"$(< ./scripts/test.sh)"
+echo "$(< ./scripts/test.sh)"
+man bash
+vim scripts/get_db_dump.sh 
+k
+./scripts/test.sh dev
+./scripts/test.sh "wow" "hel lo"
+k
+k
+./scripts/test.sh "wow" "hel lo"
+./scripts/get_db_dump.sh 
+./scripts/test.sh "dev" 
+"$(< ./scripts/test.sh "dev")
+"
+"$(< "./scripts/test.sh dev")"
+"$(< './scripts/test.sh dev')"
+readd -p "What is your name? " name; echo "Good day, $name.  Would you like some tea?"
+read -p "What is your name? " name; echo "Good day, $name.  Would you like some tea?"
+./scripts/test.sh 
+./scripts/get_db_dump.sh 
+cat "hellow"
+man cat
+./scripts/get_db_dump.sh 
+k
+./scripts/get_db_dump.sh 
+cat ./scripts/test.sh 
+test='wow'
+cat ./scripts/test.sh 
+cat ./scripts/test.sh 
+cat ./scripts/test.sh 
+$(cat ./scripts/test.sh )
+$(./scripts/test.sh )
+$(< ./scripts/test.sh )
+"$(< ./scripts/test.sh )"
+./scripts/get_db_dump.sh 
+has scp
+hag scp
+./scripts/get_db_dump.sh 
+ls ../dumps/
 ls
-git rm server/api/controllers/authenticate.js 
-npm uninstall token
-npm install --save jsonwebtoken express-jwt
-npm dedupe
-vim package.json 
-vim .eslintrc.yaml 
-docker-compose down
-eval "$(docker-machine env default)"
-docker-compose down
-./gulp dev:server
-./gulp lint-server
-./gulp dev:server
-./gulp lint-server
-vim .eslintrc.yaml 
-ag login .
-ag -g login .
-git rm server/api/controllers/auth/verify.js 
-git rm server/api/controllers/auth/verify.js -f
+ag -g 8-26 .
+pfDev
+sshDev
+pro
+./scripts/get_db_dump.sh 
+cat scripts/test.sh | bash -s 'dev'
+./scripts/get_db_dump.sh 
+cat scripts/test.sh | bash -s 'dev'
+./scripts/get_db_dump.sh 
+rm scripts/test.sh 
+./scripts/get_db_dump.sh 
+ls scripts/
+vim scripts/test.sh 
+./scripts/get_db_dump.sh 
+rm scripts/dump.sh 
+./scripts/get_db_dump.sh 
+sshDev
+ls ../dumps/
+vim scripts/get_db_dump.sh 
+./scripts/reset_db.sh 8-26
+dumpdir="../dumps"
+gunzip "$dumpdir/*.gz"
+gunzip $dumpdir/*.gz
+ls ../dumps/
+./scripts/reset_db.sh 8-26
+fg
+k
+mysqld
+sqldn
+node test.js 
+vim test.js
+rm test.js 
+k
+j api
+gf
+pfDev
+j api
+vim scratch
+k
 gs
-git reset
-gs
-man dot
-man gv
-brew install graphviz
-man graphviz
-man dot
-dot -T png -O ~/Desktop/kitu_models.gv 
-vim ~/Desktop/kitu_models.gv
-dot -T png -O ~/Desktop/kitu_models.gv 
-vim ~/Desktop/kitu_models.gv 
-rm 
-j desk
-rm kitu_models.gv 
-vim kitu_models.gv
-npm install --save-dev chai
-./gulp test-server
-docker-machine restart default
-eval "$(docker-machine env default)"
-npm dedupe
-docker-compose down
-eval "$(docker-machine env default)"
-docker-compose up
-docker-compose down
-./gulp test-server
-docker-compose down
-docker ps
-docker kill 183915ee3697
-docker-compose run db
-./gulp dev:server
-mkdir server/api/swagger/docs
-cd server/api/swagger/docs
-git clone https://github.com/swagger-api/swagger-ui
-ls
-mv swagger-ui/dist .
-ls 
-pwd
-docker-compose down
-eval "$(docker-machine env default)"
-docker-compose up
-docker-compose up
-docker-compose down
-docker-compose build
-open server/api/swagger/docs/dist/index.html 
-vim server/api/swagger/docs/dist/index.html 
-cd server/api/swagger/docs/dist/
-vim index.html swagger-ui.js 
-ls
-up
-ls
-cd docs/
-ls
-ls client/
-up
-rm -rf docs/
-open .
-vim gulp-tasks/server.js 
-vim swagger.yaml 
-./gulp edit-api
-npm install --save-dev swagger-editor-server
-upup
-up
-npm install --save-dev swagger-editor-server
-./gulp edit-api
-vim package.json 
-npm prune
-docker-compose run editor
-eval "$(docker-machine env default)"
-docker-compose run editor
-docker ps
-docker-compose build editor
-docker ps
-eval "$(docker-machine env default)"
-docker ps
-docker-compose run editor
-docker-compose up
-docker-compose down
-vim docker-compose.override.yml 
-open server/api/swagger/
-vim docker-compose.yml 
-docker-compose build editor
-docker-compose build
-docker-compose UP
-npm install yaml-to-json
-npm install --save-dev yaml-to-json
-npm dedupe
-npm uninstall --save-dev yaml-to-json
-npm install --save-dev yamljs
-docker-compose up
-docker-compose down
-./gulp test-server
-./gulp watch-server
-./gulp dev:server
-mkdir server/api/helpers
-up
-git clone git@github.com:balderdashy/sails.git
-cd sails/
-ls
-cd li
-cd lib
-ls
-ag '/responses' .
-vp $(ag -l '/responses' .)
-up
-cd -
-cd up
-cd ../sails/
-ag ".bind\(" .
-mkdir server/api/helpers/responses
-vim server/api/helpers/responses/notAuthorized.js
-./gulp watch-server
-./gulp dev:server
-vim .eslintrc.yaml 
-gs
-gd .eslintrc.yaml 
-vim .eslintrc.yaml 
-ga .eslintrc.yaml 
-gs
-gcm "KITU-71: adds two rules to ESLINT"
-gs
-gd docker-compose.yml 
-ga docker-compose.yml 
-gcm "KITU-71: adds swagger editor container to docker-compose (commented out by default)"
-gs
-gd gulp-tasks/
-vim gulp-tasks/server.js 
-gd gulp-tasks/server.js
-ga gulp-tasks/server.js
-gcm "KITU-71: requires chai for testing, renames gulp watch-server to dev:server to label it as all-in-one development task"
-gs
-gd package.json 
-jo hol
-j hol
-cd common/models/space.js
-vim common/models/space.js
-vp docker*
-gcm "KITU-71: requires chai for testing, renames gulp watch-server to dev:server to label it as all-in-one development task"
-git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javascript
-vim -v
-which vim
-brew update
-brew doctor
-brew info vim
-brew install vim
-which vim
-vim --version
-man brew link
-echo $PATH
-which vim
+gcob feature/private-journal
+gpo -u feature/private-journal
+k
+pfPRod
+pfProd
+node
+k
+j api
+git --version
+k
+myslqd
+k
+./sql migration:create --name create-journal-questions 
+./sql migration:create --name create-journal-answers
+./sql migration:create --name create-user-journal-answers
+./sql migration:create --name create-user-journal-entries
+./sql migration:create --name create-phq9-questions
+./sql migration:create --name create-phq9-answers
+./sql help:model:create
 vim
-bashp
-vim lib/hooks/responses/index.js
-vim --version
-vp server/api/controllers/auth*
-vs
-./gulp dev:server
-docker-compose down
-eval "$(docker-machine env default)"
-docker-compose down
-eval "$(docker-machine env default)"
-1?rest
-docker-compose up
-vs
-docker-machine restart default
-j kitu
-eval "$(docker-machine env default)"
-docker-machine restart default
-ssh-agent
-docker-machine regenerate-certs default
-history | ag docker-machine
-docker-machine rm default
-ag '(res|req)' server/
-history | ag '(create|virtua)'
-history | ag 'create*.virtua'
-history | ag 'create.*virtua'
-man history
-docker-machine create --driver virtualbox default
-eval "$(docker-machine env default)"
-eval "$(docker-machine env default)"
-vp docker(
-docker-compose build
-vp docker*
-./gulp dev:server
-vim gulp-tasks/server.js 
-docker-compose down
-eval "$(docker-machine env default)"
-docker-compose up
-docker-compose down
-docker-compose bui
-docker-compose build
-./gulp dev:server
-./gulp test-server
-./gulp dev:server
-ls test/api/helpers/README.md 
-vim test/api/helpers/README.md
-git rm test/api/helpers/README.md 
-mkdir test/helpers
-gs
-ga test/testHelpers.js 
-gcm "KITU-71: creates test/testHelpers.js, removes test/api/helpers/"
-gs
-ls server/api/controllers/admin/
-vim server/api/controllers/admin/\{id\}.js 
-ag notAuth .
-ag authorizeRequest .
-./gulp dev:server
-ag debugger .
-mkdir server/api/controllers/auth
-gs
-gd gulp-tasks/server.js 
-ga gulp-tasks/server.js
-git reste
-git reset
-gs
-gco gulp-tasks/
-gs
-gd package.json 
-vim package.json 
-gs
-gd server/index.js 
-gs
-gco development
-gs
-gd server/api/models/
-gs
-ga server/api/models/
-gcm "KITU-71: updates admin and role models"gs
-git log
-git commit --amend -m "KITU-71: updates admin and role models"
-gs
-gd server/api/swagger/swagger.yaml 
-gs
-cp server/api/swagger/swagger.yaml ~/Desktop/
-vs
-vp ~/Desktop/swagger.yaml server/api/swagger/swagger.yaml 
-vo ~/Desktop/swagger.yaml server/api/swagger/swagger.yaml
-gs
-ga server/api/swagger/swagger.yaml 
-gcm "KITU-71,67: adds admin API to swagger, as well as customer API rough draft"
-gs
-gd server/index.js 
-gs
-ga test/api/controllers/adminController.spec.js 
-gcm "KITU-71: adds specfile for admin routes"
-gs
-ga server/api/controllers/admin/\{id\}.js 
-gcm "KITU-71: adds controller file to handle /admin/:id"
-gs
-gd server/api/controllers/admin.js 
-gs
-ga server/api/controllers/admin.js
-gcm "KITU-71: adds working POST and GET to /admin"
-gs
-vim server/api/controllers/roles.js 
-rm server/api/controllers/roles.js
-gs
-ls server/api/helpers/
-ga server/api/helpers/
-gs
-gcm "server improvement: refactors common responses into api/helpers/responses, adds helper middleware"
-gs
-gd server/index.js 
-gs
-git stash
-gco development
-gs
-gcob KITU-67
-git stash pop
-vim server/index.js 
-gs
-ga server/index.js 
-gs
-git reset
-gs
-gd package.json 
-ga package.json 
-gcm "KITU-67: adds json webtoken packages, removes 'token', adds chai"
-gs
-gd server/index.js 
-gs
-ga server/index.js 
-gcm "KITU-67: incorporates new JWT middleware into server/index.js, light refactoring"
-gs
-gd server/api/services/
-gs
-ls server/api/**/auth*
-ga server/api/controllers/
-gs
-git reset server/api/controllers/customer.js 
-gs
-ga server/api/services/auth.service.js 
-gs
-gcm "KITU-67: adds meaningful /auth routes, supported by updates to auth.service using JWT"
-gs
-gco development
-gs
-gcob KITU-70
-gs
-gaa .
-git reset
-gs
-gco KITU-67
-ga test/api/controllers/authController.spec.js 
-gs
-gcm "KITU-67: adds tests"
-gs
-gco KITU-70
-gaa .
-gs
-gcm "KITU-70: adds incomplete customer route, several pending specs"
-gs
-docker-compose up
-gs
-gco development
-gs
-gbr
-docker-compose down
-gco KITU-67
-gpo
-gco 71
-gpo 71:KITU-71
-gco ESLINT
-gco development
-gpu
-git pull origin development
-gs
-gco ESLINT
-git rebase development
-gs
-gpo
-gpo -f
-gco 71
-git rebase development
-vim gulp-tasks/server.js
-ga gulp-tasks/server.js
-gs
-git rebase --continue
-gs
-gpo -f 71:KITU-71
-gs
-gco KITU-67
-git rebase development
-gs
-gpo -f
-gs
-gco development
-gpo :create-roles
-gbr
-gco v1-messageQueue
-gbr -m v1-messageQueue v1
-gs
-gpo v1:v1
-gco KITU-67
-./gulp test-server
-vim gulp-tasks/server.js 
-gs
-gco development
-gcob devcopy
-git merge KITU-67
-gco 71
-gcob 71-copy
-git rebase devcopy
-gs
-vim server/index.js 
-gs
-gaa
-gs
-git rebase --continue
-vim server/index.js 
-gs
-ga server/
-git rebase --continue
-vim server/index.js 
-gs
-ga server/
-git rebase --continue
-gs
-docker-compose build
-ag -g conf .
-./gulp test-server
-git log
-gbr
-git db devcopy
-git db 71-copy
-gco development
-gs
-gco .
-gs
-vim server/index.js 
-docker-compose up
-gs
-gco development
-git db 71-copy
-gbr
-gs
-gbr
-gcob devcopy
-git merge KITU-67
-gco 71
-gcob KITU-71-copy
-git rebase devcopy
-vim server/index.js 
-gs
-ga server/
-gs
-git rebase --continue
-vim server/index.js 
+vim lib/models/journalquestions.js 
+k
+k
+vim lib/controllers/userfeeling.js 
+vp lib/services/journal*
+vim lib/models/userjournalanswers.js 
+k
+vim lib/services/journalanswer.js 
+k
+cd db/migrations/
+ag -g "(journal|phq)"
+upup
+ag -g "(journal|phq)" db/migrations/
+man date
+echo "$(date -u "+%Y%m%d%H%M%S")"
+vim lib/routes/users.js 
+k
+gs
+ga db/migrations/
+gs
+ga lib/models/
+gs
+git reset lib/models/
+gs
+gcm "Adds migrations for the 6 models required for journals"
+echo "$(date -u "+%Y%m%d%H%M%S")"
+
+./mv.sh db/migrations/20170828221341-create-phq9-questions.js db/migrations/20170828221346-create-phq9-answers.js db/migrations/20170828221257-create-journal-questions.js db/migrations/20170828221306-create-journal-answers.js db/migrations/20170828221316-create-user-journal-answers.js db/migrations/20170828221325-create-user-journal-entries.js
+gs
+ag -g "(journal|phq)" db/migrations/
+gs
+gcm "Reorders journal migrations to be in the correct order"
+gs
+k
+gs
+k
+./sql migration:create --name seed-phq9-data
+./sql migration:create --name seed-journal-questions
+./sql migration:create --name seed-journal-answers
+gs
+ls assets/
+mkdir assets/journal
+mkdir assets/icons
+ag -g seed-journal 
+rm db/migrations/20170829193350-seed-journal-icons.js
+rm db/migrations/20170829193353-seed-journal-answers.js
+k
+j down
+cd Private\ journal
+shopt -s extglobn
+shopt -s extglob
+man extglob
+man extglob
+
+ls !(*.png)
+ls !(*.jpg)
+shopt -u extglob
+shopt -s extglob
+ls !(*.jpg)
+ls !(*@3x.png)
+open p0.3-journal-popup.png 
+rm p0.3-journal-popup.png
+rm !(*@3x.png)
+ls
+ls
+
+for file in (./*.png); do echo $file; done
+for file in *.png; do echo $file; done
+for file in (./*.png); do echo $file; done
+for file in *.png; do echo $file; done
+for file in *.png; do newname; done
+for file in *.png; do  newname=${file//@3x}; echo $newname; done
+
+for file in *.png; do  newname=${file//@3x}; mv $file $newname; done
+k
+ls
+k
+
+for file in *.png; do  newname=${file//@3x}; mv "$file" "$newname"; done
+ls
+ag -g icon-0
+ag -g icon-0
+
 fg
-gaa
-git rebase --continue
-gs
-gco devcopy
-git merge KITU-71-copy
-gs
-docker-compose build
-./gulp test-server
-gs
-gbr
-gpo devcopy:KITU-67-71
-./gulp lint-server
-./gulp lint-server -l
-./gulp -l lint-server 
-./gulp lint-server -l
-./gulp lint-server
-./gulp lint-server -l
-gs
-ga gulp-tasks/server.js 
-gcm "Gulp: fixes server ESLint task to use correct config"
+j private
+ls
+for file in *3x.png; do  newname=${file//@3x}; mv "$file" "$newname"; done
+ls
+vim lib/models/journalanswers.js 
+for file in eating*; do  newname="lifestyle-$file"; mv "$file" "$newname"; done
+ls
+for file in exerci*; do  newname="lifestyle-$file"; mv "$file" "$newname"; done
+for file in mood*; do  newname="lifestyle-$file"; mv "$file" "$newname"; done
+ls
+for file in sleep*; do  newname="lifestyle-$file"; mv "$file" "$newname"; done
+ls
+for file in angry*; do  newname="lifestyle-$file"; mv "$file" "$newname"; done
+ls
+for file in medit*; do  newname="lifestyle-$file"; mv "$file" "$newname"; done
+ls
+for file in energ*; do  newname="phq9-$file"; mv "$file" "$newname"; done
+for file in self*; do  newname="phq9-$file"; mv "$file" "$newname"; done
+ls
 gs
 ls
-gbr
-gco KITU-71
-gco KITU-70
-gs
-gbr -m KITU-70 70
-gbr
-gpo :KITU-67 :KITU-71
-gs
-vim gulp-tasks/server.js 
-docker-compose up
-gs
-git rebase devcopy
-gbr
-gbr -m KITU-67 67
-git db KITU-71
-git db KITU-71-copy
-gbr
-gco v1
-gs
-gbr -m v1 version1
-gbr -m version1 version-1
-gpo version-1
-gbr
-gbr -m devcopy 67-71
-gbr
-gco 70
-gs
-git log
+for file in button*; do  newname="${file//question-}"; mv "$file" "$newname"; done
 ls
-ls dist/
-rm -r dist/
-ls client/
-ls client/test/
-docker-compose down
-j .vim
-l
+j api
+open assets/journal/
+gs
+k
+gs
+ga assets/
+gs
+gcm "Adds journal-related icons and other assets"
+gs
+man bash
+gs
 ls
-./gulp dev:server
+ls assets/
+ls assets/journal/
+ls
+ls assets/journal/
+k
+ls assets/journal/
+open assets/journal/
+k
 gs
-ga test/api/
+ag "(phq|journal)" d
+ag "(phq|journal)" db/
+ag -g "(phq|journal)" db/
 gs
-gcm "KITU-70: adds CRUD tests for customer"
+gd db/
 gs
-ga server/api/controllers/customer/
-gcm "KITU-70: adds {id} route handler for customer"
+open db/migrations/
 gs
-gd test/
-gco test
-gd
+ga db/migrations/20170829191827-seed-phq9-data.js
+gcm "Adds a migration to seed phq9 questionaire data"
 gs
-gaa .
-git reset
-gd
-gco server/api/models/
+mv db/migrations/20170829193349-seed-journal-questions.js db/
+ls
 gs
-gaa .
-gcm "KITU-70: updates customer controller to use response helpers"
+ag dev ../dumps/
+ag -g dev ../dumps/
+./scripts/reset_db.sh 8-26
 gs
-gpo 70:KITU-70
-git restar
+migrate
+./node_modules/.bin/inspect try.js 
+ls assets/
+ls assets/journal/
+./node_modules/.bin/inspect try.js 
+pfProd
+ssh-add ~/.ssh/id_bb_rsa
+vim queries/all_feelings.sql
+pfProd
+./node_modules/.bin/inspect try.js 
+fg
+open assets/journal/
+./node_modules/.bin/inspect try.js 
+./scripts/reset_db.sh 8-26
+open db/migrations/
+./node_modules/.bin/inspect try.js 
+./scripts/reset_db.sh 8-26
+./node_modules/.bin/inspect try.js 
+./scripts/reset_db.sh 8-26
+./node_modules/.bin/inspect try.js 
+./run_api.sh 
+./scripts/reset_db.sh 8-26
+./node_modules/.bin/inspect try.js 
+./node_modules/.bin/inspect try.js 
+./run_api.sh 
 gs
-gbr
-docker-machine restart default
+rm db/20170829193349-seed-journal-questions.js
+k
 gs
-./node_modules/.bin/sequelize model:create --name Customer --attributes "name:string"
-./node_modules/.bin/sequelize migration:create --name CreateCustomers
-ag Customer db
-vim /Users/amiles/Documents/projects/kitu/db/migrations/20160411125009-CreateCustomers.js
-docker-compose build
-./gulp test-server
-vs
-fG
-./gulp lint-server
-./gulp test-server
+ga bin/reset-journal-questions 
+gcm "Adds a script to populate the JournalQuestions and JournalAnswers table"
 gs
-gd gulp-tasks/
-gco gulp-tasks/
-gs
-gd test/
-gs
-ga test/
-gs
-gcm "KITU-70: fleshes out CRUD tests for customer"
-gs
-ga server/api/controllers/cust*
-gs
-gcm "KITU-70: fleshes out customer API routes to pass tests"
-gs
-gd server/api/mo
-gd server/api/models/
-gs
-ga server/api/models/
-gs
-git log
-gs
-gcm "KITU-70: adds all customer properties to customer model"
+gd db/
 gs
 ga db/
-gcm "KITU-70: adds migration to create customers"
+gcm "Fixes three of the journal migrations"
 gs
-gd server/api/swagger/
-ga server/api/swagger/
-gcm "KITU-70: adds PUT /customer/:id route to swagger"
+gd lib/controllers/user
+gd lib/controllers/user.js 
 gs
-ga server/
-gcm "KITU-70: adds 404 notFound response helper"
+ga lib/{controllers,routes}/user.js
+ga lib/{controllers,routes}/user*.js
 gs
-gpo 70:KITU-70
-gco 71
+ga lib/routes/index.js 
+ga lib/routes/
 gs
+gcm "Adds the routes for journal support"
+gs
+gd lib/models/image.js 
+gs
+gd lib/models/user.
+gd lib/models/user.js 
+gs
+ga lib/models/user.js 
+gcm "Gives the User model associations to journals"
+gs
+ga lib/models/image.js 
+"Adds icon to the list of valid Image types"
+gs
+gp
+gcm "Adds icon to the list of valid Image types"
+gs
+gd lib/services/user.js 
+gs
+ga lib/controllers/ lib/services/
+gs
+gcm "Adds controllers, services, and methods to support the journal API"
+gs
+ga lib/models/
+gcm "Adds the new Journal-related models"
+gs
+gp
+gs
+gco dev
+gpu
 fg
-docker-compose up
-docker-compose build
-docker-compose down
-./gulp dev:server
-gco 70
-gco 71
+pm2 deploy ecosystem.config.js dev
+node bin/reset-journal-questions 
+./sql migration:create --name add-answer-template-to-journal-questions
+ag VIRTUAL lib/models/
+pfDev
+vim lib/models/badge.js 
+vim etc/database.json 
 gs
-./gulp dev:server
+gd lib/models/
+migrate
+node bin/reset-journal-questions 
+node
 gs
+gd bin/
+gs
+ga bin/
+gcm "Fixes colors, adds answerTemplate to the journal script"
+gs
+gd lib/
+ga lib/ db
+gs
+gcm "Adds an answerTemplate property to JournalQuestions"
+gs
+gp
+pm2 deploy ecosystem.config.js dev
+./run_api.sh 
+node bin/reset-journal-questions 
+pfDev
+vim etc/database.json 
+gs
+node
+scratch
+k
+./run_api.sh 
+vim lib/services/user.js 
+gs
+gd
+gs
+ga lib/
+vim
+gcm "Updates one journal endpoint to support two views in the app"
+nk
+gp
+pm2 deploy ecosystem.config.js dev
+vim bin/reset-journal-questions 
+vim lib/services/user.js 
+gs
+gd bin/
+gs
+ga bin/
+gcm "Adds dummy text for testing, so all answers have some kind of text with them"
+gs
+gd lib/
+ga lib/
+gcm "Adds question and answer text to the icons delivered for Journal Dashboard, for the click handler"
+gp
+vim etc/database.json 
+pm2 deploy ecosystem.config.js dev
+node bin/reset-journal-questions 
+k
+node bin/reset-journal-questions 
+pfDev
+fg
+vim lib/services/journalquestion.js 
+gs
+gd lib/
+gco lib/services/modelservice.js
+gd
+ga lib/
+gcm "Fixes an issue where required was set incorrectly for Journal-related model associations"
+gp
+pm2 deploy ecosystem.config.js dev
+open assets/journal/
+./sql migration:create --name add-key-to-journal-questions
+k
+gs
+migrate
+./scripts/reset_db.sh 8-26
+migrate
+fg
+migrate
+gs
+ga db/
+gcm "Adds two migrations for new properties on Journal models"
+gs
+gd assets/
+ga assets/
+gcm "Renames two assets that were accidentally swapped"
+gs
+gd lib/
+ga lib/
+gcm "Adds key properties to two Journal models"
+gp
+pm2 deploy ecosystem.config.js dev
+k
+gs
+open assets/journal/
+gs
+ga assets/journal/phq*
+gs
+gcm "Updates two journal assets for Phil's testing"
+gs
+gp
+pm2 deploy ecosystem.config.js dev
+node bin/reset-journal-questions 
+pfDev
+k
+pfProd
+pfDev
+./run_api.sh 
+./run_api.sh 
+gs
+gd
+gs
+gd lib/
+gs
+gd lib/
+gd db/
+gs
+ga lib/
+ga db/
+gcm "Updates UserJournalAnswers answerId to allow null"
+gp
+git stash
+pm2 deploy ecosystem.config.js dev
+./node_modules/.bin/inspect try.js 
+vim bin/reset-journal-questions 
+open assets/journal/
+fg
+gs
+git stash poP
+git stash pop
+gs
+gd
+vim bin/reset-journal-questions 
+open assets/journal/
+clear; cd '/Users/aidanmiles/Downloads/drive-download-20170831T165126Z-001/'
+ls
+for file in ("$(ag -g 02 .)"); do echo "$file"; done
+for file in "$(ag -g 02 .)"; do echo "$file"; done
+for file in "$(ag -g 02 .)"; do newname=${file/icon-02-question/phq9-mood}; mv "$file" "$newname"; done
+ls
+for file in "$(ag -g 02 .)"; do newname=${file/icon-02-question/phq9-mood} mv "$file" "$newname"; done
+ls
+for file in "$(ag -g 02 .)"; do newname="${file/icon-02-question/phq9-mood}" mv "$file" "$newname"; done
+ls
+for file in "$(ag -g 02 .)"; do newname="${file//icon-02-question/phq9-mood}" mv "$file" "$newname"; done
+ls
+for file in $(ag -g 02 .); do newname="${file//icon-02-question/phq9-mood}" mv "$file" "$newname"; done
+ls
+for file in "("$(ag -g 02 .)")"; do newname="${file//icon-02-question/phq9-mood}" mv "$file" "$newname"; done
+ls
+up
+ls
+cd drive-download-2017083
+clear; cd '/Users/aidanmiles/Downloads/drive-download-20170831T165126Z-001/'
+ls
+ag -g 02 . | while read file; do echo $file; done
+ag -g 02 . | while read file; do echo $file; done
+ag -g 02 . | while read file; do echo $file; done
+ag -g 02 . | while read file; do newname="${file//icon-02-question/phq9-mood}" echo $newname; done
+ag -g 02 . | while read file; do newname="${file//icon-02-question/phq9-mood}" echo $newname; done
+ag -g 02 . | while read file; do newname="${file//icon-02-question/phq9-mood}" echo $newname; done
+ag -g 02 . | while read file; do echo $file; newname="${file//icon-02-question/phq9-mood}"; echo $newname; done
+ag -g 02 . | while read file; do echo $file; newname="${file//icon-02-question/phq9-mood}"; mv "$file" "$newname"; done
+ls
+ls
+ag -g 02 . | while read file; do echo $file; newname="${file//icon-02-question/phq9-mood}"; mv "$file" "$newname"; done
+counter=0; ag -g 04 . | while read file; do $counter+=1; echo $counter; done
+counter=0; ag -g 04 . | while read file; do $counter = $counter + 1; echo $counter; done
+counter=0; ag -g 04 . | while read file; $counter = $counter + 1; echo $counter; done
+counter=0; ag -g 04 . | while read file; do $counter = $counter + 1 && echo $counter; done
+counter=0; ag -g 04 . | while read file; do $counter+=1; echo $counter; done
+counter=0; ag -g 04 . | while read file; do $counter = $counter + 1; echo $counter; done
+counter=0; ag -g 04 . | while read file; $counter = $counter + 1; echo $counter; done
+counter=0; ag -g 04 . | while read file; do $counter = $counter + 1 && echo $counter; done
+counter=0; ag -g 04 . | while read file; do $counter = $counter + 1 && echo $counter; done
+counter=0; ag -g 04 . | while read file; do $counter = $counter + 1 && echo "$counter"; done
+counter=0; ag -g 04 . | while read file; do $counter = $counter + 1 && echo "$counter"; done
+counter=0; ag -g 04 . | while read file; do $counter = ($counter + 1) && echo "$counter"; done
+counter=0; ag -g 04 . | while read file; do $counter=($counter + 1) && echo "$counter"; done
+counter=0; ag -g 04 . | while read file; do $counter=(($counter + 1)) && echo "$counter"; done
+counter=0; ag -g 04 . | while read file; do $counter=(($counter + 1)) && echo "$counter"; done
+counter=0; ag -g 04 . | while read file; do (($counter+=1)) && echo "$counter"; done
+counter=0
+ag -g 04 . | while read file; do (($counter+=1)) && echo "$counter"; done
+ag -g 04 . | while read file; do ((counter+=1)) && echo "$counter"; done
+echo $counter
+echo counter
+echo $counter
+counter=0; ag -g 04 . | while read file; do ((counter+=1)) && echo "$counter"; done
+counter=0; ag -g 04 . | while read file; do ((counter+=1)) && echo "$counter"; done
+echo $counter
+clear; cd '/Users/aidanmiles/Downloads/drive-download-20170831T165126Z-001/'
+ls
+counter=0; ag -g 04 . | while read file; do ((counter+=1)); newname="phq9-energy-$counter"; echo $newname; done
+counter=0; ag -g 04 . | while read file; do ((counter+=1)); newname="phq9-energy-0$counter"; echo $newname; done
+counter=0; ag -g 04 . | while read file; do ((counter+=1)); newname="phq9-energy-0$counter"; mv "file" "$newname"; done
+counter=0; ag -g 04 . | while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; mv "file" "$newname"; done
+ls
+counter=0; ag -g 04 . | while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; mv "$file" "$newname"; done
+ls
+ls
+counter=0; ag -g 04 . | while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; mv "$file" "$newname"; done
+counter=0; ag -g 06 . | while read file; do ((counter+=1)); newname="phq9-self-0$counter.png"; mv "$file" "$newname"; done
+ls
+ag -g energy
+ag -g energy
+counter=0; ag -g 06 . | while read file; do ((counter+=1)); newname="phq9-self-0$counter.png"; mv "$file" "$newname"; done
+counter=0; while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; mv "$file" "$newname"; done < 
+ls
+ag -g energ
+ls
+ag -g energy
+ag -g energy
+counter=0; ag -g 06 . | while read file; do ((counter+=1)); newname="phq9-self-0$counter.png"; mv "$file" "$newname"; done
+counter=0; while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; mv "$file" "$newname"; done < 
+counter=0; while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; mv "$file" "$newname"; done < 
+counter=0; while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; done < <(cat "phq9-energy-01.png phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png")
+counter=0; while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; done < <(cat "phq9-energy-01.png phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png")
+counter=0; while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; done < echo "phq9-energy-01.png phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png"
+counter=0; while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; done < echo "phq9-energy-01.png phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png"
+counter=0; while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; done < ($(echo "phq9-energy-01.png phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png"))
+counter=0; while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; done < ($(echo "phq9-energy-01.png phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png"))
+counter=0; ($(echo "phq9-energy-01.png phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png")) | while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; 
+counter=0; ($(echo "phq9-energy-01.png phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png")) | while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; 
+counter=0; ($(echo "phq9-energy-01.png phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png")) | while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; done
+counter=0; $(echo "phq9-energy-01.png phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png") | while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; done
+counter=0; ($(echo "phq9-energy-01.png phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png")) | while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; 
+counter=0; ($(echo "phq9-energy-01.png phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png")) | while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; done
+counter=0; $(echo "phq9-energy-01.png phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png") | while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; done
+counter=0; $(echo "phq9-energy-01.png phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png") | while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; done
+counter=0; echo "phq9-energy-01.png phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png" | while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; done
+counter=0; echo "phq9-energy-01.png phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png" | while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; done
+counter=0; echo "phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png phq9-energy-01.png" \ 
+| while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; done
+
+counter=0; echo "phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png phq9-energy-01.png" | while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$file" echo "$newname"; done
+counter=0; echo "phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png phq9-energy-01.png" | while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$newname"; done
+counter=0; echo "phq9-energy-02.png phq9-energy-03.png phq9-energy-04.png phq9-energy-01.png" | while read file; do ((counter+=1)); newname="phq9-energy-0$counter.png"; echo "$newname"; done
+
+hag mv
+ls
+hag mv
+
+k
+node bin/reset-journal-questions 
+pfDev
+vim etc/database.json 
+k
+gs
+k
+gs
+ga assets/
+gcm "Updates some assets for Phil's testing"
+gp
+gs
+gd bin/
+ga bin/
+gcm "Updates background colors in journal script"
+gp
+pfDev
+vim bin/reset-journal-questions 
+fg
+k
+pfDev
+vim
+k
+node bin/reset-journal-questions 
+./node_modules/.bin/inspect bin/reset-journal-questions
+pfProd
+ag locked .
+ag locked lib/
+ag locked controllers/
+vim lib/models/patient.js 
+vim controllers/lockedOutController.js 
+pfProd
+ssh-add ~/.ssh/id_bb_rsa
+pfProd
+vim bin/reset-journal-questions 
+k
+./run_api.sh 
+mysqld
+sqldn
+pfProd
+ssh-add ~/.ssh/id_bb_rsa
+pfProd
+ssh-add ~/.ssh/id_bb_rsa
+pfPRod
+j api
+gs
+git stash
+gpu
+ssh-add ~/.ssh/id_bb_rsa
+gpu
+export NODE_ENV='production'
+vim etc/database.json 
+./run_api.sh 
+pfProd
+pfProd
+vim etc/database.json 
+pfDev
+./run_api.sh 
+git stash pop
+./node_modules/.bin/inspect bin/reset-journal-questions
+open assets/journal/
+./node_modules/.bin/inspect bin/reset-journal-questions
+gs
+gd
+gs
+gd lib/
+ga lib/models/
+gcm "Adds a comment to 
+journal-related models"
+gs
+ga bin/
+gcm "Updates the journal questions script to be an update instead of destroy/recreate"
+gp
+vim scripts/get_db_dump.sh 
+./scripts/get_db_dump.sh 
+./scripts/reset_db.sh 9-02
+./node_modules/.bin/inspect bin/reset-journal-questions
+gs
+ag -g key db/migrations/
+migrate
+pfDev
+mundo
+migrate
+./node_modules/.bin/inspect bin/reset-journal-questions
+gs
+gd bin/
+gs
+vim bin/reset-journal-questions 
+gs
+gd bin/
+gs
+ga bin/
+gcm "Fixes a background color in the journal script"
+gs
+gd db/
+ga db/
+gcm "Adds a catch block to a migration that needs to be run again"
+gp
+gs
+pm2 deploy ecosystem.config.js dev
+node bin/reset-journal-questions 
+gs
+git mv bin/reset-journal-questions bin/update-journal-questions
+gs
+gcm "Updates the journal script name to reflect what it actually does"
+gp
+j com.iex
+j app
+up
+ls
+cd
+j ios
+ls
+gs
+gf
+git stash
+gco feature/pgt_journal_dashboard
+git stash pop
+hag iptab
+hag net
+netstat -at
+gd
+vim iExhale/iExhale/iExhale.swift 
+git stash
+gpu
 gbr
-gco 67-71
+gf
+pfDev
+glg
+gs
+ls
+gs
+glg
+gs
+ls bin/
+gco fb27e466 bin/reset-journal-questions
+gs
+vin bin/reset-journal-questions 
+gs
+vim etc/database.json 
+ag dev ../dumps/
+ag -g dev ../dumps/
+./scripts/reset_db.sh 8-26
+ls
+ls db/migrations/
+gs
+migrate
+ag -g key db/migrations/
+migrate
+./scripts/reset_db.sh 8-26
+open db/migrations/
+./scripts/reset_db.sh 8-26
+migrate
+./scripts/reset_db.sh 8-26
+migrate
+node bin/reset-journal-questions 
+migrate
+node bin/update-journal-questions
+./scripts/reset_db.sh 8-26
+migrate
+./scripts/reset_db.sh 8-26
+migrate
+node bin/reset-journal-questions 
+migrate
+node bin/reset-journal-questions 
+migrate
+./scripts/reset_db.sh 8-26
+migrate
+node bin/reset-journal-questions 
+migrate
+node bin/update-journal-questions
+gs
+gd
+ga bin/
+gs
+git reset
+gs
+mv bin/reset-journal-questions bin/seed-journal-questions
+gs
+ga bin/
+gcm "Re-adds the script used to create journal questions, in prep for production push"
+gp
+gs
+node bin/update-journal-questions 
+gs
+pfDev
+./scripts/get_db_dump.sh prod
+mysqld
+sqldn
+export NODE_ENV='production'
+pm2 deploy ecosystem.config.js dev
+pm2 deploy ecosystem.config.js prod
+node bin/seed-journal-questions 
+migrate
+node bin/update-journal-questions 
+migrate
+node bin/update-journal-questions 
+vim bin/reset-journal-questions
+gs
+pfProd
+pfDev
+gbr
+gco develop
+git stash
+gco develop
+gpu
+gbr
+gco feature/pcs_journal_intro_star_field
+pfProd
+j api
+ls
+node --inspect --debug-brk scripts/memtest.js 
+node scripts/memtest.js 
+k
+k
+vim scripts/memtest.js
+k
+pyenv
+pyenv shell
+pyenv local
+pyenv global
+pyenv help
+pyenv commands
+pyenv help version
+pyenv verson
+pyenv version
+pyenv versions
+pyenv global 2.7
+pyenv global
+pip
+pip --version
+pip install ansible
+pyenv global 3
+pyenv versions
+pyenv commands
+pyenv help install
+pyenv install -l
+pyenv global 3.5.2
+pip install ansible
+mkdir /etc/ansible
+sudo mkdir /etc/ansible
+sudo vim /etc/ansible/
+ansible all -m ping
+ansible all -a 'echo hello'
+pip install boto
+export AWS_ACCESS_KEY_ID='AKIAIVRYFTKXCAPWCSRA'
+echo $AWS_ACCESS_KEY_ID 
+export AWS_SECRET_ACCESS_KEY = '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'
+export AWS_SECRET_ACCESS_KEY='nnOe4knfSyeQg3DgFY52bR9hTG+vsjF7uRzGhuIu'
+vim ~/.aws/credentials 
+cp ~/Desktop/ec2.py .
+chmod u+x ec2.py 
+./ec2.py --list
+k
+sudo vim /etc/ansible/hosts 
+cp ~/Desktop/ec2.py .
+chmod u+x ec2.py 
+./ec2.py --list
+
+ansible -i ec2.py -u ubuntu us-east-1d -m ping
+ansible -i ec2.py -u ubuntu us-west-1 -m ping
+vim ec2.py 
+ls
+./ec2.py --profile ansible_test --list
+sudo mv ~/Desktop/ec2.ini /etc/ansible/
+ansible --version
+which ansible-playbook
+vim ~/.ssh/config 
+ansible-playbook test_playbook.yml 
+export AWS_SECRET_ACCESS_KEY='nnOe4knfSyeQg3DgFY52bR9hTG+vsjF7uRzGhuIu'
+export AWS_ACCESS_KEY_ID='AKIAIVRYFTKXCAPWCSRA'
+ansible-playbook test_playbook.yml 
+aws ec2 describe-images
+aws configure
+aws --profile ansibl_test ec2 describe-images
+aws --profile ansible_test ec2 describe-images
+aws --region us-west ec2 describe-images
+aws --region us-west-1 ec2 describe-images
+aws --region us-west-1 --filters owner-alias=amazon ec2 describe-images
+aws --region us-west-1 --filters owner-alias=amazon ec2 describe-images
+aws --region us-west-1 --filters owner-alias=amazon ec2 describe-images
+aws --region us-west-1  ec2 describe-images --filters owner-alias=amazon
+aws --region us-west-1  ec2 describe-images --filters Name=owner-alias,Values=amazon
+aws --region us-west-1  ec2 describe-images --filters Name=imageId,Values=ami-aa5ebdd2
+aws --region us-west-1  ec2 describe-images --filters Name=image-id,Values=ami-aa5ebdd2
+echo $AWS_ACCESS_KEY_ID 
+aws configure
+aws ec2 describe-images --filters Name=image-id,Values=ami-aa5ebdd2
+ansible-playbook test_playbook.yml 
+aws ec2 describe-images --filters Name=image-id,Values=ami-aa5ebdd2
+ansible-playbook test_playbook.yml 
+./ec2.py --list
+sudo vim /etc/ansible/hosts
+k
+k
+vim test_playbook.yml
+gs
+sshdev
+sshDev
+pfDev
+k
+k
+pfDev
+gs
+git stash
+pm2 deploy ecosystem.config.js dev
+pfDev
+sshDev
+pfDev
+./run_api.sh 
+sshDev
+k
+k
+k
+vim ~/scratch 
+vim
+mysqld
+sqldn
+./run_api.sh 
+vim lib/services/user.js 
+gs
+gd lib/
+gs
+ga lib/
+gcm "Adds a new endpoint for the journal dashboard"
+gp
+pm2 deploy ecosystem.config.js dev
+pfDev
+fg
+j api
+pfDev
+ssh-add ~/.ssh/id_bb_rsa
+sqlProd
+pfProd
+k
+./sql migration:create --name add-short-text-to-journal-questions
+./scripts/get_db_dump.sh dev
+./scripts/reset_db.sh 9-05
+pfDev
+./sql migration:create --name seed-journal-question-short-text
+migrate
+vs
+./scripts/reset_db.sh 9-05
+ag catch db/migrations/
+./scripts/reset_db.sh 9-05
+gs
+ga db/ lib/
+gcm "Adds a new property to JournalQuestions and populates it where needed"
+gp
+open assets/journal/
+node bin/update-journal-questions 
+gs
+ga assets/
+gcm "Removes a folder in assets from Git; didn't need to be there"
+gs
+gd bin/
+gs
+ga bin/
+gcm "Adds a background color update to the journal update script"
+gp
+pm2 deploy ecosystem.config.js dev
+node bin/update-journal-questions 
+./run_api.sh 
+gs
+gd lib/
+fg
+gs
+gd lib/
+ga lib/
+gcm "Replaces long text with short text for the icons on the journal entry detail page"
+gp
+pm2 deploy ecosystem.config.js dev
+pfDev
+vim lib/services/user.js 
+gs
+gd lib/
+gs
+ga lib/services/
+gcm "Updates the journal entry list endpoint to include dates without entries but with other data"
+gp
+./sql migration:create --name create-journal-prompts
+vim db/migrations/20170905232710-create-journal-prompts.js
+gs
+gs
+gd lib/services/journalquestion.js 
+gco lib/services/journalquestion.js
+gs
+k
+./sql migration:create --name add-prompt-id-to-user-journal-entries
+sshDev
+pfDev
+node
+pfDev
+migrate
+vim lib/routes/users.js 
+gs
+gd lib/
+gs
+ga db/ lib/
+gcm "Adds the JournalPrompts table, incorporates prompts into UserJournalEntries"
+gp
+pm2 deploy ecosystem.config.js dev
+rm journal_copy 
+open assets/journal/
+clear; cd '/Users/aidanmiles/Downloads/drive-download-20170906T005900Z-001/'
+hag for
+for file in "$(ag -g png .)"; do echo "${file//-min}"; done
+for file in "$(ag -g png .)"; newname="lifestyle${file//-min}; mv "$file" "$newname"; done
+;
+
+clear; cd '/Users/aidanmiles/Downloads/drive-download-20170906T005900Z-001/'
+hag for
+for file in "$(ag -g png .)"; do echo "${file//-min}"; done
+for file in "$(ag -g png .)"; newname="lifestyle${file//-min}; mv "$file" "$newname"; done
+;
+for file in "$(ag -g png .)"; newname="lifestyle${file//-min}; mv "$file" "$newname"; done
+for file in "$(ag -g png .)"; newname="lifestyle${file//-min}"; mv "$file" "$newname"; done
+for file in "$(ag -g png .)"; newname="lifestyle${file//-min}"; mv "$file" "$newname"; done
+for file in "$(ag -g png .)"; do newname="lifestyle-${file//-min}"; mv "$file" "$newname"; done
+for file in "$(ag -g png .)"; do newname="lifestyle-${file//-min}"; mv "$file" "$newname"; done
+for file in "$(ag -g png .)"; do newname="lifestyle-${file//-min}"; mv "$file" "$newname"; done
+for file in "$(ag -g png .)"; do newname="lifestyle-${file//-min}"; echo '->$newname'; done
+for file in "$(ag -g png .)"; do newname="lifestyle-${file//-min}"; echo '->$newname'; done
+for file in "$(ag -g png .)"; do newname="lifestyle-${file//-min}"; echo "->$newname"; done
+for file in "$(ag -g png .)"; do newname="lifestyle-${file//-min}" && echo "->$newname"; done
+for file in "$(ag -g png .)"; do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+hag for
+hag for
+for file in "$(ag -g png .)"; do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+for file in $(ag -g png .); do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+for file in $(ag -g png .) do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+hag while
+for file in $(ag -g png .) do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+hag while
+
+for file in $(ag -g png .); do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+ag -g pngp . | while read file; do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+ag -g png . | while read file; do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+for file in $(ag -g png .); do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+ag -g pngp . | while read file; do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+while read file; do newname="lifestyle-${file//-min}"  echo "->$newname"; done < ag -g png .
+ag -g png . | while read file; do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+ag -g png . | while read file; do newname="lifestyle-${file//-min}"  echo "$newname"; done
+ag -g png . | while read file; do newname="lifestyle-${file//-min}"  echo "-> $newname"; done
+ag -g png . | while read file; do newname="lifestyle-${file//-min}"  echo "-> $file"; done
+ag -g png . | while read file; do newname="lifestyle-${file//-min}";  echo "-> $newname"; done
+for file in $(ag -g png .); do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+for file in $(< ag -g png .); do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+for file in (< ag -g png .); do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+for file in (< ag -g png .); do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+for file in (< ag -g png .); do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+for file in (< $(ag -g png .)); do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+ag -g png . | while read file; do newname="lifestyle-${file//-min}";  echo "-> $newname"; done
+ag -g png . | while read file; do newname="lifestyle-${file//-min}";  echo "-> $newname"; done
+ag -g png . | while read file; do newname="lifestyle-${file//-min}";  echo "-> $newname"; done
+ag -g png . | while read file; do newname="lifestyle-${file//-min}"; mv "$file" "$newname"; done
+hag while
+for file in $(ag -g png .) do newname="lifestyle-${file//-min}"  echo "->$newname"; done
+vim bin/update-journal-questions 
+gs
+node bin/update-journal-questions 
+pfDev
+vim etc/database.json 
+open assets/journal/
+./run_api.sh 
+node bin/update-journal-questions 
+./node_modules/.bin/inspect try.js 
+fg
+gs
+gd bin/
+gs
+ga bin/
+gcm "Adds ordering, copy, and other changes to journal script"
+gs
+gd lib/
+gs
+ga assets/
+gcm "Updates journal assets"
+gs
+gd lib/
+gs
+ga lib/
+gcm "Adds a new endpoint that augments journal question and answer data with flags for whether the user has answered the question or not"
+gp
+pm2 deploy ecosystem.config.js dev
+pfDev
+mysqld
+sqldn
+vim lib/routes/users.js 
+gs
+gd lib/
+vim lib/services/user.js
+gs
+./node_modules/.bin/eslint --fix lib/services/user.js 
+gd
+gs
+ga lib/services/user.js 
+gcm "Fixes two bugs with journaling in the user service"
+gp
+vim bin/update-journal-questions 
+gs
+gd bin/
+gs
+ga bin/
+gcm "Updates colors in the journal update script"
+gp
+pm2 deploy ecosystem.config.js dev
+node bin/update-journal-questions 
+vim bin/update-journal-questions 
+gs
+./run_api.sh 
+j api
+gs
+git stash pop
+gd
+git stash
+./node_modules/.bin/inspect try.js 
+node
+./node_modules/.bin/inspect try.js 
+./run_api.sh 
+./node_modules/.bin/inspect try.js 
+gs
+gd lib/
+./node_modules/.bin/inspect try.js 
+./run_api.sh 
+gs
+gd lib/
+vim lib/services/user.js 
+gs
+gd lib/
+gs
+ga lib/services/user.js 
+gcm "Adds a timezone hack to convert from UTC to PST"
+gp
+pm2 deploy ecosystem.config.js dev
+nis moment-timezone
+./node_modules/.bin/inspect try.js 
+gs
+gd
+./node_modules/.bin/inspect try.js 
+./run_api.sh 
+vs
+gs
+gd lib/
+gs
+ga lib/
+gcm "Fixes timezone hack for journal endpoints"
+gp
+gs
+pm2 deploy ecosystem.config.js dev
+gs
+vim lib/models/userjournalentries.js 
+ag virtual lib/models/
+pfProd
+./node_modules/.bin/inspect try.js 
+ag virtual lib/models/
+fg
+gs
+gd lib/services/
+vs
+gs
+gd lib/models/
+vim lib/models/userjournalanswers.js 
+gs
+ga lib/
+gcm "Fixes a route issue, adds a virtual property to two journal models to translate createdAt into PST"
+gp
+pm2 deploy ecosystem.config.js dev
+./run_api.sh 
+gs
+gcob feature/new-background-images
+gpo -u feature/new-background-images
+gbr -m background
+gbr
+git db feature/private-journal
+vs
+k
+k
+k
+pfDev
+./node_modules/.bin/inspect try.js 
+vim try.js 
+k
+pfProd
+gco dev
+gs
+gd
+vim lib/services/user.js 
+gs
+gd
+gs
+ga lib/
+gcm "Adds two small tweaks to journal logic"
+gp
+vim lib/services/user.js 
+k
+pm2 deploy ecosystem.config.js dev
+gco background
+gbr -m bg
+gbr
+k
+k
+gs
+gco assets
+gs
+ls assets/
+ls assets/for-later/
+hag scp
+vim ~/.ssh/config 
+scp devappuser@iex-dev-appuser:/home/devappuser/log.txt .
+vim log.txt 
+pfDev
+man test
+sqlProd < queries/counts.sql 
+pfDev
+sqlProd < queries/counts.sql 
+sqlProd < queries/counts.sql 
+k
+sqlProd < queries/counts.sql 
+gs
+vim 2
+rm 2
+gs
+ls
+gs
+pm2 deploy ecosystem.config.js prod
+vim lib/services/image.js 
+sqlProd < queries/counts.sql 
+gs
+export NODE_ENV='production'
+node bin/update-journal-questions 
+vim bin/update-journal-questions 
+export NODE_ENV='development'
+node bin/update-journal-questions 
+./node_modules/.bin/inspect bin/update-journal-questions 
+export NODE_ENV='production'
+node bin/update-journal-questions 
+k
+echo $NODE_ENV 
+./run_api.sh 
+./node_modules/.bin/inspect try.js 
+export NODE_ENV='production'
+./run_api.sh 
+vim run_api.sh 
+vim nodemon.json 
+echo $NODE_ENV 
+gs
+gd lib/models/
+gs
+gco dev
+gs
+gco dev
+gs
+gd lib/services/
+gs
+./run_api.sh 
+vim scripts/get_db_dump.sh 
+gs
+gd lib/
+gs
+ga lib/
+gs
+gcm "Fixes time formatting with journal"
+glg
+gco dev
+gs
+git cherry-pick 0d786dc0
+gs
+vim lib/services/user.js 
+ga lib/services/user.js 
+gs
+glg
+gs
+gcm "Fixes time formatting with journal"
+gp
+pm2 deploy ecosystem.config.js dev
+git stash
+gs
+pm2 deploy ecosystem.config.js dev
+gco master
+gpu
+git merge develop
+git merge dev
+vim lib/services/user.js 
+gs
+ga lib/
+gcm "Fixes time formatting with journal"
+gp
+glg
+git reset --soft HEAD~1
+gs
+gcm "Fixes time formatting with journal"
+gpo -f
+pm2 deploy ecosystem.config.js prod
+pm2 deploy ecosystem.config.js dev
+pfProd
+gs
+glg
+git reset --soft HEAD~1
+gpu
+gs
+vim lib/services/user.js 
+ga lib/services/user.js 
+gcm "Hotfix on user service"
+gp
+pm2 deploy ecosystem.config.js prod
+pfProd
+gco dev
+gpu
+k
+gs
+echo $NODE_ENV 
+export NODE_ENV='development'
+gs
+ga lib/
+gcm "Bugfix with double date math for journals"
+gp
+pm2 deploy ecosystem.config.js dev
+vim lib/services/user.js 
+gs
+gd lib/
+ga lib/
+gcm "Fixes another date formatting issue"
+pm2 deploy ecosystem.config.js dev
+gp
+gs
+k
+pm2 deploy ecosystem.config.js dev
+gs
+gco master
+gs
+vim lib/services/user.js 
+git cherry-pick fd6ead07
+gp
+pm2 deploy ecosystem.config.js prod
+glg
+k
+gco dev
+k
+./run_api.sh 
+k
+k
+pfDev
+k
+vim lib/services/user.js 
+gs
+pm2 deploy ecosystem.config.js dev
+./run_api.sh 
+vim lib/services/user.js 
+gs
+ga lib/
+git reset
+gs
+gd
+gs
+ga lib/
+gcm "Adds createdATPST to the output of journal/entries list view"
+gp
+pm2 deploy ecosystem.config.js dev
+./run_api.sh 
+echo $NODE_ENV 
+gs
+./run_api.sh 
+gs
+k
+k
+gs
+ga lib/
+gcm "Adds another journal date formatting fix"
+gp
+pm2 deploy ecosystem.config.js dev
+./run_api.sh 
+vim lib/services/user.js 
+k
+gs
+vim lib/services/user.js 
+gs
+gd lib/services/user.js 
+vim lib/services/user.js 
+gs
+gd lib/
+gs
+ga lib/
+gcm "Hotfix for journals"
+gs
+gp
+pm2 deploy ecosystem.config.js dev
+gs
+kgs
 gs
 gd 
 gs
-gaa .
-gcm "KITU-71: adds more tests for admins"
-gs
-gco development
-gpu
-gco 67--71
-gco 67-71
-git rebase development
-gs
-vim server/api/models/admin.js 
-./gulp dev:server
-eval "$(docker-machine env default)"
-docker-compose up
-docker-compose down
-gs
-gco 70
-gco 67-71
-docker-compose build
-gs
-gd
-ag debugger .
-gs
-vs
-./gulp dev:server
-docker-compose up
-docker-compose down
-./gulp install
-docker-compose build
-gs
-vs
-gs
-gd server/api/
-gs
-ga server/api/
-gcm "KITU-71: fleshes out admin/ and admin/:id routes"
-gs
-gd test/testHelpers.js 
-ga test/testHelpers.js 
-gcm "KITU-71: adds err to a test helper callback"
-gs
 gd
 gs
-ga test/
-gcm "KITU-71: adds more tests for admin routes"
+ga lib/
+gcm "Removes cruft, fixes date formatting'
+"
+gp
+pm2 deploy ecosystem.config.js dev
+gs
+gd
+ga lib/
+gcm "Hotfix using timezones to dev"
+gp
+pm2 deploy ecosystem.config.js dev
+gs
+ga lib/
+gcm "Hotfix using timezones to dev"
+gp
+pm2 deploy ecosystem.config.js dev
+vim lib/services/user.js 
+gs
+node
+pfProd
+j api
+pfProd
+ssh-add ~/.ssh/id_bb_rsa
+pfProd
+pfProd
+j api
+gs
+vim controllers/therapistController.js 
+gs
+gd controllers/
+vim controllers/therapistController.js 
+gs
+ga controllers/therapistController.js 
+gcm "Fixes issue where romance as a care category wasn't fully supported by v1" 
+gp
+pm2 deploy ecosystem.config.js dev
+pfDev
+./sql migration:create --name create-journal-push-notifications
+gs
+gco master
+goc dev lib/services/user.js 
+gco dev lib/services/user.js
+gs
+git reset
+gd
 gs
 gd
 gs
-gco 70
-./gulp test-server
-gpo 70:KITU-70
-git rebase development
+ga lib/services/
+gcm "Pulls a date-math fix from prod"
+gp
+gco dev
+glg
 gs
-gco 67-71
-gpu
-git log
+gco master
+git cherry-pick 7813d034
+gp
 gs
-gco e35945e0ef3ae1d6021b394b8eafeceeb2d9f3a4
-git log
-gco 67-71
+gco dev
 gs
-git log
+pm2 deploy ecosystem.config.js prod
+vim lib/services/user.js 
 gs
-gpo test
-gpo 67-71:test
-git log
-gco HEAD~4
-gco HEAD~3
-./gulp test-server
-gco 3ca8d6208c4a673d122d87b37706c6e235672c28
+ag -g notifi db/migrations/
+ag dev ../dumps/
+ag -g dev ../dumps/
+./scripts/reset_db.sh 9-05
+mysqld
+sqldn
+ag createByKey lib/
 gs
 gbr
-gco 67-71
-git log
+gcob feature/journal-notifications
+gpo -u feature/journal-notifications
+k
+ag createByKey lib/
+ag -l createByKey lib/
+k
+ag  createByKey lib/
 gs
-gco HEAD~3
-gco 67-71
-gco HEAD~2
-./gulp test-server
-gco 67-71
-git stash list
+gd lib/cron/
+gs
+ga lib/cron/
+gs
+gcm "Adds files to hold the cron jobs for journal notifications"
+gs
+ga db/migrations/
+gcm "Adds a migration to seed the new journal migrations"
+gs
+gd lib/
+vp $(ag -l createByKey lib/)
+gs
+gs
+ga lib/
+gs
+ls
+gs
+gcm "Refactors UserNotification.createByKey to take an options object as its 2nd argument, fixes all calls to this method"
+gp
+gs
+vim lib/services/usernotification.js 
+pfProd
+gd lib/models/
+vim db/migrations/20170907221709-create-journal-push-notifications.js
+gs
+gd
+gs
+ga db/ lib/
+gcm "Adds new methods to the UserNotification service to handle journal reminders, implements new cron jobs for them"
+gp
+gd lib/services/
+node
+k
+k
+sqldn
+j api
+pfDev
+k
+gs
+gco dev
+./sql migration:create --name seed-journal-prompts
+vim db/migrations/20170911052910-seed-journal-prompts.js
+gs
+./scripts/reset_db.sh 9-05
+./scripts/reset_db.sh 9-05
+vim lib/models/journalprompts.js 
+gs
+ga db/ lib/
+gcm "Seeds actual journal prompt text, updates JournalPrompt model with a default scope"
+gp
+ssh-add ~/.ssh/id_bb_rsa
+gpu
+vim etc/database.json 
+gf
+mysqld
+sqldn
+gs
+k
+k
+gp
+pfDev
+j api
+gp
+ssh-add ~/.ssh/id_bb_rsa
+gp
+pm2 deploy ecosystem.config.js dev
+j api
+vim controllers/userController.js 
+k
+export NODE_ENV='production'
+./node_modules/.bin/inspect try.js 
+pfProd
+vim controllers/userController.js 
+k
+k
+gs
+git stash show -p
+gs
+git stash pop
+gs
+gd bin/
+gs
+git stash
+vim bin/update-journal-questions 
+git stash pop
+gs
+vim scripts/get_
+vim scripts/get_logs.sh 
+chmod scripts/get_logs.sh u+x
+chmod u+x scripts/get_logs.sh
+./scripts/get_logs.sh
+pfDev
+pfProd
+pfProd
+k
+vim bin/update-journal-questions 
+k
+pfProd
+k
+k
+gs
+pfDev
+k
+ag location controllers/
+ls controllers/
+k
+ag location models/
+ag location controllers/
+export NODE_ENV='production'
+node
+pfProd
+scp appuser@iex-prod:/var/log/node/api/out.log-201707{09,02}.gz
+vim ~/.ssh/config 
+scp appuser@iex-prod-appuser:/var/log/node/api/out.log-201707{09,02}.gz
+scp appuser@iex-prod-appuser:/var/log/node/api/out.log-201707{09,02}.gz
+scp appuser@iex-prod-appuser:/var/log/node/api/out.log-201707{09,02}.gz
+scp appuser@iex-prod-web03-appuser:/var/log/node/api/out.log-201707{09,02}.gz
+scp iex-prod-web03-appuser:/var/log/node/api/out.log-201707{09,02}.gz
+hag scp
+scp iex-prod-web03-appuser:/var/log/node/api/out.log-201707{09,02}.gz .
+ls
+mv out.* logs/
+rm log.txt 
+ls
+cd logs/
+ls
+gunzip *.gz
+ls
+gunzip *.gz
+scp iex-prod-web03-appuser:/var/log/node/api/out.log-20170709.gz .
+ls
+gunzip *.gz
+ls
+ag "id\":7671" out.log-*
+ag "id\":7671" out.log-* | ag url
+ag "id\":7671" out.log-* | ag authorize
+ls
+ag time out.log
+ls
+ag authorize out.log-20170709
+ag "id\":7671" out.log-* | ag authenticateUser
+ag "id\":7671" out.log-* | ag authentic
+ag "id\":7671" out.log-* | ag authenticateUser
+ls
+scp iex-prod-web03-appuser:/var/log/node/api/out.log ./out.log-2
+ls
+ag "id\":7671" out.log-* | ag authenticate out.log-*
+ag "id\":7671" out.log-* | ag authenticate
+ag "id\":112" out.log-* | ag authenticate 
+ag "id\":112" out.log-* | ag authenticateUser
+./run_api.sh 
+ag "id\":112" out.log-* | ag authenticateUser
+ag "id\":112" out.log-* | ag authenticateUser
+ag "id\":112" out.log-2 | ag authenticateUser
+ag "id\":112" out.log-2017* | ag authenticateUser
+cl logs/
+ag "id\":112" out.log-2017* | ag url
+ag "id\":112" out.log-2017* | ag authorizeToken
+ag "id\":112" out.log-2017* | ag social
+ag "id\":112" out.log-2017* | ag authorize
+ag "id\":112" out.log-2017* | ag authenticateUser
+up
+vim controllers/userController.js 
+cl logs/
+ag "id\":112" out.log-2017* | ag authenticateUser
+ag "id\":112" out.log-2 | ag authenticateUser
+ag "id\":112" out.log-2 | ag social
+ag "id\":112" out.log-2 | ag authenticateUser
+ag "id\":112" out.log-2017* | ag authorize
+cd logs/
+ls
+ag "id\":112" out.log-2017* | ag authorize
+ag "id\":112" out.log-2017* | ag authenticateUser
+k
+cd logs/
+ls
+hag jq
+cd logs/
+less out.log
+which jq
+jq
+ag "id\":112" out.log-20170709 | while read line; do jq .; done
+ag "id\":112" out.log-20170709 | while read line; do jq '.'; done
+less out.log-20170709 
+hag jq
+less out.log-20170709 
+ag "id\":112" out.log-20170709 | while read line; do jq .; done
+ag "id\":112" out.log-20170709 | while read line; do jq '.'; done
+ag "id\":112" out.log-20170709 | while read line; do jq '.'; done
+ while read line; do jq '.'; done < <(ag "id\":112" out.log-20170709)
+ while read line; do jq '.'; done < <(ag "id\":112" out.log-20170709)
+
+ while read line; do jq '.'; done < <(ag "id\":112" out.log-20170709)
+ while read line; do jq '.'; done < <(ag "id\":112" out.log-20170709)
+ while read line; do jq '.'; done < <(ag "id\":112" out.log-20170709 | sed -E -e "s/^[0-9]{4}://g")
+ while read line; do jq '.'; done < <(ag "id\":112" out.log-20170709)
+ while read line; do jq '.'; done < <(ag "id\":112" out.log-20170709)
+ while read line; do jq '.'; done < <(ag "id\":112" out.log-20170709 | sed -E -e "s/^[0-9]{4}://g")
+ag "id\":112" out.log-20170709
+ while read line; do jq '.'; done < <(ag "id\":112" out.log-20170709 | sed -E -e "s/^[0-9]{4,6}://g")
+ while read line; do jq '.time'; done < <(ag "id\":112" out.log-20170709 | sed -E -e "s/^[0-9]{4,6}://g")
+hag scp
+scp iex-prod-web03-appuser:/var/log/node/api/out.log-20170{626,618}.gz .
+ls
+ag "id\":112" out.log-2017* | ag authorize
+ag "id\":7671" out.log-2017* | ag authorize
+ag "id\":7671" out.log-2017* | ag authenticateUser
+ag "id\":7671" out.log-2017* | ag authenticate
+ while read line; do jq '.url'; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{4,6}://g")
+ while read line; do jq '.url'; done < <(ag "id\":7671" out.log-2017* | ag authenticate )
+ while read line; do jq '.url'; done < <(ag "id\":7671" out.log-2017* | ag authenticate )
+ while read line; do jq '.url'; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{1,8}://g")
+ while read line; do jq '.url'; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{1,8}://g")
+ while read line; do jq '.url'; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{1,8}://g")
+ while read line; do jq '.url'; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{1,8}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{1,8}://g")
+ while read line; do jq '.url'; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{1,8}://g")
+ while read line; do jq '.url'; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{1,8}://g")
+ while read line; do jq '.url'; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{1,8}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{1,8}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{1,8}://g")
+
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{1,8}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{1,8}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{1,8}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.*[0-9]{1,8}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.*[0-9]{1,8}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.*://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{1,8}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{1,8}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^[0-9]{1,8}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.*[0-9]{1,8}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.*[0-9]{1,8}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.*://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.*[0-9]{1,8}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.*://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.*://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.*:[0-9]{1,6}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.*:[0-9]{1,6}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.log-:[0-9]*://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.*[0-9]{1,8}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.*://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.*://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.*:[0-9]{1,6}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.*:[0-9]{1,6}://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.log-:[0-9]*://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.log-[0-9]*:[0-9]*://g")
+ while read line; do echo "$line"; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.log-[0-9]*:[0-9]*://g")
+ while read line; do jq '.url'; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.log-[0-9]*:[0-9]*://g")
+ while read line; do jq '.time'; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.log-[0-9]*:[0-9]*://g")
+ while read line; do jq '.req.url'; done < <(ag "id\":7671" out.log-2017* | ag authenticate | sed -E -e "s/^out.log-[0-9]*:[0-9]*://g")
+ while read line; do jq '.time'; done < <(ag "id\":112" out.log-2 | sed -E -e "s/^out.log-[0-9]*:[0-9]*://g")
+ while read line; do jq '.time'; done < <(ag "id\":112" out.log-2 | sed -E -e "s/^out.log-[0-9]*:[0-9]*://g")
+ while read line; do jq '.time'; done < <(ag "id\":112" out.log-2 | sed -E -e "s/^[0-9]*://g")
+less out.log
+k
+pfProd
+vim bin/update-journal-questions 
+pfDev
+up
+k
+hag scp
+hag scp | ag log
+scp iex-prod-web03-appuser:/var/log/node/api/err.log-20170{626,618,709,702}.gz .
+ls
+mv err.* logs/
+cd logs/
+ls
+gunzip *.gz
+k
+k
+ls
+rm err.log-20170709.gz
+ while read line; do jq '.url'; done < <(ag "id\":7671" err.* | sed -E -e "s/^[0-9]*://g")
+ while read line; do jq '.url'; done < <(ag "id\":7671" err.log* | sed -E -e "s/^[0-9]*://g")
+
+ while read line; do jq '.url'; done < <(ag "id\":7671" err.* | sed -E -e "s/^[0-9]*://g")
+ ag "id\":7671" err.* 
+echo "$(err.*)"
+echo "err.*"
+err.*
+ls
+ ag "id\":7671" err*
+less err.log-20170
+less err.log-20170702 
+pfProd
+mysqld
+sqldn
+j api
+k
+pfProd
+ssh-add ~/.ssh/id_bb_rsa
+hag scp | ag log
+pfProd
+k
+gs
+open assets/journal/
+clear; cd '/Users/aidanmiles/Downloads/drive-download-20170912T000722Z-001/'
+ls
+hag while
+while read line; do echo "$name"; done < <(ag -g energy .)
+while read line; do echo "$line"; done < <(ag -g energy .)
+while read line; do echo "$line"; done < <(ag -g energy .)
+while read line; do echo "$line"; done < <(ag -g energy .)
+while read file; do $newname="phq-${file}" mv "$file" "$newname"; done < <(ag -g energy .)
+ls
+while read file; do $newname="phq-$file" mv "$file" "$newname"; done < <(ag -g energy .)
+while read file; do newname="phq-$file" mv "$file" "$newname"; done < <(ag -g energy .)
+ls
+while read file; do newname="phq-$file" echo $newname; done < <(ag -g energy .)
+while read file; do newname="phq-$file" mv "$file" "$newname"; done < <(ag -g energy .)
+ls
+while read file; do newname="phq-${ file }" echo $newname; done < <(ag -g energy .)
+while read file; do newname="phq-$file" echo $newname; done < <(ag -g energy .)
+while read file; do newname="phq-" + "$file" echo $newname; done < <(ag -g energy .)
+while read file; do echo $file; done < <(ag -g energy .)
+while read file; do newname="$file" echo $newname; done < <(ag -g energy .)
+while read name; do newname="$name"; echo $newname; done < <(ag -g energy .)
+while read name; do newname="phq-$name"; echo $newname; done < <(ag -g energy .)
+while read name; do newname="phq-$name" mv "$file" "$newname"; done < <(ag -g energy .)
+while read name; do newname="phq-$name" mv "$name" "$newname"; done < <(ag -g energy .)
+ls
+while read name; do newname="phq-$name" echo "$newname"; done < <(ag -g energy .)
+ag -g energy . | while read name; do newname="phq-$name" echo "$newname"; done 
+hag mv
+ag -g energy . | while read name; do newname="phq-$name" ; echo "$newname"; done 
+ls
+up
+ls
+clear; cd '/Users/aidanmiles/Downloads/drive-download-20170912T000722Z-001/'
+ag -g energy . | while read name; do newname="phq-$name"; echo "$newname"; done 
+ag -g energy . | while read name; do newname="phq-$name"; mv "$name" "$newname"; done 
+ag -g energy . | while read name; do newname="phq-$name"; mv "$name" "$newname"; done 
+ag -g energy . | while read name; do newname="phq-$name"; mv "$name" "$newname"; done 
+ag -g feeling . | while read name; do newname="${name/feeling\ bad/phq-self}"; echo "$newname"; done 
+ag -g feeling . | while read name; do newname="${name/feeling\ bad/phq-self}"; mv "$name" "$newname"; done 
+ag -g phq . | while read name; do newname="${name/phq/phq9}"; mv "$name" "$newname"; done
+man bash
+vim bin/update-journal-questions 
+gs
+ga assets/
+ga bin/
+gd
+gs
+gcm "Updates the journal script and adds required new assets"
+gs
+gp
+ga nodemon.json 
+git reset
+gs
+gco nodemon.json 
+gs
+gd test
+gs
+ga test/helpers/
+gcm "Test helper fixes"
+gs
+gp
+pm2 deploy ecosystem.config.js dev
+node bin/update-journal-questions 
+gs
+ga bin/
+git reset
+node bin/update-journal-questions 
+k
+node bin/update-journal-questions 
+./scripts/reset_db.sh 9-05
+node bin/update-journal-questions 
+./node_modules/.bin/inspect bin/update-journal-questions 
+node bin/update-journal-questions
+./node_modules/.bin/inspect bin/update-journal-questions 
+node bin/update-journal-questions
+k
+vim etc/database.json 
+gs
+ga bin/
+gcm "Copy tweaks + bugfixes on the journal script"
+gp
+k
+k
+gbr
+gco feature/journal-notifications
+grb dev
+gpo -f
+gbr -m notifs
+gs
+./scripts/reset_db.sh 9-05
+pfDev
+migrate
+vim db/migrations/20170907221709-create-journal-push-notifications.js
+k
+gs
+git stash
+gco dev
+open assets/journal/
+k
+vim bin/update-journal-questions 
+gs
+node bin/update-journal-questions 
+vim etc/database.json 
+gs
+ga bin/
+gcm "More copy changes for the journal"
+gp
+gs
+gco notifs
+gs
+migrate
+gs
+git stash show -p
+git stash pop
+git stash drop
+migrate
+./scripts/reset_db.sh 9-05
+gs
+ga db/
+gcm "Adds migration to add new journal notifications"
+gp
+vs
+gs
+pfDev
+vim etc/database.json 
+k
+k
+./node_modules/.bin/inspect try.js 
+./node_modules/.bin/inspect try.js 
+vim lib/services/usernotification.js 
+gs
+vim lib/services/usernotification.js 
+gs
+gd
+gs
+ga lib/
+gcm "Fixes bugs with the new journal reminder methods"
+gs
+gp
+gd lib/
+gs
+gco dev
+gpu
+gco notifs
+grb dev
+gpo -f
+gco dev
+gpu
+git db notifs
+pm2 deploy ecosystem.config.js dev
+gs
+vim scripts/send-email-notifications.js 
+node
+chmod u+x ./scripts/hash_password.js 
+./scripts/hash_password.js 
+./scripts/hash_password.js password
+vim scripts/hash_password.js
+gs
+k
+pfProd
+k
+k
+gs
+gco master
+gpu
+git merge --squash develop
+git merge --squash dev
+git merge --squash dev
+vp 
+vp lib/services/journalprompt.js lib/models/journalprompts.js bin/update-journal-questions
+gs
+ga bin/ lib/
+git commit
+glg
+gp
+k
+gs
+gco dev
+k
+pm2 deploy ecosystem.config.js prod
+k
+gco maszter
+gco master
+export NODE_ENV='production'
+vim nodemon.json 
+./run_api.sh 
+vim lib/cron/journalreminders.js 
+k
+gs
+gd lib/
+gs
+ga lib/
+gcm "Comments out journal reminders just for production until the app is ready for them"
+gp
+pm2 deploy ecosystem.config.js prod
+gs
+git stash
+./run_api.sh k
+k
+gs
+git stash pop
+pm2 deploy ecosystem.config.js prod
+echo $NODE_ENV
+k
+echo $NODE_ENV
+vim bin/update-journal-questions 
+node bin/update-journal-questions 
+k
+gs
+gd dev bin/update-journal-questions 
+gco dev bin/update-journal-questions 
+gd
+git reset
+gd
+gs
+ga bin/update-journal-questions 
+gs
+echo $NODE_ENV
+node bin/update-journal-questions 
+gs
+k
+git reset
+vim bin/update-journal-questions 
+k
+gs
+gd bin/
+gs
+ga bin/update-journal-questions 
+gcm "Fixes bugs introducted from a merge conflict"
+pg
+gp
+pfProd
+k
+gco dev
+gs
+k
+ag discount lib/
+vim lib/routes/sessiondiscounts.js 
+k
+pfProd
+gs
+git stash show -p
+git stash pop
+git stash show -p
+git stash drop
+\gs
+k
+gs
+k
+k
+echo $NODE_ENV
+vim
+echo $NODE_ENV
+./scripts/reset_db.sh 9-05
+vim try.js 
+./node_modules/.bin/inspect try.js 
+migrate
+./node_modules/.bin/inspect try.js 
+fg
+pfProd
+pfDev
+k
+./node_modules/.bin/inspect try.js 
+ag -l createByKey
+ag -l createByKey lib/
+vp $(ag -l createByKey lib/)
+k
+ag createByKey controllers/
+vp $(ag -l createByKey controllers/)
+gs
+gd lib/models/helpthread.js 
+k
+pfDev
+gs
+ga controllers/
+ga lib/models/helpthread.js 
+gs
+gd lib/services/usernotification.js 
+gs
+gd lib/helpers/
+gs
+gcm "Updates v1 code with changes to UserNotification.createByKey"
+gp
+pm2 deploy ecosystem.config.js dev
+git stash
+pm2 deploy ecosystem.config.js dev
+k
+gs
+gco master
+gpu
+git merge dev
+vim lib/cron/journalreminders.js 
+gs
+ga lib/
+gs
+glg
+gs
+gcm "Updates v1 code with changes to UserNotification.createByKey"
+gd dev
+glg
+gs
+glg
+gs
+git reset --soft HEAD~34
+gpu
+gs
+git reset
+gco master
+gpu
+gs
+gpu -f
+git stash
+gpu -f
+gs
+git reset --hard
+gs
+git clean
+man git clean
+gs
+git clean -f
+gs
+gpu
+git clean -f
+gpu -f
+gs
+rm -rf assets
+gpu
+gs
+gco master
+gs
+git reset --hard HEAD
+gs
+glg
+git merge dev --squash
+vim lib/cron/journalreminders.js 
+gs
+ga lib/cron/
+git commit
+glg
+gs
+gp
+pm2 deploy ecosystem.config.js prod
+k
+gs
+gco dev
+gs
+ls scripts/
+k
+vim lib/models/usernotification.js 
+gs
+ls scripts/
+ls assets/
+k
+ls
+gs
+git stash pop
+gs
+k
+gs
 git stash show
 git stash show -p
-./gulp dev:server
-docker-compose up
-vs
-gs
-gd server/
-docker-compose down
-gd test/
-gaa .
-gcm "KITU-71: fixes admin specs to check for correct data types, updates admin routes"
-gs
-gpo 67-71:KITU-67-71
-gpo :test
-gs
-gco development
-gpu
-ls
-gs
-gco 67-71
-git rebase development
-gf
-git log
-gs
-git log
-gco development
-git log
-gs
-git log
-git log | ag ESLINT
-git db development
-gbr
-gco 67-71
-git db development
-gf
-gbr
-gco development
-git log
-gbr
-gco 67-71
-git rebase development
-vim .eslintrc.yaml 
-gs
-ga .eslintrc.yaml 
-git rebase --continue
-gs
-gpo -f 67-71:KITU-67-71
-docker-compose build
-gs
-./gulp test-server
-docker-compose up
-docker-compose down
-gs
-gbr
-gco 70
-gf
-git rebase development
-vim .eslintrc.yaml 
-gs
-gaa
-git rebase --continue
-gs
-gpo -f 70:KITU-70
-git rebase development
-gbr
-git log
-gco development
-gpu
-gs
-gco 70
-git rebase development
-vim .eslintrc.yaml 
-ga .eslintrc.yaml 
-git rebase --continue
-gs
-git rebase --continue
-git rebase --skip
-gs
-gpo -f 70:KITU-70
-git log
-open server/api/swagger/
-vim docker-compose.
-vim docker-compose.yml 
-docker-compose build
-./gulp test-server
-ls
-vim server/index.js 
-vim client/src/js/app.js 
-docker-compose up
-eval "$(docker-machine env default)"
-gs
-gd
-gco docker*
-gs
-docker-compose down
-gco development
-pgu
-gpu
-gs
-vim demo_script.txt
-ls
-gs
-j kit
-gs
-gbr
-ag 67 (gbr)
-ag 67 $(gbr)
-gbr | ag 67
-gbr | ag -l 67
-gbr | ag 67
-git db $(gbr | ag 67)
-gbr
-gbr | ag 7
-git db $(gbr | ag 7)
-gs
-gbr
-git db ESLINT
-gs
-gbr
-gs
-gbr
-gcob demo
-gs
-docker-compose build
-eval "$(docker-machine env default)"
-docker-compose build
-vim package.json 
-npm install umzug --save
-gco development
-gcob 150
-vim package.json 
-gs
-ga package.json 
-gcm "KITU-150: adds Umzug to package.json"
-gs
-gpo 150:KITU-150
-gs
-gco development
-gco demo
-gco development
-gcob 82
-gbr
-gs
-j cli__
-ls
-up
-j kit
-gs
-cd client/
-ls
-gs
-gbr
-gpo 150:feature/KITU-150
-gpo 150:feature_KITU-150
-gpo :KITU-150
-gpo :feature_KITU-150
-gpo :feature/KITU-150 150:but/KITU-150
-gpo :feature/KITU-150 150:bug/KITU-150
-gpo :but/KITU-150 150:bug/KITU-150
-man git-push
-gbr
-man git-branch
-gbr -r
-gbr -v
-man git-branch
-vim src/js/app.js 
-gs
-gco development
-gpu
-gs
-gbr
-git db 82
-c
-gs
-gbr
-c
-ls
-bashp
-j dot
-ls
-gs
-gd .bash_profile 
-ga .bash_profile 
-gcm "change c to k for clear, alias gf for git fetch"
-gs
-gd .vimrc 
-ga .vimrc 
-gs
-gm "javascript is 2 spaces"
-gs
-gcm "javascript is 2 spaces"
-gs
-gd .bashrc 
-nvm
-gs
-ga .bashrc 
-gcm "adds NVM to bashrc"
-gs
-gd .inputrc 
-gco .inputrc 
-gs
-gd .vim/bundle/ftdetect/
-ga .vim/bundle/ftdetect/
-gcm "undoes jasmine ftdetect, adds es6 ftdetect and makes it javascript"
-gs
-gpo
-gs
-vim .vim/bundle/ftplugin/es6.vim 
-ga .vim/bundle/ftplugin/es6.vim
-gcm "adds es6 ftplugin file, sets syntax to javscript"
-gs
-gpo
-gd .vim/bundle/
-gs
-gaa .
-git reset 
-gd com.googlecode.iterm2.plist 
-gs
-ga com.googlecode.iterm2.plist 
-gcm "updates iterm stuff
-"
-gco .bash_history 
+git stash pop
 k
 gs
 k
-vim bash_prompt.sh 
-k
+ag userNotifia controllers/
+vim controllers/userController.js 
+gs
+ga controllers/
+gs
+gcm "removes a problematic console.log"
 gp
-j kit
-gbr
-gs
-j win
-k
+pm2 deploy ecosystem.config.js prod
+git stash
 gs
 glg
-k
-gs
-gd client/src/js/app.js 
-k
-gs
-ag -g config .
-glg
-k
-glg | ag config
-k
-gs
-ga client/src/js/app.js client/src/js/config/app_config.js 
-k
-gcm "cleanup: refactors run and config blocks out of app.js into js/config/app_config.js"
-k
-gs
-gd gulptasks/
-k
-gs
-ga gulptasks/
-gcm "cleanup: adds lint-client gulp task, comments, eslint rules"
-k
-gs
-gd server/
-ga server/
-k
-gcm "cleanup: cleans up server code to set NODE_ENV once, and throw errors where it should be set already"
-k
-gs
-gd client/src/js/services/
-k
-gs
-ga client/src/js/services/
-k
-gs
-gcm "WIN-30: adds empty feedback_service, swagger_client wrapper, and swagger_service.js, plus eslint-autofixes to other services"
-k
-gs
-gd client/src/js/config/translate_catalog.js 
-k
-gs
-ga client/src/js/controllers/ client/src/js/config/
-k
-gd client/src/js/routes/
-k
-ga client/src/js/routes/
-k
-gs
-gcm "cleanup: adds eslint auto-fixes"
-k
-gs
-ls client/src/vendor/
-vim gulptasks/webpack.js 
-k
-gs
-ga client/src/
-k
-gs
-gcm "WIN-30: adds client/src/vendor, to provide client vendor files not provided by NPM"
-k
-gs
-gpo -u 30:story/WIN-30
-k
-git stash list
-git stash show stash@{0}
-git stash show -p stash@{0}
-k
-vim paths.js 
-git stash drop stash@{0}
-git stash show -p
-k
-git stash drop stash@{0}
-k
-gs
-k
-j kit
-k
-gs
-k
-gbr
-gco qa
-gp
-gbrv
-k
-gco demo
-gp
-gbrv
-k
-j win
-vim ~/dotfiles/bash_prompt.sh 
-k
-gco dev
-gs
-gst
-k
-gs
-j win
-vim ~/dotfiles/bash_prompt.sh 
-k
-j dot
-ls
-gs
-ga bash_prompt.sh 
-gcm "fixes issue where prompt wouldn't remove origin/ from upstream branch names"
-k
-gs
-gp
-k
-gs
-k
-k
-j kit
-vim ~/dotfiles/bash_prompt.sh 
-k
-gcob 488
-docker-machine restart default
-k
-gs
-dcup
-docker-machine restart default
-eval "$(docker-machine env default)"
-vim server/cronJobs.js 
-k
-ls
-rm git client/src/js/controllers/graphDemoCtrl.js 
-git rm client/src/js/controllers/graphDemoCtrl.js 
-k
-gs
-gcm "cleanup: removes unused demo controller file"
-k
-gs
-vim client/src/js/controllers/siteDetailsController.js 
-k
-vim ~/.vim/bundle/vim-javascript/ftplugin/javascript.vim 
-vim ~/.vim/bundle/vim-javascript/syntax/javascript.vim 
-vs
-vim ~/.vim/bundle/colors/ir_black.vim 
-./gulp
-dcup
-j kit
-dcup
-eval "$(docker-machine env default)"
-vs
-./gulp
-dcup
-j kit
-eval "$(docker-machine env default)"
-docker-machine restart default
-docker-machine rm default
-docker-machine create --driver virtualbox default
-eval "$(docker-machine env default)"
-k
-eval "$(docker-machine env default)"
-dcup
-env | ag DOCKER
-env | ag DOCKER | awk "$2"
-env | ag DOCKER | awk $2
-unset ${!DOCKER_*}
-env | ag DOCKER
-docker --version
-dc --version
-docker-machine --version
-which docker-machine
-k
-dcup
-dcdn
-vim docker-compose.yml 
-dcup
-dcdn
-vim server/index.js 
-dcup
-dcdn
-dcup
-dcdn
-docker-machine ip default
-dcup
-env | ag DOCK
-./gulp
-dcdn && dcup
-j kit
-dcdn
-j dotf
-ag docker .
-ag -i dock .
-k
-j kit
-vim gulp-tasks/server.js 
-k
-dcup
-dcdn
-nvm list
-nvm use 5
-./gulp
-k
-
-vimrc
-k
-vs
-vim client/src/js/services/authService.js 
-vimrc
-k
-d
-dcup
-dcdn && dcup
-dcdn
-dcdn && dcup
-dcup
-dcdn && dcup
-k
-gs
-cd client/src/js/controllers/
-vp siteDetailsController.js stationDetailsController.js gatewayDetailsController.js 
-k
-gs
-upup
-up
-k
-gs
-gd client/
-k
-gs
-ga client/
-gcm "KITU-488: fixes graph pages to successfully recover from errors when getting station readings"
-k
-gs
-gd server/
-k
-gco server/api/mocks/mockDeviceApi.js 
-k
-gs
-gd server/
-k
-gs
-gs | ag server
-vim server/api/controllers/gateway/\{id\}/data.js 
-k
-gs
-ga server/
-k
-gs
-gcm "KITU-488: handles deviceAPI errors more gracefully on the backend"
-k
-gs
-gd gulp-tasks/
-gd docker-compose.
-k
-gs
-ls dock*
-git rm docker-compose.prod.yml 
-gcm "cleanup: removes unused docker-compose.prod.yml"
-k
-gs
-ls
-k
-gs
-gpo -u 488:bug/KITU-488
-k
-j its
-gbr
-gcob add-seamgen
-ls
-vim gulpfile.js
-k
-gulp
-./node_modules/.bin/gulp
-ls
-vim package.json 
-npm install
-k
-npm install -g gulp
-k
-gs
-ls
-vim index.html 
-k
-gs
-open index.html 
-vim index.html 
-k
-gs
-ga index.html 
-gcm "adds info about seamgen, and new skills"
-k
-gs
 gco master
-git rebase add-seamgen
+git cherry-pick 3e7ece70
 gp
-k
-gs
-gbr
-git db add-seamgen
-k
-vim ~/Desktop/mark_notes
-k
-d
-j graph
-ls
-gs
-ls
-gs
-vim gulpfile.js 
-man dot
-j win
-vim docker-compose.yml 
-vim winward_entities.gv 
-k
-./gulp 
-j it
-dcup
-which docker-compose
-docker-compose --version
-k
-docker-machine
-dcdn
-docker ps
-j kit
-vim client/src/js/controllers/siteCreateController.js 
-j kit
-dcup
-k
-gs
-k
-gs
-gd gulp*
-k
-vim server/cronJobs.js 
-k
-gs
-gbr
-gco dev
-j win
-ls
-gs
-vim docker-compose.yml 
-k
-k
-gs
-eb list
-gpu
-k
-gs
-ls
-gcob 491
-vp docker-c*
-vim docker-compose.
-vim docker-compose.yml 
-git rm docker-compose.override.yml 
-gco docker-compose.override.yml
-git rm docker-compose.override.yml
-k
-gs
-ga docker-compose.yml 
-k
-gs
-gcm "cleanup: removes docker-compose.override, merges that config into docker-compose.yml"
-k
-gs
-k
-ls
-k
-vim bower.json 
-k
-glg
-k
-ls
-gs
-k
-ag status server/api/models/
-ag status client/src/js/controllers/
-ag status client/src/js/controllers/
-ag -l status client/src/js/controllers/
-vp $(ag -l status client/src/js/controllers/)
-k
-gs
-glg
-k
-gs
-gcob webpack
-k
-gs
-vp server/api/models/gateway.js server/api/models/customer.js server/api/models/site.js 
-k
-gs
-j win
-k
-ls
-vp gulp ../kitu/gulp
-vo gulp ../kitu/gulp
-vo gulp ../winward/gulp
-gs
-k
-gd gulp
-qk
-gs
-k
-gs
-ga gulp
-gcm "webpack: adds new gulp script"
-k
-gs
-ls
-git mv gulpfile.js gulp-tasks/
-gcm 
-k
-gcm "webpack: moves gulpfile into gulp-tasks"
-k
-gs
-ls
-ls gulptasks/
-la
-cp ../winward/gulptasks/eslintrc.yaml gulp-tasks/
-git rm .eslintrc.yaml 
-ga gulp-tasks/eslintrc.yaml 
-k
-gst
-gcm "webpack: updates eslintrc, moves it into gulp-tasks/"
-k
-gs
-ls
-vim client/src/js/app.js 
-ag window .
-k
-vp paths.js ../winward/paths.js 
-vo paths.js ../winward/paths.js
-cp ../winward/gulptasks/webpack.js gulp-tasks/
-k
-bashp
-k
-npm install webpack babel-loader css-loader eslint-loader html-webpack-plugin html-webpack-template
-nisd webpack babel-loader css-loader eslint-loader html-webpack-plugin html-webpack-template ng-cache-loader sass-loader style-loader webpack-dev-server
-nis angular-ui-router bluebird d3
-nis angular
-npm install es6-promise
-npm install angular-ui-switch
-nis angular-ui-switch
-nis angular-bootstrap
-nis bootstrap-loader
-nis angular-ui-router-uib-modal
-nis jquery.inputmask
-nis restangular url-loader resolve-url-loader
-ni
-npm prune
-k
-vim package.json 
-nis angular-messages
-vp package.json ../winward/package.json 
-kjkjkjk
-k
-gs
-gd package.json 
-k
-gs
-ga package.json 
-gcm "webpack: adds webpack and related libraries to package.json"
-k
-gs
-vim gulp-tasks/webpack.js 
-cd test/
-ls
-mkdir server
-git mv api server/
-git mv unit server/
-k
-gs
-gcm "webpack: moves all server tests into test/server, instead of test/api and test/unit"
-k
-gs
-ls cli
-up
-ls client/
-ls client/test/
-ls client/test/unit/
-mc client/test test/
-mv client/test test/
-ls client/
-ls test/
-mv test/test client/
-git mv client/test/ test/
-git mv test/test test/client
-k
-ls test/
-ls test/client/
-k
-gs
-k
-gcm "webpack: moves client/test into test/client"
-k
-gs
-k
-gs
-k
-gd paths.js 
-k
-gs
-k
-ls
-rm -r bower_components/
-git rm bower.json 
-gcm "webpack: removes bower.json!"
-k
-gs
-k
-ls test/client/unit/**/*
-vp paths.js gulp-tasks/webpack.js 
-k
-gs
-k
-ls ../winward/gulptasks/
-ls gulp-tasks/
-vim gulp-tasks/environment-setup.js 
-vp gulp-tasks/environment-setup.js ../winward/gulptasks/install.js 
-git mv gulp-tasks/environment-setup.js gulp-tasks/install.js
-k
-gcm "webpack: renames environment-setup -> install"
-k
-gs
-vim paths.js 
-git mv gulp-tasks gulptasks
-k
-gs
-gd gulptasks/server.js 
-k
-gs
-gcm "renames gulp-tasks -> gulptasks, for easier typing and tab-completion"
-k
-gs
-k
-gs
-vim gulptasks/webpack.js 
-cp ../winward/server/swagger-editor-server.js ./server/
-vim server/swagger-editor-server.js 
-ls server/api/swagger/
-git mv server/api/swagger/swagger.yaml server/api/
-ag swagger.yaml .
-j win
-nisd swagger-ui
-vp server/index.js ../winward/server/index.js 
-k
-gs
-gcm "webpack: moves swagger.yaml up one level"
-k
-gs
-vim node_modules/swagger-ui/dist/index.html 
-k
-k
-cp ../winward/gulptasks/backend-tests.js gulptasks/
-vp server/index.js ../winward/server/index.js 
-vo server/index.js ../winward/server/index.js
-k
-./gulp serve
-vim gulptasks/gulpfile.js 
-./gulp serve
-k
-ls server/config/
-vim server/config/default.yaml 
-git mv server/config/config.json server/
-git rm server/config/*
-k
-gs
-k
-ls server/
-gcm "cleanup: removes unsed server/config/ dir, moves config.json to server/"
-k
-gs
-./gulp serve
-vim package.json 
-nvm list
-nvm use 5
-k
-j dotf
-vim bash_prompt.sh 
-k
-ls
-gs
-nvm use 5
-vim .nvmrc
-up
-cd kitu/
-up
-j win
-vim .nvmrc
-nvm
-nvm ls
-k
-nvm use
-j dotf
-vim bash_prompt.sh 
-j win
-j kit
-j dotf
-j win
-j kit
-j dotf
-echo "$?"
-k
-j win
-j kit
-echo "$(nvm_ls_current)"
-nvm use --silent
-echo "$(nvm_ls_current)"
-test -e .nvmrc
-echo "$?"
-test -e .npmrc
-echo "$?"
-echo "$(nvm_ls_current)"
-j win
-j kit
-echo "$(nvm_ls_current)"
-j win
-j kit
-j win
-j kit
-vim bash_prompt.sh 
-k
-gs
-gd bash_prompt.sh 
-k
-ga bash_prompt.sh 
-gcm "fixes bash prompt to check for package.json before showing Node version string; changes node version string color"
-k
-gp
-k
-j win
-./gulp serve
-npm install node-inspector
-ls node_modules/.bin/node*
-ag "config/config" .
-vp $(ag -l "config/config" .)
-./gulp serve
-./gulp test:backend
-k
-dcup
-dcdn
-npm ls graceful-fs
-dc build
-vim package.json 
-k
-k
-npm install && npm prune
-npm dedupe
-k
-open .
-k
-vim docker-compose.yml 
-dcup
-dcdn
-./gulp test:backend
-j win
-gs
-gco dev
-gpu
-./gulp dev:client
-./gulp runWebpack
-./gulp build
-vim gulptasks/webpack.js 
-./gulp wepack-dev-server
-vim gulptasks/webpack.js 
-ag 8080 .
-./gulp webpack-dev-server
-dcup
-dcdn
-dcup
-k
-docker volume ls -qf dangling=true
-docker volume rm $(docker volume ls -qf dangling=true)
-k
-docker ps
-docker ps -a
-open ~
-open 
-open ~/.docker/
-docker-machine list
-docker-machine --help
-docker-machine ls
-docker-machine rm default
-k
-open ~/.docker/
-k
-vim gulptasks/webpack.js 
-vim server/config.json 
-vim db/seeds/development.js 
-vim gulptasks/server.js 
-k
-glg
-k
-gs
-k
-ls
-k
-ls
-k
-ls gulptasks/
-ls ../winward/gulptasks/
-./gulp build
-node
-./gulp build
-vim package.json 
-k
-gs
-k
-vim gulptasks/webpack.js 
-k
-./gulp build
-ag "url\(" client/src/scss/
-ls node_modules/jquery*
-k
-./gulp build
-vim client/dist/index.html 
-git rm client/src/index.html 
-gcm "webpack: removes client/src/index.html"
-j win
-gbr
-vim gulptasks/webpack.js 
-k
-gs
-k
-k
-up
-source ~/.bash_profile
-k
-ls
-k
-vim server/api/models/admin
-vim server/api/models/admin.js
-k
-vim server/api/models/driverNotification.js 
-vim server/cronJobs.js 
-k
-gs
-k
-gd server/cronJobs.js 
-ga server/cronJobs.js 
-gcm "cleanup: fixes typo in cronJobs.js"
-k
-gs
-ls gulptasks/
-k
-ls
-k
-ls
-k
-ls gulptasks/
-ls ../winward/gulptasks/
-vim gulptasks/task-helpers.js 
-k
-ls
-ls gulptasks/
-k
-git rm gulptasks/task-helpers.js 
-gcm "webpack: removes gulptasks/task-helpers.js. all this is now taken care of by Webpack"
-k
-ls
-k
-vim gulptasks/webpack.js `
-ls
-vim gulptasks/webpack.js 
-vim server/config.json 
-k
-dcup
-dcdn
-vim server/index.js 
-k
-vim docker-compose.yml 
-dcup
-dcdn
-dcup
-dcdn && dcup
-dcup
-nisd connect
-dcdn && dcup
-dcdn
-vim package.json 
-nisd swagger-editor
-vim package.json 
-npm prune
-nisd bootstrap-sass
-nisd file-loader
-k
-vim server/index.js 
-./gulp build
-ag task-helpers .
-vp $(ag -l task-helpers .)
-k
-./gulp build
-vim package.json 
-npm uninstall -g gulp
-nis jquery
-bashp
-k
-vim ~/dotfiles/bash_prompt.sh 
-k
-k
-ag bootstrap client/src/scss/
-cd node_modules/bootstrap-sass/assets/stylesheets/bootstrap
-ls
-ls mixins/
-up
-ls
-vim _bootstrap.scss 
-j kit
-./gulp build
-ag bootstrap client/src/scss/
-ivm client/src/scss/__vendor.scss 
-vim client/src/scss/__vendor.scss
-git rm client/src/scss/__vendor.scss 
-cd node_modules/angular-ui-switch/
-ls
-vim client/src/js/app.js 
-k
-gs
-gcm "webpack: removes client/src/scss/__vendor.scss, webpack now takes care of this"
-k
-gs
-k
-k
-./gulp build
-upup
-./gulp build
-vim client/src/scss/main.scss 
-k
-dcup
-./gulp build
-dcdn
-ag "./images/" client/src/
-ag "\./images/" client/src/
-ag "\./images/" client/src/scss/
-ag "/images/" client/src/scss/
-ag /images/ client/src/scss/
-ag images client/src/scss/
-ag images client/src/scss/
-ag images client/src/scss/
-ag "images/" client/src/scss/
-k
-ag "images/" client/src/scss/
-man sed
-k
-ag "images/" client/src/scss/
-sed -i 's/images\/\.\.\/\.\.\/assets\/images\//g' client/src/scss/_base.scss 
-sed -i 's/images\/\.\.\/\.\.\/assets\/images\//g' client/src/scss/_base.scss 
-sed -i 's/images\/\.\.\/\.\.\/assets\/images\//g' client/src/scss/_base.scss 
-sed -i 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/_base.scss 
-sed -i 's/images\//\.\.\/\.\.\/assets\/images\//g' ./client/src/scss/_base.scss 
-sed -i -e 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/_base.scss 
-ag "images/" client/src/scss/
-ag "images/" client/src/scss/
-sed -i -e 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/_base.scss 
-sed -i -e 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/*.scss
-k
-ag "images/" client/src/scss/
-k
-gd client/src/scss/
-k
-git stash client/src/scss/main.scss
-k
-k
-gco client/src/scss/
-k
-ag "images/" client/src/scss/
-rm client/src/scss/*.scss-e
-k
-ag "images/" client/src/scss/
-ag "images/" client/src/scss/
-sed -i -e 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/*.scss
-sed -i -e 's/images/\.\.\/\.\.\/assets\/images/g' client/src/scss/*.scss
-ag "images/" client/src/scss/
-gco client/src/scss/
-rm client/src/scss/*.scss-e
-k
-ag "images/" client/src/scss/
-sed -i 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/*.scss
-sed -i 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/*.scss
-sed -i 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/*.scss
-sed 's/images\//\.\.\/\.\.\/assets\/images\//g' -i client/src/scss/*.scss
-k
-ag "images/" client/src/scss/
-k
-sed 's/images\//\.\.\/\.\.\/assets\/images\//g' -i client/src/scss/*.scss
-sed -i '' -e 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/*.scss
-ag "images/" client/src/scss/
-k
-vim client/src/scss/main.scss
-gd client/src/scss/
-k
-./gulp build
-k
-sed -i '' -e 's/images\//\.\.\/\.\.\/assets\/images\//g' client/src/scss/*.scss
-sed -i '' -e 's/fonts\//\.\.\/\.\.\/assets\/fonts\//g' client/src/scss/*.scss
-ag "fonts/" client/src/scss/
-./gulp build
-cd node_modules/jquery.inputmask/
-ls
-cd dist/
-ls
-ls inputmask/
-./gulp build
-k
-dcdn
-ls node_modules/jquery.inputmask/dist/inputmask/inputmask.dependencyLib.jquery.js 
-open client/dist/
-k
-./gulp build
-nsd imports-loader
-nisd imports-loader
-./gulp build
-./gulp
-j win
-./gulp
-nis angular-ui-bootstrap
-vim client/dist/index.html 
-k
-ni && npm prune
-j win
-vim client/src/js/routes/auth.routes.js 
-ls client/src/templates/
-vim client/dist/kitu-web.bundle.js
-j win
-gbr
-gco 30
-gd gulptasks/webpack.js 
-git stash
-gco 30
-k
-gs
-vim gulptasks/webpack.js 
-k
-ag images client/te
-ag images client/src/templates/
-vp $(ag -l images client/src/templates/)
-k
-vp $(ag -l images client/src/templates/)
-vim client/dist/kitu-web.bundle.js
-ag templateCache client/dist/
-k
-ls client/dist/
-rm client/dist/vendor.js client/dist/kitu.js client/dist/kitu.css 
-ag templateCache client/dist/*.js
-ag templateCache.put client/dist/*.js
-k
-j win
-vim client/src/js/app.js 
-vim client/src/js/config/routes.auth.js 
-./gulp
-./gulp build
-ls client/dist/
-rm client/dist/*.ttf client/dist/*.wof* client/dist/*.svg
-k
-ls client/dist/
-rm client/dist/*.eot
-k
-ls client/dist/
-ls client/dist/fonts/
-ls client/dist/images/
-ls client/assets/images/
-ls client/dist/
-ls client/dist/fonts/
-rm client/dist/fonts/*
-rm client/dist/images/*
-rm client/dist/*.{ttf,eot,svg}
-ls client/dist/
-rm client/dist/*.wof*
-ls client/dist/
-ls -R client/dist/
-k
-./gulp build
-ls client/dist/
-ls -R client/dist/
-k
-vim client/src/js/app.js 
-ag templateCache.put client/dist/*.js
-./gulp
-./gulp build
-k
-ag login.html .
-ls client/src/templates/
-ag templateCache.put client/dist/*.js
-./gulp build
-ag templateCache.put ../winward/client/dist/*.js
-ag templateCache.put ../winward/client/dist/
-ag templateCache.put ../winward/client/dist/winward-web.bundle.js
-ag hello.html ../winward/client/dist/
-ag hello.html ../winward/client/dist/*.js
-ag login.html client/dist/*.js
-k
-ag login.html client/dist/*.js
-./gulp build
-ag login.html client/dist/*.js
-./gulp build
-ag login.html client/dist/*.js
-./gulp build
-k
-ag login.html client/dist/*.js
-ag woff client/src/scss/
-ag ttf client/src/scss/
-vim client/dist/kitu-web.bundle.js
-k
-ls client/dist/
-vim client/dist/kitu-web.bundle.js
-k
-ls
-gs
-j dotf
-vim .gitignore_global 
-ga .gitignore_global
-gcm "adds .nvmrc to gitignore"
-k
-gs
-gd .vimrc 
-gco .vimrc
-k
-s
-gp
-k
-ls
-gs
-./gulp
-./gulp build
-ag 192 .
-ag 192.168 .
-dcup
-nis cors
-vim package.json 
-k
-dcdn && dcup
-vim client/src/scss/main.scss 
-k
-ls client/dist/
-ag "fonts/" client/dist/
-ag "fonts/" client/dist/kitu-web.bundle.js
-k
-ag map client/src/js/
-ag key client/src/js/
-qk
-k
-ag google client/src/js/
-k
-npm install google-maps-api
-vim client/src/js/app.js 
-ag power-icon client/
-k
-ag power-icon client/src/
-vim client/src/js/directives/metric.js 
-./gulp
-./gulp build
-vim client/src/js/directives/kitu-google-map.js 
-k
-ag Work client/src/scss/
-ag "url\(" client/src/scss/
-vim gulptasks/webpack.js 
-./gulp
-k
-gs
-gd client/src/scss/
-k
-ga client/src/scss/
-gcm "webpack: fixes all asset urls for webpack"
-k
-gs
-ag -g google .
-ga $(ag -g google .)
-gcm "webpack: fixes google maps directive for webpack"
-k
-gs
-gd client/src/js/directives/
-k
-ga client/src/js/directives/
-k
-gs
-ga client/src/js/services/
-gd client/src/templates/
-k
-ga client/src/templates/
-gs
-gd client/src/js/config/routes.*
-k
-ga client/src/js/config/routes.*
-gd client/src/js/controllers/
-k
-ga client/src/js/controllers/
-gcm "webpack: commits webpack-related fixes in src/js, plus eslint auto-fixes"
-k
-gd
-k
-gs
-gd client/src/js/app.js 
-k
-ga client/src/js/app.js client/src/js/config/app_config.js 
-gcm "webpack: refactors .config and .run blocks out of app.js and into app_config.js, adds require statements into app.js"
-k
-gs
-ga gulptasks/
-k
-gs
-gcm "webpack: adds webpack tasks for gulp, plus lots of other gulp fixes"
-k
-gs
-gd paths.js 
-k
-ga paths.js 
-gcm "webpack: cleans out paths.js"
-k
-gs
-ga server/swagger-editor-server.js 
-gcm "adds swagger-editor-server, for editing Swagger docs"
-k
-gs
-gd Dockerfile*
-ga Dockerfile-dev 
-gcm "webpack: fixes Dockerfile-dev to use new gulp server task"
-k
-gs
-gd client/src/js/config/
-k
-gs
-ga client/src/js/
-k
-gs
-gcm "adds eslint autofixes to two more client js files"
-k
-gs
-gd db/config.json 
-k
-gs
-gd docker-compose.yml 
-ga docker-compose.yml
-git reset
-k
-gs
-gd server/index.js 
-k
-gs
-j win
-ag NODE_ENV server/
-k
-ag NODE_ENV server/
-vim server/umzug-helper.js 
-k
-gs
-gd server/index.js 
-k
-gs
-ga server/index.js 
-gcm "webpack: cleans up in server/index.js, adds swagger-editor-server and cors"
-k
-gs
-gd server/api/
-k
-gs
-gpo -u webpack:webpack
-gd server/umzug-helper.js 
-k
-ga server/umzug-helper.js
-gcm "cleanup: fixes umzug-helper to throw an error when NODE_ENV isn't set"
-k
-gs
-gd db/config.json 
-ga db/config.json docker-compose.yml 
-gd server/config.json 
-ga server/config.json
-k
-gs
-gd server/api/swagger
-gd server/api/swagger.yaml 
-k
-ga server/api/swagger.yaml
-k
-gs
-gd package.json 
-k
-gs
-gd server/api/services/
-ga server/api/services/
-k
-gs
-gcm "cleanup: fixes config values, port values, and swagger.yaml"
-k
-gs
-gp
-k
-gbr
-k
-gs
-gf && gco dev
-k
-gs
-ga package.json 
-k
-git reset
-git stash
+pm2 deploy ecosystem.config.js dev
+pm2 deploy ecosystem.config.js prod
 k
 gco dev
-gpu
 k
-gbr
-gco 491
-git rebase dev
+vim lib/services/usernotification.js 
 k
 git stash pop
-ga package.json 
-gcm "webpack: adds several packages to package.json"
-k
 gs
-ls test/client/unit/
-ls gulptasks/
-nisd karma-webpack
-ls gulptasks/tests.js 
-vim gulptasks/tests.js
-./gulp test
-ag gulp-tasks .
-vim gulptasks/tests.js 
-./gulp test
-ls -R test/client/
-vim package.json 
-./gulp test
-./gulp test
-./gulp dev:server --roles
-./gulp test:backend --roles
-ag "/server/api/mocks/mockDataGenerator\" .
-ag "/server/api/mocks/mockDataGenerator" .
-vp $(ag -g "/server/api/mocks/mockDataGenerator" .)
-./gulp test:backend --roles
-k
-vp $(ag -l "/server/api/mocks/mockDataGenerator" .)
-ag "../../server" test/
-./gulp test:backend
-k
-vim server/index.js 
-./gulp test
+gd db/
+migrate
+./scripts/reset_db.sh 9-05
+./node_modules/.bin/inspect scripts/send-push-notifications.js
 gs
-gd gulptasks/webpack.js 
-k
-gs
-gco gulptasks/karma.conf.js 
-gd gulptasks/tests.js 
-k
-./gulp test
-gs
-glg
-k
-gs
-dcdn
-./gulp lint-server
-./gulp lint-client
-k
-vim gulptasks/server.js 
-k
-ls client/src/scss/
-k
-vim gulptasks/webpack.js 
-k
-k
-ls gulptasks/
-./gulp test:backend
-./gulp test:backend --grep roles
-./gulp test:backend --grep rolRoles
-./gulp test:client
-vim gulptasks/backend-tests.js 
-./gulp test
-vim gulptasks/watchers.js 
-k
-vim gulptasks/karma.conf.js 
-ls test/client/
-vim gulptasks/karma.conf.js 
-k
-k
-./gulp webpack-dev-server
-gco gulptasks/karma.conf.js 
-./gulp webpack-dev-server
-./gulp
-k
-ag "url\(" client/src/scss/
-ag "url(" client/src/scss/
-ag "url" client/src/scss/
-vim gulptasks/webpack.js 
-k
-vim client/src/js/directives/metric.js 
-vim client/src/scss/_fonts.scss 
-vim gulptasks/cli_opts.js 
-vim .ebignore 
-up
-ls
-https://amiles_@bitbucket.org/SeamgenSD/nginx-reverse-proxy.git
-git clone https://amiles_@bitbucket.org/SeamgenSD/nginx-reverse-proxy.git
-k
-ls
-cd nginx-reverse-proxy/
-ls
-vp Dockerfile docker-cmd env-default.sh nginx.conf.template 
-j kit
-k
-vim ~/.aws/credentials 
-vim ~/.aws/config 
-ls
-k
-rm -rf .elasticbeanstalk/
-eb init --profile eb-kitu
-k
-ls .elasticbeanstalk/
-vim .elasticbeanstalk/config.yml 
+ga db/
+gcm "Updates journal push-notifications with copy changes"
+gp
 git stash
+pm2 deploy ecosystem.config.js dev
+./node_modules/.bin/inspect scripts/send-push-notifications.js
 k
-gbr
-gco demo
-eb use demo
 gs
-eb deploy
-vim .elasticbeanstalk/config.yml 
-vim Dockerrun.aws.json 
-gco 491
-vim .elasticbeanstalk/config.yml 
-eb create test
-./gulp
-./gulp build
-k
 git stash pop
-k
-dcup
-k
-dcdn && dcup
-vim client/src/js/controllers/homeController.js 
-k
-vim server/index.js 
-vim server/api/controllers/auth.js 
-git stash
-gco demo
-./gulp
-vim gulp-tasks/server.js 
-dcdn
-dcup
-dcdn
-dc build
-k
-vim gulp-tasks/server.js 
-vim ~/Desktop/kt_training_notes.txt
-k
-vim Dockerfile
-k
-k
-ag -g http client/src/
-ag -g intercept client/src/
-vim $(ag -g intercept client/src/)
-k
-vp client/src/js/directives/header.js 
-k
-gbr
-gco 491
-k
-git stash pop
-gco server/api/controllers/auth.js 
-git stash pop
-k
-vim client/src/js/app.js 
-ls db/migrations/
-./node_modules/.bin/sequelize migration:create --name DummyMigration
-vim db/migrations/20160401113853-CreateUsers.js
-k
-ls db/seeds/
-vim server/umzug-helper.js 
-vim server/index.js 
-vim db/seeds/development.js 
-k
-vim server/cronJobs.js 
-vim server/index.js 
-git stash
-k
-gco demo
-eb ssh
-eb logs
-./gulp --tasks
-qk
-k
-vim gulp-tasks/server.js 
-k
-k
-gbr
-gco 491
-git stash pop
-rm db/migrations/20160714211304-DummyMigration.js
-k
-vim ~/Desktop/kt_training_notes.txt 
-k
-dcup
-dcdn
-k
-gs
-gd client/src/js/controllers/
-gco client/src/js/controllers/
-k
-gs
-gd gulptasks/
-k
-ls
-gs
-gd package.json 
-gco package.json
-npm prune
-k
-gs
-gd server/umzug-helper.js 
-k
-k
-dcdn
-dcup
-dcdn
-npm ls graceful-fs
-dc build
-k
-vim Dockerfile
-vim Dockerfile-dev 
-dcup
-dcdn
-dcup
-dcdn && dcup
-./gulp serve
-dcdn
-dcup
-dcdn
-dcup
-vim docker-compose.yml 
-k
-dcdn
-dcup
-./gulp inspect
-vim gulptasks/server.js 
-k
-j kit
-dcup
-dcdn
-dc build
-k
-dcdn
-k
-dcup
-dcdn
-dcup
-dcdn
-dcup
-dcdn && dcup
-dcdn
-dcup
-dcdn
-dcup
-dcdn && dcup
-dcdn
-dcup
-dcdn && dcup
-dcdn
-dcup
-k
-j kit
-k
-gs
-j kit
-./gulp test
-dcdn
-glg
-k
-gcob gulp-cleanup
-k
-glg
-k
-dcup
-gs
-gd server/umzug-helper.js 
-ga server/umzug-helper.js 
-gcm "fixes umzugHelper to use correct var for NODE_ENV"
-k
-gs
-gd gulptasks/webpack.js 
-gd gulptasks/
-k
-gs
-vim docker-compose.yml 
-dcup
-docker ps -a
-dcdn
-docker rm $(docker -s -a)
-vim gulptasks/tests.js 
-docker rm $(docker ps -a)
-dcup
-j kit
-k
-vim server/config.json 
-k
-glg
-k
-gs
-gd gulptasks/
-k
-gd gulptasks/backend-tests.js 
-k
-dcup
-vim gulptasks/server.js 
-dcdn
-vim server/index.js 
-fg
-fg
-dcup
-dcdn && dcup
-dcdn
-dcup
-dcdn
-dcup
-dcdn
-dcup
-dcdn
-dcup
-vim docker-compose.yml 
-dcdn
-dcup
-dcdn && dcup
-k
-dcdn && dcup
-dcdn
-dcup
-dcdn && dcup
-dcdn
-dcup
-dcdn
-node
-docker-machine ls
-k
-dcup
-dcdn && dcup
-vimrc
-k
-vim server/index.js 
-dcdn
-dcbuild
-dc build
-dcup
-dcdn
-dcpu
-dcup
-dcdn
-dcup
-dcdn
-dcup
-dcdn
-dcup
-dcdb
-dcdn
-dc build
-dcup
-dcdn
-dcup
-dcdn
 k
 gs
 git stash
-gco dev
-gpu
-gco gulp-cleanup
-git rebase dev
-vim package.json 
-k
-git rebase --continue
-ga package.json 
-git rebase --continue
+vim lib/services/usernotification.js 
 k
 gs
-git stash pop
+git stash list
+git stash pop stash@{0}
+git stash
+git stash pop stash@{1}
+git stash pop stash@{0}
+gs
+git stash show -p
+gs
+k
+./node_modules/.bin/inspect scripts/send-push-notifications.js
+k
+pfDev
 k
 vs
 gs
+ga db/
+gcm "Updates the journal prompts"
+gp
+vim db/migrations/20170911052910-seed-journal-prompts.js
 k
-dcdn
-dc build
-dcup
-dcdn
-dcup
-dcdn
-dcdn && dcup
-dcdn
-ag debugg client/
-ag debugg client/src/
+gs
+pf
+pm2 deploy ecosystem.config.js dev
+git stash
+pm2 deploy ecosystem.config.js dev
+./scripts/reset_db.sh 9-05
+export NODE_ENV=
+./scripts/reset_db.sh 9-05
+pm2 deploy ecosystem.config.js dev
+vim etc/database.json 
+gs
+git stash pop
+gs
+pfDev
+gd lib/
+gs
+gd lib/helpers/
+gs
+gco lib/helpers/
+gs
+echo $NODE_ENV
+vim lib/services/user.js 
+gs
 k
-vim (ag -g home client/src/)
-vim $(ag -g home client/src/)
+ls
+gs
+gd db/
+gs
+vim lib/services/user.js 
+gs
+ga db/ lib/
+gcm "Small fixes for journal-related endpoints"
+gp
+gd lib/
+gs
+git stash pop
+ls
+gs
+gd
+git reset
+gs
+gd lib/
+pfProd
+./run_api.sh
+./node_modules/.bin/inspect try.js 
 node
-./gulp build
-vim package.json 
+pfProd
 k
-ni
 k
-dcup
-dcdn && dcup
-dc build
-dcup
-dcdn
-dc build
-vim Dockerfile-dev 
-dc build
+./node_modules/.bin/inspect try.js 
 k
-dcdn
-dc build
-k
-dcup
-dcdn
-vim package.json 
+vim lib/services/usernotification.js 
+echo $NODE_ENV
+./node_modules/.bin/inspect try.js 
+gs
+fg
+gs
+sgd l8i
+gd lib/
+gs
+ga lib/
+git reset
 k
 gs
-gd package.json 
-gcm "cleanup: removes node-inspector from package.json, it should be installed manually inside Docker"
+ga lib/
+gcm "Changes the function signatures of the methods for journal reminder cron jobs, adds more fleshed out logic for the queries"
+gs
+./node_modules/.bin/inspect try.js 
+echo $NODE_ENV
+./node_modules/.bin/inspect try.js 
+echo $NODE_ENV
+gp
+./node_modules/.bin/inspect try.js 
+vim scratch
+k
+vim lib/models/sticker.js 
+pfDev
+k
+./node_modules/.bin/inspect try.js 
+k
+echo $NODE_ENV
+vs
+gs
+mysqld
+sqldn
+j api
+./node_modules/.bin/inspect try.js 
+k
+k
+./node_modules/.bin/inspect try.js 
+mysqld
+sqldn
+./node_modules/.bin/inspect try.js 
+ag "having:" lib/
+ag "having" lib/
+./node_modules/.bin/inspect try.js 
+pfDev
+ssh-add ~/.ssh/id_bb_rsa
+k
+k
+pfDev
+ag clatter .
 k
 gs
-glg
-kk
+gd db/
+ga db/
+gcm "Updates three badges' explanationTexts with new copy, to match a manual update done to dev and prod"
+gp
+pfProd
 k
-ga package.json 
-gcm "cleanup: removes node-inspector from package.json, it should be installed manually inside Docker"
+k
+pfDef
+ag welcome-back .
+vp $(ag -l welcome-back .)
+rm logs/out.log-2
+vp $(ag -l welcome-back .)
+k
+gs
+gd lib/services/
+gs
+gd etc/
+ga etc/
+gcm "Changes the welcome back animation threshold from 3 days to 1 day"
+gp
+./run_api.sh
+gs
+j iex
+j iexhale/iexhale
+gbr
+gf
+j api
+j iex/iex
+j ios/iexhale
+ls
+gco develop
+gpu
+gs
+git stash pop
+git stash show -p
+vim iExhale/iExhale/Controller/MoodAnalyticsHeaderTableViewCell.swift
+ag -g moodanalyticsheader .
+vim iExhale/Controller/MoodAnalyticsHeaderTableViewCell.swift
+git stash pop
+git stash show -p
+gs
+gco .
+git stash pop
+gs
+gd
+hag net
+netstat -at
+whatsmyip
+bashp
+gs
+whatsmyip
+pfDev
+vim iExhale/iExhale.swift 
+gd
+gs
+j downloads
+ls
+cd iExhale_Dev_Certs./
+ls
+ls Production/
+node
+k
+./run_api.sh 
+export NODE_ENV='production'
+vs
+sqldn
+./node_modules/.bin/inspect try.js 
+./run_api.sh 
+gs
+gd lib/services/user.js 
+vim lib/services/user.js 
+gs
+ga lib/services/user.js 
+gcm "Fixes two more instances of UserNotification.createByKey"
+gp
+git stash
+pm2 deploy ecosystem.config.js dev
+git stash pop
+fg
+pfDev
+pfProd
+whatsmyip 
+vs
+gs
+gd lib/services/user.js 
+ga lib/services/user.js 
+gcm "Fixes Y-axis scaling for the mood graph"
+gp
+gd lib/
+gs
+pfProd
+./run_api.sh 
+k
+gs
+ag invitation lib/
+ag hack lib/
+ag hack .
+gs
+gbr
+gcob feature/mood-graph-y-axis-fix
+gs
+gd iExhale/Controller
+gpo -u feature/mood-graph-y-axis-fix
+vim iExhale/Controller/MoodAnalyticsHeaderTableViewCell.swift
+fg
+gs
+k
+k
+gs
+gd iExhale/Controller/
+ga iExhale/Controller/
+gcm "Updates logic related to scaling the y-axes for the mood graph, to have that controlled by the backend"
+gp
+j ios/iexhale
+k
+gs
+git stash
 k
 gs
 git reset --soft HEAD~1
-ga Dockerfile-dev 
-gd docker-compose.yml 
-ga docker-compose.yml
-k
-gs
-gd gulptasks/server.js 
-k
-vim gulptasks/server.js 
-k
-gs
-gd server/index.js 
-k
-gs
-ga server/index.js 
-k
-gcm "cleanup: install node inspector manually in Docker, start it from server/index.js instead of Gulp
-"
-k
-gs
-ag debugger server/ client/src/
-vp $(ag -l client/src/ server/)
-vp $(ag -l client/src/ server/)
-vp $(ag -l client/src/ server/)
-ag -l src/ server/
-vp $(ag -l debugger client/src/ server/)
-k
-vs
-k
-./gulp test:backend
-k
-./gulp test
-./gulp test
-vim package.json 
-npm prune
-npm install karma
-nisd karma
-./gulp test
-k
-vim gulptasks/tests.js 
-npm update karma-jasmine
-npm update karma-jasmin --save-dev
-npm update karma-jasmine --save-dev
-vim package.json 
-bashp
-nupsd karma-spec-reporter
-nupsd jasmine
-k
-./gulp test
-vim gulptasks/tests.js 
-rm gulptasks/frontend-tests.js 
-./gulp test:frontend
-git mv gulptasks/tests.js gulptasks/frontend-tests.js
-k
-gs
-ga gulptasks/frontend-tests.js 
-k
-gs
-gcm "renames gulptasks/tests -> gulptasks/frontend-tests"
-k
-./gulp test:fe
-nupsd karma-jasmine-html-reporter
-vim gulptasks/frontend-tests.js 
-k
-vim package.json 
-gs
-ga package.json 
 git reset
-gd package.json 
 k
 gs
-ga package.json gulptasks/karma.conf.js gulptasks/frontend-tests.js 
-gcm "updates Karma to v 1.1, fixes karma.conf and gulp task"
-k
-./gulp test:fe
+vim iExhale/Controller/MoodAnalyticsHeaderTableViewCell.swift
 gs
-./gulp test:fe
-git rm test/client/index.js 
-rm test/client/index.js 
-k
-./gulp test:fe
-nupsd karma-chrome-launcher
-nusd karma-chrome-launcher && nisd karma-chrome-launcher
-k
-nusd jasmine && nisd jasmine
-k
-./gulp test
-./gulp build
-./gulp test:fe
-nisd angular-mocks
-./gulp test
-./gulp build
-
-
-k
-vim node_modules/angular-mocks/angular-mocks.js 
-./gulp test:fe
-nisd karma-phantomjs-launcher
-k
-./gulp test:fe
-k
-vim gulptasks/frontend-tests.js 
-k
+ga iExhale
+gcm "Updates logic related to scaling the y-axes for the mood graph, to have that controlled by the backend"
+gpo -f
+j ios
+gco develop
+gbr -m dev
+ag "hack happiness"
+vim iExhale/iExhale/Controller/Patient/Settings/ReferFriendViewController.swift
 gs
-gd client/src/js/controllers/
-k
-gs
-gd apt
-gd paths.js 
-k
-gs
-ga paths.js 
-ga package.json 
-ga gulptasks/karma.conf.js 
-ga gulptasks/frontend-tests.js 
-k
-gs
-gd gulptasks/webpack.js 
-gd gulptasks/gulpfile.js 
-k
-gcm "fixes frontend test setup...sort of"
-k
-gs
-k
-gs
-ga client/src/js/
-k
-gs
-gcm "removes some debuggers that shouldn't have been there"
-k
-gs
-gd gulptasks/backend-tests.js 
-gd gulptasks/server.js 
-ga gulptasks/server.js
-gcm "removes node inspector from gulptasks/server"
-k
-gs
-gd gulptasks/
-k
-ga gulptasks/
-gcm "adds some comments to gulp tasks"
-k
-gs
-gd test/
-k
-gs
-ga server/nodeInspector.js 
-gcm "adds a node inspector module"
-k
-gs
-vim server/nodeInspector.js 
-gpo -u gulp-cleanup:gulp-cleanup
-gd dev gulptasks/webpack.js 
-./gulp
-./gulp build
-k
-./gulp build
-j ngin
-k
-git remote show
-git remote set-url origin git@github.com:itsthejazzkid/docker-nginx-reverse-proxy.git
-gpom
-gs
-gd gulptasks/webpack.js 
-k
-gs
-gd client/
-ga client/src/js/app.js 
-gcm "requires bootstrap-loader from client/src/js/app.js"
-gs
-gd apc
-gd pa
-gd package.json 
-ga package.json 
-gcm "removes duplicate packages from dependencies section of package.json"
-k
-gs
-gd gulptasks/webpack.js 
-k
-gs
-ga gulptasks/webpack.js 
-gcm "re-indents part of webpack config"
+gcob feature/refer-friend-text-change
+gpo -u
+gpo -u feature/refer-friend-text-change
+gd
+ga iExhale/
+gcm "Updates copy for the friend referral feature"
 gp
-vim gulptasks/webpack.js 
+gco dev
+gpu
+pfDev
+node scripts/send-push-notifications.js 
+pfProd
+pfDev
+vim scripts/send-push-notifications.js 
 k
-vim gulptasks/webpack.js 
-dcup
-./gulp
-k
+mysqld
+sqldn
+j api
+pfProd
+ssh-add ~/.ssh/id_bb_rsa
+./scripts/hash_password.js password
+pfProd
+pfProd
 gs
-k
+gd
+gs
 gbr
-git db webpack
+node
+pfProd
+pfDev
+./node_modules/.bin/inspect try.js 
+ag -g sns .
+ag sns lib/
+ag pushTokenId lib/
+ag getToken lib/
+which openssl
+j downlodas
+ls
+cd iExhale_Dev_Certs./
+ls
+cp iExhaleDevPushCertificates.p12 ~/Documents/iexhale/code/api/
+which openssl
+openssl pkcs12 -in myapnsappprivatekey.p12 -out myapnsappprivatekey.pem -nodes -clcerts
+openssl pkcs12 -in iExhaleDevPushCertificates.p12 -out pushcert.pem -nodes -clcerts
+ls
+gs
+mv pushcert.pem pushkey.pem
+vim pushcert.pem
+gs
+vim pushkey.pem 
+mv pushkey.pem push.pem
+vim pushkey.pem
+gs
+vim pushkey.pem 
+mv pushkey.pem push.pem
+vim pushkey.pem
+openssl s_client -connect gateway.sandbox.push.apple.com:2195 -cert myapnsappcert.pem -key myapnsappprivatekey.pem
+openssl s_client -connect gateway.sandbox.push.apple.com:2195 -cert pushcert.pem -key pushkey.pem
+openssl s_client -connect gateway.sandbox.push.apple.com:2195 -cert pushcert.pem -key pushkey.pem
+openssl s_client -connect gateway.sandbox.push.apple.com:2195 -cert pushcert.pem -key push.pem
+
+
+vim push.pem 
+openssl s_client -connect gateway.sandbox.push.apple.com:2195 -cert pushcert.pem -key pushkey.pem
+vp pushkey.pem pushcert.pem 
+openssl s_client -connect gateway.sandbox.push.apple.com:2195 -cert pushcert.pem -key pushkey.pem
+vi lib/services/pushnotificationtoken.js 
+./node_modules/.bin/inspect try.js 
+pfDev
 k
+ni d3
+./node_modules/.bin/inspect try.js 
+./node_modules/.bin/inspect d3test.js 
+open shablam.html -a Google\ Chrome
+vim d3test.js
+k
+ls node_modules/d3/build/d3.js k
+nu d3
+vim shablam.html 
+k
+k
+./node_modules/.bin/inspect try.js 
+j ios/iexhale
+ag token .
+ag pushtoken .
+vim iExhale/AppDelegate.swift 
+j api
+ls ~/Downloads/*.cer
+mv "$(ls ~/Downloads/*.cer)" .
+ls
+cp aps_development.cer ~/Documents/iexhale/code/api/
+j api
+ls
+gs
+openssl x509 -in aps_development.cer -inform DER -out iex-cert.pem
+ls
+ls iex-cert.pem 
+mv ~/Documents/iexhale-dev-key-aidan.p12 ./iexhale-dev-push.p12
+gs
+openssl pkcs12 -in iexhale-dev-push.p12 -out iex-pushkey.pem -nodes -clcerts
+openssl s_client -connect gateway.sandbox.push.apple.com:2195 -cert iex-cert.pem -key iex-pushkey.pem 
+open .
+openssl s_client -connect gateway.sandbox.push.apple.com:2195 -cert iex-cert.pem -key iex-pushkey.pem 
+ls
+ls *.pem
+vim controllers/userController.js 
+pfDev
+pfProd
+./node_modules/.bin/inspect try.js 
+ag meet lib/cron/
+vim lib/cron/patientreminders.js 
+ag patient-start-meet-a-therapist-three-days-after-sign-up lib/
+vim lib/services/patient.js 
+vim lib/cron/patientreminders.js
+gs
+ga lib/cron/patientreminders.js 
+gcm "Deactivates MaT reminders that slipped by somehow"
+gp
+glg
+gs
+vs
+gs
+git stash
+gco master
+git cherry-pick 211c30b0
+gp
+pm2 deploy ecosystem.config.js prod
+ag -g status .
+vim lib/controllers/status.js 
+vim lib/models/userstatus.js 
+vim lib/services/user.js 
+ag pushTokenId .
+ag pushTokenId ./controllers/
+ag pushTokenId ./models/
+ag pushTokenId ./routes.js 
+ag updatePushToken controllers/
+vim controllers/userController.js 
+vim lib/services/usernotification.js 
+vim lib/models/usernotification.js 
+k
+mysqld
+sqldn
+gs
+k
+gco dev
+gs
+k
+vp iex-cert.pem iex-pushkey.pem 
+j ios
+gpu
+gbr
+gf
+gco version/3.8.1
+glg
+j api
+k
+./sql migration:create --name create-generic-journal-reminder
+vim sql
+chmod u+x sql
+./sql migration:create --name create-generic-journal-reminder
+pfProd
+ssh-add ~/.ssh/id_bb_rsa
+./scripts/hash_password.js password
+export NODE_ENV='production'
+./node_modules/.bin/inspect try.js 
+pfProd
+k
+vim controllers/userController.js 
 k
 gs
-docker ps -a
+gd
+gco lib/services/user.js 
+gs
+gd
+gs
 k
+ag -g prompt db/migrations/
+vim db/migrations/20170911052910-seed-journal-prompts.js
+./scripts/reset_db.sh 9-05
+vs
+gs
+vim db/migrations/20170918152621-create-generic-journal-reminder.js
+migrate
+gs
+./scripts/reset_db.sh 9-05
+gs
+gd db/
+gd
+gs
+vim db/migrations/20170911052910-seed-journal-prompts.js
+ga db/migrations/20170911052910-seed-journal-prompts.js
+gcm "Fixes copy for the first journal prompt"
+gs
+gd lib/cron/
+./node_modules/.bin/inspect try.js 
+./scripts/reset_db.sh 9-05
+./node_modules/.bin/inspect try.js 
 k
-$(docker volume ls -qf dangling=true)
-docker volume ls -qf dangling=true
-docker volume rm $(docker volume ls -qf dangling=true)
+pfDev
+vim try.js 
+gs
+ga db/
+gcm "Adds a migration to create a generic journal reminder"
+gs
+gd
+gs
+./node_modules/.bin/eslint --fix lib/services/*
+gs
+ga lib/services/journalprompt.js lib/services/patient.js lib/services/socialpost.js lib/services/user.js lib/services/usernotification.js 
+gs
+ga lib/services/socialcomment.js 
+gs
+gd lib/cron/
+gs
+ga lib/services/
+gcm "Adds ESLint fixes to lib/services"
+gs
+ga lib/cron/
+gcm "Deactivates two journaling cron jobs, activates the generic one"
+gs
+gp
+pm2 deploy ecosystem.config.js dev
+vim scripts/send-action-notifications.js 
+echo $NODE_ENV
+./node_modules/.bin/inspect try.js 
+pfDev
+pfDev
+node scripts/send-action-notifications.js 
+./node_modules/.bin/inspect scripts/send-action-notifications.js 
+j ios
+gs
+gd
+hag \.cer
+hag \\\.cer
+j downlo
+up
+ls
+cd dev_dist_pem.zip 
+open dev_dist_pem.zip 
+./node_modules/.bin/inspect scripts/send-push-notifications.js 
+gs
 k
-open 
+gs
+git stash show -p
+gs
+git stash pop
+gs
+vim lib/services/usernotification.js 
+gs
+ga lib/services/usernotification.js 
+git reset
+gs
+git stash drop
+gs
+gs
+
+vim db/migrations/20170907221709-create-journal-push-notifications.js
+vim lib/services/usernotification.js 
+gs
+gd
+gs
+./scripts/reset_db.sh 9-05
+gs
+ga db/ lib/
+gs
+gcm "Fixes copy for journal push notifications"
+gs
+gp
+pm2 deploy ecosystem.config.js dev
+gs
+k
+pfProd
+./node_modules/.bin/inspect scripts/send-push-notifications.js 
+pm2 deploy ecosystem.config.js dev
+gd
+git stash
+pm2 deploy ecosystem.config.js dev
+./node_modules/.bin/inspect scripts/send-push-notifications.js 
+ag normalized lib/
+vim lib/services/user.js 
+vim etc/database.json 
+gs
+k
+gd
+ga lib/cron/
+lib
+ga lib/
+gs
+gcm "Actually turns off Super Reaction notifications"
+gp
+gs
+pm2 deploy ecosystem.config.js dev
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js 
+export NODE_ENV='production'
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js 
+node scripts/pull-mood-map-data.js > data.txt
+pfProd
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js 
+rm array.txt 
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js 
+open .
+node
+ls
+node
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js 
+open iex-map.json 
+rm iex-map.json 
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js 
+open iex-map.json 
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js 
+open iex-map.json 
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js 
+open iex-map.json 
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js 
+open iex-map.json 
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js 
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js | tee iex-map.json
+open iex-map.json 
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js | tee iex-map.json
+node
+open iex-map.json 
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js | tee iex-map.json
+node
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js | tee iex-map.json
+node
+node
 open .
 k
-j kit
-ls
-k
+vim scripts/pull-mood-map-data.js
 gs
-gbr
-git db 491
-k
-dcdn
-gs
-gco client/
-vim client/src/templates/pages/login.html 
-k
-gs
-gd server/api/controllers/
-k
-vim client/src/js/directives/lineGraph.js 
-./gulp
-dcup
-dcdn
-docker volume ls -qf dangling=true
-docker ls
-docker ps -a
-vim vim Dropbox/packing_list.txt
-vim Dropbox/packing_list.txt
-k
-j kit
-gs
-vs
-ag -g js client/
-ag -g js client/ | xargs wc -l
-ag -g scss client/ | xargs wc -l
-ag -g html client/ | xargs wc -l
-./gulp build
-k
-vim package.json 
-j writ
-ls
-ls journal/
-vim journal/2016-7-17
-j writ
-vim journal/2016-7-17 
-learns
-./g
-./gulp
-k
-./
-vim gulptasks/webpack.js 
-./gulp
-node
-k
-gbr
-gcob 491
-k
-vp client/src/js/directives/lineGraph.js client/src/js/directives/groupedBarGraph.js 
-k
-gs
-ga client/
-k
-gs
-gcm "KITU-491: refactors x-axis display function into graphhelper"
-gpo -u 491:KITU-491
-k
-gs
-gd gulptasks/webpack.js 
-vim gulptasks/webpack.js 
-ga gulptasks/webpack.js 
-gcm "cleanup: adds comment to clarify webpack's bootstrap-loader"
+ga scripts/
+gcm "Adds a bunch of node scripts I've been using for various tasks"
 gp
+gs
+rm *.pem
+rm *.p12
+k
+gs
+rm *.cer
+gs
+rm iex-map.json 
+k
+gs
+rm data.txt 
+k
+gs
+vim d3test.js 
+rm d3test.js
 k
 gs
 k
-glg
 k
-vim docker-compose.yml
-vim gulptasks/webpack.js 
+mysqld
+j api
 k
-k
-./gulp
-k
-l sno
-ls node_modules/
-vim package.json 
-vim gulptasks/webpack.js 
-k
-gs
-gbr
-gco gulp-cleanup
-gco gulptasks/webpack.js 
-k
-gs
-gco gulp-cleanup
-gco demo gulp-tasks/
-ls
-git rm gulptasks/
-git rm -rf gulptasks/
-k
-./gulp
-k
-ni
-k
-./gulp
-gco demo gulp
-k
-./gulp
-vim gulp
-gco demo gulpfile.js
-./gulp
-gco demo paths.js
-./gulp
-gco demo bower.json
-gco demo package.json
-bower install
-ni
-k
-k
-./gulp
-ag \.eslintrc ./*
-k
-ag \.eslintrc ./server/
-ag eslintrc server/
-ag eslintrc gulp-tasks/
-vp $(ag -l eslintrc gulp-tasks/)
-k
-gco demo .eslintrc.yaml
-k
-la
-./gulp
-gco demo client/src/index.html
-k
-d
-dcup
-dcdn
-vim server/index.js 
-dcup
-dcdn
-./gulp
-k
-dc build
-dcup
-vim Dockerfile-dev 
-dcup
-dcdn
-ag 192 gulp-tasks/
-vim gulp-tasks/server.js 
-k
-vim gulp-tasks/server.js 
-./gulp
-./gulp build
-dcup
-ag dist server/
-vim server/index.js 
-gs
-k
-vim docker-compose.yml 
-dcdn
-vim client/dist/index.html 
-ls client/dist/
-./gulp build
-kk
-k
-gco demo client/src/js/app.js 
-ag "window.env" client/
-k
-ag "window.env" client/src/
-client/src/env.js
-vim client/src/env.js
-k
-./gulp
-vim client/src/js/app.js 
-gco client/src/js/app.js 
-vim client/src/js/app.js 
-gco -- client/src/js/app.js 
-rm client/dist/*
-k
-ls client/dist/
-ag bind client/src/
-ag apply client/src/
-ag iconservice client/src/
-vim client/src/js/directives/metric.js 
-ag require client/src/
-k
-ag require client/src/js/
-k
-k
-ag require client/src/js/
-ag "require\(" client/src/js/
-gco $(ag -l "require\(" client/src/js/)
-k
-./gulp
-k
-gd demo server/index.js 
-k
-vim client/src/js/services/IconService.js 
-k
-ag -l font client/src/
-ag work client/src/
-vim client/src/scss/_fo
-k
-hag sed
-ag images\/ client/src/scss/
-sed -i 's/\.\.\/\.\.\/assets\///g' client/src/scss/_fonts.scss 
-hag sed
-sed -i 's/\.\.\/\.\.\/assets\//g' client/src/scss/_fonts.scss 
-sed -i 's/\.\.\/\.\.\/assets\/duh/g' client/src/scss/_fonts.scss 
-sed -i 's/\.\.\/\.\.\/assets\///g' client/src/scss/_fonts.scss 
-sed -i 's/\.\.\/\.\.\/assets\/g' client/src/scss/_fonts.scss 
-sed -i 's/\.\.\/\.\.\/assets\///g' client/src/scss/_fonts.scss 
-sed -i 's/\.\.\/\.\.\/assets\//duh/g' client/src/scss/_fonts.scss 
-vim client/src/scss/_fonts.scss 
-k
-gco demo client/src/scss/
-k
-ag "require\(" .
-k
-ag "require\(" client/src/
-gco demo $(ag -l "require\(" client/src/)
-ag "require\(" client/src/
-gco demo client/src/js/services/jQueryService.js client/src/js/services/d3Service.js client/src/js/services/googleMapsService.js 
-git rm client/src/js/services/googleMapsService.js client/src/js/services/bluebirdService.js 
-k
-sed -i 's/\.\.\/\.\.\/assets\//duh/g' client/src/scss/_fonts.scss 
-sed -i '' -e 's/\.\.\/\.\.\/assets\//duh/g' client/src/scss/_fonts.scss 
-sed -i '' -e 's/\.\.\/\.\.\/assets\///g' client/src/scss/_fonts.scss 
-./gulp
-ni
-k
-gbr
-gcob revert-webpack
-k
-vim gulpfile.js 
-ls gulp-tasks/
-npm prune
-k
-ls
-gco demo client/test/
-gco demo test/
-k
-vp client/src/js/directives/*
-ag "require\(" client/src/js/directives/
-vim client/src/js/directives/metric.js 
-ag -l "require\(" client/src/js/
-vp $(ag -l "require\(" client/src/js/)
-gco demo client/src/js/services/d3Service.js 
-k
-gs
-k
-gco demo client/src/js/services/lodashService.js 
-vp $(ag -l "require\(" client/src/js/)
-gco demo client/src/js/services/lodashService.js 
-gco demo client/src/js/services/lodashService.js 
-gco demo client/src/js/services/jQueryService.js 
-vp $(ag -l "require\(" client/src/js/)
-./gulp
-ag Bluebird client/
-vim client/src/js/config/app_config.js 
-dcup
-dcdn
-vim package.json 
-nis cors
-vim package.json 
-npm install google-maps-api
-vim server/index.js 
-nis google-maps-api
-gco client/src/js/services/googleMapsService.js
-gco -- client/src/js/services/googleMapsService.js
-gco dev client/src/js/services/googleMapsService.js
-vim client/src/index.html 
-k
-ag assets client/src/scss/
-ag assets client/src/js/
-ag kitu-logo-footer client/
-vp client/src/templates/components/{header,footer}.html
-ag x-close client/
-k
-ag x-close client/
-vim client/src/templates/components/searchableList.html 
-k
-vp client/src/js/directives/*graph*
-k
-gs
-rm client/src/env.js 
-rm test/server/api/driverNotificationsController.spec.js test/server/unit/smsService.spec.js 
-k
-gs
-dcup
-dcdn
-k
-bower install google-maps-api
-gco demo client/src/index.html 
-vim client/src/index.html 
-vp client/src/js/directives/*Graph*
-gcm "reverts webpack"
-k
-gs
-gd client/src/js/app.js 
-k
-gs
-ga package.json gulp-tasks/ client/ server/
-k
-gs
-gcm "fixes some issues from reverting"
-gp
-k
-gs
-git rebase -i HEAD~2
-gd
-gco test/
-k
-gs
-git rebase -i HEAD~2
-glg
-vim ~/.gitconfig 
-k
-glg
-k
-git reset --soft HEAD~2
-gcm "reverts webpack"
-k
-glg
-k
-./gulp
-k
-gpo -u revert-webpack:revert-webpack
-k
-./gulp
-dcup
-j dot
-j kit
-j win
-cd client/
-j dotf
-nvm_ls_current
-node --version
-j win
-cat .nvmrc 
-j kit
-j win
-j kit
-j win
-j kit
-k
-cd client/
-up
-vim bash_prompt.sh 
-k
-gd bash_prompt.sh 
-k
-gs
-gd bash_prompt.sh 
-ga bash_prompt.sh 
-gcm "fixes bash_prompt to run 'nvm use' less frequently"
-gp
-k
-gs
-gd .bash_profile 
-ga .bash_profile 
-gcm "adds new npm-related aliases in bash_profile"
-k
-gs
-gd .vimrc 
-gco .vimrc 
-k
-gs
-ga .vim/bundle/
-gcm "tweaks ir_black color scheme to have blue comments. pretty!"
-gp
-k
-j win
-gbr
-gco master
-gs
-gco dev
-ls
-j work
-mkdir starter-app
-cp -R ~/Documents/SG/projects/winward starter-app/
-cd starter-app/
-ls
-up
-mv starter-app/winward/ .
-rm -r starter-app/
-mv winward starter-app
-cd starter-app/
-git remote set-url origin git@github.com:itsthejazzkid/starter-app.git
-gs
-gbr
-gco 30
-glg
-k
-git remote -v
-gs
-gco dev
-gbr
-git merge 30
-k
-gbr
-git db l10n
-git db 30
-k
-gs
-git remove -v
-git remote -v
-k
-git stash list
-git stash show
+git stash show -p
+git stash show -p stash@{1}
+git stash drop stash@{1}
 git stash show -p
 k
-vim paths.js 
-git stash po
+gs
+j api
+./sql migration:create --name create-user-feeling-reminders
+vim db/migrations/20170919203909-create-user-feeling-reminders.js
+gs
+k
+gs
+gco master
+ls
+gco dev
+git rm scripts/test.sh 
+gcm "Removes a file that wasn't supposed to be in Git"
+gp
+gs
+k
+gs
+gco master
+gco dev
+k
+gs
+k
+vim scripts/get_db_dump.sh 
+./scripts/get_db_dump.sh prod
+./scripts/reset_db.sh 9-19 prod
+export NODE_ENV='production'
+migrate
+./scripts/reset_db.sh 9-19 prod
+echo $NODE_ENV
+migrate
+pfProd
+gs
+gco master
+git merge dev
+gco dev lib/services/
+gs
+vim lib/cron/journalreminders.js 
+k
+gs
+gco dev lib/cron/journalreminders.js 
+gs
+gco dev db/migrations/20170911052910-seed-journal-prompts.js db/migrations/20170907221709-create-journal-push-notifications.js
+gs
+glg
+gs
+gcm "Manually merges PR #237 (Develop -> Master) due to conflicts"
+gp
+pm2 deploy ecosystem.config.js prod
+gco dev
+j ios
+gbr
+gco dev
+k
+gs
+git stash
+gco dev
+git stash pop
+gd
+gco .
+gs
+k
+k
+vim etc/database.json 
+k
+vim lib/services/user.js 
+gs
+gco master
+j ios
+git stahs show -p
+git stash show -p
+whatsmyip 
+git stash pop
+export NODE_ENV='production'
+gs
+vim nodemon.json 
+git stash pop
+./run_api.sh
+gd
+whatsmyip 
+gs
+whatsmyip 
+gs
+vim iExhale/iExhale/iExhale.swift 
+k
+vim lib/cron/super-reactions.js 
+k
+gco dev
+echo $NODE_ENV
+k
+gs
+gco master
+glg
+gs
+gdc 0aa6b430
+gs
+k
+gco dev
+k
+pfProd
+k
+vim lib/services/user.js 
+gs
+k
+gs
+mysqld
+./run_api.sh
+export NODE_ENV='production'
+vim lib/services/journalprompt.js 
+k
+gs
+gd lib/controllers/
+vim lib/services/journalprompt.js 
+k
+gs
+gd lib/
+ga lib/
+gcm "Fixes a bug where users would be shown the wrong next journal prompt"
+gp
+pm2 deploy ecosystem.config.js dev
+gs
+gd nodemon.json 
+git stash
+gs
+pm2 deploy ecosystem.config.js dev
+glg
+gs
+gco master
+git cherry-pick 5667d044
+gp
+pm2 deploy ecosystem.config.js prod
+vs
+fg
+k
+gs
+gco dev
+./run_api.sh 
+k
+gs
+gd lib/
+vim lib/models/userjournalentries.js 
+k
+gs
+ga lib/models/
+gcm "Updates a hook in UserJournalEntries to remove the reminder notification in the notification list view"
+gp
+pm2 deploy ecosystem.config.js dev
+pfProd
+k
+gs
+glg
+gs
+gco master
+git cherry-pick 2e92f394
+gp
+pm2 deploy ecosystem.config.js prod
+k
+k
+gco dev
+k
+k
+k
+hag set-url
+k
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js | tee iex-map.json
+open iex-map.json 
+open .
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js | tee iex-map.json
+open .
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js | tee iex-map.json
+vim scripts/pull-mood-map-data.js
+k
+pfProd
+gs
+ga scripts/
+gcm "Updates script to pull data for Libby"
+k
+gs
+gcob feature/mood-reminders
+ga db/migrations/
+gcm "Adds one migration for mood reminders"
+gpo -u feature/mood-reminders
+gbr
+gbr -m ufremind
+gbr
+wgco sticker-script
+gco sticker-script
+glg
+gs
+gbr -m stickers
+k
+gbr
+grb dev
+gpo -f
+k
+j api
+ag "have you journaled" .
+gco dev
+vim db/migrations/20170918152621-create-generic-journal-reminder.js
+ga db/migrations/20170918152621-create-generic-journal-reminder.js
+gcm "Bolds one word in a notification"
+gs
+gp
+mysqld
+./node_modules/.bin/inspect scripts/update-journal-notifications.js 
+node
+./node_modules/.bin/inspect scripts/update-journal-notifications.js 
+vim db/migrations/20170918152621-create-generic-journal-reminder.js
+k
+gs
+node scripts/update-journal-notifications.js 
+node scripts/send-push-notifications.js 
+vim etc/database.json 
+gs
+gd db/
+gs
+ga db/
+ga scripts/update-journal-notifications.js 
+ga db/
+gcm "Adds a script to update notifications; adds scripting to update journal notifications with deep-linking, and changes in migrations to reflect this change"
+gp
+gs
+gd scripts/
+k
+gs
+k
+pfDev
+k
+node scripts/send-push-notifications.js 
+up
+git clone git clone git@bitbucket.org:iexhale/mood-map.git
+git clone git@bitbucket.org:iexhale/mood-map.git
+cd mood-map/
+ls
+k
+open index-usa.html 
+vim lib/services/user.js 
+pfProd
+pfDev
+k
+k
+gs
+gd
+gs
+gbr
+gco stickers
+gs
+grb dev
+git stash
+grb dev
+gpo -f
+./sql migration:create --name create-sticker-groups
+./sql migration:create --name seed-sticker-groups
+k
+ls
+ls assets/
+ls assets/stickers/
+ls
+open assets/stickers/
+cd assets/stickers/
+ls
+hag @3x.png
+shopt -s extglob
+hag @3x.png
+ls !(*@3x.png)
+rm !(*@3x.png)
+ls
+hag while
+ls .
+hag counter
+hag while
+hag counter
+counter=0
+echo $counter
+ls . | while read name; do ((counter+=1)); echo $counter; done
+echo $counter 
+ls . | while read name; do ((counter+=1)); newname="sticker-$counter.png"; mv "$name" "$newname"; done
+ls
+ag -g png . | while read name; do ((counter+=1)); newname="sticker-$counter.png"; mv "$name" "$newname"; done
+ls
+open .
+ls
+ga .
+git reset
+ls
+k
+k
+ls
+open.
+oepn .
+open .
+gs
+k
+./sql migration:create --name add-order-to-stickers
+upup
+./sql migration:create --name add-order-to-stickers
+gs
+k
+upup
+./node_modules/.bin/inspect bin/import-posting-stickers 
+vim lib/models/sticker.js 
+k
+j api
+ls
+cd assets/stickers/
+ls
+open .
+./node_modules/.bin/inspect bin/import-posting-stickers 
+ni recursive-readdir
+./node_modules/.bin/inspect bin/import-posting-stickers 
+mysqld
+sqldn
+k
+vim lib/services/user.js 
+gs
+ga assets/
+gs
+gcm "Adds posting stickers organized into folders"
+gs
+gd bin/
+gs
+git stash
+gs
+gco dev
+pfDev
+ssh-add ~/.ssh/id_bb_rsa
+vs
+vim lib/services/journalprompt.js 
+k
+gs
+gd lib/
+gs
+ga lib/services/
+gcm "Fixes journal prompts to reset for users at midnight Pacific-time intead of midnight UTC"
+gp
+pfDev
+pm2 deploy ecosystem.config.js dev
+k
+k
+gs
+gco stickers
+grb dev
+gpo -f
+ls db/migrations/
+git stash pop
+./sql migration:create --name add-groupId-to-stickers
+k
+gs
+git stash
+gco dev
+export NODE_ENV='production'
+k
+gs
+git stash show -p stash@{1}
+git stash pop stash@{1}
+gs
+echo $counter 
+echo $NODE_ENV 
+node scripts/send-push-notifications.js 
+k
+gs
+vim scripts/update-journal-notifications.js 
+./node_modules/.bin/inspect scripts/update-journal-notifications.js 
+j com
+ls
+gbr
+vim .elasticbeanstalk/config.yml 
+gpu
+node server.js 
+ls
+ls client/
+gs
+k
+ls
+ls client/
+vim client/our-story
+vim client/index.html 
+rm client/our-story.html 
+gs
+k
+gs
+ls client/
+k
+gs
+ga client/our-story/
+k
+ls
+gs
+ga 
+ga .
+gs
+gcm "Removes an unnecessary file"
+gp
+k
+export NODE_ENV='production'
+k
+ls
+vim client/index.html 
+k
+node scripts/send-push-notifications.js 
+pfProd
+./run_api.sh
+pfDev
+k
+k
+node server.js 
+node scripts/send-push-notifications.js 
+k
+gs
+k
+vim bin/import-posting-stickers 
+gs
+gd
+vim lib/cron/journalreminders.js 
+gs
+gd lib/
+ga lib/
+k
+gs
+git reset lib/models/
+k
+gs
+gcm "Changes the generic daily journal notification to be push-only, until an iOS-side fix is released"
+gp
+pfDev
+pfProd
+k
+gs
+gd
+gs
+gco scripts/
+k
+gs
+gco stickers
+grb dev
+gpo -f
+k
+k
+ag changeColumn db/
+gs
+ag fireworks db/migrations/
+ag -g sticker db/migrations/
+vim db/migrations/20170126012402-seed-dev-stickers.js
+git rm db/migrations/20170126012402-seed-dev-stickers.js
+gcm "Remove a migration that seeds stickers, to avoid schema issues"
+gs
+k
+gs
+rm db/migrations/20170921025704-seed-sticker-groups.js
+gs
+clear; cd '/Users/aidanmiles/Downloads/drive-download-20170921T232611Z-001/'
+ls
+open assets/stickers/
+k
+open assets/stickers/
+gs
+git stash show -p
+gs
+git stash
+git stash show -p stash@{1}
+gs
+git stash pop stash@{1}
+gs
+git stash show -p
+gs
+git stash pop
+gs
+gd bin/
+gs
+ga bin/
+gcm "Makes some changes to sticker import script"
+gs
+git stash pop
+vim bin/import-posting-stickers 
+vs
+k
+gs
+gd lib/
+ag -g lock assets/stickers/
+ag -g lock assets/stickers/ | while read name; do newname="${name/lock/locked}"; echo "$newname"; done
+ag -g lock assets/stickers/ | while read name; do newname="${name/lock/locked}"; do mv "$name" "$newname"; done
+ag -g lock assets/stickers/ | while read name; do newname="${name/lock/locked}"; mv "$name" "$newname"; done
+ag -g lock assets/stickers/ 
+gs
+ag -g dev ../dumps/
+./scripts/reset_db.sh 9-05
+migrate
+pfDev
+pfProd
+vim etc/database.json 
+gs
+vs
+git reset
+gs
+git stash drop
+gs
+git stash show -p
+git stash pop
+gs
+git stash
+gs
+gco dev
+./node_modules/.bin/inspect scripts/send-super-reactions.js 
+export NODE_ENV='production'
+./node_modules/.bin/inspect scripts/send-super-reactions.js 
+node scripts/send-super-reactions.js 
+vim scripts/give-super-reactions.js 
+gs
+sudo xcodebuild -license
+gs
+k
+gs
+which git
+git --version
+/usr/local/bin/git --version
+k
+gs
+gd scripts/
+qgs
+k
+gs
+gd scripts/
+qgs
+gs
+vim scripts/give-super-reactions.js 
+k
+gs
+ga scripts/
+gs
+gcm "Adds a script to send super reactions in bulk; tweaks the script to give available super reactions"
+gs
+vim scripts/pull-mood-map-data.js 
+node scripts/pull-mood-map-data.js | tee iex-map.json
+node scripts/pull-mood-map-data.js | tee iex-map-2017-8-15.json
+vim scripts/pull-mood-map-data.js 
+export NODE_ENV='production'
+node scripts/pull-mood-map-data.js | tee iex-map-2017-8-15.json
+vim iex-map-2017-8-15.json 
+node scripts/pull-mood-map-data.js | tee iex-map-2017-8-15.json
+open .
+vim scripts/pull-mood-map-data.js 
+k
+gs
+ga scripts/
+gcm "Adds a fix to the mood map data-pulling script"
+gs
+gp
+gco stickers
+grb dev
+gpo -f
+k
+k
+gs
+vs
+git stash pop
+gs
+ga assets/
+gcm "Adds assets for sticker groups"
+gs
+gd lib/models/
+gs
+ga db/ lib/models/
+gs
+gcm "Adds migrations and model updates to create sticker groups and update stickers accordingly"
+gs
+ga lib/
+gs
+gcm "Adds a route/controller/service for StickerGroups"
+gs
+rm ./iex*.json
+gs
+gd bin/
+gs
+./node_modules/.bin/inspect bin/import-posting-stickers 
+gp
+./scripts/reset_db.sh 9-05
+./node_modules/.bin/inspect bin/import-posting-stickers 
+node
+ag orcreate scripts/
+ag findorcreate bin/
+ag upsert lib/
+./node_modules/.bin/inspect bin/import-posting-stickers 
+migrate
+./node_modules/.bin/inspect bin/import-posting-stickers 
+open assets/stickers/
+vs
+k
+sqldn
+j api
+./node_modules/.bin/inspect bin/import-posting-stickers 
+k
+./run_api.sh 
+./scripts/reset_db.sh 9-05
+./node_modules/.bin/inspect bin/import-posting-stickers 
+ag withscope lib/routes/
+ag method: lib/
+./node_modules/.bin/inspect try.js 
+vs
+ls
+rm '
+rm \'
+fg
+gs
+ga assets/
+gs
+gcm "Renames a sticker assets"
+gs
+gd
+gs
+ga nodemon.json 
+gcm "Removes dev env default setting from nodemon.json"
+gs
+gd db/
+gs
+ga db/
+gcm "Fixes migrations for stickers"
+gs
+gd
+gs
+ga lib/ bin/
+gcm "Finishes implementing logic for the /stickers/groups endpoint"
+gp
+gs
+gp
+ssh-add ~/.ssh/id_bb_rsa
+gp
+gco dev
+gpu
+pm2 deploy ecosystem.config.js dev
+./run_api.sh 
+k
+k
+gbr
+git db stickers
+k
+up
+ls
+mkdir headspace
+cd headspace
+mkdir challenge
+up
+mkdir talkspace
+cd headspace/
+ls
+cd challenge/
+vim prompt.txt
+git init
+npm init
+ nisd ava
+mkdir -p test/e2e
+nis lodash
+nisd supertest
+vim package.json 
+j e2ee
+ls
+up
+ls
+up
+ls
+cd starter-app/
+ls
+gbr
+up
+k
+j head
+cd challenge/
+k
+k
+gs
+gd package.json 
+nis lodash
+k
+git remote add origin git@github.com:aidanhmiles/node-api-demo.git
+k
+gpo -u master
+k
+gs
+vim package.json 
+k
+k
+mysqld
+sqldn
+k
+ls
+nis sequelize
+gs
+vim package.json 
+nis moment
+nis winston
+man dot
+man graphviz
+ls
+mkdir server
+nis rxjs
+vim node_modules/symbol-observable/
+vim node_modules/symbol-observable/ponyfill.js 
+k
+j api
+vp server/{index,config}.js
+npm start
+ls server/
+nis restify
+k
+k
+npm start
+nis restify
+k
+npm start
+nisd nodemon
+./node_modules/.bin/nodemon --watch . --inspect server/
+./node_modules/.bin/nodemon --watch . --inspect --debug-brk server/
+./node_modules/.bin/nodemon --watch . --inspect server/
+./node_modules/.bin/nodemon --watch . --inspect --debug-brk server/
+node --inspect --debug-brk try.js 
+./node_modules/.bin/nodemon --watch . --inspect server/
+node --inspect=9001 --debug-brk try.js 
+ls
+mkdir server/services
+vim package.json 
+nisd sequelize-cli
+./node_modules/.bin/sequelize init
+ls
+vim config/config.json 
+vim .sequelizerc
+rm -rf config/ migrations/ models/ seeders/
+k
+gs
+./node_modules/.bin/sequelize init
+ k
+ls server/
+mkdir server/middleware
+vim lib/middleware/error.js 
+k
+j api
+nis mysql2
+./node_modules/.bin/nodemon --watch . --inspect --debug-brk server/
+./node_modules/.bin/nodemon --watch . --inspect server/
+vim bin/import-posting-stickers 
+vim lib/middleware/error.js 
+k
+vim server/middleware/error.js 
+k
+vim test/e2e/users.js
+k
+j chall
+k
+gs
+vim test/e2e/users.js 
+k
+j chall
+vim todo
+k
+ava
+./node_modules/.bin/ava
+vim todo 
+nisd supertest
+./node_modules/.bin/ava --watch .
+vim test/helpers/request.js 
+k
+vim todo 
+k
+j api
+pfDev
+ssh-add ~/.ssh/id_bb_rsa
+pfDev
+k
+pfDewv
+pfDev
+pm2 deploy ecosystem.config.js dev
+gs
+gd
+gco .
+pm2 deploy ecosystem.config.js dev
+pfProd
+pfDev
+vs
+./run_api.sh
+gs
+ga lib/services/
+gcm "Fixes a typo that might only break when deployed?"
+gp
+gcm "Fixes a typo that might only break when deployed?"
+pm2 deploy ecosystem.config.js dev
+vim etc/database.json 
+k
+gs
+gbr
+gco ufremind
+grb dev
+gpo -f
+k
+k
+gco dev
+k
+export NODE_ENV='production'
+vim scripts/send-super-reactions.js 
+gd
+node scripts/send-super-reactions.js 
+k
+gs
+ag publish lib/
+./node_modules/.bin/inspect scripts/send-custom-push.js 
+export NODE_ENV='production'
+pfDev
+./node_modules/.bin/inspect scripts/send-super-reactions.js 
+echo $NODE_ENV 
+node scripts/pull-mood-map-data.js 
+node scripts/pull-mood-map-data.js | tee iex-map-2017-08-15.json
+open .
+k
+pfProd
+k
+export NODE_ENV='production'
+node scripts/pull-mood-map-data.js | tee iex-map-2017-08-15.json
+open .
+pfProd
+vim lib/routes/badges.js 
+vim lib/routes/stickergroups.js 
+k
+node bin/import-posting-stickers 
+./run_api.sh
+./node_modules/.bin/inspect bin/import-posting-stickers
+vim scripts/send-push-notifications.js 
+k
+gs
+k
+gs
+gd lib/
+vim lib/services/stickergroup.js 
+vim lib/services/stickergroup.js 
+k
+gs
+ga lib/services/
+gcm "Removes a debugger"
+k
+pfDev
+export NODE_ENV='production'
+vim blah
+wc -l blah
+./node_modules/.bin/inspect scripts/send-super-reactions.js 
+pfProd
+k
+./run_api.sh 
+gs
+rm blah 
+k
+k
+gbr
+gco ufremind
+gco dev
+gs
+gd
+gs
+ga scripts/
+gcm "Adds script fixes"
+gcob feature/sticker-notifications
+gpo -u feature/sticker-notifications
+gbr -m sticknotes
+gbr
+./sql migration:create --name seed-sticker-notifications
+vim db/migrations/20170925211609-seed-sticker-notifications.js
+kk
+gs
+mysqld
+sqldn
+2
+k
+j chall
+k
+ls
+up
+mv challenge/ lib
+cd lib/
+k
+gs
+k
+gs
+vs
+up
+mv lib/ challeng
+mv challeng/ challenge
+cd challenge/
+k
+./node_modules/.bin/nodemon --watch . --inspect server/
+gs
+gco dev
+gs
+export NODE_ENV='production'
+./node_modules/.bin/inspect scripts/send-super-reactions.js 
+pfPRod
+pfProd
+./node_modules/.bin/nodemon --watch . --inspect --debug-brk server/
+pfProd
+k
+vim scripts/send-super-reactions.js 
+k
+gs
+gd
+gs
+ga scripts/
+gcm "Adds better logging to a script"
+gs
+vim lib/services/user.js 
+gs
+ga lib/services/
+gcm "Adjusts Y-axis scaling for the mood graph
+"
+gp
+pm2 deploy ecosystem.config.js dev
+k
+gs
+vim lib/services/user.js 
+gs
+ga lib/services/user.js 
+gcm "Tweaks Y-axis scaling on activity line on the mood graph"
+gp
+pm2 deploy ecosystem.config.js dev
+j api
+ni inspect-process
+./node_modules/.bin/inspect try.js 
+./sql model:create user --username:string
+./node_modules/.bin/sequelize model:create user --username:string
+./node_modules/.bin/sequelize migration:create --name create-users
+migrate
+./node_modules/.bin/sequelize db:reset
+./node_modules/.bin/sequelize db:create
+./node_modules/.bin/sequelize db:migrate
+./node_modules/.bin/sequelize migration:create --create-books
+./node_modules/.bin/sequelize migration:create --name create-books
+./node_modules/.bin/sequelize migration:create --name create-user-books
+./node_modules/.bin/sequelize db:migrate
+ag belongstomanythrough lib/
+ag belongstomany lib/
+ag associate lib/models/
+./node_modules/.bin/nodemon --watch . --inspect server/
+./node_modules/.bin/nodemon --watch . --inspect --debug-brk server/
+vim lib/models/index.js 
+vim package.json 
+k
+./node_modules/.bin/ava --watch .
+./node_modules/.bin/ava --watch . test/
+k
+./node_modules/.bin/ava test/e2e/
+vim lib/models/feelinggroup.js 
+./node_modules/.bin/ava --watch test/e2e/
+./node_modules/.bin/nodemon --watch . --inspect server/
+k
+./node_modules/.bin/ava --watch test/e2e/users.js 
+./node_modules/.bin/inspect test/e2e/users.js 
+./node_modules/.bin/ava --watch test/e2e/users.js 
+./node_modules/.bin/inspect test/helpers/request.js 
+./node_modules/.bin/ava --watch test/e2e/users.js 
+./node_modules/.bin/inspect test/helpers/request.js 
+./node_modules/.bin/ava --watch test/e2e/users.js 
+nisd axios
+./node_modules/.bin/ava --watch test/e2e/users.js 
+./node_modules/.bin/nodemon --watch server/ --inspect server/
+./node_modules/.bin/inspect try.js 
+pfProd
+pfDev
+./node_modules/.bin/sequelize db:reset
+./node_modules/.bin/sequelize db:drop
+./node_modules/.bin/sequelize db:create
+./node_modules/.bin/sequelize db:migrate
+./node_modules/.bin/ava --watch test/e2e/users.js 
+node
+./node_modules/.bin/inspect try.js 
+./node_modules/.bin/inspect try.js 
+vs
+k
+pfDev
+mkdir server/helpers
+journal
+./node_modules/.bin/inspect try.js 
+vim test/helpers/request-helper.js 
+k
+vim test/helpers/request-helper.js 
+./node_modules/.bin/inspect try.js 
+k
+./node_modules/.bin/inspect try.js 
+./node_modules/.bin/nodemon --watch server/ --inspect server/start
+./node_modules/.bin/inspect try.js 
+./node_modules/.bin/ava --watch test/e2e/users.js 
+./node_modules/.bin/sequelize db:reset
+sqlcl
+migrate
+./node_modules/.bin/ava --watch test/e2e/books.js 
+./node_modules/.bin/ava --watch test/e2e/userbooks.js 
+./node_modules/.bin/ava test
+node
+vim test/helpers/request.js 
+gs
+rm try.js 
+rm todo 
+gs
+./node_modules/.bin/ava test/e2e/userbooks.js 
+./node_modules/.bin/ava --watch test/e2e/userbooks.js 
+vim test/e2e/userbooks.js 
+kgs
+k
+gs
+ls
+rm -rf node_modules/
+vim server/services/user.service.js 
+ni
+npm test
+npm start
+chmod u+x server/start 
+npm test
+which mysqld
+npm start
+vim README.md 
+k
+gs
+gaa .
+gcm "Hasty commit"
+gs
+node --version
+nvm use 7
+nvm list
+vim README.md 
+gs
+k
+open ..
+rm -rf node_modules/
+up
+zip challenge/
+zip challenge
+ni
+npm test
+vim test/e2e/userbooks.js 
+npm start
+vim README.md 
+k
+ls
+rm -rf node_modules/
+open ..
+vim lib/services/modelservice.js 
+k
+gs
+k
+gsw
+vim scripts/pull-mood-map-data.js 
+k
+gs
+node scripts/pull-mood-map-data.js | tee iex-map-2017-08-15.json
+export NODE_ENV='production'
+node scripts/pull-mood-map-data.js | tee iex-map-2017-08-15.json
+vim scripts/pull-mood-map-data.js 
+node scripts/pull-mood-map-data.js | tee iex-map-2017-08-15.json
+open .
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js
+fg
+vim scripts/pull-mood-map-data.js 
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js
+node scripts/pull-mood-map-data.js | tee iex-map-2017-08-15.json
+gs
+echo $NODE_ENV 
+node scripts/send-super-reactions.js 
+k
+open assets/stickers/
+ls
+./scripts/get_db_dump.sh
+./scripts/reset_db.sh 9-27
+./node_modules/.bin/inspect bin/import-posting-stickers
+echo $NODE_ENV 
+./node_modules/.bin/inspect bin/import-posting-stickers
+node bin/import-posting-stickers
+gs
+ga assets/
+gcm "Update sticker assets"
+gp
+gs
+gd scripts/
+ga scripts/
+gcm "Adds more data to the output of the map data script"
+gs
+gp
+gpu
+k
+gs
+export NODE_ENV='production'
+pm2 deploy ecosystem.config.js prod
+node bin/import-posting-stickers 
+pfDev
+pfProd
+k
+vim scripts/send-super-reactions.js 
+k
+man tac
+ls
+tail -r iex-map-2017-08-15.json 
+echo $NODE_ENV 
+./node_modules/.bin/inspect try.js 
+gs
+echo $NODE_ENV 
+vim try.js 
+k
+export NODE_ENV='production'
+pfDev
+node scripts/pull-mood-map-data.js | tee iex-map.json
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js | tee iex-map.json
+open .
+node
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js | tee iex-map.json
+open .
+vim scripts/pull-mood-map-data.js 
+k
+gs
+k
+gs
+./node_modules/.bin/inspect try.js 
+export NODE_ENV='production'
+./node_modules/.bin/inspect try.js 
+echo $NODE_ENV 
+./node_modules/.bin/inspect try.js 
+vim lib/services/socialreaction.js 
+k
+gs
+ga lib/
+gs
+git reset
+gd lib/
+vim lib/services/socialreaction.js 
+k
+gs
+ga lib/
+gcm "A bugfix and a performance fix for the Super Reaction cron job"
+gp
+pm2 deploy ecosystem.config.js dev
+git stash
+pm2 deploy ecosystem.config.js dev
+gs
+vim
+k
+gs
+gd lib/
+ga lib/services/usernotification.js 
+gcm "Adjusts timing of journal encouragment notifications"
+gs
+k
+vim lib/services/usernotification.js 
+k
+gs
+gbr
+gco ufremind
+grb dev
+gpo -f
+glg
+gs
+ag mood-remind db/
+ag -g mood-remind db/
+ag -g reminder db/
+vim db/migrations/20170919203909-create-user-feeling-reminders.js
+rm mood.txt 
+pfDev
+fg
+gs
+git stash
+gco dev
+gp
+vim lib/services/usernotification.js 
+gs
+gco ufremind
+git stash pop
+gs
+gd db/
+gs
+git stash
+pm2 deploy ecosystem.config.js prod
+gs
+git stash pop
+which rb
+rb
+rbenv
+ruby
+which ruby
+rbenv
+rbenv which ruby
+ruby test.rb 
+ruby
+pr
+pry
+gem install pry
+ruby test.rb 
+'a'..'e'
+ruby test.rb 
+vim test.rb
+pry
+gs
+ga db
+gcm "adds more to the user feeling reminder migration"
+gco dev
+k
+gs
+gd
+gs
+vim scripts/pull-mood-map-data.js 
+export NODE_ENV='production'
+pProd
+node scripts/pull-mood-map-data.js 
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js | tee iex-map.json
+open iex-map.json 
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js | tee iex-map.json
+node scripts/pull-mood-map-data.js | tee iex-map.json
+open iex-map.json 
+open [
+open .
+open iex-map.json 
+node scripts/pull-mood-map-data.js | tee iex-map.json
+open .
+vim scripts/pull-mood-map-data.js 
+k
+pfProd
+k
+k
+open iex-map.json 
+node scripts/pull-mood-map-data.js | tee iex-map.json
+export NODE_ENV='production'
+node scripts/pull-mood-map-data.js | tee iex-map.json
+./node_modules/.bin/inspect scripts/pull-mood-map-data.js | tee iex-map.json
+open .
+pfProd
+up
+mkdir rubyprep
+mv api/test.rb rubyprep/
+ls api/
+cd rubyprep/
+k
+gs
+k
+l
+sl
+l
+k
+l
+k
+ls
+ruby test.rb 
+pry
+k
+cd ../api/
+pry
+cd -
+k
+gem install pry
+pry
+ruby test.rb 
+pry
+ruby test.rb 
+pry
+ruby test.rb 
+vim
+node
+pry
+ruby test.rb 
+pry
+ruby test.rb 
+vim test.rb 
+k
+gs
+j chall
+gs
+gaa .
+gcm "Some last minute changes"
+vim scripts/pull-mood-map-data.js 
+k
+mysqld
+sqldn
+vagrant
+j docu
+ls
+mkdir practice
+cd practice/
+mkcd vagrant
+vagrant init
+vim Vagrantfile 
+vagrant up
+vagrant box add centos/7
+vagrant up
+vagrant ssh
+vim Vagrantfile 
+pfDev
+vagrant ssh
+sshDev
+vagrant up
+vagrant -h
+ruby --version
+ssh adn@localhost
+gem install rails
+vagrant ssh
+rails --help
+rails new --skip-coffee --api --skip-javascript myapp
+rails -s
+ls
+rm -rf myapp/
+vagrant destroy
+up
+k
+ls
+hag init
+ls
+rails -h
+rails new --skip-coffee --api --skip-javascript --database=mysql myapp
+ls
+cd myapp/
+vagrant init
+rm Vagrantfile 
+cp ../vagrant/Vagrantfile .
+vim Vagrantfile 
+ls
+bin/rails -s
+bin/rails server
+vagrant up
+ls
+vagrant ssh
+ls
+git --version
+bin/rails server
+ruby --version
+rbenv list
+rbenv --help
+rbenv versions
+rbenv global
+ruby --version
+rbenv which rails
+pyenv
+pyenv versions
+rbenv
+vagrant ssh
+vagrant destroy
+j challenge
+ls
+gcob rails
+rm -rf Session.vim db/ server/ test/
+ls
+rm package.json 
+k
+gs
+ga .
+gs
+gcm "Clears the way for Rails"
+gs
+rails new --skip-coffee --api --skip-javascript --database=mysql myapp
+bin/rails generate model User username:string
+ls
+rm -rf myapp/
+up
+rails new --skip-coffee --api --skip-javascript --database=mysql challenge
+cd challenge
+ls
+bin/rails generate model User username:string
+bin/rake db:migrate
+bin/rake db:create
+bin/rake db:migrate
+bin/rails generate model Book author:string title:string
+bin/rake db:migrate
+sqlcl
+bin/rails generate model UserBook userId:integer bookId:integer state:string
+bin/rails generate Controller UserBooks
+bin/rails generate controller UserBooks
+vim db/migrate/20170929045226_create_user_books.rb
+k
+bin/rake db:reset
+bin/rake db:migrate
+bi
+gem install bundler --pre
+gs
+hirb
+rails console
+gem install hirb
+bin/rails server
+bin/rails restart
+ls app/controllers/
+mv app/controllers/user_controller.rb app/controllers/users_controller.rb
+bin/rails restart
+bi
+rails console
+bin/rails server
+sqlcl
+sqlProd
+j api
+sqlProd < queries/help_messages.sql 
+sqlProd < queries/help_messages.sql | tee messages.txt
+vim messages.txt 
+./scripts/get_db_dump.sh prod
+man mysql
+mysql --help
+pwd
+sqlProd < queries/help_messages.sql
+pfProd
+./scripts/reset_db.sh 9-27 prod
+sqlProd
+vim etc/database.json 
+./scripts/reset_db.sh 9-27 prod
+vim db/migrate/20170929044806_create_users.rb 
+k
+bashp
+vim scripts/reset_db.sh 
+k
+sqlclProd < queries/help_messages.sql 
+mysqld
+sqldn
+mysqld --secure-file-priv=false
+sqlclProd < queries/help_messages.sql 
+sqlclProd < queries/help_messages.sql | tee patient_messages.txt
+vim patient_messages.txt 
+sqlclProd < queries/help_messages.sql | tee therapist_messages.txt
+open .
+vim therapist_messages.txt 
+open .
+vim queries/help_messages.sql
+k
+ls
+up
+ls
+up
+ls
+cd practice/
+ls
+ag -g test .
+up
+ls
+cd practice/
+mkdir ruby
+cd ruby/
+ruby test.rb 
+pry
+ruby test.rb 
+j chall
+ls
+k
+rails console
+bin/rails server
+vim test.rb
+k
+k
+pfProd
+up
+mkcd simplepractice
+k
+ls
+j api
+vim lib/models/command.js 
+vim test.rb
+sqldn
+mysqld
+k
+j prac
+ls
+cd ruby/
+ls
+j simp
+ls
+mv test.rb 
+mv test.rb ~/Documents/practice/ruby/simplepractice.rb
+cd ~/Documents/practice/ruby/
+ls
+ruby simplepractice.rb 
+vim simplepractice.rb 
+j ruby
+ls
+vim test.rb 
+cp test.rb ~/Documents/practice/ruby/test_2.rb
+cd ~/Documents/practice/ruby/test_
+cd ~/Documents/practice/ruby/
+ls
+vim test_3.rb
+j api
+pry
+ruby test_3.rb 
+pry
+ruby test_3.rb 
+vim lib/helpers/script.js 
+vim test_3.rb
+pry
+j api
+ag twilio lib/
+vim lib/middleware/twilio.js 
+j api
+ag socket.io lib/
+vim lib/middleware/websockets.js 
+k
+gs
+gd
+gs
+gd scripts/
+gs
+ga scripts/
+gcm "addsa a change to a script"
+gs
+rm messages.txt patient_messages.txt therapist_messages.txt 
+ls
+gs
+rm shablam.html 
+rm iex-map*
+ls
+gs
+ls logs/
+k
+gs
+k
+gcob chatbot-mvp-support
+gpo -u chatbot-mvp-support
+gbr -m chat
+gbr
+ag twilio lib/
+nis apiai
+./node_modules/.bin/inspect scripts/api.ai-test.js 
+ls node_modules/socket.io-client/
+ls node_modules/socket.io-client/dist/
+ls node_modules/socket.io-client/dist/socket.io.js
+k
+./run_api.sh
+vim scripts/api.ai-test.js
+fg
+k
+ls
+gs
+gco lib/services/websockets.js 
+k
+vim lib/middleware/websockets.js 
+k
+gs
+gd pad
+gd package.json 
+ga package.json
+gcm "adds API.ai to package.json"
+gs
+gd lib/
+gs
+ga lib/
+gcm "Adds a test websocket implementation for the chatbot"
+fg
+ag uuid .
+./run_api.sh 
+vim lib/services/chatbot-websockets.js 
+k
+gs
+gd lib/
+gs
+ga lib/
+gcm "Adds iOS-testable websocket implementation"
+gp
+pm2 deploy ecosystem.config.js dev
+ls
+gs
+pm2 deploy ecosystem.config.js dev
+gbr
+vim ecosystem.config.js 
+gs
+ga ecosystem.config.js 
+gcm "Updates deploy branch"
+pm2 deploy ecosystem.config.js dev
+gp
+pm2 deploy ecosystem.config.js dev
+pfDev
+vim shablam.html 
+open shablam.html 
+j map
+ls
+up
+ls
+up
+ls
+cd mood-map/
+ls
+gpu
+vim index-usa.html 
+gpu
+open index-usa.html 
+gbr
+gco map-time
+gf
+gco map-time
+git remove -v
+git remote -v
+gs
+gco com
+j com
+k
+ls
+gbr
+gf
+gco map-time
+gs
+vim package.json 
+npm start
+j com
+vim server.js 
+ni
+ls
+vim client/map.html 
+k
+npm start
+ls
+hag migration:create
+./sql migration:create --name add-show-chatbot-to-users
+vim db/migrations/20171003235713-add-show-chatbot-to-users.js
+k
+gs
+ga db/ lib/models/user.js 
+gs
+gcm "Adds boolean showChatbot to Users"
+gp
+fg
+k
+gs
+gd
+gs
+glg
+gs
+git stash
+pm2 deploy ecosystem.config.js dev
+gs
+git stash pop
+gs
+k
+gs
+fg
+pfDev
+vim lib/middleware/websockets.js 
+fg
+k
+gs
+ga lib/
+gcm "Disables authentication again and adds new events for a demo"
+gp
+pm2 deploy ecosystem.config.js dev
+fg
+vim shablam.html 
+k
+vim lib/services/chatbot-websockets.js 
+k
+gs
+gd lib/
+ga lib/
+gcm "Removes a debugger"
+gp
+vim ecosystem.config.js 
+ga ecosystem.config.js 
+gcm "Resets ecosystem dev deploy branch back to dev"
+gp
+gco dev
+gpu --rebase
+gs
+pm2 deploy ecosystem.config.js dev
+gbr
+git db chat
+k
+gs
+gbr
+k
+vim queries/patients.sql 
+vim queries/feelings.sql 
+sqlcl < queries/feelings.sql 
+sqlcl < queries/feelings.sql | tee feelings.txt
+open feelings.txt 
+vim queries/feelings.sql 
+pfDev
+./run_api.sh 
+mysqld
+sqldn
+pm2 deploy ecosystem.config.js prod
+pfProd
+k
+pfProd
+k
+gs
+rm feelings.txt 
+rm scripts/api.ai-test.js 
+ag server.options lib/
+ag environment lib/
+ag server.options lib/
+vim lib/services/chatbot-websockets.js 
+sqldn
+j api
+gs
+open shablam.html 
+k
+node
+scratch
+vim lib/services/chatbot-websockets.js 
+k
+gs
+gd lib/
+gs
+ga lib/serv
+ga lib/services/
+gcm "Updates the chatbot service with multiple choice q&a, new event names, and agent switching"
+gp
+./run_api.sh 
+mysqld
+sqldn
+j simp
+ls
+ls rails\ demo/
+rails --help
+ls
+rails new --skip-coffee --skip-javascript --database=mysql services_by_location
+ls
+rm -rf services_by_location/
+rails --help
+rails new --skip-coffee --skip-javascript --database=mysql services_by_location
+l
+ls
+cd services_by_location/
+vim Gemfile
+k
+vim Gemfile
+k
+cd services_by_location/
+ls
+vim config/routes.rb 
+bi
+j headsp
+ls
+cd challenge
+mkdir app/views/main
+mv app/views/main.html.erb app/views/main/
+bi
+rails c
+rm app/views/main.html.erb 
+rails s
+vim app/controllers/users_controller.rb 
+rails s
+bi
+vim app/controllers/main_controller.rb
+hag vagrant
+vagrant init
+vim Vagrantfile 
+pry
+up
+ls
+ag -g vagr .
+vim practice/vagrant/Vagrantfile 
+ls
+cd simplepractice/services_by_location/
+ls
+mkdir deploy
+touch deploy/bootstrap.sh
+ls
+up
+ls
+ls rails\ demo/
+has ssh
+hag ssh
+ssh root@demoapp.simplepractice-dev.com
+vagrant up
+rails s
+vagrant ssh
+vagrant --help
+vagrant destroy
+vagrant halt
+vim deploy/bootstrap.sh 
+vagrant up
+vagrant provision
+hag ssh
+fg
+vagrant ssh
+vagrant destroy
+mkdir deploy/roles
+mkdir deploy/roles/{vars,tasks}
+ls deploy/roles/
+vagrant up
+vim deploy/playbook.yml 
+vagrant up
+vagrant provision
+vagrant ssh
+vagrant up --provision
+vagrant destroy
+vagrant up --provision
+vagrant ssh
+vagrant up --provision
+vagrant ssh
+k
+fg
+k
+fg
+k
+fg
+k
+j api
+k
+gs
+vim lib/services/chatbot-websockets.js 
+./sql migration:create --name create-chat-messages
+mv db/migrations/20171009155301-create-chat-messages.js db/migrations/20171009155301-create-chatbot-message-threads.js
+./sql migration:create --name create-chatbot-messages
+git stash
+pm2 deploy ecosystem.config.js dev
+git stash pop
+k
+vp db/migrations/20171009155301-create-chatbot-message-threads.js db/migrations/20171009155338-create-chatbot-messages.js
+k
+gs
+gd
+vim lib/services/chatbot-websockets.js 
+pfDev
+hag scp
+scp etc/server.js devappuser@iex-dev-appuser:/app/user/api.iexhale.com/current/etc/
+pfDev
+pm2 deploy ecosystem.config.js dev
+git stash
+pm2 deploy ecosystem.config.js dev
+pfDev
+git stash pop
+vim etc/server.js 
+pm2 deploy ecosystem.config.js dev
+gd
+vim lib/services/chatbot-websockets.js 
+git stash 
+pm2 deploy ecosystem.config.js dev
+./run_api.sh 
+ls /var/log
+ls /var/log/system.log
+less /var/log/system.log
+tail /var/log/system.log
+tail -n 1000 /var/log/system.log
+tail -n 5000 /var/log/system.log
+ls /var/log
+tail -n 5000 /var/log/daily.out 
+gs
+glg
+gdc 31700ed0
+gs
+vim lib/helpers/set-env.js 
+ag set-env lib/
+ag set-ent .
+ag set-env .
+pfDev
+pfDev
+hag scp
+git stash pop
+gs
+vim lib/services/chatbot-websockets.js 
+k
+gs
+ga lib/services/
+gcm "Creates an error, for testing"
+pm2 deploy ecosystem.config.js dev
+gs
+gp
+pm2 deploy ecosystem.config.js dev
+gs
+ga lib/services/
+gcm "Undoes the error"
+gp
+sshDev
+hag scp
+vim lib/services/chatbot-websockets.js 
+k
+./run_api.sh 
+pfDev
+vim lib/services/chatbot-websockets.js 
+k
+glg
+gs
+vim etc/nginx/api.iexhale.com.conf 
+sshDev
+vim etc/server.js 
+gs
+hag scp
+scp etc/server.js devappuser@iex-dev-appuser:/app/user/api.iexhale.com/current/etc/
+pfProd
+vim etc/server.js 
+vim shablam.html 
+fg
+scp etc/server.js devappuser@iex-dev-appuser:/app/user/api.iexhale.com/current/etc/
+fg
+scp etc/server.js devappuser@iex-dev-appuser:/app/user/api.iexhale.com/current/etc/
+./run_api.sh 
+pfProd
+pfDev
+scp etc/server.js devappuser@iex-dev-appuser:/app/user/api.iexhale.com/current/etc/
+pfDev
+fg
+scp etc/server.js devappuser@iex-dev-appuser:/app/user/api.iexhale.com/current/etc/
+pfProd
+fg
+gs
+gd
+gs
+vim lib/services/chatbot-websockets.js 
+k
+gs
+gd lib/middleware/
+ga lib/middleware/
+gcm "Trying a socket.io trick to fix CORS with ws"
+gp
+pm2 deploy ecosystem.config.js dev
+git stash
+pm2 deploy ecosystem.config.js dev
+pfDev
+vim shablam.html 
+k
+gs
+gd l8i
+gd lib/
+ga lib/services/
+gs
+gcm "Fixes multiple choice q&a"
+gp
+pm2 deploy ecosystem.config.js dev
+vim lib/services/chatbot-websockets.js 
+k
+gs
+vim lib/services/chatbot-websockets.js 
+k
+gs
+gd lib/
+ga lib/services/
+gcm "Updates the chatbot service to allow users to test with prod, makes the switch statement case-insensitive"
+gp
+pm2 deploy ecosystem.config.js dev
+git stash pop
+gsw
+gs
+gd
+vim lib/services/chatbot-websockets.js 
+k
+gs
+gd lib/
+gs
+ga lib/middleware/
+gs
+gcm "Adds requirement that apiToken be included in socket connections"
+gp
+pm2 deploy ecosystem.config.js dev
+gs
+git stash
+pm2 deploy ecosystem.config.js dev
+k
+gs
+git stash pop
+git stash show -p
+git stash drop
+gs
+vim 
+vp db/migrations/20171009155301-create-chatbot-message-threads.js db/migrations/20171009155338-create-chatbot-messages.js
+k
+ls lib/models/
+ag limit lib/services/
+k
+ls
+vp db/migrations/20171009155301-create-chatbot-message-threads.js db/migrations/20171009155338-create-chatbot-messages.js
+k
+gs
+mysqld
+sqldn
+j api
+vim lib/services/user.js 
+ag -g dev ../dumps/
+./scripts/reset_db.sh 9-27 
+migrate
+ag chat db/migrations/
+ag - chat db/migrations/
+ag -g - chat db/migrations/
+migrate
+./scripts/reset_db.sh 9-27 
+./run_api.sh 
+./scripts/reset_db.sh 9-27 
+gs
+ga lib/routes/ lib/controllers/
+gd lib/middleware/
+gs
+ga lib/services/user.js 
+gcm "Adds a new endpoint to retrieve a user's chatbot transcripts"
+gpp
+k
+gs
+ga lib/models/ db/migrations/
+gs
+gcm "Adds migrations/models for Chatbot Messages and Threads"
+gp
+gs
+k
+gs
+gd lib/middleware/
+gs
+ga lib/middleware/
+gcm "Updates socket auth"
+k
+gs
+gd lib/
+gs
+ga lib/services/
+gcm "Starts saving messages to the database"
+gp
+pm2 deploy ecosystem.config.js dev
+./run_api.sh 
+k
+ag server.log .
+vim lib/services/chatbot-websockets.js 
+k
+gs
+gd lib/middleware/
+gco lib/middleware/
+k
+gs
+gd lib/
+gs
+ga lib/services/
+gcm "Lots of updates to the chatbot service"
+gp
+k
+pm2 deploy ecosystem.config.js dev
+vim shablam.html 
+vim lib/services/chatbot-websockets.js 
+k
+gs
+gd lib/
+gs
+ga lib/serv
+ga lib/services/
+gcm "Adds a welcome question"
+gp
+pm2 deploy ecosystem.config.js dev
+./run_api.sh 
+gs
+k
+k
+vim lib/services/user.js 
+k
+gs
+ga lib/services/
+gcm "Reverses user chat messages"
+gp
+pm2 deploy ecosystem.config.js dev
+j simpl
+ls
+cd services_by_location/
+ls
+k
+gs
+k
+ls
+vim hosts 
+k
+ls
+ls deploy/
+vim deploy/playbook.retry 
+man iptables
+vim etc/nginx/api.iexhale.com.conf 
+k
+vim deploy/playbook.yml 
+k
+vagrant ssh
+gs
+gcob chat-exercises
+gpo -u chat-exercises
+mkdirp lib/chat/questionaires
+mkdir -p lib/chat/questionaires
+mkdir lib/chat/exercises
+mkdir lib/chat/greetings
+ls lib/chat/
+j chall
+ls
+gs
+gaa .
+gcm "Adds working rails rough draft"
+gs
+gbr
+gco master
+k
+gs
+ag recurs .
+ag require .
+nis recursive-readdir
+scratch
+k
+vim lib/chat/index.js
+vim lib/routes/index.js 
+mysqld
+sqldn
+j api
+k
+./run_api.sh 
+ag recurs scripts/
+git stash
+gbr
+gco bg
+ag recurs scripts/
+ag recurs bin/
+gbr
+gco sticknotes
+ls
+gs
+ls scripts/
+ag recurs scripts/
+gbr
+gco chat-exercises
+git stash pop
+k
+vs
+open .
+node
+ls lib/chat/questionaires/
+mv lib/chat/questionaires/ lib/chat/questionnaires
+ag -g - lib/chat/
+rm $(ag -g - lib/chat/)
+fg
+k
+gs
+ga lib/chat/
+git reset
+mkdir assets/chat
+rm -r assets/chat/
+mv lib/chat/ assets/
+ls assets/chat/
+vim lib/services/websockets.js 
+k
+gs
+ga assets/
+gcm "Adds a bunch of chat-specific assets"
+ga lib/services/
+gcm "Adds more logic to support exercises"
+gp
+k
+ssh-add ~/.ssh/id_bb_rsa
+gp
+vim lib/services/chatbot-websockets.js 
+k
+gs
+gco dev
+gpu
+git db chat-exercises
+pm2 deploy ecosystem.config.js dev
+k
+gs
+gd package.json 
+vim package.json 
+nis recursive-readdir
+gd package.json 
+ga package.json 
+gcm "Adds recursive readdir to package.json"
+gs
+vim lib/services/chatbot-websockets.js 
+k
+gs
+ga assets/
+ga lib/services/
+gs
+gcm "Fixes a bug, updates q&a structure"
+gp
+pm2 deploy ecosystem.config.js dev
+vs
+k
+pfDev
+vs
+k
+gs
+gd
+gs
+gd lib/
+gs
+ga lib/services/
+k
+gs
+gcm "updates the chat welcome prompt"
+pm2 deploy ecosystem.config.js dev
+gp
+gs
+pm2 deploy ecosystem.config.js dev
+vs
+k
+gs
+k
+k
+vim lib/services/chatbot-websockets.js 
+k
+gs
+ga assets/
+gcm "Gives the box-breathing exercise [] as data instead of false"
+gp
+pm2 deploy ecosystem.config.js dev
+j rails
+j simp
+ls
+cd services_by_location/
+k
+ls
+vagrant ssh
+bashp
+j dotf
+gd .bash_profile 
+ga .bash_profile
+gcm "Adds vagrant aliases, plus whatsmyip"
+gp
+k
+k
+gs
+gd .bashrc 
+k
+gs
+gd bin/
+ga bin/
+gcm "Adds an escape sequence to clear the terminal when journaling"
+k
+gs
+k
+gd com.googlecode.iterm2.plist 
+gs
+ga com.googlecode.iterm2.plist 
+gcm "iterm2 pref updates due to software updates"
+k
+gs
+gp
+k
+ls
+vim deploy/playbook.yml 
+fg
+mkdir deploy/templates
+vagrant ssh
+iptables -L -nv
+vup
+k
+vsh
+vupp
+vsh
+vupp
+cupp
+vupp
+vsh
+vupp
+vdestroy
+vupp
+vsh
+vupp
+vsh
+vupp
+vsh
+vim deploy/playbook.yml 
+k
+k
+./sql migration:create --name add-log-to-chatbot-messages
+migrate
+ag -g action*notification db/migrations/
+ag -g action.*notification db/migrations/
+migrate
+journal
+./sql migration:create --name add-agent-to-chatbot-messages
+migrate
+vim lib/services/chatbot-websockets.js 
+k
+gs
+ga db/
+ga lib/models/
+gcm "Adds agentName and log properties to ChatbotMessages"
+gs
+ga assets/ lib/services/
+gcm "Updates chatbot logic to include log and agentName properties"
+gp
+pm2 deploy ecosystem.config.js dev
+k
+k
+gs
+k
+gs
+gd lib/services/
+gd assets/
+vs
+k
+gs
+fg
+./run_api.sh 
+vs
+k
+gs
+ga lib/services/chatbot-websockets.js 
+gcm "Adds a shortcut for answering the welcome question"
+gp
+pm2 deploy ecosystem.config.js dev
+git stash
+pm2 deploy ecosystem.config.js dev
+vs
+k
+gs
+ga lib/services/
+gcm "Adds the shortcut for answer submission to all multiple choice flows"
+gp
+pm2 deploy ecosystem.config.js dev
+k
+k
+k
+vs
+git stash pop
+gs
+k
+gs
+./run_api.sh
+gs
+gd assets/
+k
+gs
+ga assets/
+gcm "Updates chat questionnaires"
+k
+gs
+gd lib/
+gs
+ga lib/services/
+gcm "Updates the check-in flow to advance through the available questionnaires"
+k
+gs
+gp
+pm2 deploy ecosystem.config.js dev
+gs
+k
+gs
+ga assets/
+gcm "Removes 'How is Tink?' from the welcome options"
+gp
+pm2 deploy ecosystem.config.js dev
+gs
+ga assets/
+gcm "Fixes a bug in the questionnaires"
+gp
+pm2 deploy ecosystem.config.js dev
+vim try.js 
+./node_modules/.bin/inspect try.js 
+k
+vs
+k
+gs
+ga assets/
+gcm "Fixes the phq questions"
+gp
+pm2 deploy ecosystem.config.js dev
+j location
+ls
+vs
+vim Vagrantfile 
+vim deploy/playbook.
+k
+vsh
+vupp
+vim deploy/playbook.yml 
+open .
+ls ~/.ssh/id_rsa.pub 
+open .
+vupp
+k
+vupp
+cp ~/.ssh/id_rsa.pub ralphs_files/
+vupp
+ls ralphs_files/
+vupp
+vsh
+ls
+vupp
+vsh
+vupp
+ls
+ls ralphs_files/
+vupp
+vdestro6
+vdestroy
+vup
+vupp
+vsh
+vdestroy
+vupp
+echo $(cat ~/.ssh/id_rsa.pub )
+echo $(cat ~/.ssh/id_rsa.pub )
+$(cat ~/.ssh/id_rsa.pub )
+cat ~/.ssh/id_rsa.pub 
+vupp
+cat ralphs_files/ralphs_public_key.pub 
+cat ralphs_files/id_rsa.pub 
+vupp
+vsh
+vs
+k
+gs
+gd lib/
+gs
+ga lib/services/
+ga assets/
+gcm "Updates chat questionnaires and check-in flow"
+gp
+pm2 deploy ecosystem.config.js dev
+vim lib/services/chatbot-websockets.js 
+ga lib/services/chatbot-websockets.js
+gcm "Makes questionnaire questions a property on an object"
+gp
+pm2 deploy ecosystem.config.js dev
+k
+./run_api.sh 
+k
+./run_api.sh 
+ssh aidan@localhost
+ssh vagrant@localhost
+vim assets/chat/questionnaires/phq9.js 
+k
+gs
+ga assets/
+gcm "Adds an id property to all question answers"
+gp
+pm2 deploy ecosystem.config.js dev
+vupp
+ls
+ls test/
+k
+vupp
+./run_api.sh 
+vim lib/services/chatbot-websockets.js 
+k
+gs
+ga assets/
+gcm "Fixes a typo"
+gp
+pm2 deploy ecosystem.config.js dev
+pfDev
+vupp
+whoami
+vupp
+ssh aidan@localhost
+ssh -p 2222 aidan@localhost
+vupp
+ls
+ls deploy/
+ls deploy/templates/derp 
+cat deploy/templates/derp 
+vupp
+pwd
+vupp
+ssh -p 2222 aidan@localhost
+vupp
+ssh root@localhost
+ssh -p 2222 root@localhost
+man ssh
+ssh -p 2222 root@localhost
+vsh
+vdestroy
+vup
+ssh -p 222 root@localhost
+ssh -p 2222 root@localhost
+vim /Users/aidanmiles/.ssh/known_hosts 
+ssh -p 2222 root@localhost
+hag ssh.*simple
+mysqld
+sqldn
+pfDev
+ssh root@demoapp.simplepractice-dev.com
+ls ralphs_files/
+vupp
+vim etc/nginx/api.iexhale.com.conf 
+vs
+k
+gs
+ga lib/services/
+gcm "Bugfixes in the chatbot service:
+"
+gp
+k
+gs
+pm2 deploy ecosystem.config.js dev
+vim lib/services/chatbot-websockets.js 
+k
+gs
+./run_api.sh 
+vupp
+vim lib/services/chatbot-websockets.js 
+k
+gs
+ga lib/services/ assets/
+gcm "Updates the chatbot to welcome users with the welcome question"
+gp
+pm2 deploy ecosystem.config.js dev
+ssh -p aidan@localhost
+ls ~/.rbenv/versions/
+la ~/.rbenv/versions/
+rbenv
+rbenv versions
+rbenv install 2.4
+ruby --version
+ssh -p 2222 aidan@localhost
+vupp
+rbenv install 2.2.4
+vsh
+vupp
+ssh -p 2222 aidan@localhost
+vupp
+ssh -p 2222 aidan@localhost
+vsh
+vupp
+vim lib/services/chatbot-websockets.js 
+k
+gs
+./scripts/reset_db.sh 9-27 
+migrate
+./scripts/reset_db.sh 9-27 
+./run_api.sh 
+vim lib/services/chatbot-websockets.js 
+gs
+ag debugger lib/services/
+vim lib/services/chatbot-websockets.js 
+ga lib/services/chatbot-websockets.js
+gcm "Bugfix for new users"
+gp
+pm2 deploy ecosystem.config.js dev
+k
+j ios
+gs
+git stash
+gf
+gpu
+gco feature/pgt_chat_and_exercises
+./run_api.sh 
+vim lib/services/chatbot-websockets.js 
+k
+gs
+ga assets/ lib/services/
+gs
+git reset
+gs
+vim assets/chat/greetings/firstTimeWelcome.js 
+vim assets/chat/greetings/firstWelcomePrompt.js 
+vim assets/chat/greetings/firstTimeWelcome.js 
+gs
+ga assets/chat/greetings/firstTimeWelcome.js 
+gs
+gcm "updates tink intro to be a function"
+gs
+ga assets/
+gs
+gcm "Adds a different welcome prompt for first-time users"
+gs
+ga lib/services/chatbot-websockets.js 
+gcm "Lots of improvements to the chatbot intro"
+gp
+pm2 deploy ecosystem.config.js dev
+vs
+gs
+ga lib/services/
+gcm "Undoes a change to limit the welcome prompt"
+gp
+pm2 deploy ecosystem.config.js dev
+vs
+k
+gs
+ga lib/serfvi
+ga lib/services/
+gcm "Contrains the welcome prompt to only show once an hour max"
+gs
+ga assets/
+gcm "Adds mantra copy"
+gp
+pm2 deploy ecosystem.config.js dev
+vs
+k
+gs
+ga lib/services/
+gcm "Updates the chatbot service to rate limit the secondary 'welcome back' as well"
+gp
+vim assets/chat/greetings/firstTimeWelcome.js 
+gs
+ga assets/
+git reset
+gd
+gs
+ga assets/
+gcm "Updates tink intro copy"
+gp
+pm2 deploy ecosystem.config.js dev
+gs
+gd lib/
+gs
+gd
+ga lib/services/
+gcm "Fixes a bug that prevented the questionnaires from advancing correctly"
+gp
+pm2 deploy ecosystem.config.js dev
+vs
+gs
+vs
+gs
+gd
+vs
+gs
+gd assets/
+gs
+gd lib/
+gs
+ga assets/ lib/services/
+gcm "Updates answers for a questionnaire and re-enables the 'test welcome' command"
+gp
+pm2 deploy ecosystem.config.js dev
+pfDev
+./run_api.sh 
+ssh -p 2222 aidan@localhost
+vupp
+ssh -p 2222 aidan@localhost
+vupp
+rbenv --list
+rbenv install --list
+rbenv install 2.4.0
+brew update && brew upgrade ruby-buidl
+brew update && brew upgrade ruby-build
+brew doctor
+brew update
+brew doctor
+brew upgrade
+rbenv install --list
+vupp
+vim scratch
+ls ralphs_files/
+open ralphs_files/
+cd ralphs_files/
+ls
+vim demoapp.simplepractice-dev.com.csr 
+vim demoapp.simplepractice-dev_com.crt
+vim demoapp_simplepractice-dev_com.crt 
+vim demoapp_simplepractice-dev_com.ca-bundle 
+vim demoapp_simplepractice-dev_com.crt 
+vim demoapp_simplepractice-dev_com.ca-bundle 
+vim demoapp_simplepractice-dev_com.crt 
+vim demoapp_simplepractice-dev_com.ca-bundle 
+cat demoapp_simplepractice-dev_com.crt demoapp_simplepractice-dev_com.ca-bundle > demoapp_simplepractice-dev_com.chained.crt
+up
+vupp
+gem install passenger
+rbenv
+rbenv versions
+rbenv install 2.4
+rbenv install 2.4.2
+fg
+vupp
+vsh
+vdesroy
+vdestroy
+y
+vupp
+vdestroy
+vupp
+vsh
+vupp
+ssh -p 2222 aidan@localhost
+vim ~/.ssh/known_hosts 
+ssh -p 2222 aidan@localhost
+vim etc/nginx/api.iexhale.com.conf 
+ag access etc/nginx/
+vdestroy
+vupp
+vim ~/.ssh/known_hosts 
+ssh -p 2222 aidan@localhost
+vupp
+vsh
+vdestroy
+pfDev
+vupp
+vdestroy
+vupp
+vdestroy
+vupp
+vupp
+vsh
+rbenv
+rbenv versions
+rbenv local 2.4.2
+bi
+gem install bundler
+rails
+gem install rails
+bi
+be cap install
+rails -s
+rbenv versions
+rbenv which rails
+rails -s
+bi
+rbenv which bundler
+ls
+gs
+vim .gitignore 
+gs
+ls deploy/
+vim Capfile 
+mv ralphs_files/ secrets/
+vim .gitignore 
+gs
+vim scratch 
+rm scratch
+gs
+gaa .
+gcm "Hasty first commit"
+gs
+git remote add origin https://aidanhmiles@bitbucket.org/aidanhmiles/demoapp.git
+gpuom
+cd ~/.ssh/
+ls
+rm id_abohd*
+ls
+cat id_rsa.pub | pbcopy 
+cd -
+gpuom
+git remote set-url origin aidanhmiles@bitbucket.org:aidanhmiles/demoapp.git
+gpuom
+git push -u origin master
+git remote set-url origin https://aidanhmiles@bitbucket.org/aidanhmiles/demoapp.git
+gpoum
+gpuom
+git push -u origin master:master
+be cap vagrant deploy
+cat id_rsa.pub | pbcopy 
+cat ~/.ssh//id_rsa.pub | pbcopy 
+ssh -p 2222 aidan@localhost
+vim ~/.ssh/known_hosts 
+keygen aidanhmiles@gmail.com
+ssh-add ~/.ssh/deploy_user
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCsMBgzHF0ZxkczQT+g3UmH0PV0gG49fx0HW/vlJuZAmK524zstMHp9zYUsE7BHUMTORIXKfF0p/AZpzSAuq19Abom065rn2iihDP03+6viClOrCxy25TdoqHZz+bsnlaqEJwRS9H23WHR6ONcY4Spd9730i9xVxHN5mgMZql1hQRStmrTovVh54Z9fkQsM/72A9RTtaphAUIX1MxrOdWdvIg3WkPaYUbRqPcMRyg3wteJYLjijXA8caGt7QngztEDZGhO07GX7sLywbfNpQBmGN5ybvxKSQuGu7UXOXlbwsTkwep1ywZHra7foUfA0DdRtyOLp5pT1w19+ZxToQUQqNULsvoHog2s1OFmljH+T5wXJQqMYsdzfpdX+iHQ9OkQlv/gwdCWnk2DtI5vwrhSdrj0YkKEhO/teOtcTE382ZxzGcidNg/+J7wD5xVgSmMGWLsJXvfyw1qWRbdVnAZ2Yf+aUFN1ma7Dd9D3MV+ORdr1eTSG00Cwa0uTdFzfGJttcppDl9Dj6gQwXt+fQrB97V1qOlfI3TI/G1YKsRP/wz2F8rS5CqG+UvluCfwW4NoY5/hWjIQNNcBPiJlBC3RiO60ExMmBJp/NqxAjb8Nzt5057yG6l/cs0nSFWmeS6qd6zCZSw3O1+iTnB0PWxUSC4GwabUAB6RdWldNpNAeBAfw== itsthejazzkid@gmail.com
+man ssh-keygen
+ls ~/.ssh/
+ssh-keygen -t rsa -b 4096 -C "aidanhmiles@gmail.com"
+ls ~/.ssh/
+ssh-keygen -t rsa -b 4096 -C "aidanhmiles@gmail.com"
+cat ~/.ssh/deploy_user.pub | pbcopy
+ssh-add ~/.ssh/deploy_user
+be cap vagrant deploy
+vup
+ssh -p 2222 aidan@localhost
+vupp
+k
+be cap vagrant deploy
+rbenv versions
+rbenv versions
+k
+rbenv versions
+k
+rbenv versions
+rbenv which bundler
+k
+be cap vagrant deploy
+rbenv local 2.4.2
+be cap vagrant deploy
+bundler
+gem install bundler --pre
+be cap vagrant deploy
+which bundler
+k
+be cap vagrant deploy
+gs
+rbenv local 2.4.2
+la
+be cap vagrant deploy
+k
+rbenv
+rbenv which bundler
+be cap vagrant deploy
+bi
+be cap vagrant deploy
+rbenv --help
+rbenv local
+ls .ruby-version 
+gs
+ga .ruby-version 
+gs
+rm deploy_user*
+ls
+gs
+ssh -p 2222 aidan@localhost
+vsh
+vupp
+ssh -p 2222 aidan@localhost
+vupp
+be cap vagrant deploy
+ssh -p 2222 aidan@localhost
+be cap vagrant deploy
+bundle
+which bundle
+ssh -p 2222 aidan@localhost
+vupp
+be cap vagrant deploy
+ssh -p 2222 aidan@localhost
+vupp
+ssh -p 2222 aidan@localhost
+be cap vagrant deploy
+ssh -p 2222 aidan@localhost
+be cap vagrant deploy
+k
+be cap vagrant deploy
+/usr/bin/env 
+be cap vagrant deploy
+be cap vagrant bundler:install
+be cap vagrant deploy
+ssh -p 2222 aidan@localhost
+ssh -p 2222 aidan@localhost < 'ls /home/aidan/.rbenv/shims/bundle'
+ssh -p 2222 aidan@localhost < ls /home/aidan/.rbenv/shims/bundle
+ssh -p 2222 aidan@localhost < <(ls /home/aidan/.rbenv/shims/bundle)
+ssh -p 2222 aidan@localhost < <(/usr/bin/env)
+ssh -p 2222 aidan@localhost < <(echo /usr/bin/env)
+ssh -p 2222 aidan@localhost < <(ls /home/aidan/.rbenv/shims)
+ssh -p 2222 aidan@localhost < <(ls /home/aidan/.rbenv/)
+ssh -p 2222 aidan@localhost < <(ls /home)
+ssh -p 2222 aidan@localhost < <(ls /home/aidan)
+ssh -p 2222 aidan@localhost < <(echo "$HOME")
+ssh -p 2222 aidan@localhost 'ls /home/aidan'
+ssh -p 2222 aidan@localhost 'ls /home/aidan/.rbenv'
+ssh -p 2222 aidan@localhost 'ls /home/aidan/.rbenv/shims'
+echo  'ls /home/aidan/.rbenv/shims' | ssh -p 2222 aidan@localhost
+echo  'echo \$PATH' | ssh -p 2222 aidan@localhost
+echo  'echo $PATH' | ssh -p 2222 aidan@localhost
+ ssh -p 2222 aidan@localhost
+vdestroy
+hag ssh
+k
+hag ssh
+echo  'ls /home/aidan/.rbenv/shims' | ssh -p 2222 aidan@localhost
+vupp
+vim ~/.ssh/known_hosts 
+echo  'ls /home/aidan/.rbenv/shims' | ssh -p 2222 aidan@localhost
+rbenv --help
+rbenv global 2.4.2
+ls ~/.rbenv/
+cat ~/.rbenv/version
+ssh -p 2222 aidan@localhost
+echo  'ls /home/aidan/.rbenv/shims' | ssh -p 2222 aidan@localhost
+cat ~/.rbenv/version
+ssh -p 2222 aidan@localhost
+echo  'cat /home/aidan/.rbenv/version' | ssh -p 2222 aidan@localhost
+echo  'ls /home/aidan/.rbenv/shims' | ssh -p 2222 aidan@localhost
+vupp
+be cap vagrant deploy
+gs
+gaa .
+gcm "Adds updates to fix Capistrano deployment"
+gp
+be cap vagrant deploy
+bi
+gs
+ga Gemfile.lock 
+gcm "adds Gemfile.lock"
+gp
+be cap vagrant deploy
+ssh -p 2222 aidan@localhost
+be cap vagrant deploy:check
+git mv deploy/templates/passenger.conf deploy/templates/passenger.conf.j2
+gs
+pfDev
+up
+vsh
+vdestroy
+k
+k
+vupp
+vsh
+ssh -p 2222 aidan@localhost
+vim ~/.ssh/known_hosts 
+ssh -p 2222 aidan@localhost
+be cap vagrant deploy
+vim .gitignore 
+gs
+gaa .
+gcm "Updates to maybe fix Passenger"
+gp
+vim Passengerfile.json
+bi
+vim config/secrets.yml 
+gs
+gaa .
+gcm "More passenger fixes, trying standalone mode now"
+gp
+be cap vagrant deploy
+be cap vagrant deploy:restart
+vim deploy/playbook.yml 
+gs
+ssh -p 2222 aidan@localhost
+k
+vim iexhale.com/.ebextensions/nginx.config 
+gs
+cd api/
+k
+fg
+k
+gs
+gpu
+gco master
+gpu
+hag merge
+git merge --squash dev
+vim lib/services/chatbot-websockets.js 
+gco dev lib/services/chatbot-websockets.js 
+gs
+gco dev lib/middleware/websockets.js 
+gs
+gcm "Merged in chatbot-mvp-support (pull request #241)
+
+"
+gp
+./scripts/get_db_dump.sh prod
+gco dev
+vim lib/services/chatbot-websockets.js 
+gs
+ga lib/services/
+gcm "Updates the chatbot to default to dev agent"
+gp
+pm2 deploy ecosystem.config.js dev
+pfDev
+gco master
+git cherry-pick ec052ea5
+gp
+pm2 deploy ecosystem.config.js prod
+glg
+gs
+vim etc/server.js 
+pm2 deploy ecosystem.config.js prod
+pfDev
+sshProd
+vim lib/services/chatbot-websockets.js 
+k
+pfProd
+vim etc/server.js 
+pfProd
+pfProd
+gco dev
+ag server.log .
+pm2 logs cron
+pm2 logs --lines 1000 cron
+pfDev
+./run_api.sh 
+gs
+gd assets/
+gco assets/
+gs
+ga lib/services/chatbot-websockets.js 
+gcm "Adds a bunch of logging to the chatbot service"
+gp
+./run_api.sh 
+gs
+ga lib/services/chatbot-websockets.js 
+gcm "Fixes bugs in new logging"
+gp
+pm2 deploy ecosystem.config.js dev
+pfDev
+./run_api.sh 
+gs
+gd lib/services/
+gs
+rm lib/helpers/set-env.js 
+gs
+ga lib/
+gcm "Starts saving check-in questions"
+gp
+pm2 deploy ecosystem.config.js dev
+pfDev
+vim lib/services/chatbot-websockets.js 
+gs
+gd
+gs
+ga lib/
+gcm "Fixes messaging delay to allow tink is typing event"
+gp
+pm2 deploy ecosystem.config.js dev
+vs
+gs
+gd lib/
+gs
+ga lib/
+gcm "Addresses warnings by returning promises from functions where they're created"
+gs
+gp
+pfProd
+k
+./run_api.sh 
+gs
+gd lib/
+ga liv
+ga lib/
+vs
+gs
+gcm "Updates error handling"
+gp
+pm2 deploy ecosystem.config.js dev
+pfProd
+vs
+gs
+gd lib/
+gd
+gcm "Refactors logic for welcoming users"
+gs
+ga lib/
+gcm "Refactors logic for welcoming users"
+gp
+vs
+kgs
+gs
+gd
+vs
+gs
+gd
+gs
+ga lib/
+gcm "More error logging"
+gp
+pm2 deploy ecosystem.config.js dev
+nis retry-as-promised
+./run_api.sh 
+vs
+fg
+gs
+gd
+gs
+ga package.json 
+gcm "Adds the Sequelize guy's retry-as-promised module for dealing with deadlocks maybe"
+gs
+gd lib/
+gs
+ga lib/
+gcm "Adds return statements to places where promises were being created'
+"
+gp
+pm2 deploy ecosystem.config.js dev
+vs
+gs
+ga lib/
+gcm "Adds more error output"
+gp
+pm2 deploy ecosystem.config.js dev
+pfDev
+sqldn
+vs
+k
+vdestroy
+j services
+vdestroy
+j api
+k
+gs
+k
+k
+gbr
+gcob new-chatbot-models
+gpo -u new-chatbot-models
+k
+gco dev
+pfProd
+pfDev
+vim lib/services/chatbot-websockets.js 
+./run_api.sh 
+fg
+k
+gs
+gd assets/
+ga assets/
+vim assets/chat/exercises/shiatsu.js 
+gcm "Adds a blank shiatsu exercise and updates all exercises with a blank url property"
+gs
+ga lib/services/cache.js 
+ga lib/services/index.js 
+gcm "Adds a cache service (finally)"
+gs
+gd lib/
+gs
+ga lib/services/
+gcm "Updates the chatbot service with new actions, refactoring"
+gp
+pm2 deploy ecosystem.config.js dev
+gs
+gd li
+gd lib/
+gs
+ga lib/services/
+gcm "Adds jumpTo method"
+gp
+pm2 deploy ecosystem.config.js dev
+./run_api.sh 
+vs
+k
+gs
+node
+gs
+gd lib/
+ga lib/
+gcm "Fixes two bugs with the welcome question and an exercise"
+gp
+pm2 deploy ecosystem.config.js dev
+j ios
+gco develop
+git stash pop
+vim iExhale/iExhale/iExhale.swift 
+gs
+git reset
+git stash show -p
+gs
+git stash pop
+gd
+gco -- .
+gs
+git stash pop
+vim iExhale/iExhale/iExhale.swift 
+git reset
+gs
+git stash
+git stash show -p stash@{1}
+vim iExhale/iExhale/iExhale.swift 
+git stash pop stash@{1}
+gs
+gco -- .
+git stash show -p stash@{1}
+git stash drop
+whatsmyip
+vim iExhale/iExhale/iExhale.swift 
+gd
+vim scripts/get_logs.sh 
+./scripts/get_logs.sh 
+./scripts/get_logs.sh 1000
+vim scripts/get_logs.sh 
+vim scripts/get_logs.sh dev 1000
+./scripts/get_logs.sh dev 1000
+pfDev
+k
+gs
+gd lib/
+gco -- .
+gs
+gco master
+gpu
+git merge --squash dev
+gco dev lib/services/chatbot-websockets.js assets/chat/exercises/
+gs
+gcm "Merges PR #245 manually due to conflicts"
+gp
+gs
+pm2 deploy ecosystem.config.js prod
+vim etc/server.dist.js 
+gpu
+gp
+gco dev
+vs
+k
+gs
+gd
+pfProd
+gs
+git stash
+pm2 deploy ecosystem.config.js prod
 git stash pop
 k
 gs
 gd
+gs
+ga lib/
+gcm "Fixes issue with feed jumping"
+gp
+pm2 deploy ecosystem.config.js dev
+vs
+git stash
+gs
+gpu
 k
 gs
-gd paths.js 
+gd
+ga as
+gd
+gd assets/
+ga assets/
+gcm "Updates tink intro copy"
+gs
+gd
+gco gd
+gco lib/
+gs
+glg
+git log
+gs
+gp
+gco ec052ea
+vim lib/services/chatbot-websockets.js 
+k
+gco dev
 k
 gs
-k
-gb
-gbr
-vim docker-compose.yml 
-k
-ls
-vim Dockerfile-dev 
-vim Dockerfile-deploy 
-vim Dockerfile-dev 
-k
-gs
-k
-ls
-vim paths.js 
-k
-ls
-vim gulptasks/gulpfile.js 
-vim server/index.js 
-vim package.json 
-k
-gs
-k
-ls
-cd cll
-cd client/
-ls
-cd src/
-ls
-cl js/
-vim app.js 
-gs
-k
-ls
-vim config/app_config.js 
-k
-ls
-gs
-vim .nvmrc
-up
-jc js
-j star
-cd client/src/js/
-rm .nvmrc 
-upupup
-cd client/
-j dotf
-vim bash_prompt.sh 
-k
-j start
-gs
-ls
-cd client/
-ag Proj .
-k
-ag Proj src/
-ag Win src/
-hag sed
-hag sed
-sed -i '' -e 's/WinwardWeb/NgStarter/g' 
-sed -i '' -e 's/(WinwardWeb|ProjectName)/NgStarter/g' 
-sed -i '' -e 's/(WinwardWeb|ProjectName)/NgStarter/g' src/
-sed -i '' -e 's/(WinwardWeb|ProjectName)/NgStarter/g' src/**/*.js
-ag Win src/
-k
-hag sed
-hag sed
-sed -i '' -e 's/(WinwardWeb|ProjectName)/NgStarter/g' src/**/*.js
-sed -i '' -e 's/WinwardWeb/NgStarter/g' src/**/*.js
-ag Win src/
-sed -i '' -e 's/WinwardWeb/NgStarter/g' src/js/**/*.js
-ag Win src/js/
-ag Proj src/js/
-sed -i '' -e 's/ProjectName/NgStarter/g' src/js/**/*.js
-k
-ls
-i
-up
-vim paths.js 
-k
-ls
-vim db/seeds/development.js 
-up
-ag Win ser
-cd starter-app/
-ag Win server/
-vim server/api/swagger.yaml 
-k
-ls
-vim docker-compose.yml 
-vim Dock*
-vim docker-compose.yml 
-vim db/config.
-vim db/config.json 
-ag winw server/
-ag winw client/
-k
-ag winw client/src/
-dcup
-dcdn
-dcup
-vp dock*
-dcdn
-./gulp
-vim gulptasks/gulpfile.js
-ag Proj client/src/
-hag sed
-sed -i '' -e 's/ProjectName/NgStarter/g' client/src/
-sed -i '' -e 's/ProjectName/NgStarter/g' client/src/**/*
-ag Proj client/src/
-k
-vim client/src/js/config/app_config.js 
-vim client/src/js/app.js 
-vim gulptasks/webpack.js 
-k
-ls
-rm -rf .git
-k
-ls
-gs
-git init
-vim README.md 
-k
-git remote add origin git@github.com:itsthejazzkid/starter-app.git
-gcob NEAM
-gpo -u NEAM
-gpo -u NEAM:NEAM
-ga README.md 
-gco master
-gbr
-k
-gs
-gaa .
-k
-gcm "Initial commit for NEAM stack"
-k
-gpo -u NEAM:NEAM
-./gulp
-dcup
-j kit
+gco version/3.8.7
 gf
+gpu
+gco version/3.8.7
+k
+hag proj
+hag pbx
+k
+git stash pop
+gd
+k
+gs
+gd
+whatsmyip
+pfProd
+ag -g client db/migrations/
+vim db/migrations/20170823172937-add-client-for-ios-3.7.8.js
+./sql migration:create --name add-clients-for-3.8.x
+./run_api.sh 
+vs
+k
+gs
+gd
+vs
+k
+gs
+ga lib/
+gs
+gcm "disables the cache service, starts versioning in the chatbot service"
+gs
+ga db/
+gcm "Adds a few more client tokens"
+gp
+ga run_api.sh 
+gcm "Tweaks the run_api script"
+gp
+pm2 deploy ecosystem.config.js dev
+vim
+k
+ga
+k
+gs
+ga db/
+gcm "Adjusts a migration for new client ids"
+gp
+node
+pm2 deploy ecosystem.config.js dev
+vim
+k
+gs
+gd
+ga db
+gcm "Adjusts a migration for new client ids"
+gp
+pm2 deploy ecosystem.config.js dev
+k
+gs
+gco master
+gd dev
+vs
+k
+ag debugger lib/
+vim lib/controllers/user.js 
+gco dev
+ag debugger lib/
+gd master
+k
+gs
+gco master
+git merge dev
+vim lib/services/index.js 
+gco dev lib/services/index.js lib/services/chatbot-websockets.js lib/services/cache.js lib/controllers/user.js assets/chat/greetings/firstTimeWelcome.js 
+k
+gs
+gcm "Merged in updates for chatbot testing"
+gp
+pm2 deploy ecosystem.config.js prod
+k
+export NODE_ENV='production'
+./scripts/get_db_dump.sh prod
+pfDev
+./scripts/reset_db.sh 10-18 prod
+./run_api.sh 
+echo $NODE_ENV 
+k
+gs
+gd
+k
+./run_api.sh 
+gs
+gd
+vim iExhale/iExhale/iExhale.swift 
+./run_api.sh 
+k
+gs
+git stash
+vim etc/database.json 
+k
+sqldn
+mysqld
+j api
+pfProd
+ssh-add ~/.ssh/id_bb_rsa
+vs
+k
+node
+./run_api.sh k
+k
+gco dev
+k
+gs
+gd
+gs
+ga lib/services/
+gcm "Refactors messages into one spot"
+./run_api.sh 
+k
+gs
+gd lib/
+gs
+ga lib/services/user.js 
+gcm "Fixes user service to not return empty messages"
+gp
+pm2 deploy ecosystem.config.js dev
+k
+gs
+pfProd
+pm2 deploy ecosystem.config.js dev
+k
+gs
+gd
+gs
+git stash
+pm2 deploy ecosystem.config.js dev
+k
+gs
+gd
+git stash show -p
+gs
+gco -- lib/
+git stash pop
+gs
+gd lib/
+gs
+ga lib/services/
+gcm "Refactors sendbotmessage method to delegate to the queue method, adds splitting on pipe chars"
+gp
+pm2 deploy ecosystem.config.js dev
+pfDev
+vs
+gs
+gd lib/
+vs
+k
+gs
+ga lib/services/
+gcm "Fixes bug in botMessage method"
+gp
+pm2 deploy ecosystem.config.js dev
+node
+pfDev
+k
+k
+vs
+gs
+gd
+gs
+gd
+k
+ga assets/
+gcm "Adds versioning to the exercises"
+k
+gs
+gd
+qgs
+ga lib/
+gcm "Re-adds prod agent to list of available agents"
+gp
+pm2 deploy ecosystem.config.js dev
+gcob save-chat-questions
+gpo -u save-chat-questions
+./sql migration:create --name create-user-chat-exercises
+ag env lib/
+k
+vs
+k
+gs
+gd lib/
+gs
+gco dev
+k
+gs
+gd lib/
+gs
+ga lib/
+gcm "Updates chatbot service to default to env-specific agent"
+gp
+pm2 deploy ecosystem.config.js dev
+vs
+k
+gs
+ga lib/services/
+gcm "Limits the default number of messages returned to 500"
+gp
+pm2 deploy ecosystem.config.js dev
+pm2 deploy ecosystem.config.js prod
+pfDev
+pfProd
+k
+gs
 gbr
-gco kitu-dev
-vim Dockerrun.aws.json 
-vim docker-compose.yml 
-ls Dock*
-vim .ebignore 
-vim Dockerfile
-vim db/seeds/development.js 
-dcup
-vim db/seeds/development.js 
-vim gulp-tasks/watchers.js 
-vim gulp-tasks/task-helpers.js 
-k
-j work
-ls gantz.co/
-ls justanothercms/
-/Applications/_Z2 ; exit;
-j kit
-ag node-sass .
-whois
-whois aidanmil.es
-k
-vim db/config.json 
-j its
-ls
-gco start
-j start
-gcob
-gcob webpack-angular-static
-ls
-git rm dock*
-git rm Dock*
-k
-ls
-rm -rf server/
-ga server/
-git rm sqlz 
-git rm test/server/
-git rm -r test/server/
-k
-ls
-git rm -r db/
-k
-ls
-ls gulptasks/
-cd gulptasks/
-git rm backend-tests.js server.js 
-k
-ls
-up
-ls
-gcm "removes all backend files"
+gco new-chatbot-models
+gs
+./sql migration:create --name create-user-chat-questionnaires
+gs
+ga db/
+gcm "Adds blank migrations"
+gp
+gco dev
+gs
+ag -g generic db/
+scratch 
 k
 gs
-ls
-pwd
-j its
-ls
-cp -R ~/Documents/work/starter-app/{gulp,gulptasks} .
-ls
-vim package.json 
-cp R ~/Documents/work/starter-app/package.json .
-cp ~/Documents/work/starter-app/package.json .
-cp ~/Documents/work/starter-app/paths.js .
-cp -R ~/Documents/work/starter-app/client .
-ls client/
-k
-ls
-vim index.html 
-ls
-ls css/
-cp -R css/* client/src/scss/
-ls
-ls css/
-git rm -r css/
-ls
-k
-ls
-ls assets/
-git mv assets/ client/src/
-ls
-vim package.json 
-ls
-ls js/
-git rm js/es6-promise-2.0.0.min.js 
-mv js/ client/src/js/
-cd client/src/js/
-ls
-mv js/* .
-rm -r js/
-ls
-up
+vs
+fg
 gs
-vim .gitignore 
+k
+fg
 k
 gs
-vim .git
+gd lib/
+vs
 k
-ls
-vim gulpfile.js 
-git rm gulpfile.js 
-vim gulp
+gs
+ga lib/ assets/
+gcm "Fixes issues with exercises"
+gp
+pm2 deploy ecosystem.config.js dev
 k
-ls
-mv index.html client/src/templates/
-whois fridaynight.football
-whois http://fridaynight.football
-which aws
-aws --version
-pip help upgrade
-pip help update
-pip
-pip show aws-cli
-pip show aws
-pip show
-pip --version
-pyenv
-brew update
-brew doctor
-brew install pyenv
+k
+gs
+gd lib/*/user.js
+ga lib/*/user.js
+gcm "Fixes a bug with user chat history"
+gp
+k
+gs
+gd lib/
+pm2 deploy ecosystem.config.js dev
+git stash
+pm2 deploy ecosystem.config.js dev
+git stash pop
+k
+gs
+git stash
+pfDev
+k
+gs
+gco master
+git merge dev --squash
+k
+gs
+gcm "Merges in chatbot fixes from dev for testing"
+gp
+pm2 deploy ecosystem.config.js prod
+gp
+gpu --rebase
+gco dev
+gco dev lib/services/user.js lib/services/chatbot-websockets.js
+gs
+gcm "Merges in chatbot fixes from dev for testing"
+grb --continue
+grb --skip
+gp
+gd dev
+pm2 deploy ecosystem.config.js prod
+gco dev
+vs
+./run_api.sh 
+gs
+gd lib/
+ga lib/
+gcm "Fixes agent switching bug"
+gp
+pm2 deploy ecosystem.config.js dev
+vs
+k
+mysqld
+sqldn
+pfProd
+pfDev
+ssh-add ~/.ssh/id_bb_rsa
+j api
+open logs.txt
+vim chatmsgs.txt
+open .
+pfDev
+open chatmsgs.txt 
+open .
+gs
+gd
+gs
+vim lib/services/chatbot-websockets.js 
+pfDev
+pfProd
+gs
+gd
+gs
+git stash
+pm2 deploy ecosystem.config.js dev
+j api
+gd master
+git stash pop
+git stash show -p
+git stash drop
 bashp
-bashrc
+gst show
 k
-pyenv install 3
-pyenv install 3.5.2
-echo $PATH
-pyenv list
-pyenv
-pyenv global
-pyenv versions
-vim ~/.pyenv/versions/
+pfProd
 k
-ls -l /usr/local/bin | grep '../Library/Frameworks/Python.framework/Versions/2.7'
-ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions/2.7'
-ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions'
-bashrc
-bashp
-j dot
-ag python .
-brew doctor
-rm -rf /Library/Frameworks/Python.framework
-sudo rm -rf /Library/Frameworks/Python.framework
-sudo rm -rf /Applications/Python\ 3.5/
-ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions'
-ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions' | awk '{print $9}' | tr -d @ | xargs rm
-ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions'
-sudo ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions' | awk '{print $9}' | tr -d @ | xargs rm
-ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions' | awk '{print $9}' | tr -d @
-rm /usr/local/bin/2to3
-ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions' | awk '{print $9}' | tr -d @
-ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions' | awk '{print $9}' | tr -d @ | xargs echo
-ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions' | awk '{print $9}' | tr -d @ | xargs rm
-cd /usr/local/bin && ls -l /usr/local/bin | grep 'Library/Frameworks/Python.framework/Versions' | awk '{print $9}' | tr -d @ | xargs rm
-cd
+gs
+git stash
+pm2 deploy ecosystem.config.js prod
+pfDev
+pfProd
+pfDev
+gst
+pm2 deploy ecosystem.config.js dev
+pm2 deploy ecosystem.config.js prod
+node
 k
-j dotf
-ag Python .
+gst pop
+vs
+gs
+gd lib/
+gs
+ga lib/
+gcm "First draft of context support"
+gp
+pm2 deploy ecosystem.config.js dev
+j ios
+gco version/3.8.8
+gf
+gco develop
+gpu
+gst show -p
+whatsmyip
+gst pop
 k
-echo $PATH
-cd
+ls node_modules/lodash/lodash.js 
+vim node_modules/lodash/lodash.js
+node
+gs
+git stash show -p
+gst drop
+k
+gd
+gs
+ga lib/services/
+gcm "Lots of updates to hopefully support contexts"
+gp
+pm2 deploy ecosystem.config.js dev
+open aaron.txt
+vim aaron.txt
+open .
+k
+gs
+gd
+ga lib/
+gcm "More chatbot fixes"
+gp
+pm2 deploy ecosystem.config.js dev
+pfProd
+k
+gs
+gd
+gs
+ga lib/
+ga assets/
+gcm "copy changes, and adds an exercise"
+gp
+pm2 deploy ecosystem.config.js dev
+pfDev
+node
+vs
+k
+gs
+gd
+gs
+ga lib/
+gcm "Refactors welcome flows for bot, adds contexts for secondary welcome question"
+gp
+pm2 deploy ecosystem.config.js dev
+gs
+gd
+gs
+gd
+gs
+ga lib/services/
+gcm "Updates the welcome flows"
+gp
+pm2 deploy ecosystem.config.js dev
+k
+gs
+gd master
+gs
+./run_api.sh 
+mysqld
+sqldn
+j api
+vim lib/services/chatbot-websockets.js 
+gs
+ga lib/services/
+gcm "Adds a small randomness to the welcome back flow"
+gp
+pm2 deploy ecosystem.config.js dev
+gco master
+gpu
+git merge --squash dev
+gs
+gco dev lib/services/chatbot-websockets.js 
+gs
+gcm "Manually merges PR #247"
+gp
+pm2 deploy ecosystem.config.js prod
+node
+sqldn
+mysqld
+pfProd
+j api
 ls
-man ag
-ag --depth 1 PATH .
-ag --depth 1 Python .
-k
-ag --depth 2 Python .
-k
-ag "Library/Frameworks/Python.framework/Versions" . --depth 3
-ag --depth 3 "Library/Frameworks/Python.framework/Versions" .
-ag --depth 2 "Library/Frameworks/Python.framework/Versions" .
-ag -a --depth 2 "Library/Frameworks/Python.framework/Versions" .
-bashrc
-echo $PATH
-brew doctor
-cd
-la
-pyenv install 3.5.2
-ag --depth 1 -a Python .
-ag --depth 1 -al Python .
-#ag --depth 1 -al Python .
-man ag
-vim .adn_locals 
-k
-ag -g --depth 3 Python /Library/
-ag -g --depth 2 Python /Library/
-ag -g --depth 1 Python /Library/
-k
-pyenv list
-pyenv
-pyenv versions
-pyenv which
-which pyenv
-pyenv global
-k
-k
-pyenv uninstall 3.5
-pyenv install 3.5
-brew update
-brew upgrade pyenv
-pyenv install 3.5.2
-xcode-select --install
 gs
-mv client/src/templates/index.html client/src/
-git mv client/src/index.html client/src/templates/
-k
-pyenv install 3.5.2
-vim .aws/credentials 
-pyenv install --list
-k
-which pip
-pyenv
-pyenv verisons
-pyenv versions
-python global 3.5.2
-pyenv global 3.5.2
-k
-vim .pyenv/version
-pyenv versions
-pyenv use system
-pip install awscli
-pip install --upgrade pip
-ls -l ~/Library/Caches/
-man chown
-whoami
-chown ADN ~/Library/Caches/pip/
-sudo chown ADN ~/Library/Caches/pip/
-ls -l ~/Library/Caches/
-k
-j its
-gs
-gcob webpack
 k
 gs
-gcm "webpack: moves assets into client/src/assets, moves css into client/src/scss, removes gulpfile"
+vim lib/services/chatbot-websockets.js 
 k
 gs
-ga index.html client/src/index.html 
+gco dev
+vim lib/services/chatbot-websockets.js 
+gd master
+gco master
+pfProd
+pm2 deploy ecosystem.config.js prod
+pfDev
+pfProd
+j api
+gco dev
+pfProd
+ssh-add ~/.ssh/id_bb_rsa
+ag case queries/
+vim queries/all_feelings.sql 
+k
+k
+ag -g generic db/migrations/
+pfProd
+gs
+k
+gbr
+gcob tnotifs
+gpo -u tnotifs:tink-notifications
+./sql migration:create --name add-tink-notifications
+gs
+gd li
+gd lib/
+gco lib/services/usernotification.js
+gco dev
+vs
 k
 gs
-git mv client/src/index.html client/src/templates/
-k
-gs
+ga assets/
+git reset
+git reset --soft HEAD~1
+gd
 git reset
 k
 gs
-ls client/src/vendor/
-vim client/src/vendor/angular-swagger-client.js 
-k
-ls
-cd client/src/templates/
-ls
-git mv index.html main.html
-mv index.html main.html
-up
-ls
-cd src/js/
-ls
-vp app.js hire-me.js 
-gm hire-me.*
-rm hire-me.*
-rm spinner.js 
-rm velocity.min.js 
-k
-ls
-vim app.js 
-hag sed
-k
-upup
-up
-sed -i '' -e 's/NgStarter/aidanmil\.es/g' client/src/**/*
-sed -i '' -e 's/NgStarter/aidanmil.es/g' client/src/**/*
-ag NgStarter client/src/**/*
-sed -i '' -e 's/NgStarter/aidanmil.es/g' client/src/**/*
-sed -i '' -e 's/NgStarter/aidanmil\.es/g' client/src/**/*
-sed -i '' -e 's/NgStarter/aidanmil\\.es/g' client/src/**/*
-sed -i '' -e 's/NgStarter/aidanmil\\\.es/g' client/src/**/*
-hag sed
-k
-cd client/src/js/
-ls
-ls config/
-git rm config/translate_catalog.js 
-ls directives/
-ls services/
-cd services/
-up
-git rm services/*
-up
-git rm services/*
-cd js/
-ls services/
-rm services/*
-k
-ls
-ls routes/
-mv routes/main.routes.js
-mv routes/auth.routes.js routes/main.routes.js
-ls con
-ls controllers/
-rm controllers/*
-upupup
-cd client/
-cd src/
-hag sed
-sed -i '' -e 's/NgStarter/aidanmil\.es/g' client/src/**/*
-sed -i '' -e 's/NgStarter/aidanmil\.es/g' ./**/*
-$(LANG=C && sed -i '' -e 's/NgStarter/aidanmil\.es/g' ./**/*)
-ls -R .
-$(LANG=C && sed -i '' -e 's/NgStarter/aidanmil\.es/g' ./**/*.{js,scss})
-ag ngstart .
-ag aidanm .
-vim js/routes/main.routes.js 
-ag NgSt .
-k
-k
-$(LANG=C && sed -i '' -e 's/NgStarter/aidanmil\.es/g' ./**/*.{js,scss})
-LANG=C && sed -i '' -e 's/NgStarter/aidanmil\.es/g' ./**/*.{js,scss}
-ag NgS .
-LANG=C && sed -i '' -e 's/NgStarter/aidanmil\.es/g' js/**/*.js
-ag NgS .
-LANG=C && sed -i '' -e 's/NgStarter/aidanmil\.es/g' scss/*.scss
-k
-vim js/app.js 
-vim TODO
-k
-ls
-ls client/src/assets/
-mv client/src/assets/*.ai illustrator/
-ls client/src/assets/
-up
-cd -
-ls
-vim gulptasks/install.js 
-k
-ls
-ls gulptasks/
-k
-vim js/app.js 
-LANG=C && sed -i '' -e 's/NgStarter/aidanmil\.es/g' scss/*.scss
-sed -i '' -e 's/aidanmil\.es/aidanmil_es/g' js/**/*.js
-g aidanmil_es .
-ag aidanmil_es .
-rm js/config/translate_catalog.js 
-up
-ag aidanmil\.es .
-ag aidanmil\\\.es .
-ag aidanmil\.es .
-k
-sed -i '' -e 's/aidanmil\.es/aidanmil_es/g' js/*.js
-sed -i '' -e 's/aidanmil\.es/aidanmil_es/g' client/src/js/*.js
-ag aidanmil\\\.es
-cd client/src/scss/
-ls
-rm hire-me.css.map 
-rm spinner.*
-ls
-vim main.scss 
-k
-ls
-up
-ls cli
-ls 
-ls src/
-ls src/assets/
-vim src/scss/hire-me.css 
-k
-up
-./gulp
-vim package.json 
-npm ls minimatch
-ni
-k
-./gulp
-k
-up
-vim package.json 
-k
-vim gulptasks/install.js 
-./gulp
-ag server gulptasks/
-vim ls client/src/assets/
-ls client/src/assets/
-k
-./gulp
-rm client/src/vendor/angular-swagger-client.js 
-k
-ni
-nisd node-sass
-k
-nisd url-loader file-loader
-./gulp
-ls client/dist/
-vim client/dist/index.html 
-ag winward .
-vim package.json 
-./gulp build
-ls client/dist/
-rm client/dist/win*
-vim client/dist/aidanmil_es.bundle.js
-mv client/src/scss/hire-me.css client/src/scss/hire-me.scss
-./gulp
-ls ~/Documents/work/resources/reset.css 
-cp ~/Documents/work/resources/reset.css client/src/scss/
-mv client/src/scss/reset.css client/src/scss/reset.scss
-k
-vim client/src/scss/hire-me.scss 
-./gulp build --production
-ls client/dist/
-vim package.json 
-nisd csso-loader
-./gulp build --production
-node
-ls client/src/scss/
-ls client/dist/
-rm client/dist/*.js*
-ls client/dist/
-./gulp build --production
-open client/dist/index.html 
+vim assets/chat/greetings/welcomePrompt.js 
 k
 gs
-vim TODO
-rm TODO 
-vim package.json 
-gaa .
-k
-gcm "hasty commit; webpack can build the site correctly"
+ga assets/
+gcm "Re-enables how is tink"
 gp
-k
-man readlink
-readlink -n .
-readlink .
-readlink
-chmod u+x s3_deploy.sh 
-./s3_deploy.sh 
-k
-./s3_deploy.sh 
-open client/dist/
-open client/dist/index.html 
-./gulp build --production
-k
-./s3_deploy.sh 
-dig +recurse +trace aidanmil.es any
-ls
-git rm CNAME 
-k
-ls
-gcm "removes CNAME file"
+gpo -f
 k
 gs
-gd gulptasks/
-ga gulptasks/
+gd lib/services/
 k
 gs
-gcm "fixes webpack to only include devServer script tag when needed"
+git stash
+pm2 deploy ecosystem.config.js dev
 k
-gs
-ga s3_deploy.sh 
-gcm "adds script to deploy to s3"
 k
-gp
 gbr
-gf
-git db mobile
-git db gulp
-k
+gco tnotifs
+pfDev
+migrate
+node try.js 
+export NODE_ENV='production'
+node try.js 
+pfProd
+node try.js 
 ls
+ls scripts/
+vim scripts/memtest.js
+node try.js 
+ag -g batch .
+node scripts/memtest.js 
+./node_modules/.bin/inspect try.js 
+pfProd
+pm2 deploy ecosystem.config.js prod
+git stash
+pm2 deploy ecosystem.config.js prod
+./node_modules/.bin/inspect try.js 
+k
 gs
-gbr
+git stash show -p
+gs
+gd lib/models/
+git stash pop
+k
+gs
+git stash show -p
+./node_modules/.bin/inspect try.js 
+pfProd
+vim db/migrations/20170918152621-create-generic-journal-reminder.js
+gs
+git stash
 gco master
-git merge webpack
+vim lib/models/user.js 
+gco lib/models/user.js 
 k
+vim lib/models/user.js 
 gs
+ga lib/models/user.js 
+gcm "showChatbot is definitely defaulting to true"
 gp
+pm2 deploy ecosystem.config.js prod
 k
-up
-k
-vim s3_deploy.sh
-k
-vp paths.js gulptasks/webpack.js 
-k
-j its
-up
-mv itsthejazzkid.github.io/ aidanmil.es
-cd aidanmil
-rm -r AidanMilesPanEdChallenge*
-cd aidanmil.es/
-ls
-j start
-gbr
-cp ~/Documents/work/aidanmil.es/paths.js .
-cp ~/Documents/work/aidanmil.es/package.json .
-g
-gd
-k
-cp ~/Documents/work/aidanmil.es/gulptasks/* gulptasks/
-gd
-k
-cp ~/Documents/work/aidanmil.es/client/src/js/app.js .
-gd client/src/js/app.js 
-ls sass/
-vim sass/hire-me.scss 
-cp sass/hire-me.scss client/src/scss/
-gd
-vim client/src/scss/hire-me.scss 
-k
-ls
-ls client/src/
-ls client/src/js/
-ls -R client/src/js/
-cd client/src/js/services/
-rm authService.js feedback_service.js swagger_service.js d3Service.js httpInterceptor.js swagger_client.js utilsService.js 
-up
-ls
-ls controllers/
-rm controllers/localization_example_controller.js 
-k
-ls -R .
-rm config/translate_catalog.js 
-k
-ls
-up
-ls scss/
-vim scss/main.scss 
-k
-ls
-ls
-k
-gd
-k
-ga
-gs
-ga client/
-gcm "replaces hire-me.scss with original scss file, which i forgot about"
+gco dev
+git stash pop
 k
 gs
-gp
-ls
+git stash
+gco tnotifs
+git stash pop
 k
-ls
-up
-gs
-vim app.js 
-ls client/src/js/app.js 
-vim client/src/js/app.js
-k
-ls
-gs
-rm app.js 
-k
-ls
-vim gulptasks/gulpfile.js 
-ag Swagg .
-vp $(ag -l Swagg .)
-rm client/src/vendor/angular-swagger-client.js 
-k
-ls
-gs
-gaa .
-gcm "removes fluff, fixes gulp tasks"
-k
-dig +recurse +trace aidanmil.es any
-dig aidanmil.es.s3-website-us-west-2.amazonaws.com
-k
-./gulp
-k
-ls
-gpo -u
-gpo -u webpack-angular-static
-dig aidanmil.es
-./gulp
-k
-j start
-gbr
-up
-cp -R starter-app gantz_site
-cd gantz_site/
-k
-up
-k
-whois gantz.co
-k
-vim Gulpfile.js 
-rm Gulpfile.js 
-ls gantz.co/
-la gantz.co/
-rm -r gantz.co/
-cd gantz_site/
-ls
-rm -rf .git
-ls
-vim paths.js 
-ls
-up
-whois gantz.co
-j wor
-ls
-mv gantz_site/ gantz
-cd gulp dev:ionic
-cd gantz/
-ls
-rm client/src/templates/localization_example.html 
-hag sed
-hag sed
-sed -i '' -e 's/aidanmil\.es/aidanmil_es/g' client/src/js/*.js
-sed -i '' -e 's/NgStarter/gantz\.co/g' client/src/js/*.js
-ag NgSt .
-ls client/
-sed -i '' -e 's/NgStarter/gantz\.co/g' client/src/js/**/*
-ag NgSt .
-ag starter .
-k
-vim README.md 
-vp client/src/js/app.js client/src/js/controllers/hello_controller.js client/src/templates/hello.html 
-k
-up
-k
-k
-ls
+./node_modules/.bin/inspect try.js 
+ag order: lib/
+./node_modules/.bin/inspect try.js 
 vs
-pyenv list
-pyenv show
-brew install ansible
-pyenv
-pyenv global
-pyenv versions
-pyenv install 2.7
-pyenv versions
-pyenv local 2.7
-pyenv global 2.7
-pip install boto
-j resour
-git clone https://github.com/jlund/streisand.git && cd streisand
-./streisand 
-brew install openconnect
-mkdir ~/.streisand
-cd ~/.streisand
-vim ~/.aws/credentials 
-mv ~/Downloads/chrome\ DLs/c* .
+k
+k
+k
+mysqld
+sqldn
+j api
+./node_modules/.bin/inspect try.js 
+ag -g dev ../dumps/
+./scripts/reset_db.sh 9-27
+./scripts/get_db_dump.sh dev
+ssh-add ~/.ssh/id_bb_rsa
+./scripts/get_db_dump.sh dev
+k
+k
+k
+ag -g dev ../dumps/
+./scripts/reset_db.sh 10-24
+mysqld
+sqldn
+vs
+mkdirp ~/Documents/practice/sc
+mkdir ~/Documents/practice/sc
+cd ~/Documents/practice/sc
 ls
-vim streisand-connect.sh
-chmod u+x streisand-connect.sh 
-./streisand-connect.sh
-vim streisand-connect.sh 
-./streisand-connect.sh 
-bashp
+npm init
+nis twitter
+nis inspect-process
+./node_modules/.bin/inspect script.js 
+nis lodash bluebird
+./node_modules/.bin/inspect script.js 
+nis moment
+./node_modules/.bin/inspect script.js 
+j api
+./node_modules/.bin/inspect try.js 
+journal
+./node_modules/.bin/inspect try.js 
 k
-./streisand-connect.sh
-vpn
-bashp
-lcls
-j dot
-vim bash_prompt.sh 
-bashp
-bashrc
-ag DIR .
-vpn
-vim ~/.streisand/streisand-connect.sh 
-vpn
-vim ~/.streisand/streisand-connect.sh 
-./gulp
-vpn
+gs
+ga db/
+git reset
+gd db/
+gco db
+gs
+ga db/
+gcm "Adds migration to add new tink notifications"
 k
-vpn
-vp client/src/js/app.js client/src/js/controllers/hello_controller.js client/src/templates/hello.html 
-vim ~/.streisand/streisand-connect.sh 
-vim ~/Desktop/lastpass.csv
+gs
+vim aaron.txt 
+rm aaron.txt 
+gs
+gd lib/helpers/
+ga lib/helpers/batch.js 
+gcm "Unrelated fix to the batch helper, used for testing"
+gp
 k
-vpn
-j dot
-./test.sh 
-echo $?
-ag autojump .
-ag -a --hidden autojump .
-ag -a --hidden npm-glob .
-hag pyenv
-vim test.sh 
-man curl
-command -v nvm
+gs
+gd lib/models/
+gs
+ga lib/models/
+gcm "Adds associations to make notifications easier"
+k
+gs
+gd lib/services/
+gs
+ga lib/services/
+k
+gs
+ga lib/cron/
+gcm "Adds a cron job and service method to dish out tink notifications"
+gp
+k
+gs
+gd scripts/
+k
+gs
+gco sc
+gco scripts/
+k
+gs
+k
+vs
+k
+gs
+gco dev
+k
+./node_modules/.bin/inspect script.js 
+k
+vim lib/services/chatbot-websockets.js 
+k
+gs
+ga lib/
+git reset
+k
+gs
+gd
+ga lib/
+gcm "Fixes feed jump action stuff"
+gp
+gpu
+gcob persist-tink-stuff
+gpo -u persist-tink-stuff
+k
+gs
+gco dev
+gbr
+gco tnotifs
+gs
+grb dev
+gpo -f
+ssh-add ~/.ssh/id_bb_rsa
+gpo -f
+vim lib/cron/tinkreminders.js 
+gs
+ga lib/cron/
+gcm "Fixes when the tink notification cron job runs"
+gp
+k
+vim lib/services/notificationcampaign.js 
+ga lib/services/notificationcampaign.js
+gcm "Fixes a typo"
+gp
+gs
+gco dev
+gpu
+pm2 deploy ecosystem.config.js dev
+gs
+pfDev
+./run_api.sh 
+sqldn
 k
 k
-vim setup.sh 
+k
+gbr
+gpu
+vim lib/services/user.js 
+k
+gs
+ga lib/services/user.js 
+gcm "Limits phq9 journal flow to once per week"
+gp
+pm2 deploy ecosystem.config.js dev 
+k
+k
+k
+k
+vim lib/services/chatbot-websockets.js 
+k
+gs
+vim lib/services/chatbot-websockets.js 
+k
+gs
+ga lib/services/
+gcm "re-enables test welcome"
+gp
+pm2 deploy ecosystem.config.js dev 
+vim lib/services/chatbot-websockets.js 
+pfDev
+./run_api.sh 
+gs
+ga lib/services/chatbot-websockets.js 
+gcm "Fixes issue with How is Tink"
+gp
+k
+gco persist-tink-stuff
+grb dev
+gp
+gbr -m persist
+vs
+pm2 deploy ecosystem.config.js dev 
+k
+gs
+glg
+gs
+./sql migration:create --name create-user-tink-activity
+k
+gs
+migrate
+migrat
+migrate
+vim lib/services/chatbot-websockets.js 
+k
+gs
+k
+gst
+gco dev
+k
+gs
+vim lib/services/chatbot-websockets.js 
+k
+gs
+gd lib/
+ga lib/services/chatbot-websockets.js 
+gcm "Re-enables random tinkchat flow"
+gp
+pm2 deploy ecosystem.config.js dev 
+gco persist
+k
+k
+vs
+gd dev
+grb dev
+gp
+gst pop
+gs
+vim lib/services/chatbot-websockets.js 
+vim lib/services/chatbot-websockets.js 
+./run_api.sh 
+gd master
+gs
+./run_api.sh 
+gd dev
+./run_api.sh 
+k
+gs
+ga assets/
+gcm "Adds an order property to exercises"
+k
+gs
+ga lib/models/ db/
+gcm "Adds a new model, UserTinkActivity"
+k
+gs
+gd lib/
+gs
+ga lib/
+gcm "Uses UserTinkActivity to persist a user's exercise and questionnaire state"
+gp
+gco dev
+gpu
+pm2 deploy ecosystem.config.js dev 
+vs
+pfDev
+./run_api.sh 
+vim lib/services/chatbot-websockets.js 
+gs
+k
+gs
+gd lib/
+gs
+ga lib/services/
+gcm "Fixes a bug when users had no saved tink activity"
+gp
+pm2 deploy ecosystem.config.js dev 
+gd master
+k
+gs
+gd lib/
+ga lib/
+gcm "Fixes a bug that prevented saving messages"
+gp
+pm2 deploy ecosystem.config.js dev 
+pfProd
+k
+gs
+vs
+gco master
+git merge --squash dev
+gco dev lib/services/chatbot-websockets.js assets/chat/
+k
+gs
+gcm "Manually merges in dev. Includes persistance of Tink activity, lots of bugfixes, better delivery of exercises and questionnaires"
+gp
+pm2 deploy ecosystem.config.js prod
+pfProd
+pfDev
+mysqld
+sqldn
+j api
+gco dev
+vim lib/cron/index.js 
+export NODE_ENV='production'
+./scripts/get_db_dump.sh prod
+./scripts/reset_db.sh 10-26 prod
+echo $NODE_ENV 
+./node_modules/.bin/inspect try.js 
+node try.js 
+k
+gs
+gd
+k
+gs
+ga lib/
+gcm "Removes a debugger, actually enables the tink notifications. derp"
+gp
+glg
+gs
+pm2 deploy ecosystem.config.js dev
+gco master
+git cherry-pick abde86c8
+gp
+pm2 deploy ecosystem.config.js prod
+pfProd
+pfDev
+k
+vim lib/cron/tinkreminders.js 
+k
+gs
+gco dev
+k
+gco masterk
+k
+pfProd
+sqldn
+mysqld
+vim ~/Documents/statement.txt
+j api
+vim scripts/give-super-reactions.js 
+ag batch scripts/
+ag batch bin/
+ag ses lib/
+ag aws.ses lib/
+vim lib/services/emailnotificationmessage.js 
+k
+./node_modules/.bin/inspect scripts/send-batch-email.js 
+vp scripts/send-batch-email.js bin/recalculate-user-levels 
+k
+vim scripts/send-batch-email.js 
+gs
+ga scripts/
+gcm "Adds a script to send emails not stored in the database"
+gp
+gs
+k
+gs
+gp
+ssh-add ~/.ssh/id_bb_rsa
+gp
+gs
+k
+k
+glg
+gs
+gco master
+git cherry-pick f46e180e
+gp
+pm2 deploy ecosystem.config.js prod
+vim scripts/send-batch-email.js 
+gs
+gd scripts/
+ga scripts/
+gcm "Adds a delay to the script to avoid AWS rate limiting"
+gp
+vim scripts/send-batch-email.js 
+k
+gs
+gd
+ga scripts/
+gcm "fixes a typo"
+gp
+pm2 deploy ecosystem.config.js prod
+pfProd
+vim scripts/send-batch-email.js 
+k
+gs
+gd scripts/
+vim scripts/send-batch-email.js 
+k
+gs
+gd 
+gs
+gd
+gs
+ga scripts/
+gcm "More adjustments to the email script"
+gp
+pm2 deploy ecosystem.config.js prod
+pfProd
+mysqld
+sqldn
+pfProd
+vim ~/Documents/statement.txt 
+j api
+j docu
+j dotf
 ls
-la
-ls .bash
-rm -r .bash
-y
-ls .rbenv/
-ls .pyenv/
-ls .local/
+cd .vim
+ls
+ls templates/
+ls colors/
+vim bundle/colors/ir_black.vim 
+vim statement.txt 
 k
-la
-ls .cups/lpoptions 
-vim .cups/lpoptions
-vim .npmrc 
-cd dotfiles/
-cp ~/.npmrc .
-vim setup.sh 
+vs
+k
+cat statement.txt | pbcopy
+vim statement.txt 
+k
+j docu
+vim statement.txt 
+j docu
+pwd
+ls
+vim statement.txt 
+k
+j api
+j dev
+j api
+gco dev
+vim shablam.js 
+k
+ga lib/cron/
+gcm "Disables journal notifications"
 k
 gs
-ga .npmrc 
-gcm "adds npmrc"
+vim lib/cron/tinkreminders.js 
 k
 gs
-gd bash_prompt.sh 
+ga lib/
+gcm "Disables tink notifications"
+gp
+ssh-add ~/.ssh/id_bb_rsa
+gp
+gco master
+git merge --squash dev
+gco dev lib/cron/
+vim scripts/send-batch-email.js 
 k
 gs
-ga bash_prompt.sh 
-gcm "fixes spacing, comments, in bash_prompt"
+ga scripts/
 k
+gs
+gcm "Disables some notifications"
+gp
+pm2 deploy ecosystem.config.js prod
+k
+pfProd
+./run_api.sh 
+mysqld
+sqldn
+vm scratch 
+vim scratch
+k
+j dotf
+ls
 gs
 gd .bashrc 
-vim .bashrc 
-k
+ga .bashrc 
+gcm "Adds pyenv"
 gs
-bashp
-k
-ls
-gp
-k
-la
-ls .lein/
-vim .netrc 
-vim .mongorc.js 
-vim .slate 
-ls
-vp .slate dotfiles/
-cp .slate dotfiles/
-k
-ls
-k
+gd .vimrc 
+ga .vimrc
+gcm "vimrc tweaks"
 gs
-gd .slate 
-gco .slate 
-k
-vim setup.sh 
-k
-k
-la
-ls .nvm/
-vim setup.sh 
+ga .vim/bundle/colors/ir_black.vim 
+gcm "Changes a color in ir_black scheme"
 gs
-gd setup.sh 
-k
-gs
-ga setup.sh 
-gcm "setup.sh gets a makeover"
-k
-gs
-gp
-ls
-k
-gs
-vim test.sh 
-gd .bash
-gd .bashrc 
-ga .bashrc
-gcm "adds pyenv / rbenv inits to bashrc"
-k
-ls
-k
-gp
-k
-la
-vim .rnd 
-ls .streisand/
-cp .aws/ .ssh/ .streisand/ Dropbox/
-man cp
-k
-cp -R .aws .ssh .streisand Dropbox/
-la Dropbox/
-k
-la
-vim .adn_locals 
-cp .adn_locals Dropbox/
-ls .m2/
-vim .viminfo 
-ls .config/
-k
-ls
-j dot__
-l
-sls
-ls
+gd .bash_profile 
 gs
