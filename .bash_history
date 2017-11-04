@@ -1,43 +1,3 @@
-glg
-gs
-glg
-gs
-gpo -f
-gs
-gpu
-gco sr
-git stash pop
-gs
-gs
-./node_modules/.bin/inspect try.js 
-./node_modules/.bin/inspect try.js | tee log.txt
-./scripts/reset_db.sh 7-23
-vim log.txt 
-./node_modules/.bin/inspect try.js | tee log.txt
-./scripts/reset_db.sh 7-23
-pfDev
-./node_modules/.bin/inspect try.js | tee log.txt
-vim log.txt 
-./node_modules/.bin/inspect try.js | tee log.txt
-ag notification db/
-./scripts/reset_db.sh 7-23
-vs
-./node_modules/.bin/inspect try.js | tee log.txt
-./scripts/reset_db.sh 7-23
-./node_modules/.bin/inspect try.js
-node try.js 
-./node_modules/.bin/inspect try.js
-vs
-gs
-gs
-ag level-up db/
-ag level.*metr
-ag -g level.*metr
-git rm db/migrations/20170724202021-create-level-up-metric.js
-gcm "remove unnecessary migration"
-pfProd
-git rm assets/triggers/show-super-reaction-popup.js 
-gcm 
 gs
 gcm "Removes unnecessary trigger"
 gs
@@ -3892,10 +3852,6 @@ sudo vim /etc/ansible/
 ansible all -m ping
 ansible all -a 'echo hello'
 pip install boto
-export AWS_ACCESS_KEY_ID='AKIAIVRYFTKXCAPWCSRA'
-echo $AWS_ACCESS_KEY_ID 
-export AWS_SECRET_ACCESS_KEY = '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'
-export AWS_SECRET_ACCESS_KEY='nnOe4knfSyeQg3DgFY52bR9hTG+vsjF7uRzGhuIu'
 vim ~/.aws/credentials 
 cp ~/Desktop/ec2.py .
 chmod u+x ec2.py 
@@ -3916,8 +3872,6 @@ ansible --version
 which ansible-playbook
 vim ~/.ssh/config 
 ansible-playbook test_playbook.yml 
-export AWS_SECRET_ACCESS_KEY='nnOe4knfSyeQg3DgFY52bR9hTG+vsjF7uRzGhuIu'
-export AWS_ACCESS_KEY_ID='AKIAIVRYFTKXCAPWCSRA'
 ansible-playbook test_playbook.yml 
 aws ec2 describe-images
 aws configure
@@ -10013,4 +9967,44 @@ ga .vim/bundle/colors/ir_black.vim
 gcm "Changes a color in ir_black scheme"
 gs
 gd .bash_profile 
+gs
+gco master .bash_history 
+k
+gs
+gd .bash_history 
+vim .bash_history 
+gd .bash_history 
+vim .bash_history 
+
+
+k
+ls
+k
+ls
+vim .git-templates/hooks/pre-commit 
+k
+vim .bash_history 
+k
+gd .bash_history 
+k
+ls .git/hooks/
+vim .git/hooks/pre-commit.sample 
+cp .git-templates/hooks/pre-commit .git/hooks/
+rm .git/hooks/pre-commit.sample 
+k
+ga .bash_history 
+gcm "This should fail"
+git reset --soft HEAD~1
+k
+man git-diff
+grep -E --line-number '[^A-Z0-9][A-Z0-9]{20}[^A-Z0-9]' .bash_history 
+chmod u+x .git/hooks/pre-commit 
+gd .bash_history 
+vim .bash_history 
+gd .bash_history 
+gs
+git reset
+k
+vim .bash_history 
+k
 gs
