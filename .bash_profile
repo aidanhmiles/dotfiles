@@ -151,17 +151,21 @@ vo() {
     vim -O "$@"
 }
 
-ghkeygen() {
-    ssh-keygen -t rsa -b 4096 -C "aidanhmiles@gmail.com"
-    ssh-add ~/.ssh/id_rsa
-    pbcopy < ~/.ssh/id_rsa.pub
-}
+# Interactive ssh-keygen script
+keygen() {
+  if [[ ! -d ~/.ssh ]]; then
+    mkdir -m 700 ~/.ssh
+  fi
+    
+  read -p "Enter an email address: " email
+  read -p "Enter a filename (will be placed in ~/.ssh) " name
 
-# bbkeygen() {
-#     ssh-keygen -t rsa -b 4096 -C ""
-#     ssh-add ~/.ssh/id_rsa
-#     pbcopy < ~/.ssh/id_rsa.pub
-# }
+  printf "~/.ssh/$name\n" | ssh-keygen -t rsa -b 4096 -C "$email" -f "$HOME/.ssh/$name"
+  ssh-add ~/.ssh/"$name"
+  pbcopy < ~/.ssh/"$name".pub
+
+  echo "~/.ssh/"$name".pub copied to clipboard"
+}
 
 # WINDOW RENAMING
 
