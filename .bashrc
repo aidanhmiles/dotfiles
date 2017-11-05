@@ -36,3 +36,4 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # Add my own scripts n stuff
 export PATH="$PATH:$HOME/dotfiles/bin"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
