@@ -37,19 +37,16 @@ inoremap kj <esc>
 set relativenumber
 " replaces 0 on current line with current line number
 set number 
-
 " yay syntax highlighting
 filetype plugin indent on
 syntax on
+set fileencoding=utf-8
 
 " Searching!
-
 " highlight all search pattern matches
-set hlsearch
-
+set hlsearch 
 " move cursor to next match
-set incsearch
-
+set incsearch 
 " case insensitive searching
 set ignorecase
 if exists("&wildignorecase")
@@ -76,13 +73,12 @@ set nostartofline
 " faster, better autocomplete
 set wildmenu
 
+" Paste Mode
 " if ctrl-t does anything, make it not do things
-nnoremap <c-t> <nop>
-
+nnoremap <c-t> <nop> 
 " ctrl-t toggles paste-mode
 set pastetoggle=<c-t>
 
-set fileencoding=utf-8
 
 " dark color scheme
 colorscheme ir_black
@@ -93,7 +89,7 @@ colorscheme ir_black
 
 " only redraw when have to
 " this is a little weird
-" set lazyredraw
+set lazyredraw
 
 " display matching [{( characters
 set showmatch
@@ -101,17 +97,17 @@ set showmatch
 " highlight last inserted text
 nnoremap gV `[v`]
 
+"}}}
+" PLUGIN OPTS {{{
+"
+
+" Airline + status and tabline settings
 " Always display the statusline in all windows
 set laststatus=2
 " Always display the tabline, even if there is only one tab
 set showtabline=2
 let g:airline#extensions#tabline#enabled = 1
   
-
-"}}}
-" PLUGIN OPTS {{{
-"
-
 
 " INDENT GUIDES
 "===================================
@@ -157,22 +153,6 @@ let g:SuperTabMappingBackward = '<a-tab>'
 " no html syntax checking, because not working with these angular projects
 let g:syntastic_html_checkers=['']
 
-"Vim Surround
-"===================================
-" adding to Vim surround
-" with -
-autocmd FileType ejs,eruby let g:surround_45 = "<% \r %>"
-
-" with =
-autocmd FileType ejs,eruby let g:surround_61 = "<%= \r %>"
-" with h
-autocmd FileType ejs,erb,eruby,html let g:surround_104 = "<!-- \r -->"
-
-
-" include Powerline
-" python from powerline.vim import setup as powerline_setup
-" python powerline_setup()
-" python del powerline_setup
 
 "}}}
 " SINGLE-CHAR FUNCTIONS {{{
@@ -234,7 +214,7 @@ nnoremap <leader>, ,
 noremap <leader>eu :tabedit $HOME/.vim/bundle<cr>
 
 "also html gets its own because html is annoying
-autocmd filetype html,eruby nnoremap <leader>!  A<cr><!<esc>a-<esc>69.i<cr><esc>i-<esc>57.i<cr><esc>i-<esc>67.kA<space> 
+autocmd filetype html,erb nnoremap <leader>!  A<cr><!<esc>a-<esc>69.i<cr><esc>i-<esc>57.i<cr><esc>i-<esc>67.kA<space> 
 
 "let two leaders turn off highlights
 nnoremap <leader><leader> :nohl<cr>
@@ -262,7 +242,7 @@ vnoremap <leader><leader> <esc>
 "tabs are 4 spaces
 set tabstop=4 expandtab shiftwidth=4 softtabstop=4
 "except in the following
-autocmd filetype ruby,yaml,haml,erb,eruby set tabstop=2 expandtab shiftwidth=2 softtabstop=2
+autocmd filetype ruby,yaml,haml,erb,erb set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd filetype javascript,js,ts,jasmine,jade,pug set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd filetype sh,bash set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd filetype html set tabstop=4 expandtab shiftwidth=4 softtabstop=4
@@ -301,38 +281,11 @@ set linebreak
 "}}}
 " FILETYPES {{{
 
-" because Gemfiles
+" Gemfiles
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
-
-autocmd filetype vim setlocal foldmethod=marker
-
-let python_highlight_all = 1
-
-
-" shortcut for setting syntax; mostly this is for Vim Anywhere
-noremap <leader>f :set filetype= 
 
 "}}}
 " QUICK HEADINGS {{{
-
-function! MakeHeading(title, totalWidth)
-	let title = a:title
-	let totalWidth = a:totalWidth
-	let numFillers = (totalWidth - strlen(title) - 2) / 2
-	let filler = ""
-	let c = 0
-	while c < numFillers
-	   let filler = filler . "-"
-	   let c += 1
-	endwhile
-	echo filler . " " . title . " " . filler
-	return filler . " " . title . " " . filler
-endfunction
-
-function! InsertHeadingTemplate(number)
-    let number = a:number
-    exe "r ~/.vim/templates/headings/heading-" . number . ".txt"
-endfunction
 
 "let leader =, -, and # create section lines
 noremap <leader>= a=<esc>34.
