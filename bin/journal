@@ -5,7 +5,7 @@
 # - journal-dump to a file
 # -
 
-journal_temp_dir="/tmp/adn_journal" 
+journal_temp_dir="$TMPDIR/adn_journal" 
 s3_bucket_url="s3://thoughtsgohere/journal/"
 
 make_journal () {
