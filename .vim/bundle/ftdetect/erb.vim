@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.erb set filetype=eruby.html
+au BufNewFile,BufRead *.erb set filetype=erb
