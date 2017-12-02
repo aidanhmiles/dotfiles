@@ -29,6 +29,12 @@
 #   - .zip, unzipped into application
 # 
 # chsh
+# Androd file transfer
+# https://www.android.com/filetransfer/
+#
+# Resilio Sync
+#
+
 
 # install without node bc NVM
 # brew install yarn --without-node
