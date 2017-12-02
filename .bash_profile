@@ -105,12 +105,22 @@ alias nis="npm install --save"
 alias nus="npm uninstall --save"
 alias nisd="npm install --save-dev"
 alias nusd="npm uninstall --save-dev"
-
 alias nup="npm update"
 alias nups="npm update --save"
 alias nupsd="npm update --save-dev"
 
-# alias rr="kill -9 $(cat tmp/pids/server.pid); rails server -d"
+# Yarn
+alias yi="yarn install"
+alias ya="yarn add"
+alias yad="yarn add --dev"
+alias yap="yarn add --peer"
+alias yao="yarn add --optional"
+alias yu="yarn upgrade"
+alias yr="yarn remove"
+
+rr () {
+  "kill -9 $(cat tmp/pids/server.pid); rails server -d"
+}
 
 # "scratch paper"
 alias scratch="vim ~/Desktop/scratch"
@@ -124,7 +134,11 @@ alias whatsmyip="netstat -at"
 # Get the rest of my stuff
 source $HOME/dotfiles/bash_prompt.sh
 source $HOME/.bashrc
-source $HOME/.adn_locals
+
+if [[ -f $HOME/dotfiles/locals ]]; then
+  source $HOME/dotfiles/locals
+fi
+
 
 # Some useful combos and other functions
 # cd and then ls
