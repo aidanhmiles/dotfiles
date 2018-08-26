@@ -37,7 +37,7 @@ make_journal () {
     echo "Entering vim"
     vim $full_path
   else
-    # clear
+    clear
     # Use cat on STDIN for 'short' input.
     # Add -s for single-spacing lines
     cat -s > "$full_path"
@@ -53,8 +53,8 @@ make_journal () {
   result=$(aws --profile journaler s3 sync --exclude ".DS_Store" "$journal_temp_dir" "$s3_bucket_url")
 
   # Insert iTerm's CMD+K escape sequence
-  # echo -e '\u001b]1337;ClearScrollback\u0007'
-  # clear
+  echo -e '\u001b]1337;ClearScrollback\u0007'
+  clear
 
 }
 
