@@ -20,7 +20,8 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
-source $HOME/dotfiles/tab.bash
+# [[ -s "$HOME/dotfiles/tab.bash"]] && . $HOME/dotfiles/tab.bash
+
 # export PATH="$HOME/local/bin:$PATH"
 # export PATH="$HOME/local/npm/bin:$PATH"
 
@@ -37,3 +38,16 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # Add my own scripts n stuff
 export PATH="$PATH:$HOME/dotfiles/bin"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+complete -C "$HOME/bin/vault" vault
+source "$HOME/.bash_completion/alacritty"
+
+# Start tmux if not in iTerm
+if command -v tmux &> /dev/null && \
+  [ -n "$PS1" ] && \
+  [[ ! "$TERM" =~ screen ]] && \
+  [[ ! "$TERM" =~ tmux ]] && \
+  [ -z "$ITERM_SESSION_ID" ] && \
+  [ -z "$TMUX" ]; then
+    tmux
+fi
