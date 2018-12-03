@@ -101,6 +101,9 @@ nnoremap gV `[v`]
 " PLUGIN OPTS {{{
 "
 
+" ansible-vim
+let g:ansible_unindent_after_newline = 1
+
 " Airline + status and tabline settings
 " Always display the statusline in all windows
 set laststatus=2
@@ -343,6 +346,8 @@ function! ToggleNightmode()
         let g:nightmode_on = 1
     endif
 endfunction
+
+nnoremap <localleader>n :Nightmode<CR>
 
 " SPACES TO TABS IN CURRENT FILE:
 " set noet
