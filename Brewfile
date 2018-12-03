@@ -1,18 +1,24 @@
-brew 'bash'
-brew 'tmux'
-brew 'vim'
-brew 'autojump'
-brew 'the_silver_searcher'
-brew 'pyenv'
-brew 'rbenv'
-brew 'git'
-brew 'openconnect'
-brew 'openssl@1.1'
-# brew 'imagemagick'
-# brew 'vips'
+# vim: set ft=ruby:
 
-# redis
-# redis@3.2
-# watchman
-# yarn
-
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+brew "autojump"
+brew "bash"
+brew "git"
+brew "imagemagick"
+brew "mysql"
+brew "mysql@5.6"
+brew "openconnect"
+brew "pyenv"
+brew "ruby-build"
+brew "rbenv"
+brew "redis"
+brew "redis@3.2"
+brew "the_silver_searcher"
+brew "tmux"
+brew "vim"
+brew "vips"
+brew "watchman"
+brew "yarn", args: ["without-node"]
+cask "alacritty"

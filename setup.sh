@@ -33,11 +33,9 @@
 # https://www.android.com/filetransfer/
 #
 # Resilio Sync
-#
-
-
-# install without node bc NVM
-# brew install yarn --without-node
+# 
+# start using Ansible for this!
+# 
 
 readonly NODE_VERSION=6
 readonly NVM_VERSION=0.33.6
@@ -75,15 +73,7 @@ if [[ ! $brew_status -eq 0 ]]; then
   echo "Updating Homebrew (brew update)"
   brew update
   echo "Installing Homebrew tools"
-  brew install \
-    bash \
-    git \
-    vim \
-    pyenv \
-    rbenv \
-    autojump \
-    the_silver_searcher \
-    certbot
+  brew bundle --file=~/dotfiles/Brewfile
 fi
 
 # PYTHON
