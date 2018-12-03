@@ -1,6 +1,3 @@
-[user]
-	name = Aidan Miles
-	email = aidan@iexhale.com
 [credential]
 	helper = osxkeychain
 [core]
