@@ -1,0 +1,5 @@
+
+# Ignore most of .vim/bundle
+.vim/bundle
+!.vim/bundle/ftplugin
+!.vim/bundle/ftdetect
