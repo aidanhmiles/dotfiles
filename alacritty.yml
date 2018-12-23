@@ -69,7 +69,7 @@ scrolling:
   # to allow mouse scrolling for applications like `man`.
   #
   # Specifying `0` will disable faux scrolling.
-  faux_multiplier: 0
+  faux_multiplier: 1
 
   # Scroll to the bottom when new text is written to the terminal.
   auto_scroll: false
@@ -287,7 +287,7 @@ selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  save_to_clipboard: false
+  save_to_clipboard: true
 
 cursor:
   # Cursor style
@@ -346,6 +346,7 @@ shell:
 #   This command will allow you to display the hex scancodes for certain keys:
 #     `showkey --scancodes`
 #
+
 # Values for `mods`:
 #   - Command
 #   - Control
@@ -393,6 +394,11 @@ shell:
 #   - ~AppKeypad
 #   - AppKeypad
 
+# Helpful hints:
+# Ctrl-f is the binding key in tmux.conf
+# \x06 is Ctrl-f
+# to use Command like the tmux prefix, any key modded with Command should have \x06 before it
+
 key_bindings:
   - { key: V,        mods: Command, action: Paste                        }
   - { key: C,        mods: Command, action: Copy                         }
@@ -409,7 +415,7 @@ key_bindings:
   - { key: Equals,   mods: Command, action: IncreaseFontSize             }
   - { key: Minus,    mods: Command, action: DecreaseFontSize             }
   - { key: K,        mods: Command, action: ClearHistory                 }
-  - { key: K,        mods: Command, chars: "\x0c"                        }
+  - { key: K,        mods: Command, chars: "\x06\x0c"                        }
   - { key: L,        mods: Control, action: ClearLogNotice               }
   - { key: L,        mods: Control, chars: "\x0c"                        }
   - { key: PageUp,   mods: Shift,   chars: "\x1b[5;2~"                   }
@@ -507,7 +513,12 @@ key_bindings:
 
   # My additions, mostly based on 
   # https://arslan.io/2018/02/05/gpu-accelerated-terminal-alacritty/
+  #
+  # ==Window mgmt==
+  #
   # Cmd<number> for tab switching
+  # NOTE tmux windows are zero-indexed, Cmd+1 gets you window 0
+  # - { key: Key0,     mods: Command,       chars: "\x06\x30" }
   - { key: Key1,     mods: Command,       chars: "\x06\x31" }
   - { key: Key2,     mods: Command,       chars: "\x06\x32" }
   - { key: Key3,     mods: Command,       chars: "\x06\x33" }
@@ -517,7 +528,14 @@ key_bindings:
   - { key: Key7,     mods: Command,       chars: "\x06\x37" }
   - { key: Key8,     mods: Command,       chars: "\x06\x38" }
   - { key: Key9,     mods: Command,       chars: "\x06\x39" }
-  - { key: Key9,     mods: Command,       chars: "\x06\x39" }
+  # - { key: Key0,     mods: Command,       chars: "\x06\x39" }
+
+  # Move the current window to the right or left
+  - { key: Left,     mods: Command|Shift,   chars: "\x06\x1b[1;2D"       }
+  - { key: Right,    mods: Command|Shift,   chars: "\x06\x1b[1;2C"       }
+  # Change to the window to the right or left
+  - { key: LBracket,     mods: Command,   chars: "\x06\x70"       }
+  - { key: RBracket,    mods: Command,   chars: "\x06\x6e"       }
 
   # Open a new window/tab with Cmd+T
   - { key: T,     mods: Command,       chars: "\x06\x63" }
