@@ -30,6 +30,7 @@ alias mkdirp="mkdir -p"
 alias mkdrp="mkdir -p"
 
 # alias mvim="/Applications/MacVim.app/contents/MacOS/MacVim"
+alias scim="sc-im"
 
 # shortcuts
 alias be="bundle exec"
@@ -95,14 +96,20 @@ alias dcdn="docker-compose down"
 alias dcb="docker-compose build"
 alias dc="docker-compose"
 
+if [[ $(which docker-machine) ]]; then
+  eval $(docker-machine env default)
+fi
+
+
 # Vagrant
 alias vup="vagrant up"
 alias vupp="vagrant up --provision"
 alias vrp="vagrant reload --provision"
+alias vr="vagrant reload"
 alias vsh="vagrant ssh"
 alias vdestroy="vagrant destroy"
 alias vpause="vagrant suspend"
-alias vrs="vagrant resume"
+alias vresume="vagrant resume"
 
 # Python
 alias py="python"
@@ -140,6 +147,7 @@ alias scratch="vim ~/Desktop/scratch"
 alias hag="history | ag"
 
 alias sqldn="mysqladmin -u root -p shutdown"
+alias psqld="pg_ctl -D /usr/local/var/postgres start"
 
 alias whatsmyip="netstat -at"
 
@@ -251,3 +259,5 @@ setup_role () {
 
 export PATH="/usr/local/opt/redis@3.2/bin:$PATH"
 export PATH="$PATH:$HOME/bin"
+
+alias ipchicken='curl -s https://ipchicken.com | egrep -o '\''([[:digit:]]{1,3}\.){3}[[:digit:]]{1,3}'\'''

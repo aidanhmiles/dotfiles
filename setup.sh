@@ -38,7 +38,7 @@
 # 
 
 readonly NODE_VERSION=6
-readonly NVM_VERSION=0.33.6
+# readonly NVM_VERSION=0.33.6
 readonly RUBY_VERSION=2.4.2
 readonly PYTHON_VERSION=3.6.3
 
@@ -129,14 +129,14 @@ if [[ ! -d ~/dotfiles ]]; then
 
 fi
 
-# NVM
-command -v nvm 
-nvm_status=$? 
-if [[ ! $nvm_status -eq 0 ]]; then
-  echo ""
-  echo "Installing NVM"
-  curl -o- "https://raw.githubusercontent.com/creationix/nvm/v$NVM_VERSION/install.sh" | bash 
-fi
+# # NVM
+# command -v nvm 
+# nvm_status=$? 
+# if [[ ! $nvm_status -eq 0 ]]; then
+#   echo ""
+#   echo "Installing NVM"
+#   curl -o- "https://raw.githubusercontent.com/creationix/nvm/v$NVM_VERSION/install.sh" | bash 
+# fi
 
 # NODE
 command -v nvm 

@@ -231,6 +231,9 @@ nnoremap <leader>u <c-r>
 nnoremap <c-j> ddjP
 nnoremap <c-k> ddkP
 
+nnoremap <c-d> :qa<cr>
+inoremap <c-d> :wqa<cr>
+
 "}}}
 " VISUAL MODE {{{
 " visual block mode

@@ -50,26 +50,26 @@ replaceSymbols() {
   echo ${VALUE2//_PREHASH_/${GIT_PROMPT_SYMBOLS_PREHASH}}
 }
 
-# get only 'v' + majorVersion, e.v. 'v6'
-build_node_version_string(){
-    local node_version="$(node --version)"
+# # get only 'v' + majorVersion, e.v. 'v6'
+#build_node_version_string(){
+#     local node_version="$(node --version)"
 
-    if [[ -e .nvmrc ]]; then
-      local nvmrc="$(cat .nvmrc)"
-      # if major version in nvmrc equals major version in node --version
-      # do nothing
-      # if they're different, we have to update the current
-      # active version with nvm use
-      if [[ "${nvmrc:0:1}" != "${node_version:1:1}" ]]; then
-        # is there a way to do without eval?
-        eval "nvm use --silent >/dev/null 2>&1;"
-        #reassign node_version
-        node_version="$(node --version)"
-      fi
-    fi
+#    if [[ -e .nvmrc ]]; then
+#      local nvmrc="$(cat .nvmrc)"
+#      # if major version in nvmrc equals major version in node --version
+#      # do nothing
+#      # if they're different, we have to update the current
+#      # active version with nvm use
+#      if [[ "${nvmrc:0:1}" != "${node_version:1:1}" ]]; then
+#        # is there a way to do without eval?
+#        eval "nvm use --silent >/dev/null 2>&1;"
+#        #reassign node_version
+#        node_version="$(node --version)"
+#      fi
+#    fi
 
-    NODE_STRING="Node${node_version:0:2}"
-}
+#     NODE_STRING="Node${node_version:0:2}"
+#}
 
 build_git_prompt_string(){
 
@@ -174,7 +174,7 @@ main (){
   local prompt_string
 
   if [[ -e "package.json" ]]; then
-    build_node_version_string
+    # build_node_version_string
     NODE_STRING="$BOLD_GREEN$NODE_STRING$RESETCOLOR"
   else 
     unset NODE_STRING

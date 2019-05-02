@@ -25,11 +25,13 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 # export PATH="$HOME/local/bin:$PATH"
 # export PATH="$HOME/local/npm/bin:$PATH"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+
 
 #add the Python dir (includes AWS CLI)
 # export PATH="$PATH:$HOME/.pyenv/versions/3.5.2/bin"
