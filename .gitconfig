@@ -3,6 +3,8 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
+[pull]
+    rebase = true
 [push]
 	default = upstream
 [alias]
