@@ -22,3 +22,5 @@ brew "vips"
 brew "watchman"
 brew "yarn", args: ["without-node"]
 cask "alacritty"
+brew "fzf"
+brew "nodenv"
