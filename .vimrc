@@ -34,8 +34,10 @@ inoremap kj <esc>
 " noremap <leader>n :set nu!<cr>
 
 " default to having relative numbers on
-set relativenumber
 " replaces 0 on current line with current line number
+" TODO why is this such a performance suck
+" set relativenumber
+
 set number 
 " yay syntax highlighting
 filetype plugin indent on
@@ -91,6 +93,8 @@ colorscheme ir_black
 " this is a little weird
 set lazyredraw
 
+set nocursorline
+
 " display matching [{( characters
 set showmatch
 
@@ -100,6 +104,10 @@ nnoremap gV `[v`]
 "}}}
 " PLUGIN OPTS {{{
 "
+
+" fzf for vim
+" NOTE: installed with Homebrew
+set rtp+=/usr/local/opt/fzf
 
 " ansible-vim
 let g:ansible_unindent_after_newline = 1
@@ -123,26 +131,15 @@ let g:indentLine_color_term = 24
 let g:taboo_tab_format = "| %N%m %f "
 noremap <leader>r :TabooRename 
 
-"CTRL-P
-"===================================
-" have ctrlp search hidden dirs
-let g:ctrlp_show_hidden = 1
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+"" The Silver Searcher
+""===================================
+"if executable('ag')
+"  " Use ag over grep
+"  set grepprg=ag\ --nogroup\ --nocolor
 
-" The Silver Searcher
-"===================================
-if executable('ag')
-  " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
+"endif
 
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-  " ag is fast enough that CtrlP doesn't need to cache
-  let g:ctrlp_use_caching = 0
-endif
-
-let g:ackprg = 'ag --vimgrep --smart-case'
+"let g:ackprg = 'ag --vimgrep --smart-case'
 cnoreabbrev ag Ack
 cnoreabbrev aG Ack
 cnoreabbrev Ag Ack
@@ -228,6 +225,7 @@ nnoremap <leader>u <c-r>
 "}}}
 " CTRL SHORTCUTS {{{
 
+nnoremap <c-p> :FZF<cr>
 nnoremap <c-j> ddjP
 nnoremap <c-k> ddkP
 
@@ -251,6 +249,7 @@ set tabstop=4 expandtab shiftwidth=4 softtabstop=4
 autocmd filetype ruby,yaml,haml,erb,erb set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd filetype javascript,js,ts,jasmine,jade,pug set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd filetype sh,bash set tabstop=2 expandtab shiftwidth=2 softtabstop=2
+autocmd filetype tf set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 autocmd filetype html set tabstop=4 expandtab shiftwidth=4 softtabstop=4
 autocmd filetype css,scss set tabstop=2 expandtab shiftwidth=2 softtabstop=2
 
