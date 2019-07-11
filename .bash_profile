@@ -64,7 +64,25 @@ alias gstp="git stash pop"
 alias grb="git rebase"
 alias gcp="git cherry-pick"
 alias gbag="git branch | ag"
+alias gbrag="git branch -r | ag"
 # show the changes applied by one commit by comparing to its parent
+gcag() {
+  # Try local branch
+  local_branch=$(git branch | ag "$1" )
+  # If no local branch, find a remote branch and remote the leading 'origin/' from it
+  [[ -z "$local_branch" ]] && remote_branch=$(git branch -r | ag "$1" | sed -e 's/origin\///g')
+
+  # Assign whichever one exists to $branch
+  branch=$( [[ -n "$local_branch" ]] && echo $local_branch || echo ${remote_branch//origin\/})
+
+  # Exit if no $branch
+  [[ -z "$branch" ]] && echo "No branch found from search $1" && exit 1
+
+  echo "Found branch: $branch"
+
+  git checkout $branch
+
+}
 gdc() {
   git diff "$1^" "$1"
 }
@@ -131,6 +149,7 @@ alias yi="yarn install"
 alias yu="yarn remove"
 alias yr="yarn remove"
 alias ya="yarn add"
+alias yag="yarn global add"
 alias yad="yarn add --dev"
 alias yap="yarn add --peer"
 alias yao="yarn add --optional"
@@ -152,6 +171,7 @@ alias psqld="pg_ctl -D /usr/local/var/postgres start"
 alias whatsmyip="netstat -at"
 
 alias nr="node-rails"
+
 
 # Get the rest of my stuff
 source $HOME/dotfiles/bash_prompt.sh
@@ -185,6 +205,17 @@ vs() {
 # open args as tabs in Vim
 vp() {
     vim -p "$@"
+}
+
+vzf() {
+  query=$([[ -n "$@" ]] && echo "-q $@" || echo "")
+  echo "query: $query"
+  result="$(fzf -m $query)"
+  echo "result: $result"
+  if [[ -z "$result" ]]; then return; fi
+  trimmed=$(printf "$result" | tr "\n" " ")
+  echo "trimmed: $trimmed"
+  vp $trimmed
 }
 
 # open args as splits in Vim
@@ -257,7 +288,7 @@ setup_role () {
 }
 
 
-export PATH="/usr/local/opt/redis@3.2/bin:$PATH"
+export PATH="/usr/local/opt/redis@4.0/bin:$PATH"
 export PATH="$PATH:$HOME/bin"
 
 alias ipchicken='curl -s https://ipchicken.com | egrep -o '\''([[:digit:]]{1,3}\.){3}[[:digit:]]{1,3}'\'''
