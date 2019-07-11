@@ -207,20 +207,18 @@ vp() {
     vim -p "$@"
 }
 
-vzf() {
-  query=$([[ -n "$@" ]] && echo "-q $@" || echo "")
-  echo "query: $query"
-  result="$(fzf -m $query)"
-  echo "result: $result"
-  if [[ -z "$result" ]]; then return; fi
-  trimmed=$(printf "$result" | tr "\n" " ")
-  echo "trimmed: $trimmed"
-  vp $trimmed
-}
-
 # open args as splits in Vim
 vo() {
     vim -O "$@"
+}
+
+# open a list of files found using FZF as tabs
+vzf() {
+  query=$([[ -n "$@" ]] && echo "-q $@" || echo "")
+  result="$(fzf -m $query)"
+  if [[ -z "$result" ]]; then return; fi
+  trimmed="$(printf "$result" | tr "\n" " ")"
+  vp "$trimmed"
 }
 
 # Interactive ssh-keygen script
@@ -252,6 +250,7 @@ rename_both   () { setTerminalText 0 $@; }
 rename_tab    () { setTerminalText 1 $@; }
 rename_window () { setTerminalText 2 $@; }
 
+# TODO put this in another file
 setup_role () {
   # if no first arg, defaults to pwd
   default_dir="$pwd"
