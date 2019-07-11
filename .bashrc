@@ -53,3 +53,6 @@ if command -v tmux &> /dev/null && \
   [ -z "$TMUX" ]; then
     tmux
 fi
+
+# FZF fuzzy finder
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
