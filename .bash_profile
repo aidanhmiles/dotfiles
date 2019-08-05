@@ -76,7 +76,7 @@ gcag() {
   branch=$( [[ -n "$local_branch" ]] && echo $local_branch || echo ${remote_branch//origin\/})
 
   # Exit if no $branch
-  [[ -z "$branch" ]] && echo "No branch found from search $1" && exit 1
+  [[ -z "$branch" ]] && echo "No branch found from search $1" && return
 
   echo "Found branch: $branch"
 
@@ -114,9 +114,10 @@ alias dcdn="docker-compose down"
 alias dcb="docker-compose build"
 alias dc="docker-compose"
 
-if [[ $(which docker-machine) ]]; then
-  eval $(docker-machine env default)
-fi
+# type docker-machine
+# if [[ $(which docker-machine) ]]; then
+#   eval $(docker-machine env default)
+# fi
 
 
 # Vagrant
@@ -165,10 +166,14 @@ alias scratch="vim ~/Desktop/scratch"
 
 alias hag="history | ag"
 
+
+# SQL
 alias sqldn="mysqladmin -u root -p shutdown"
 alias psqld="pg_ctl -D /usr/local/var/postgres start"
 
-alias whatsmyip="netstat -at"
+alias pg11="/usr/local/Cellar/postgresql/11.4/bin/pg_ctl -D /Users/aidanmiles/var/pg/data -l logfile start"
+
+alias whatsmyip="dig +short myip.opendns.com ANY @resolver1.opendns.com."
 
 alias nr="node-rails"
 
