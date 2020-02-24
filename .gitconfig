@@ -18,3 +18,5 @@
     rm = rm --cached
 	lg = log --oneline --graph
 	lgp = log --graph --decorate --pretty=oneline --abbrev-commit
+[user]
+    email = aidanhmiles@gmail.com
