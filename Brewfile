@@ -3,24 +3,41 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-brew "autojump"
+
 brew "bash"
+brew "zsh"
 brew "git"
-brew "imagemagick"
-brew "mysql@5.7"
-brew "mysql"
-brew "openconnect"
-brew "pyenv"
-brew "ruby-build"
-brew "rbenv"
-brew "redis"
-brew "redis@3.2"
-brew "the_silver_searcher"
-brew "tmux"
 brew "vim"
-brew "vips"
-brew "watchman"
-brew "yarn", args: ["without-node"]
-cask "alacritty"
-brew "fzf"
+
+# Python
+brew "pyenv"
+# brew "python3" # for macOS post-Catalina
+# Ruby
+brew "rbenv"
+brew "ruby-build"
+# Node
 brew "nodenv"
+brew "yarn", args: ["without-node"]
+
+
+# Terminal / shell stuff
+cask "alacritty"
+brew "tmux"
+
+brew "fzf"
+brew "autojump"
+brew "the_silver_searcher"
+brew "bat"
+brew "watchexec"
+brew "hyperfine"
+brew "fd"
+
+# Rails stuff
+brew "mysql"
+brew "imagemagick"
+brew "vips"
+
+# Other
+brew "watchman"
+brew "openconnect"
+
