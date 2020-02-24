@@ -19,6 +19,7 @@ alias bashp="vim ~/dotfiles/.bash_profile"
 alias bashrc="vim ~/dotfiles/.bashrc"
 alias inputrc="vim ~/dotfiles/.inputrc"
 alias vimrc="vim ~/dotfiles/.vimrc"
+alias sshconf="vim ~/.ssh/config"
 
 # changing bash commands
 alias la="ls -a" 
@@ -122,7 +123,7 @@ alias dc="docker-compose"
 
 # Vagrant
 alias vup="vagrant up"
-alias vupp="vagrant up --provision"
+# alias vupp="vagrant up --provision"
 alias vrp="vagrant reload --provision"
 alias vr="vagrant reload"
 alias vsh="vagrant ssh"
@@ -130,9 +131,35 @@ alias vdestroy="vagrant destroy"
 alias vpause="vagrant suspend"
 alias vresume="vagrant resume"
 
+vupp(){
+  if [[ -n "$@" ]]; then
+    # TODO replace with find, or something else more portable
+    vagrantfile=$(ag -g "Vagrantfile_$1" .)
+  fi
+
+  if [[ -n "$vagrantfile" ]]; then
+    echo "VAGRANT_VAGRANTFILE="$vagrantfile" vagrant up --provision"
+    VAGRANT_VAGRANTFILE="$vagrantfile" vagrant up --provision
+  else
+    # default behavior
+    echo "No such vagrantfile found: $vagrantfile"
+    echo "vagrant up --provision"
+    vagrant up --provision
+  fi
+}
+
+# Terraform
+alias tf="terraform"
+alias tfp="terraform plan"
+alias tfa="terraform apply"
+tfay(){
+  yes | terraform apply
+}
+alias tfi="terraform init"
+
 # Python
-alias py="python"
-alias py3="python3"
+alias py="python3"
+alias py2="python"
 
 # Node / npm
 alias ni="npm install"
@@ -157,6 +184,14 @@ alias yao="yarn add --optional"
 alias yup="yarn upgrade"
 alias yupi="yarn upgrade-interactive"
 
+yisp() {
+  npm view "$1@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add --dev
+}
+
+nisp() {
+  npm view "$1@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev
+}
+
 rr () {
   "kill -9 $(cat tmp/pids/server.pid); rails server -d"
 }
@@ -174,6 +209,7 @@ alias psqld="pg_ctl -D /usr/local/var/postgres start"
 alias pg11="/usr/local/Cellar/postgresql/11.4/bin/pg_ctl -D /Users/aidanmiles/var/pg/data -l logfile start"
 
 alias whatsmyip="dig +short myip.opendns.com ANY @resolver1.opendns.com."
+alias ipchicken='curl -s https://ipchicken.com | egrep -o '\''([[:digit:]]{1,3}\.){3}[[:digit:]]{1,3}'\'''
 
 alias nr="node-rails"
 
@@ -186,10 +222,6 @@ if [[ -f $HOME/dotfiles/locals ]]; then
   source $HOME/dotfiles/locals
 fi
 
-# Android
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 
 # Some useful combos and other functions
@@ -201,6 +233,11 @@ cl() {
 mkcd() {
     mkdir "$@" && cd $_
 }
+
+
+##########
+# Vim
+##########
 
 # open a vim session file
 vs() {
@@ -224,6 +261,26 @@ vzf() {
   if [[ -z "$result" ]]; then return; fi
   trimmed="$(printf "$result" | tr "\n" " ")"
   vp "$trimmed"
+}
+
+##########
+# SSH key stuff
+##########
+
+keyadd() {
+
+  keysearch=$1
+
+  matchcount=$(ag -g $keysearch ~/.ssh/ | wc -l)
+  matchfiles=$(ag -g $keysearch ~/.ssh/)
+
+  if [[ $matchcount -gt 1 ]]; then
+    echo "matched $matchcount keys:"
+    echo $matchfiles | xargs -n 1 | sed "s/\/Users\/aidanmiles\/.ssh\///"
+  else
+    echo "adding $matchfiles"
+    ssh-add -K "$matchfiles"
+  fi
 }
 
 # Interactive ssh-keygen script
@@ -255,13 +312,15 @@ rename_both   () { setTerminalText 0 $@; }
 rename_tab    () { setTerminalText 1 $@; }
 rename_window () { setTerminalText 2 $@; }
 
+# Devops/Ansible
+
 # TODO put this in another file
 setup_role () {
   # if no first arg, defaults to pwd
   default_dir="$pwd"
   target_dir="$1"
 
-  if [[ $target_dir ]]; then
+  if [[ ! -z "$target_dir" ]]; then
     echo "Installing into $target_dir"
   else
     $target_dir=$default_dir
@@ -291,8 +350,33 @@ setup_role () {
   echo "Done!"
 }
 
+# Devops/Terraform
 
-export PATH="/usr/local/opt/redis@4.0/bin:$PATH"
-export PATH="$PATH:$HOME/bin"
+setup_module() {
 
-alias ipchicken='curl -s https://ipchicken.com | egrep -o '\''([[:digit:]]{1,3}\.){3}[[:digit:]]{1,3}'\'''
+  # if no first arg, defaults to pwd
+  default_dir="$pwd"
+  target_dir="$1"
+
+  if [[ ! -z "$target_dir" ]]; then
+    echo "Installing into $target_dir"
+  else
+    $target_dir=$default_dir
+    echo "Installing into $target_dir"
+  fi
+
+  echo $target_dir
+
+  if [[ ! -d "$target_dir" ]]; then
+    mkdir -p "$target_dir"
+  fi
+
+  touch  "$target_dir"/{main,variables,outputs}.tf
+
+  echo Done!
+
+}
+
+
+
+export PATH="$HOME/.poetry/bin:$PATH"
