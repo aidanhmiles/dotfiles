@@ -4,11 +4,11 @@
 # much taken from here
 # https://github.com/magicmonty/bash-git-prompt
 
-alias bashpr="vim $HOME/dotfiles/bash_prompt.sh"
-source "$HOME/dotfiles/prompt_colors.sh"
+alias bashpr="vim $HOME/dotfiles/bash/bash_prompt.sh"
+source "$HOME/dotfiles/bash/prompt_colors.sh"
 
 # constants
-GIT_STATUS_CMD="$HOME/dotfiles/gitstatus.sh"
+GIT_STATUS_CMD="$HOME/dotfiles/bash/gitstatus.sh"
 GIT_PROMPT_SHOW_UNTRACKED_FILES=all #normal, no
 GIT_PROMPT_SHOW_UPSTREAM=1
 

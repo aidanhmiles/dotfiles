@@ -1,0 +1,108 @@
+---
+
+# Python 3.8.1 is installed
+# Brewfile is already satisfied
+
+hosts: localhost
+
+tasks:
+
+  # These used to be symlinks. Not necessary anymore bc ansible will update them for me.
+  - name: templatize dotfiles
+    template:
+      src: "{{ item }}"
+      dest: ~/
+      state: present
+    loop:
+      - .bash_history
+      - .bash_profile
+      - .bashrc
+      - .gitconfig
+      - .gitignore
+      - .gitignore_global
+      - .inputrc
+      - .vimrc
+      - .vim
+      - .npmrc
+      - .aws/credentials
+      - .aws/config
+
+  - name: Set main user's shell
+
+  - name: Install browsers
+    # chrome "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
+    # firefox "https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US"
+
+  - name: Install work apps
+  # Slack "https://slack.com/ssb/download-osx"
+  # datagrip "https://download.jetbrains.com/datagrip/datagrip-2019.3.3.dmg"
+  # Google Drive File Stream "https://dl.google.com/drive-file-stream/googledrivefilestream.dmg"
+  # OmniGraffle "https://downloads.omnigroup.com/software/MacOSX/10.14/OmniGraffle-7.13.dmg"
+  # Sketch "https://download.sketchapp.com/sketch-63.1-92452.zip"
+  # VirtualBox "https://download.virtualbox.org/virtualbox/6.1.4/VirtualBox-6.1.4-136177-OSX.dmg"
+  # Zoom "https://d11yldzmag5yn.cloudfront.net/prod/4.6.17383.0119/Zoom.pkg"
+  # Dash docs "https://sanfrancisco.kapeli.com/downloads/v5/Dash.zip"
+
+  - name: Install personal apps
+  # Alfred "https://cachefly.alfredapp.com/Alfred_4.0.8_1135.dmg"
+  #         A3FLMTNjMDA0NTJmZjZhCfkYCHNwBK8DsoRCL8p7awZQ7zgzqC
+  #         DsSLw4FEkFiC1mDTxF+fRKoHpgIdpZiS2tbwEYV7v+TaN6FXM3
+  #         40Q/fQg5DCtWeJ6QvNUqfzRtPqPgez33Z1zprgpFQo9/WdG5CK
+  #         ZzrzzyfR4EeeaC6bjexx9jC0YgpTKpHx+WpPHOnaT7h7ukGrxj
+  # Contexts "https://contexts.co/releases/Contexts-3.7.1.dmg"
+  #   - license?
+  # BetterTouchTool "https://bettertouchtool.net/releases/BetterTouchTool.zip"
+  #   - license?
+  # iTerm "https://iterm2.com/downloads/stable/iTerm2-3_3_8.zip"
+
+  # Androd file transfer "https://dl.google.com/dl/androidjumper/mtp/current/AndroidFileTransfer.dmg"
+  # Resilio Sync "https://download-cdn.resilio.com/stable/osx/Resilio-Sync.dmg"
+  # RescueTime "https://www.rescuetime.com/installers/RescueTimeInstaller.pkg"
+  # 1Password "https://app-updates.agilebits.com/download/OPM7"
+  # Rocket "https://macrelease.matthewpalmer.net/Rocket.dmg"
+  # flux "https://justgetflux.com/mac/Flux.zip"
+  # Evernote "https://cdn1.evernote.com/mac-smd/public/Evernote_RELEASE_7.14_458244.dmg"
+  # The brain "http://updater.thebrain.com/files/TheBrain11.0.56.0.dmg"
+  # PIA "https://www.privateinternetaccess.com/installer/x/download_installer_osx"
+  # Sync "https://www.sync.com/download/apple/Sync.dmg"
+  # UHK agent "https://github.com/UltimateHackingKeyboard/agent/releases/download/v1.4.2/UHK.Agent-1.4.2-mac.1.4.2.dmg"
+  # VLC "https://get.videolan.org/vlc/3.0.8/macosx/vlc-3.0.8.dmg"
+  # Yubico Authenticator "https://developers.yubico.com/yubioath-desktop/Releases/yubioath-desktop-latest-mac.pkg"
+  # LittleSnitch "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-4.4.3.dmg"
+  # MicroSnitch "https://www.obdev.at/downloads/MicroSnitch/MicroSnitch-1.3.1.zip"
+  # Evoluent mouse manager thing "https://evoluent.com/download/Evoluent%20VerticalMouse%20Device%20Controller%20-%201.4.1.pkg"
+  # SizeUp "http://www.irradiatedsoftware.com/downloads/?file=SizeUp.zip"
+  #   - .zip, unzipped into application
+  #   - license?
+  # Keyboard Maestro https://www.keyboardmaestro.com/action/download?km-kmi-7-b3
+  #   - .zip, unzipped into application
+  #   - license?
+
+  - name: Install applications as zips
+
+
+  # Todoist (via app store)
+  - name: Install coding fonts
+# inconsolata
+# http://levien.com/type/myfonts/inconsolata.html
+# mono
+# https://download.jetbrains.com/fonts/JetBrainsMono-1.0.3.zip
+# hack
+# https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip
+# but it should be in Sync
+
+  - name: Install developer tools
+    # vagrant
+    # terraform, packer, et al
+
+  - name: Install python libs
+    # latest stable python, also 3.? via pyenv
+    # upgrade pip
+    # awscli
+
+  - name: Install ruby libs
+    # latest stable ruby, also 2.5 via pyenv
+    # upgrade gem
+    # rails
+
+
