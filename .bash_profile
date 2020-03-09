@@ -215,7 +215,7 @@ alias nr="node-rails"
 
 
 # Get the rest of my stuff
-source $HOME/dotfiles/bash_prompt.sh
+source $HOME/dotfiles/bash/bash_prompt.sh
 source $HOME/.bashrc
 
 if [[ -f $HOME/dotfiles/locals ]]; then
@@ -380,3 +380,5 @@ setup_module() {
 
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+export PATH="$HOME/.cargo/bin:$PATH"
