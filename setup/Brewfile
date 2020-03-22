@@ -25,12 +25,12 @@ cask "alacritty"
 brew "tmux"
 
 brew "fzf"
+brew "fd"
 brew "autojump"
-brew "the_silver_searcher"
 brew "bat"
+brew "the_silver_searcher"
 brew "watchexec"
 brew "hyperfine"
-brew "fd"
 
 # Rails stuff
 brew "mysql"
