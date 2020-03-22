@@ -3,3 +3,4 @@
 .vim/bundle
 !.vim/bundle/ftplugin
 !.vim/bundle/ftdetect
+.bash_history
