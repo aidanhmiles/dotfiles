@@ -1,57 +1,3 @@
-gs
-gd config
-k
-gs
-gd config
-k
-gs
-gd config
-gco -- config/environments/
-RAILS_ENV=staging rails s
-k
-gs
-gd
-k
-gs
-gd Gemfile
-k
-gs
-gst
-gco dev
-gbr
-vim Gemfile
-vs
-k
-gs
-vim Gemfile
-k
-gs
-gbr
-gbr -m activeadmin-integration aa
-gbr
-gco aa config/boot.rb 
-k
-gs
-vim config/boot.rb 
-k
-gs
-bi
-k
-gs
-gd
-k
-gs
-ga Gemfile* config/boot.rb 
-gcm "Adds bootsnap for improving application boot times"
-gp
-gco aa
-k
-gs
-k
-gs
-k
-k
-gs
 k
 gs
 k
@@ -4967,8 +4913,8 @@ rails c
 ag -g slack
 j av
 man curl
-curl -H 'Authorization: Bearer xoxb-4307426766-655005370660-lo9Q11a5g4z2vNta9g0P1sck' -X 
-curl -X POST   https://slack.com/api//chat.postMessage   -H 'Accept: */*'   -H 'Accept-Encoding: gzip, deflate'   -H 'Authorization: Bearer xoxb-4307426766-655005370660-lo9Q11a5g4z2vNta9g0P1sck'   -H 'Cache-Control: no-cache'   -H 'Connection: keep-alive'   -H 'Content-Length: 60'   -H 'Content-Type: application/json'   -H 'Host: slack.com'   -H 'User-Agent: PostmanRuntime/7.19.0'   -H 'cache-control: no-cache'   -d '{
+curl -H 'Authorization: Bearer xoxb-1111111111-655005370660-lo9Q11a5g4z2vNta9g0P1sck' -X 
+curl -X POST   https://slack.com/api//chat.postMessage   -H 'Accept: */*'   -H 'Accept-Encoding: gzip, deflate'   -H 'Authorization: Bearer xoxb-1111111111-655005370660-lo9Q11a5g4z2vNta9g0P1sck'   -H 'Cache-Control: no-cache'   -H 'Connection: keep-alive'   -H 'Content-Length: 60'   -H 'Content-Type: application/json'   -H 'Host: slack.com'   -H 'User-Agent: PostmanRuntime/7.19.0'   -H 'cache-control: no-cache'   -d '{
 "channel": "CD2B35HHU",
 "text": "Good morning, world!"
 }'
@@ -5278,9 +5224,9 @@ vim deploy/systemd/ExecStopPost.sh
 channel_id="D86Q0FXCH"
 msg="$RAILS_ENV server is stopping for an update"
 encoded_msg=$(ruby < <( echo "require 'uri'; puts URI.encode('"$msg"')"))
-curl -X POST   https://slack.com/api/chat.postMessage   -H 'Accept-Encoding: gzip, deflate'   -H 'Authorization: Bearer xoxb-4307426766-655005370660-lo9Q11a5g4z2vNta9g0P1sck'   -H 'Connection: keep-alive'   -H 'Content-Type: application/json'   -H 'Host: slack.com'   -H 'User-Agent: CodeDeployAgent'   -d "channel=$channel_id&text=$encoded_msg"
-curl -X POST   https://slack.com/api/chat.postMessage   -H 'Accept-Encoding: gzip, deflate'   -H 'Authorization: Bearer xoxb-4307426766-655005370660-lo9Q11a5g4z2vNta9g0P1sck'   -H 'Connection: keep-alive'   -H 'Content-Type: application/json'   -H 'Host: slack.com'   -H 'User-Agent: CodeDeployAgent'   -d "channel=$channel_id&text=$encoded_msg" | jq
-curl -X POST   https://slack.com/api/chat.postMessage   -H 'Accept-Encoding: gzip, deflate'   -H 'Authorization: Bearer xoxb-4307426766-655005370660-lo9Q11a5g4z2vNta9g0P1sck'   -H 'Connection: keep-alive'   -H 'Content-Type: application/json'   -H 'Host: slack.com'   -H 'User-Agent: CodeDeployAgent'   -d "channel=$channel_id&text=$encoded_msg" > curl.txt
+curl -X POST   https://slack.com/api/chat.postMessage   -H 'Accept-Encoding: gzip, deflate'   -H 'Authorization: Bearer xoxb-1111111111-655005370660-lo9Q11a5g4z2vNta9g0P1sck'   -H 'Connection: keep-alive'   -H 'Content-Type: application/json'   -H 'Host: slack.com'   -H 'User-Agent: CodeDeployAgent'   -d "channel=$channel_id&text=$encoded_msg"
+curl -X POST   https://slack.com/api/chat.postMessage   -H 'Accept-Encoding: gzip, deflate'   -H 'Authorization: Bearer xoxb-1111111111-655005370660-lo9Q11a5g4z2vNta9g0P1sck'   -H 'Connection: keep-alive'   -H 'Content-Type: application/json'   -H 'Host: slack.com'   -H 'User-Agent: CodeDeployAgent'   -d "channel=$channel_id&text=$encoded_msg" | jq
+curl -X POST   https://slack.com/api/chat.postMessage   -H 'Accept-Encoding: gzip, deflate'   -H 'Authorization: Bearer xoxb-1111111111-655005370660-lo9Q11a5g4z2vNta9g0P1sck'   -H 'Connection: keep-alive'   -H 'Content-Type: application/json'   -H 'Host: slack.com'   -H 'User-Agent: CodeDeployAgent'   -d "channel=$channel_id&text=$encoded_msg" > curl.txt
 vi curl.txt 
 mv curl.txt curl.gzip
 unzip curl.gzip 
@@ -20048,3 +19994,9 @@ ga rgx.sh
 ga .bash_history 
 k
 gs
+gco .bash_history && git merge ansible
+gp
+k
+gs
+cd dotfiles/
+vim .bash_history 
