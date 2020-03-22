@@ -8,3 +8,4 @@ let b:surround_{char2nr("c")} = "/* \r */"
 " VIM-JSX
 let g:jsx_ext_required = 0
 
+nnoremap <localleader>d odebugger;<esc>
