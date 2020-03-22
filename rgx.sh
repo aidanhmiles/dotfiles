@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# a script for testing bash regexes
+
 if [[ $# -lt 2 ]]; then
     echo "Usage: $0 <REGEXP PATTERN STRING> <TEST STRINGS>"
     exit 1
