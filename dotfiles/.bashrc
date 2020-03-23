@@ -28,10 +28,9 @@ if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
 # Add my own scripts n stuff
 export PATH="$PATH:$HOME/dotfiles/bin"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 complete -C "$HOME/bin/vault" vault
-source "$HOME/.bash_completion/alacritty"
+# source "$HOME/.bash_completion/alacritty"
 
 # Start tmux if not in iTerm
 if command -v tmux &> /dev/null && \

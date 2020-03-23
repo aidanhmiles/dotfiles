@@ -519,6 +519,7 @@ key_bindings:
   # Cmd<number> for tab switching
   # NOTE tmux windows are zero-indexed, Cmd+1 gets you window 0
   # - { key: Key0,     mods: Command,       chars: "\x06\x30" }
+  - { key: T,     mods: Command,          chars: "\x06\x63" }
   - { key: Key1,     mods: Command,       chars: "\x06\x31" }
   - { key: Key2,     mods: Command,       chars: "\x06\x32" }
   - { key: Key3,     mods: Command,       chars: "\x06\x33" }
