@@ -1,0 +1,12 @@
+#
+# Because I want to learn Vim better
+set editing-mode vi
+set keymap vi-command
+
+set completion-prefix-display-length 2
+set completion-ignore-case on
+# completion is insensitive to _ vs -
+set completion-map-case on
+
+# if I decide I want to use custom Vim keymappings, insert mode
+#set keymap vi-insert
