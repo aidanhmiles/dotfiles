@@ -4,9 +4,6 @@ export EDITOR=/usr/local/bin/vim
 export FCEDIT=/usr/local/bin/vim
 export PGHOST=localhost
 
-# dotfile-specific git command
-alias sdf='/usr/bin/git --git-dir=$HOME/.dotfiles_git/ --work-tree=$HOME'
-
 # INCREASE history length, ERASE duplicates, and PRESERVE history after exiting shell
 export HISTCONTROL=ignoredups:erasedups # no dupes
 export HISTSIZE=20000 # lots of history
