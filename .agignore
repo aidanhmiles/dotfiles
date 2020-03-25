@@ -1,0 +1,11 @@
+*.min
+*.map
+
+*.min.*
+*.map.*
+
+/tmp/
+/.git/
+
+/node_modules/
+/combined/
