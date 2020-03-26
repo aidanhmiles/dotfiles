@@ -13,7 +13,7 @@ alias sshconf="vim ~/.ssh/config"
 # "scratch paper"
 alias scratch="vim ~/Desktop/scratch"
 
-alias notes="vp ~/Documents/avr/stickynotes/*"
+alias notes="cd ~/Documents/avr/stickynotes/ && vp *"
 
 # changing bash commands
 # for highlighting different entities when ls-ing around
