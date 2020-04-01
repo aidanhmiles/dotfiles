@@ -28,3 +28,5 @@ if command -v tmux &> /dev/null && \
     tmux
 fi
 
+ssh-add -qK ~/.ssh/avr_system_aidan
+ssh-add -qK ~/.ssh/avrbb
