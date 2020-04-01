@@ -90,7 +90,7 @@ colorscheme ir_black
 " colorscheme earendel
 
 " only redraw when have to
-" this is a little weird
+" NOTE: this is a little weird
 set lazyredraw
 
 set nocursorline
@@ -108,6 +108,7 @@ nnoremap gV `[v`]
 " fzf for vim
 " NOTE: installed with Homebrew
 set rtp+=/usr/local/opt/fzf
+" nnoremap <c-p> :FZF<cr>
 
 " ansible-vim
 let g:ansible_unindent_after_newline = 1
@@ -140,10 +141,28 @@ noremap <leader>r :TabooRename
 "endif
 
 "let g:ackprg = 'ag --vimgrep --smart-case'
-cnoreabbrev ag Ack
-cnoreabbrev aG Ack
-cnoreabbrev Ag Ack
-cnoreabbrev AG Ack
+" cnoreabbrev ag Ack
+" cnoreabbrev aG Ack
+" cnoreabbrev Ag Ack
+" cnoreabbrev AG Ack
+
+" CTRL P (removed for now)
+" https://github.com/kien/ctrlp.vim
+"===================================
+" let g:ctrlp_user_command = 'fzf'
+
+" fzf / fzf.vim
+" https://github.com/junegunn/fzf
+"===================================
+nnoremap <c-p> :FilesPreview<cr>
+
+command! -bang -nargs=? -complete=dir Files
+    \ call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--multi']}, <bang>0)
+
+" nnoremap <c-o> :FilesPreview<cr>
+command! -bang -nargs=? -complete=dir FilesPreview
+    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--multi']}), <bang>0)
+
 
 "SuperTab
 "===================================
@@ -225,7 +244,6 @@ nnoremap <leader>u <c-r>
 "}}}
 " CTRL SHORTCUTS {{{
 
-nnoremap <c-p> :FZF<cr>
 nnoremap <c-j> ddjP
 nnoremap <c-k> ddkP
 
