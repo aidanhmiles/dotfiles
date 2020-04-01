@@ -1,0 +1,186 @@
+---
+
+# Python 3.8.1 is installed
+# Brewfile is already satisfied
+
+- hosts: localhost
+
+  vars:
+    installer_dest: ~/Desktop/installers
+    become_user: root
+    myuser: aidanmiles
+
+  tasks:
+
+    # # These used to be symlinks. Not necessary anymore bc ansible will update them for me.
+    # - name: templatize dotfiles
+    #   template:
+    #     src: "{{ item }}"
+    #     dest: ~/{{ item }}
+    #     state: present
+    #   loop:
+    #     - .bash_history
+    #     - .bash_profile
+    #     - .bashrc
+    #     - .gitconfig
+    #     - .gitignore
+    #     - .gitignore_global
+    #     - .inputrc
+    #     - .vimrc
+    #     - .vim
+    #     - .npmrc
+    #     - .aws/credentials
+    #     - .aws/config
+
+    - name: Set main user's shell
+      become: true
+      shell: |
+        /bin/bash -lc "chsh /usr/bin/local/bash {{ myuser }}"
+
+    - name: Ensure the temp installer directory exists
+      file:
+        path: "{{ installer_dest }}"
+        state: directory
+        owner: aidanmiles
+
+    - name: Download installers for work apps
+      get_url:
+        url: "{{ item }}"
+        dest: "{{ installer_dest }}/"
+        mode: 700
+      loop:
+        # chrome 
+        - "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
+        # firefox 
+        - "https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US"
+        # Slack 
+        - "https://slack.com/ssb/download-osx"
+        # datagrip 
+        - "https://download.jetbrains.com/datagrip/datagrip-2019.3.3.dmg"
+        # Google Drive File Stream 
+        - "https://dl.google.com/drive-file-stream/googledrivefilestream.dmg"
+        # OmniGraffle 
+        - "https://downloads.omnigroup.com/software/MacOSX/10.14/OmniGraffle-7.13.dmg"
+        # Sketch 
+        - "https://download.sketchapp.com/sketch-63.1-92452.zip"
+        # VirtualBox 
+        - "https://download.virtualbox.org/virtualbox/6.1.4/VirtualBox-6.1.4-136177-OSX.dmg"
+        # Zoom 
+        - "https://d11yldzmag5yn.cloudfront.net/prod/4.6.17383.0119/Zoom.pkg"
+        # Dash docs 
+        - "https://sanfrancisco.kapeli.com/downloads/v5/Dash.zip"
+        # postman
+        - "https://dl.pstmn.io/download/latest/osx"
+
+    - name: Download installers for personal apps
+      get_url:
+        url: "{{ item }}"
+        dest: "{{ installer_dest }}/"
+        mode: 700
+      loop:
+        # 1Password 
+        - "https://app-updates.agilebits.com/download/OPM7"
+        # Signal
+        - "https://updates.signal.org/desktop/signal-desktop-mac-1.32.1.dmg"
+        # Alfred 
+        - "https://cachefly.alfredapp.com/Alfred_4.0.8_1135.dmg"
+        # Contexts 
+        - "https://contexts.co/releases/Contexts-3.7.1.dmg"
+        # BetterTouchTool 
+        - "https://bettertouchtool.net/releases/BetterTouchTool.zip"
+        # iTerm 
+        - "https://iterm2.com/downloads/stable/iTerm2-3_3_8.zip"
+        # Android file transfer 
+        - "https://dl.google.com/dl/androidjumper/mtp/current/AndroidFileTransfer.dmg"
+        # Resilio Sync 
+        - "https://download-cdn.resilio.com/stable/osx/Resilio-Sync.dmg"
+
+        # RescueTime 
+        - "https://www.rescuetime.com/installers/RescueTimeInstaller.pkg"
+        # Rocket 
+        - "https://macrelease.matthewpalmer.net/Rocket.dmg"
+        # flux 
+        - "https://justgetflux.com/mac/Flux.zip"
+        # Evernote 
+        - "https://cdn1.evernote.com/mac-smd/public/Evernote_RELEASE_7.14_458244.dmg"
+        # TheBrain
+        - "http://updater.thebrain.com/files/TheBrain11.0.56.0.dmg"
+        # PIA 
+        - "https://www.privateinternetaccess.com/installer/x/download_installer_osx"
+        # Sync 
+        - "https://www.sync.com/download/apple/Sync.dmg"
+        # UHK 
+        - "https://github.com/UltimateHackingKeyboard/agent/releases/download/v1.4.2/UHK.Agent-1.4.2-mac.1.4.2.dmg"
+
+        # VLC 
+        - "https://get.videolan.org/vlc/3.0.8/macosx/vlc-3.0.8.dmg"
+        # Yubico Authenticator 
+        - "https://developers.yubico.com/yubioath-desktop/Releases/yubioath-desktop-latest-mac.pkg"
+        # LittleSnitch 
+        - "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-4.4.3.dmg"
+        # MicroSnitch 
+        - "https://www.obdev.at/downloads/MicroSnitch/MicroSnitch-1.3.1.zip"
+        # Evoluent mouse manager thing 
+        - "https://evoluent.com/download/Evoluent%20VerticalMouse%20Device%20Controller%20-%201.4.1.pkg"
+        # SizeUp 
+        - "http://www.irradiatedsoftware.com/downloads/?file=SizeUp.zip"
+        # Keyboard Maestro 
+        - "https://www.keyboardmaestro.com/action/download?km-kmi-7-b3"
+
+    # Todoist (via app store)
+    - name: Install coding fonts
+  # inconsolata
+  # http://levien.com/type/myfonts/inconsolata.html
+  # mono
+  # https://download.jetbrains.com/fonts/JetBrainsMono-1.0.3.zip
+  # hack
+  # https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip
+  # but it should be in Sync
+
+    - name: Install developer tools
+      get_url:
+        url: "{{ item }}"
+        dest: "{{ installer_dest }}/"
+        mode: 700
+      loop:
+      # vagrant
+      - "https://releases.hashicorp.com/vagrant/2.2.7/vagrant_2.2.7_x86_64.dmg"
+      # terraform
+      - "https://releases.hashicorp.com/terraform/0.12.23/terraform_0.12.23_darwin_amd64.zip"
+      # packer
+      - "https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_darwin_amd64.zip"
+      # vault
+      - "https://releases.hashicorp.com/vault/1.3.3/vault_1.3.3_darwin_amd64.zip"
+      # consul?
+      # aapt
+      # bsdiff
+      # chromedriver, geckodriver
+
+    - name: Install python 3.6.3
+      shell: |
+        pyenv install 3.6.3
+
+#     TODO not sure how to specify which pyenv
+#     - name: Install python libs
+#       pip:
+#         name: "{{ item }}"
+#         state: present
+#       loop:
+#         - awscli
+
+    - name: Install ruby 2.5.7
+      shell: |
+        rbenv install 2.5.7
+
+#     TODO not sure how to specify which pyenv
+    # - name: Install ruby gems
+    #   gem:
+    #     name: "{{ item }}"
+    #     state: present
+    #   loop:
+    #     - bundler
+
+    - name: Install Rust
+      shell: |
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
