@@ -13,7 +13,17 @@ alias sshconf="vim ~/.ssh/config"
 # "scratch paper"
 alias scratch="vim ~/Desktop/scratch"
 
-alias notes="cd ~/Documents/avr/stickynotes/ && vp *"
+export NOTESDIR="$HOME/Documents/avr/stickynotes"
+notes() {
+ cd $NOTESDIR
+ if [[ -f "Session.vim" ]]; then
+   # Have a session file
+   vs
+ else
+   # no session file
+   vp *
+ fi
+}
 
 # changing bash commands
 # for highlighting different entities when ls-ing around
