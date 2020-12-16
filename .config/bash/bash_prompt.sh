@@ -195,7 +195,7 @@ myprompt (){
   prompt_string+=${NODE_STRING:+"$NODE_STRING "}
   # if GIT_STATUS is set, yield the GIT_STATUS string plus a space
   prompt_string+=${GIT_STATUS:+"$GIT_STATUS "}
-  prompt_string+=$RED$PROMPT_SYMBOL
+  prompt_string+="\n$RED$PROMPT_SYMBOL"
   prompt_string+=$RESETCOLOR
   export PS1=${prompt_string}
 

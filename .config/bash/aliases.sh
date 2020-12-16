@@ -1,8 +1,13 @@
 #!/usr/bin/env
 
+alias asciidoc="$HOME/bin/asciidoc-py3/asciidoc.py"
+
+alias ffadb="/Users/aidanmiles/Library/Caches/Firefox/Profiles/h9lkr9ck.default-release-1597793677243/adb/adb"
+
 #frequently edited files
 CONFDIR="$HOME/.config"
 alias alaconf="vim $HOME/.config/alacritty/alacritty.yml"
+alias starshipconf="vim $HOME/.config/starship.toml"
 alias tmuxconf="vim $HOME/.tmux.conf"
 alias bashp="vim $HOME/.bash_profile"
 alias myaliases="vim $CONFDIR/bash/aliases.sh"
@@ -50,6 +55,10 @@ mkcd() {
     mkdir "$@" && cd $_
 }
 
+mvcd() {
+    mv "$1" "$2" && cd $2 && ls
+}
+
 
 alias hag="history | ag"
 
@@ -69,6 +78,7 @@ alias sdfcob="sdf checkout -b"
 # GIT
 alias ga="git add"
 alias gaa="git add -A" 
+alias gaw="git add--interactive-words --patch=stage" 
 alias gbr="git branch"
 alias gbrv="git branch -vv"
 alias gcob="git checkout -b"
@@ -94,7 +104,11 @@ alias grb="git rebase"
 alias gcp="git cherry-pick"
 alias gbag="git branch | ag"
 alias gbrag="git branch -r | ag"
+
 # show the changes applied by one commit by comparing to its parent
+gdw() {
+  GIT_PAGER='less -r' git diff --word-diff
+}
 gcag() {
   # Try local branch
   local_branch=$(git branch | ag "$1" )
@@ -123,9 +137,18 @@ grewind() {
   git reset --soft HEAD~$1
 }
 
+gcobp() {
+  gcob "$1"
+  gpo -u "$1"
+}
+
 ###############
 # DevOps tools
 ###############
+# Pulumi
+alias pup="pulumi up"
+alias ppr="pulumi up"
+alias pst="pulumi stack"
 
 # Terraform
 alias tf="terraform"
@@ -226,7 +249,7 @@ vupp(){
   else
     # default behavior
     echo "No such vagrantfile found: $vagrantfile"
-    echo "vagrant up --provision"
+    echo "Falling back to: vagrant up --provision"
     vagrant up --provision
   fi
 }
@@ -245,6 +268,7 @@ rr () {
 
 # Python
 alias py="python"
+alias pipgrade="pip install --upgrade pip"
 
 # Node / npm
 alias ni="npm install"
