@@ -7,6 +7,7 @@
 #   xcode CLI utils
 #   homebrew
 #   python
+#   - jmespath (for some modules)
 #   ansible
 
 # Step 0: Idiot-check

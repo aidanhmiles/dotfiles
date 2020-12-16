@@ -4,11 +4,9 @@ shopt -s nullglob dotglob     # To include hidden files
 main (){
 
   declare -a plugin_urls=( 
-    # mileszs/ack.vim
-    # kien/ctrlp.vim
     ervandew/supertab
     gcmt/taboo.vim
-    vim-airline/vim-airline
+    itchyny/lightline.vim
     Yggdroot/indentLine
     tpope/vim-commentary
     tpope/vim-surround
