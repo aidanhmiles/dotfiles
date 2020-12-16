@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-# Run this script using with:
+# TODO figure out how to do this with the bare repo
+# OLD WAY: Run this script using with:
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/aidanhmiles/dotfiles/master/setup/main.sh)"
 
 # ansible pre-reqs:
@@ -34,7 +35,10 @@ fi
 # Now we for sure have Git
 # TODO how to make this idempotent
 # Step 2: Clone dotfiles
-git clone https://github.com/aidanhmiles/dotfiles.git ~/dotfiles
+# https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
+git clone --separate-git-dir=$HOME/.config https://github.com/aidanhmiles/dotfiles.git ~/dotfiles
+
+exit 0
 
 cd ~/dotfiles
 
