@@ -16,8 +16,8 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden'
 
 # Android
 export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/build-tools/29.0.3/
-export PATH=$PATH:$ANDROID_HOME/platform-tools/platform-tools
+export PATH=$PATH:$ANDROID_HOME/build-tools/30.0.0-rc4/
+export PATH=$PATH:$ANDROID_HOME/platform-tools/
 export ANDROID_JDK_PATH="/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home"
 
 # export PATH="/usr/local/opt/redis@4.0/bin:$PATH"
@@ -31,3 +31,4 @@ complete -C "$HOME/bin/vault" vault
 # source "$HOME/.bash_completion/alacritty"
 
 export PATH="$HOME/bin:$PATH"
+
