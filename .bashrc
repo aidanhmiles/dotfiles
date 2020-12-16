@@ -32,3 +32,4 @@ complete -C "$HOME/bin/vault" vault
 
 export PATH="$HOME/bin:$PATH"
 
+eval "$(starship init bash)"
