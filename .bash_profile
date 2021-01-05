@@ -20,7 +20,7 @@ source $HOME/.bashrc
 
 # link rbenv rubies to brew's upgraded openssl, instead of the default (per guidance from brew install)
 # Note: this may interfere with building old versions of Ruby (e.g <2.4) that use OpenSSL <1.1.
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+# export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
 # Start tmux if not in iTerm
 if command -v tmux &> /dev/null && \
@@ -32,6 +32,6 @@ if command -v tmux &> /dev/null && \
     tmux
 fi
 
-ssh-add -qK ~/.ssh/avr_system_aidan
-ssh-add -qK ~/.ssh/avrbb
+# ssh-add -qK ~/.ssh/avr_system_aidan
+# ssh-add -qK ~/.ssh/avrbb
 
