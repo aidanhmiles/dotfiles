@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr/bin/env bash
 
 alias asciidoc="$HOME/bin/asciidoc-py3/asciidoc.py"
 
