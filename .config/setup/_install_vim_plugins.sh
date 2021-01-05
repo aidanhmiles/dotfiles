@@ -4,8 +4,6 @@ shopt -s nullglob dotglob     # To include hidden files
 main (){
 
   declare -a plugin_urls=( 
-    ervandew/supertab
-    gcmt/taboo.vim
     itchyny/lightline.vim
     Yggdroot/indentLine
     tpope/vim-commentary
@@ -15,6 +13,8 @@ main (){
     guns/xterm-color-table.vim
     junegunn/fzf
     junegunn/fzf.vim
+    ackyshake/VimCompletesMe
+    ambv/black
   )
 
   for url in ${plugin_urls[@]}; do
