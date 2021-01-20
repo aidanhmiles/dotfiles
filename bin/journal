@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+
+# TODO
+# - tags
+# - journal-dump to a file
+# -
+
+journal_temp_dir="$TMPDIR/adn_journal" 
+s3_bucket_url="s3://thoughtsgohere/journal"
+
+make_journal () {
+
+  while true; do
+    read -p $'l/s\n' longshort
+    case $longshort in
+        [Ll]* ) mode="long"; break;;
+        [Ss]* ) mode="short"; break;;
+            * ) echo "[Ll] for long [Ss] for short";;
+    esac
+  done
+
+  filename="$(date -u "+%Y-%m-%d_%H:%M:%S").txt"
+  full_path="$journal_temp_dir/$filename"
+
+  if [[ -d $journal_temp_dir ]]; then
+    # do nothing
+    echo ""
+  else
+    mkdir "$journal_temp_dir"
+    echo "mkdir $journal_temp_dir"
+    echo ""
+  fi
+
+  touch "$full_path"
+
+  if [[ "$mode" == "long" ]]; then
+    echo "Entering vim"
+    vim $full_path
+  else
+    clear
+    # Use cat on STDIN for 'short' input.
+    # Add -s for single-spacing lines
+    cat -s > "$full_path"
+
+    # Don't leave any text on the screen while saving
+    # Insert iTerm's CMD+K escape sequence
+    echo -e '\u001b]1337;ClearScrollback\u0007'
+  fi
+
+  echo "Saving $filename to S3"
+  echo "$journal_temp_dir -> $s3_bucket_url"
+
+  result=$(aws --profile journaler s3 sync --exclude ".DS_Store" "$journal_temp_dir" "$s3_bucket_url")
+
+  # Insert iTerm's CMD+K escape sequence
+  echo -e '\u001b]1337;ClearScrollback\u0007'
+  clear
+
+}
+
+make_journal
+

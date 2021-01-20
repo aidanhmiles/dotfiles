@@ -4,6 +4,13 @@
 # OLD WAY: Run this script using with:
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/aidanhmiles/dotfiles/master/setup/main.sh)"
 
+# Now we for sure have Git
+# TODO how to make this idempotent
+# Step 2: Clone dotfiles
+# https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
+git clone --bare https://github.com/aidanhmiles/dotfiles.git $HOME/.config/.git/
+
+
 # ansible pre-reqs:
 #   xcode CLI utils
 #   homebrew
@@ -20,7 +27,7 @@ esac
 
 [[ $pass != true ]] && echo "Read the instructions first!" && exit 1;
 
-# Step 1: XCODE 
+# Step 1: XCODE
 echo "checking xcode (xcode-select -p)"
 
 xcode_status="$(xcode-select -p && echo $?)"
@@ -32,18 +39,13 @@ else
   xcode-select --install
 fi
 
-# Now we for sure have Git
-# TODO how to make this idempotent
-# Step 2: Clone dotfiles
-# https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
-git clone --separate-git-dir=$HOME/.config https://github.com/aidanhmiles/dotfiles.git ~/dotfiles
 
 exit 0
 
 cd ~/dotfiles
 
 # Step 3: Homebrew
-which brew 
+which brew
 brew_status=$?
 if [[ ! $brew_status -eq 0 ]]; then
   echo ""
@@ -59,7 +61,7 @@ echo "Installing everything in Brewfile (brew bundle)"
 brew bundle --file="~/dotfiles/Brewfile"
 # We now have pyenv, updated bash, our favorite shell utils, and more
 # TODO do we need to reload the shell here?
-# source ~/.bashrc  
+# source ~/.bashrc
 # etc
 
 # Step 4: Python
@@ -91,5 +93,3 @@ echo "ansible macos_playbook.yml"
 ANSIBLE_CFG="./ansible.cfg" \
 ansible-playbook \
 playbooks/macos_playbook.yml
-
-
