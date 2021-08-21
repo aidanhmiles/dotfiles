@@ -1,6 +1,6 @@
 "
 "Aidan's vimrc
-"
+
 " SOME INTRODUCTORY NOTES {{{
 "
 " leader-based shortcuts are mostly used for non filetype specific mappings
@@ -15,17 +15,25 @@
 set runtimepath+=$HOME/.vim/bundle/
 execute pathogen#infect()
 
-" BACKUP
-" backup and writebackup enable backup support. As annoying as this can be, it
-" is much better than losing tons of work in an edited-but-not-written file.
-set backup
-set writebackup
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set backupskip=/tmp/*,/private/tmp/*
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+"let $BASH_ENV = "~/.config/bash/aliases.sh"
+
+set autoread " Pick up external changes to files
+"set autowrite " Write on :next/:previous
+
+set nobackup
+set noswapfile
+set nojoinspaces
+"set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+"set backupskip=/tmp/*,/private/tmp/*
+"set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+" nnoremap <c-p> :FZF<cr>
+
+" for "*y to clipboard
+set clipboard=unnamed
 
 " vim, not vi
 set nocompatible
+set shell=/bin/bash\ --rcfile\ ~/.bash_profile
 
 " switch esc to kj
 inoremap kj <esc>
@@ -38,7 +46,7 @@ inoremap kj <esc>
 " TODO why is this such a performance suck
 " set relativenumber
 
-set number 
+set number
 " yay syntax highlighting
 filetype plugin indent on
 syntax on
@@ -46,9 +54,9 @@ set fileencoding=utf-8
 
 " Searching!
 " highlight all search pattern matches
-set hlsearch 
+set hlsearch
 " move cursor to next match
-set incsearch 
+set incsearch
 " case insensitive searching
 set ignorecase
 if exists("&wildignorecase")
@@ -77,7 +85,7 @@ set wildmenu
 
 " Paste Mode
 " if ctrl-t does anything, make it not do things
-nnoremap <c-t> <nop> 
+nnoremap <c-t> <nop>
 " ctrl-t toggles paste-mode
 set pastetoggle=<c-t>
 
@@ -105,55 +113,69 @@ nnoremap gV `[v`]
 " PLUGIN OPTS {{{
 "
 
-" fzf for vim
-" NOTE: installed with Homebrew
-set rtp+=/usr/local/opt/fzf
-" nnoremap <c-p> :FZF<cr>
+" COMPLETOR.vim "
+"
+" Use TAB to complete when typing words, else inserts TABs as usual.  Uses
+" dictionary, source files, and completor to find matching words to complete.
 
-" ansible-vim
-let g:ansible_unindent_after_newline = 1
+" Note: usual completion is on <C-n> but more trouble to press all the time.
+" Never type the same word twice and maybe learn a new spellings!
+" Use the Linux dictionary when spelling is in doubt.
+function! Tab_Or_Complete() abort
+  " If completor is already open the `tab` cycles through suggested completions.
+  if pumvisible()
+    return "\<C-N>"
+  " If completor is not open and we are in the middle of typing a word then
+  " `tab` opens completor menu.
+  elseif col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^[[:keyword:][:ident:]]'
+    return "\<C-R>=completor#do('complete')\<CR>"
+  else
+    " If we aren't typing a word and we press `tab` simply do the normal `tab`
+    " action.
+    return "\<Tab>"
+  endif
+endfunction
 
-" Airline + status and tabline settings
+" TAB option 1
+" Use `tab` key to select completions.  Default is arrow keys.
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" TAB option 2
+" Use tab to trigger auto completion.  Default suggests completions as you type.
+" let g:completor_auto_trigger = 0
+" inoremap <expr> <Tab> Tab_Or_Complete()
+
+
+
+
+" Airline (Now lightline)
 " Always display the statusline in all windows
 set laststatus=2
-" Always display the tabline, even if there is only one tab
-set showtabline=2
-let g:airline#extensions#tabline#enabled = 1
-  
+set noshowmode
+
+" ALE
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['eslint'],
+\   'ruby': ['rubocop'],
+\   'python': ['black'],
+\}
+
+let g:ale_fix_on_save = 1
+let g:black_virtualenv = "~/.vim/black"
 
 " INDENT GUIDES
-"===================================
-let g:indentLine_char = '|'
-let g:indentLine_color_term = 24
-" let g:indentLine_color_term = 255
-
-" Taboo
-" setting tab names
-let g:taboo_tab_format = "| %N%m %f "
-noremap <leader>r :TabooRename 
-
-"" The Silver Searcher
-""===================================
-"if executable('ag')
-"  " Use ag over grep
-"  set grepprg=ag\ --nogroup\ --nocolor
-
-"endif
-
-"let g:ackprg = 'ag --vimgrep --smart-case'
-" cnoreabbrev ag Ack
-" cnoreabbrev aG Ack
-" cnoreabbrev Ag Ack
-" cnoreabbrev AG Ack
-
-" CTRL P (removed for now)
-" https://github.com/kien/ctrlp.vim
-"===================================
-" let g:ctrlp_user_command = 'fzf'
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 1
+let g:indent_guides_guide_size = 1
 
 " fzf / fzf.vim
 " https://github.com/junegunn/fzf
 "===================================
+" NOTE: installed with Homebrew on mac, git clone on linux
+set rtp+=/usr/bin/fzf
+let $FZF_DEFAULT_COMMAND = "fdfind --type f --hidden"
 nnoremap <c-p> :FilesPreview<cr>
 
 command! -bang -nargs=? -complete=dir Files
@@ -162,16 +184,6 @@ command! -bang -nargs=? -complete=dir Files
 " nnoremap <c-o> :FilesPreview<cr>
 command! -bang -nargs=? -complete=dir FilesPreview
     \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--multi']}), <bang>0)
-
-
-"SuperTab
-"===================================
-let g:SuperTabMappingForward = '<tab>'
-let g:SuperTabMappingBackward = '<a-tab>'
-
-" no html syntax checking, because not working with these angular projects
-let g:syntastic_html_checkers=['']
-
 
 "}}}
 " SINGLE-CHAR FUNCTIONS {{{
@@ -233,7 +245,7 @@ nnoremap <leader>, ,
 noremap <leader>eu :tabedit $HOME/.vim/bundle<cr>
 
 "also html gets its own because html is annoying
-autocmd filetype html,erb nnoremap <leader>!  A<cr><!<esc>a-<esc>69.i<cr><esc>i-<esc>57.i<cr><esc>i-<esc>67.kA<space> 
+autocmd filetype html,erb nnoremap <leader>!  A<cr><!<esc>a-<esc>69.i<cr><esc>i-<esc>57.i<cr><esc>i-<esc>67.kA<space>
 
 "let two leaders turn off highlights
 nnoremap <leader><leader> :nohl<cr>
@@ -290,12 +302,12 @@ noremap <leader>K <c-w>k
 noremap <leader>L <c-w>l
 
 " space T => tabedit
-noremap <leader>t :tabedit 
-noremap <leader>m :tabmove 
+noremap <leader>t :tabedit<space>
+noremap <leader>m :tabmove
 
 " leader+n and +p move through open buffers in window
 noremap <leader>n :next<CR>
-noremap <leader>p :previous<CR> 
+noremap <leader>p :previous<CR>
 
 " Set the command window height to 4 lines
 set cmdheight=4
@@ -345,7 +357,7 @@ function! ToggleFocus()
 		setlocal showtabline=0
 		let b:set_focus = 1
 	endif
-	
+
 endfunction
 
 nnoremap <leader>f :Focus<CR>
@@ -355,7 +367,7 @@ let g:nightmode_on = 0
 command! Nightmode call ToggleNightmode()
 function! ToggleNightmode()
     if g:nightmode_on
-        colorscheme ir_black 
+        colorscheme ir_black
         set background=dark
         let g:indentLine_color_term = 23
         let g:nightmode_on = 0
@@ -374,3 +386,5 @@ nnoremap <localleader>n :Nightmode<CR>
 " highlight changes
 " =
 " }}}
+"
+packloadall
