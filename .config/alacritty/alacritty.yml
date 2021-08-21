@@ -251,18 +251,19 @@ mouse:
   # If this is `true`, the cursor is temporarily hidden when typing.
   hide_when_typing: false
 
-  url:
-    # URL launcher
-    #
-    # This program is executed when clicking on a text which is recognized as a URL.
-    # The URL is always added to the command as the last parameter.
-    launcher: open
+  hints:
+    url:
+      # URL launcher
+      #
+      # This program is executed when clicking on a text which is recognized as a URL.
+      # The URL is always added to the command as the last parameter.
+      launcher: open
 
-    # URL modifiers
-    #
-    # These are the modifiers that need to be held down for opening URLs when clicking
-    # on them. The available modifiers are documented in the key binding section.
-    #modifiers: Control|Shift
+      # URL modifiers
+      #
+      # These are the modifiers that need to be held down for opening URLs when clicking
+      # on them. The available modifiers are documented in the key binding section.
+      #modifiers: Control|Shift
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
@@ -385,9 +386,8 @@ key_bindings:
   - { key: C,        mods: Control, action: Copy                         }
   - { key: Paste,                   action: Paste                        }
   - { key: Copy,                    action: Copy                         }
-  - { key: H,        mods: Control, action: Hide                         }
   - { key: Q,        mods: Control, action: Hide                         }
-  - { key: W,        mods: Control, action: Hide                         }
+    # - { key: W,        mods: Control, action: Hide                         }
   # - { key: Home,                    chars: "\x1bOH",   mode: AppCursor   }
   - { key: Home,                    chars: "\x1b[H",   mode: ~AppCursor  }
   # - { key: End,                     chars: "\x1bOF",   mode: AppCursor   }
@@ -395,8 +395,8 @@ key_bindings:
   - { key: Key0,     mods: Control, action: ResetFontSize                }
   - { key: Equals,   mods: Control, action: IncreaseFontSize             }
   - { key: Minus,    mods: Control, action: DecreaseFontSize             }
-  - { key: K,        mods: Control, action: ClearHistory                 }
-  - { key: K,        mods: Control, chars: "\x06\x0c\n"                        }
+  - { key: K,        mods: Alt, action: ClearHistory                 }
+  - { key: K,        mods: Alt, chars: "\x06\x0c\n"                        }
   - { key: L,        mods: Control, action: ClearLogNotice               }
   - { key: L,        mods: Control, chars: "\x0c"                        }
   - { key: PageUp,   mods: Shift,   chars: "\x1b[5;2~"                   }
@@ -492,7 +492,7 @@ key_bindings:
     # - { key: F11,      mods: Command, chars: "\x1b[23;3~"                  }
     # - { key: F12,      mods: Command, chars: "\x1b[24;3~"                  }
 
-  # My additions, mostly based on 
+  # My additions, mostly based on
   # https://arslan.io/2018/02/05/gpu-accelerated-terminal-alacritty/
   #
   # ==Window mgmt==
@@ -500,16 +500,16 @@ key_bindings:
   # Cmd<number> for tab switching
   # NOTE tmux windows are zero-indexed, Cmd+1 gets you window 0
   # - { key: Key0,     mods: Command,       chars: "\x06\x30" }
-  - { key: T,     mods: Control,          chars: "\x06\x63" }
-  - { key: Key1,     mods: Control,       chars: "\x06\x31" }
-  - { key: Key2,     mods: Control,       chars: "\x06\x32" }
-  - { key: Key3,     mods: Control,       chars: "\x06\x33" }
-  - { key: Key4,     mods: Control,       chars: "\x06\x34" }
-  - { key: Key5,     mods: Control,       chars: "\x06\x35" }
-  - { key: Key6,     mods: Control,       chars: "\x06\x36" }
-  - { key: Key7,     mods: Control,       chars: "\x06\x37" }
-  - { key: Key8,     mods: Control,       chars: "\x06\x38" }
-  - { key: Key9,     mods: Control,       chars: "\x06\x39" }
+  - { key: T,        mods: Alt,       chars: "\x06\x63" }
+  - { key: Key1,     mods: Alt,       chars: "\x06\x31" }
+  - { key: Key2,     mods: Alt,       chars: "\x06\x32" }
+  - { key: Key3,     mods: Alt,       chars: "\x06\x33" }
+  - { key: Key4,     mods: Alt,       chars: "\x06\x34" }
+  - { key: Key5,     mods: Alt,       chars: "\x06\x35" }
+  - { key: Key6,     mods: Alt,       chars: "\x06\x36" }
+  - { key: Key7,     mods: Alt,       chars: "\x06\x37" }
+  - { key: Key8,     mods: Alt,       chars: "\x06\x38" }
+  - { key: Key9,     mods: Alt,       chars: "\x06\x39" }
   # - { key: Key0,     mods: Control,       chars: "\x06\x39" }
 
   # Move the current window to the right or left
@@ -519,6 +519,6 @@ key_bindings:
   - { key: LBracket,     mods: Control,   chars: "\x06\x70"       }
   - { key: RBracket,    mods: Control,   chars: "\x06\x6e"       }
 
+  - { key: S,        mods: Control,       chars: "" }
   # this can't work bc macOS captures Cmd+W
   # - { key: W,     mods: Command,       chars: "\x06\x26" }
-

@@ -1,14 +1,22 @@
 
+# DOCKER
+# export PATH=/usr/bin:$PATH
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
 
-export PATH=.bundle/binstubs:$PATH 
 
+export PATH=.bundle/binstubs:$PATH
+
+# MAC
 # [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+# LINUX / git installation
+[[ -s /home/aidan/.autojump/etc/profile.d/autojump.sh ]] && source /home/aidan/.autojump/etc/profile.d/autojump.sh
 
-# RBENV 
+# RBENV
+export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # PYENV
 export PATH="$HOME/.pyenv/bin:$PATH"
-if which pyenv > /dev/null; then 
+if which pyenv > /dev/null; then
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
 fi
@@ -32,7 +40,7 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden'
 # export PATH="$HOME/bin:$HOME/local/mysql/bin:$PATH"
 
 # for node / npm
-# export PATH="$HOME/.npm/**/bin:$PATH" 
+# export PATH="$HOME/.npm/**/bin:$PATH"
 # export PATH="$HOME/.poetry/bin:$PATH"
 # export PATH="$HOME/.cargo/bin:$PATH"
 # complete -C "$HOME/bin/vault" vault
@@ -41,3 +49,6 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden'
 export PATH="$HOME/bin:$PATH"
 
 if which starship > /dev/null; then eval "$(starship init bash)"; fi
+
+# add Pulumi to the PATH
+export PATH=$PATH:$HOME/.pulumi/bin

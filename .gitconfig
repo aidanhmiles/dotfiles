@@ -1,5 +1,5 @@
 [credential]
-	helper = osxkeychain
+	helper = cache
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global

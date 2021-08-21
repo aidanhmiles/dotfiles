@@ -1,8 +1,33 @@
 #!/usr/bin/env bash
 
+shopt -s expand_aliases
+# LINUX-only
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+alias fd=fdfind
+alias open="xdg-open"
+
 alias asciidoc="$HOME/bin/asciidoc-py3/asciidoc.py"
 
 alias ffadb="/Users/aidanmiles/Library/Caches/Firefox/Profiles/h9lkr9ck.default-release-1597793677243/adb/adb"
+
+# initialize OnePassword
+# eval $(op signin --cache moral_defibrillator)
+init_op() {
+  token_storage_file="$HOME/.config/op/adn_session_token"
+  touch $token_storage_file
+  chmod 600 $token_storage_file
+  token_val="$(cat $token_storage_file)"
+  # if we have a stored token
+  if [[ -n "$token_val" ]]; then
+    # use it
+    export OP_SESSION_moral_defibrillator="$token_val"
+  else
+    # log in
+    eval $(op signin --cache moral_defibrillator)
+    echo "$OP_SESSION_moral_defibrillator" > $token_storage_file
+  fi
+}
 
 #frequently edited files
 CONFDIR="$HOME/.config"
@@ -18,7 +43,8 @@ alias sshconf="vim ~/.ssh/config"
 # "scratch paper"
 alias scratch="vim ~/Desktop/scratch"
 
-export NOTESDIR="$HOME/Documents/avr/stickynotes"
+# export NOTESDIR="$HOME/Documents/avr/stickynotes"
+export NOTESDIR="/tower/aidan/shared/stickynotes/"
 notes() {
  cd $NOTESDIR
  if [[ -f "Session.vim" ]]; then
@@ -33,7 +59,7 @@ notes() {
 # changing bash commands
 # for highlighting different entities when ls-ing around
 LS_COLORS='di=36;40:ln=35;40:so=32;40:pi=32;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
-alias la="ls -a" 
+alias la="ls -a"
 alias ls="ls -FG"
 alias ll="ls -lhS"
 alias del="mv $* ~/.Trash"
@@ -77,8 +103,8 @@ alias sdfl="sdf log"
 alias sdfcob="sdf checkout -b"
 # GIT
 alias ga="git add"
-alias gaa="git add -A" 
-alias gaw="git add--interactive-words --patch=stage" 
+alias gaa="git add -A"
+alias gaw="git add--interactive-words --patch=stage"
 alias gbr="git branch"
 alias gbrv="git branch -vv"
 alias gcob="git checkout -b"
@@ -185,9 +211,9 @@ setup_module() {
 }
 
 # DOCKER
-alias dcup="docker-compose up"
-alias dcdn="docker-compose down"
-alias dcb="docker-compose build"
+alias dcup="sudo docker-compose up"
+alias dcdn="sudo docker-compose down"
+alias dcb="sudo docker-compose build"
 alias dc="docker-compose"
 
 # Ansible
@@ -221,7 +247,7 @@ setup_role () {
     if [[ ! -s $fname ]]; then
       echo -e "---\n# put some stuff here" > $fname
     fi
-  done 
+  done
 
   echo "Done!"
 }
@@ -240,7 +266,7 @@ alias vresume="vagrant resume"
 vupp(){
   if [[ -n "$@" ]]; then
     # TODO replace with find, or something else more portable
-    vagrantfile=$(ag -g "Vagrantfile_$1" .)
+    vagrantfile=$(fd --type f $1 vagrant/)
   fi
 
   if [[ -n "$vagrantfile" ]]; then
@@ -326,7 +352,7 @@ keygen() {
   if [[ ! -d ~/.ssh ]]; then
     mkdir -m 700 ~/.ssh
   fi
-    
+
   read -p "Enter an email address: " email
   read -p "Enter a filename (will be placed in ~/.ssh) " name
 
@@ -341,8 +367,8 @@ keygen() {
 alias sqldn="mysqladmin -u root -p shutdown"
 
 # Postgres
-alias psqld="pg_ctl -D /usr/local/var/postgres start"
-alias pg11="/usr/local/Cellar/postgresql/11.4/bin/pg_ctl -D /Users/aidanmiles/var/pg/data -l logfile start"
+alias psqld="sudo systemctl start postgresql@12-main"
+
 
 alias whatsmyip="dig +short myip.opendns.com ANY @resolver1.opendns.com."
 alias ipchicken='curl -s https://ipchicken.com | egrep -o '\''([[:digit:]]{1,3}\.){3}[[:digit:]]{1,3}'\'''
@@ -369,9 +395,12 @@ vo() {
 
 # open a list of files found using FZF as tabs
 vzf() {
+  FZF_DEFAULT_COMMAND="fdfind --type f --hidden"
   query=$([[ -n "$@" ]] && echo "-q $@" || echo "")
   result="$(fzf -m $query)"
   if [[ -z "$result" ]]; then return; fi
   trimmed="$(printf "$result" | tr "\n" " ")"
-  vp "$trimmed"
+  # echo "vim -p $trimmed"
+  # NOTE don't quote $trimmed because otherwise vim thinks all args are one string...
+  vp $trimmed
 }
