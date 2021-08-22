@@ -15,7 +15,9 @@ charging_symbol = "⚡️"
 discharging_symbol = "💀"
 
 [character]
-symbol = "☯"
+success_symbol="[☯](bold green)"
+error_symbol="[☯](bold red)"
+vicmd_symbol="[☯](bold purple)"
 
 [directory]
 truncation_length = 1
@@ -23,5 +25,4 @@ truncation_length = 1
 
 [git_status]
 stashed = "⚀"
-stashed_count.enabled = true
 
