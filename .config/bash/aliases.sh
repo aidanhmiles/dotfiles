@@ -341,8 +341,7 @@ keygen() {
 alias sqldn="mysqladmin -u root -p shutdown"
 
 # Postgres
-alias psqld="pg_ctl -D /usr/local/var/postgres start"
-alias pg11="/usr/local/Cellar/postgresql/11.4/bin/pg_ctl -D /Users/aidanmiles/var/pg/data -l logfile start"
+alias psqld="/usr/local/opt/postgresql/bin/postgres -D /usr/local/var/postgres"
 
 alias whatsmyip="dig +short myip.opendns.com ANY @resolver1.opendns.com."
 alias ipchicken='curl -s https://ipchicken.com | egrep -o '\''([[:digit:]]{1,3}\.){3}[[:digit:]]{1,3}'\'''
