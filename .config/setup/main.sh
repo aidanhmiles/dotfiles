@@ -8,7 +8,10 @@
 # TODO how to make this idempotent
 # Step 2: Clone dotfiles
 # https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
-git clone --bare https://github.com/aidanhmiles/dotfiles.git $HOME/.config/.git/
+# https://www.atlassian.com/git/tutorials/dotfiles
+if [ ! -d "$HOME/.dotfiles_git" ]; then
+  git clone --bare https://github.com/aidanhmiles/dotfiles.git $HOME/.dotfiles_git
+fi
 
 
 # ansible pre-reqs:
@@ -30,7 +33,8 @@ esac
 # Step 1: XCODE
 echo "checking xcode (xcode-select -p)"
 
-xcode_status="$(xcode-select -p && echo $?)"
+xcode_status="$(xcode-select --install && echo $?)"
+# TODO this status check errors now
 if [[ $xcode_status -eq 0 ]]; then
   echo "XCode is fine"
 else
@@ -40,9 +44,6 @@ else
 fi
 
 
-exit 0
-
-cd ~/dotfiles
 
 # Step 3: Homebrew
 which brew
@@ -50,7 +51,8 @@ brew_status=$?
 if [[ ! $brew_status -eq 0 ]]; then
   echo ""
   echo "Installing Homebrew"
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
   echo ""
   echo "Updating Homebrew (brew update)"
@@ -58,19 +60,24 @@ if [[ ! $brew_status -eq 0 ]]; then
 fi
 
 echo "Installing everything in Brewfile (brew bundle)"
-brew bundle --file="~/dotfiles/Brewfile"
+brew bundle --file="~/.config/setup/Brewfile"
 # We now have pyenv, updated bash, our favorite shell utils, and more
 # TODO do we need to reload the shell here?
 # source ~/.bashrc
 # etc
 
-# Step 4: Python
-echo "pyenv install 3.8.1"
-pyenv install 3.8.1
-echo "pyenv global 3.8.1"
-pyenv global 3.8.1
+# install starship
+sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
-. ~/dotfiles/setup/link_dotfiles.sh
+exit 0
+# Step 4: Python
+py_version="3.9.6"
+echo "pyenv install $py_version"
+pyenv install $py_version
+echo "pyenv global $py_version"
+pyenv global $py_version
+
+# . ~/dotfiles/setup/link_dotfiles.sh
 
 # need .bash_profile ready
 # source .bash_profile
@@ -79,17 +86,17 @@ pip install --upgrade pip
 echo "pip install --upgrade pip"
 
 # Step 5: Install ansible
-which ansible
-ansible_status=$?
-if [[ ! $ansible_status -eq 0 ]]; then
-  echo ""
-  echo "pip install ansible"
-  pip install ansible
-fi
+# which ansible
+# ansible_status=$?
+# if [[ ! $ansible_status -eq 0 ]]; then
+#   echo ""
+#   echo "pip install ansible"
+#   pip install ansible
+# fi
 
 # Step 6: Run ansible
-echo "ansible macos_playbook.yml"
-
-ANSIBLE_CFG="./ansible.cfg" \
-ansible-playbook \
-playbooks/macos_playbook.yml
+# echo "ansible macos_playbook.yml"
+# 
+# ANSIBLE_CFG="./ansible.cfg" \
+# ansible-playbook \
+# playbooks/macos_playbook.yml

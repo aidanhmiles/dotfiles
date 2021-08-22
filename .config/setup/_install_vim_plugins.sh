@@ -10,7 +10,6 @@ main (){
     Yggdroot/indentLine
     tpope/vim-commentary
     tpope/vim-surround
-    pangloss/vim-javascript
     altercation/vim-colors-solarized
     guns/xterm-color-table.vim
     junegunn/fzf
@@ -21,7 +20,7 @@ main (){
     echo ""
     name="$(basename ${url})"
     echo "installing ${name}"
-    localpath="$HOME/dotfiles/dotfiles/.vim/bundle/$name"
+    localpath="$HOME/.vim/bundle/$name"
     files=($localpath/*)
 
     if [ ${#files[@]} -gt 0 ]; then
