@@ -34,4 +34,5 @@ fi
 
 ssh-add -qK ~/.ssh/avr_system_aidan
 ssh-add -qK ~/.ssh/avrbb
+ssh-add -qK ~/.ssh/github
 
