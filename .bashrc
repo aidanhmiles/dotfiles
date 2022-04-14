@@ -1,13 +1,12 @@
 
-
 export PATH=.bundle/binstubs:$PATH 
+export PATH=/usr/local/Cellar/postgresql@12/12.10_1/bin:$PATH
 
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
 if which pyenv > /dev/null; then eval "$(pyenv init --path)"; fi
-
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 
@@ -27,10 +26,8 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden'
 # export PATH="$HOME/bin:$HOME/local/mysql/bin:$PATH"
 
 # for node / npm
-export PATH="$HOME/.npm/**/bin:$PATH" 
-# export PATH="$HOME/.poetry/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
-# complete -C "$HOME/bin/vault" vault
+# export PATH="$HOME/.npm/**/bin:$PATH" 
+# export PATH="$HOME/.cargo/bin:$PATH"
 # source "$HOME/.bash_completion/alacritty"
 
 export PATH="$HOME/bin:$PATH"
