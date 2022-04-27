@@ -1,7 +1,17 @@
 #!/usr/bin/env bash
 
+
 shopt -s expand_aliases
+
+
+mypath() {
+  output="$(set -f; IFS=:; printf "%s\n" $PATH)"
+  echo "$output"
+}
+
+
 # LINUX-only
+alias rbenv_update="git -C /home/aidan/.rbenv/plugins/ruby-build pull"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias fd=fdfind
@@ -115,7 +125,6 @@ alias gdl="git diff --name-only"
 alias gf="git fetch"
 alias glg="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias gp="git push"
-alias gphm="git push heroku master"
 alias gpog="git push origin gh-pages"
 alias gpom="git push origin master"
 alias gpo="git push origin"
@@ -130,6 +139,10 @@ alias grb="git rebase"
 alias gcp="git cherry-pick"
 alias gbag="git branch | ag"
 alias gbrag="git branch -r | ag"
+
+# HEROKU
+alias h="heroku"
+alias gphm="git push heroku main"
 
 # show the changes applied by one commit by comparing to its parent
 gdw() {
@@ -285,9 +298,12 @@ vupp(){
 ########################
 
 # Rails
+alias r="rails"
 alias be="bundle exec"
 alias bi="bundle install"
 alias bu="bundle update"
+alias creds="rails credentials:edit"
+alias credsp="rails credentials:edit --environment production"
 rr () {
   "kill -9 $(cat tmp/pids/server.pid); rails server -d"
 }
