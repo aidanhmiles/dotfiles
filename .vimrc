@@ -1,6 +1,32 @@
 "
 "Aidan's vimrc
 "
+" VIM-PLUG {{{
+
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
+
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/vim-xmark'
+Plug 'junegunn/vim-easy-align'
+Plug 'ervandew/supertab'
+Plug 'itchyny/lightline.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'altercation/vim-colors-solarized'
+Plug 'guns/xterm-color-table.vim'
+Plug 'ackyshake/VimCompletesMe'
+Plug 'ambv/black'
+
+if has('nvim')
+    Plug 'github/copilot.vim'
+endif 
+
+call plug#end()
+
+
+" }}}
 " SOME INTRODUCTORY NOTES {{{
 "
 " leader-based shortcuts are mostly used for non filetype specific mappings
@@ -13,7 +39,7 @@
 
 " TPope's pathogen
 set runtimepath+=$HOME/.vim/bundle/
-execute pathogen#infect()
+" execute pathogen#infect()
 
 " BACKUP
 " backup and writebackup enable backup support. As annoying as this can be, it
