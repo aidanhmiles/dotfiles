@@ -8,6 +8,7 @@ brew "bash"
 brew "zsh"
 brew "git"
 brew "vim"
+brew "neovim"
 
 # Python
 brew "pyenv"

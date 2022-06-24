@@ -14,6 +14,7 @@ alias myaliases="vim $CONFDIR/bash/aliases.sh"
 alias bashrc="vim $HOME/.bashrc"
 alias inputrc="vim $HOME/.inputrc"
 alias vimrc="vim $HOME/.vimrc"
+alias nvimrc="vim $HOME/.config/nvim/init.vim"
 alias sshconf="vim ~/.ssh/config"
 # "scratch paper"
 alias scratch="vim ~/Desktop/scratch"
@@ -89,7 +90,6 @@ alias gdl="git diff --name-only"
 alias gf="git fetch"
 alias glg="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias gp="git push"
-alias gphm="git push heroku master"
 alias gpog="git push origin gh-pages"
 alias gpom="git push origin master"
 alias gpo="git push origin"
@@ -104,6 +104,10 @@ alias grb="git rebase"
 alias gcp="git cherry-pick"
 alias gbag="git branch | ag"
 alias gbrag="git branch -r | ag"
+
+# HEROKU
+alias gphm="git push heroku main"
+alias h="heroku"
 
 # show the changes applied by one commit by comparing to its parent
 gdw() {
@@ -264,6 +268,13 @@ alias bi="bundle install"
 alias bu="bundle update"
 rr () {
   "kill -9 $(cat tmp/pids/server.pid); rails server -d"
+}
+
+creds () {
+  rails credentials:edit
+}
+credsp() {
+  rails credentials:edit --environment production 
 }
 
 # Python

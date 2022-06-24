@@ -8,7 +8,7 @@ export PGHOST=localhost
 export HISTCONTROL=ignoredups:erasedups # no dupes
 export HISTSIZE=20000 # lots of history
 export HISTFILESIZE=20000 # lots of history
-export HISTFILE="$HOME/dotfiles/dotfiles/.bash_history"
+export HISTFILE="$HOME/.bash_history"
 
 shopt -s histappend # append to history, don't overwrite
 shopt -s histverify # don't immediately execute history shortcuts (because i should check them before submitting)
@@ -32,5 +32,6 @@ if command -v tmux &> /dev/null && \
     tmux
 fi
 
-ssh-add -qK ~/.ssh/airl-git
+ssh-add -q --apple-use-keychain ~/.ssh/airl-git
+ssh-add -q --apple-use-keychain ~/.ssh/airl-default
 
